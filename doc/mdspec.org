@@ -1,0 +1,403 @@
+* General Organization
+** Identifiers
+   Each journal will be assigned a project number (a /bmtnid/), which
+   will take the form /bmtnNNN/.  This project number will be
+   maintained in a /project registry/, a file maintained with other
+   administrative files.
+
+   Each journal issue will be assigned a project number of the form
+   /bmtnid-issueid/, where issueid is unspecified but will generally
+   be of the form /vvnn/, expressing the volume number and issue
+   number of the item. For example, the second issue in the third
+   volume of /Pan/ would bear the following project number:
+
+   #+BEGIN_EXAMPLE
+      bmtn031-0302
+   #+END_EXAMPLE
+
+   /One-shot/ issues (journals that published only one issue) will
+   conventionally bear project numbers of the form
+   /bmtnNNN-1/. Supplements, indexes, and other publications will be
+   identified in some distinguishing way.
+
+   These bmtnids will be used to compose a Universal Resource Name
+   (URN) for each title and issue.
+
+   - Journal :: urn:PUL:bluemountain:bmtnid
+   - Issue :: urn:PUL:bluemountain:bmtnid-issueid
+
+   The same URN scheme will be used to create identifiers for the
+   metadata records used to encode information about the digital and
+   physical items.
+
+   - MODS Record Identifier :: urn:PUL:bluemountain:dmd:bmtnid
+   - METS Document Identifier :: urn:PUL:bluemountain:td:bmtnid
+   
+** Journal Objects
+  A /journal object/ will comprise the following elements:
+
+  - title-level descriptive metadata :: A detailed, machine-readable
+       description of the periodical as a whole.  Encoded in MODS for
+       compatibility with library systems, but translatable into
+       other formats (e.g., TEI).
+  - title-level bibliography :: An article-level prose description.
+       (/bmtnid.tei.xml/)
+  - title-level metadata wrapper :: Pulls together the title-level
+       metadata, the bibliography, and the issue-level metadata
+       (/bmtnid.mets.xml/)
+  - issues :: one or more issues, each of which entails the following:
+    - preservation-quality images :: high-quality TIFF files ('master
+	 TIFFs'), produced according to local best practices and in
+	 conformance with the FADGI standards.
+    - generative image derivatives :: more manageable forms of the
+	 master TIFFs, meant to serve as the source for online
+	 deliverables, etc.  Encoded in the JPEG2000 format,
+	 according to specifications to be determined, but probably
+	 following the recommendations of the NDNP project of the
+	 Library of Congress.
+    - issue-level descriptive metadata :: a MODS document.
+    - text encodings :: Initially these will be in the form of
+			corrected OCR for each page, encoded in the
+			ALTO schema (output by ABBYY via
+			docWORKS). Future encodings will likely
+			include TEI representations, derived from the
+			ALTO documents, for detailed textual
+			analysis.
+    - deliverable text-under-image PDF :: another ABBYY output format.
+    - issue-level metadata wrapper :: a METS document.  The METS half
+	 of METS/ALTO, the structMap of this document links
+	 passage-level items (articles, illustrations,
+	 advertisements) to the regions identified in the ALTO
+	 documents, and to the page image.
+** Arrangement
+   The components of the journal object have different storage and
+   access requirements.  Master TIFF files are very large binary
+   files that will seldom be accessed but must be carefully preserved
+   (they are expensive or impossible to replace). Image derivatives,
+   too, are large binary files, but they can be regenerated from the
+   master TIFFs and therefore require less care, but they will be
+   accessed from a variety of sources (primarily the web).  PDF files
+   are hybrids: they are large binary files, composites of image
+   derivatives and OCR output that cannot easily be recreated and so
+   must be preserved more carefully than image derivatives while
+   still being accessible.  Metadata files are relatively small but
+   very expensive to replace, and so must be curated carefully.  They
+   are also liable to updating, so version tracking is important.
+
+   The Blue Mountain Project will manage these assets separately.
+   The non-binary data and metadata will be stored and managed in a
+   distributed version control system (DVCS), which will enable
+   change management, collaborative development among PUL and its
+   METS/ALTO vendor, and resource sharing, as stipulated in the
+   grant.
+
+   Master TIFF files and text-under-image PDFs will, therefore, be
+   maintained in a preservation store; image derivatives, and copies
+   of the PDFs and the metadata, will be kept in an access store.
+
+*** The Metadata Tree
+    Metadata will be organized as a hierarchy of files and
+    directories, like this:
+
+    #+BEGIN_EXAMPLE
+    - periodicals/
+      - bmtnID/
+	- bmtnID.mets.xml
+	- bmtnID.mods.xml
+	- bmtnID.tei.xml
+	- issues/
+	  - bmtnID-issueID/
+	    - bmtnID-issueID.mets.xml
+	    - bmtnID-issueID.mods.xml
+	    - alto/
+	      - bmtnID-issueID-nnn.alto.xml     
+    #+END_EXAMPLE
+* Metadata Profiles
+  The Blue Mountain Project aims to make its work open and
+  shareable.  Doing so means adhering to standards whenever possible,
+  clarifying encoding practices (in human and machine-readable forms,
+  when possible), and making those practices visible to others.
+** METS
+*** Issue-Level
+     The metadata for each issue will be encapsulated in a METS
+     record.  A skeleton of such a record is the following:
+
+     #+BEGIN_SRC xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
+       TYPE="Periodical-Issue"
+       OBJID="urn:PUL:bluemountain:bmtn003-1">
+       <metsHdr>
+	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+	       <name>Princeton University Library, Digital Initiatives</name>
+	   </agent>
+	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtn003-1</metsDocumentID>
+       </metsHdr>
+       <dmdSec ID="dmd1">
+	   <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/mods+xml"
+	       xlink:href="urn:PUL:bluemountain:dmd:bmtn003-1"/>
+       </dmdSec>
+       <fileSec>
+	 <fileGrp ID="IMGGRP" USE="Images"/>
+	 <fileGrp ID="ALTOGRP" USE="Text"/>
+       </fileSec>
+       <structMap TYPE="PHYSICAL">
+	   <div/>
+       </structMap>
+       <structMap TYPE="LOGICAL">
+	   <div/>
+       </structMap>
+   </mets>
+     #+END_SRC
+
+** MODS
+*** Title-Level Description
+    The descriptive metadata for most, if not all, of the Blue
+    Mountain titles has been taken from MARC records retrieved from
+    Princeton's OPAC and machine-converted, then edited and enhanced
+    by hand.  Here is a sample:
+    #+BEGIN_SRC xml -n
+  <?xml version="1.0" encoding="UTF-8"?>
+  <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
+   xmlns="http://www.loc.gov/mods/v3">
+    <identifier type="bmtn">urn:PUL:bluemountain:bmtn003</identifier> <!-- (ref:identifier) -->
+    <recordInfo>
+      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn003</recordIdentifier> <!-- (ref:ridentifier) -->
+      <recordContentSource authority="marcorg">NjP</recordContentSource>
+      <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4939605</recordOrigin>
+      <languageOfCataloging>
+       	<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </languageOfCataloging>
+    </recordInfo>
+    
+    <titleInfo>
+      <nonSort>Le</nonSort>
+      <title>coeur à barbe</title>
+      <subTitle>journal transparent</subTitle>
+    </titleInfo>
+    <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/73848255">
+      <namePart type="family">Eluard</namePart>
+      <namePart type="given">Paul</namePart>
+      <namePart type="date">1895-1952</namePart>
+    </name>
+    <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/96123513">
+      <namePart type="family">Ribemont-Dessaignes</namePart>
+      <namePart type="given">Georges</namePart>
+      <namePart type="date">1884-1974</namePart>
+    </name>
+    <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/27072443">
+      <namePart type="family">Tzara</namePart>
+      <namePart type="given">Tristan</namePart>
+      <namePart type="date">1896-1963</namePart>
+    </name>
+    <typeOfResource>text</typeOfResource>
+    <originInfo script="Latn">
+      <place>
+       	<placeTerm type="text">Paris</placeTerm>
+      </place>
+      <dateIssued>1922</dateIssued>
+      <dateIssued encoding="iso8601" point="start">1922--</dateIssued>
+      <dateIssued encoding="iso8601" point="end">1922--</dateIssued>
+    </originInfo>
+    <language>
+      <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+    </language>
+    <subject authority="lcsh">
+      <topic>Dadaism</topic>
+      <genre>Periodicals</genre>
+    </subject>
+    <subject authority="lcsh">
+      <topic>Dadaism</topic>
+      <geographic>France</geographic>
+      <genre>Periodicals</genre>
+    </subject>
+  </mods>
+    #+END_SRC
+    - The MODS record contains an [[(identifer)][<identifier>]] element whose type is
+      /bmtn/.  Its value is a URN for the title, which is of the form
+
+      #+BEGIN_EXAMPLE
+       	urn:PUL:bluemountain:BMTNID
+      #+END_EXAMPLE
+
+      Where the string /urn:PUL:bluemountain/ is constant (for all Blue
+      Mountain URNs) and BMTNID is the Blue Mountain project identifier of the
+      periodical.
+
+    - The MODS record also contains a <recordInfo> element, which
+      provides a link back to the original OPAC record, as well as a
+      [[(ridentifier)][<recordIdentifier>]] uniquely identifying the record itself; it is
+      simply the journal URN with /dmd/ inserted into the identifier:
+      #+BEGIN_EXAMPLE
+       	urn:PUL:bluemountain:dmd:BMTNID
+      #+END_EXAMPLE
+    - The <name> elements are associated with authorities to enhance
+      search and broaden the interconnectedness of the
+      data.  http://viaf.org is the preferred authority;
+      http://id.loc.gov should be consulted when a name is not found
+      in viaf.org; if a name is found in neither, a local authority
+      will be created (see later).
+    - Dates are encoded in ISO standard 8601 format (see
+      http://www.iso.org/iso/catalogue_detail?csnumber=40874; for an
+      overview see http://en.wikipedia.org/wiki/ISO_8601).  The
+      extended form of the representation is preferred.
+    - Subject headings will conform with existing standards in a
+      manner yet to be determined.
+
+*** Issue-Level Description
+    Descriptive metadata will be encoded for the contents of each
+    issue, so they may be searched and analyzed.
+**** The Issue-Level Record
+     Each issue-level MODS record is related to the
+     title-level record /via/ a <relatedItem type='host'> element.
+
+     #+BEGIN_SRC xml
+      <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtn003">
+       	<recordInfo>
+	  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn003</recordIdentifier>
+       	</recordInfo>
+      </relatedItem>
+     #+END_SRC
+
+     The xlink:href shows the semantic relation between the issue and
+     its host; the <recordIdentifier> is a specific key to the
+     title-level record.
+***** Issue Constituents
+      Traditional library cataloging does not extend to the contents
+      of periodicals, yet this level of description is precisely what
+      is required by scholars of periodicals[fn:1], and the Blue
+      Mountain Project is committed to providing it, as well as to
+      formulating guidelines, in cooperation with scholars and
+      librarians, for this level of description.  The specifications
+      for this description, therefore, must be considered work in
+      progress, work that will necessarily evolve over the course of
+      the Project.
+
+      That being said, the Project will, at the outset, capture
+      information about the following sorts of constituents:
+
+      - traditional text content (articles, features, letters to the
+       	editor, etc.)
+      - significant illustrations (figures, tip-ins, etc.)
+      - advertisements
+
+      The last sort -- advertisements -- is the most controversial,
+      and the most difficult for librarians to understand, although
+      advertisements are among the most heavily studied parts of
+      historical periodicals.  There are at present no established
+      rules for describing advertisements, and their variety and
+      abundance pose serious practical challenges to projects with
+      limited resources.  This version of the specification,
+      therefore, provides little guidance on the description of
+      periodicals, other than providing a framework for this level of
+      detail to be created at a future date, by scholars, researchers,
+      and other students of the material who wish to advance
+      scholarship by enhancing the data provided here.
+
+****** articles
+       Detailed rules to follow; in general, provide title, author,
+       and extent.
+****** editorials
+       See articles.
+
+****** illustrations
+       Where possible, provide creator.  If captioned, include as title.
+
+****** correspondence (letters to the editor)
+       These are important components of periodicals: they often
+       reveal the lively exchange of opinion about important issues
+       among notable individuals.  Blue Mountain may not be able to
+       perform the research necessary to catalog all correspondence in
+       detail, but it will create a framework for future enhancement.
+
+** ALTO: Page-Level Description
+   For each page, an encoded representation of the layout and the
+   machine-readable text on the page shall be provided, using the
+   ALTO schema, version 2.0 or higher, with the following
+   specifications, adopted from the NDNP:
+
+   - The text shall be encoded in the natural reading order of the
+     language in which the text is written;
+   - Point size and font data to at least the word level shall be included;
+   - The ALTO file shall include bounding-box coordinates to at least
+     the word level;
+   - Non-rectangular blocks shall not be used.  Some illustrations
+     may format as "tight" in the document.
+
+** JPEG2000: Image Description
+   The following specifications are taken directly from 
+   /The National Digital Newspaper Program (NDNP) Technical Guidelines
+   for Applicants/.
+   - The JPEG 2000 files shall conform to the JP2 file format as
+     specified in ISO/IEC 15444- 1:2000 (i.e., JPEG 2000, Part 1).
+   - The JPEG 2000 files shall correspond to the image that is used
+     for OCR.
+   - The JPEG 2000 files shall have a ".jp2" extension.
+   - The JPEG 2000 files image X origin, image Y origin, tile X
+     origin, and tile Y origin shall be 0.
+   - The JPEG 2000 files shall contain only one component.  The bit
+     depth of that component shall be the same as the source image
+     file: 1-bit for black-and-white source images, 8-bits for gray
+     scale source images, and 24-bits for 24-bit color source images.
+   - The tile headers of the JPEG 2000 files shall not contain coding
+     style default, coding style component, quantization default, or
+     quantization component marker segments.
+   - The JPEG 2000 file progression order shall be RLCP (resolution,
+     layer, component, position) or RLPC.
+   - The JPEG 2000 files shall have 6 decomposition levels.
+   - The JPEG 2000 files shall have 25 quality layers. The bits per
+     pixel for each quality layer will be: 1, 0.84, 0.7, 0.6, 0.5,
+     0.4, 0.35, 0.3, 0.25, 0.21, 0.18, 0.15, 0.125, 0.1, 0.088, 0.07,
+     0.0625, 0.05, 0.04419, 0.03716, 0.03125, 0.025, 0.0221, 0.018,
+     0.015625.
+   - The JPEG 2000 file code-block sizes will be 64x64.  The JPEG
+     2000 file code-block styles shall be bypass.
+   - Two compression schemes shall be used for the JPEG 2000 files.
+     For 1-bit source image files, CCITT Group 4 compression
+     (lossless) shall be used.  For all other bit depths, the 9-7
+     irreversible filter shall be used.
+   - The JPEG 2000 files shall use 1024x1024 tiles.
+   - The color specification of the JPEG 2000 file must be either the
+     monochrome (grayscale) enumerated color space or the Monochrome
+     Input restricted ICC profile.
+   - The JPEG 2000 files shall not contain regions of interest or
+     precincts.
+   - The JPEG 2000 files shall not contain intellectual property
+     rights information.
+
+   To generate a JP2000 using Kakadu, use the following recipe
+   (taken from /The National Digital Newspaper Program (NDNP) Technical Guidelines for Applicants/):
+   #+BEGIN_EXAMPLE
+      kdu_compress -i YOURINPUT.pgm -o YOUROUTPUT.jp2 -rate \
+      1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 \
+      75,0.0625,0.05,0.04419,0.03716,0.03125,0.025,0.0221,0.01858,0.015625 \
+      Clevels=6 Stiles={1024,1024} Corder=RLCP
+   #+END_EXAMPLE
+** TEI
+   To be described.  TEI transcriptions will be derived from METS/ALTO
+   metadata. 
+* Footnotes
+
+[fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
+  Magazines: An Introduction/. New Haven: Yale University Press, 2010.
+
+#+TITLE:     Metadata Specification for Blue Mountain
+#+AUTHOR:    Cliff Wulfman
+#+EMAIL:     cwulfman@princeton.edu
+#+DATE:      2012-06-10 Sun
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+TEXT:
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+STARTUP: overview

@@ -1,0 +1,111 @@
+* Work Plan
+  Creating journal objects is a complex process with three basic
+  steps:
+  1) capturing page images
+  2) creating descriptive metadata
+  3) performing OCR
+
+** Capturing Page Images
+   Much of this work has already been done; as a result, no control
+   can be imposed on the initial naming or organization of image
+   files.  
+** Creating Descriptive Metadata
+   - Blue Mountain staff will create a MODS record for the
+     journal. Each title-level MODS will have an <identifier type='bmtn'> of
+     the form /urn:PUL:bluemountain:bmtnid/.
+   - Blue Mountain staff will also create a MODS record for each
+     issue.
+     - Each issue-level MODS will have an <identifier
+       type='bmtn'> of the form urn:PUL:bluemountain:bmtnid-issueid.
+     - Each issue-level MODS will contain a <relatedItem type='host'>
+       element with the following features linking it to a
+       title-level record:
+       - an xlink:href attribute whose value is the identifier of the
+	 title-level host (e.g., urn:PUL:bluemountain:bmtnid)
+       - a <recordInfo> sub-element which in turn contains a
+	 <recordIdentifier> whose content is the title-level
+	 identifier.
+       For example,
+       #+BEGIN_SRC xml
+	<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtn003">
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn003</recordIdentifier>
+	  </recordInfo>
+	</relatedItem>
+       #+END_SRC
+     - Each issue-level MODS will contain a <part type='issue'>
+       element, whose contents will be a description of the issue's
+       enumeration: i.e., its volume and issue number in most cases.
+       - Each issue-level MODS will contain an <originInfo> element
+	 that describes the date of issuance and other publication
+	 information, which may vary from issue to issue.
+     - Blue Mountain staff will also encode the descriptive metadata
+       for each of the issue's constituent parts.  The contents of
+       these journals is complex and difficult to determine, and
+       vendors cannot be expected to produce accurate listings.
+
+       The constituent metadata will follow some internal standard to
+       be determined.
+   - These MODS files shall be added to a metadata tree managed with
+     the distributed version control system /git/ and a collaborative
+     tool (GitHub, BitBucket, or other).  This scheme allows for
+     better feedback, monitoring, and control of metadata creation.
+       
+   - The vendor will enhance the issue-level MODS by adding IDs to
+     each constituent; these IDS will be used to link descriptive
+     metadata to <div> elements in the issue-level METS
+     structMaps. The vendor will use Git to manage branches and issue
+     pull requests to Princeton to incorporate the enhanced records
+     into the trunk.
+
+** METS/ALTO Creation
+   The vendor shall produce METS/ALTO records according to the
+   specifications above, and store them in the Git repository in the
+   appropriate directories (i.e., the /alto/ directory of the given
+   issue).  
+
+** Work Flow and Procedure
+   - PUL Staff
+     - create title-level MODS
+     - create inventory of existing issues (in Excel or other capture tool)
+     - create sparse metadata tree
+       - generate issue-level MODS stubs
+       - generate issue-level METS stubs?
+       - generate empty alto directories?
+       - add to git repository
+     - transmit page images to vendor
+   - Vendor
+     - clone/update git repository
+     - process issues
+       - create production branch(es)
+       - zone pages
+       - produce ALTO files
+       - enhance MODS
+       - enhance METS
+       - produce PDF
+       - deliver PDF via FTP
+       - commit XML to branch
+       - request pull
+   - PUL Staff
+     - Perform Quality Assessment
+     - Ingest titles into Veridian CMS
+     - Write descriptive bibliography
+
+#+TITLE:     Work Plan for the Blue Mountain Project
+#+AUTHOR:    Cliff Wulfman
+#+EMAIL:     cwulfman@princeton.edu
+#+DATE:      2012-05-03 Thu
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+TEXT:   This document describes in detail the work that will be done in fulfillment of NEH grant #PW-51046-12.
+
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+STARTUP: overview
