@@ -20,11 +20,9 @@
      - Each issue-level MODS will contain a <relatedItem type='host'>
        element with the following features linking it to a
        title-level record:
-       - an xlink:href attribute whose value is the identifier of the
-	 title-level host (e.g., urn:PUL:bluemountain:bmtnid)
-       - a <recordInfo> sub-element which in turn contains a
-	 <recordIdentifier> whose content is the title-level
-	 identifier.
+       - an xlink:href attribute whose value is the identifier of the title-level host (e.g., urn:PUL:bluemountain:bmtnid)
+       - a <recordInfo> sub-element which in turn contains a <recordIdentifier> whose content is the title-level identifier.
+
        For example,
        #+BEGIN_SRC xml
 	<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtn003">

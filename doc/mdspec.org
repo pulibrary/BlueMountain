@@ -36,39 +36,16 @@
 ** Journal Objects
   A /journal object/ will comprise the following elements:
 
-  - title-level descriptive metadata :: A detailed, machine-readable
-       description of the periodical as a whole.  Encoded in MODS for
-       compatibility with library systems, but translatable into
-       other formats (e.g., TEI).
-  - title-level bibliography :: An article-level prose description.
-       (/bmtnid.tei.xml/)
-  - title-level metadata wrapper :: Pulls together the title-level
-       metadata, the bibliography, and the issue-level metadata
-       (/bmtnid.mets.xml/)
+  - title-level descriptive metadata :: A detailed, machine-readable description of the periodical as a whole.  Encoded in MODS for compatibility with library systems, but translatable into other formats (e.g., TEI).
+  - title-level bibliography :: An article-level prose description.  (/bmtnid.tei.xml/)
+  - title-level metadata wrapper :: Pulls together the title-level metadata, the bibliography, and the issue-level metadata (/bmtnid.mets.xml/)
   - issues :: one or more issues, each of which entails the following:
-    - preservation-quality images :: high-quality TIFF files ('master
-	 TIFFs'), produced according to local best practices and in
-	 conformance with the FADGI standards.
-    - generative image derivatives :: more manageable forms of the
-	 master TIFFs, meant to serve as the source for online
-	 deliverables, etc.  Encoded in the JPEG2000 format,
-	 according to specifications to be determined, but probably
-	 following the recommendations of the NDNP project of the
-	 Library of Congress.
+    - preservation-quality images :: high-quality TIFF files ('master TIFFs'), produced according to local best practices and in conformance with the FADGI standards.
+    - generative image derivatives :: more manageable forms of the master TIFFs, meant to serve as the source for online deliverables, etc.  Encoded in the JPEG2000 format, according to specifications to be determined, but probably following the recommendations of the NDNP project of the Library of Congress.
     - issue-level descriptive metadata :: a MODS document.
-    - text encodings :: Initially these will be in the form of
-			corrected OCR for each page, encoded in the
-			ALTO schema (output by ABBYY via
-			docWORKS). Future encodings will likely
-			include TEI representations, derived from the
-			ALTO documents, for detailed textual
-			analysis.
+    - text encodings :: Initially these will be in the form of corrected OCR for each page, encoded in the ALTO schema (output by ABBYY via docWORKS). Future encodings will likely include TEI representations, derived from the ALTO documents, for detailed textual analysis.
     - deliverable text-under-image PDF :: another ABBYY output format.
-    - issue-level metadata wrapper :: a METS document.  The METS half
-	 of METS/ALTO, the structMap of this document links
-	 passage-level items (articles, illustrations,
-	 advertisements) to the regions identified in the ALTO
-	 documents, and to the page image.
+    - issue-level metadata wrapper :: a METS document.  The METS half of METS/ALTO, the structMap of this document links passage-level items (articles, illustrations, advertisements) to the regions identified in the ALTO documents, and to the page image.
 ** Arrangement
    The components of the journal object have different storage and
    access requirements.  Master TIFF files are very large binary
@@ -109,6 +86,7 @@
 	  - bmtnID-issueID/
 	    - bmtnID-issueID.mets.xml
 	    - bmtnID-issueID.mods.xml
+	    - bmtnID-issueID.tei.xml
 	    - alto/
 	      - bmtnID-issueID-nnn.alto.xml     
     #+END_EXAMPLE
