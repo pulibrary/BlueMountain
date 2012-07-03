@@ -8,6 +8,7 @@
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
     <xsl:variable name="bmtnid" as="xs:string">bmtn036</xsl:variable>
+    <xsl:variable name="mdroot" as="xs:string">/opt/local/BlueMountain/metadata/periodicals/</xsl:variable>
 
 
     <xsl:template match="ss:Workbook">
@@ -63,7 +64,7 @@
 	    </xsl:variable>
             <xsl:variable name="filename">
                 <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"
+                    select="concat($mdroot, $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"
                 />
             </xsl:variable>
 
@@ -126,7 +127,7 @@
             </xsl:variable>
             <xsl:variable name="filename">
                 <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
+                    select="concat($mdroot, $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
                 />
             </xsl:variable>
             <xsl:result-document href="{$filename}">
