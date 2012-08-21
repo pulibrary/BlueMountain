@@ -17,23 +17,45 @@
   
   <property name="xmldb.host" value="localhost" />
   <property name="xmldb.port" value="8080" />
-  <property name="xmldb.user" value="admin" />
-  <property name="xmldb.passwd" value="admin" />
+  <property name="xmldb.user" value="bluemtn" />
+  <property name="xmldb.passwd" value="bluemtn" />
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
   <property name="xmldb.approot" value="${xmldb.url}/bluemtn" />
+
+  <property name="approot" value="/opt/local/BlueMountain" />
   
-  <target name="load-tei" description="load tei files">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
-      <fileset dir=".">
-	<include name="*.tei.xml" />
+  <target name="load-conf" description="load the Blue Mountain collection.xconf record">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.url}/system/config/db/bluemtn" createcollection="true">
+      <fileset dir="${approot}/db">
+	<include name="collection.xconf" />
       </fileset>
     </xdb:store>
   </target>
 
   <target name="load-mods" description="load mods records">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
-      <fileset dir=".">
-	<include name="*.mods.xml" />
+      <fileset dir="${approot}/metadata/periodicals">
+	<include name="**/*.mods.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-mets" description="load mets records">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals">
+	<include name="**/*.mets.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+  
+
+  <target name="load-tei" description="load tei files">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals">
+	<include name="**/*.tei.xml" />
+	<exclude name="**/work/**" />
       </fileset>
     </xdb:store>
   </target>
@@ -47,12 +69,5 @@
   </target>
 
   
-  <target name="storeconf" description="store the collection.xconf record">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.url}/system/config/db/bluemtn" createcollection="true">
-      <fileset dir=".">
-	<include name="collection.xconf" />
-      </fileset>
-    </xdb:store>
-  </target>
 </project>
 
