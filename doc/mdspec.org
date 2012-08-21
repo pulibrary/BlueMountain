@@ -13,7 +13,6 @@
 #+LINK_UP:   
 #+LINK_HOME: 
 #+XSLT:
-
 * General Organization
 ** Identifiers
    Each journal will be assigned a project number (a /bmtnid/), which
@@ -48,20 +47,46 @@
 
    - MODS Record Identifier :: urn:PUL:bluemountain:dmd:bmtnid
    - METS Document Identifier :: urn:PUL:bluemountain:td:bmtnid
-   
 ** Journal Objects
   A /journal object/ will comprise the following elements:
 
-  - title-level descriptive metadata :: A detailed, machine-readable description of the periodical as a whole.  Encoded in MODS for compatibility with library systems, but translatable into other formats (e.g., TEI).
-  - title-level bibliography :: An article-level prose description.  (/bmtnid.tei.xml/)
-  - title-level metadata wrapper :: Pulls together the title-level metadata, the bibliography, and the issue-level metadata (/bmtnid.mets.xml/)
+  - title-level descriptive metadata :: A detailed, machine-readable
+       description of the periodical as a whole.  Encoded in MODS for
+       compatibility with library systems, but translatable into other
+       formats (e.g., TEI).
+
+  - title-level bibliography :: An article-level prose description.
+       (/bmtnid.tei.xml/)
+
+  - title-level metadata wrapper :: Pulls together the title-level
+       metadata, the bibliography, and the issue-level metadata
+       (/bmtnid.mets.xml/)
+
   - issues :: one or more issues, each of which entails the following:
-    - preservation-quality images :: high-quality TIFF files ('master TIFFs'), produced according to local best practices and in conformance with the FADGI standards.
-    - generative image derivatives :: more manageable forms of the master TIFFs, meant to serve as the source for online deliverables, etc.  Encoded in the JPEG2000 format, according to specifications to be determined, but probably following the recommendations of the NDNP project of the Library of Congress.
+    - preservation-quality images :: high-quality TIFF files ('master
+         TIFFs'), produced according to local best practices and in
+         conformance with the FADGI standards.
+    - generative image derivatives :: more manageable forms of the
+         master TIFFs, meant to serve as the source for online
+         deliverables, etc.  Encoded in the JPEG2000 format, according
+         to specifications to be determined, but probably following
+         the recommendations of the NDNP project of the Library of
+         Congress.
     - issue-level descriptive metadata :: a MODS document.
-    - text encodings :: Initially these will be in the form of corrected OCR for each page, encoded in the ALTO schema (output by ABBYY via docWORKS). Future encodings will likely include TEI representations, derived from the ALTO documents, for detailed textual analysis.
+    - text encodings :: Initially these will be in the form of
+                        corrected OCR for each page, encoded in the
+                        ALTO schema (output by ABBYY via
+                        docWORKS). Future encodings will likely
+                        include TEI representations, derived from the
+                        ALTO documents, for detailed textual analysis.
     - deliverable text-under-image PDF :: another ABBYY output format.
-    - issue-level metadata wrapper :: a METS document.  The METS half of METS/ALTO, the structMap of this document links passage-level items (articles, illustrations, advertisements) to the regions identified in the ALTO documents, and to the page image.
+
+    - issue-level metadata wrapper :: a METS document.  The METS half
+         of METS/ALTO, the structMap of this document links
+         passage-level items (articles, illustrations, advertisements)
+         to the regions identified in the ALTO documents, and to the
+         page image.
+
 ** Arrangement
    The components of the journal object have different storage and
    access requirements.  Master TIFF files are very large binary
@@ -84,9 +109,9 @@
    METS/ALTO vendor, and resource sharing, as stipulated in the
    grant.
 
-   Master TIFF files and text-under-image PDFs will, therefore, be
-   maintained in a preservation store; image derivatives, and copies
-   of the PDFs and the metadata, will be kept in an access store.
+   Master TIFF files and text-under-image PDFs will be maintained in a
+   /preservation store/; image derivatives, and copies of the PDFs and
+   the metadata, will be kept in an /access store./
 
 *** The Metadata Tree
     Metadata will be organized as a hierarchy of files and
@@ -115,13 +140,12 @@
 *** Issue-Level
      The metadata for each issue will be encapsulated in a METS
      record.  A skeleton of such a record is the following:
-
      #+BEGIN_SRC xml
    <?xml version="1.0" encoding="UTF-8"?>
    <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-       TYPE="Periodical-Issue"
+       TYPE="METAe_Serial"
        OBJID="urn:PUL:bluemountain:bmtn003-1">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
@@ -143,7 +167,7 @@
        <structMap TYPE="LOGICAL">
 	   <div/>
        </structMap>
-   </mets>
+    </mets>
      #+END_SRC
 
 ** MODS
@@ -377,21 +401,3 @@
 
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
   Magazines: An Introduction/. New Haven: Yale University Press, 2010.
-
-#+TITLE:     Metadata Specification for Blue Mountain
-#+AUTHOR:    Cliff Wulfman
-#+EMAIL:     cwulfman@princeton.edu
-#+DATE:      2012-06-10 Sun
-#+DESCRIPTION:
-#+KEYWORDS:
-#+LANGUAGE:  en
-#+TEXT:
-#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+EXPORT_SELECT_TAGS: export
-#+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:   
-#+LINK_HOME: 
-#+XSLT:
-#+STARTUP: overview
