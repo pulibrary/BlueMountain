@@ -38,10 +38,15 @@
             <xsl:variable name="date" select="ss:Cell[3]/ss:Data"/>
             <xsl:variable name="keydate" select="ss:Cell[4]/ss:Data"/>
 
-            <xsl:variable name="basename">
+            <xsl:variable name="basename-old">
                 <xsl:value-of
                     select="concat($bmtnid, '-', format-number($volume,'00'), format-number($issueno,'00'))"
                 />
+            </xsl:variable>
+
+            <xsl:variable name="basename">
+                <xsl:value-of
+                    select="concat($bmtnid, '-', $keydate)" />
             </xsl:variable>
 
             <xsl:variable name="filename">
@@ -82,11 +87,18 @@
             <xsl:variable name="date" select="ss:Cell[3]/ss:Data"/>
             <xsl:variable name="keydate" select="ss:Cell[4]/ss:Data"/>
 
-            <xsl:variable name="basename">
+            <xsl:variable name="basename-old">
                 <xsl:value-of
                     select="concat($bmtnid,'-', format-number($volume,'00'), format-number($issueno,'00'))"
                 />
             </xsl:variable>
+
+            <xsl:variable name="basename">
+                <xsl:value-of
+                    select="concat($bmtnid, '-', $keydate)" />
+            </xsl:variable>
+
+
             <xsl:variable name="filename">
                 <xsl:value-of
                     select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
