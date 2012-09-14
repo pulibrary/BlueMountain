@@ -15,31 +15,36 @@
 #+XSLT:
 * General Organization
 ** Identifiers
-   Each journal will be assigned a project number (a /bmtnid/), which
-   will take the form /bmtnNNN/.  This project number will be
-   maintained in a /project registry/, a file maintained with other
-   administrative files.
+   Each journal will be assigned a sequential /publication
+   identifier/, which will take the form /bmtnNNN/, where NNN is a
+   hexavigesimal number (e.g., aaa, aab, aac, etc.)  This publication
+   id will be maintained in a /project registry/, a file maintained
+   with other administrative files.
 
-   Each journal issue will be assigned a project number of the form
-   /bmtnid-issueid/, where issueid is unspecified but will generally
-   be of the form /vvnn/, expressing the volume number and issue
-   number of the item. For example, the second issue in the third
-   volume of /Pan/ would bear the following project number:
+   Each journal /issue/ will be assigned a publication id of the form
+   /bmtnid_issueid/, where /issueid/ corresponds to the date of
+   issuance and takes the form /CCYYMMDDII/, where
+
+   - CCYY is the year of publication (e.g., 1912)
+   - MM is a two-digit number representing the month of publication,
+     where January = 01, February = 02, etc.  If the title and/or the
+     masthead indicates a week of publication (e.g., September 8-14,
+     1946), the first date should be used (e.g., September 8).
+   - DD is a two-digit number representing the date of publication,
+     (e.g., 01, 02 .. 30, 31).  If no date is specified, DD is 00.
+   - II is a two-digit number representing the issuance number: a
+     calculated number used for times when more than one issue was
+     published on one day (it will usually be 01).
 
    #+BEGIN_EXAMPLE
-      bmtn031-0302
+      bmtnabf_1895060001
    #+END_EXAMPLE
-
-   /One-shot/ issues (journals that published only one issue) will
-   conventionally bear project numbers of the form
-   /bmtnNNN-1/. Supplements, indexes, and other publications will be
-   identified in some distinguishing way.
 
    These bmtnids will be used to compose a Universal Resource Name
    (URN) for each title and issue.
 
    - Journal :: urn:PUL:bluemountain:bmtnid
-   - Issue :: urn:PUL:bluemountain:bmtnid-issueid
+   - Issue :: urn:PUL:bluemountain:bmtnid_issueid
 
    The same URN scheme will be used to create identifiers for the
    metadata records used to encode information about the digital and
@@ -47,6 +52,7 @@
 
    - MODS Record Identifier :: urn:PUL:bluemountain:dmd:bmtnid
    - METS Document Identifier :: urn:PUL:bluemountain:td:bmtnid
+
 ** Journal Objects
   A /journal object/ will comprise the following elements:
 
@@ -124,12 +130,12 @@
 	- bmtnID.mods.xml
 	- bmtnID.tei.xml
 	- issues/
-	  - bmtnID-issueID/
-	    - bmtnID-issueID.mets.xml
-	    - bmtnID-issueID.mods.xml
-	    - bmtnID-issueID.tei.xml
+	  - bmtnid_issueid/
+	    - bmtnid_issueid.mets.xml
+	    - bmtnid_issueid.mods.xml
+	    - bmtnid_issueid.tei.xml
 	    - alto/
-	      - bmtnID-issueID-nnn.alto.xml     
+	      - bmtnid_issueid-nnn.alto.xml     
     #+END_EXAMPLE
 * Metadata Profiles
   The Blue Mountain Project aims to make its work open and
@@ -146,16 +152,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
        TYPE="METAe_Serial"
-       OBJID="urn:PUL:bluemountain:bmtn003-1">
+       OBJID="urn:PUL:bluemountain:bmtnaac_1887010101">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
 	       <name>Princeton University Library, Digital Initiatives</name>
 	   </agent>
-	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtn003-1</metsDocumentID>
+	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaac_1887010101</metsDocumentID>
        </metsHdr>
        <dmdSec ID="dmd1">
 	   <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/mods+xml"
-	       xlink:href="urn:PUL:bluemountain:dmd:bmtn003-1"/>
+	       xlink:href="urn:PUL:bluemountain:dmd:bmtnaac_1887010101"/>
        </dmdSec>
        <fileSec>
 	 <fileGrp ID="IMGGRP" USE="Images"/>
@@ -178,12 +184,10 @@
     by hand.  Here is a sample:
     #+BEGIN_SRC xml -n
   <?xml version="1.0" encoding="UTF-8"?>
-  <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
-   xmlns="http://www.loc.gov/mods/v3">
-    <identifier type="bmtn">urn:PUL:bluemountain:bmtn003</identifier> <!-- (ref:identifier) -->
+  <mods xmlns="http://www.loc.gov/mods/v3">
+    <identifier type="bmtn">urn:PUL:bluemountain:bmtnaac</identifier> <!-- (ref:identifier) -->
     <recordInfo>
-      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn003</recordIdentifier> <!-- (ref:ridentifier) -->
+      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier> <!-- (ref:ridentifier) -->
       <recordContentSource authority="marcorg">NjP</recordContentSource>
       <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4939605</recordOrigin>
       <languageOfCataloging>
@@ -193,7 +197,7 @@
     
     <titleInfo>
       <nonSort>Le</nonSort>
-      <title>coeur à barbe</title>
+      <title>coeur à barbe</title>
       <subTitle>journal transparent</subTitle>
     </titleInfo>
     <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/73848255">
@@ -217,8 +221,8 @@
        	<placeTerm type="text">Paris</placeTerm>
       </place>
       <dateIssued>1922</dateIssued>
-      <dateIssued encoding="iso8601" point="start">1922--</dateIssued>
-      <dateIssued encoding="iso8601" point="end">1922--</dateIssued>
+      <dateIssued encoding="iso8601" point="start">1922</dateIssued>
+      <dateIssued encoding="iso8601" point="end">1922</dateIssued>
     </originInfo>
     <language>
       <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
@@ -241,9 +245,9 @@
        	urn:PUL:bluemountain:BMTNID
       #+END_EXAMPLE
 
-      Where the string /urn:PUL:bluemountain/ is constant (for all Blue
-      Mountain URNs) and BMTNID is the Blue Mountain project identifier of the
-      periodical.
+      Where the string /urn:PUL:bluemountain/ is constant (for all
+      Blue Mountain URNs) and /BMTNID/ is the Blue Mountain project
+      identifier of the periodical.
 
     - The MODS record also contains a <recordInfo> element, which
       provides a link back to the original OPAC record, as well as a
@@ -273,9 +277,9 @@
      title-level record /via/ a <relatedItem type='host'> element.
 
      #+BEGIN_SRC xml
-      <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtn003">
+      <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaac">
        	<recordInfo>
-	  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn003</recordIdentifier>
+	  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier>
        	</recordInfo>
       </relatedItem>
      #+END_SRC
@@ -318,6 +322,7 @@
 ****** articles
        Detailed rules to follow; in general, provide title, author,
        and extent.
+
 ****** editorials
        See articles.
 
@@ -397,6 +402,311 @@
 ** TEI
    To be described.  TEI transcriptions will be derived from METS/ALTO
    metadata. 
+
+* Specifications for METS/ALTO Production
+   See identifier-naming convention above; in the following section,
+   /pubid/ refers to the composed identifier /bmtnid_issueid/.
+
+** Directories and File Names
+*** Image Files
+    Image files shall be named /pubid_nnn.jp2/, where
+    - /pubid/ is the identifier of the issue
+    - /nnn/ is a three-digit number indicating the location of the
+      image file in the sequence of image files (not necessarily the
+      number printed on the page that has been photographed)
+    - /jp2/ is the conventional file extension for JPEG2000 files.
+
+    For example,
+    #+BEGIN_EXAMPLE
+    bmtnabk_1946090801_001.jp2
+    bmtnabk_1946090801_002.jp2
+    ...
+    #+END_EXAMPLE
+*** ALTO Files
+    ALTO files shall be named /pubid_nnn.alto.xml/, where
+    - /pubid/ is the identifier of the issue
+    - /nnn/ is a three-digit number corresponding to the sequence
+      number of the image file to which this ALTO file corresponds
+    - /alto/ indicates the schema used to encode the document
+    - /xml/ indicates the format of the file.
+
+    For example,
+    #+BEGIN_EXAMPLE
+    bmtnabk_1946090801_001.alto.xml
+    bmtnabk_1946090801_002.alto.xml
+    ...
+    #+END_EXAMPLE
+*** METS Files
+    METS files shall be named /pubid.mets.xml/, where
+    - /pubid/ is the identifier of the issue
+    - /mets/ indicates the schema used to encode the document
+    - /xml/ indicates the format of the file.
+    
+    For example,
+    #+BEGIN_EXAMPLE
+    bmtnabk_1946090801.mets.xml
+    #+END_EXAMPLE
+*** PDF Files
+    PDF files shall be named /pubid.pdf/, where
+    - /pubid/ is the identifier of the issue
+    - /pdf/ indicates the format of the file.
+    
+    For example,
+    #+BEGIN_EXAMPLE
+    bmtnabk_1946090801.pdf
+    #+END_EXAMPLE
+*** Directories
+    The files for an issue shall be stored in a single directory; this
+    directory shall be part of a filesystem hierarchy organized by
+    year, month, day, and issuance number.  For example, the files for
+    Vol. 1, No. 26 (dated September 8-14, 1946) would be stored in the
+    following file hierarchy:
+    #+BEGIN_EXAMPLE
+    bmtnabk/
+     1946/
+      09/
+       08_01/
+	bmtnabk_1946090801_001.alto.xml
+	bmtnabk_1946090801_001.jp2
+	bmtnabk_1946090801_002.alto.xml
+	bmtnabk_1946090801_002.jp2
+	bmtnabk_1946090801.mets.xml
+	bmtnabk_1946090801.pdf
+    #+END_EXAMPLE
+
+    For special issues, use the naming convention for special issues
+    indicated above.  For example,
+    #+BEGIN_EXAMPLE
+    bmtnabk/
+     1946_01/
+      bmtnabk_194601_001.alto.xml
+      bmtnabk_194601_001.jp2
+      bmtnabk_194601_002.alto.xml
+      bmtnabk_194601_002.jp2
+      bmtnabk_194601.mets.xml
+      bmtnabk_194601.pdf
+    #+END_EXAMPLE
+
+** Metadata Profiles
+*** METS
+     The metadata for each issue will be encapsulated in a METS
+     record.  A skeleton of such a record is the following:
+
+     #+BEGIN_SRC xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
+       TYPE="Newspaper"
+       OBJID="urn:PUL:periodicals:bmtnabk:bmtnabk_1946090801">
+       <metsHdr>
+	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+	       <name>Princeton University Library, Digital Initiatives</name>
+	   </agent>
+	   <metsDocumentID TYPE="URN">urn:PUL:periodicals:bmtnabk:td:bmtnabk_1946090801</metsDocumentID>
+       </metsHdr>
+       <dmdSec ID="dmd1">
+	  <!-- MODS record goes here -->
+       </dmdSec>
+       <fileSec>
+	 <fileGrp ID="IMGGRP" USE="Images"/>
+	 <fileGrp ID="ALTOGRP" USE="Text"/>
+       </fileSec>
+       <structMap TYPE="PHYSICAL">
+	   <div/>
+       </structMap>
+       <structMap TYPE="LOGICAL">
+	   <div/>
+       </structMap>
+   </mets>
+     #+END_SRC
+     Where
+     - /TYPE/ is the fixed string /Periodical/
+     - /OBJID/ is composed as follows:
+       #+BEGIN_EXAMPLE
+       PREFIX:PUBID
+       #+END_EXAMPLE
+       Where
+       - /PREFIX/ is the fixed string /urn:PUL:periodicals:bmtnabk/
+       - /PUBID/ is the issue identifier, computed using the rules
+	 above.
+**** <metsHdr>
+     The <metsHdr> element shall contain two elements
+***** <agent>
+      A constant value for all records:
+      #+BEGIN_SRC xml
+      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+       <name>Princeton University Library, Digital Initiatives</name>
+      </agent>
+      #+END_SRC
+***** <metsDocumentID TYPE="URN">
+      Composed as follows:
+      #+BEGIN_SRC xml
+      <recordIdentifier>PREFIX:PUBID</recordIdentifier>
+      #+END_SRC
+      Where /PREFIX/ is the following fixed value:
+      #+BEGIN_EXAMPLE
+      urn:PUL:periodicals:bmtnabk:td
+      #+END_EXAMPLE
+      and /PUBID/ is the issue identifier, computed using the rules
+      above.
+
+**** LABEL attributes
+     Use the <mods:caption> elements from the MODS record (described below)
+     for Volume and Issue numbers.
+
+**** Dates
+     Use the <mods:dateIssued> element /without/ the keydate attribute
+     for display dates.
+
+*** MODS
+    Descriptive metadata will be encoded for the contents of each
+    issue, so they may be searched and analyzed.
+**** <MODS:recordInfo>
+     The <MODS:recordInfo> element shall contain a <MODS:recordIdentifier>
+     subelement whose form is as follows:
+     #+BEGIN_SRC xml
+     <MODS:recordIdentifier>PREFIX:PUBID</MODS:recordIdentifier>
+     #+END_SRC
+     Where /PREFIX/ is the following fixed value:
+     #+BEGIN_EXAMPLE
+     urn:PUL:periodicals:dmd
+     #+END_EXAMPLE
+     and /PUBID/ is the issue identifier, computed using the rules
+     above.
+**** <MODS:identifier type="PUL">
+     The Princeton University Library identifier is a string composed
+     as follows:
+      #+BEGIN_EXAMPLE
+      PREFIX:PUBID
+      #+END_EXAMPLE
+     Where /PREFIX/ is the following fixed value:
+      #+BEGIN_EXAMPLE
+      urn:PUL:periodicals
+      #+END_EXAMPLE
+     and /PUBID/ is the issue identifier, computed using the rules
+     above.
+**** <MODS:titleInfo>
+     The <MODS:titleInfo> element shall be determined by standard
+     cataloging rules.
+     #+BEGIN_SRC xml
+     <MODS:titleInfo>
+      <MODS:title>Broom</MODS:title>
+     </MODS:titleInfo>
+     #+END_SRC
+**** <MODS:language>
+     The <MODS:language> element shall be determined by standard
+     from [[http://tools.ietf.org/html/rfc3066][rfc 3066]].
+     #+BEGIN_SRC xml
+     <MODS:language>
+      <MODS:languageTerm type="code" authority="rfc3066">en</MODS:languageTerm>
+     </MODS:language>
+     #+END_SRC
+**** <MODS:part>
+     The <MODS:part> element shall take the following form:
+     #+BEGIN_SRC xml
+     <MODS:part>
+      <MODS:detail type="volume">...</MODS:detail>
+      <MODS:detail type="issue">...</MODS:detail>
+     </MODS:part>
+     #+END_SRC
+***** <MODS:detail type="volume">
+      #+BEGIN_SRC xml
+       <MODS:detail type="volume">
+	<MODS:number>ARABICVOL</MODS:number>
+	<MODS:caption>Vol. MASTHEADVOL</MODS:caption>
+      </MODS:detail>
+      #+END_SRC
+      Where
+      - ARABICVOL is the volume number expressed as a non-formatted arabic numeral (e.g., 1, 2, 3,
+       ... 10, 11, ...)
+      - MASTHEADVOL is the volume number as it appears in the
+	masthead.
+***** <MODS:detail type="issue">
+      The <MODS:detail type="issue"> element shall take one of two possible
+      forms:
+      - For "normal" issues (i.e., those following the recorded
+	sequence of publication), record both the sequential number of
+	the issue as an arabic numeral and the issue number as it
+	appears in the masthead:
+	#+BEGIN_SRC xml
+	<MODS:detail type="issue">
+	 <MODS:number>ARABICISSUE</MODS:number>
+	 <MODS:caption>No. MASTHEADISSUE</MODS:caption>
+	</MODS:detail>
+	#+END_SRC
+	Where
+	- ARABICISSUE is the issue number expressed as a non-formatted arabic numeral
+	  (e.g., 1, 2, 3, ..., 10, 11, ...)
+	- MASTHEADISSUE is the volume number as it appears in the
+	  masthead. 
+      - For "special" issues (e.g., supplements, etc.), for which there is no sequential number for the
+	issue, the <MODS:detail type="issue"> element should take the
+	following form:
+	#+BEGIN_SRC xml
+	<MODS:detail type="issue">
+	 <MODS:caption>CAPTIONTEXT</MODS:caption>
+	</MODS:detail>
+	#+END_SRC
+	Where /CAPTIONTEXT/ is determined using standard cataloging rules.
+**** <MODS:originInfo>
+     The <MODS:originInfo> element shall be used to record the date of
+     issuance, as follows:
+     #+BEGIN_SRC xml
+     <MODS:originInfo>
+      <MODS:dateIssued>MASTHEADDATE</MODS:dateIssued>
+      <MODS:dateIssued encoding="iso8601" keyDate="yes">ISODATE</MODS:dateIssued>
+     </MODS:originInfo>
+     #+END_SRC
+     Where
+     - /MASTHEADDATE/ is the date as it appears in the masthead
+     - /ISODATE/ is the value of the date in the masthead, expressed
+       in iso8601 format (YYYY-MM-DD) -- see
+       http://www.w3.org/TR/NOTE-datetime for details.
+
+**** <MODS:relatedItem type="host">
+     Each issue-level MODS record shall be related to the title-level
+     record /via/ a <MODS:relatedItem type='host'> This element shall have
+     the following fixed value:
+     #+BEGIN_SRC xml
+       <MODS:relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:periodicals:bmtnabk">
+	 <MODS:recordInfo>
+	   <MODS:recordIdentifier>urn:PUL:periodicals:dmd:bmtnabk</MODS:recordIdentifier>
+	 </MODS:recordInfo>
+       </MODS:relatedItem>
+     #+END_SRC
+
+**** <MODS:relatedItem type="constituent">
+     Articles, Illustrations, and other identified sections of a
+     newspaper issue shall be encoded as <MODS:relatedItem
+     type="constituent"> elements in MODS:
+     #+BEGIN_SRC xml
+     <MODS:relatedItem type="constituent" ID="c01">
+      <MODS:titleInfo>
+       <MODS:title>Calendar of the Week</MODS:title>
+      </MODS:titleInfo>
+      <MODS:typeOfResource>text</MODS:typeOfResource>
+      <MODS:part>
+       <MODS:extent unit="pages">
+	<MODS:list>6-7</MODS:list>
+       </MODS:extent>
+      </MODS:part>
+     </MODS:relatedItem>
+     #+END_SRC
+     - The ID attribute on the <MODS:relatedItem> element may be any valid
+       XML ID (must begin with a character, etc.)
+     - The <MODS:title> is transcribed as it appears on the page.
+     - <MODS:TypeOfResource> should have a value of either /text/ or /still
+       image/ (for illustrations).
+     - The <MODS:extent> records the page or pages on which the item
+       appears:
+       - a single page number for an item that appears on only one page
+       - a range (n-m) for an item that appears on sequential pages
+       - a series (n; m) for an item that appears on non-sequential pages
+       - a combination of the above (e.g., /1-2; 5/ for an article
+	 that starts on page one, continues on page 2, and then skips
+	 to page 5).
+
 * Footnotes
 
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
