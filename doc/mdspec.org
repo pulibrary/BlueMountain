@@ -17,7 +17,7 @@
 ** Identifiers
    Each journal will be assigned a sequential /publication
    identifier/, which will take the form /bmtnNNN/, where NNN is a
-   hexavigesimal number (e.g., aaa, aab, aac, etc.)  This publication
+   hexavigesimal number (e.g., aaa, aab, aac, etc.).[fn:2]  This publication
    id will be maintained in a /project registry/, a file maintained
    with other administrative files.
 
@@ -271,7 +271,7 @@
 
 *** Issue-Level Description
     Descriptive metadata will be encoded for the contents of each
-    issue, so they may be searched and analyzed.
+    issue, so the issues may be searched and analyzed.
 **** The Issue-Level Record
      Each issue-level MODS record is related to the
      title-level record /via/ a <relatedItem type='host'> element.
@@ -287,54 +287,168 @@
      The xlink:href shows the semantic relation between the issue and
      its host; the <recordIdentifier> is a specific key to the
      title-level record.
-***** Issue Constituents
-      Traditional library cataloging does not extend to the contents
-      of periodicals, yet this level of description is precisely what
-      is required by scholars of periodicals[fn:1], and the Blue
-      Mountain Project is committed to providing it, as well as to
-      formulating guidelines, in cooperation with scholars and
-      librarians, for this level of description.  The specifications
-      for this description, therefore, must be considered work in
-      progress, work that will necessarily evolve over the course of
-      the Project.
+**** <MODS:recordInfo>
+     The <MODS:recordInfo> element shall contain a <MODS:recordIdentifier>
+     subelement whose form is as follows:
+     #+BEGIN_SRC xml
+     <MODS:recordIdentifier>PREFIX:PUBID</MODS:recordIdentifier>
+     #+END_SRC
+     Where /PREFIX/ is the following fixed value:
+     #+BEGIN_EXAMPLE
+     urn:PUL:periodicals:dmd
+     #+END_EXAMPLE
+     and /PUBID/ is the issue identifier, computed using the rules
+     above.
+**** <MODS:identifier type="PUL">
+     The Princeton University Library identifier is a string composed
+     as follows:
+      #+BEGIN_EXAMPLE
+      PREFIX:PUBID
+      #+END_EXAMPLE
+     Where /PREFIX/ is the following fixed value:
+      #+BEGIN_EXAMPLE
+      urn:PUL:periodicals
+      #+END_EXAMPLE
+     and /PUBID/ is the issue identifier, computed using the rules
+     above.
+**** <MODS:titleInfo>
+     The <MODS:titleInfo> element shall be determined by standard
+     cataloging rules.
+     #+BEGIN_SRC xml
+     <MODS:titleInfo>
+      <MODS:title>Broom</MODS:title>
+     </MODS:titleInfo>
+     #+END_SRC
+**** <MODS:language>
+     The <MODS:language> element shall be determined by standard
+     from [[http://tools.ietf.org/html/rfc3066][rfc 3066]].
+     #+BEGIN_SRC xml
+     <MODS:language>
+      <MODS:languageTerm type="code" authority="rfc3066">en</MODS:languageTerm>
+     </MODS:language>
+     #+END_SRC
+**** <MODS:part>
+     The <MODS:part> element shall take the following form:
+     #+BEGIN_SRC xml
+     <MODS:part>
+      <MODS:detail type="volume">...</MODS:detail>
+      <MODS:detail type="issue">...</MODS:detail>
+     </MODS:part>
+     #+END_SRC
+***** <MODS:detail type="volume">
+      #+BEGIN_SRC xml
+       <MODS:detail type="volume">
+	<MODS:number>ARABICVOL</MODS:number>
+	<MODS:caption>Vol. MASTHEADVOL</MODS:caption>
+      </MODS:detail>
+      #+END_SRC
+      Where
+      - ARABICVOL is the volume number expressed as a non-formatted arabic numeral (e.g., 1, 2, 3,
+       ... 10, 11, ...)
+      - MASTHEADVOL is the volume number as it appears in the
+	masthead.
+***** <MODS:detail type="issue">
+      The <MODS:detail type="issue"> element shall take one of two possible
+      forms:
+      - For "normal" issues (i.e., those following the recorded
+	sequence of publication), record both the sequential number of
+	the issue as an arabic numeral and the issue number as it
+	appears in the masthead:
+	#+BEGIN_SRC xml
+	<MODS:detail type="issue">
+	 <MODS:number>ARABICISSUE</MODS:number>
+	 <MODS:caption>No. MASTHEADISSUE</MODS:caption>
+	</MODS:detail>
+	#+END_SRC
+	Where
+	- ARABICISSUE is the issue number expressed as a non-formatted arabic numeral
+	  (e.g., 1, 2, 3, ..., 10, 11, ...)
+	- MASTHEADISSUE is the volume number as it appears in the
+	  masthead. 
+      - For "special" issues (e.g., supplements, etc.), for which there is no sequential number for the
+	issue, the <MODS:detail type="issue"> element should take the
+	following form:
+	#+BEGIN_SRC xml
+	<MODS:detail type="issue">
+	 <MODS:caption>CAPTIONTEXT</MODS:caption>
+	</MODS:detail>
+	#+END_SRC
+	Where /CAPTIONTEXT/ is determined using standard cataloging rules.
+**** <MODS:originInfo>
+     The <MODS:originInfo> element shall be used to record the date of
+     issuance, as follows:
+     #+BEGIN_SRC xml
+     <MODS:originInfo>
+      <MODS:dateIssued>MASTHEADDATE</MODS:dateIssued>
+      <MODS:dateIssued encoding="iso8601" keyDate="yes">ISODATE</MODS:dateIssued>
+     </MODS:originInfo>
+     #+END_SRC
+     Where
+     - /MASTHEADDATE/ is the date as it appears in the masthead
+     - /ISODATE/ is the value of the date in the masthead, expressed
+       in iso8601 format (YYYY-MM-DD) -- see
+       http://www.w3.org/TR/NOTE-datetime for details.
 
-      That being said, the Project will, at the outset, capture
-      information about the following sorts of constituents:
+**** <MODS:relatedItem type="host">
+     Each issue-level MODS record shall be related to the title-level
+     record /via/ a <MODS:relatedItem type='host'> This element shall have
+     the following fixed value:
+     #+BEGIN_SRC xml
+       <MODS:relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:periodicals:bmtnabk">
+	 <MODS:recordInfo>
+	   <MODS:recordIdentifier>urn:PUL:periodicals:dmd:bmtnabk</MODS:recordIdentifier>
+	 </MODS:recordInfo>
+       </MODS:relatedItem>
+     #+END_SRC
 
-      - traditional text content (articles, features, letters to the
-       	editor, etc.)
-      - significant illustrations (figures, tip-ins, etc.)
-      - advertisements
+**** Issue Constituents
+     Traditional library cataloging does not extend to the contents
+     of periodicals, yet this level of description is precisely what
+     is required by scholars of periodicals[fn:1], and the Blue
+     Mountain Project is committed to providing it, as well as to
+     formulating guidelines, in cooperation with scholars and
+     librarians, for this level of description.  The specifications
+     for this description, therefore, must be considered work in
+     progress, work that will necessarily evolve over the course of
+     the Project.
 
-      The last sort -- advertisements -- is the most controversial,
-      and the most difficult for librarians to understand, although
-      advertisements are among the most heavily studied parts of
-      historical periodicals.  There are at present no established
-      rules for describing advertisements, and their variety and
-      abundance pose serious practical challenges to projects with
-      limited resources.  This version of the specification,
-      therefore, provides little guidance on the description of
-      periodicals, other than providing a framework for this level of
-      detail to be created at a future date, by scholars, researchers,
-      and other students of the material who wish to advance
-      scholarship by enhancing the data provided here.
+     That being said, the Project will, at the outset, capture
+     information about the following sorts of constituents:
 
-****** articles
-       Detailed rules to follow; in general, provide title, author,
-       and extent.
+     - traditional text content (articles, features, letters to the
+       editor, etc.)
+     - significant illustrations (figures, tip-ins, etc.)
+     - advertisements
 
-****** editorials
-       See articles.
+     The last sort -- advertisements -- is the most controversial,
+     and the most difficult for librarians to understand, although
+     advertisements are among the most heavily studied parts of
+     historical periodicals.  There are at present no established
+     rules for describing advertisements, and their variety and
+     abundance pose serious practical challenges to projects with
+     limited resources.  This version of the specification,
+     therefore, provides little guidance on the description of
+     periodicals, other than providing a framework for this level of
+     detail to be created at a future date, by scholars, researchers,
+     and other students of the material who wish to advance
+     scholarship by enhancing the data provided here.
 
-****** illustrations
-       Where possible, provide creator.  If captioned, include as title.
+***** articles
+      Detailed rules to follow; in general, provide title, author,
+      and extent.
 
-****** correspondence (letters to the editor)
-       These are important components of periodicals: they often
-       reveal the lively exchange of opinion about important issues
-       among notable individuals.  Blue Mountain may not be able to
-       perform the research necessary to catalog all correspondence in
-       detail, but it will create a framework for future enhancement.
+***** editorials
+      See articles.
+
+***** illustrations
+      Where possible, provide creator.  If captioned, include as title.
+
+***** correspondence (letters to the editor)
+      These are important components of periodicals: they often
+      reveal the lively exchange of opinion about important issues
+      among notable individuals.  Blue Mountain may not be able to
+      perform the research necessary to catalog all correspondence in
+      detail, but it will create a framework for future enhancement.
 
 ** ALTO: Page-Level Description
    For each page, an encoded representation of the layout and the
@@ -497,7 +611,7 @@
    <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-       TYPE="Newspaper"
+       TYPE="METAe_Serial"
        OBJID="urn:PUL:periodicals:bmtnabk:bmtnabk_1946090801">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
@@ -521,7 +635,7 @@
    </mets>
      #+END_SRC
      Where
-     - /TYPE/ is the fixed string /Periodical/
+     - /TYPE/ is the fixed string /METAe_Serial/
      - /OBJID/ is composed as follows:
        #+BEGIN_EXAMPLE
        PREFIX:PUBID
@@ -560,125 +674,15 @@
      for display dates.
 
 *** MODS
-    Descriptive metadata will be encoded for the contents of each
-    issue, so they may be searched and analyzed.
-**** <MODS:recordInfo>
-     The <MODS:recordInfo> element shall contain a <MODS:recordIdentifier>
-     subelement whose form is as follows:
-     #+BEGIN_SRC xml
-     <MODS:recordIdentifier>PREFIX:PUBID</MODS:recordIdentifier>
-     #+END_SRC
-     Where /PREFIX/ is the following fixed value:
-     #+BEGIN_EXAMPLE
-     urn:PUL:periodicals:dmd
-     #+END_EXAMPLE
-     and /PUBID/ is the issue identifier, computed using the rules
-     above.
-**** <MODS:identifier type="PUL">
-     The Princeton University Library identifier is a string composed
-     as follows:
-      #+BEGIN_EXAMPLE
-      PREFIX:PUBID
-      #+END_EXAMPLE
-     Where /PREFIX/ is the following fixed value:
-      #+BEGIN_EXAMPLE
-      urn:PUL:periodicals
-      #+END_EXAMPLE
-     and /PUBID/ is the issue identifier, computed using the rules
-     above.
-**** <MODS:titleInfo>
-     The <MODS:titleInfo> element shall be determined by standard
-     cataloging rules.
-     #+BEGIN_SRC xml
-     <MODS:titleInfo>
-      <MODS:title>Broom</MODS:title>
-     </MODS:titleInfo>
-     #+END_SRC
-**** <MODS:language>
-     The <MODS:language> element shall be determined by standard
-     from [[http://tools.ietf.org/html/rfc3066][rfc 3066]].
-     #+BEGIN_SRC xml
-     <MODS:language>
-      <MODS:languageTerm type="code" authority="rfc3066">en</MODS:languageTerm>
-     </MODS:language>
-     #+END_SRC
-**** <MODS:part>
-     The <MODS:part> element shall take the following form:
-     #+BEGIN_SRC xml
-     <MODS:part>
-      <MODS:detail type="volume">...</MODS:detail>
-      <MODS:detail type="issue">...</MODS:detail>
-     </MODS:part>
-     #+END_SRC
-***** <MODS:detail type="volume">
-      #+BEGIN_SRC xml
-       <MODS:detail type="volume">
-	<MODS:number>ARABICVOL</MODS:number>
-	<MODS:caption>Vol. MASTHEADVOL</MODS:caption>
-      </MODS:detail>
-      #+END_SRC
-      Where
-      - ARABICVOL is the volume number expressed as a non-formatted arabic numeral (e.g., 1, 2, 3,
-       ... 10, 11, ...)
-      - MASTHEADVOL is the volume number as it appears in the
-	masthead.
-***** <MODS:detail type="issue">
-      The <MODS:detail type="issue"> element shall take one of two possible
-      forms:
-      - For "normal" issues (i.e., those following the recorded
-	sequence of publication), record both the sequential number of
-	the issue as an arabic numeral and the issue number as it
-	appears in the masthead:
-	#+BEGIN_SRC xml
-	<MODS:detail type="issue">
-	 <MODS:number>ARABICISSUE</MODS:number>
-	 <MODS:caption>No. MASTHEADISSUE</MODS:caption>
-	</MODS:detail>
-	#+END_SRC
-	Where
-	- ARABICISSUE is the issue number expressed as a non-formatted arabic numeral
-	  (e.g., 1, 2, 3, ..., 10, 11, ...)
-	- MASTHEADISSUE is the volume number as it appears in the
-	  masthead. 
-      - For "special" issues (e.g., supplements, etc.), for which there is no sequential number for the
-	issue, the <MODS:detail type="issue"> element should take the
-	following form:
-	#+BEGIN_SRC xml
-	<MODS:detail type="issue">
-	 <MODS:caption>CAPTIONTEXT</MODS:caption>
-	</MODS:detail>
-	#+END_SRC
-	Where /CAPTIONTEXT/ is determined using standard cataloging rules.
-**** <MODS:originInfo>
-     The <MODS:originInfo> element shall be used to record the date of
-     issuance, as follows:
-     #+BEGIN_SRC xml
-     <MODS:originInfo>
-      <MODS:dateIssued>MASTHEADDATE</MODS:dateIssued>
-      <MODS:dateIssued encoding="iso8601" keyDate="yes">ISODATE</MODS:dateIssued>
-     </MODS:originInfo>
-     #+END_SRC
-     Where
-     - /MASTHEADDATE/ is the date as it appears in the masthead
-     - /ISODATE/ is the value of the date in the masthead, expressed
-       in iso8601 format (YYYY-MM-DD) -- see
-       http://www.w3.org/TR/NOTE-datetime for details.
-
-**** <MODS:relatedItem type="host">
-     Each issue-level MODS record shall be related to the title-level
-     record /via/ a <MODS:relatedItem type='host'> This element shall have
-     the following fixed value:
-     #+BEGIN_SRC xml
-       <MODS:relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:periodicals:bmtnabk">
-	 <MODS:recordInfo>
-	   <MODS:recordIdentifier>urn:PUL:periodicals:dmd:bmtnabk</MODS:recordIdentifier>
-	 </MODS:recordInfo>
-       </MODS:relatedItem>
-     #+END_SRC
+    The Blue Mountain Project shall supply preliminary MODS records
+    for every issue to be encoded in METS/ALTO.  These records shall
+    adhere to the MODS profile detailed above.  METS/ALTO producers
+    shall be responsible for incorporating these MODS records /in
+    their entirety/ into the METS records they produce.
 
 **** <MODS:relatedItem type="constituent">
      Articles, Illustrations, and other identified sections of a
-     newspaper issue shall be encoded as <MODS:relatedItem
+     magazine shall be encoded as <MODS:relatedItem
      type="constituent"> elements in MODS:
      #+BEGIN_SRC xml
      <MODS:relatedItem type="constituent" ID="c01">
@@ -686,6 +690,9 @@
        <MODS:title>Calendar of the Week</MODS:title>
       </MODS:titleInfo>
       <MODS:typeOfResource>text</MODS:typeOfResource>
+      <MODS:language>
+       <MODS:languageTerm authority="iso639-2b">
+      </MODS:language>
       <MODS:part>
        <MODS:extent unit="pages">
 	<MODS:list>6-7</MODS:list>
@@ -698,6 +705,10 @@
      - The <MODS:title> is transcribed as it appears on the page.
      - <MODS:TypeOfResource> should have a value of either /text/ or /still
        image/ (for illustrations).
+     - The <MODS:languageTerm> values should be derived from the
+       ISO639-2 standard, found at
+       http://www.loc.gov/standards/iso639-2/.  The code form should
+       be used.
      - The <MODS:extent> records the page or pages on which the item
        appears:
        - a single page number for an item that appears on only one page
@@ -711,3 +722,6 @@
 
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
   Magazines: An Introduction/. New Haven: Yale University Press, 2010.
+
+[fn:2] This convention has been adopted to support naming conventions
+  in Veridian, which prohibit the use of integers in identifiers.
