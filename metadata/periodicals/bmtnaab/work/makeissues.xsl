@@ -16,10 +16,10 @@
 	  <xsl:matching-substring>
 	    <xsl:choose>
 	      <xsl:when test="string-length(regex-group(2)) &lt; 1">
-		<xsl:value-of select="concat($dateString, '-00')"/>
+		<xsl:value-of select="concat($dateString, '-00-00')"/>
 	      </xsl:when>
 	      <xsl:otherwise>
-		<xsl:value-of select="$dateString"/>
+		<xsl:value-of select="concat($dateString, '-00')"/>
 	      </xsl:otherwise>
 	    </xsl:choose>
 	  </xsl:matching-substring>
