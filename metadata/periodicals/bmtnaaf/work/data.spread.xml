@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Clifford Wulfman</LastAuthor>
+  <Created>2012-09-27T16:35:31Z</Created>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <Colors>
+   <Color>
+    <Index>0</Index>
+    <RGB>#FFFF00</RGB>
+   </Color>
+   <Color>
+    <Index>2</Index>
+    <RGB>#FF0000</RGB>
+   </Color>
+   <Color>
+    <Index>3</Index>
+    <RGB>#00FF00</RGB>
+   </Color>
+   <Color>
+    <Index>4</Index>
+    <RGB>#0000FF</RGB>
+   </Color>
+   <Color>
+    <Index>5</Index>
+    <RGB>#FFFF00</RGB>
+   </Color>
+   <Color>
+    <Index>6</Index>
+    <RGB>#FF00FF</RGB>
+   </Color>
+   <Color>
+    <Index>7</Index>
+    <RGB>#00FFFF</RGB>
+   </Color>
+   <Color>
+    <Index>8</Index>
+    <RGB>#800000</RGB>
+   </Color>
+   <Color>
+    <Index>9</Index>
+    <RGB>#008000</RGB>
+   </Color>
+   <Color>
+    <Index>10</Index>
+    <RGB>#000080</RGB>
+   </Color>
+   <Color>
+    <Index>11</Index>
+    <RGB>#808000</RGB>
+   </Color>
+   <Color>
+    <Index>12</Index>
+    <RGB>#800080</RGB>
+   </Color>
+   <Color>
+    <Index>16</Index>
+    <RGB>#9999FF</RGB>
+   </Color>
+   <Color>
+    <Index>17</Index>
+    <RGB>#993366</RGB>
+   </Color>
+   <Color>
+    <Index>18</Index>
+    <RGB>#FFFFCC</RGB>
+   </Color>
+   <Color>
+    <Index>19</Index>
+    <RGB>#CCFFFF</RGB>
+   </Color>
+   <Color>
+    <Index>20</Index>
+    <RGB>#660066</RGB>
+   </Color>
+   <Color>
+    <Index>21</Index>
+    <RGB>#FF8080</RGB>
+   </Color>
+   <Color>
+    <Index>22</Index>
+    <RGB>#0066CC</RGB>
+   </Color>
+   <Color>
+    <Index>23</Index>
+    <RGB>#CCCCFF</RGB>
+   </Color>
+   <Color>
+    <Index>24</Index>
+    <RGB>#000080</RGB>
+   </Color>
+   <Color>
+    <Index>25</Index>
+    <RGB>#FF00FF</RGB>
+   </Color>
+   <Color>
+    <Index>26</Index>
+    <RGB>#FFFF00</RGB>
+   </Color>
+   <Color>
+    <Index>27</Index>
+    <RGB>#00FFFF</RGB>
+   </Color>
+   <Color>
+    <Index>28</Index>
+    <RGB>#800080</RGB>
+   </Color>
+   <Color>
+    <Index>29</Index>
+    <RGB>#800000</RGB>
+   </Color>
+   <Color>
+    <Index>30</Index>
+    <RGB>#008080</RGB>
+   </Color>
+   <Color>
+    <Index>31</Index>
+    <RGB>#0000FF</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>17100</WindowHeight>
+  <WindowWidth>31760</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>120</WindowTopY>
+  <TabRatio>600</TabRatio>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font x:Family="Swiss"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="13" ss:ExpandedRowCount="100" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="103" ss:DefaultRowHeight="12.75">
+   <Row ss:Height="24">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Title (as appears on cover)</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Secondary Title</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Volume (integer)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Volume (caption)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Issue/number (integer)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Issue/number (caption)</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Date (yyyy-mm-dd)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Date as printed</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Extent (pages)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Scans </Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers? (yes/no)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Notes</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">le front et le collier de la victoire</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 1</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-04-15</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">15 avril 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">11</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 12); images on 6 &amp; 7 reshot together.</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Supplementary title or just issue theme?</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell><Data ss:Type="String">[None]</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 2</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-05-01</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">1er mai 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">11</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 12); images on 6 &amp; 7 reshot together.</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Dunkerque 1915....La tripe attente</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 3</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-05-15</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">15 mai 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">11</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 12); images on 6 &amp; 7 reshot together.</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">un bel élan mais ni tête ni bras</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 4</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-06-01</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">1er juin 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">11?</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 12); images on 6 &amp; 7 reshot together. </Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Le quadrille (1ère figure)</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 5</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-06-15</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">15 juin 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">11</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 12); images on 6 &amp; 7 reshot together.</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">La ronde va se fermet</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 6</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-07-01</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">1er juillet 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">11</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 12); images on 6 &amp; 7 reshot together.</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Reparait</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 7</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1915-12-15</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">14 décembre 1915</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">19</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 20); images on 8 &amp; 9, 14 &amp;15 reshot together.</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">l'élan</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">La situation dans les Balkans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">no 8</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">1916-01-00</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Janvier 1916</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">19</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Wrappers on front &amp; back cover (images 1 &amp; 20); images on 6 &amp; 7, 10 &amp;11, 16 &amp;17, 18&amp;19 reshot together.</Data></Cell>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12">
+    <Cell ss:Index="7" ss:StyleID="s23"/>
+    <Cell ss:Index="9" ss:StyleID="s23"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>12</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
