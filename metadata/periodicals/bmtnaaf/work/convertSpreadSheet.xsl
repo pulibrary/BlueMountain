@@ -81,7 +81,7 @@
 
             <xsl:variable name="filename">
                 <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"
+                    select="concat('/opt/local/BlueMountain/metadata/periodicals/', $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"
                 />
             </xsl:variable>
 
@@ -137,8 +137,9 @@
 
             <xsl:variable name="filename">
                 <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
+                    select="concat('/opt/local/BlueMountain/metadata/periodicals/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
                 />
+
             </xsl:variable>
             <xsl:result-document href="{$filename}">
                 <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -178,13 +179,13 @@
                     <part type="issue">
 
 		      <xsl:choose>
-			<xsl:when test="$volume or $volumeCaption">
+			<xsl:when test="($volume != '0') or ($volumeCaption != '0')">
                         <detail type="volume">
 			  <xsl:if test="$volume and $volume &gt; 0">
 			    <number><xsl:value-of select="$volume"/></number>			    
 			  </xsl:if>
 			  <xsl:if test="$volumeCaption and $volumeCaption != 0">
-			    <number><xsl:value-of select="$volumeCaption"/></number>			    
+			    <caption><xsl:value-of select="$volumeCaption"/></caption>
 			  </xsl:if>
 			</detail>
 			</xsl:when>
@@ -197,7 +198,7 @@
 			    <number><xsl:value-of select="$issueno"/></number>			    
 			  </xsl:if>
 			  <xsl:if test="$issueCaption">
-			    <number><xsl:value-of select="$issueCaption"/></number>			    
+			    <caption><xsl:value-of select="$issueCaption"/></caption>
 			  </xsl:if>
 			</detail>
 			</xsl:when>

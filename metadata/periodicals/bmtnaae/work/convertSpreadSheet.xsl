@@ -81,7 +81,7 @@
 
             <xsl:variable name="filename">
                 <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"
+                    select="concat('/opt/local/BlueMountain/metadata/periodicals/', $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"
                 />
             </xsl:variable>
 
@@ -137,7 +137,7 @@
 
             <xsl:variable name="filename">
                 <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
+                    select="concat('/opt/local/BlueMountain/metadata/periodicals/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
                 />
             </xsl:variable>
             <xsl:result-document href="{$filename}">
@@ -152,43 +152,47 @@
                     </identifier>
                     <typeOfResource>text</typeOfResource>
                     <genre>Periodicals-Issue</genre>
+
+		    <titleInfo type="uniform">
+		      <title>Dada (Zurich, Switzerland)</title>
+		    </titleInfo>
                     <titleInfo>
                         <title>
                             <xsl:value-of select="$title"/>
                         </title>
                         <subTitle>
-                            <xsl:value-of select="$secondtitle"/>
+                            <xsl:value-of select="normalize-space($secondtitle)"/>
                         </subTitle>
                     </titleInfo>
 
 
                     <part type="issue">
-
 		      <xsl:choose>
-			<xsl:when test="$volume or $volumeCaption">
+			<xsl:when test="($volume != '0') or ($volumeCaption != '0')">
                         <detail type="volume">
-			  <xsl:if test="$volume">
+			  <xsl:if test="$volume and $volume &gt; 0">
 			    <number><xsl:value-of select="$volume"/></number>			    
 			  </xsl:if>
-			  <xsl:if test="$volumeCaption">
-			    <number><xsl:value-of select="$volumeCaption"/></number>			    
+			  <xsl:if test="$volumeCaption and $volumeCaption != 0">
+			    <caption><xsl:value-of select="$volumeCaption"/></caption>
 			  </xsl:if>
 			</detail>
 			</xsl:when>
 		      </xsl:choose>
 
 		      <xsl:choose>
-			<xsl:when test="issueno or $issueCaption">
+			<xsl:when test="($issueno != '0') or ($issueCaption != '0')">
                         <detail type="number">
 			  <xsl:if test="$issueno">
 			    <number><xsl:value-of select="$issueno"/></number>			    
 			  </xsl:if>
 			  <xsl:if test="$issueCaption">
-			    <number><xsl:value-of select="$issueCaption"/></number>			    
+			    <caption><xsl:value-of select="$issueCaption"/></caption>
 			  </xsl:if>
 			</detail>
 			</xsl:when>
 		      </xsl:choose>
+
 
                       <extent unit="pages">
                         <list>
