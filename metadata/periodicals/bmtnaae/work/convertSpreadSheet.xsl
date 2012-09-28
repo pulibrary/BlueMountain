@@ -40,7 +40,7 @@
 		<xsl:otherwise>00</xsl:otherwise>
 	      </xsl:choose>
 	    </xsl:variable>
-	    <xsl:value-of select="concat($year, '-', $month, '-', $day, '-00')"/>
+	    <xsl:value-of select="concat($year, '-', $month, '-', $day, '-01')"/>
 	  </xsl:matching-substring>
 	  <xsl:non-matching-substring>
 	    <xsl:message terminate="yes" select="concat($dateString, ' does not match.')"/>
