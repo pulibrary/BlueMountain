@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="magazineInventory">
+            <element name="title">
+                <ref name="titleType"/>
+            </element>
+            <oneOrMore>
+                <element name="issue">
+                    <ref name="issueType"/>
+                </element>
+            </oneOrMore>
+        </element>
+
+    </start>
+    
+    <define name="titleType">
+        <element name="primaryTitle">
+            <text/>
+        </element>
+        <zeroOrMore>
+            <element name="secondaryTitle">
+                <text/>
+            </element>
+        </zeroOrMore>
+    </define>
+
+    <define name="issueType">
+
+
+        <element name="volume">
+            <ref name="volumeDesignator" />
+        </element>
+    </define>
+    
+    
+
+    <define name="volumeDesignator">
+        <zeroOrMore>
+            <element name="caption">
+                <text/>
+            </element>
+        </zeroOrMore>
+        <zeroOrMore>
+            <element name="number">
+                <text/>
+            </element>
+        </zeroOrMore>
+    </define>
+</grammar>

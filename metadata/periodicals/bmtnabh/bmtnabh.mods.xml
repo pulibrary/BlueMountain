@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabh</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabh</recordIdentifier>       
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>
+      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=1951502
+    </recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <titleInfo>
+    <nonSort>La</nonSort>
+    <title>Revue musicale</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Welter, H.</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Paris</placeTerm>
+    </place>
+    <publisher>H. Welter</publisher>
+    <dateIssued encoding="marc" point="start">1902</dateIssued>
+    <dateIssued encoding="marc" point="end">1912</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>11 v. ; 27 cm.</extent>
+  </physicalDescription>
+  <note type="date/sequential designation">
+    2. année, no 10 (oct. 1902)-12. année, no 1 (1. janv. 1912).
+  </note>
+  <relatedItem type="preceding">
+    <titleInfo>
+      <title>Revue d'histoire et de critique musicales</title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="succeeding">
+    <titleInfo>
+      <title>Revue musicale S.I.M. (Paris, France : 1912)</title>
+    </titleInfo>
+  </relatedItem>
+  <!--
+      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
+  -->
+  <location>
+    <physicalLocation type="text">
+      <!-- FILL ME IN. Princeton University. Library. ... -->
+    </physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+	<subLocation>svl</subLocation>
+	<!-- DELETE COPY NUMBER BELOW -->
+	<shelfLocator>1 ML5 .R35</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+</mods>

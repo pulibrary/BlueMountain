@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabd</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabd</recordIdentifier>       
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=86</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <titleInfo>
+    <title>Dalibor</title>
+  </titleInfo>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">V Praze</placeTerm>
+    </place>
+    <publisher>Robert Veit</publisher>
+    <dateIssued>1858-</dateIssued>
+    <dateIssued encoding="marc" point="start">1858</dateIssued>
+    <dateIssued encoding="marc" point="end">9999</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">cze</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>v. : ill., music ; 27 cm.</extent>
+  </physicalDescription>
+  <note type="date/sequential designation">Roč. 1, čís. 1 (říj. 1858)-</note>
+  <note>Imprint varies.</note>
+  <subject authority="lcsh">
+    <topic>Music</topic>
+    <topic>Periodicals</topic>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Music</topic>
+    <geographic>Czechoslovakia</geographic>
+    <topic>Periodicals</topic>
+  </subject>
+  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+  <location>
+    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>svl</subLocation>
+        <!--DELETE COPY NUMBER BELOW-->
+        <shelfLocator>1 ML5 .D198</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+</mods>

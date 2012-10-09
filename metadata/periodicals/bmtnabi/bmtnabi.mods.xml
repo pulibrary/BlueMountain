@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabi</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabi</recordIdentifier>       
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>
+      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2510441
+    </recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  
+  <titleInfo>
+    <title>
+      Niederrheinische musik-zeitung fur kunstfreunde und kunstler
+    </title>
+  </titleInfo>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Cologne</placeTerm>
+    </place>
+    <dateIssued encoding="marc" point="start">1uuu</dateIssued>
+    <dateIssued encoding="marc" point="end">uuuu</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>v.</extent>
+  </physicalDescription>
+  <note>Editor; Ludwig Bischoff.</note>
+  <!--
+      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
+  -->
+  <location>
+    <physicalLocation type="text">
+      <!-- FILL ME IN. Princeton University. Library. ... -->
+    </physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+	<subLocation>svl</subLocation>
+	<!-- DELETE COPY NUMBER BELOW -->
+	<shelfLocator>1 ML5 .N55</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+</mods>

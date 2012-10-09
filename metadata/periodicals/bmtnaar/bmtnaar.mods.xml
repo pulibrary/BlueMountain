@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaar</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaar</recordIdentifier>       
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=563971</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  
+  
+  <titleInfo>
+    <title>East &amp; West</title>
+  </titleInfo>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="rbgenr">Little magazines</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">New York</placeTerm>
+    </place>
+    <publisher>William Aspenwell Bradley and George Sidney Hellman.</publisher>
+    <dateIssued encoding="marc" point="start">18uu</dateIssued>
+    <dateIssued encoding="marc" point="end">9999</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+  <location>
+    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>ex</subLocation>
+        <!--DELETE COPY NUMBER BELOW-->
+        <shelfLocator>1 LM (Little Magazine)</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+</mods>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaag</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaag</recordIdentifier>
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=5332913</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  
+  <titleInfo>
+    <title>Klingen</title>
+  </titleInfo>
+  <typeOfResource>text</typeOfResource>
+  <originInfo script="Latn">
+    <place>
+      <placeTerm type="text">København</placeTerm>
+    </place>
+    <publisher>Klingens redaktion</publisher>
+    <dateIssued>1917-1942</dateIssued>
+    <dateIssued encoding="marc" point="start">1917</dateIssued>
+    <dateIssued encoding="marc" point="end">1942</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">dan</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>4 v. : ill. 27-41 cm.</extent>
+  </physicalDescription>
+  <note type="date/sequential designation">1. aarg. 1 (1917)-3. aarg. (1920).</note>
+  <note>Imprint varies for [Aarg. 4]: Fischers.</note>
+  <note type="numbering">An unnumbered vol. was published in 1942.</note>
+  <subject authority="lcsh">
+    <topic>Art</topic>
+    <genre>Periodicals</genre>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Art</topic>
+    <geographic>Scandinavia</geographic>
+    <genre>Periodicals</genre>
+  </subject>
+  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+  <location>
+    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>sax</subLocation>
+        <!--DELETE COPY NUMBER BELOW-->
+        <shelfLocator>N6.5 .K546q</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+</mods>

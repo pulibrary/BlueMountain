@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 file:../schemas/mods.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaac</identifier>
+    <recordInfo>
+      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier>
+        <recordContentSource authority="marcorg">NjP</recordContentSource>
+        <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6425485</recordOrigin>
+        <languageOfCataloging>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+
+    <titleInfo>
+        <nonSort>La </nonSort>
+        <title>Cité</title>
+        <subTitle>urbanisme, architecture, art public : revue mensuelle</subTitle>
+    </titleInfo>
+    <titleInfo type="alternative">
+        <title>Tekhné</title>
+    </titleInfo>
+    <titleInfo type="alternative">
+        <title>Cité et Tekhné juillet 1929-juin 1930</title>
+    </titleInfo>
+    <titleInfo type="alternative">
+        <title>Cité &amp;Tekhné août 1930-</title>
+    </titleInfo>
+    <name type="corporate">
+        <namePart>Société belge des urbanistes et architectes modernistes</namePart>
+    </name>
+    <typeOfResource>text</typeOfResource>
+    <originInfo script="Latn">
+        <place>
+            <placeTerm type="text">Bruxelles</placeTerm>
+        </place>
+        <publisher>Tekhné</publisher>
+        <dateIssued>1919-</dateIssued>
+        <dateIssued encoding="marc" point="start">1919</dateIssued>
+        <dateIssued encoding="marc" point="end">1935</dateIssued>
+    </originInfo>
+    <language>
+        <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+    </language>
+    <physicalDescription>
+        <extent>v. : ill. ; 26 cm.</extent>
+    </physicalDescription>
+    <note type="date/sequential designation">1er anneé, no 1 (juillet 1919)-</note>
+    <note>Ceased in 1935?</note>
+    <note>Organ of the Société belge des urbanistes et architectes modernistes.</note>
+    <note>Tekhné forms a separately numbered and paged supplement beginning with v. 6, no 1 (juillet 1926).</note>
+    <subject authority="lcsh">
+        <topic>City planning</topic>
+        <geographic>Belgium</geographic>
+        <genre>Periodicals</genre>
+    </subject>
+    <subject authority="lcsh">
+        <topic>Architecture</topic>
+        <geographic>Belgium</geographic>
+        <genre>Periodicals</genre>
+    </subject>
+    <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+    <location>
+        <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+        <holdingSimple>
+            <copyInformation>
+                <subLocation>sax</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>NA1 .C57</shelfLocator>
+            </copyInformation>
+        </holdingSimple>
+    </location>
+</mods>
