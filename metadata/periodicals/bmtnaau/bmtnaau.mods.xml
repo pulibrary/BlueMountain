@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mods xmlns="http://www.loc.gov/mods/v3"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
+  xmlns="http://www.loc.gov/mods/v3">
   <identifier type="bmtn">urn:PUL:bluemountain:bmtnaau</identifier>
   <recordInfo>
-    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaau</recordIdentifier>       
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaau</recordIdentifier>
     <recordContentSource authority="marcorg">NjP</recordContentSource>
     <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2005411</recordOrigin>
     <languageOfCataloging>
       <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
     </languageOfCataloging>
   </recordInfo>
-  
+
   <titleInfo>
     <nonSort>The</nonSort>
     <title>mask</title>
@@ -37,9 +37,9 @@
     <extent>15 v. : ill. ; 22-23 cm.</extent>
   </physicalDescription>
   <note type="date/sequential designation">Vol. 1, no. 1 (Mar. 1908)-v. 15, no. 4 (Oct.-Nov.-Dec. 1929).</note>
-  <note>Title from caption.</note>
-  <note>Editor: Edward Gordon Craig.</note>
-  <note>Subtitle varies.</note>
+  <note>Title from caption</note>
+  <note>Editor: Edward Gordon Craig</note>
+  <note>Subtitle varies</note>
   <note type="numbering">Publication suspended, Aug. 1914-Apr. 1915; May 1915-Mar. 25, 1918; May 1919-Aug. 1923.</note>
   <note type="numbering">Issues for 1927 (v. 13) called v. 12 bis on cover.</note>
   <note type="additional physical form">Issued also on microfilm from University Microfilms International.</note>
@@ -88,4 +88,62 @@
       </copyInformation>
     </holdingSimple>
   </location>
+  <relatedItem type="constituent">
+    <part type="issue">
+      <detail type="volume">
+        <caption>Vol. One</caption>
+        <number>1</number>
+      </detail>
+      <detail type="number">
+        <caption>No.1</caption>
+        <number>1</number> 
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>March 1908</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1908-03</dateIssued>
+    </originInfo>
+    <location>
+      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
+      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+      <holdingSimple>
+        <copyInformation>
+          <subLocation>beac</subLocation>
+          <shelfLocator>1 3010.621q</shelfLocator>
+        </copyInformation>
+      </holdingSimple>
+    </location>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <part type="issue">
+      <detail type="volume">
+        <caption>Vol. One</caption>
+        <number>1</number>
+      </detail>
+      <detail type="number">
+        <caption>No.2</caption>
+        <number>2</number> 
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 1908</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1908-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <part type="issue">
+      <detail type="volume">
+        <caption>Vol. One</caption>
+        <number>1</number>
+      </detail>
+      <detail type="number">
+        <caption>No.2</caption>
+        <number>2</number> 
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 1908</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1908-04</dateIssued>
+    </originInfo>
+  </relatedItem>
 </mods>
