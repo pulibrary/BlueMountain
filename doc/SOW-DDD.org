@@ -1,0 +1,74 @@
+* Project Summary
+  Digital Divide Data (DDD) will produce metadata and machine-readable
+  text from digital page images of 35 periodical titles in METS/ALTO
+  format, to specifications supplied by Princeton University Library
+  (PUL).
+
+* Scope of Work
+  35 journals published 1848-1923 (c. 3,500 issues; c. 46,000 pages)
+  in English, German, French (80%) and Italian, Dutch, Danish,
+  Hungarian, Czech and Russian (20%).  See document X for a detailed
+  listing of titles with page estimates for each.
+
+* Deliverables
+  For each issue of each magazine, DDD will deliver the following
+  files:
+  - One METS XML file for each issue conforming to METS schema version
+    1.8 (http://www.loc.gov/standards/mets/version18/mets.xsd);
+  - One MODS XML file for each issue conforming to MODS schema version
+    3.4 (http://www.loc.gov/mods/v3/mods-3-4.xsd);
+  - One ALTO XML file for each page conforming to ALTO schema version
+    2.0 (http://www.loc.gov/standards/alto/alto-v2.0.xsd);
+  - One JPEG2000 image file for each page;
+  - One PDF file with bookmarks for each issue.
+
+* Procedures
+  - PUL will produce, for each magazine title and issue, minimal
+    descriptive metadata encoded in the MODS schema
+    (http://www.loc.gov/mods/v3).  These metadata will be stored and
+    managed in a git repository (see Reference Document X for guidance
+    in the use of git).  DDD will use the Blue Mountain git repository
+    to manage all metadata it augments and produces.
+
+  - PUL will provide, via DDD's FTP server, the images for each issue
+    to be processed.  The images shall be JPEG 2000 files, and the
+    delivery format shall be Bagit.
+
+  - DDD will augment the issue-level metadata with metadata about
+    the issue's constituent parts, as described in Reference Document
+    X.
+
+* Applicable Standards
+  - METS schema version 1.8
+  - MODS schema version 3.4
+  - ALTO schema version 2.0
+
+  See Reference Document X for metadata profiles and specifications
+  for METS, MODS, and ALTO production.  All work produced in this
+  project shall conform with those specifications.
+
+
+* Responsibilities
+
+** PUL
+   - For each title:
+     - A preliminary MODS record for each issue to be processed.
+     - For each non-English title, guidelines for identifying
+       headlines, zones, and continuations
+     - A set of JPEG 2000 files
+
+* Acceptance Criteria
+
+* Period of Performance
+  All work will be completed before July 1, 2014.
+
+* Deliverables Schedule
+
+
+
+* Payment Schedule
+
+* Reference Documents
+  - Listing of Blue Mountain Titles to be Processed by DDD under this Contract
+  - Blue Mountain Metadata Specification
+  - How to Use Git with Blue Mountain Files
