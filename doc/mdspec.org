@@ -146,13 +146,15 @@
 *** Issue-Level
      The metadata for each issue will be encapsulated in a METS
      record.  A skeleton of such a record is the following:
+     
      #+BEGIN_SRC xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-       TYPE="METAe_Serial"
-       OBJID="urn:PUL:bluemountain:bmtnaac_1887010101">
+     <?xml version="1.0" encoding="UTF-8"?>
+     <mets xmlns="http://www.loc.gov/METS/"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
+           TYPE="METAe_Serial"
+           OBJID="urn:PUL:bluemountain:bmtnaac_1887-01-01-01">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
 	       <name>Princeton University Library, Digital Initiatives</name>
@@ -173,7 +175,7 @@
        <structMap TYPE="LOGICAL">
 	   <div/>
        </structMap>
-    </mets>
+     </mets>
      #+END_SRC
 ** MODS
 *** Title-Level Description
