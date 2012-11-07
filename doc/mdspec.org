@@ -13,9 +13,14 @@
 #+LINK_UP:   
 #+LINK_HOME: 
 #+XSLT:
+* Introduction
+  This document details the standards and conventions used for
+  creating and storing metadata for the Blue Mountain Project.  It is
+  intended for use by Blue Mountain staff, contributors, vendors, and
+  others involved in the production and use of this data.
 * General Organization
 ** Identifiers
-   Each journal /title/ will be assigned a sequential /publication
+   Each journal /title/ [fn:3] will be assigned a sequential /publication
    identifier/, which will take the form /bmtnNNN/, where NNN is a
    hexavigesimal number (e.g., aaa, aab, aac, etc.).[fn:2]  This publication
    id will be maintained in a /project registry/, a file maintained
@@ -84,7 +89,8 @@
   - issues :: one or more issues, each of which entails the following:
     - preservation-quality images :: high-quality TIFF files ('master
          TIFFs'), produced according to local best practices and in
-         conformance with the FADGI standards.
+         conformance with the FADGI standards
+         (http://www.digitizationguidelines.gov/guidelines/digitize-technical.html).
     - generative image derivatives :: more manageable forms of the
          master TIFFs, meant to serve as the source for online
          deliverables, etc.  Encoded in the JPEG2000 format, according
@@ -588,7 +594,7 @@
       1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 \
       75,0.0625,0.05,0.04419,0.03716,0.03125,0.025,0.0221,0.01858,0.015625 \
       Clevels=6 Stiles={1024,1024} Corder=RLCP
-   #+END_EXAMPLE
+   #+End_EXAMPLE
 ** TEI
    To be described.  TEI transcriptions will be derived from METS/ALTO
    metadata. 
@@ -761,28 +767,41 @@
      magazine shall be encoded as <MODS:relatedItem
      type="constituent"> elements in MODS:
      #+BEGIN_SRC xml
-     <MODS:relatedItem type="constituent" ID="c01">
-      <MODS:titleInfo>
-       <MODS:title>Calendar of the Week</MODS:title>
-      </MODS:titleInfo>
-      <MODS:typeOfResource>text</MODS:typeOfResource>
-      <MODS:language>
-       <MODS:languageTerm authority="iso639-2b">
-      </MODS:language>
-      <MODS:part>
-       <MODS:extent unit="pages">
-	<MODS:list>6-7</MODS:list>
-       </MODS:extent>
-      </MODS:part>
-     </MODS:relatedItem>
+     <relatedItem type="constituent" ID="c02">
+        <titleInfo lang="fre">
+          <title>Vélodrome aux oignons</title>
+        </titleInfo>
+        <name type="personal">
+          <displayForm>Tristan TZARA</displayForm>
+          <role>
+            <roleTerm>cre</roleTerm>
+          </role>
+        </name>
+        <typeOfResource>text</typeOfResource>
+        <language>
+          <languageTerm authority="iso639-2b">fre</languageTerm>
+        </language>
+        <part>
+          <extent unit="pages">
+            <start>2</start>
+          </extent>
+        </part>
+      </relatedItem>
      #+END_SRC
      - The ID attribute on the <MODS:relatedItem> element may be any valid
-       XML ID (must begin with a character, etc.)
+       XML ID (must begin with a character, etc.).  By convention, the
+       ID will begin with the letter "c" followed by a two- or
+       three-digit sequential number.
      - The <MODS:title> is transcribed as it appears on the page.
      - <MODS:TypeOfResource> should have a value of either /text/ or /still
        image/ (for illustrations).
-     - The <MODS:languageTerm> values should be derived from the
-       ISO639-2 standard, found at
+     - The <MODS:name> element is transcribed as it appears on the
+       page and encoded in the <MODS:displayForm> element.  All
+       <MODS:name> elements shall include a <MODS:role> element, which
+       shall designated the generic role, /cre/, in the
+       <MODS:roleTerm> subelement.
+     - The <MODS:languageTerm> values should be three-letter codes
+       derived from the ISO639-2 standard, found at
        http://www.loc.gov/standards/iso639-2/.  The code form should
        be used.
      - The <MODS:extent> records the page or pages on which the item
@@ -794,10 +813,15 @@
 	 that starts on page one, continues on page 2, and then skips
 	 to page 5).
 
-* Footnotes
 
+* The Parts of a Magazine
+
+* Footnotes
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
   Magazines: An Introduction/. New Haven: Yale University Press, 2010.
 
 [fn:2] This convention has been adopted to support naming conventions
   in Veridian, which prohibit the use of integers in identifiers.
+
+[fn:3] /Title/ refers to the journal or magazine as a whole, as
+  opposed to discrete volumes or issues.
