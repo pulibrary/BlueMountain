@@ -1,23 +1,1428 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.loc.gov/METS/"
-      xmlns:local="http://diglib.princeton.edu"
-      xmlns:mods="http://www.loc.gov/mods/v3"
-      TYPE="METAe_Serial"
-      OBJID="urn:PUL:bluemountain:bmtnaae_1920-03-00-01">
-   <metsHdr>
-      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-         <name>Princeton University Library, Digital Initiatives</name>
-      </agent>
-   </metsHdr>
-   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaae_1920-03-00-01</metsDocumentID>
-   <dmdSec ID="dmd1">
-      <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/mods+xml"
-             xlink:href="urn:PUL:bluemountain:dmd:bmtnaae_1920-03-00-01"/>
-   </dmdSec>
-   <structMap TYPE="PHYSICAL">
-      <div/>
-   </structMap>
-   <structMap TYPE="LOGICAL">
-      <div/>
-   </structMap>
+<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ ../../../../schemas/mets.xsd http://www.loc.gov/mods/v3 ../../../../schemas/mods.xsd"
+      xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3"
+      TYPE="METAe_Serial" OBJID="urn:PUL:bluemountain:bmtnaae_1920-03-00-01">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaae_1920-03-00-01</metsDocumentID>
+  </metsHdr>
+  
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+        <mods xmlns="http://www.loc.gov/mods/v3">
+          <recordInfo>
+            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaae_1920-03-00-01</recordIdentifier>
+          </recordInfo>
+          <identifier type="bmtn">urn:PUL:bluemountain:bmtnaae_1920-03-00-01</identifier>
+          <typeOfResource>text</typeOfResource>
+          <genre>Periodicals-Issue</genre>
+          <titleInfo type="uniform">
+            <title>Dada (Zurich, Switzerland)</title>
+          </titleInfo>
+          <titleInfo>
+            <title>Dada</title>
+            <subTitle>DadaPhone</subTitle>
+          </titleInfo>
+          <part type="issue">
+            <detail type="number">
+              <number>7</number>
+              <caption>No. 7</caption>
+            </detail>
+            <extent unit="pages">
+	      <list>7</list>
+	    </extent>
+            <extent unit="pageimages">
+	      <total>8</total>
+	    </extent>
+          </part>
+          <originInfo>
+            <dateIssued>Mars 1920</dateIssued>
+            <dateIssued keyDate="yes" encoding="w3cdtf">1920-03-00</dateIssued>
+          </originInfo>
+          <relatedItem type="host" xlink:type="simple"
+                       xlink:href="urn:PUL:bluemountain:bmtnaae">
+            <recordInfo>
+              <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaae</recordIdentifier>
+            </recordInfo>
+          </relatedItem>
+	  
+	  
+          <relatedItem type="constituent" ID="c01">
+            <titleInfo lang="fre">
+              <title>Dame!</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Francis Picabia</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>still image</typeOfResource>
+            <genre>art</genre>
+            <part>
+              <extent unit="pages">
+		<start>1</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c02">
+            <titleInfo lang="fre">
+              <title>Vélodrome aux oignons</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Tristan TZARA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+            <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000002</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c03">
+            <titleInfo lang="fre">
+              <nonSort>La</nonSort>
+              <title>queue du diable est une bcyclette</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Tristan TZARA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000002</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c04">
+            <titleInfo lang="fre">
+              <title>Artichauts</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Georges RIBEMON-DESSAIGNES</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000002</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c05">
+            <titleInfo lang="fre">
+              <title>Philippe SOUPAULT</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000002</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c06">
+            <titleInfo lang="fre">
+              <title>Manifeste Cannibale Dada</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Francis PICABIA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000003</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c07">
+            <titleInfo lang="fre">
+              <nonSort>Un</nonSort>
+              <title>Mot Dur - No 58</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Paul ELUARD</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000003</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c08">
+            <titleInfo lang="fre">
+              <title>TRISTAN TZARA</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000003</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c09">
+            <titleInfo lang="fre">
+              <title>Pièce Fausse</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>ANDRÉ BRETON</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000003</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c11">
+            <titleInfo lang="fre">
+              <title>PAUL DERMÉE</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000003</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c12">
+            <titleInfo lang="fre">
+              <title>-ô-</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Georges RIBEMONT-DESSAIGNES</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c13">
+            <titleInfo lang="fre">
+              <title>Barrière</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>André BRETON</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <name type="personal">
+	      <displayForm>Philippe SOUPAULT</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>[Untitled]</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Paul DERMÉE</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c16">
+            <titleInfo lang="fre">
+              <title>PAUL ELUARD</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>[Untitled]</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Francis PICABIA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c17">
+            <titleInfo lang="fre">
+              <title>Fiche</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Louis ARAGON</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c18">
+            <titleInfo lang="fre">
+              <title>G. RIBEMONT-DESSAIGNES</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000004</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c19">
+            <titleInfo lang="fre">
+              <title>Louange de l'olivier</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Jean COCTEAU</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000005</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+	  
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>[Advertisement]</title>
+            </titleInfo>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000005</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>[Untitled]</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Tristan TZARA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <typeOfResource>text</typeOfResource>
+	    <genre>advertisement</genre>
+            <part>
+              <extent unit="pageimages">
+		<start>00000005</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c20">
+            <titleInfo lang="fre">
+              <title>Zut</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Paul DERMÈE</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000005</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c21">
+            <titleInfo lang="fre">
+              <nonSort>la</nonSort>
+              <title>fibre s'enflamme et les pyramides</title>
+              <subTitle>(très vite)</subTitle>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>J. EVOLA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000005</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c22">
+            <titleInfo lang="fre">
+              <title>Céline ARNAUD</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000005</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+	  
+          <relatedItem type="constituent" ID="c24">
+            <titleInfo lang="fre">
+              <title>Monsieur Aa soumis à la taxe</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Tristan TZARA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>[Advertisement]</title>
+            </titleInfo>
+	    <genre>advertisement</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>André BRETON</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>[Untitled]</title>
+            </titleInfo>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c30">
+            <titleInfo lang="fre">
+              <title>Salle de Spectacles: Paris - Electric=Palace</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Louis ARAGON</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+	    <genre>content</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>[Untitled]</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Jacques EDWARDS</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c32">
+            <titleInfo lang="fre">
+              <title>Louis ARAGON</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000006</start>
+	      </extent>
+            </part>
+          </relatedItem>	  
+	  
+          <relatedItem type="constituent" ID="c33">
+            <titleInfo lang="fre">
+              <title>ARP et VAL SERNER dans le crocrodrarium royal de Londres</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Christian SCHAD</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c34">
+            <titleInfo lang="fre">
+              <nonSort>Les</nonSort>
+              <title>Titres de mes amis &amp; les miens</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Paul Draule</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c35">
+            <titleInfo lang="fre">
+              <title>Serrure de Sureté</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Louis ARAGON</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c36">
+            <titleInfo lang="fre">
+              <title>Plis</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Paul ELUARD</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>[Untitled]</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>EZRA POUND</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">eng</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>[Untitled]</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Francis PICABIA</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c39">
+            <titleInfo lang="fre">
+              <title>FRANCIS PICABIA</title>
+            </titleInfo>
+            <typeOfResource>still image</typeOfResource>
+            <part>
+              <extent unit="pageimages">
+		<start>00000007</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c40">
+            <titleInfo>
+              <title>Énigme-Personnages</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Céline ARNAULD</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000008</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent" ID="c41">
+            <titleInfo>
+              <title>Trains</title>
+            </titleInfo>
+            <name type="personal">
+	      <displayForm>Philippe SOUPAULT</displayForm>
+	      <role>
+		<roleTerm>cre</roleTerm>
+	      </role>
+	    </name>
+	    <genre>content</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">eng</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000008</start>
+	      </extent>
+            </part>
+          </relatedItem>
+	  
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>[Advertisements]</title>
+            </titleInfo>
+	    <genre>advertisement</genre>
+            <typeOfResource>text</typeOfResource>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <part>
+              <extent unit="pageimages">
+		<start>00000008</start>
+	      </extent>
+            </part>
+          </relatedItem>
+        </mods>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  <structMap TYPE="PHYSICAL">
+    <div ID="DIVP1" LABEL="Dada" TYPE="Magazine" DMDID="DMD1">
+      <div ID="DIVP2" ORDER="1" ORDERLABEL="1" TYPE="COVER_PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00001"/>
+	    <area FILEID="ALTO00001" BETYPE="IDREF" BEGIN="P1"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP3" ORDER="2" ORDERLABEL="2" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00002"/>
+	    <area FILEID="ALTO00002" BETYPE="IDREF" BEGIN="P2"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP4" ORDER="3" ORDERLABEL="3" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00003"/>
+	    <area FILEID="ALTO00003" BETYPE="IDREF" BEGIN="P3"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP5" ORDER="4" ORDERLABEL="4" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00004"/>
+	    <area FILEID="ALTO00004" BETYPE="IDREF" BEGIN="P4"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP6" ORDER="5" ORDERLABEL="5" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00005"/>
+	    <area FILEID="ALTO00005" BETYPE="IDREF" BEGIN="P5"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP7" ORDER="6" ORDERLABEL="6" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00006"/>
+	    <area FILEID="ALTO00006" BETYPE="IDREF" BEGIN="P6"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP8" ORDER="7" ORDERLABEL="7" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00007"/>
+	    <area FILEID="ALTO00007" BETYPE="IDREF" BEGIN="P7"/>
+	  </par>
+	</fptr>
+      </div>
+      <div ID="DIVP9" ORDER="8" ORDERLABEL="8" TYPE="PAGE">
+	<fptr>
+	  <par>
+	    <area FILEID="IMG00008"/>
+	    <area FILEID="ALTO00008" BETYPE="IDREF" BEGIN="P8"/>
+	  </par>
+	</fptr>
+      </div>
+    </div>
+  </structMap>
+
+  <structMap TYPE="LOGICAL">
+    <div TYPE="Magazine" LABEL="Dada">
+      <div TYPE="Issue" LABEL="DadaPhone No. 7">
+        <div TYPE="art" LABEL="Dame!" DMDID="c01">
+	  <div ID="DIVL11" TYPE="HEADING">
+	    <div ID="DIVL12" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00005"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL13" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00006"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL14" TYPE="BODY">
+	    <div ID="DIVL15" TYPE="ILLUSTRATION" ORDER="1" DMDID="MODSMD_PICT1" LABEL="Untitled">
+	      <div ID="DIVL16" TYPE="IMAGE">
+		<fptr>
+		  <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
+		</fptr>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+        <div TYPE="article" LABEL="Vélodrome aux oignons" DMDID="c02">
+	  <div ID="DIVL18" TYPE="HEADING">
+	    <div ID="DIVL19" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL20" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00002"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL21" TYPE="BODY">
+	    <div ID="DIVL22" TYPE="BODY_CONTENT">
+	      <div ID="DIVL23" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL24" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="La queue du diable est une bcyclette" DMDID="c03">
+	  <div ID="DIVL26" TYPE="HEADING">
+	    <div ID="DIVL27" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL28" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00005"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL29" TYPE="BODY">
+	    <div ID="DIVL30" TYPE="BODY_CONTENT">
+	      <div ID="DIVL31" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL32" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00006"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Artichauts" DMDID="c04">
+	  <div ID="DIVL34" TYPE="HEADING">
+	    <div ID="DIVL35" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL36" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00008"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL37" TYPE="BODY">
+	    <div ID="DIVL38" TYPE="BODY_CONTENT">
+	      <div ID="DIVL39" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL40" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00009"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Manifeste Cannibale Dada" DMDID="c06">
+	  <div ID="DIVL47" TYPE="HEADING">
+	    <div ID="DIVL48" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL49" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00002"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL50" TYPE="BODY">
+	    <div ID="DIVL51" TYPE="BODY_CONTENT">
+	      <div ID="DIVL52" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL53" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Un Mot Dur - No 58" DMDID="c07">
+	  <div ID="DIVL55" TYPE="HEADING">
+	    <div ID="DIVL56" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL57" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL58" TYPE="BODY">
+	    <div ID="DIVL59" TYPE="BODY_CONTENT">
+	      <div ID="DIVL60" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL61" TYPE="TEXT">
+		  <fptr>
+		    <seq>
+		      <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00006"/>
+		      <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
+		      <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00008"/>
+		      <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00009"/>
+		      <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00010"/>
+		    </seq>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Pièce Fausse" DMDID="c09">
+	  <div ID="DIVL68" TYPE="HEADING">
+	    <div ID="DIVL69" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00012"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL70" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00013"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL71" TYPE="BODY">
+	    <div ID="DIVL72" TYPE="BODY_CONTENT">
+	      <div ID="DIVL73" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL74" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00014"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="-ô-" DMDID="c12">
+	  <div ID="DIVL86" TYPE="HEADING">
+	    <div ID="DIVL87" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL88" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL89" TYPE="BODY">
+	    <div ID="DIVL90" TYPE="BODY_CONTENT">
+	      <div ID="DIVL91" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL92" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Barrière" DMDID="c13">
+	  <div ID="DIVL94" TYPE="HEADING">
+	    <div ID="DIVL95" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL96" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00005"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL97" TYPE="BODY">
+	    <div ID="DIVL98" TYPE="BODY_CONTENT">
+	      <div ID="DIVL99" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL100" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00006"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Fiche" DMDID="c17">
+	  <div ID="DIVL121" TYPE="HEADING">
+	    <div ID="DIVL122" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00013"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL123" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00014"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL124" TYPE="BODY">
+	    <div ID="DIVL125" TYPE="BODY_CONTENT">
+	      <div ID="DIVL126" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL127" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00015"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Louange de l'olivier" DMDID="c19">
+	  <div ID="DIVL134" TYPE="HEADING">
+	    <div ID="DIVL135" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL136" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00002"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL137" TYPE="BODY">
+	    <div ID="DIVL138" TYPE="BODY_CONTENT">
+	      <div ID="DIVL139" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL140" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00003"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Zut" DMDID="c20">
+	  <div ID="DIVL142" TYPE="HEADING">
+	    <div ID="DIVL143" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00004"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL144" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL145" TYPE="BODY">
+	    <div ID="DIVL146" TYPE="BODY_CONTENT">
+	      <div ID="DIVL147" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL148" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00006"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="la fibre s'enflamme et les pyramides" DMDID="c21">
+	  <div ID="DIVL150" TYPE="HEADING">
+	    <div ID="DIVL151" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00007"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL152" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00008"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL153" TYPE="BODY">
+	    <div ID="DIVL154" TYPE="BODY_CONTENT">
+	      <div ID="DIVL155" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL156" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00009"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Monsieur Aa soumis à la taxe" DMDID="c24">
+	  <div ID="DIVL170" TYPE="HEADING">
+	    <div ID="DIVL171" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL172" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00002"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL173" TYPE="BODY">
+	    <div ID="DIVL174" TYPE="BODY_CONTENT">
+	      <div ID="DIVL175" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL176" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Salle de Spectacles: Paris - Electric=Palace" DMDID="c30">
+	  <div ID="DIVL213" TYPE="HEADING">
+	    <div ID="DIVL214" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00014"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL215" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00015"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL216" TYPE="BODY">
+	    <div ID="DIVL217" TYPE="BODY_CONTENT">
+	      <div ID="DIVL218" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL219" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00016"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="ARP et VAL SERNER dans le crocrodrarium royal de Londres" DMDID="c33">
+	  <div ID="DIVL233" TYPE="BODY">
+	    <div ID="DIVL234" TYPE="BODY_CONTENT">
+	      <div ID="DIVL235" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL236" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	    <div ID="DIVL237" TYPE="ILLUSTRATION" ORDER="1" DMDID="MODSMD_PICT10" LABEL="Christian SCHAD (Genève)">
+	      <div ID="DIVL238" TYPE="IMAGE">
+		<fptr>
+		  <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
+		</fptr>
+	      </div>
+	      <div ID="DIVL239" TYPE="CAPTION">
+		<fptr>
+		  <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00002"/>
+		</fptr>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Les Titres de mes amis &amp; les miens" DMDID="c34">
+	  <div ID="DIVL241" TYPE="HEADING">
+	    <div ID="DIVL242" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL243" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00004"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL244" TYPE="BODY">
+	    <div ID="DIVL245" TYPE="BODY_CONTENT">
+	      <div ID="DIVL246" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL247" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00005"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Serrure de Sureté" DMDID="c35">
+	  <div ID="DIVL249" TYPE="HEADING">
+	    <div ID="DIVL250" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00006"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL251" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00007"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL252" TYPE="BODY">
+	    <div ID="DIVL253" TYPE="BODY_CONTENT">
+	      <div ID="DIVL254" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL255" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00008"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Plis" DMDID="c36">
+	  <div ID="DIVL257" TYPE="HEADING">
+	    <div ID="DIVL258" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00009"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL259" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00010"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL260" TYPE="BODY">
+	    <div ID="DIVL261" TYPE="BODY_CONTENT">
+	      <div ID="DIVL262" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL263" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00011"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Énigme-Personnages" DMDID="c40">
+	  <div ID="DIVL285" TYPE="HEADING">
+	    <div ID="DIVL286" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL287" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00002"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL288" TYPE="BODY">
+	    <div ID="DIVL289" TYPE="BODY_CONTENT">
+	      <div ID="DIVL290" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL291" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00003"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div TYPE="article" LABEL="Trains" DMDID="c41">
+	  <div ID="DIVL293" TYPE="HEADING">
+	    <div ID="DIVL294" TYPE="TITLE">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00004"/>
+	      </fptr>
+	    </div>
+	    <div ID="DIVL295" TYPE="AUTHOR">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00005"/>
+	      </fptr>
+	    </div>
+	  </div>
+	  <div ID="DIVL296" TYPE="BODY">
+	    <div ID="DIVL297" TYPE="BODY_CONTENT">
+	      <div ID="DIVL298" TYPE="PARAGRAPH" ORDER="1">
+		<div ID="DIVL299" TYPE="TEXT">
+		  <fptr>
+		    <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00006"/>
+		  </fptr>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </structMap>
 </mets>
