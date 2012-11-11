@@ -17,6 +17,27 @@
       omit-xml-declaration="yes"
       indent="yes" />
 
+  <xsl:function name="local:displayform">
+    <xsl:param name="mrec" />
+
+      <xsl:variable name="link">
+	<xsl:value-of select="concat('catalog/',
+			      substring-after($mrec/mods:identifier[@type='bmtn'],
+			      'urn:PUL:bluemountain:'))"/>
+      </xsl:variable>
+
+      <xsl:variable name="title" select="$mrec/mods:titleInfo[empty(@type)]" as="element()"/>
+
+      <xsl:variable name="titlestring">
+	<xsl:if test="$title/mods:nonSort">
+	  <xsl:value-of select="$title/mods:nonSort"/>
+	  <xsl:text> </xsl:text>
+	</xsl:if>
+	<xsl:value-of select="normalize-space($title/mods:title)"/>
+      </xsl:variable>
+      <a href="{$link}"><xsl:value-of select="$titlestring"/></a>
+  </xsl:function>
+  
   <xsl:template match="/">
     <html lang="en">
       <head>
@@ -43,24 +64,14 @@
 	      <p>sidebar</p>
 	    </div>
 	    <div class="span10">
-	      	
+	      
 	      <p>Listing <xsl:value-of select="results/@count"/> document(s).</p>	
-		  <ol>
-		  	<xsl:for-each select="results/mods:mods">
-		  		<xsl:sort select="upper-case(normalize-space(mods:titleInfo[empty(@type)]/mods:title))" />
-		  		<xsl:variable name="link">
-		  			<xsl:value-of select="concat('catalog/', substring-after(mods:identifier[@type='bmtn'], 'urn:PUL:bluemountain:'))"/>
-		  		</xsl:variable>
-		  		<li><a href="{$link}">
-		  			<xsl:if test="mods:titleInfo[empty(@type)]/mods:nonSort">
-		  				<xsl:value-of select="mods:titleInfo[empty(@type)]/mods:nonSort"/>
-		  				<xsl:text> </xsl:text>
-		  			</xsl:if>
-		  			<xsl:value-of select="normalize-space(mods:titleInfo[empty(@type)]/mods:title)"/>
-		  		</a></li>
-		  	</xsl:for-each>
-		  </ol>
-
+	      <ol>
+		<xsl:for-each select="results/mods:mods">
+		  <xsl:sort select="upper-case(normalize-space(mods:titleInfo[empty(@type)]/mods:title))" />
+		  <li><xsl:sequence select="local:displayform(.)"/></li>
+		</xsl:for-each>
+	      </ol>
 	    </div>
 	  </div>
 	</div>
@@ -69,15 +80,7 @@
       </body>
     </html>
   </xsl:template>
-
-  <xsl:template match="results">
-  		<ol>
-
-  			
-  		</ol>
-    <xsl:apply-templates select="mods:mods"/>
-  </xsl:template>
-
+  
   <xsl:template match="mods:mods">
     <xsl:for-each select="mods:titleInfo[empty(@type)]">
       <xsl:sort select="mods:title"/>
@@ -93,5 +96,5 @@
       </a></li>
     </xsl:for-each>
   </xsl:template>
-
+  
 </xsl:stylesheet>
