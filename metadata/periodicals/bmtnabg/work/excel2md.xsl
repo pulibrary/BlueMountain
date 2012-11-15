@@ -12,14 +12,39 @@
 
     <xsl:variable name="bmtnid" as="xs:string">bmtnabg</xsl:variable>
 
-    <!-- Obsolete? -->
-    <xsl:function name="local:issueID">
+    <xsl:variable name="pathroot" as="xs:string">/tmp</xsl:variable>
+
+
+    <xsl:function name="local:issueIDasVolIssue">
       <xsl:param name="bmtnID" as="xs:string"/>
       <xsl:param name="volString" as="xs:integer"/>
       <xsl:param name="issueString" as="xs:string"/>
       <xsl:value-of select="concat($bmtnID, '_', format-number($volString, '00'), '-', $issueString)"/>
     </xsl:function>
 
+    <xsl:function name="local:issueID">
+      <xsl:param name="bmtnID" as="xs:string"/>
+      <xsl:param name="keyDate" as="xs:string" />
+      <xsl:param name="issueString" as="xs:string"/>
+
+      <xsl:value-of select="concat($bmtnID, '_', $keyDate, '_', format-number(xs:integer($issueString), '00'))"/>
+    </xsl:function>
+
+    <xsl:function name="local:pathname">
+      <xsl:param name="bmtnID" as="xs:string"/>
+      <xsl:param name="keyDate" as="xs:string" />
+      <xsl:param name="issueString" as="xs:string"/>
+
+      <xsl:value-of select="concat(
+			    $pathroot,
+			    '/',
+			    $bmtnID,
+			    '/issues/',
+			    replace($keyDate, '-', '/'),
+			    '_',
+			    format-number(xs:integer($issueString), '00')
+			    )"/>
+    </xsl:function>
 
     <xsl:template match="ss:Workbook">
       <xsl:apply-templates select="ss:Worksheet/ss:Table/ss:Row" mode="mods"/>
@@ -40,17 +65,26 @@
             <xsl:variable name="issuenoLabel" select="ss:Cell[6]/ss:Data"/>
             <xsl:variable name="keyDate" select="ss:Cell[7]/ss:Data"/>
             <xsl:variable name="dateLabel" select="ss:Cell[8]/ss:Data"/>
+            <xsl:variable name="veridianIssue" select="ss:Cell[9]/ss:Data"/>
+
+	    <xsl:variable name="keyDateString">
+	      <xsl:choose>
+		<xsl:when test="$keyDate/@ss:Type = 'DateTime'">
+		  <xsl:value-of select="substring-before($keyDate, 'T')"/>
+		</xsl:when>
+		<xsl:otherwise><xsl:value-of select="$keyDate"/></xsl:otherwise>
+	      </xsl:choose>
+	    </xsl:variable>
 
             <xsl:variable name="basename">
-                <xsl:value-of select="local:issueID($bmtnid, $volume, $issueno)"/>
+                <xsl:value-of select="local:issueID($bmtnid, $keyDateString, $veridianIssue)"/>
             </xsl:variable>
 
-            <xsl:variable name="filename">
-                <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/', $basename, '/', $basename, '.mets.xml' )"/>
-            </xsl:variable>
+	    <xsl:variable name="filename" select="concat($basename, '.mets.xml')" as="xs:string" />
 
-            <xsl:result-document href="{$filename}">
+	    <xsl:variable name="filepath" select="concat(local:pathname($bmtnid, $keyDateString, $veridianIssue), '/', $filename)" as="xs:string"/>
+
+            <xsl:result-document href="{$filepath}">
                 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
                     TYPE="Periodical-Issue" OBJID="urn:PUL:bluemountain:{$basename}">
                     <metsHdr>
@@ -86,17 +120,26 @@
             <xsl:variable name="issuenoLabel" select="ss:Cell[6]/ss:Data"/>
             <xsl:variable name="keyDate" select="ss:Cell[7]/ss:Data"/>
             <xsl:variable name="dateLabel" select="ss:Cell[8]/ss:Data"/>
+            <xsl:variable name="veridianIssue" select="ss:Cell[9]/ss:Data"/>
+
+	    <xsl:variable name="keyDateString">
+	      <xsl:choose>
+		<xsl:when test="$keyDate/@ss:Type = 'DateTime'">
+		  <xsl:value-of select="substring-before($keyDate, 'T')"/>
+		</xsl:when>
+		<xsl:otherwise><xsl:value-of select="$keyDate"/></xsl:otherwise>
+	      </xsl:choose>
+	    </xsl:variable>
 
             <xsl:variable name="basename">
-                <xsl:value-of select="local:issueID($bmtnid, $volume, $issueno)"/>
+                <xsl:value-of select="local:issueID($bmtnid, $keyDateString, $veridianIssue)"/>
             </xsl:variable>
 
-            <xsl:variable name="filename">
-                <xsl:value-of
-                    select="concat('/tmp/', $bmtnid, '/issues/', $basename, '/', $basename, '.mods.xml' )"/>
-            </xsl:variable>
+	    <xsl:variable name="filename" select="concat($basename, '.mods.xml')" as="xs:string" />
 
-            <xsl:result-document href="{$filename}">
+	    <xsl:variable name="filepath" select="concat(local:pathname($bmtnid, $keyDateString, $veridianIssue), '/', $filename)" as="xs:string"/>
+
+            <xsl:result-document href="{$filepath}">
                 <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <recordInfo>
                         <recordIdentifier>
@@ -133,7 +176,8 @@
                         <xsl:value-of select="$dateLabel"/>
                       </dateIssued>
 		      <dateIssued keyDate="yes" encoding="w3cdtf">
-                        <xsl:value-of select="$keyDate"/>
+
+                        <xsl:value-of select="$keyDateString"/>
                       </dateIssued>
 
                     </originInfo>
