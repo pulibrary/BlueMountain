@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-      TYPE="METAe_Serial"
-      OBJID="urn:PUL:bluemountain:bmtnaad_1922-04_01">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+  TYPE="METAe_Serial" OBJID="urn:PUL:bluemountain:bmtnaad_1922-04_01">
   <metsHdr>
     <agent ROLE="CREATOR" TYPE="ORGANIZATION">
       <name>Princeton University Library, Digital Initiatives</name>
@@ -12,12 +11,451 @@
   </metsHdr>
   <dmdSec ID="dmd1">
     <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/mods+xml"
-           xlink:href="urn:PUL:bluemountain:dmd:bmtnaad_1922-04_01"/>
+      xlink:href="urn:PUL:bluemountain:dmd:bmtnaad_1922-04_01"/>
   </dmdSec>
+  <dmdSec ID="dmd2">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd"
+          xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <recordInfo>
+            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaad_1922-04_01</recordIdentifier>
+          </recordInfo>
+
+          <identifier type="bmtn">urn:PUL:bluemountain:bmtnaad_1922-04_01</identifier>
+
+          <titleInfo>
+            <nonSort>Le</nonSort>
+            <title>coeur à barbe</title>
+            <subTitle>journal transparent</subTitle>
+          </titleInfo>
+          <part type="issue">
+            <text>Avril 1922</text>
+            <detail type="number">
+              <caption>Avril 1922</caption>
+            </detail>
+          </part>
+          <originInfo>
+            <dateIssued>Avril 1922</dateIssued>
+            <dateIssued keyDate="yes" encoding="iso8601">1922-04</dateIssued>
+          </originInfo>
+
+          <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaad">
+            <recordInfo>
+              <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaad</recordIdentifier>
+            </recordInfo>
+          </relatedItem>
+
+          <relatedItem type="constituent" ID="c01">
+            <titleInfo lang="fre">
+              <title>Pour Faire Pousser Le Coeur</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Eluard</displayForm>
+            <role>
+                <roleTerm type="code">cre</roleTerm>
+            </role>
+        </name>
+            <name type="personal">
+            <displayForm>Ribemont-Dessaignes</displayForm>
+            <role>
+                <roleTerm type="code">cre</roleTerm>
+            </role>
+        </name>
+            <name type="personal">
+            <displayForm>Tzara</displayForm>
+            <role>
+                <roleTerm type="code">cre</roleTerm>
+            </role>
+        </name>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>Office de la Domesticité</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Erik SATIE</displayForm>
+            <role>
+                <roleTerm type="code">cre</roleTerm>
+            </role>
+        </name>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>Th. FRAENKEL</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>TROCCI</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo lang="fre">
+              <title>Vol-au-Vent</title>
+            </titleInfo>
+            <genre>editorial</genre>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <relatedItem type="constituent">
+              <name type="personal">
+                <displayForm>Vincent HUIDOBRO</displayForm>
+                <role>
+                    <roleTerm type="code">cre</roleTerm>
+                </role>
+            </name>
+            </relatedItem>
+            <relatedItem type="constituent">
+              <name type="personal">
+                <displayForm>Th. FRAENKEL</displayForm>
+                <role>
+                    <roleTerm type="code">cre</roleTerm>
+                </role>
+            </name>
+            </relatedItem>
+            <relatedItem type="constituent">
+              <name type="personal">
+                <displayForm>Benjamin PÉRET</displayForm>
+                <role>
+                    <roleTerm>cre</roleTerm>
+                </role>
+            </name>
+            </relatedItem>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Artichauts Nouveaux</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Georges RIBEMONT-DESSAIGNES</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>Philippe SOUPAULT</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <nonSort>Les</nonSort>
+              <title>Bonnes Relations</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Paul ELUARD</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Cahiers d'un mammifère</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Erik SATIE</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>Rrose SÉLAVY</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>SERNER</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>André BRETON</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>Tristan TZARA</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <name type="personal">
+            <displayForm>Matthew JOSEPHSON</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">eng</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Lachez tout</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Le Responsable</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <!-- Anonymous, untitled, 3-line segment here. -->
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>New-York Opening</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Matthew JOSEPHSON</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">eng</languageTerm>
+            </language>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Tickets de seconde</title>
+            </titleInfo>
+            <name type="personal">
+            <displayForm>Tristan TZARA</displayForm>
+            <role>
+                <roleTerm>cre</roleTerm>
+            </role>
+        </name>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Informations</title>
+            </titleInfo>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+            <genre>editorial</genre>
+          </relatedItem>
+
+          <relatedItem type="constituent">
+            <titleInfo>
+              <title>Dernière Heure</title>
+            </titleInfo>
+            <language>
+              <languageTerm authority="iso639-2b">fre</languageTerm>
+            </language>
+
+            <genre>editorial</genre>
+          </relatedItem>
+        </mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <fileSec>
+    <fileGrp ID="IMGGRP" USE="Images">
+      <file ID="IMG00001" CREATED="2012-11-09T16:05:34" MIMETYPE="image/tiff" SEQ="1"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="39356477">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-1.tif"/>
+      </file>
+      <file ID="IMG00002" CREATED="2012-11-09T16:05:38" MIMETYPE="image/tiff" SEQ="2"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="34875455">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-2.tif"/>
+      </file>
+      <file ID="IMG00003" CREATED="2012-11-09T16:05:42" MIMETYPE="image/tiff" SEQ="3"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="34403851">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-3.tif"/>
+      </file>
+      <file ID="IMG00004" CREATED="2012-11-09T16:05:45" MIMETYPE="image/tiff" SEQ="4"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="35049873">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-4.tif"/>
+      </file>
+      <file ID="IMG00005" CREATED="2012-11-09T16:05:47" MIMETYPE="image/tiff" SEQ="5"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="33564083">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-5.tif"/>
+      </file>
+      <file ID="IMG00006" CREATED="2012-11-09T16:05:50" MIMETYPE="image/tiff" SEQ="6"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="35646165">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-6.tif"/>
+      </file>
+      <file ID="IMG00007" CREATED="2012-11-09T16:05:54" MIMETYPE="image/tiff" SEQ="7"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="36235103">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-7.tif"/>
+      </file>
+      <file ID="IMG00008" CREATED="2012-11-09T16:05:59" MIMETYPE="image/tiff" SEQ="8"
+        CHECKSUM="c046c66065b338a381c6c952aa8a7a45" CHECKSUMTYPE="MD5" SIZE="39279514">
+        <FLocat LOCTYPE="URL" xlink:href="file://./StdImage/bmtnaad_1920-04-00-01-8.tif"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="ALTOGRP" USE="Text">
+      <file ID="ALTO00001" CREATED="2012-11-09T16:06:00" MIMETYPE="text/xml"
+        CHECKSUM="4362f90830d0f49eef4dfa57e00f2188" CHECKSUMTYPE="MD5" SIZE="13024">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0001.xml"/>
+      </file>
+      <file ID="ALTO00002" CREATED="2012-11-09T16:06:02" MIMETYPE="text/xml"
+        CHECKSUM="035c4aa1f06fc1d4a22a9499060684f5" CHECKSUMTYPE="MD5" SIZE="75570">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0002.xml"/>
+      </file>
+      <file ID="ALTO00003" CREATED="2012-11-09T16:06:02" MIMETYPE="text/xml"
+        CHECKSUM="eec033cc53c366191cbb0a471d5861b8" CHECKSUMTYPE="MD5" SIZE="104895">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0003.xml"/>
+      </file>
+      <file ID="ALTO00004" CREATED="2012-11-09T16:06:02" MIMETYPE="text/xml"
+        CHECKSUM="df5e10cea66730aace8b885130381b66" CHECKSUMTYPE="MD5" SIZE="85869">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0004.xml"/>
+      </file>
+      <file ID="ALTO00005" CREATED="2012-11-09T16:06:03" MIMETYPE="text/xml"
+        CHECKSUM="76fca2702d6a6a693726e96a52ff7d9e" CHECKSUMTYPE="MD5" SIZE="76338">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0005.xml"/>
+      </file>
+      <file ID="ALTO00006" CREATED="2012-11-09T16:06:03" MIMETYPE="text/xml"
+        CHECKSUM="d740fb30086c5723592b1b419d07e1a2" CHECKSUMTYPE="MD5" SIZE="66493">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0006.xml"/>
+      </file>
+      <file ID="ALTO00007" CREATED="2012-11-09T16:06:03" MIMETYPE="text/xml"
+        CHECKSUM="05f8db140e1c812ca8462d546b4b0b3c" CHECKSUMTYPE="MD5" SIZE="99477">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0007.xml"/>
+      </file>
+      <file ID="ALTO00008" CREATED="2012-11-09T16:06:04" MIMETYPE="text/xml"
+        CHECKSUM="2287299aeca49a8d1365d6d3386cc86c" CHECKSUMTYPE="MD5" SIZE="102211">
+        <FLocat LOCTYPE="URL" xlink:href="file://./Alto/bmtnaad_1920-04-00-01-Alto-0008.xml"/>
+      </file>
+    </fileGrp>
+  </fileSec>
+
   <structMap TYPE="PHYSICAL">
-    <div/>
+    <div TYPE="Magazine">
+      <div TYPE="PAGE"/>
+    </div>
   </structMap>
   <structMap TYPE="LOGICAL">
-    <div/>
+    <div TYPE="BlueMountain_Magazine">
+      <div TYPE="issue" DMDID="dmd2" LABEL="Le Coeur a Barbe (Avril 1922)"> 
+        <div TYPE="editorial" LABEL="Pour Faire Pousser Le Coeur (Eluard, Ribemon-Dessaignes, Tzara)" DMDID="c01" ORDER="1"/>
+        <div TYPE="editorial" LABEL="Office de la Domesticité (Erik SATIE)" ORDER="2"/>
+        <div TYPE="editorial" LABEL="[Untitled] (Th. FRAENKEL)" ORDER="3" />
+        <div TYPE="editorial" LABEL="[Untitled] (TROCCI)" ORDER="4" />
+        <div TYPE="editorial" LABEL="Vol-au-Vent" ORDER="5"/>
+        <div TYPE="editorial" LABEL="Artichauts Nouveaux (Georges RIBEMONT-DESSAIGNES)" ORDER="6" />
+        <div TYPE="editorial" LABEL="[Untitled] (Philippe SOUPAULT)" ORDER="7"/>
+        <div TYPE="editorial" LABEL="Les Bonnes Relations" ORDER="8"/>
+        <div TYPE="editorial" LABEL="Cahiers d'un mammifère" ORDER="9"/>
+        <div TYPE="editorial" LABEL="[Untitled] (Rrose SÉLAVY)" ORDER="10" />
+        <div TYPE="editorial" LABEL="[Untitled] (SERNER)" ORDER="11" />        
+        <div TYPE="editorial" LABEL="[Untitled] (André BRETON)" ORDER="12" />    
+        <div TYPE="editorial" LABEL="[Untitled] (Tristan TZARA)" ORDER="13" />   
+        <div TYPE="editorial" LABEL="[Untitled] (Matthew JOSEPHSON)" ORDER="14" />   
+        <div TYPE="editorial" LABEL="Lachez tout (Le Responsable)" ORDER="15" />  
+        <div TYPE="editorial" LABEL="New York Opening (Matthew JOSEPHSON)" ORDER="16"/>
+        <div TYPE="editorial" LABEL="Tickets de seconde (Tristan TZARA)" ORDER="17"/>
+        <div TYPE="editorial" LABEL="Informations" ORDER="18"/>
+        <div TYPE="editorial" LABEL="Dernière Heure" ORDER="19"/>
+      </div>
+    </div>
   </structMap>
 </mets>
