@@ -28,22 +28,26 @@
 
    Each journal /issue/ will be assigned a publication id of the form
    /bmtnid_issueid/, where /issueid/ corresponds to the date of
-   issuance and takes the form /CCYY-MM-DD-II/, where
+   issuance and takes the form /CCYY-MM-DD_II/, where
 
-   - CCYY is the year of publication (e.g., 1912)
+   - CCYY is the year of publication (e.g., 1912).
+
    - MM is a two-digit number representing the month of publication,
      where January = 01, February = 02, etc.  If the title and/or the
      masthead indicates a week of publication (e.g., September 8-14,
-     1946), the first date should be used (e.g., September 8).
+     1946), the first date should be used (e.g., September 8).  If no
+     month of publication is specified, MM is omitted.
+
    - DD is a two-digit number representing the date of publication,
-     (e.g., 01, 02 .. 30, 31).  If no date is specified, DD is 00.
+     (e.g., 01, 02 .. 30, 31).  If no date is specified, DD is omitted.
+
    - II is a two-digit number representing the issuance number: a
      calculated number used for times when more than one issue was
      published on one day (it will usually be 01).
 
    So, for example, journal /le coeur à barbe/ has the publication identifier
    *bmtnaad*.  Only one issue was published, in April of 1920, and
-   that issue has the issue identifier *bmtnaad_1920-04-00-01*.
+   that issue has the issue identifier *bmtnaad_1920-04_01*.
 
    These bmtnids will be used to compose a Universal Resource Name
    (URN) for each title and issue.
@@ -55,7 +59,7 @@
 
    #+BEGIN_EXAMPLE
    urn:PUL:bluemountain:bmtnaad
-   urn:PUL:bluemountain:bmtnaad_1920-04-00-01
+   urn:PUL:bluemountain:bmtnaad_1920-04_01
    #+END_EXAMPLE
 
    The same URN scheme will be used to create identifiers for the
@@ -97,7 +101,7 @@
          to specifications to be determined, but probably following
          the recommendations of the NDNP project of the Library of
          Congress.
-    - issue-level descriptive metadata :: a MODS document.
+    - issue-level descriptive metadata :: a MODS document (see below).
     - text encodings :: Initially these will be in the form of
                         corrected OCR for each page, encoded in the
                         ALTO schema (output by ABBYY via
@@ -110,8 +114,7 @@
          of METS/ALTO, the structMap of this document links
          passage-level items (articles, illustrations, advertisements)
          to the regions identified in the ALTO documents, and to the
-         page image.
-
+         page image.  (See below for detailed specification.)
 ** Arrangement
    The components of the journal object have different storage and
    access requirements.  Master TIFF files are very large binary
@@ -137,7 +140,6 @@
    Master TIFF files and text-under-image PDFs will be maintained in a
    /preservation store/; image derivatives, and copies of the PDFs and
    the metadata, will be kept in an /access store./
-
 *** The Metadata Tree
     Metadata will be organized as a hierarchy of files and
     directories, like this:
@@ -315,9 +317,11 @@
      cataloging rules.
 
      #+BEGIN_SRC xml
-     <MODS:titleInfo>
-      <MODS:title>Broom</MODS:title>
-     </MODS:titleInfo>
+     <titleInfo>
+       <nonSort>Le</nonSort>
+       <title>coeur à barbe</title>
+       <subTitle>journal transparent</subTitle>
+     </titleInfo>
      #+END_SRC
 
 **** <MODS:language>
@@ -420,7 +424,7 @@
      That being said, the Project will, at the outset, capture
      information about the following sorts of constituents:
 
-     - traditional text content (articles, features, letters to the
+     - traditional editorial content (articles, features, letters to the
        editor, etc.)
      - significant illustrations (figures, tip-ins, etc.)
      - advertisements
@@ -437,17 +441,10 @@
      detail to be created at a future date, by scholars, researchers,
      and other students of the material who wish to advance
      scholarship by enhancing the data provided here.
-
-***** articles
-      Detailed rules to follow; in general, provide title, author,
-      and extent.
-
-***** editorials
-      See articles.
-
+***** editorial text
+      Detailed rules to follow; in general, provide title and author.
 ***** illustrations
       Where possible, provide creator.  If captioned, include as title.
-
 ***** correspondence (letters to the editor)
       These are important components of periodicals: they often
       reveal the lively exchange of opinion about important issues
@@ -463,25 +460,25 @@
      The metadata for each issue will be encapsulated in a METS
      record.  A skeleton of such a record is the following:
      
-     #+BEGIN_SRC xml -n
+     #+BEGIN_SRC xml
      <?xml version="1.0" encoding="UTF-8"?>
      <mets xmlns="http://www.loc.gov/METS/"
            xmlns:xlink="http://www.w3.org/1999/xlink"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
            TYPE="METAe_Serial"
-           OBJID="urn:PUL:bluemountain:bmtnaad_1920-04-00-01"> <!-- (ref:objid) -->
+           OBJID="urn:PUL:bluemountain:bmtnaad_1920-04_01"> <!-- (ref:objid) -->
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
 	       <name>Princeton University Library, Digital Initiatives</name>
 	   </agent>
            <!-- (ref:docid) -->
-	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaad_1920-04-00-01</metsDocumentID>
+	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaad_1920-04_01</metsDocumentID>
        </metsHdr>
        <dmdSec ID="dmd1">
            <!-- (ref:dmdid) -->
 	   <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/mods+xml"
-	       xlink:href="urn:PUL:bluemountain:dmd:bmtnaad_1920-04-00-01"/>
+	       xlink:href="urn:PUL:bluemountain:dmd:bmtnaad_1920-04_01"/>
        </dmdSec>
        <fileSec>
 	 <fileGrp ID="IMGGRP" USE="Images"/>
@@ -513,15 +510,12 @@
       <mdWrap MDTYPE="MODS">
        <xmlData>
 
-         <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd"
-                xmlns="http://www.loc.gov/mods/v3"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+         <mods xmlns="http://www.loc.gov/mods/v3">               
            <recordInfo>
-            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaad_1922-04-00-01</recordIdentifier>
+            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaad_1922-04_01</recordIdentifier>
            </recordInfo>
 
-           <identifier type="bmtn">urn:PUL:bluemountain:bmtnaad_1922-04-00-01</identifier>
+           <identifier type="bmtn">urn:PUL:bluemountain:bmtnaad_1922-04_01</identifier>
 
            <titleInfo>
             <nonSort>Le</nonSort>
@@ -529,8 +523,9 @@
              <subTitle>journal transparent</subTitle>
            </titleInfo>
 
-         <!-- Full MODS record goes here -->
-        
+            <!-- Full MODS record goes here -->
+
+        </mods>
        </xmlData>
       </mdWrap>
      </dmdSec>
@@ -646,7 +641,7 @@
     
     For example,
     #+BEGIN_EXAMPLE
-    bmtnabk_1946-09-08-01.mets.xml
+    bmtnabk_1946-09-08_01.mets.xml
     #+END_EXAMPLE
 *** PDF Files
     PDF files shall be named /pubid.pdf/, where
@@ -655,7 +650,7 @@
     
     For example,
     #+BEGIN_EXAMPLE
-    bmtnabk_1946-09-08-01.pdf
+    bmtnabk_1946-09-08_01.pdf
     #+END_EXAMPLE
 *** Directories
     The files for an issue shall be stored in a single directory; this
@@ -681,14 +676,13 @@
     #+BEGIN_EXAMPLE
     bmtnabk/
      1946_01/
-      bmtnabk_194601_001.alto.xml
-      bmtnabk_194601_001.jp2
-      bmtnabk_194601_002.alto.xml
-      bmtnabk_194601_002.jp2
-      bmtnabk_194601.mets.xml
-      bmtnabk_194601.pdf
+      bmtnabk_1946_01_001.alto.xml
+      bmtnabk_1946_01_001.jp2
+      bmtnabk_1946_01_002.alto.xml
+      bmtnabk_1946_01_002.jp2
+      bmtnabk_1946_01.mets.xml
+      bmtnabk_1946_01.pdf
     #+END_EXAMPLE
-
 ** Metadata Profiles
 *** METS
      The metadata for each issue will be encapsulated in a METS
@@ -767,7 +761,6 @@
     adhere to the MODS profile detailed above.  METS/ALTO producers
     shall be responsible for incorporating these MODS records /in
     their entirety/ into the METS records they produce.
-
 **** <MODS:relatedItem type="constituent">
      Articles, Illustrations, and other identified sections of a
      magazine shall be encoded as <MODS:relatedItem
@@ -818,11 +811,9 @@
        - a combination of the above (e.g., /1-2; 5/ for an article
 	 that starts on page one, continues on page 2, and then skips
 	 to page 5).
-
 * The Parts of a Magazine
 
   [ To be described. ]
-
 
 * Footnotes
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
