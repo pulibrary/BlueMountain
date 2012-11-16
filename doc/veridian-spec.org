@@ -1,0 +1,76 @@
+* Veridian/DDD concerns
+  There are several issues that need to be discussed before serious
+  work can begin on Blue Mountain.
+
+  - naming conventions
+  - METS profile
+
+** Naming conventions
+   Veridian seems to be set up to handle and/or ingest documents in a
+   way that relies on a file and directory naming convention based on
+   date of publication, where date is of the form yyy-mm-dd.  Multiple
+   issuances for a period are indicated via an appendix: _NN, where NN
+   is a 0-padded number indicating order of issuance.
+
+   Working out the implications for some of our magazines, then:
+
+*** /Der Sturm/
+    Issuance varied over its 21-year lifetime.  It began as a weekly but
+    became a monthly and for a time a quarterly. 
+
+    For the weeklies, the newspaper-based naming scheme works fine:
+    the issue published on March 3, 1910 is named this way:
+
+    #+BEGIN_EXAMPLE
+    bmtnabg_1910-03-10_01
+    #+END_EXAMPLE
+
+    After a time, the magazine published a dual issue every other week
+    and gave no day of publication; e.g.,
+
+    #+BEGIN_EXAMPLE
+    Dritter Jahrgang, Nummer 113/114, Juni 1912 (3rd year of publication)
+    Dritter Jahrgang, Nummer 115/116, Juni 1912
+    #+END_EXAMPLE
+
+    Using the Veridian scheme, these would be named this way:
+
+    #+BEGIN_EXAMPLE
+    bmtnabg_1912-06_01
+    bmtnabg_1912-06_02
+    #+END_EXAMPLE
+
+    Later, the magazine stopped indicating a date of publication at
+    all:
+
+    #+BEGIN_EXAMPLE
+    Zehner Jahrgang / Erstes Heft (Tenth Year, First Issue)
+    #+END_EXAMPLE
+
+    Because the last issue of the previous Jahrgang (volume) has an
+    explicit publication date of March, 1919, we might be able to
+    infer that this issue was published in April, 1919.  However, this
+    convention continued for four years (volumes 10-13) and 44 issues
+    before a monthly publication pattern was reinstated in 1923 -- by
+    which time the publication anniversary had shifted to January,
+    with several double issues along the way. So not only can we not
+    establish what month these numbers were issued -- we cannot even
+    be certain of the year, at least not by inspection.
+
+    It might therefore be simpler and more prudent, for /Der Sturm/ at
+    least, to replace calandar year with Jahrgang:
+
+    #+BEGIN_EXAMPLE
+    bmtnabg_10_01
+    #+END_EXAMPLE
+
+    
+    
+    
+
+
+    
+     
+
+
+

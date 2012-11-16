@@ -5,7 +5,7 @@
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
@@ -455,6 +455,10 @@
       perform the research necessary to catalog all correspondence in
       detail, but it will create a framework for future enhancement.
 ** METS
+*** Title-Level
+    The metadata for the title will be encapsulated in a METS record:
+    the title-level descriptive metadata; the bibliography; (pointers
+    to) the issue-level metadata. 
 *** Issue-Level
      The metadata for each issue will be encapsulated in a METS
      record.  A skeleton of such a record is the following:
@@ -492,7 +496,7 @@
      </mets>
      #+END_SRC
 
-     - The top-level METS element contains an /OBJID/ attribute [[objid]],
+     - The top-level <mets> element contains an /OBJID/ attribute [[objid]],
        whose value is the URN for the issue
      - The <metsHdr> element contains a <metsDocumentID> element [[docid]],
        whose value is the URN for the METS document itself
@@ -599,10 +603,12 @@
    To be described.  TEI transcriptions will be derived from METS/ALTO
    metadata. 
 
-* Specifications for METS/ALTO Production
-   See identifier-naming convention above; in the following section,
-   /pubid/ refers to the composed identifier /bmtnid_issueid/.
+* Guidelines and Specifications for MODS and METS/ALTO Production
+  This section provides detailed specifications for the creation of
+  Blue Mountain metadata.
 
+  See identifier-naming convention above; in the following section,
+  /pubid/ refers to the composed identifier /bmtnid_issueid/.
 ** Directories and File Names
 *** Image Files
     Image files shall be named /pubid_nnn.jp2/, where
@@ -813,8 +819,10 @@
 	 that starts on page one, continues on page 2, and then skips
 	 to page 5).
 
-
 * The Parts of a Magazine
+
+  [ To be described. ]
+
 
 * Footnotes
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the

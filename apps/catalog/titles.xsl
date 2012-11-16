@@ -21,8 +21,7 @@
     <xsl:param name="mrec" />
 
       <xsl:variable name="link">
-	<xsl:value-of select="concat('catalog/',
-			      substring-after($mrec/mods:identifier[@type='bmtn'],
+	<xsl:value-of select="concat('catalog/',substring-after($mrec/mods:identifier[@type='bmtn'],
 			      'urn:PUL:bluemountain:'))"/>
       </xsl:variable>
 
@@ -35,7 +34,10 @@
 	</xsl:if>
 	<xsl:value-of select="normalize-space($title/mods:title)"/>
       </xsl:variable>
-      <a href="{$link}"><xsl:value-of select="$titlestring"/></a>
+
+
+      <a href="{$link}"><span class="title"><xsl:value-of select="$titlestring"/></span></a>
+	<xsl:apply-templates select="$mrec/mods:originInfo"/>
   </xsl:function>
   
   <xsl:template match="/">
@@ -50,8 +52,9 @@
 	  div.result p { font-size: small; }
 	  header {background:black; color: white;}
 	  span.hi {background:yellow;}
-	  p.odd,p.even {margin: 3px;}
-	  p.odd { background:whitesmoke; }
+	  span.title { font-size: larger; }
+	  li.odd,li.even {margin: 5px }
+	  li.odd { background:whitesmoke; }
 	</style>
       </head>
       <body>
@@ -61,15 +64,23 @@
 	<div class="container-fluid">
 	  <div class="row-fluid">
 	    <div class="span2">
-	      <p>sidebar</p>
+	      <h4>Facets Here?</h4>
 	    </div>
-	    <div class="span10">
+	    <div class="span5">
 	      
-	      <p>Listing <xsl:value-of select="results/@count"/> document(s).</p>	
+	      <p>Listing <xsl:value-of select="results/@count"/> title(s).</p>	
 	      <ol>
 		<xsl:for-each select="results/mods:mods">
 		  <xsl:sort select="upper-case(normalize-space(mods:titleInfo[empty(@type)]/mods:title))" />
-		  <li><xsl:sequence select="local:displayform(.)"/></li>
+		  <li>
+		    <xsl:attribute name="class">
+		      <xsl:choose>
+			<xsl:when test="(position() mod 2) = 0">even</xsl:when>
+			<xsl:otherwise>odd</xsl:otherwise>
+		      </xsl:choose>
+		    </xsl:attribute>
+		  <xsl:sequence select="local:displayform(.)"/>
+		  </li>
 		</xsl:for-each>
 	      </ol>
 	    </div>
@@ -81,20 +92,29 @@
     </html>
   </xsl:template>
   
-  <xsl:template match="mods:mods">
-    <xsl:for-each select="mods:titleInfo[empty(@type)]">
-      <xsl:sort select="mods:title"/>
-      <xsl:variable name="link">
-	<xsl:value-of select="substring-after('urn:PUL:bluemountain:', mods:identifier[@type='bmtn'])"/>
-      </xsl:variable>
-      <li><a href="{$link}">
-	<xsl:if test="mods:nonSort">
-	  <xsl:value-of select="mods:nonSort"/>
-	  <xsl:text> </xsl:text>
-	</xsl:if>
-	<xsl:value-of select="normalize-space(mods:title)"/>
-      </a></li>
-    </xsl:for-each>
+  <xsl:template match="mods:originInfo">
+    <xsl:variable name="pubPlace">
+      <xsl:choose>
+	<xsl:when test="count(mods:place) = 1">
+	  <xsl:value-of select="mods:place/mods:placeTerm"/>
+	</xsl:when>
+	<xsl:when test="count(mods:place) = 2">
+	  <xsl:value-of select="concat(mods:place[1]/mods:placeTerm, ' and ', mods:place[2]/mods:placeTerm)"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:for-each select="mods:place">
+	    <xsl:value-of select="mods:placeTerm"/>
+	    <xsl:if test="position() != last()">
+	      <xsl:text>, </xsl:text>
+	    </xsl:if>
+	  </xsl:for-each>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+
+
+      <xsl:value-of select="mods:dateIssued[empty(@point)]"/>
+
   </xsl:template>
-  
+
 </xsl:stylesheet>

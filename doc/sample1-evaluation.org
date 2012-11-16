@@ -1,0 +1,45 @@
+#+STARTUP: showall
+
+* Evaluation
+  On October 26, 2012, DDD supplied Princeton with sample output for
+  two Blue Mountain issues.
+
+  It is important to note that these are very challenging magazines.
+  Their formats are unusual and highly variable.
+
+** Metadata
+*** MODS
+    Princeton supplied MODS records for each of the sample issues to
+    be processed by DDD, with the suggestion that those records be
+    imported directly into DDD's workflow and modified.
+*** METS
+    The TYPE of these objects should not be Newspaper: they are not
+    newspapers.  We are trying to learn more about METAe_Serial as a
+    METS profile, and we anticipate using it.  Thus the @TYPE
+    attribute on the top-level <mets> object should be METAe_Serial,
+    and the various <div> elements in the logical structmap should
+    follow the Metae conventions.
+
+    UPDATE: METAe was an EU-funded project (2000-2003) under which
+    CCS, working with LC, Harvard, and some European partners, created
+    a "production tool for conversion of printed documents into fully
+    tagged digital objects."  It appears to be the effort out of which
+    docWORKS the METS/ALTO format emerged.
+
+    I can find little documentation for the project; there are slides
+    from a presentation at the DLF spring forum 2005 available on the
+    web.  CCS has given me "METS profiles" for METAe_Serial but they
+    are vestigial -- they don't vary from the standard METS schema.
+
+    It appears, then, that METAe_Serial was a conceptual METS profile
+    that was not developed.
+
+**** Logical StructMap
+     DDD has tried to create 
+
+     Advertisement, article, spread
+
+** OCR
+
+** Images
+
