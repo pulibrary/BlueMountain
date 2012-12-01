@@ -13,12 +13,12 @@ def convert_images(sourcedir, targetdir):
     '''Generate jp2 files.'''
 
     for root, dirs, files in os.walk(sourcedir):
-        target_subdir = targetdir.rstrip('/') + '/' + root
+        target_subdir = targetdir.rstrip('/') + '/' + root.lstrip('/')
         print 'mkdir -p ' + target_subdir
         for fname in files:
             if fname.endswith('.tif'):
                 cmd = 'kdu_compress -i ' + root + '/' + fname
-                cmd += ' -o ' +  target_subdir + '/' + fname.replace('.tif', '.jp2')
+                cmd += ' -o ' + target_subdir + '/' + fname.replace('.tif', '.jp2')
                 cmd += ' ' + kdu_opts
                 print cmd
         if '.svn' in dirs: dirs.remove('.svn')
