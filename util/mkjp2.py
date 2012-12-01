@@ -13,7 +13,7 @@ def convert_images(sourcedir, targetdir):
     '''Generate jp2 files.'''
 
     for root, dirs, files in os.walk(sourcedir):
-        target_subdir = targetdir + '/' + root
+        target_subdir = targetdir.rstrip('/') + '/' + root
         print 'mkdir -p ' + target_subdir
         for fname in files:
             if fname.endswith('.tif'):
@@ -23,12 +23,12 @@ def convert_images(sourcedir, targetdir):
                 print cmd
         if '.svn' in dirs: dirs.remove('.svn')
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input_dir", help="top-level directory of source tifs.")
     parser.add_argument("-o", "--output_dir", help="target directory.")
     args = parser.parse_args()
+
     if args.input_dir and args.output_dir:
         convert_images(args.input_dir, args.output_dir)
 
