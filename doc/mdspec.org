@@ -1,7 +1,7 @@
 #+TITLE:     Blue Mountain Metadata Specification
 #+AUTHOR:    Cliff Wulfman
 #+EMAIL:     cwulfman@Princeton.EDU
-#+DATE:      2012-07-06 Fri
+#+DATE:      <2012-12-03 Mon>
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
@@ -30,18 +30,18 @@
    /bmtnid_issueid/, where /issueid/ corresponds to the date of
    issuance and takes the form /CCYY-MM-DD_II/, where
 
-   - CCYY is the year of publication (e.g., 1912).
+   - /CCYY/ is the year of publication (e.g., 1912).
 
-   - MM is a two-digit number representing the month of publication,
-     where January = 01, February = 02, etc.  If the title and/or the
-     masthead indicates a week of publication (e.g., September 8-14,
+   - /MM/ is a two-digit number representing the month of publication,
+     where January = 01, February = 02, etc.  If the FolioLine and/or the
+     Masthead indicates a week of publication (e.g., September 8-14,
      1946), the first date should be used (e.g., September 8).  If no
      month of publication is specified, MM is omitted.
 
-   - DD is a two-digit number representing the date of publication,
+   - /DD/ is a two-digit number representing the date of publication,
      (e.g., 01, 02 .. 30, 31).  If no date is specified, DD is omitted.
 
-   - II is a two-digit number representing the issuance number: a
+   - /II/ is a two-digit number representing the issuance number: a
      calculated number used for times when more than one issue was
      published on one day (it will usually be 01).
 
@@ -58,8 +58,9 @@
    As an example, for /le coeur à barbe:/
 
    #+BEGIN_EXAMPLE
-   urn:PUL:bluemountain:bmtnaad
-   urn:PUL:bluemountain:bmtnaad_1920-04_01
+   urn:PUL:bluemountain:bmtnaad            #The URN for the title
+   urn:PUL:bluemountain:bmtnaad_1920-04_01 #The URN for the first and
+                                            only issue.
    #+END_EXAMPLE
 
    The same URN scheme will be used to create identifiers for the
@@ -98,9 +99,9 @@
     - generative image derivatives :: more manageable forms of the
          master TIFFs, meant to serve as the source for online
          deliverables, etc.  Encoded in the JPEG2000 format, according
-         to specifications to be determined, but probably following
-         the recommendations of the NDNP project of the Library of
-         Congress.
+         to specifications described below.
+    - delivery derivatives :: images optimized for delivery over the
+         World Wide Web.
     - issue-level descriptive metadata :: a MODS document (see below).
     - text encodings :: Initially these will be in the form of
                         corrected OCR for each page, encoded in the
@@ -109,12 +110,11 @@
                         include TEI representations, derived from the
                         ALTO documents, for detailed textual analysis.
     - deliverable text-under-image PDF :: another ABBYY output format.
-
     - issue-level metadata wrapper :: a METS document.  The METS half
          of METS/ALTO, the structMap of this document links
-         passage-level items (articles, illustrations, advertisements)
-         to the regions identified in the ALTO documents, and to the
-         page image.  (See below for detailed specification.)
+         constituent-level items to the regions identified in the ALTO
+         documents, and to the page image.  (See below for detailed
+         specification.)
 ** Arrangement
    The components of the journal object have different storage and
    access requirements.  Master TIFF files are very large binary
@@ -140,10 +140,9 @@
    Master TIFF files and text-under-image PDFs will be maintained in a
    /preservation store/; image derivatives, and copies of the PDFs and
    the metadata, will be kept in an /access store./
-*** The Metadata Tree
+*** The Metadata Store
     Metadata will be organized as a hierarchy of files and
     directories, like this:
-
     #+BEGIN_EXAMPLE
     - periodicals/
       - bmtnID/
@@ -151,12 +150,60 @@
 	- bmtnID.mods.xml
 	- bmtnID.tei.xml
 	- issues/
-	  - bmtnid_issueid/
-	    - bmtnid_issueid.mets.xml
-	    - bmtnid_issueid.mods.xml
-	    - bmtnid_issueid.tei.xml
-	    - alto/
-	      - bmtnid_issueid-nnn.alto.xml     
+    #+END_EXAMPLE
+    The issues/ directory will be organized by publication date,
+    following the same convention as that used for constructing
+    identifiers.  So, for example,
+    #+BEGIN_EXAMPLE
+    - bmtnabi/
+      - issues/
+	- 1859/
+	  - 01/
+	    - 05_01/
+	      - bmtnid_issueid.mets.xml
+	      - bmtnid_issueid.mods.xml
+	      - bmtnid_issueid.tei.xml
+	      - alto/
+		- bmtnid_issueid-001.alto.xml
+		- bmtnid_issueid-002.alto.xml
+    #+END_EXAMPLE
+*** The Preservation Store
+    The Preservation Store will be arranged as a filesystem mirroring
+    the structure of the metadata tree and rooted at
+    /usr/share/BlueMountain/pstore/periodicals.
+    #+BEGIN_EXAMPLE
+    - pstore/
+      - periodicals/
+	- bmtnid/
+	  - issues/
+	    - CCYY/
+	      - MM/
+		- DD_II/
+		  - bmtnid_issueid.pdf
+		  - 001.tif
+		  - 002.tif
+    #+END_EXAMPLE
+*** The Access Store
+    Like the Preservation Store, the Access store will be arranged as
+    a filesystem mirroring the structure of the metadata tree; it will
+    be rooted at /usr/share/BlueMountain/astore.
+    #+BEGIN_EXAMPLE
+    - astore/
+      - periodicals/
+	- bmtnid/
+	  - issues/
+	    - CCYY/
+	      - MM/
+		- DD_II/
+		  - bmtnid_issueid.pdf
+		  - generative/
+		    - 001.jp2
+		    - 002.jp2
+		    - 003.jp2
+		  - delivery/
+		    - 001.jp2
+		    - 002.jp2
+		    - 003.jp2
     #+END_EXAMPLE
 * Metadata Profiles
   The Blue Mountain Project aims to make its work open and
@@ -238,7 +285,7 @@
        	urn:PUL:bluemountain:BMTNID
       #+END_EXAMPLE
 
-      Where the string /urn:PUL:bluemountain/ is constant (for all
+      where the string /urn:PUL:bluemountain/ is constant (for all
       Blue Mountain URNs) and /BMTNID/ is the Blue Mountain project
       identifier of the periodical.
 
@@ -254,32 +301,16 @@
       data.  http://viaf.org is the preferred authority;
       http://id.loc.gov should be consulted when a name is not found
       in viaf.org; if a name is found in neither, a local authority
-      will be created (see later).
+      will be created (To be determined later).
     - Dates are encoded in ISO standard 8601 format (see
       http://www.iso.org/iso/catalogue_detail?csnumber=40874; for an
       overview see http://en.wikipedia.org/wiki/ISO_8601).  The
       extended form of the representation is preferred.
     - Subject headings will conform with existing standards in a
       manner yet to be determined.
-
 *** Issue-Level Description
     Descriptive metadata will be encoded for the contents of each
-    issue, so the issues may be searched and analyzed.
-**** The Issue-Level Record
-     Each issue-level MODS record is related to the
-     title-level record /via/ a <relatedItem type='host'> element.
-
-     #+BEGIN_SRC xml
-      <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaad">
-       	<recordInfo>
-	  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaad</recordIdentifier>
-       	</recordInfo>
-      </relatedItem>
-     #+END_SRC
-
-     The xlink:href shows the semantic relation between the issue and
-     its host; the <recordIdentifier> is a specific key to the
-     title-level record.
+    issue, so the issues may be searched and analyzed. 
 **** <MODS:recordInfo>
      The <MODS:recordInfo> element shall contain a <MODS:recordIdentifier>
      subelement whose form is as follows:
@@ -307,11 +338,28 @@
      Where /PREFIX/ is the following fixed value:
 
       #+BEGIN_EXAMPLE
-      urn:PUL:periodicals
+      urn:PUL:bluemountain
       #+END_EXAMPLE
 
      and /PUBID/ is the issue identifier, computed using the rules
      above.
+**** <MODS:relatedItem type="host">
+     Each issue-level MODS record is related to the
+     title-level record /via/ a <relatedItem type='host'> element.
+
+     #+BEGIN_SRC xml
+      <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:PUBID">
+       	<recordInfo>
+	  <recordIdentifier>urn:PUL:bluemountain:dmd:PUBID</recordIdentifier>
+       	</recordInfo>
+      </relatedItem>
+     #+END_SRC
+
+     where /PUBID/ is the publication identifier of the title.
+
+     The xlink:href shows the semantic relation between the issue and
+     its host; the <recordIdentifier> is a specific key to the
+     title-level record.
 **** <MODS:titleInfo>
      The <MODS:titleInfo> element shall be determined by standard
      cataloging rules.
@@ -388,28 +436,16 @@
      issuance, as follows:
      #+BEGIN_SRC xml
      <MODS:originInfo>
-      <MODS:dateIssued>MASTHEADDATE</MODS:dateIssued>
+      <MODS:dateIssued>PRINTEDDATE</MODS:dateIssued>
       <MODS:dateIssued encoding="iso8601" keyDate="yes">ISODATE</MODS:dateIssued>
      </MODS:originInfo>
      #+END_SRC
      Where
-     - /MASTHEADDATE/ is the date as it appears in the masthead
+     - /PRINTEDDATE/ is the date as it appears in the cover page
+       FolioLine, or in the Masthead.
      - /ISODATE/ is the value of the date in the masthead, expressed
        in iso8601 format (YYYY-MM-DD) -- see
        http://www.w3.org/TR/NOTE-datetime for details.
-
-**** <MODS:relatedItem type="host">
-     Each issue-level MODS record shall be related to the title-level
-     record /via/ a <MODS:relatedItem type='host'> This element shall have
-     the following fixed value:
-     #+BEGIN_SRC xml
-       <MODS:relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:periodicals:bmtnabk">
-	 <MODS:recordInfo>
-	   <MODS:recordIdentifier>urn:PUL:periodicals:dmd:bmtnabk</MODS:recordIdentifier>
-	 </MODS:recordInfo>
-       </MODS:relatedItem>
-     #+END_SRC
-
 **** Issue Constituents
      Traditional library cataloging does not extend to the contents
      of periodicals, yet this level of description is precisely what
@@ -441,16 +477,6 @@
      detail to be created at a future date, by scholars, researchers,
      and other students of the material who wish to advance
      scholarship by enhancing the data provided here.
-***** editorial text
-      Detailed rules to follow; in general, provide title and author.
-***** illustrations
-      Where possible, provide creator.  If captioned, include as title.
-***** correspondence (letters to the editor)
-      These are important components of periodicals: they often
-      reveal the lively exchange of opinion about important issues
-      among notable individuals.  Blue Mountain may not be able to
-      perform the research necessary to catalog all correspondence in
-      detail, but it will create a framework for future enhancement.
 ** METS
 *** Title-Level
     The metadata for the title will be encapsulated in a METS record:
@@ -466,7 +492,7 @@
            xmlns:xlink="http://www.w3.org/1999/xlink"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-           TYPE="METAe_Serial"
+           TYPE="Magazine"
            OBJID="urn:PUL:bluemountain:bmtnaad_1920-04_01"> <!-- (ref:objid) -->
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
@@ -481,8 +507,16 @@
 	       xlink:href="urn:PUL:bluemountain:dmd:bmtnaad_1920-04_01"/>
        </dmdSec>
        <fileSec>
-	 <fileGrp ID="IMGGRP" USE="Images"/>
-	 <fileGrp ID="ALTOGRP" USE="Text"/>
+	 <fileGrp ID="IMGGRP" USE="Images">
+	   <file ID="IMG0001">
+	     <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaad/1920/04_01/delivery/001.jp2"/>
+	   </file>
+	 </fileGrp>
+	 <fileGrp ID="ALTOGRP" USE="Text">
+	   <file ID="ALTO0001">
+	     <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaad_1920-04_01_001.alto.xml"/>
+	   </file>
+	 </fileGrp>
        </fileSec>
        <structMap TYPE="PHYSICAL">
 	   <div/>
@@ -494,9 +528,9 @@
      #+END_SRC
 
      - The top-level <mets> element contains an /OBJID/ attribute [[objid]],
-       whose value is the URN for the issue
+       whose value is the URN for the issue.
      - The <metsHdr> element contains a <metsDocumentID> element [[docid]],
-       whose value is the URN for the METS document itself
+       whose value is the URN for the METS document itself.
      - The record contains a single <dmdSec> element [[dmdid]] with an ID
        attribute of "dmd1"; this <dmdSec> element contains an <mdRef>
        that points to the MODS record for the issue.
@@ -545,49 +579,29 @@
    - Non-rectangular blocks shall not be used.  Some illustrations
      may format as "tight" in the document.
 
+** TIFF: Image Description
+   In general, Princeton University Library adheres to the standards
+   elaborated by the Federal Agencies Digitization Guidelines
+   Initiative (FADGI)[fn:4], whose Still Image Working Group produced
+   a document entitled /Technical Guidelines for Digitizing Cultural
+   Heritage Materials/ in 2010.[fn:5]  Archival images will be captured in
+   24-bit RGB and digitally rendered at varying resolutions to produce
+   a uniform long dimension of 7200 pixels, then stored as
+   uncompressed TIFF files with a large, non-proprietary color profile
+   (Pro Photo RGB). The homogenization of the archival files to a long
+   dimension of 7200 pixels allows us to produce uniform derivative
+   images rapidly and estimate our storage needs more accurately.
 ** JPEG2000: Image Description
-   The following specifications are taken directly from 
-   /The National Digital Newspaper Program (NDNP) Technical Guidelines
-   for Applicants/.
-   - The JPEG 2000 files shall conform to the JP2 file format as
-     specified in ISO/IEC 15444- 1:2000 (i.e., JPEG 2000, Part 1).
-   - The JPEG 2000 files shall correspond to the image that is used
-     for OCR.
-   - The JPEG 2000 files shall have a ".jp2" extension.
-   - The JPEG 2000 files image X origin, image Y origin, tile X
-     origin, and tile Y origin shall be 0.
-   - The JPEG 2000 files shall contain only one component.  The bit
-     depth of that component shall be the same as the source image
-     file: 1-bit for black-and-white source images, 8-bits for gray
-     scale source images, and 24-bits for 24-bit color source images.
-   - The tile headers of the JPEG 2000 files shall not contain coding
-     style default, coding style component, quantization default, or
-     quantization component marker segments.
-   - The JPEG 2000 file progression order shall be RLCP (resolution,
-     layer, component, position) or RLPC.
-   - The JPEG 2000 files shall have 6 decomposition levels.
-   - The JPEG 2000 files shall have 25 quality layers. The bits per
-     pixel for each quality layer will be: 1, 0.84, 0.7, 0.6, 0.5,
-     0.4, 0.35, 0.3, 0.25, 0.21, 0.18, 0.15, 0.125, 0.1, 0.088, 0.07,
-     0.0625, 0.05, 0.04419, 0.03716, 0.03125, 0.025, 0.0221, 0.018,
-     0.015625.
-   - The JPEG 2000 file code-block sizes will be 64x64.  The JPEG
-     2000 file code-block styles shall be bypass.
-   - Two compression schemes shall be used for the JPEG 2000 files.
-     For 1-bit source image files, CCITT Group 4 compression
-     (lossless) shall be used.  For all other bit depths, the 9-7
-     irreversible filter shall be used.
-   - The JPEG 2000 files shall use 1024x1024 tiles.
-   - The color specification of the JPEG 2000 file must be either the
-     monochrome (grayscale) enumerated color space or the Monochrome
-     Input restricted ICC profile.
-   - The JPEG 2000 files shall not contain regions of interest or
-     precincts.
-   - The JPEG 2000 files shall not contain intellectual property
-     rights information.
-
-   To generate a JP2000 using Kakadu, use the following recipe
-   (taken from /The National Digital Newspaper Program (NDNP) Technical Guidelines for Applicants/):
+*** Generative Image Derivatives
+    Derived from the Master TIFF files with the following formula:
+   #+BEGIN_EXAMPLE
+      kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2  \
+      Creversible=yes -rate -,1,0.5,0.25
+   #+End_EXAMPLE
+*** Delivery Derivatives
+    To generate a JP2000 using Kakadu, use the following recipe (taken
+    from /The National Digital Newspaper Program (NDNP) Technical
+    Guidelines for Applicants/):
    #+BEGIN_EXAMPLE
       kdu_compress -i YOURINPUT.pgm -o YOUROUTPUT.jp2 -rate \
       1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 \
@@ -600,7 +614,7 @@
 
 * Guidelines and Specifications for MODS and METS/ALTO Production
   This section provides detailed specifications for the creation of
-  Blue Mountain metadata.
+  Blue Mountain metadata, for use by partners and vendors.
 
   See identifier-naming convention above; in the following section,
   /pubid/ refers to the composed identifier /bmtnid_issueid/.
@@ -615,8 +629,8 @@
 
     For example,
     #+BEGIN_EXAMPLE
-    bmtnabk_1946-09-08-01_001.jp2
-    bmtnabk_1946-09-08-01_002.jp2
+    bmtnabk_1946-09-08_01_001.jp2
+    bmtnabk_1946-09-08_01_002.jp2
     ...
     #+END_EXAMPLE
 *** ALTO Files
@@ -628,11 +642,13 @@
     - /xml/ indicates the format of the file.
 
     For example,
+
     #+BEGIN_EXAMPLE
-    bmtnabk_1946-09-08-01_001.alto.xml
-    bmtnabk_1946-09-08-01_002.alto.xml
+    bmtnabk_1946-09-08_01_001.alto.xml
+    bmtnabk_1946-09-08_01_002.alto.xml
     ...
     #+END_EXAMPLE
+
 *** METS Files
     METS files shall be named /pubid.mets.xml/, where
     - /pubid/ is the identifier of the issue
@@ -653,37 +669,14 @@
     bmtnabk_1946-09-08_01.pdf
     #+END_EXAMPLE
 *** Directories
-    The files for an issue shall be stored in a single directory; this
-    directory shall be part of a filesystem hierarchy organized by
-    year, month, day, and issuance number.  For example, the files for
-    Vol. 1, No. 26 (dated September 8-14, 1946) would be stored in the
-    following file hierarchy:
+    Files will be delivered in two filesystems: one for the metadata,
+    one for the images, as described above.
     #+BEGIN_EXAMPLE
-    bmtnabk/
-     1946/
-      09/
-       08_01/
-	bmtnabk_1946-09-08-01_001.alto.xml
-	bmtnabk_1946-09-08-01_001.jp2
-	bmtnabk_1946-09-08-01_002.alto.xml
-	bmtnabk_1946-09-08-01_002.jp2
-	bmtnabk_1946-09-08-01.mets.xml
-	bmtnabk_1946-09-08-01.pdf
+    - top
+      - metadata
+      - astore
     #+END_EXAMPLE
-
-    For special issues, use the naming convention for special issues
-    indicated above.  For example,
-    #+BEGIN_EXAMPLE
-    bmtnabk/
-     1946_01/
-      bmtnabk_1946_01_001.alto.xml
-      bmtnabk_1946_01_001.jp2
-      bmtnabk_1946_01_002.alto.xml
-      bmtnabk_1946_01_002.jp2
-      bmtnabk_1946_01.mets.xml
-      bmtnabk_1946_01.pdf
-    #+END_EXAMPLE
-** Metadata Profiles
+** Metadata Guidelines
 *** METS
      The metadata for each issue will be encapsulated in a METS
      record.  A skeleton of such a record is the following:
@@ -693,7 +686,7 @@
    <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-       TYPE="METAe_Serial"
+       TYPE="Magazine"
        OBJID="urn:PUL:periodicals:bmtnabk:bmtnabk_1946-09-08-01">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
@@ -717,7 +710,7 @@
    </mets>
      #+END_SRC
      Where
-     - /TYPE/ is the fixed string /METAe_Serial/
+     - /TYPE/ is the fixed string /Magazine/
      - /OBJID/ is composed as follows:
        #+BEGIN_EXAMPLE
        PREFIX:PUBID
@@ -793,7 +786,7 @@
        three-digit sequential number.
      - The <MODS:title> is transcribed as it appears on the page.
      - <MODS:TypeOfResource> should have a value of either /text/ or /still
-       image/ (for illustrations).
+       image/ (for art).
      - The <MODS:name> element is transcribed as it appears on the
        page and encoded in the <MODS:displayForm> element.  All
        <MODS:name> elements shall include a <MODS:role> element, which
@@ -811,10 +804,6 @@
        - a combination of the above (e.g., /1-2; 5/ for an article
 	 that starts on page one, continues on page 2, and then skips
 	 to page 5).
-* The Parts of a Magazine
-
-  [ To be described. ]
-
 * Document Structure Definition
 ** Page Types
    - outside front cover (OFC)
@@ -823,45 +812,59 @@
    - outside back cover (OBC)
    - inside
 ** Zone Types
-    - byline
-    - caption
-    - copy
-    - cover line(s)
-    - date line
-    - deck
-    - folio (page number)
-    - graphic
-    - head
-    - logo
-    - masthead
-    - name plate
-    - ornament
-    - separator
-    - subhead
+   - Byline :: a short phrase that indicates the name of the author or
+               creator of a magazine constituent.  It sometimes begins
+               with the word /by/ (English) /von/ (German) or /par/
+               (French), followed by the author or creator's name,
+               often printed in all caps.  The byline commonly appears
+               between the head of the constituent and the start of
+               the copy, where it is usually printed flush left or
+               centered; it may also appear at the end of a
+               constituent, where it is commonly printed flush right.
+
+   - Caption :: A title or description of a piece of magazine art,
+                usually appearing below the graphic.  The byline is
+                sometimes conjoined.
+
+   - Copy :: The textual portion of a magazine constituent, as
+             distiguished from graphics or illustrations.
+
+   - CoverLine :: A short statement printed on the cover of the
+                  magazine, usually alluding to the constituents
+                  inside.
+
+   - FolioLine :: a line (sometimes several) containing information
+                  about the magazine: metadata.  FolioLines on the
+                  outside front cover often contain the volume number,
+                  the issue number, and the location and date of
+                  publication; FolioLines on inner pages sometimes
+                  function as running heads or feet and often contain
+                  a page number.
+
+   - Head :: One or more lines of text, usually set in a larger
+             typeface than body copy, that introduces constituents or
+             subsections of constituents.  The largest, topmost head
+             in a constituent usually displays the title. (see
+             /subhead./)
+
+   - Masthead :: Often confused with /Nameplate/.  A listing printed
+                 in all issues of a magazine (usually in the first few
+                 pages) naming the editorial staff and other metadata.
+
+   - Nameplate :: A large element usually appearing at the top of the
+                  outer front cover, containing the name of the
+                  magazine, usually in distinctive display type, and
+                  sometimes a graphic logo.  It is sometimes repeated
+                  on one of the first inner pages. (See /Masthead./)
+
+   - Subhead :: A kind of /head/, set in smaller type than the main
+                head, that introduces a subsection of a constituent.
 ** Structure/Hierarchy Types
-    - Advertisement
-      - Display
-      - Classified
-    - Editorial
-      - art
-	- original
-	- reproduction
-      - piece/contribution
-	- announcement
-	- article
-	- cartoon
-	- editorial piece
-	- feature
-	- fiction
-	- installment
-	- item
-	- notice
-	- obituary
-	- op-ed
-	- poem
-	- score
-	- review
-	- story
+   - Constituent :: A generic component of a magazine.  For Blue
+                    Mountain, we do not distinguish, at the METS/ALTO
+                    level, among various kinds of magazine content.
+                    All composites of layout elements are /constituents/.
+
 * Footnotes
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
   Magazines: An Introduction/. New Haven: Yale University Press, 2010.
@@ -871,3 +874,8 @@
 
 [fn:3] /Title/ refers to the journal or magazine as a whole, as
   opposed to discrete volumes or issues.
+
+[fn:4] FADGI maintains a website at http://www.digitizationguidelines.gov/.
+
+[fn:5] These guidelines are available online at the following URL:
+  http://www.digitizationguidelines.gov/guidelines/digitize-technical.html.
