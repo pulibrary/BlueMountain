@@ -594,20 +594,24 @@
 ** JPEG2000: Image Description
 *** Generative Image Derivatives
     Derived from the Master TIFF files with the following formula:
+
    #+BEGIN_EXAMPLE
       kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2  \
       Creversible=yes -rate -,1,0.5,0.25
    #+End_EXAMPLE
+
 *** Delivery Derivatives
     To generate a JP2000 using Kakadu, use the following recipe (taken
     from /The National Digital Newspaper Program (NDNP) Technical
     Guidelines for Applicants/):
+
    #+BEGIN_EXAMPLE
       kdu_compress -i YOURINPUT.pgm -o YOUROUTPUT.jp2 -rate \
       1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 \
       75,0.0625,0.05,0.04419,0.03716,0.03125,0.025,0.0221,0.01858,0.015625 \
       Clevels=6 Stiles={1024,1024} Corder=RLCP
    #+End_EXAMPLE
+
 ** TEI
    To be described.  TEI transcriptions will be derived from METS/ALTO
    metadata. 
