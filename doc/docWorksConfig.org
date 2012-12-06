@@ -1,0 +1,84 @@
+#+TITLE:     Blue Mountain docWorks Configuration
+#+AUTHOR:    Cliff Wulfman
+#+EMAIL:     cwulfman@Princeton.EDU
+#+DATE:      2012-12-06 Thu
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* Zones (Layout Element steps)
+** PublicationInfoZones
+*** Nameplate
+*** Masthead
+*** FrontFolioLine
+*** InnerFolioLine
+*** GenericPubInfo
+** EditorialContentZones
+*** Headline
+*** Copy
+*** Byline
+*** Art
+*** Caption
+** SponsoredAdvertisementZones
+*** SponsoredAd
+** Encoding
+#+BEGIN_SRC xml
+<?xml version="1.0" encoding="UTF-8"?>
+<docWORKS-Definition Name="GenericExtensionVLE" Version="4.0" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LogicalStruct.xsd">
+  <Step Name="VerifyLayoutElements">
+    <Classes>
+      <!-- Publication Information Layout Elements -->
+      <Class Name="Nameplate" BaseClass="Textblock"/>
+      <Class Name="Masthead" BaseClass="Textblock"/>
+      <Class Name="FrontFolioLine" BaseClass="Textblock"/>
+      <Class Name="InnerFolioLine" BaseClass="Textblock"/>
+      <Class Name="GenericPubInfo" BaseClass="Textblock"/>
+
+      <!-- Editorial Content Zones -->
+      <Class Name="Headline" BaseClass="Author"/>
+      <Class Name="Byline" BaseClass="Author"/>
+      <Class Name="Copy" BaseClass="Textblock"/>
+      <Class Name="Art" BaseClass="Textblock"/>
+      <Class Name="Caption" BaseClass="Textblock"/>
+
+      <!-- Sponsored Advertisement Zones -->
+      <Class Name="SponsoredAd" BaseClass="Textblock"/>
+    </Classes>
+  </Step>
+</docWORKS-Definition>
+#+END_SRC
+
+* Hierarchical Parts (Hierarchical Element steps)
+** PublicationInfo
+   - Masthead
+   - Nameplate
+   - FrontFolioLine
+   - InnerFolioLine
+   - GenericPubInfo
+** EditorialContent
+*** TextContent
+    - Headline
+    - Copy
+    - Byline
+*** Illustration
+    - Art
+    - Caption
+    - Byline
+** SponsoredAdvertisement
+   - SponsoredAd
+
+* MODS constiutent rules
+  - <relatedItem type='constituent'> elements
+    Should only be generated for EditorialContent
+
+* METS logical structMap rules
+  - Editorial
+  - PubInfo
+  - Advertisements
