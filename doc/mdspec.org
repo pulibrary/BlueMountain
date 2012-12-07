@@ -7,6 +7,7 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS:   author:t email:t timestamp:t
 #+INFOJS_OPT: view:nil toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
@@ -579,6 +580,7 @@
    - Non-rectangular blocks shall not be used.  Some illustrations
      may format as "tight" in the document.
 
+* Image Profiles
 ** TIFF: Image Description
    In general, Princeton University Library adheres to the standards
    elaborated by the Federal Agencies Digitization Guidelines
@@ -592,13 +594,12 @@
    dimension of 7200 pixels allows us to produce uniform derivative
    images rapidly and estimate our storage needs more accurately.
 ** JPEG2000: Image Description
-*** Generative Image Derivatives
+*** Generative Image Derivatives3
     Derived from the Master TIFF files with the following formula:
 
-   #+BEGIN_EXAMPLE
-      kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2  \
-      Creversible=yes -rate -,1,0.5,0.25
-   #+End_EXAMPLE
+    #+BEGIN_EXAMPLE
+      kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2 Creversible=yes -rate -,1,0.5,0.25
+    #+END_EXAMPLE
 
 *** Delivery Derivatives
     To generate a JP2000 using Kakadu, use the following recipe (taken
@@ -606,12 +607,13 @@
     Guidelines for Applicants/):
 
    #+BEGIN_EXAMPLE
-      kdu_compress -i YOURINPUT.pgm -o YOUROUTPUT.jp2 -rate \
-      1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 \
-      75,0.0625,0.05,0.04419,0.03716,0.03125,0.025,0.0221,0.01858,0.015625 \
+      kdu_compress -i YOURINPUT.pgm -o YOUROUTPUT.jp2 -rate 
+      1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 
+      75,0.0625,0.05,0.04419,0.03716,0.03125,0.025,0.0221,0.01858,0.015625 
       Clevels=6 Stiles={1024,1024} Corder=RLCP
-   #+End_EXAMPLE
+   #+END_EXAMPLE
 
+* Transcription Profiles
 ** TEI
    To be described.  TEI transcriptions will be derived from METS/ALTO
    metadata. 
@@ -809,65 +811,84 @@
 	 that starts on page one, continues on page 2, and then skips
 	 to page 5).
 * Document Structure Definition
+  (NB: This specification is still under development and subject to change.)
 ** Page Types
    - outside front cover (OFC)
    - inside front cover (IFC)
    - inside back cover (IBC)
    - outside back cover (OBC)
    - inside
-** Zone Types
-   - Byline :: a short phrase that indicates the name of the author or
-               creator of a magazine constituent.  It sometimes begins
-               with the word /by/ (English) /von/ (German) or /par/
-               (French), followed by the author or creator's name,
-               often printed in all caps.  The byline commonly appears
-               between the head of the constituent and the start of
-               the copy, where it is usually printed flush left or
-               centered; it may also appear at the end of a
-               constituent, where it is commonly printed flush right.
+** Zones (Layout Element steps)
+*** PublicationInfoZones
+**** Nameplate
+**** Masthead
+**** FrontFolioLine
+**** InnerFolioLine
+**** GenericPubInfo
+*** EditorialContentZones
+**** Headline
+**** Copy
+**** Byline
+**** Art
+**** Caption
+*** SponsoredAdvertisementZones
+**** SponsoredAd
+*** Encoding
+#+BEGIN_SRC xml
+<?xml version="1.0" encoding="UTF-8"?>
+<docWORKS-Definition Name="GenericExtensionVLE"
+    Version="4.0" 
+    xmlns:xlink="http://www.w3.org/TR/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="LogicalStruct.xsd">
 
-   - Caption :: A title or description of a piece of magazine art,
-                usually appearing below the graphic.  The byline is
-                sometimes conjoined.
+  <Step Name="VerifyLayoutElements">
+    <Classes>
+      <!-- Publication Information Layout Elements -->
+      <Class Name="Nameplate" BaseClass="Textblock"/>
+      <Class Name="Masthead" BaseClass="Textblock"/>
+      <Class Name="FrontFolioLine" BaseClass="Textblock"/>
+      <Class Name="InnerFolioLine" BaseClass="Textblock"/>
+      <Class Name="GenericPubInfo" BaseClass="Textblock"/>
 
-   - Copy :: The textual portion of a magazine constituent, as
-             distiguished from graphics or illustrations.
+      <!-- Editorial Content Zones -->
+      <Class Name="Headline" BaseClass="Author"/>
+      <Class Name="Byline" BaseClass="Author"/>
+      <Class Name="Copy" BaseClass="Textblock"/>
+      <Class Name="Art" BaseClass="Textblock"/>
+      <Class Name="Caption" BaseClass="Textblock"/>
 
-   - CoverLine :: A short statement printed on the cover of the
-                  magazine, usually alluding to the constituents
-                  inside.
+      <!-- Sponsored Advertisement Zones -->
+      <Class Name="SponsoredAd" BaseClass="Textblock"/>
+    </Classes>
+  </Step>
+</docWORKS-Definition>
+#+END_SRC
 
-   - FolioLine :: a line (sometimes several) containing information
-                  about the magazine: metadata.  FolioLines on the
-                  outside front cover often contain the volume number,
-                  the issue number, and the location and date of
-                  publication; FolioLines on inner pages sometimes
-                  function as running heads or feet and often contain
-                  a page number.
+** Hierarchical Parts (Hierarchical Element steps)
+*** PublicationInfo
+    - Masthead
+    - Nameplate
+    - FrontFolioLine
+    - InnerFolioLine
+    - GenericPubInfo
+*** EditorialContent
+**** TextContent
+     - Headline
+     - Copy
+     - Byline
+**** Illustration
+     - Art
+     - Caption
+     - Byline
+*** SponsoredAdvertisement
+    - SponsoredAd
 
-   - Head :: One or more lines of text, usually set in a larger
-             typeface than body copy, that introduces constituents or
-             subsections of constituents.  The largest, topmost head
-             in a constituent usually displays the title. (see
-             /subhead./)
+** METS logical structMap rules
+   - Editorial
+   - PubInfo
+   - Advertisements
 
-   - Masthead :: Often confused with /Nameplate/.  A listing printed
-                 in all issues of a magazine (usually in the first few
-                 pages) naming the editorial staff and other metadata.
-
-   - Nameplate :: A large element usually appearing at the top of the
-                  outer front cover, containing the name of the
-                  magazine, usually in distinctive display type, and
-                  sometimes a graphic logo.  It is sometimes repeated
-                  on one of the first inner pages. (See /Masthead./)
-
-   - Subhead :: A kind of /head/, set in smaller type than the main
-                head, that introduces a subsection of a constituent.
-** Structure/Hierarchy Types
-   - Constituent :: A generic component of a magazine.  For Blue
-                    Mountain, we do not distinguish, at the METS/ALTO
-                    level, among various kinds of magazine content.
-                    All composites of layout elements are /constituents/.
 
 * Footnotes
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
