@@ -323,7 +323,7 @@
      Where /PREFIX/ is the following fixed value:
 
      #+BEGIN_EXAMPLE
-     urn:PUL:periodicals:dmd
+     urn:PUL:bluemountain:dmd
      #+END_EXAMPLE
 
      and /PUBID/ is the issue identifier, computed using the rules
@@ -594,7 +594,7 @@
    dimension of 7200 pixels allows us to produce uniform derivative
    images rapidly and estimate our storage needs more accurately.
 ** JPEG2000: Image Description
-*** Generative Image Derivatives3
+*** Generative Image Derivatives
     Derived from the Master TIFF files with the following formula:
 
     #+BEGIN_EXAMPLE
@@ -693,12 +693,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
        TYPE="Magazine"
-       OBJID="urn:PUL:periodicals:bmtnabk:bmtnabk_1946-09-08-01">
+       OBJID="urn:PUL:bluemountain:bmtnabk:bmtnabk_1946-09-08-01">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
 	       <name>Princeton University Library, Digital Initiatives</name>
 	   </agent>
-	   <metsDocumentID TYPE="URN">urn:PUL:periodicals:bmtnabk:td:bmtnabk_1946-09-08-01</metsDocumentID>
+	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:bmtnabk:td:bmtnabk_1946-09-08-01</metsDocumentID>
        </metsHdr>
        <dmdSec ID="dmd1">
 	  <!-- MODS record goes here -->
@@ -722,7 +722,7 @@
        PREFIX:PUBID
        #+END_EXAMPLE
        Where
-       - /PREFIX/ is the fixed string /urn:PUL:periodicals:bmtnabk/
+       - /PREFIX/ is the fixed string /urn:PUL:bluemountain:bmtnabk/
        - /PUBID/ is the issue identifier, computed using the rules
 	 above.
 **** <metsHdr>
@@ -741,7 +741,7 @@
       #+END_SRC
       Where /PREFIX/ is the following fixed value:
       #+BEGIN_EXAMPLE
-      urn:PUL:periodicals:bmtnabk:td
+      urn:PUL:bluemountain:bmtnabk:td
       #+END_EXAMPLE
       and /PUBID/ is the issue identifier, computed using the rules
       above.

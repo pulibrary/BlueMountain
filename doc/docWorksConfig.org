@@ -2,83 +2,130 @@
 #+AUTHOR:    Cliff Wulfman
 #+EMAIL:     cwulfman@Princeton.EDU
 #+DATE:      2012-12-06 Thu
-#+DESCRIPTION:
-#+KEYWORDS:
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:   
-#+LINK_HOME: 
-#+XSLT:
 * Zones (Layout Element steps)
+  These are the layout elements -- the regions of the page -- that are
+  identified during the LayoutElements steps.  They fall into three
+  general classes.
 ** PublicationInfoZones
-*** Nameplate
-*** Masthead
-*** FrontFolioLine
-*** InnerFolioLine
-*** GenericPubInfo
+   - Nameplate
+   - Masthead
+   - PageNumber
+   - FrontFolioLine
+   - InnerFolioLine
+   - GenericPubInfo
 ** EditorialContentZones
-*** Headline
-*** Copy
-*** Byline
-*** Art
-*** Caption
+   - Head
+   - Subhead
+   - Copy
+   - Byline
+   - Art
+   - Caption
 ** SponsoredAdvertisementZones
-*** SponsoredAd
-** Encoding
-#+BEGIN_SRC xml
-<?xml version="1.0" encoding="UTF-8"?>
-<docWORKS-Definition Name="GenericExtensionVLE" Version="4.0" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LogicalStruct.xsd">
-  <Step Name="VerifyLayoutElements">
-    <Classes>
-      <!-- Publication Information Layout Elements -->
-      <Class Name="Nameplate" BaseClass="Textblock"/>
-      <Class Name="Masthead" BaseClass="Textblock"/>
-      <Class Name="FrontFolioLine" BaseClass="Textblock"/>
-      <Class Name="InnerFolioLine" BaseClass="Textblock"/>
-      <Class Name="GenericPubInfo" BaseClass="Textblock"/>
-
-      <!-- Editorial Content Zones -->
-      <Class Name="Headline" BaseClass="Author"/>
-      <Class Name="Byline" BaseClass="Author"/>
-      <Class Name="Copy" BaseClass="Textblock"/>
-      <Class Name="Art" BaseClass="Textblock"/>
-      <Class Name="Caption" BaseClass="Textblock"/>
-
-      <!-- Sponsored Advertisement Zones -->
-      <Class Name="SponsoredAd" BaseClass="Textblock"/>
-    </Classes>
-  </Step>
-</docWORKS-Definition>
-#+END_SRC
+   - SponsoredAd
 
 * Hierarchical Parts (Hierarchical Element steps)
+  There are three top-level "constituents" in our model.  They are
+  "logical" elements, which are defined by the group of layout
+  elements they contain.
+
 ** PublicationInfo
+   A PublicationInfo element is made up of one or more of the
+   following Layout Elements:
    - Masthead
    - Nameplate
    - FrontFolioLine
    - InnerFolioLine
    - GenericPubInfo
+   - PageNumber
+
+*** Combination Rules
+    - Do not generate a <mods:relatedItem type='constituent'> for
+      PublicationInfo "hierarchical elements."
+
+    - On the outer front cover, group the Nameplate, the
+      FrontFolioLines, and GenericPubInfo (such as newsstand price)
+      into a single PublicationInfo element.
+
 ** EditorialContent
+   There are two kinds of EditorialContent: TextContent and
+   Illustration.  They are made up of different groups of layout
+   elements.
 *** TextContent
+    A TextContent element is the "usual" sort of editorial piece -- an
+    article; a letter to the editor; a poem; a manifesto.  It always
+    contains Copy; it may or may not contain one or more Headlines
+    (Heads, subHeads) or Bylines.
     - Headline
     - Copy
     - Byline
+
+**** Combination Rules
+     - Generate a <mods:relatedItem type='constituent'> for each
+       TextContent element.
+       - The largest Headline is usually the <mods:title>.
+       - The Byline is the "author" -- there may be more than one.
+       - <mods:genre type="CCS">TextContent</mods:genre>
+
 *** Illustration
+    Illustrations are the photographs, prints, engravings, etc. that
+    are "featured items" in a magazine (as opposed to printer's
+    ornaments or other page layout/design graphic).
     - Art
     - Caption
     - Byline
+
+**** Combination Rules
+     - Generate a <mods:relatedItem type='constituent'> for each
+       Illustration element.
+       - The Caption is the <mods:title>.
+       - The Byline is the "artist" -- there may be more than one.
+       - <mods:genre type="CCS">Illustration</mods:genre>
+
+
 ** SponsoredAdvertisement
+   We zone SponsoredAdvertisements as single zones (blocks), without
+   distinguishing other zones within them.  Thus there is only one
+   kind of layout element in a SponsoredAdvertisement, and only one
+   kind of constituent to which a SponsoredAd can belong.
    - SponsoredAd
 
-* MODS constiutent rules
-  - <relatedItem type='constituent'> elements
-    Should only be generated for EditorialContent
+*** Combination Rules
+     - Generate a <mods:relatedItem type='constituent'> for each
+       SponsoredAdvertisement element.
+     - <mods:genre type="CCS">SponsoredAdvertisement</mods:genre>
 
 * METS logical structMap rules
-  - Editorial
-  - PubInfo
-  - Advertisements
+  - The top-level <div> in the Logical <structMap> has TYPE = "Magazine"
+    - The LABEL attribute is the name of the magazine: it is taken from
+      the top-level <mods:titleInfo> element.
+
+  - The top-level <div> has one sub-element, <div TYPE="Issue">.
+    - The LABEL attribute is composed of the <mods:titleInfo> and
+      <mods:part> elements, typically <mods:text> element within
+      <mods:part type='issue'> or the <mods:caption> element within
+      the <mods:detail type='number'> element.
+
+  - The Issue <div> contains, in most cases, three sub-<div>s:
+    - <div TYPE="PublicationInfo" LABEL="Publication Information" />
+      Contains <div>s corresponding to the PublicationInfo elements,
+      in publication order.
+
+    - <div TYPE="EditorialContent" LABEL="Contents" />
+      Contains <div>s corresponding to the TextContent and
+      Illustration elements, in publication order.  These elements
+      have DMDID attributes whose values link them to the
+      corresponding <relatedItem> elements in the <mods> record.
+
+    - <div TYPE="SponsoredAdvertisements" LABEL="Advertisements" />
+      Contains <div>s corresponding to the SponsoredAdvertisement
+      elements, in publication order.  These elements
+      have DMDID attributes whose values link them to the
+      corresponding <relatedItem> elements in the <mods> record.
+
+  (TO DISCUSS: HOW TO DETERMINE A LABEL FOR EACH OF THE ADVERTISEMENT
+      DIVS.)
