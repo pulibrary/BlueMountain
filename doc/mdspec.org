@@ -598,7 +598,12 @@
     Derived from the Master TIFF files with the following formula:
 
     #+BEGIN_EXAMPLE
-      kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2 Creversible=yes -rate -,1,0.5,0.25
+    kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2 Creversible=yes -rate -,1,0.5,0.25 \
+    -jp2_space sRGB \
+    -double_buffering 10 \
+    -num_threads 4 \
+    -no_weights \
+    -quiet
     #+END_EXAMPLE
 
 *** Delivery Derivatives
@@ -693,12 +698,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
        TYPE="Magazine"
-       OBJID="urn:PUL:bluemountain:bmtnabk:bmtnabk_1946-09-08-01">
+       OBJID="urn:PUL:bluemountain:bmtnabk:bmtnabk_1946-09-08_01">
        <metsHdr>
 	   <agent ROLE="CREATOR" TYPE="ORGANIZATION">
 	       <name>Princeton University Library, Digital Initiatives</name>
 	   </agent>
-	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:bmtnabk:td:bmtnabk_1946-09-08-01</metsDocumentID>
+	   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:bmtnabk:td:bmtnabk_1946-09-08_01</metsDocumentID>
        </metsHdr>
        <dmdSec ID="dmd1">
 	  <!-- MODS record goes here -->
@@ -775,7 +780,6 @@
             <roleTerm>cre</roleTerm>
           </role>
         </name>
-        <typeOfResource>text</typeOfResource>
         <language>
           <languageTerm authority="iso639-2b">fre</languageTerm>
         </language>
@@ -791,12 +795,10 @@
        ID will begin with the letter "c" followed by a two- or
        three-digit sequential number.
      - The <MODS:title> is transcribed as it appears on the page.
-     - <MODS:TypeOfResource> should have a value of either /text/ or /still
-       image/ (for art).
      - The <MODS:name> element is transcribed as it appears on the
        page and encoded in the <MODS:displayForm> element.  All
        <MODS:name> elements shall include a <MODS:role> element, which
-       shall designated the generic role, /cre/, in the
+       shall designate the generic role, /cre/, in the
        <MODS:roleTerm> subelement.
      - The <MODS:languageTerm> values should be three-letter codes
        derived from the ISO639-2 standard, found at
@@ -811,7 +813,9 @@
 	 that starts on page one, continues on page 2, and then skips
 	 to page 5).
 * Document Structure Definition
-  (NB: This specification is still under development and subject to change.)
+  The following information should be used in producing the docWorks
+  configuration to be used in generating METS/ALTO data for the Blue
+  Mountain Project.
 ** Page Types
    - outside front cover (OFC)
    - inside front cover (IFC)
@@ -819,77 +823,131 @@
    - outside back cover (OBC)
    - inside
 ** Zones (Layout Element steps)
-*** PublicationInfoZones
-**** Nameplate
-**** Masthead
-**** FrontFolioLine
-**** InnerFolioLine
-**** GenericPubInfo
-*** EditorialContentZones
-**** Headline
-**** Copy
-**** Byline
-**** Art
-**** Caption
-*** SponsoredAdvertisementZones
-**** SponsoredAd
-*** Encoding
-#+BEGIN_SRC xml
-<?xml version="1.0" encoding="UTF-8"?>
-<docWORKS-Definition Name="GenericExtensionVLE"
-    Version="4.0" 
-    xmlns:xlink="http://www.w3.org/TR/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="LogicalStruct.xsd">
+   These are the layout elements -- the regions of the page -- that
+   are identified during the LayoutElements steps.  They fall into
+   three general classes.
 
-  <Step Name="VerifyLayoutElements">
-    <Classes>
-      <!-- Publication Information Layout Elements -->
-      <Class Name="Nameplate" BaseClass="Textblock"/>
-      <Class Name="Masthead" BaseClass="Textblock"/>
-      <Class Name="FrontFolioLine" BaseClass="Textblock"/>
-      <Class Name="InnerFolioLine" BaseClass="Textblock"/>
-      <Class Name="GenericPubInfo" BaseClass="Textblock"/>
-
-      <!-- Editorial Content Zones -->
-      <Class Name="Headline" BaseClass="Author"/>
-      <Class Name="Byline" BaseClass="Author"/>
-      <Class Name="Copy" BaseClass="Textblock"/>
-      <Class Name="Art" BaseClass="Textblock"/>
-      <Class Name="Caption" BaseClass="Textblock"/>
-
-      <!-- Sponsored Advertisement Zones -->
-      <Class Name="SponsoredAd" BaseClass="Textblock"/>
-    </Classes>
-  </Step>
-</docWORKS-Definition>
-#+END_SRC
+   1. PublicationInfoZones
+      - Nameplate
+      - Masthead
+      - PageNumber
+      - FrontFolioLine
+      - InnerFolioLine
+      - GenericPubInfo
+   2. EditorialContentZones
+      - Head
+      - Subhead
+      - Copy
+      - Byline
+      - Art
+      - Caption
+   3. SponsoredAdvertisementZones
+      - SponsoredAd
 
 ** Hierarchical Parts (Hierarchical Element steps)
+   There are three top-level "constituents" in our model.  They are
+   "logical" elements, which are defined by the group of layout
+   elements they contain.
+
 *** PublicationInfo
+    A PublicationInfo element is made up of one or more of the
+    following Layout Elements:
     - Masthead
     - Nameplate
     - FrontFolioLine
     - InnerFolioLine
     - GenericPubInfo
+    - PageNumber
+
+**** Combination Rules
+     - Do not generate a <mods:relatedItem type='constituent'> for
+       PublicationInfo "hierarchical elements."
+
+     - On the outer front cover, group the Nameplate, the
+       FrontFolioLines, and GenericPubInfo (such as newsstand price)
+       into a single PublicationInfo element.
+
 *** EditorialContent
+    There are two kinds of EditorialContent: TextContent and
+    Illustration.  They are made up of different groups of layout
+    elements.
 **** TextContent
+     A TextContent element is the "usual" sort of editorial piece -- an
+     article; a letter to the editor; a poem; a manifesto.  It always
+     contains Copy; it may or may not contain one or more Headlines
+     (Heads, subHeads) or Bylines.
      - Headline
      - Copy
      - Byline
+
+***** Combination Rules
+      - Generate a <mods:relatedItem type='constituent'> for each
+       	TextContent element.
+       	- The largest Headline is usually the <mods:title>.
+       	- The Byline is the "author" -- there may be more than one.
+       	- <mods:genre type="CCS">TextContent</mods:genre>
+
 **** Illustration
+     Illustrations are the photographs, prints, engravings, etc. that
+     are "featured items" in a magazine (as opposed to printer's
+     ornaments or other page layout/design graphic).
      - Art
      - Caption
      - Byline
+
+***** Combination Rules
+      - Generate a <mods:relatedItem type='constituent'> for each
+       	Illustration element.
+       	- The Caption is the <mods:title>.
+       	- The Byline is the "artist" -- there may be more than one.
+       	- <mods:genre type="CCS">Illustration</mods:genre>
+
 *** SponsoredAdvertisement
+    We zone SponsoredAdvertisements as single zones (blocks), without
+    distinguishing other zones within them.  Thus there is only one
+    kind of layout element in a SponsoredAdvertisement, and only one
+    kind of constituent to which a SponsoredAd can belong.
     - SponsoredAd
 
+**** Combination Rules
+      - Generate a <mods:relatedItem type='constituent'> for each
+       	SponsoredAdvertisement element.
+      - <mods:genre type="CCS">SponsoredAdvertisement</mods:genre>
+
 ** METS logical structMap rules
-   - Editorial
-   - PubInfo
-   - Advertisements
+   All <div> elements shall have IDs.  These may take whatever form is
+   convenient for the encoder (as long as they conform with the
+   standard rules for xml IDs).  In this specification, we suggest a
+   hierarchical scheme for generating IDs, because such a scheme is
+   consistent and easy to read.
+*** <div TYPE="Magazine" ID="L.1" LABEL="">
+    - The top-level <div> in the Logical <structMap>.
+      - The TYPE should equal the value of the TYPE attribute of the
+        top-level <mets> element, and should almost always be "Magazine."
+      - The LABEL attribute is the name of the magazine: it is taken from
+       	the top-level <mods:titleInfo> element.
+*** <div TYPE="Issue" ID="L.1.1" LABEL="">
+    - The top-level <div> has one sub-element, <div TYPE="Issue">.
+      - The LABEL attribute is composed of the <mods:titleInfo> and
+       	<mods:part> elements, typically <mods:text> element within
+       	<mods:part type='issue'> or the <mods:caption> element within
+       	the <mods:detail type='number'> element.
+      - The Issue <div> contains, in most cases, three sub-<div>s, one
+        for each of the "Hierarchical Parts"
+**** <div TYPE="PublicationInfo" ID="L.1.1.1" LABEL="Publication Information">
+     Contains <div>s corresponding to the PublicationInfo elements, in
+     publication order.
+**** <div TYPE="EditorialContent" ID="L.1.1.2" LABEL="Contents">
+     Contains <div>s corresponding to the TextContent and Illustration
+     elements, in publication order.  These elements have DMDID
+     attributes whose values link them to the corresponding
+     <relatedItem> elements in the <mods> record.
 
-
+**** <div TYPE="SponsoredAdvertisement" ID="L.1.1.3" LABEL="Sponsored Advertisements">
+     Contains <div>s corresponding to the SponsoredAdvertisement
+     elements, in publication order.  These elements have DMDID
+     attributes whose values link them to the corresponding
+     <relatedItem> elements in the <mods> record.
 * Footnotes
 [fn:1] See Scholes, Robert and Clifford Wulfman, /Modernism in the
   Magazines: An Introduction/. New Haven: Yale University Press, 2010.

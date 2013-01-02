@@ -5,17 +5,47 @@
   two Blue Mountain issues.
 
   It is important to note that these are very challenging magazines.
-  Their formats are unusual and highly variable.
+  Their formats are unusual and highly variable.  This pilot revealed
+  a number of challenges that need to be addressed before work on Blue
+  Mountain can begin.
+
 
 ** Metadata
 *** MODS
     Princeton supplied MODS records for each of the sample issues to
     be processed by DDD, with the suggestion that those records be
-    imported directly into DDD's workflow and modified.
+    imported directly into DDD's workflow and added to --
+    specifically, that the <MODS:relatedItem type='constituent'>
+    elements be used as guidance in zoning and that DDD augment those
+    <relatedItem> elements with IDs that linked to the
+    <METS:div> elements in the <METS:structMap>s.  It appears this
+    workflow is more difficult to accomplish than first appeared.
+    Nevertheless, some form of metadata sharing is crucial, because
+    some of the Blue Mountain titles will be very difficult for DDD to
+    process alone, without knowledge of the languages or the material.
+
+
 *** METS
     The TYPE of these objects should not be Newspaper: they are not
-    newspapers.  We are trying to learn more about METAe_Serial as a
-    METS profile, and we anticipate using it.  Thus the @TYPE
+    newspapers.  We have tried to learn more about METAe_Serial as a
+    METS profile, and we anticipated using it. It now appears,
+    however, that METAe_Serial was never developed, and in any case,
+    the profile for an academic journal differs in substantial ways
+    from that of a turn-of-the-century magazine.
+
+    Princeton is now working with CCS to design a new profile and
+    configuration that can be used to model magazines in Blue
+    Mountain.  We understand introducing a new METS profile requires
+    changes at several points in the workflow: DDD will need to
+    install the new profile/configuration into docWorks and, perhaps,
+    train its technicians to use it.  On the output side, DL
+    Consulting will need to modify Veridian's ingestion routines to
+    handle the new format.  We will endeavor, then, to make the Blue
+    Mountain magazine profile as straightfoward as possible while
+    properly modeling the material.
+
+
+  Thus the @TYPE
     attribute on the top-level <mets> object should be METAe_Serial,
     and the various <div> elements in the logical structmap should
     follow the Metae conventions.
