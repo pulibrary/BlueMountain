@@ -53,7 +53,7 @@
    These bmtnids will be used to compose a Universal Resource Name
    (URN) for each title and issue.
 
-   - Journal :: urn:PUL:bluemountain:bmtnid
+   - Title :: urn:PUL:bluemountain:bmtnid
    - Issue :: urn:PUL:bluemountain:bmtnid_issueid
 
    As an example, for /le coeur à barbe:/
@@ -73,8 +73,11 @@
 
    As an example, for /le coeur à barbe:/
    #+BEGIN_EXAMPLE
-      urn:PUL:bluemountain:dmd:bmtnaad
-      urn:PUL:bluemountain:td:bmtnaad
+      urn:PUL:bluemountain:dmd:bmtnaad   # URN for title MODS
+      urn:PUL:bluemountain:td:bmtnaad    # URN for title METS
+
+      urn:PUL:bluemountain:dmd:bmtnaad_1920-04_01   # URN for the issue MODS
+      urn:PUL:bluemountain:td:bmtnaad_1920-04_01    # URN for the issue METS
    #+END_EXAMPLE
 
 ** Journal Objects
