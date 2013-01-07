@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
+    <div class="row-fluid">
+        <div id="content" class="span8">
+            <div class="page-header">
+                <h1 class="config:app-title">Generated page</h1>
+            </div>
+            <p>This is an application for exploring Blue Mountain.  It is 
+                very much a work in progress.
+            </p>
+            <div class="row-fluid">
+                <div class="span12">
+                    <h2>Titles</h2>
+                    <p>The following list represents the titles being processed
+                        under Blue Mountain's NEH grant.  Follow the link on the 
+                        bmtnid to get detailed information about the magazine. 
+                        If you
+                        follow the link on the bibliographic identifier from
+                        a computer in the Princeton network, you will be taken to
+                        an image browser, where you can see the raw, unprocessed
+                        digital images made from Princeton's holdings (and those
+                        of our collaborators).                        
+                    </p>
+                    <!--
+                    <table class="app:titles">
+                        <caption>Blue Mountain titles, arranged alphabetically</caption>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Bmtn id</td>
+                                <td>BBID</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="templates:each?from=titles&to=title">
+                                <td class="app:print-title"/>
+                                <td class="app:print-identifier"/>
+                                <td class="app:print-bbid"/>
+                            </tr>
+                        </tbody>
+                    </table>
+                    -->
+                    <ul class="listing app:titles">
+                        <li class="templates:each?from=titles&amp;to=title">
+                            <span class="app:print-title"/>
+                            <dl>
+                                <dt style="float:left; width: 6em;">bmtnid</dt>
+                                <dd class="app:print-identifier">the identifier</dd>
+                                <dt style="float:left; width: 6em;">bbid</dt>
+                                <dd class="app:print-bbid">the bbid</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="span4">
+            <h2>Application Info</h2>
+            <div class="config:app-info"/>
+        </div>
+    </div>
+</div>
