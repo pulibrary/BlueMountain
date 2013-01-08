@@ -26,7 +26,7 @@ declare function app:helloworld($node as node(), $model as map(*), $name as xs:s
         ()
 };
 
-declare function app:catEntry($node as node(), $model as map(*), $bmtnid as xs:string?) {
+declare %templates:wrap function app:catEntry($node as node(), $model as map(*), $bmtnid as xs:string?) {
     let $entry :=
         if ($bmtnid) then
             collection($config:data-root)/mods:mods[./mods:identifier = "urn:PUL:bluemountain:" || $bmtnid]
@@ -34,10 +34,6 @@ declare function app:catEntry($node as node(), $model as map(*), $bmtnid as xs:s
             ()
     return map:entry("title", $entry)
 };
-
-(: BUG: the collection() expression should be replace with
- : $config:data-root || "/mods:mods" but $config:data-root
- : causes a "prefix not found" error. :)
 
 (:~
  : This function puts title-level MODS into the Model.
@@ -85,4 +81,154 @@ function app:print-bbid($node as node(), $model as map(*)) {
     let $bbid := substring-after($model("title")//mods:recordOrigin/string(), "BBID=")
     let $prefix := "http://diglib.princeton.edu/tools/ib/pudl0097/"
     return <a href="{$prefix || $bbid}">{ $bbid }</a>
+};
+
+declare
+    %templates:wrap
+function app:print-originInfo($node as node(), $model as map(*)) {
+    let $originInfo := $model("title")/mods:originInfo
+    let $dateString := $originInfo/mods:dateIssued[@point='start']/string()
+    let $dateString :=
+        if ($originInfo/mods:dateIssued[@point='end']) then
+            $dateString || "&#8212;" || $originInfo/mods:dateIssued[@point='end']/string()
+        else
+            $dateString
+    return $dateString          
+};
+
+declare
+    %templates:wrap
+function app:issues($node as node(), $model as map(*)) {
+    let $titleRecId := $model("title")/mods:recordInfo/mods:recordIdentifier
+    let $issues := collection($config:data-root)/mods:mods[./mods:relatedItem[@type='host']/mods:recordInfo/mods:recordIdentifier
+        = $titleRecId]
+        return map:entry("issues", $issues)
+};
+
+declare
+    %templates:wrap
+function app:print-issue-count($node as node(), $model as map(*)) {
+    let $count := count($model("issues"))
+    let $str := $count || " "
+    let $str :=
+        if ($count = 1) then
+            $str || "issue"
+        else $str || "issues"
+    return $str
+};
+
+declare function app:_format-issuance($partInfo as node())
+{
+    if ($partInfo/mods:text) then
+        $partInfo/mods:text
+    else
+        let $volInfo := $partInfo/mods:detail[@type='volume']
+        let $numInfo := $partInfo/mods:detail[@type='number']
+        let $str :=
+            if ($volInfo/mods:caption) then
+                $volInfo/mods:caption || "; "
+            else ""
+        let $str :=
+            $str || $numInfo/mods:caption
+        return $str
+};
+
+declare
+    %templates:wrap
+function app:print-issue-info($node as node(), $model as map(*)) {
+    if ($model("issue")) then
+        let $titleInfo := $model("issue")/mods:titleInfo[empty(@type)]
+        let $titleString :=
+            if ($titleInfo/mods:nonSort) then
+                $titleInfo/mods:nonSort/string() || " "
+            else ""
+        let $titleString :=
+            $titleString || $titleInfo/mods:title/string()
+        let $titleString :=
+            if ($titleInfo/mods:subTitle) then
+                $titleString || ": " || $titleInfo/mods:subTitle/string()
+            else
+                $titleString
+    
+        let $partInfo := $model("issue")/mods:part[@type='issue']
+        let $issuance := app:_format-issuance($partInfo)
+        let $originInfo := $model("issue")/mods:originInfo
+        let $dateString := $originInfo/mods:dateIssued[empty(@encoding)]/string()
+        return 
+            <hgroup>
+                <h2>{ $titleString }</h2>
+                <p>{ $issuance }</p>
+                <p>{ $dateString }</p>
+            </hgroup>
+    else
+        ""
+};
+
+declare
+    %templates:wrap
+function app:issue-list($node as node(), $model as map(*)) {
+    for $issue in $model("issues")
+    let $id := $issue/mods:identifier/string()
+    let $dateString := $issue/mods:originInfo/mods:dateIssued[empty(@encoding)]/string()
+    return
+        <li>{ $id  || ' ' ||  $dateString }</li>
+};
+declare
+    %templates:wrap
+function app:issue-form($node as node(), $model as map(*)) {
+    let $bmtnid := substring-after($model("title")/mods:identifier/string(), 'urn:PUL:bluemountain:')
+    return
+        <form action="">
+            <select name="issueid">
+            {
+                for $issue in $model("issues")
+                let $id := $issue/mods:identifier/string()
+                let $dateString := $issue/mods:originInfo/mods:dateIssued[empty(@encoding)]/string()
+                return
+                    <option value="{ $id }">{ $dateString }</option>
+            }
+            </select>
+            <input type="hidden" name="bmtnid" id="bmtnid" value="{ $bmtnid }"/>
+            <input type="submit"/>
+        </form>
+
+};
+
+declare
+    %templates:wrap
+function app:issue-option($node as node(), $model as map(*)) {
+    let $issueDate := $model("issue")/mods:originInfo/mods:dateIssued[empty(@encoding)]/string()
+    let $issueID   := $model("issue")/mods:identifier/string()
+    return <option value="{ $issueID }">{ $issueDate }</option>
+};
+
+declare
+    %templates:wrap
+function app:issue($node as node(), $model as map(*), $issueid as xs:string?) {
+    let $issue :=
+        if ($issueid) then
+            collection($config:data-root)/mods:mods[./mods:identifier = $issueid]
+        else
+            ()
+    return map:entry("issue", $issue)
+};
+
+declare
+    %templates:wrap
+function app:issue-constituents($node as node(), $model as map(*)) {
+    let $constituents := $model("issue")/mods:relatedItem[@type='constituent']
+    return map:entry("issue-constituents", $constituents)
+};
+
+declare
+    %templates:wrap
+function app:print-constituent-title($node as node(), $model as map(*)) {
+    $model("item")/mods:titleInfo/string()
+};
+
+declare
+    %templates:wrap
+function app:print-constituent-byline($node as node(), $model as map(*)) {
+    for $name in $model("item")/mods:name
+    return $name/mods:displayForm/string()
 };

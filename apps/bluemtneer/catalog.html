@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
-    <div class="app:catEntry">
-        <h2 class="app:print-title">Magazine Title</h2>
-    </div>
+    <article class="app:catEntry">
+        <header>
+            <h1 class="app:print-title">Magazine Title</h1>
+            <p class="app:print-originInfo"/>
+        </header>
+        <div class="app:issues">
+            <p class="app:print-issue-count"/>
+            <form class="app:issue-form"/>
+            <article class="app:issue">
+                <header class="app:print-issue-info"/>
+                <table class="app:issue-constituents">
+                    <tr class="templates:each?from=issue-constituents&amp;to=item">
+                        <td class="app:print-constituent-title">title</td>
+                        <td class="app:print-constituent-byline">byline</td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </article>
 </div>
