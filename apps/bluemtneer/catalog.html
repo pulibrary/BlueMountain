@@ -10,12 +10,9 @@
             <form class="app:issue-form"/>
             <article class="app:issue">
                 <header class="app:print-issue-info"/>
-                <table class="app:issue-constituents">
-                    <tr class="templates:each?from=issue-constituents&amp;to=item">
-                        <td class="app:print-constituent-title">title</td>
-                        <td class="app:print-constituent-byline">byline</td>
-                    </tr>
-                </table>
+                <div class="app:issue-constituents">
+                    <ul class="listing app:print-toc"/>
+                </div>
             </article>
         </div>
     </article>
