@@ -1,203 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:xlink="http://www.w3.org/1999/xlink">
-  
-  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaab</identifier>
-  
-  <recordInfo>
-    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaab</recordIdentifier>
-    <recordContentSource authority="marcorg">NjP</recordContentSource>
-    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4545005</recordOrigin>
-    <languageOfCataloging>
-      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-    </languageOfCataloging>
-  </recordInfo>
-  
-  <titleInfo>
-    <title>Action</title>
-  </titleInfo>
-  <name type="personal">
-    <namePart>Fels, Florent</namePart>
-    <namePart type="date">1893-</namePart>
-    <role>
-      <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
-    </role>
-  </name>
-  <name type="personal">
-    <namePart>Sauvage, Marcel.</namePart>
-    <role>
-      <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
-    </role>
-  </name>
-  <typeOfResource>text</typeOfResource>
-  <originInfo script="Latn">
-    <place>
-      <placeTerm type="text">Paris</placeTerm>
-    </place>
-    <publisher>Action</publisher>
-    <dateIssued>1920-1922</dateIssued>
-    <dateIssued encoding="marc" point="start">1920</dateIssued>
-    <dateIssued encoding="marc" point="end">1922</dateIssued>
+<mods xmlns="http://www.loc.gov/mods/v3"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+ 
+ <identifier type="bmtn">urn:PUL:bluemountain:bmtnaab</identifier>
+ <recordInfo>
+  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaab</recordIdentifier>
+ <recordContentSource authority="marcorg">NjP</recordContentSource>
+ <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4545005</recordOrigin>
+ <languageOfCataloging>
+  <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+ </languageOfCataloging>
+ </recordInfo>
+ 
+ <titleInfo>
+  <title>Action</title>
+ </titleInfo>
+ <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/114964792">
+  <namePart type="family">Fels</namePart>
+  <namePart type="given">Florent</namePart>
+  <namePart type="date">1891-1977</namePart>
+  <role>
+   <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
+  </role>
+ </name>
+ <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/68935531">
+  <namePart type="family">Sauvage</namePart>
+  <namePart type="given">Marcel</namePart>
+  <namePart type="date">1895-1988</namePart>
+  <role>
+   <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
+  </role>
+ </name>
+ <typeOfResource>text</typeOfResource>
+ <originInfo script="Latn">
+  <place>
+   <placeTerm type="text">Paris</placeTerm>
+  </place>
+  <publisher>Action</publisher>
+  <dateIssued>1920-1922</dateIssued>
+  <dateIssued encoding="marc" point="start">1920</dateIssued>
+  <dateIssued encoding="marc" point="end">1922</dateIssued>
+ </originInfo>
+ <language>
+  <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+ </language>
+ <physicalDescription>
+  <extent>3 v. : ill. ; 22-24 cm.</extent>
+ </physicalDescription>
+ <note type="date/sequential designation">1. année, no 1 (févr. 1920)-3. année (mars-avril 1922)</note>
+ <note>"Directeurs, Florent Fels et Marcel Sauvage".</note>
+ <note>Title from cover.</note>
+ <note>"Cahiers individualistes de philosophie et d'art."</note>
+ <subject authority="lcsh">
+  <topic>Arts, French</topic>
+  <genre>Periodicals</genre>
+ </subject>
+ <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+ <location>
+  <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+  <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+  <holdingSimple>
+   <copyInformation>
+    <subLocation>sax</subLocation>
+    <!--DELETE COPY NUMBER BELOW-->
+    <shelfLocator>NX2 .A27</shelfLocator>
+   </copyInformation>
+  </holdingSimple>
+ </location>
+
+ 
+ 
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>1</number>
+   </detail>
+   <detail type="number">
+    <number>1</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1920-02</dateIssued>
   </originInfo>
-  <language>
-    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-  </language>
-  <physicalDescription>
-    <extent>3 v. : ill. ; 22-24 cm.</extent>
-  </physicalDescription>
-  <note type="date/sequential designation">1. année, no 1 (févr. 1920)-3. année (mars-avril 1922)</note>
-  <note>"Directeurs, Florent Fels et Marcel Sauvage".</note>
-  <note>Title from cover.</note>
-  <note>"Cahiers individualistes de philosophie et d'art."</note>
-  <subject authority="lcsh">
-    <topic>Arts, French</topic>
-    <genre>Periodicals</genre>
-  </subject>
-  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-  <location>
-    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-    <holdingSimple>
-      <copyInformation>
-        <subLocation>sax</subLocation>
-        <!--DELETE COPY NUMBER BELOW-->
-        <shelfLocator>NX2 .A27</shelfLocator>
-      </copyInformation>
-    </holdingSimple>
-  </location>
-  <relatedItem type="constituent" xlink:type="simple"
-               xlink:href="urn:PUL:bluemountain:bmtnaab:01-01">
-    <recordInfo>
-      <recordIdentifier>urn:PUL:bluemountain:bmtnaab:01-01</recordIdentifier>
-    </recordInfo>
-  </relatedItem>
-  
-  <relatedItem type="constituent" xlink:href="">
-    <part type="issue">
-      <detail type="volume">
-        <number>1</number>
-      </detail>
-      <detail type="number">
-        <number>2</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1920-03-</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>1</number>
-      </detail>
-      <detail type="number">
-        <number>3</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1920-04</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>1</number>
-      </detail>
-      <detail type="number">
-        <number>4</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1920-07</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>1</number>
-      </detail>
-      <detail type="number">
-        <number>5</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1920-10</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>1</number>
-      </detail>
-      <detail type="number">
-        <number>6</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1920-12</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>2</number>
-      </detail>
-      <detail type="number">
-        <number>7</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1921-05</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>2</number>
-      </detail>
-      <detail type="number">
-        <number>9</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1921-10</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>2</number>
-      </detail>
-      <detail type="number">
-        <number>10</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1921-11</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>2</number>
-      </detail>
-      <detail type="number">
-        <caption>Hors-Séme</caption>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1921</dateIssued>
-    </originInfo>
-  </relatedItem>
-  <relatedItem type="constituent">
-    <part type="issue">
-      <detail type="volume">
-        <number>3</number>
-      </detail>
-    </part>
-    <originInfo>
-      <dateIssued keyDate="yes" encoding="iso8601">1922-03</dateIssued>
-      <dateIssued/>
-    </originInfo>
-  </relatedItem>
+ </relatedItem>
+ 
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>1</number>
+   </detail>
+   <detail type="number">
+    <number>2</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1920-03</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>1</number>
+   </detail>
+   <detail type="number">
+    <number>3</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1920-04</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>1</number>
+   </detail>
+   <detail type="number">
+    <number>4</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1920-07</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>1</number>
+   </detail>
+   <detail type="number">
+    <number>5</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1920-10</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>1</number>
+   </detail>
+   <detail type="number">
+    <number>6</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1920-12</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>2</number>
+   </detail>
+   <detail type="number">
+    <number>7</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1921-05</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>2</number>
+   </detail>
+   <detail type="number">
+    <number>9</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1921-10</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>2</number>
+   </detail>
+   <detail type="number">
+    <number>10</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1921-11</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>2</number>
+   </detail>
+   <detail type="number">
+    <caption>Hors-Séme</caption>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1921</dateIssued>
+  </originInfo>
+ </relatedItem>
+ <relatedItem type="constituent">
+  <part type="issue">
+   <detail type="volume">
+    <number>3</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued keyDate="yes" encoding="iso8601">1922-03</dateIssued>
+  </originInfo>
+ </relatedItem>
+ 
 </mods>
