@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mods xmlns="http://www.loc.gov/mods/v3">
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
    <recordInfo>
       <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaab_1920-02_01</recordIdentifier>
    </recordInfo>
@@ -8,17 +8,20 @@
    <genre>Periodicals-Issue</genre>
    <titleInfo>
       <title>Action</title>
-      <subTitle>Cahiers de Philosophie et d'art</subTitle>
+      <subTitle>Cahiers Individualistes de Philosophie et d'art</subTitle>
    </titleInfo>
-   <part xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="issue">
+   <part type="issue">
       <detail type="volume">
          <number>1</number>
+	 <caption>Première Année</caption>
       </detail>
       <detail type="number">
          <number>1</number>
+	 <caption>Numéro 1</caption>
       </detail>
   </part>
-   <originInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <originInfo>
+     <dateIssued>Février 1920</dateIssued>
       <dateIssued keyDate="yes" encoding="iso8601">1920-02</dateIssued>
   </originInfo>
    <location>
@@ -29,7 +32,7 @@
          </copyInformation>
       </holdingSimple>
    </location>
-   <relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple"
+   <relatedItem type="host" xlink:type="simple"
                 xlink:href="urn:PUL:bluemountain:bmtnaab">
       <recordInfo>
          <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaab</recordIdentifier>
