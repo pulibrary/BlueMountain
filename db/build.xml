@@ -25,7 +25,9 @@
   <property name="approot" value="/opt/local/BlueMountain" />
   
   <target name="load-conf" description="load the Blue Mountain collection.xconf record">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.url}/system/config/db/bluemtn" createcollection="true">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.url}/system/config/db/bluemtn"
+	       createcollection="true">
       <fileset dir="${approot}/db">
 	<include name="collection.xconf" />
       </fileset>
@@ -33,7 +35,11 @@
   </target>
 
   <target name="load-mods" description="load mods records">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals">
 	<include name="**/*.mods.xml" />
 	<exclude name="**/work/**" />
@@ -42,7 +48,11 @@
   </target>
 
   <target name="load-mets" description="load mets records">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals">
 	<include name="**/*.mets.xml" />
 	<exclude name="**/work/**" />
@@ -50,9 +60,12 @@
     </xdb:store>
   </target>
   
-
   <target name="load-tei" description="load tei files">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       createsubcollections="true" 
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals">
 	<include name="**/*.tei.xml" />
 	<exclude name="**/work/**" />
@@ -61,13 +74,16 @@
   </target>
 
   <target name="metsalto-store" description="Loads mets-alto for Pan">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}" uri="${xmldb.approot}/mdata" createcollection="true" createsubcollections="true" type="xml" mimetypesfile="mime-types.xml">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/mdata"
+	       createcollection="true"
+	       createsubcollections="true" type="xml"
+	       mimetypesfile="mime-types.xml">
       <fileset dir="/Users/cwulfman/Desktop/Pan">
 	<include name="**/*.xml" />
       </fileset>
     </xdb:store>
   </target>
-
   
 </project>
 
