@@ -3,51 +3,59 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mods="http://www.loc.gov/mods/v3"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:local="http://diglib.princeton.edu" version="2.0">
+    xmlns:local="http://diglib.princeton.edu" version="2.0" exclude-result-prefixes="#all">
 
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
     <xsl:variable name="bmtnid" as="xs:string">bmtnaab</xsl:variable>
+    <xsl:variable name="pathroot" as="xs:string">/tmp</xsl:variable>
 
-    <xsl:function name="local:convertDate">
-      <xsl:param name="dateString" as="xs:string"/>
-      <xsl:if test="$dateString">
-	<xsl:analyze-string select="$dateString" regex="(\d+)-?(\d+)?">
-	  <xsl:matching-substring>
-	    <xsl:choose>
-	      <xsl:when test="string-length(regex-group(2)) &lt; 1">
-		<xsl:value-of select="concat($dateString, '-00-00')"/>
-	      </xsl:when>
-	      <xsl:otherwise>
-		<xsl:value-of select="concat($dateString, '-00')"/>
-	      </xsl:otherwise>
-	    </xsl:choose>
-	  </xsl:matching-substring>
-	  <xsl:non-matching-substring>
-	    <xsl:message terminate="yes" select="concat($dateString, ' does not match.')"/>
-	  </xsl:non-matching-substring>
-	</xsl:analyze-string>
-      </xsl:if>
+    <xsl:function name="local:issueID">
+      <xsl:param name="bmtnID" as="xs:string"/>
+      <xsl:param name="keyDate" as="xs:string" />
+      <xsl:param name="issueString" as="xs:string"/>
+
+      <xsl:value-of select="concat($bmtnID, '_', $keyDate, '_', format-number(xs:integer($issueString), '00'))"/>
     </xsl:function>
 
-    <xsl:template match="mods:modsCollection">
-      <xsl:apply-templates select="mods:mods/mods:relatedItem[@type='constituent']" mode="mods"/>
-      <xsl:apply-templates select="mods:mods/mods:relatedItem[@type='constituent']" mode="mets"/>
+    <xsl:function name="local:pathname">
+      <xsl:param name="bmtnID" as="xs:string"/>
+      <xsl:param name="keyDate" as="xs:string" />
+      <xsl:param name="issueString" as="xs:string"/>
+
+      <xsl:value-of select="concat(
+			    $pathroot,
+			    '/',
+			    $bmtnID,
+			    '/issues/',
+			    replace($keyDate, '-', '/'),
+			    '_',
+			    format-number(xs:integer($issueString), '00')
+			    )"/>
+    </xsl:function>
+
+
+    <xsl:template match="mods:mods">
+      <xsl:apply-templates select="mods:relatedItem[@type='constituent']" mode="mods"/>
+      <xsl:apply-templates select="mods:relatedItem[@type='constituent']" mode="mets"/>
     </xsl:template>
 
+
+
     <xsl:template match="mods:relatedItem[@type='constituent']" mode="mets">
+      <xsl:variable name="keyDateString" select="mods:originInfo/mods:dateIssued[@keyDate='yes']" />
+
       <xsl:variable name="basename">
-        <xsl:value-of select="concat($bmtnid, '_', local:convertDate(mods:originInfo/mods:dateIssued),'-01')"/>
+        <xsl:value-of select="local:issueID($bmtnid, $keyDateString, '01')"/>
       </xsl:variable>
+
+      <xsl:variable name="filename" select="concat($basename, '.mets.xml')" as="xs:string" />
       
-      <xsl:variable name="filename">
-        <xsl:value-of
-            select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mets.xml' )"/>
-      </xsl:variable>
+      <xsl:variable name="filepath" select="concat(local:pathname($bmtnid, $keyDateString, '01'), '/', $filename)" as="xs:string"/>
       
-      <xsl:result-document href="{$filename}">
+      <xsl:result-document href="{$filepath}">
         <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-              TYPE="METAe_Serial" OBJID="urn:PUL:bluemountain:{$basename}">
+              TYPE="Periodical-Issue" OBJID="urn:PUL:bluemountain:{$basename}">
           <metsHdr>
             <agent ROLE="CREATOR" TYPE="ORGANIZATION">
               <name>Princeton University Library, Digital Initiatives</name>
@@ -71,19 +79,20 @@
       </xsl:result-document>
     </xsl:template>
 
-    <xsl:template match="mods:relatedItem[@type='constituent']" mode="mods">
 
+
+
+    <xsl:template match="mods:relatedItem[@type='constituent']" mode="mods">
+      <xsl:variable name="keyDateString" select="mods:originInfo/mods:dateIssued[@keyDate='yes']" />      
       <xsl:variable name="basename">
-        <xsl:value-of select="concat($bmtnid, '_', local:convertDate(mods:originInfo/mods:dateIssued), '-01')"/>
+        <xsl:value-of select="local:issueID($bmtnid, $keyDateString, '01')"/>
       </xsl:variable>
+
+      <xsl:variable name="filename" select="concat($basename, '.mods.xml')" as="xs:string" />
       
-      
-      <xsl:variable name="filename">
-        <xsl:value-of
-            select="concat('/tmp/', $bmtnid, '/issues/',$basename,'/',$basename,'.mods.xml' )"
-            />
-      </xsl:variable>
-      <xsl:result-document href="{$filename}">
+      <xsl:variable name="filepath" select="concat(local:pathname($bmtnid, $keyDateString, '01'), '/', $filename)" as="xs:string"/>
+
+      <xsl:result-document href="{$filepath}" >
         <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
           <recordInfo>
             <recordIdentifier>
@@ -97,6 +106,7 @@
           <genre>Periodicals-Issue</genre>
           <titleInfo>
             <title>Action</title>
+	    <subTitle>Cahiers de Philosophie et d'art</subTitle>
           </titleInfo>
 	  <xsl:copy-of select="mods:part" />
 	  <xsl:copy-of select="mods:originInfo"/>
@@ -108,9 +118,8 @@
               </copyInformation>
             </holdingSimple>
           </location>
-	  
           <relatedItem type="host" xlink:type="simple"
-                       xlink:href="{concat('urn:PUL:bluemountain:', $bmtnid)}">
+                       xlink:href="urn:PUL:bluemountain:{$bmtnid}">
             <recordInfo>
               <recordIdentifier><xsl:value-of select="concat('urn:PUL:bluemountain:dmd:', $bmtnid)"/></recordIdentifier>
             </recordInfo>
