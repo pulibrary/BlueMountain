@@ -184,8 +184,8 @@
 	      - MM/
 		- DD_II/
 		  - bmtnid_issueid.pdf
-		  - 001.tif
-		  - 002.tif
+		  - bmtnid_issueid_001.tif
+		  - bmtnid_issueid_002.tif
     #+END_EXAMPLE
 *** The Access Store
     Like the Preservation Store, the Access store will be arranged as
@@ -201,13 +201,13 @@
 		- DD_II/
 		  - bmtnid_issueid.pdf
 		  - generative/
-		    - 001.jp2
-		    - 002.jp2
-		    - 003.jp2
+		    - bmtnid_issueid_001.jp2
+		    - bmtnid_issueid_002.jp2
+		    - bmtnid_issueid_003.jp2
 		  - delivery/
-		    - 001.jp2
-		    - 002.jp2
-		    - 003.jp2
+		    - bmtnid_issueid_001.jp2
+		    - bmtnid_issueid_002.jp2
+		    - bmtnid_issueid_003.jp2
     #+END_EXAMPLE
 * Metadata Profiles
   The Blue Mountain Project aims to make its work open and
@@ -656,13 +656,11 @@
     - /xml/ indicates the format of the file.
 
     For example,
-
     #+BEGIN_EXAMPLE
     bmtnabk_1946-09-08_01_001.alto.xml
     bmtnabk_1946-09-08_01_002.alto.xml
     ...
     #+END_EXAMPLE
-
 *** METS Files
     METS files shall be named /pubid.mets.xml/, where
     - /pubid/ is the identifier of the issue
