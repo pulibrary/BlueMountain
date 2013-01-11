@@ -1,72 +1,848 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mods xmlns="http://www.loc.gov/mods/v3"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/mods/v3 file:../schemas/mods.xsd">
+<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd"
+      xmlns="http://www.loc.gov/mods/v3">
   <identifier type="bmtn">urn:PUL:bluemountain:bmtnaac</identifier>
-    <recordInfo>
-      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier>
-        <recordContentSource authority="marcorg">NjP</recordContentSource>
-        <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6425485</recordOrigin>
-        <languageOfCataloging>
-            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-        </languageOfCataloging>
-    </recordInfo>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier>
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6425485</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
 
+  <titleInfo>
+    <nonSort>La </nonSort>
+    <title>Cité</title>
+    <subTitle>urbanisme, architecture, art public : revue mensuelle</subTitle>
+  </titleInfo>
+  <titleInfo type="alternative">
+    <title>Tekhné</title>
+  </titleInfo>
+  <titleInfo type="alternative">
+    <title>Cité et Tekhné juillet 1929-juin 1930</title>
+  </titleInfo>
+  <titleInfo type="alternative">
+    <title>Cité &amp;Tekhné août 1930-</title>
+  </titleInfo>
+  <name type="corporate">
+    <namePart>Société belge des urbanistes et architectes modernistes</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo script="Latn">
+    <place>
+      <placeTerm type="text">Bruxelles</placeTerm>
+    </place>
+    <publisher>Tekhné</publisher>
+    <dateIssued>1919-</dateIssued>
+    <dateIssued encoding="marc" point="start">1919</dateIssued>
+    <dateIssued encoding="marc" point="end">1935</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>v. : ill. ; 26 cm.</extent>
+  </physicalDescription>
+  <note type="date/sequential designation">1er anneé, no 1 (juillet 1919)-</note>
+  <note>Ceased in 1935?</note>
+  <note>Organ of the Société belge des urbanistes et architectes modernistes.</note>
+  <note>Tekhné forms a separately numbered and paged supplement beginning with v. 6, no 1 (juillet 1926).</note>
+  <subject authority="lcsh">
+    <topic>City planning</topic>
+    <geographic>Belgium</geographic>
+    <genre>Periodicals</genre>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Architecture</topic>
+    <geographic>Belgium</geographic>
+    <genre>Periodicals</genre>
+  </subject>
+  <location>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>sax</subLocation>
+        <shelfLocator>NA1 .C57</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+
+  <!-- Issues -->
+  
+  <relatedItem type="constituent">
     <titleInfo>
-        <nonSort>La </nonSort>
-        <title>Cité</title>
-        <subTitle>urbanisme, architecture, art public : revue mensuelle</subTitle>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
     </titleInfo>
-    <titleInfo type="alternative">
-        <title>Tekhné</title>
-    </titleInfo>
-    <titleInfo type="alternative">
-        <title>Cité et Tekhné juillet 1929-juin 1930</title>
-    </titleInfo>
-    <titleInfo type="alternative">
-        <title>Cité &amp;Tekhné août 1930-</title>
-    </titleInfo>
-    <name type="corporate">
-        <namePart>Société belge des urbanistes et architectes modernistes</namePart>
-    </name>
-    <typeOfResource>text</typeOfResource>
-    <originInfo script="Latn">
-        <place>
-            <placeTerm type="text">Bruxelles</placeTerm>
-        </place>
-        <publisher>Tekhné</publisher>
-        <dateIssued>1919-</dateIssued>
-        <dateIssued encoding="marc" point="start">1919</dateIssued>
-        <dateIssued encoding="marc" point="end">1935</dateIssued>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>Numéro 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juillet 1919</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1919-07</dateIssued>
     </originInfo>
-    <language>
-        <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-    </language>
-    <physicalDescription>
-        <extent>v. : ill. ; 26 cm.</extent>
-    </physicalDescription>
-    <note type="date/sequential designation">1er anneé, no 1 (juillet 1919)-</note>
-    <note>Ceased in 1935?</note>
-    <note>Organ of the Société belge des urbanistes et architectes modernistes.</note>
-    <note>Tekhné forms a separately numbered and paged supplement beginning with v. 6, no 1 (juillet 1926).</note>
-    <subject authority="lcsh">
-        <topic>City planning</topic>
-        <geographic>Belgium</geographic>
-        <genre>Periodicals</genre>
-    </subject>
-    <subject authority="lcsh">
-        <topic>Architecture</topic>
-        <geographic>Belgium</geographic>
-        <genre>Periodicals</genre>
-    </subject>
-    <location>
-        <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-        <holdingSimple>
-            <copyInformation>
-                <subLocation>sax</subLocation>
-                <shelfLocator>NA1 .C57</shelfLocator>
-            </copyInformation>
-        </holdingSimple>
-    </location>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>Numéro 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Août 1919</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1919-08</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>Numéro 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Sept. 1919</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1919-09</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>3-4</number>
+	<caption>Numéros 4-5</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Oct-Nov 1919</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1919-10</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>6</number>
+	<caption>Numéro 6</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Déc. 1919</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1919-12</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>7</number>
+	<caption>Numéro 7</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Janv. 1919</dateIssued> <!--Date incorrect on cover -->
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>8</number>
+	<caption>Numéro 8</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Févr. 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>9</number>
+	<caption>Numéro 9</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Mars 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-03</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>10</number>
+	<caption>Numéro 10</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Avril 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>11</number>
+	<caption>Numéro 11</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Mai 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-05</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>1re Année</caption>
+      </detail>
+      <detail type="number">
+	<number>12</number>
+	<caption>Numéro 12</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juin-Oct. 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-06</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>Numéro 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Nov. 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>Numéro 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Déc. 1920</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1920-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>Numéro 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Janv. 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>Numéro 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Février Mars 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>5</number>
+	<caption>Numéro 5</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Avril 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>6</number>
+	<caption>Numéro 6</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Mai 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-05</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>7</number>
+	<caption>Numéro 7</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juin 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-06</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>8</number>
+	<caption>Numéro 8</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juill. 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-07</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>9</number>
+	<caption>Numéro 9</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Sept. 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-09</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>10</number>
+	<caption>Numéro 10</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Oct. 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-10</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>2e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>11</number>
+	<caption>Numéros 11 et 12</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Nov.-Déc. 1921</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <!-- 3e Année -->
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>3e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>Numéro 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Janvier 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>3e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>Numéro 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Février 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>3e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>Numéro 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Mars 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-03</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>3e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>Numéro 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Avril 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>3e Année</caption>
+      </detail>
+      <detail type="number">
+	<number>5</number>
+	<caption>Numéro 5</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Mai 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-05</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>6</number>
+	<caption>Numéro 6</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juin 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-06</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>7</number>
+	<caption>Numéro 7</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juillet 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-07</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+<relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>7</number>
+	<caption>Numéro 7</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Juillet 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-07</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+<relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>8</number>
+	<caption>Numéro 8</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Aout-Décembre 1922</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-08</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+<relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>9</number>
+	<caption>Numéro 9</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Janvier 1923</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+<relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>10</number>
+	<caption>Numéro 10</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Février 1923</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+<relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>11</number>
+	<caption>Numéro 11</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Mars 1923</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-03</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+<relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>La</nonSort>
+      <title>Cité</title>
+      <subTitle>Urbanisme: Architecture Art Public</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Troisième Année</caption>
+      </detail>
+      <detail type="number">
+	<number>12</number>
+	<caption>Numéro 12</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Avril 1923</dateIssued> 
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+
 </mods>
