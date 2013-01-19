@@ -1,0 +1,16 @@
+* A utility for creating derivatives from batches of TIFF files
+  This project was forked from original work done by Jon Stroop.  Here
+  are his notes:
+
+** Stroop's ReadMe
+
+   64 Bit ONLY!
+
+   Dependencies:
+   - Imagemagick (convert in particular). Configure the script so that
+     the constants references convert by absolute path (output of
+     `which`).
+   - exiv2 VERSION 0.20 or GREATER.  Configure the script so that the
+     constants references exiv2 by absolute path (output of `which`).
+   - 64 bit Kakadu is included in lib. Other OSs will need to swap in
+     appropriate libraries.
