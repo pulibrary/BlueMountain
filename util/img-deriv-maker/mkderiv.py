@@ -1,9 +1,7 @@
 #!/usr/bin/python
 #-*-coding: utf-8-*-
 """
-Utility for generating generative jp2s for Blue Mountain.
-
-Adapted from code by Jon Stroop.
+Utility for generating derivative images for the PUDL website.
 
 For safety, this should be run be a user that has read-only access to the source
 file system (i.e., source TIFFs).
@@ -18,7 +16,10 @@ from datetime import datetime
 # Generic location in the pudl file system - e.g., pudl0001 or pudl0001/4609321 
 # DO NOT include a leading slash, e.g., "/pudl0001".
 PUDL_LOCATORS = [
-    "pudl0097"
+	"pudl0097/4809270", "pudl0097/4608240",  "pudl0097/4939605", "pudl0097/4826219", "pudl0097/2980652"
+]
+PUDL_LOCATORS_TEST = [
+	"pudl0097/4939605"
 ]
 #
 EXTRACT_LEVELS = False #TODO: not implemented
@@ -29,40 +30,37 @@ OVERWRITE_EXISTING = False
 ## Less Common Options #########################################################
 ###############################################################################
 # Location of source images. "pudlXXXX" directories should be directly inside.
-# SOURCE_ROOT = "/Volumes/DPSA_SanVol1/derivative_processing"
-SOURCE_ROOT = "/tmp/deriv/in"
+SOURCE_ROOT = "/Volumes/vol3/"
 #
 # Location of target images. "pudlXXXX" directories and subdirectories will be
 # created.  
-# TARGET_ROOT = "/Volumes/DPSA_SanVol1/derivative_processing/out"
-TARGET_ROOT = "/tmp/deriv/out"
+# TARGET_ROOT = "/Volumes/4tbdrive/"
+#TARGET_ROOT = "/tmp/"
+TARGET_ROOT = "/Volumes/BMTN02/"
 #
 # Location for temporary half-size TIFFs, required for setting color profile.
 TMP_DIR = "/tmp"
 #
+
 # Recipes for Image Magick and Kakadu.
+# TWENTY_FOUR_BIT_IMAGEMAGICK_OPTS = " -resize 4200x4200 -quality 100 -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
 TWENTY_FOUR_BIT_IMAGEMAGICK_OPTS = " -quality 100 -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
+LZW_IMAGEMAGICK_OPTS = " -compress lzw -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
 TWENTY_FOUR_BIT_KDU_RECIPE = "\
--rate -,1,0.5.0.25 Clevels=5 Clayers=5 Cuse_precincts=yes Cprecincts=\{256,256\} Cblk=\{64,64\} Corder=RPCL ORGgen_plt=yes ORGtparts=R Stiles=\{256,256\} \
+Creversible=yes -rate -,1,0.5,0.25 \
 -jp2_space sRGB \
 -double_buffering 10 \
 -num_threads 4 \
 -no_weights \
 -quiet"
 
-EIGHT_BIT_IMAGEMAGICK_OPTS = "-colorspace Gray -quality 100 -resize 3600x3600"
-EIGHT_BIT_KDU_RECIPE = "\
--rate 0.80 Clevels=5 Clayers=5 Cuse_precincts=yes Cprecincts=\{256,256\} Cblk=\{64,64\} Corder=RPCL ORGgen_plt=yes ORGtparts=R Stiles=\{256,256\} \
--double_buffering 10 \
--num_threads 4 \
--no_weights \
--quiet"
 
 EXIV2_GET_BPS = "-Pt -g Exif.Image.BitsPerSample print"
 
 # Installations may need to adjust these
 EXIV2 = "/opt/local/bin/exiv2"
-CONVERT = "/usr/local/bin/convert"
+CONVERT = "/opt/local/bin/convert"
+TIFFCP = "/opt/local/bin/tiffcp"
 
 ################################################################################
 # Code. Leave this alone :). ###################################################
@@ -101,6 +99,13 @@ err = logging.FileHandler(errFilePath)
 err.setLevel(logging.ERROR)
 err.setFormatter(formatter)
 log.addHandler(err)
+
+# DEBUG
+debugFilePath = logdir + time + "-debug.log"
+debug = logging.FileHandler(debugFilePath)
+debug.setLevel(logging.DEBUG)
+debug.setFormatter(formatter)
+log.addHandler(debug)
 
 class DerivativeMaker(object):
         def __init__(self):
@@ -150,13 +155,23 @@ class DerivativeMaker(object):
                 
                 outTmpTiffPath = TMP_DIR + tiffPath[len(SOURCE_ROOT):]
 
-                outJp2WrongExt = TARGET_ROOT + outTmpTiffPath[len(TMP_DIR):]
+                # outJp2WrongExt = TARGET_ROOT + outTmpTiffPath[len(TMP_DIR):]
+                outJp2WrongExt = TARGET_ROOT + "jp2/" + outTmpTiffPath[len(TMP_DIR):]
                 outJp2Path = DerivativeMaker._changeExtension(outJp2WrongExt, ".jp2")
+
+                outlzwWrongExt = TARGET_ROOT + "tif/" + outTmpTiffPath[len(TMP_DIR):]
+                outlzwPath = DerivativeMaker._changeExtension(outlzwWrongExt, ".tif")
 
                 if not os.path.exists(outJp2Path) or OVERWRITE_EXISTING == True: 
                     tiffSuccess = DerivativeMaker._makeTmpTiff(tiffPath, outTmpTiffPath, bps)
                     if tiffSuccess:
                         DerivativeMaker._makeJp2(outTmpTiffPath, outJp2Path, bps)
+
+
+			# make the lzw-compressed tiff here
+                        DerivativeMaker._makeLZWTiff(outTmpTiffPath, outlzwPath)
+
+
                         os.remove(outTmpTiffPath)
                         log.debug("Removed temporary file: " + outTmpTiffPath)
                     else:
@@ -219,6 +234,42 @@ class DerivativeMaker(object):
                 log.error("Could not get bits per sample: " + outPath)
                 return False
             
+            proc = subprocess.Popen(cmd, shell=True, env=ENV, \
+                    stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+            return_code = proc.wait()
+            
+            # Read from pipes
+            for line in proc.stdout:
+                log.info(line.rstrip())
+                
+            for line in proc.stderr:
+                log.error(line.rstrip() + " (" + outPath + ")") 
+                
+            if os.path.exists(outPath) and os.path.getsize(outPath) != 0:
+                log.info("Created: " + outPath)
+                os.chmod(outPath, 0644)
+                return True
+            else:
+                if os.path.exists(outPath): os.remove(outPath)
+                log.error("Failed to create: " + outPath)
+                return False
+            
+        @staticmethod
+        def _makeLZWTiff(inPath, outPath):
+            '''
+            Returns the path to the TIFF that was created.
+            '''
+            #TODO: untested
+            newDirPath = os.path.dirname(outPath)
+            if not os.path.exists(newDirPath): os.makedirs(newDirPath, 0755)
+            
+            # cmd = TIFFCP + " -c lzw " + inPath + " " + outPath 
+            # cmd = CONVERT + " -compress lzw " + inPath + " " + outPath 
+            cmd = CONVERT + " " + LZW_IMAGEMAGICK_OPTS +  " " + inPath + " " + outPath 
+	    #cmd = CONVERT + " " + inPath + " " + LZW_IMAGEMAGICK_OPTS + " " + outPath 
+            
+	    log.debug("executing: " + cmd)
+
             proc = subprocess.Popen(cmd, shell=True, env=ENV, \
                     stderr=subprocess.PIPE, stdout=subprocess.PIPE)
             return_code = proc.wait()

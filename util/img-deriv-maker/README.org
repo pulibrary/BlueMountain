@@ -14,3 +14,8 @@
      constants references exiv2 by absolute path (output of `which`).
    - 64 bit Kakadu is included in lib. Other OSs will need to swap in
      appropriate libraries.
+
+** CHANGES
+*** [2013-01-03 Thu]
+    (cew). Added method to derive LZW-compressed TIFFs from
+    uncompressed originals via shellout to Imagemagick.
