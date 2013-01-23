@@ -1300,9 +1300,9 @@
 *** TIFF: Image Description
     In general, Princeton University Library adheres to the standards
     elaborated by the Federal Agencies Digitization Guidelines
-    Initiative (FADGI)[fn:4], whose Still Image Working Group produced
+    Initiative (FADGI), whose Still Image Working Group produced
     a document entitled /Technical Guidelines for Digitizing Cultural
-    Heritage Materials/ in 2010.[fn:5]  Archival images will be captured in
+    Heritage Materials/ in 2010.  Archival images will be captured in
     24-bit RGB and digitally rendered at varying resolutions to produce
     a uniform long dimension of 7200 pixels, then stored as
     uncompressed TIFF files with a large, non-proprietary color profile
@@ -1335,7 +1335,256 @@
     #+END_EXAMPLE
 
 
+* General Markup Policy for Blue Mountain Magazines
+** Preliminary
+   For each title, Princeton will provide the following:
+
+   1. A "sample copy markup" (PDF): a full issue marked up according
+      to the General Markup Policy;
+   2. A title-specific markup addendum clarifying unusual zoning and
+      structural features; and
+   3. A marked up copy of any issue(s) deviating substantially from
+      either the general or title-specific markup policies.
+
+** VerifyPageFrames (VPF)
+   Straighten and deskew all pages.  When the input files include
+   two-page spreads, do not split them into separate files unless
+   instructed.
+** VerifyLayoutElements (VLE)
+   The VLE step is skipped for serials and books, so zoning is
+   performed in VPN.
+** VerifyPageNumbers (VPN)
+   It is important to refer to any sample copy markup and any
+   title-specific markup addenda in addition to this document, as the
+   location and ways of identifying zones will vary by publication.
+*** Zone Types to Tag
+**** PubInfo Container
+***** Page Number
+      - Zone Name (in docWorks) :: PageNumber
+      - Description :: Used when the publication includes page numbers
+      - Location and Features :: Varies by publication; consult
+	   addenda.
+***** Nameplate
+      - Zone Name (docWorks) :: Nameplate
+      - Description :: The space at the top of the magazine cover,
+		       usually containing the name (the logo),
+		       location, volume, issue, and sometimes
+		       taglines.  Designs range from simple to
+		       intricate, depending on the design of the publication.
+      - Location and Features :: The nameplate often contains the same
+	   information as the /masthead/ but is a different layout
+	   element.  Its purpose is to make the magazine identifiable
+	   when seen from a distance (as at a magazine stand, for
+	   example).  The typeface is often a custom display type.
+
+	   Not every publication design includes a recognizable
+	   nameplate.
+***** Masthead
+      - Zone Name (docWorks) :: Masthead
+      - Description :: A section inside the magazine containing
+		       various pieces of publication information, such
+		       as the editor's names, contact information, and
+		       subscription rates.
+      - Location and Features :: Mastheads vary in size and amount of
+	   information included.  Some may take up an entire page.
+	   In newspapers, the masthead often occurs on the editorial
+	   page; in magazines, it may appear in various locations
+	   (consult title-specfic mark-up addenda).
+***** Folio Line (Inside)
+      - Zone Name :: InsideFolioLine
+      - Description :: A folio line is an identification line,
+		       appearing (when it does appear) on each page of
+		       a newspaper or magazine.  The front-page folio
+		       line is different from those on inside pages.
+      - Location and Features :: Not all magazine layouts feature a
+	   folio line.  It may run at the top or bottom of each page.
+	   It can also run as part of the logo on special pages or
+	   within the masthead.  It often consists of the publication
+	   date in one corner, the name of the publication (centered),
+	   and the page number in the other corner.  It is sometimes
+	   separated from the rest of the page by a cutoff rule.
+***** Front Folio Line(s)
+      - Zone Name :: FrontFolioLine
+      - Description :: An identification line or lines on cover of the
+		       magazine often containing one or more of the
+		       following elements: the volume number
+		       (or the number of years the publication has
+		       been in print); the issue number; the place of
+		       publication; and date of publication.
+      - Location and Features :: Usually joins the nameplate. Often
+	   separated from the logo by borders or cutoff rules.
+
+	   Not every publication layout includes a recognizable front
+	   folio line.  Many of the Blue Mountain designs omit it, or
+	   scatter the informaiton traditionally contained in a front
+	   folio line across the front page.
+***** General Publication Information
+      - Zone Name :: GenericPubInfo
+      - Description :: A catch-all category for other "metadata" about
+		       the magazine not identifiable as nameplate,
+		       masthead, or folio lines.
+      - Location and Features :: Highly variable, but usually found on
+	   outside or inside covers.  Consult title-specific addenda.
+**** Editorial Content Container
+***** Head
+      - Zone Name :: Headline
+      - Description :: A phrase at the beginning of a magazine
+		       section, usually indicating the subject of the
+		       following copy text.
+      - Location and Features :: A newspaper /headline/ is a /kind/ of
+	   head; magazines usually have many other kinds of
+	   heads. /Heads/ are usually recognizable by weight, size, or
+	   position of type: they are often heavier or larger, and are
+	   often (though not always) centered above one or more
+	   columns of type with space before and after.  A single
+	   magazine constituent may have several /levels/ of heading:
+	   most have a top-level head (usually the title of the
+	   piece), to distinguish the piece as a whole from other
+	   magazine content, but many have typographically distinct
+	   /subheads/ that subdivide the constituent itself into
+	   sections (see /Subhead/ below).
+***** Subhead
+      - Zone Name :: Subheadline
+      - Description :: A phrase demarcating a part of a constituent
+		       or section of a magazine. A constituent or
+		       section cannot have a subhead without a head.
+      - Location and Features :: Subheads break up a chunk (a
+	   constituent, a section) into smaller units.  Subheads are
+	   usually distinguished typographically from heads by smaller
+	   type sizes and different spacing.
+***** Article Copy
+      - Zone Name :: Textblock
+      - Description :: A block of body text. /Article Copy/ is a
+		       misnomer; /Editorial Copy/ would be better.
+		       It is usually, though not always, divided into
+		       paragraphs; Blue Mountain zones tables and
+		       lists as Article Copy.
+      - Location and Features :: May be preceded by a Head (though a
+	   Head is not mandatory).  May be subdivided into smaller
+	   units through the use of rules and/or subheads.
+      - Tagging Notes :: 
+	- Blue Mountain zones tables and lists as
+	  Article Copy.
+	- Blue Mountain also tags tables of contents as Article Copy.
+***** Byline
+      - Zone Name :: Author
+      - Description :: A zone containing one or more regions
+		       associated with the writer of an article,
+		       musical composition, letter, or other editorial
+		       content: usually the writer's name, but
+		       sometimes also the writer's position or other
+		       biographical information.
+      - Location and Features :: The byline is usually located either
+	   at the beginning of the content, between the head and the
+	   first zone of copy, or at the end of the copy text.
+	   Bylines can be difficult to distinguish.  They are
+	   sometimes set in italic or boldfaced type or in all-caps;
+	   they are sometimes a full name (first name, last name),
+	   sometimes a last name only, or one or two initials, or a
+	   name with a term of address in the language of the
+	   magazine (Mr., Dr., Madame, M., Herr, etc.)
+***** Art
+      - Zone Name :: Illustration
+      - Description :: A drawing, photograph, a reproduction of a
+		       print or a painting; a graphic poem.
+		       Sometimes has a caption above, below, or to
+		       the side of it.
+      - Location and Features :: May occur anywhere; may occupy a
+	   single column, several columns, or be set outside the
+	   column grid of the page; or may take up a full page or a
+	   multi-page spread.
+
+	   The Avant-garde saw the invention of "graphical text" like
+	   concrete poetry, shape poetry, Futurist "words in
+	   liberty," etc.  While these are in fact hybrid forms, both
+	   graphic and text, Blue Mountain zones them as art.		     
+***** Caption
+      - Zone Name :: Caption
+      - Description :: One or more textual blocks associated with an
+		       Illustration.
+      - Location and Features :: Captions may appear above, below, or
+	   (occasionally) to the side of the illustration to which
+	   they belong.  They may contain several lines and/or zones
+	   of information: the identity of the subject; the name of
+	   the artist/photographer/poet; the title of the artwork
+	   being printed or reproduced.  Consult title-specific
+	   addenda.
+***** Music
+      - Zone Name :: Music
+      - Description :: A zone of musical notation (in Western music,
+		       most often one or more staves, perhaps with
+		       clefs and key signatures, and notes; sometimes
+		       heavily annotated with text.)
+      - Location and Features :: Size and extent varies.  May be a
+	   small musical example occupying a few lines of a column,
+	   or a multi-page musical compostion.  Some zones of music
+	   may be accompanied by heads or captions.
+***** Footnote
+      - Zone Name :: Footnote
+      - Description :: A zone of type, usually at the foot of the
+		       page, serving as an annotation to some text on
+		       the page.
+      - NOTE :: This zone is under consideration.
+**** SponsoredAd Container
+***** Sponsored Ad (Advertisement Copy)
+      - Zone Name :: Advertisement
+      - Description :: An often-heterogenous zone of mixed
+		       typography, graphics, and layout whose
+		       function is to draw attention to some event,
+		       product, or service.  /Sponsored/
+		       advertisements are those advertisements that
+		       appear in the magazine because an outside
+		       agency (a company, a theater, a publisher) has
+		       paid for it to appear.
+      - Location and Description :: Ads may appear anywhere, but most
+	   often they appear in groups at the end of a magazine
+	   issue.  They are often boxed.  They may be any size --
+	   from a few inches to a partial or full page.
+
+*** Zone Types to Ignore
+    - Rules :: Do not zone horizontal and vertical rules -- the
+	       (usually thin) lines used to separate regions of the page.
+    - Ornamental Artwork :: Typographer's ornaments, ornamental
+	 borders, anonymous graphics at the heads of sections.
+	 (Consult title-specific addenda.)
+** VerifyPageHierarchy (VPH)
+   Add the following metadata, if available:
+
+   - Volume Number
+   - Issue Number
+   - Issue Date
+   - Publication Title
+
+   This information will always be supplied by Princeton in the form
+   of /preliminary issue-level MODS/ (see below).
+** VerifyHiearchy (VH)
+   Identify all components as either PubInfo, EditorialContent, or
+   SponsoredAds.
+
+   - Classify all zones in PubInfo or Editorial Content containers
+     manually.  (All ad zones will be grouped automatically into
+     SponsoredAd containers.)
+   - Composition of magazine constituents is highly variable.  Some
+     general guidelines:
+     - A constituent very often is composed of a head, a byline, and
+       one or more sections of body copy.  Look for a typographically
+       distinct head to begin the constituent; a byline will
+       sometimes follow immediately after the head, but it may also
+       appear at the very end.
+     - Use the head as the constituent's title.
+     - Many of the Blue Mountain titles are art magazines; the illustrations
+       often have heads, captions, and bylines. If a head is present,
+       treat it as the title.
+** OCR Correction
+   - Correct all heads, subheads, bylines, and captions.
+   - Delete empty zones.
+   - Ignore hand-written text blocks.
+
+
 * Markup Policies
+  Blue Mountain uses docWorks to produce its magazine digital assets:
+  the METS/ALTO files for each magazine issue.  
+
 
 * Footnotes
 [fn:1] This convention has been adopted to suport the naming conventions
