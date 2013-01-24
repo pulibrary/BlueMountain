@@ -1,73 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mods xmlns="http://www.loc.gov/mods/v3"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
-    <identifier type="bmtn">urn:PUL:bluemountain:bmtnaap</identifier>
-        <recordInfo>
-          <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaap</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2003805</recordOrigin>
-            <languageOfCataloging>
-                <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-        </recordInfo>
-        <titleInfo>
-            <title>Broom</title>
-            <subTitle>[An international magazine of the arts]</subTitle>
-        </titleInfo>
-        <typeOfResource>text</typeOfResource>
-        <genre authority="rbgenr">Little magazines</genre>
-        <originInfo>
-            <place>
-                <placeTerm type="text">Rome</placeTerm>
-            </place>
-            <publisher supplied="yes">s.l.</publisher>
-            <dateIssued>1921-1924</dateIssued>
-            <dateIssued encoding="marc" point="start">1921</dateIssued>
-            <dateIssued encoding="marc" point="end">1924</dateIssued>
-        </originInfo>
-        <language>
-            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-        </language>
-        <!-- <physicalDescription/> -->
-        <note type="date/sequential designation">1-6; 1921-24.</note>
-        <note type="numbering">None published Mar. 1922, Apr.-Jul. 1923.</note>
-        <note type="numbering">Ceased publication with v. 6 no. 1, Jan. 1924.</note>
-        <relatedItem type="isReferencedBy">
-            <note>Hoffman, F.J. Little magazine</note>
-        </relatedItem>
-        <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-        <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-            <holdingSimple>
-                <copyInformation>
-                    <subLocation>ex</subLocation>
-                    <!--DELETE COPY NUMBER BELOW-->
-                    <shelfLocator>1 LM (Little Magazine)</shelfLocator>
-                </copyInformation>
-            </holdingSimple>
-        </location>
-        <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-            <holdingSimple>
-                <copyInformation>
-                    <subLocation>beac</subLocation>
-                    <!--DELETE COPY NUMBER BELOW-->
-                    <shelfLocator>1 0901.213q</shelfLocator>
-                </copyInformation>
-            </holdingSimple>
-        </location>
-        <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-            <holdingSimple>
-                <copyInformation>
-                    <subLocation>ex</subLocation>
-                    <!--DELETE COPY NUMBER BELOW-->
-                    <shelfLocator>1 0901.25519q</shelfLocator>
-                </copyInformation>
-            </holdingSimple>
-        </location>
-    </mods>
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaap</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaap</recordIdentifier>
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2003805</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <titleInfo>
+    <title>Broom</title>
+    <subTitle>[An international magazine of the arts]</subTitle>
+  </titleInfo>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="rbgenr">Little magazines</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Rome</placeTerm>
+    </place>
+    <publisher supplied="yes">s.l.</publisher>
+    <dateIssued>1921-1924</dateIssued>
+    <dateIssued encoding="marc" point="start">1921</dateIssued>
+    <dateIssued encoding="marc" point="end">1924</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <!-- <physicalDescription/> -->
+  <note type="date/sequential designation">1-6; 1921-24.</note>
+  <note type="numbering">None published Mar. 1922, Apr.-Jul. 1923.</note>
+  <note type="numbering">Ceased publication with v. 6 no. 1, Jan. 1924.</note>
+  <relatedItem type="isReferencedBy">
+    <note>Hoffman, F.J. Little magazine</note>
+  </relatedItem>
+  <location>
+    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>ex</subLocation>
+        <shelfLocator>1 LM (Little Magazine)</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+  <location>
+    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>beac</subLocation>
+        <shelfLocator>1 0901.213q</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+  <location>
+    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <subLocation>ex</subLocation>
+        <shelfLocator>1 0901.25519q</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 1921</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>No. 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December 1921</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1921-12</dateIssued>
+    </originInfo>
+    <note>Volume number is incorrectly printed on inside front cover.</note>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>No. 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>No. 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>May 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-05</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>No. 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>June 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-06</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>July 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-07</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Vol. 3</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-08</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Vol. 3</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>No. 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>September 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-09</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Vol. 3</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>No. 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>October 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-10</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>3</number>
+	<caption>Vol. 3</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>4</number>
+	<caption>Vol. 4</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1922-12</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>4</number>
+	<caption>Vol. 4</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>No. 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 1922</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-01</dateIssued>
+    </originInfo>
+    <note>Date of issuance misprinted on inside front cover.</note>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>4</number>
+	<caption>Vol. 4</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>No. 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February 1923</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>4</number>
+	<caption>Vol. 4</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>March 1923</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-03</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>5</number>
+	<caption>Vol. 5</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August 1923</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-08</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>5</number>
+	<caption>Vol. 5</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>No. 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>September 1923</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-09</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>5</number>
+	<caption>Vol. 5</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>No. 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>October 1923</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-10</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>5</number>
+	<caption>Vol. 5</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 1923</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1923-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+ <relatedItem type="constituent">
+    <titleInfo>
+      <title>Broom</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>6</number>
+	<caption>Vol. 6</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 1924</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1924-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+
+
+</mods>
