@@ -1,76 +1,1013 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mods xmlns="http://www.loc.gov/mods/v3"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
-    <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaq</identifier>
-    <recordInfo>
-        <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaq</recordIdentifier>       
-        <recordContentSource authority="marcorg">NjP</recordContentSource>
-        <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=202730</recordOrigin>
-        <languageOfCataloging>
-            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-        </languageOfCataloging>
-    </recordInfo>
-    
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaq</identifier>
+  <recordInfo>
+    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaq</recordIdentifier>       
+    <recordContentSource authority="marcorg">NjP</recordContentSource>
+    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=202730</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  
+  <titleInfo>
+    <title>Bruno's weekly</title>
+  </titleInfo>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">New York</placeTerm>
+    </place>
+    <publisher>Guido Bruno</publisher>
+    <dateIssued>1915-1916]</dateIssued>
+    <dateIssued encoding="marc" point="start">1915</dateIssued>
+    <dateIssued encoding="marc" point="end">1916</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>3 v. ; 20-28 cm.</extent>
+  </physicalDescription>
+  <note type="date/sequential designation">Vol. 1, no. 1 (July 12, 1915)-v. 3 (Dec. 30, 1916).</note>
+  <note>No more published.</note>
+  <note type="reproduction">Microfilm. Princeton, N.J. : Princeton University Library, 19--. 1 microfilm reel ; 35 mm.</note>
+  <relatedItem type="preceding">
     <titleInfo>
-        <title>Bruno's weekly</title>
+      <title>Bruno's</title>
     </titleInfo>
-    <typeOfResource>text</typeOfResource>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+      </detail>
+    </part>
     <originInfo>
-        <place>
-            <placeTerm type="text">New York</placeTerm>
-        </place>
-        <publisher>Guido Bruno</publisher>
-        <dateIssued>1915-1916]</dateIssued>
-        <dateIssued encoding="marc" point="start">1915</dateIssued>
-        <dateIssued encoding="marc" point="end">1916</dateIssued>
+      <dateIssued>Monday July 12, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-07-12</dateIssued>
     </originInfo>
-    <language>
-        <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-    </language>
-    <physicalDescription>
-        <extent>3 v. ; 20-28 cm.</extent>
-    </physicalDescription>
-    <note type="date/sequential designation">Vol. 1, no. 1 (July 12, 1915)-v. 3 (Dec. 30, 1916).</note>
-    <note>No more published.</note>
-    <note type="reproduction">Microfilm. Princeton, N.J. : Princeton University Library, 19--. 1 microfilm reel ; 35 mm.</note>
-    <relatedItem type="preceding">
-        <titleInfo>
-            <title>Bruno's</title>
-        </titleInfo>
-    </relatedItem>
-    <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-    <location>
-        <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-        <holdingSimple>
-            <copyInformation>
-                <subLocation>rcppf</subLocation>
-                <!--DELETE COPY NUMBER BELOW-->
-                <shelfLocator>1 MICROFILM 1332</shelfLocator>
-            </copyInformation>
-        </holdingSimple>
-    </location>
-    <location>
-        <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-        <holdingSimple>
-            <copyInformation>
-                <subLocation>ex</subLocation>
-                <!--DELETE COPY NUMBER BELOW-->
-                <shelfLocator>1 0901.25528</shelfLocator>
-            </copyInformation>
-        </holdingSimple>
-    </location>
-    <location>
-        <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-        <holdingSimple>
-            <copyInformation>
-                <subLocation>ex</subLocation>
-                <!--DELETE COPY NUMBER BELOW-->
-                <shelfLocator>2005-0945N</shelfLocator>
-            </copyInformation>
-        </holdingSimple>
-    </location>
-      </mods>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Monday July 19, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-07-19</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Monday July 19, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-07-19</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>Monday July 26, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-07-26</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August 5th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-08-05</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>5</number>
+	<caption>No. 5</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August 14th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-08-14</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>6</number>
+	<caption>No. 6</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August 21st, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-08-21</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>7</number>
+	<caption>No. 7</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August 28st, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-08-28</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>8</number>
+	<caption>No. 8</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>September 4th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-09-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>9</number>
+	<caption>No. 9</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>September 13th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-09-13</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>10</number>
+	<caption>No. 10</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>September 22th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-09-22</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>11</number>
+	<caption>No. 11</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>September 30th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-09-30</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>12</number>
+	<caption>No. 12</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>October 7, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-07</dateIssued>
+    </originInfo>
+    <note>Format change?; wrapper present</note>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>13</number>
+	<caption>No. 13</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>October 14th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-14</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>14</number>
+	<caption>No. 14</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>October 21st, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-21</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>15</number>
+	<caption>No. 15</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>October 30th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-30</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>16</number>
+	<caption>No. 16</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 6th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11-06</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>17</number>
+	<caption>No. 17</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 13th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11-13</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>18</number>
+	<caption>No. 18</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 20th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11-20</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>19</number>
+	<caption>No. 19</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>November 27th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11-27</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>20</number>
+	<caption>No. 20</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December 4th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-12-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>21</number>
+	<caption>No. 21</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December 11, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-12-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>22</number>
+	<caption>No. 22</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December 18th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-12-18</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Vol. I</caption>
+      </detail>
+      <detail type="number">
+	<number>23</number>
+	<caption>No. 23</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December 25th, MCMXV</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-12-25</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <!-- Here begins Volume II (volume 2) -->
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>No. 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 1st, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-01-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <!-- Princeton missing Volume 2, No. 2 -->
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>No. 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 15th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-01-15</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>No. 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 22nd, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-01-22</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>5</number>
+	<caption>No. 5</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>January 29th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-01-29</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>6</number>
+	<caption></caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February 5th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-02-05</dateIssued>
+    </originInfo>
+    <note>Princeton copy has newspaper clippings laid in between front
+    outer cover and first page of issue, obscuring most of the text in
+    the digital photo.</note>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>7</number>
+	<caption>No. 7</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February 12th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-02-12</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>8</number>
+	<caption>No. 8</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February 19th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-02-19</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>9</number>
+	<caption>No. 9</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February 26th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-02-26</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>10</number>
+	<caption>No. 10</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>March 4th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-03-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>11</number>
+	<caption>No. 11</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>March 11th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-03-11</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>12</number>
+	<caption>No. 12</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>March 18th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-03-18</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>13</number>
+	<caption>No. 13</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>March 25th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-03-25</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>14</number>
+	<caption>No. 14</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 1st, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-04-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>15</number>
+	<caption>No. 15</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 8th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-04-08</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>16</number>
+	<caption>No. 16</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 15th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-04-15</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>17</number>
+	<caption>No. 17</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 22nd, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-04-22</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>18</number>
+	<caption>No. 18</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April 29nd, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-04-29</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>19</number>
+	<caption>No. 19</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>May 6th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-05-06</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>20</number>
+	<caption>No. 20</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>May 13th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-05-13</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>21</number>
+	<caption>No. 21</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>May 20th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-05-20</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>22</number>
+	<caption>No. 22</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>May 27th, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-05-27</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Bruno's Weekly</title>
+      <subTitle>Edited by Guido Bruno in his Garret on Washington Square</subTitle>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>2</number>
+	<caption>Vol. II</caption>
+      </detail>
+      <detail type="number">
+	<number>23</number>
+	<caption>No. 23</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>June 3rd, MCMXVI</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1916-06-03</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+</mods>
