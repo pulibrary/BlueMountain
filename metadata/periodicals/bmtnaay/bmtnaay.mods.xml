@@ -1,45 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mods xmlns="http://www.loc.gov/mods/v3"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
-  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaay</identifier>
-  <recordInfo>
-    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaay</recordIdentifier>       
-    <recordContentSource authority="marcorg">NjP</recordContentSource>
-    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=559950</recordOrigin>
-    <languageOfCataloging>
-      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-    </languageOfCataloging>
-  </recordInfo>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+ <identifier type="bmtn">urn:PUL:bluemountain:bmtnaay</identifier>
+ <recordInfo>
+  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaay</recordIdentifier>
+  <recordContentSource authority="marcorg">NjP</recordContentSource>
+  <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=559950</recordOrigin>
+  <languageOfCataloging>
+   <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </languageOfCataloging>
+ </recordInfo>
+ <titleInfo>
+  <title>Secession</title>
+ </titleInfo>
+ <typeOfResource>text</typeOfResource>
+ <genre authority="rbgenr">Little magazines</genre>
+ <originInfo>
+  <place>
+   <placeTerm type="text">New York</placeTerm>
+  </place>
+  <publisher>Kenneth Burke, Gorham B. Munson</publisher>
+  <dateIssued encoding="marc" point="start">19uu</dateIssued>
+  <dateIssued encoding="marc" point="end">9999</dateIssued>
+ </originInfo>
+ <language>
+  <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+ </language>
+ <relatedItem type="isReferencedBy">
+  <note>Hoffman, F.J.  Little magazine</note>
+ </relatedItem>
+
+
+ <relatedItem type="constituent">
   <titleInfo>
-    <title>Secession</title>
+   <title>Secession</title>
   </titleInfo>
-  <typeOfResource>text</typeOfResource>
-  <genre authority="rbgenr">Little magazines</genre>
+  <part type="issue">
+   <detail type="number">
+    <number>1</number>
+    <caption>Number One</caption>
+   </detail>
+  </part>
   <originInfo>
-    <place>
-      <placeTerm type="text">New York</placeTerm>
-    </place>
-    <publisher>Kenneth Burke, Gorham B. Munson</publisher>
-    <dateIssued encoding="marc" point="start">19uu</dateIssued>
-    <dateIssued encoding="marc" point="end">9999</dateIssued>
+   <dateIssued>Spring 1922</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1922</dateIssued>
   </originInfo>
-  <language>
-    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-  </language>
-  <relatedItem type="isReferencedBy">
-    <note>Hoffman, F.J.  Little magazine</note>
-  </relatedItem>
-  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+ </relatedItem>
+
+ <relatedItem type="constituent">
+  <titleInfo>
+   <title>Secession</title>
+  </titleInfo>
+  <part type="issue">
+   <detail type="number">
+    <number>2</number>
+    <caption>Number Two</caption>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued>July 1922</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1922-07</dateIssued>
+  </originInfo>
+ </relatedItem>
+
+ <relatedItem type="constituent">
+  <titleInfo>
+   <title>Secession</title>
+  </titleInfo>
+  <part type="issue">
+   <detail type="number">
+    <number>3</number>
+    <caption>Number Three</caption>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued>August 1922</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1922-08</dateIssued>
+  </originInfo>
+ </relatedItem>
+
+ <relatedItem type="constituent">
+  <titleInfo>
+   <title>Secession</title>
+  </titleInfo>
+  <part type="issue">
+   <detail type="number">
+    <number>4</number>
+    <caption>Number Four</caption>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued>January 1923</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1923-01</dateIssued>
+  </originInfo>
+ </relatedItem>
+
+ <relatedItem type="constituent">
+  <titleInfo>
+   <title>Secession</title>
+  </titleInfo>
+  <part type="issue">
+   <detail type="number">
+    <number>6</number>
+    <caption>Number Six</caption>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued>July 1923</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1923-07</dateIssued>
+  </originInfo>
   <location>
-    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-    <holdingSimple>
-      <copyInformation>
-        <subLocation>ex</subLocation>
-        <!--DELETE COPY NUMBER BELOW-->
-        <shelfLocator>1 LM (Little Magazine)</shelfLocator>
-      </copyInformation>
-    </holdingSimple>
+   <holdingSimple>
+    <copyInformation>
+     <note>On masthead page, final line, is printed "NUMBER SIX JULY
+      1923." In this copy, the word "SIX" has been erased and
+      the number "5" written beside it.</note>
+    </copyInformation>
+   </holdingSimple>
   </location>
+  <location>
+   <holdingSimple>
+    <copyInformation>
+     <note>Appears to be duplicate of copy identified as issue 5, but
+      with the word "SIX" uncanceled on the masthead page.</note>
+    </copyInformation>
+   </holdingSimple>
+  </location>
+ </relatedItem>
+
+ <relatedItem type="constituent">
+  <titleInfo>
+   <title>Secession</title>
+  </titleInfo>
+  <part type="issue">
+   <detail type="number">
+    <number>7</number>
+    <caption>Number Seven</caption>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued>Winter 1924</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1924</dateIssued>
+  </originInfo>
+ </relatedItem>
+
+ <relatedItem type="constituent">
+  <titleInfo>
+   <title>Secession</title>
+   <subTitle>The testament of a stone: Notes on the Mechanics of the Poetic Image</subTitle>
+  </titleInfo>
+  <part type="issue">
+   <detail type="number">
+    <number>8</number>
+   </detail>
+  </part>
+  <originInfo>
+   <dateIssued>1924</dateIssued>
+   <dateIssued keyDate="yes" encoding="w3cdtf">1924b</dateIssued>
+  </originInfo>
+  <location>
+   <holdingSimple>
+    <copyInformation>
+     <note>one of two copies at Princeton.</note>
+    </copyInformation>
+   </holdingSimple>
+  </location>
+  <location>
+   <holdingSimple>
+    <copyInformation>
+     <note>second of two copies at Princeton.</note>
+    </copyInformation>
+   </holdingSimple>
+  </location>
+  <note>The issue comprises entirely Ivor Winters's essay "Notes on
+    the Mechanics of the Poetic Image"</note>
+ </relatedItem>
+
+
 </mods>
