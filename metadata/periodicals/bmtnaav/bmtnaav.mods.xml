@@ -52,16 +52,86 @@
     <temporal>20th century</temporal>
     <genre>Periodicals</genre>
   </subject>
-  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-  <location>
-    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-    <holdingSimple>
-      <copyInformation>
-        <subLocation>ex</subLocation>
-        <!--DELETE COPY NUMBER BELOW-->
-        <shelfLocator>1 3598.6746</shelfLocator>
-      </copyInformation>
-    </holdingSimple>
-  </location>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>New Numbers</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Volume 1</caption>
+      </detail>
+      <detail type="number">
+	<number>1</number>
+	<caption>Number 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>February, 1914</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1914-02</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>New Numbers</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Volume 1</caption>
+      </detail>
+      <detail type="number">
+	<number>2</number>
+	<caption>Number 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>April, 1914</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1914-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>New Numbers</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Volume 1</caption>
+      </detail>
+      <detail type="number">
+	<number>3</number>
+	<caption>Number 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>August, 1914</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1914-08</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>New Numbers</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="volume">
+	<number>1</number>
+	<caption>Volume 1</caption>
+      </detail>
+      <detail type="number">
+	<number>4</number>
+	<caption>Number 4</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>December, 1914</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1914-12</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+
 </mods>
