@@ -15,9 +15,7 @@ from datetime import datetime
 ###############################################################################
 # Generic location in the pudl file system - e.g., pudl0001 or pudl0001/4609321 
 # DO NOT include a leading slash, e.g., "/pudl0001".
-PUDL_LOCATORS = [
-	"pudl0097/4809270", "pudl0097/4608240",  "pudl0097/4939605", "pudl0097/4826219", "pudl0097/2980652"
-]
+PUDL_LOCATORS = [ "bmtnaay" ]
 PUDL_LOCATORS_TEST = [
 	"pudl0097/4939605"
 ]
@@ -30,16 +28,18 @@ OVERWRITE_EXISTING = False
 ## Less Common Options #########################################################
 ###############################################################################
 # Location of source images. "pudlXXXX" directories should be directly inside.
-SOURCE_ROOT = "/Volumes/vol3/"
+#SOURCE_ROOT = "/usr/share/BlueMountain/pstore/periodicals/"
+#SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/pstore/periodicals/"
+SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/source_tiffs/periodicals/"
+
 #
 # Location of target images. "pudlXXXX" directories and subdirectories will be
 # created.  
-# TARGET_ROOT = "/Volumes/4tbdrive/"
-#TARGET_ROOT = "/tmp/"
-TARGET_ROOT = "/Volumes/BMTN02/"
+#TARGET_ROOT = "/usr/share/BlueMountain/astore/periodicals/"
+TARGET_ROOT = "/Volumes/BLUEMNTN_HD/pstore/periodicals/"
 #
 # Location for temporary half-size TIFFs, required for setting color profile.
-TMP_DIR = "/tmp"
+TMP_DIR = "/tmp/"
 #
 
 # Recipes for Image Magick and Kakadu.
@@ -61,7 +61,7 @@ EXIV2_GET_BPS = "-Pt -g Exif.Image.BitsPerSample print"
 EXIV2 = "/opt/local/bin/exiv2"
 CONVERT = "/opt/local/bin/convert"
 TIFFCP = "/opt/local/bin/tiffcp"
-
+KDU_COMPRESS = "/usr/bin/kdu_compress"
 ################################################################################
 # Code. Leave this alone :). ###################################################
 ################################################################################
@@ -165,7 +165,7 @@ class DerivativeMaker(object):
                 if not os.path.exists(outJp2Path) or OVERWRITE_EXISTING == True: 
                     tiffSuccess = DerivativeMaker._makeTmpTiff(tiffPath, outTmpTiffPath, bps)
                     if tiffSuccess:
-                        DerivativeMaker._makeJp2(outTmpTiffPath, outJp2Path, bps)
+                        # DerivativeMaker._makeJp2(outTmpTiffPath, outJp2Path, bps)
 
 
 			# make the lzw-compressed tiff here
@@ -225,7 +225,7 @@ class DerivativeMaker(object):
             newDirPath = os.path.dirname(outPath)
             if not os.path.exists(newDirPath): os.makedirs(newDirPath, 0755)
             
-            cmd = "kdu_compress -i " + inPath + " -o " + outPath 
+            cmd = KDU_COMPRESS + " -i " + inPath + " -o " + outPath 
             if inBitsPerSample == TWENTY_FOUR_BITS:
                 cmd = cmd + " " + TWENTY_FOUR_BIT_KDU_RECIPE
             elif inBitsPerSample == EIGHT_BITS:
