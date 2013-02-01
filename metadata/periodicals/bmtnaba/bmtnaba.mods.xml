@@ -12,7 +12,7 @@
     </languageOfCataloging>
   </recordInfo>
   <titleInfo>
-    <nonSort>The </nonSort>
+    <nonSort>The</nonSort>
     <title>Signature</title>
   </titleInfo>
   <name type="personal">
@@ -55,16 +55,56 @@
   <note type="date/sequential designation">No. 1 (4 Oct. 1915)-no. 3 (1 Nov. 1915).</note>
   <note>Edited by D.H. Lawrence, Katherine Mansfield and John Middleton Murry.</note>
   <note>"Published by subscription only."</note>
-  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-  <location>
-    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-    <holdingSimple>
-      <copyInformation>
-        <subLocation>ex</subLocation>
-        <!--DELETE COPY NUMBER BELOW-->
-        <shelfLocator>1 0901.641</shelfLocator>
-      </copyInformation>
-    </holdingSimple>
-  </location>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>The</nonSort>
+      <title>Signature</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="number">
+	<number>1</number>
+	<caption>Number 1</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>4 October 1915</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-04</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>The</nonSort>
+      <title>Signature</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="number">
+	<number>2</number>
+	<caption>Number 2</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>18 October 1915</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-18</dateIssued>
+    </originInfo>
+  </relatedItem>
+
+  <relatedItem type="constituent">
+    <titleInfo>
+      <nonSort>The</nonSort>
+      <title>Signature</title>
+    </titleInfo>
+    <part type="issue">
+      <detail type="number">
+	<number>3</number>
+	<caption>Number 3</caption>
+      </detail>
+    </part>
+    <originInfo>
+      <dateIssued>1 November 1915</dateIssued>
+      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11-01</dateIssued>
+    </originInfo>
+  </relatedItem>
+
 </mods>
