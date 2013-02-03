@@ -15,7 +15,7 @@ from datetime import datetime
 ###############################################################################
 # Generic location in the pudl file system - e.g., pudl0001 or pudl0001/4609321 
 # DO NOT include a leading slash, e.g., "/pudl0001".
-PUDL_LOCATORS = [ "bmtnaay" ]
+PUDL_LOCATORS = [ "2612861" ]
 PUDL_LOCATORS_TEST = [
 	"pudl0097/4939605"
 ]
@@ -30,13 +30,15 @@ OVERWRITE_EXISTING = False
 # Location of source images. "pudlXXXX" directories should be directly inside.
 #SOURCE_ROOT = "/usr/share/BlueMountain/pstore/periodicals/"
 #SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/pstore/periodicals/"
-SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/source_tiffs/periodicals/"
+#SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/source_tiffs/periodicals/"
+SOURCE_ROOT = "/Users/cwulfman/Desktop/archival_batch_2/"
 
 #
 # Location of target images. "pudlXXXX" directories and subdirectories will be
 # created.  
 #TARGET_ROOT = "/usr/share/BlueMountain/astore/periodicals/"
-TARGET_ROOT = "/Volumes/BLUEMNTN_HD/pstore/periodicals/"
+#TARGET_ROOT = "/Volumes/BLUEMNTN_HD/pstore/periodicals/"
+TARGET_ROOT = "/usr/share/BlueMountain/pstore/periodicals/"
 #
 # Location for temporary half-size TIFFs, required for setting color profile.
 TMP_DIR = "/tmp/"
