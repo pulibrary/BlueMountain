@@ -1,0 +1,481 @@
+* The Use of Heads in the Blue Mountain Project
+  The typography used in the Blue Mountain texts varies enormously.
+  Some of the typographical variety comes from avant-garde impulses
+  -- the wish to break rules, to shock, to reimagine the function of
+  type and art on the page.  But not all of the typography is
+  avant-garde: much of it follows the conventions of newspaper and
+  magazine printing.
+
+  This memo is not a general introduction to typography; what I want
+  to examine is the way the printers and designers of the magazines
+  we are digitizing used *heads* to organize content, to make it
+  easier for DDD's operators to understand how to zone and process
+  the Blue Mountain magazines.
+
+** Heads are Layout
+
+  Printers have long used typography to organize content on a page.
+  Sometimes they use horizontal or vertical lines of various widths
+  (these are called /rules/); sometimes they use decorations
+  (sometimes called /printer's ornaments/ or /dingbats/); sometimes
+  they use variation in the spacing between lines and columns; and
+  sometimes they use special text elements, called /heads/.
+
+  It is very useful to think of heads this way, as layout and not as
+  content.  Heads are used to organize content.  If you think of heads
+  as typographical elements, just like rules and printer's ornaments,
+  then you will be less disturbed by the large variety of heads and
+  the promiscuous way they are employed, both within a single
+  publication and across publication designs.
+
+  Heads indicate the beginning of something -- that's why they are
+  called heads.  Sometimes they indicate the beginning a new magazine
+  constituent -- an article, a poem, or a section, for example.  These
+  heads are sometimes called /headlines/ or /major heads/.  They are
+  intended to draw the reader's eye to the beginning of something, so
+  they are often printed in larger type, or in a bold font, or
+  centered on the page or on a column, or separated from preceding and
+  succeeding text with space or rules, or some combination of these.
+  
+  Headlines are often mistaken for /titles/: headlines are not titles.
+  Headlines are typographical elements (having to do with layout);
+  titles are textual elements (having to do with meaning).  So a
+  headline may be used to print a title, but it is not the title.
+  DocWorks implements rules that associate headlines (layout) with
+  titles (text) to make it easier to extract constituent metadata
+  (data about the constituent, like who wrote it and what it's
+  called), but not all heads are titles.
+
+  Designers often use heads to indicate hierarchical relationships
+  among blocks of text.  For example, a designer may indicate that
+  one block of text is part of a larger block of text by
+  printing a smaller head at its top.  These smaller heads are
+  sometimes called /subheads/, which is short for /subordinate
+  heads/, because they are subordinate to a larger head.
+
+  This is where things get difficult.
+
+  Text blocks are /composable/: that is, they may be combined to form
+  larger text blocks: a sequence of paragraphs may form an article,
+  for example, and a sequence of articles may form a section.  Heads
+  are often used as markers for composition (rules and printer's
+  ornaments may serve the same function).  
+
+  The problem arises when you try to pin down the /kind/ of
+  relationship that exists among a set of text blocks.  The head at
+  the beginning of a poem may be the headline of the poem, but also a
+  subhead of a magazine section called "This Week's Poetry."  In
+  docWorks, should that head be zoned as /headline/ or as
+  /subheadline/?  It is not always easy to make a definitive,
+  consistent determination.  The task is made easier, though, if we
+  refine our understanding of text blocks by classifying them as
+  /constituents/ or /components/.
+
+** Constituents and Components
+*** Constituents
+   If a text block can stand on its own, it is a /constituent/.
+   Examples of constituents:
+
+   - Articles
+   - Poems
+   - Full-page illustrations
+   - Many blocks of music
+   - Many (but not all) partial-page illustrations with captions
+   - Magazine sections
+   - Items that appear in the table of contents, if there is one
+
+   In the Blue Mountain docWorks processing workflow, constituents
+   will end up being represented as <relatedItem type='constituent'>
+   elements in the MODS record, and as <div TYPE='TextContent'> in
+   the METS logical structMap.  Constituents may have headlines and
+   bylines, but neither is required.
+
+*** Components
+    If a text block cannot stand on its own -- that is, if it is just
+    a part of a larger block -- then it is a /component/.  Components
+    may have heads, but it is not required.
+
+*** Examples
+**** A Simple Constituent
+     /Le Grand Événement/ by Paul Fort (/L'Elan/, 15 April 1915)
+
+     In docWorks, I believe this would look like this:
+     - Chapter
+       - Heading
+	 - Headline
+	   Le Grand Événement
+	 - Byline
+	   Paul Fort
+       - Content
+
+     In the logical structMap, it would be represented like this
+     (edited for brevity):
+
+     #+BEGIN_SRC xml
+       <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="LE GRAND ÉVÉNEMENT">
+         <div ID="L.1.1.2.5.1" TYPE="Head">
+           <fptr>
+             <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
+           </fptr>
+         </div>
+         <div ID="L.1.1.2.5.2" TYPE="Byline">
+           <fptr>
+             <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00002"/>
+           </fptr>
+         </div>
+         <div ID="L.1.1.2.5.3" TYPE="Copy">
+           <div ID="L.1.1.2.5.3.1" TYPE="BodyContent">
+             <div ID="L.1.1.2.5.3.1.1" TYPE="Paragraph" ORDER="1">
+               <div ID="L.1.1.2.5.3.1.1.1" TYPE="Text">
+                 <fptr>
+                   <seq>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00003"/>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00007"/>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00009"/>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00006"/>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00008"/>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00004"/>
+                     <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
+                   </seq>
+                 </fptr>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     #+END_SRC
+
+     And in the MODS, it would be represented like this:
+
+     #+BEGIN_SRC xml
+       <relatedItem type="constituent" ID="c005">
+         <titleInfo lang="fre">
+           <nonSort>Le</nonSort>
+           <title>Grand Événement</title>
+         </titleInfo>
+         <name type="personal">
+           <displayForm>Paul Fort</displayForm>
+           <role>
+             <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+           </role>
+         </name>
+         <typeOfResource>text</typeOfResource>
+         <language>
+           <languageTerm authority="iso639-2b">fre</languageTerm>
+         </language>
+         <part>
+           <extent unit="page">
+             <start>5</start>
+           </extent>
+         </part>
+         <genre type="CCS">TextContent</genre>
+       </relatedItem>
+     #+END_SRC
+
+**** A Constituent with Components
+     /Von Dichtern/ (/Der Sturm/, 19 August 1911)
+
+     - Chapter
+       - Heading
+	 - Headline
+	   Von Dichtern
+	 - Byline
+	   Trust
+       - Content
+	 - Subheadline
+	   Begas
+	 - Paragraph
+	 - Paragraph
+	 - . . .
+	 - Subheadline
+	   Das neue Dichterterzett
+	 - Paragraph
+	 - Paragraph
+	 - . . .
+	 - Subheadline
+	   Der Musikkritiker
+	 - Paragraph
+	 - Paragraph
+	 - . . .
+
+     In the MODS, it would look like this:
+
+     #+BEGIN_SRC xml
+       <relatedItem type="constituent" ID="c005">
+         <titleInfo lang="ger">
+           <nonSort>Von</nonSort>
+           <title>Dichtern</title>
+         </titleInfo>
+         <name type="personal">
+           <displayForm>Trust</displayForm>
+           <role>
+             <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+           </role>
+         </name>
+         <typeOfResource>text</typeOfResource>
+         <language>
+           <languageTerm authority="iso639-2b">ger</languageTerm>
+         </language>
+         <part>
+           <extent unit="page">
+             <start>580</start>
+             <end>581</end>
+           </extent>
+         </part>
+         <genre type="CCS">TextContent</genre>
+       </relatedItem>
+     #+END_SRC
+
+**** A Constituent Containing Other Constituents
+     /2 Poèmes Nègres/ (/Dada/, December 1917)
+
+     - Chapter
+       - Heading
+	 - Headline
+	   2 Poèmes Nègres
+	 - Byline
+	    Tr. Tzara
+	    Loritja
+       - Content
+	 - Chapter
+	   - Heading
+	     - Headline
+	       en ouest des nuages végétant
+	   - Content
+	     - text . . .
+	 - Chapter
+	   - Heading
+	     - Headline
+	       La Chanson du Serpent
+	   - Content
+	     - text . . .
+
+     The MODS looks like this:
+
+     #+BEGIN_SRC xml
+       <relatedItem type="constituent" ID="c016">
+         <titleInfo lang="fre">
+           <title>2 POÈMES NÈGRES</title>
+         </titleInfo>
+         <name type="personal">
+           <displayForm>Tr. Tzara</displayForm>
+           <role>
+             <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+           </role>
+         </name>
+         <name type="personal">
+           <displayForm>Loritja</displayForm>
+           <role>
+             <roleTerm type="code" authority="marcrelator">att</roleTerm>
+           </role>
+         </name>
+         <typeOfResource>text</typeOfResource>
+         <language>
+           <languageTerm authority="iso639-2b">fre</languageTerm>
+         </language>
+         <part>
+           <extent unit="page">
+             <start>15</start>
+             <end>17</end>
+           </extent>
+         </part>
+         <genre type="CCS">TextContent</genre>
+       
+         <relatedItem type="constituent" ID="c018a">
+           <titleInfo lang="fre">
+             <title>[en ouest des nuages végétant]</title>
+           </titleInfo>
+           <name type="personal">
+             <displayForm>Tr. Tzara</displayForm>
+             <role>
+               <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+             </role>
+           </name>
+           <name type="personal">
+             <displayForm>Loritja</displayForm>
+             <role>
+               <roleTerm type="code" authority="marcrelator">att</roleTerm>
+             </role>
+           </name>
+           <typeOfResource>text</typeOfResource>
+           <language>
+             <languageTerm authority="iso639-2b">fre</languageTerm>
+           </language>
+           <part>
+             <extent unit="page">
+               <start>15</start>
+               <end>17</end>
+             </extent>
+           </part>
+           <genre type="CCS">TextContent</genre>
+         </relatedItem>
+       
+         <relatedItem type="constituent" ID="c018">
+           <titleInfo lang="fre">
+             <nonSort>LA</nonSort>
+             <title>CHANSON DU SERPENT</title>
+           </titleInfo>
+           <name type="personal">
+             <displayForm>Tr. Tzara</displayForm>
+             <role>
+               <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+             </role>
+           </name>
+           <name type="personal">
+             <displayForm>Loritja</displayForm>
+             <role>
+               <roleTerm type="code" authority="marcrelator">att</roleTerm>
+             </role>
+           </name>
+           <typeOfResource>text</typeOfResource>
+           <language>
+             <languageTerm authority="iso639-2b">fre</languageTerm>
+           </language>
+           <part>
+             <extent unit="page">
+               <start>17</start>
+             </extent>
+           </part>
+           <genre type="CCS">TextContent</genre>
+         </relatedItem>
+       </relatedItem>
+       
+     #+END_SRC
+     
+     The METS logical StructMap:
+
+     #+BEGIN_SRC xml
+            <div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c016" LABEL="2 POÈMES NÈGRES">
+        <div ID="L.1.1.2.10.1" TYPE="Head">
+         <fptr>
+          <area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00003"/>
+         </fptr>
+        </div>
+        <div ID="L.1.1.2.10.2" TYPE="Byline">
+         <fptr>
+          <area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00004"/>
+         </fptr>
+        </div>
+        <div TYPE="TextContent" DMDID="c018a" ORDER="1" LABEL="[en ouest des nuages végétant...]">
+         <div ID="L.1.1.2.10.4" TYPE="Copy">
+          <div ID="L.1.1.2.10.4.1" TYPE="BodyContent">
+           <div ID="L.1.1.2.10.4.1.1" TYPE="Paragraph" ORDER="1">
+            <div ID="L.1.1.2.10.4.1.1.1" TYPE="Text">
+             <fptr>
+              <area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00005"/>
+             </fptr>
+            </div>
+           </div>
+           <div ID="L.1.1.2.10.4.1.2" TYPE="Paragraph" ORDER="2">
+            <div ID="L.1.1.2.10.4.1.2.1" TYPE="Text">
+             <fptr>
+              <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00001"/>
+             </fptr>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div ID="L.1.1.2.11" TYPE="TextContent" ORDER="2" DMDID="c018" LABEL="LA CHANSON DU SERPENT">
+         <div ID="L.1.1.2.11.1" TYPE="Head">
+          <fptr>
+           <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00002"/>
+          </fptr>
+         </div>
+         <div ID="L.1.1.2.11.2" TYPE="Byline">
+          <fptr>
+           <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00003"/>
+          </fptr>
+         </div>
+         <div ID="L.1.1.2.11.3" TYPE="Copy">
+          <div ID="L.1.1.2.11.3.1" TYPE="BodyContent">
+           <div ID="L.1.1.2.11.3.1.1" TYPE="Paragraph" ORDER="1">
+            <div ID="L.1.1.2.11.3.1.1.1" TYPE="Text">
+             <fptr>
+              <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00004"/>
+             </fptr>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+     #+END_SRC
+    
+*** Guidelines
+    How do you know when to zone a head as a headline and when to
+    zone it as a subheadline?  Here's a general rule of thumb:    
+
+    - Examine the head and its context.
+    - If the text block below it is a /constituent/,
+      - then zone the head as /headline/.
+    - If the text block below it is a /component/,
+      - then zone the head as /subheadline/.
+
+    Deciding whether a text block is a constituent or a component can
+    sometimes be difficult.  
+
+    - Looking at the table of contents can often provide a clue: if
+      the head appears in the table of contents, then it is certainly
+      a headline and the text block below it is a constituent.
+
+    - If the head does not appear in the table of contents, look to
+      see if it is followed by a byline, or if a byline appears at
+      the end of the text block it is associated with.  If a byline
+      is present, the head should be zoned as a headline and the text
+      block treated as a constituent.
+
+    - Otherwise, you should probably treat the text block as a
+      component, and zone the head as a subheadline.
+
+*** A Difficult Example: /Poussières/, in /L'Elan/, January 1916
+    Is this a single constituent, with the headline /Poussières/,
+    containing two components, one with the subheadline /florilège
+    cherfilial no. VI/ and the other with the subheadline /défense &
+    illustration de la presse française/?  Or is it a constituent
+    with two subconstituents?
+
+    There is no table of contents for this issue of /L'Elan/, so
+    that's no help.  There are no bylines, either for the text block
+    headed by /Poussières/ or for the other two beneath it, which
+    suggests that those two subsidiary blocks are components of a
+    single constituent, and that their heads should be zoned as
+    subheadlines.  That is a perfectly reasonable conclusion, and
+    we would accept it.
+
+    However, there is a clue that suggests another answer.  The first
+    "subhead" is numbered: it is /florilège cherfilial/ number 6.
+    That suggests it is part of a series, and indeed, if we look in
+    /L'Elan/ from 15 December 1915 we find /florilège cherfilial
+    no. V/, and /florilège cherfilial no. IV/ in the 1 July 1915
+    issue.  We also see that /défense & illustration de la presse
+    française/ is repeated in several issues.
+
+    When a subsection repeats like this, from issue to issue, it is
+    probably better to treat it as a subconstituent, with an entry in
+    the MODS record and a label in the METS structMap, so readers who
+    want to follow the series can locate it more easily.  So it would
+    probably be better to zone this example as a first-level
+    constituent with the headline /Poussières/, containing two
+    second-level constituents, one with the headline /florilège
+    cherfilial no. VI/ and the other with the headline /défense &
+    illustration de la presse française/.
+
+
+
+
+#+TITLE:     The Use of Heads in the Blue Mountain Project
+#+AUTHOR:    Cliff Wulfman
+#+EMAIL:     cwulfman@Princeton.EDU
+#+DATE:      2013-02-05 Tue
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:4 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
