@@ -49,7 +49,13 @@
 	    <titleInfo lang="fre">
 	      <title>Bois de M. Janco.</title>
 	    </titleInfo>
-	    <typeOfResource>text</typeOfResource>
+	    <name type="personal">
+	      <displayForm>M. Janco</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
 	    <language>
 	      <languageTerm authority="iso639-2b">fre</languageTerm>
 	    </language>
@@ -59,19 +65,6 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-
-	    <relatedItem type="constituent" ID="c002">
-	      <titleInfo lang="fre">
-		<title>Bois de M. Janco.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>1</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
 	  </relatedItem>
 
 
@@ -2263,39 +2256,18 @@
 	<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
 
 
-
-
-
-	  <div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Bois de M. Janco.">
-
-	    <div ID="L.1.1.2.1.1" TYPE="Illustration" ORDER="1" DMDID="c002" LABEL="Bois de M. Janco.">
-	      <div ID="L.1.1.2.1.1.1" TYPE="Image">
+	    <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c002" LABEL="Bois de M. Janco.">
+	      <div ID="L.1.1.2.1.1" TYPE="Image">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
 		</fptr>
 	      </div>
-	      <div ID="L.1.1.2.1.1.2" TYPE="Caption">
+	      <div ID="L.1.1.2.1.2" TYPE="Caption">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00005"/>
 		</fptr>
 	      </div>
 	    </div>
-
-	    <div ID="L.1.1.2.1.2" TYPE="Copy">
-	      <div ID="L.1.1.2.1.2.1" TYPE="BodyContent">
-		<div ID="L.1.1.2.1.2.1.1" TYPE="Paragraph" ORDER="1">
-		  <div ID="L.1.1.2.1.2.1.1.1" TYPE="Text">
-		    <fptr>
-		      <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00002"/>
-		    </fptr>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-
-	  </div>
-
-
 
 	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c003" LABEL="MANIFESTE DADA 1918.">
 	    <div ID="L.1.1.2.2.1" TYPE="Head">
