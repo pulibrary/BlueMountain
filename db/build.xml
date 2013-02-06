@@ -34,13 +34,69 @@
     </xdb:store>
   </target>
 
+  <target name="load-bmtnaad" description="load Le Coeur a Barbe">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaad" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaad">
+	<include name="**/*.mets.xml" />
+	<include name="**/*.alto.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
   <target name="load-bmtnaae" description="load Dada">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}" createcollection="true"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaae" createcollection="true"
 	       createsubcollections="true"
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaae">
+	<include name="**/*.mets.xml" />
+	<include name="**/*.alto.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnaaf" description="load l'elan">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bnmtnaaf" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaaf">
+	<include name="**/*.mets.xml" />
+	<include name="**/*.alto.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnaao" description="load 291">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaao" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaao">
+	<include name="**/*.mets.xml" />
+	<include name="**/*.alto.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnabg" description="load der Sturm">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnabg" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaabg">
 	<include name="**/*.mets.xml" />
 	<include name="**/*.alto.xml" />
 	<exclude name="**/work/**" />
