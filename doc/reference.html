@@ -1,0 +1,3276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Blue Mountain Reference </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Blue Mountain Reference "/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-01-22 Tue"/>
+<meta name="author" content="Cliff Wulfman"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Blue Mountain Reference </h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Identifiers and Naming Conventions</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Blue Mountain Identifiers (bmtnids)</a></li>
+<li><a href="#sec-1-2">1.2 Issuance Strings</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1 How to Compose an Issuance String</a>
+<ul>
+<li><a href="#sec-1-2-1-1">1.2.1.1 A Real Example</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3 File Names</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1 Image File Names</a></li>
+<li><a href="#sec-1-3-2">1.3.2 ALTO File Names</a></li>
+<li><a href="#sec-1-3-3">1.3.3 METS File Names</a></li>
+<li><a href="#sec-1-3-4">1.3.4 PDF File Names</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Journal Objects</a></li>
+<li><a href="#sec-3">3 Arrangement (Blue Mountain Directory Structure)</a>
+<ul>
+<li><a href="#sec-3-1">3.1 The Metadata Store</a></li>
+<li><a href="#sec-3-2">3.2 The Preservation Store</a></li>
+<li><a href="#sec-3-3">3.3 The Access Store</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Profiles</a>
+<ul>
+<li><a href="#sec-4-1">4.1 METS Profile</a>
+<ul>
+<li><a href="#sec-4-1-1">4.1.1 Title-Level METS</a></li>
+<li><a href="#sec-4-1-2">4.1.2 Issue-Level METS</a>
+<ul>
+<li><a href="#sec-4-1-2-1">4.1.2.1 &lt;metsHdr&gt;</a>
+<ul>
+<li><a href="#sec-4-1-2-1-1">4.1.2.1.1 &lt;agent&gt;</a></li>
+<li><a href="#sec-4-1-2-1-2">4.1.2.1.2 &lt;metsDocumentID TYPE="URN"&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-1-2-2">4.1.2.2 &lt;dmdSec&gt;</a></li>
+<li><a href="#sec-4-1-2-3">4.1.2.3 &lt;amdSec&gt;</a></li>
+<li><a href="#sec-4-1-2-4">4.1.2.4 &lt;fileSec&gt;</a>
+<ul>
+<li><a href="#sec-4-1-2-4-1">4.1.2.4.1 &lt;fileGrp ID="IMGGRP" USE="Images"&gt;</a>
+<ul>
+<li><a href="#sec-4-1-2-4-1-1">4.1.2.4.1.1 &lt;file&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-1-2-4-2">4.1.2.4.2 &lt;fileGrp ID="ALTOGRP" USE="OCR"&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-1-2-5">4.1.2.5 &lt;structMap&gt;</a>
+<ul>
+<li><a href="#sec-4-1-2-5-1">4.1.2.5.1 &lt;structMap type="PHYSICAL"&gt;</a></li>
+<li><a href="#sec-4-1-2-5-2">4.1.2.5.2 &lt;structMap type="LOGICAL"&gt;</a>
+<ul>
+<li><a href="#sec-4-1-2-5-2-1">4.1.2.5.2.1 The &lt;div&gt; hierarchy</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-4-2">4.2 MODS Profile</a>
+<ul>
+<li><a href="#sec-4-2-1">4.2.1 Title-Level MODS</a></li>
+<li><a href="#sec-4-2-2">4.2.2 Issue-Level MODS</a>
+<ul>
+<li><a href="#sec-4-2-2-1">4.2.2.1 &lt;mods&gt;</a></li>
+<li><a href="#sec-4-2-2-2">4.2.2.2 &lt;recordInfo&gt;</a></li>
+<li><a href="#sec-4-2-2-3">4.2.2.3 &lt;recordIdentifier&gt;</a></li>
+<li><a href="#sec-4-2-2-4">4.2.2.4 &lt;identifier type="PUL"&gt;</a></li>
+<li><a href="#sec-4-2-2-5">4.2.2.5 &lt;relatedItem type="host"&gt;</a></li>
+<li><a href="#sec-4-2-2-6">4.2.2.6 &lt;language&gt;</a></li>
+<li><a href="#sec-4-2-2-7">4.2.2.7 &lt;titleInfo&gt;</a></li>
+<li><a href="#sec-4-2-2-8">4.2.2.8 &lt;MODS:part&gt;</a>
+<ul>
+<li><a href="#sec-4-2-2-8-1">4.2.2.8.1 &lt;MODS:detail type="volume"&gt;</a></li>
+<li><a href="#sec-4-2-2-8-2">4.2.2.8.2 &lt;MODS:detail type="issue"&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2-2-9">4.2.2.9 &lt;MODS:originInfo&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2-3">4.2.3 &lt;relatedItem type="constituent"&gt;</a>
+<ul>
+<li><a href="#sec-4-2-3-1">4.2.3.1 &lt;titleInfo&gt;</a></li>
+<li><a href="#sec-4-2-3-2">4.2.3.2 &lt;name&gt;</a></li>
+<li><a href="#sec-4-2-3-3">4.2.3.3 &lt;language&gt;</a></li>
+<li><a href="#sec-4-2-3-4">4.2.3.4 &lt;part&gt;</a>
+<ul>
+<li><a href="#sec-4-2-3-4-1">4.2.3.4.1 &lt;extent unit="page"&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2-3-5">4.2.3.5 &lt;genre type="CCS"&gt;</a></li>
+<li><a href="#sec-4-2-3-6">4.2.3.6 Kinds of Constituents</a>
+<ul>
+<li><a href="#sec-4-2-3-6-1">4.2.3.6.1 TextContent</a>
+<ul>
+<li><a href="#sec-4-2-3-6-1-1">4.2.3.6.1.1 Examples</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2-3-6-2">4.2.3.6.2 Illustration</a>
+<ul>
+<li><a href="#sec-4-2-3-6-2-1">4.2.3.6.2.1 Examples</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2-3-6-3">4.2.3.6.3 SponsoredAd</a>
+<ul>
+<li><a href="#sec-4-2-3-6-3-1">4.2.3.6.3.1 Examples</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2-3-6-4">4.2.3.6.4 Section</a>
+<ul>
+<li><a href="#sec-4-2-3-6-4-1">4.2.3.6.4.1 Examples</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-4-3">4.3 ALTO Profile</a></li>
+<li><a href="#sec-4-4">4.4 Image Profiles</a>
+<ul>
+<li><a href="#sec-4-4-1">4.4.1 TIFF: Image Description</a></li>
+<li><a href="#sec-4-4-2">4.4.2 JPEG2000: Image Description</a>
+<ul>
+<li><a href="#sec-4-4-2-1">4.4.2.1 Generative Image Derivatives</a></li>
+<li><a href="#sec-4-4-2-2">4.4.2.2 Delivery Derivatives</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Blue Mountain DocWorks Configuration</a>
+<ul>
+<li><a href="#sec-5-1">5.1 Containers</a>
+<ul>
+<li><a href="#sec-5-1-1">5.1.1 Editorial Content Container</a>
+<ul>
+<li><a href="#sec-5-1-1-1">5.1.1.1 Article Copy</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-1-2">5.1.2 PubInfo Container</a></li>
+<li><a href="#sec-5-1-3">5.1.3 SponsoredAd Container</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 General Markup Policy for Blue Mountain Magazines</a>
+<ul>
+<li><a href="#sec-6-1">6.1 Preliminary</a></li>
+<li><a href="#sec-6-2">6.2 VerifyPageFrames (VPF)</a></li>
+<li><a href="#sec-6-3">6.3 VerifyLayoutElements (VLE)</a></li>
+<li><a href="#sec-6-4">6.4 VerifyPageNumbers (VPN)</a>
+<ul>
+<li><a href="#sec-6-4-1">6.4.1 Zone Types to Tag</a>
+<ul>
+<li><a href="#sec-6-4-1-1">6.4.1.1 PubInfo Container</a>
+<ul>
+<li><a href="#sec-6-4-1-1-1">6.4.1.1.1 Page Number</a></li>
+<li><a href="#sec-6-4-1-1-2">6.4.1.1.2 Nameplate</a></li>
+<li><a href="#sec-6-4-1-1-3">6.4.1.1.3 Masthead</a></li>
+<li><a href="#sec-6-4-1-1-4">6.4.1.1.4 Folio Line (Inside)</a></li>
+<li><a href="#sec-6-4-1-1-5">6.4.1.1.5 Front Folio Line(s)</a></li>
+<li><a href="#sec-6-4-1-1-6">6.4.1.1.6 General Publication Information</a></li>
+</ul>
+</li>
+<li><a href="#sec-6-4-1-2">6.4.1.2 Editorial Content Container</a>
+<ul>
+<li><a href="#sec-6-4-1-2-1">6.4.1.2.1 Head</a></li>
+<li><a href="#sec-6-4-1-2-2">6.4.1.2.2 Subhead</a></li>
+<li><a href="#sec-6-4-1-2-3">6.4.1.2.3 Article Copy</a></li>
+<li><a href="#sec-6-4-1-2-4">6.4.1.2.4 Byline</a></li>
+<li><a href="#sec-6-4-1-2-5">6.4.1.2.5 Art</a></li>
+<li><a href="#sec-6-4-1-2-6">6.4.1.2.6 Caption</a></li>
+<li><a href="#sec-6-4-1-2-7">6.4.1.2.7 Music</a></li>
+<li><a href="#sec-6-4-1-2-8">6.4.1.2.8 Footnote</a></li>
+</ul>
+</li>
+<li><a href="#sec-6-4-1-3">6.4.1.3 SponsoredAd Container</a>
+<ul>
+<li><a href="#sec-6-4-1-3-1">6.4.1.3.1 Sponsored Ad (Advertisement Copy)</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-6-4-2">6.4.2 Zone Types to Ignore</a></li>
+</ul>
+</li>
+<li><a href="#sec-6-5">6.5 VerifyPageHierarchy (VPH)</a></li>
+<li><a href="#sec-6-6">6.6 VerifyHiearchy (VH)</a></li>
+<li><a href="#sec-6-7">6.7 OCR Correction</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Identifiers and Naming Conventions</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>  Blue Mountain assigns a URI to each magazine, magazine issue,
+  METS, and MODS record it maintains:
+</p>
+
+
+
+<pre class="example">&lt;BMTNPREFIX&gt; ::= "urn:PUL:bluemountain"
+&lt;DATESTRING&gt; ::= CCYY-MM-DD | CCYY-MM | CCYY
+&lt;ISSUEINDEX&gt; ::= &lt;0-9&gt;&lt;0-9&gt;
+&lt;BMTNID&gt;     ::= "bmtn" &lt;a-z&gt;&lt;a-z&gt;&lt;a-z&gt;
+&lt;ISSUID&gt;     ::= &lt;BMTNID&gt; "_" &lt;DATESTRING&gt; "_" &lt;ISSUEINDEX&gt;
+
+&lt;TITLEURI&gt;    ::= &lt;BMTNPREFIX&gt; ":" &lt;BMTNID&gt;
+&lt;ISSUEURI&gt;    ::= &lt;BMTNPREFIX&gt; ":" &lt;ISSUEID&gt;
+
+
+&lt;TITLEMETSURI&gt; ::= &lt;BMTNPREFIX&gt; ":td:" &lt;BMTNID&gt;
+&lt;ISSUEMETSURI&gt; ::= &lt;BMTNPREFIX&gt; ":td:" &lt;ISSUEID&gt;
+
+&lt;TITLEMODSURI&gt; ::= &lt;BMTNPREFIX&gt; ":dmd:" &lt;BMTNID&gt;
+&lt;ISSUEMODSURI&gt; ::= &lt;BMTNPREFIX&gt; ":dmd:" &lt;ISSUEID&gt;
+</pre>
+
+
+<p>  
+  This syntax is explained below.
+</p>
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Blue Mountain Identifiers (bmtnids)</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>  Blue Mountain is a <i>database</i> of magazines: that is, it is a
+  system that links information together.  In order to link
+  information about specific objects &ndash; magazine titles, magazine
+  issues, ec. &ndash; Blue Mountain must assign a <i>unique identifier</i> to
+  each object.  (This is a well-known feature of information
+  science.).
+</p>
+<p>
+  Blue Mountain adopts the Universal Resource Name conventions (URN)
+  to compose unique identifiers for <i>titles</i> and <i>issues</i>, as well
+  as for the metadata records (METS and MODS) used to encode
+  information about them. 
+</p>
+<p>
+   A <i>Journal Title</i> is the journal or magazine as a whole, as
+   opposed to discrete volumes or issues &ndash; the entire run of the
+   magazine.  Blue Mountain assigns a sequential <i>blue mountain    identifier</i>, or <i>bmtnid</i> to each title.  The bmtnid will take the
+   form <i>bmtnNNN</i>, where NNN is a hexavigesimal number (e.g., <i>aaa</i>,
+   <i>aab</i>, <i>aac</i>, etc.).<sup><a class="footref" name="fnr-.1" href="#fn-.1">1</a></sup> Blue Mountain will maintain bmtnids in a
+   <i>project registry</i>, a file maintained with other administrative
+   files.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Issuance Strings</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>   Each journal <i>issue</i> will be assigned an <i>issue identifier</i> or
+   <i>issueid</i> of the form <i>bmtnid_issuanceString</i>, where <i>issuanceString</i>
+   corresponds to the date of issuance and takes the form
+   <i>CCYY-MM-DD_II</i>, defined as follows:
+</p>
+<dl>
+<dt>CCYY</dt><dd>A four-digit number representing the year of publication (e.g., 1912)
+</dd>
+<dt>MM  </dt><dd>A two-digit number representing the month of publication,
+             where January = 01, February = 02, etc.
+</dd>
+<dt>DD  </dt><dd>A two-digit number representing the day of publication
+             (e.g., 01, 02 .. 30, 31).
+</dd>
+<dt>II  </dt><dd>A two-digit index of daily issuance (e.g., the first
+             issue of the day is 01, the second is 02, and so on).
+             This convention is adopted from the issuance of
+             newspapers, which not infrequently issued a morning
+             edition and an evening edition on the same day.  Blue
+             Mountain's adoption allows us to distinguish among
+             magazine texts that were published on the same day: a
+             regular issue and a supplement, for example.
+</dd>
+</dl>
+
+
+
+</div>
+
+<div id="outline-container-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> How to Compose an Issuance String</h4>
+<div class="outline-text-4" id="text-1-2-1">
+
+<p>    Issueids, like ISO 8601 dates, are organized from most
+    significant to least significant chronological unit (i.e., from
+    year to day).  This format has two advantages: it allows ids to
+    be sorted naturally, and it enables <i>variable precision</i>: the
+    representation of daily, monthly, or yearly issuance.
+</p>
+<ul>
+<li>If you know the year, month, and day of publication (e.g., you
+      know that the issue was published on January 5th, 1912) :: then
+      the issuance string os 1912-01-05_01.
+
+</li>
+<li>If you have two issues published on the same day (e.g., an
+      issue and a special supplement were both issued on January
+      5th, 1912) :: then the issuance strings are 1912-01-05_01 and
+      1912-01-05_02.
+
+</li>
+<li>If you know only the year and month of publication (e.g., you
+      know it was published in January, 1912, but you do not know on
+      what day: 1912-01_01.
+
+</li>
+<li>If you know that the magazine published two issues monthly, but
+      you do not know the dates of publication (e.g., you have two
+      issues published in January, 1912): The issuance strings are
+      1912-01_01 and 1912-01_02.
+
+</li>
+<li>If you know only the year of publication (e.g., you know that
+      the issue was published in 1912, but you do not know the month
+      or, therefore, the day of publication): The issuance string is
+      1912_01.
+
+</li>
+<li>If you have several issues published in the same year, but you
+      know neither the month nor the day of publication (e.g., you
+      know the journal published two issues in 1912, but you do not
+      know the months or days of publication): The issuance strings
+      are 1912_01 and 1912_02.
+</li>
+</ul>
+
+
+
+</div>
+
+<div id="outline-container-1-2-1-1" class="outline-5">
+<h5 id="sec-1-2-1-1"><span class="section-number-5">1.2.1.1</span> A Real Example</h5>
+<div class="outline-text-5" id="text-1-2-1-1">
+
+<p>    The journal <i>le coeur à barbe</i> has the Blue Mountain
+    identifier <b>bmtnaad</b>.  Only one issue was published, in April
+    of 1920. 
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left">titleid</td><td class="left">urn:PUL:bluemountain:bmtnaad</td></tr>
+<tr><td class="left">title METS id</td><td class="left">urn:PUL:bluemountain:td:bmtnaad</td></tr>
+<tr><td class="left">title MODS id</td><td class="left">urn:PUL:bluemountain:dmd:bmtnaad</td></tr>
+<tr><td class="left">issueid</td><td class="left">urn:PUL:bluemountain:bmtnaad_1920-04_01</td></tr>
+<tr><td class="left">issue METS id</td><td class="left">urn:PUL:bluemountain:td:bmtnaad_1920-04_01</td></tr>
+<tr><td class="left">issue MODS id</td><td class="left">urn:PUL:bluemountain:dmd:bmtnaad_1920-04_01</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> File Names</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>   Names of Blue Mountain files will be constructed using the naming
+   convention described above.
+</p>
+</div>
+
+<div id="outline-container-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> Image File Names</h4>
+<div class="outline-text-4" id="text-1-3-1">
+
+
+
+
+<pre class="example">&lt;EXTENSION&gt; ::= "tif" | "jp2"
+&lt;IMGINDEX&gt;  ::= &lt;0-9&gt;&lt;0-9&gt;&lt;0-9&gt;
+&lt;FILENAME&gt;  ::= &lt;ISSUEID&gt; "_" &lt;IMGINDEX&gt; "." &lt;EXTENSION&gt;
+</pre>
+
+
+<p>
+   Image files shall be named <i>issueid_nnn.jp2</i> or <i>issueid_nnn.tif</i>,
+   where
+</p><ul>
+<li><i>issuid</i> is the identifier of the issue;
+</li>
+<li><i>nnn</i> is a three-digit number indicating the location of the
+     image file in the sequence of image files (not necessarily the
+     number printed on the page that has been photographed);
+</li>
+<li><i>jp2</i> is the conventional file extension for JPEG2000 files.
+</li>
+<li><i>tif</i> is the conventional file extension for TIFF files.
+</li>
+</ul>
+
+
+<p>
+   For example,
+</p>
+
+
+<pre class="example">bmtnaad_1925-06-03_01_001.jp2
+bmtnaad_1925-06-03_01_002.jp2
+...
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> ALTO File Names</h4>
+<div class="outline-text-4" id="text-1-3-2">
+
+
+
+
+<pre class="example">&lt;EXTENSION&gt; ::= "alto.xml"
+&lt;IMGINDEX&gt;  ::= &lt;0-9&gt;&lt;0-9&gt;&lt;0-9&gt;
+&lt;FILENAME&gt;  ::= &lt;ISSUEID&gt; "_" &lt;IMGINDEX&gt; "." &lt;EXTENSION&gt;
+</pre>
+
+
+<p>
+   ALTO files shall be named <i>issueid_nnn.alto.xml</i>, where
+</p><ul>
+<li><i>issuid</i> is the identifier of the issue
+</li>
+<li><i>nnn</i> is a three-digit number corresponding to the sequence
+     number of the image file to which this ALTO file corresponds
+</li>
+<li><i>alto</i> indicates the schema used to encode the document
+</li>
+<li><i>xml</i> indicates the format of the file.
+</li>
+</ul>
+
+
+<p>
+   For example,
+</p>
+
+
+<pre class="example">bmtnaad_1925-06-03_01_001.alto.xml
+bmtnaad_1925-06-03_01_002.alto.xml
+...
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3-3" class="outline-4">
+<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> METS File Names</h4>
+<div class="outline-text-4" id="text-1-3-3">
+
+
+
+
+<pre class="example">&lt;EXTENSION&gt; ::= "mets.xml"
+&lt;FILENAME&gt;  ::= &lt;ISSUEID&gt;  "." &lt;EXTENSION&gt;
+</pre>
+
+
+<p>
+   METS files shall be named <i>issueid.mets.xml</i>, where
+</p><ul>
+<li><i>issueid</i> is the identifier of the issue
+</li>
+<li><i>mets</i> indicates the schema used to encode the document
+</li>
+<li><i>xml</i> indicates the format of the file.
+</li>
+</ul>
+
+
+<p>   
+   For example,
+</p>
+
+
+<pre class="example">bmtnaad_1925-06-03_01.mets.xml
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3-4" class="outline-4">
+<h4 id="sec-1-3-4"><span class="section-number-4">1.3.4</span> PDF File Names</h4>
+<div class="outline-text-4" id="text-1-3-4">
+
+
+
+
+<pre class="example">&lt;EXTENSION&gt; ::= "pdf"
+&lt;FILENAME&gt;  ::= &lt;ISSUEID&gt; "." &lt;EXTENSION&gt;
+</pre>
+
+
+<p>
+   PDF files shall be named <i>issueid.pdf</i>, where
+</p><ul>
+<li><i>issueid</i> is the identifier of the issue
+</li>
+<li><i>pdf</i> indicates the format of the file.
+</li>
+</ul>
+
+
+<p>   
+   For example,
+</p>
+
+
+<pre class="example">bmtnaad_1925-06-03_01.pdf
+</pre>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Journal Objects</h2>
+<div class="outline-text-2" id="text-2">
+
+<p> A <i>journal object</i> will comprise the following elements:
+</p>
+<dl>
+<dt>title-level descriptive metadata</dt><dd>A detailed, machine-readable
+      description of the periodical as a whole.  Encoded in MODS for
+      compatibility with library systems, but translatable into other
+      formats (e.g., TEI).
+
+</dd>
+<dt>title-level bibliography</dt><dd>An article-level prose description.
+      (<i>bmtnid.tei.xml</i>)
+
+</dd>
+<dt>title-level metadata wrapper</dt><dd>Pulls together the title-level
+      metadata, the bibliography, and the issue-level metadata
+      (<i>bmtnid.mets.xml</i>)
+
+</dd>
+<dt>issues</dt><dd>one or more issues, each of which entails the following:
+<dl>
+<dt>preservation-quality images</dt><dd>high-quality TIFF files ('master
+        TIFFs'), produced according to local best practices and in
+        conformance with the FADGI standards
+        (<a href="http://www.digitizationguidelines.gov/guidelines/digitize-technical.html">http://www.digitizationguidelines.gov/guidelines/digitize-technical.html</a>).
+</dd>
+<dt>generative image derivatives</dt><dd>more manageable forms of the
+        master TIFFs, meant to serve as the source for online
+        deliverables, etc.  Encoded in the JPEG2000 format, according
+        to specifications described below.
+</dd>
+<dt>delivery derivatives</dt><dd>images optimized for delivery over the
+        World Wide Web.
+</dd>
+<dt>issue-level descriptive metadata</dt><dd>a MODS document (see below).
+</dd>
+<dt>text encodings</dt><dd>Initially these will be in the form of
+                       corrected OCR for each page, encoded in the
+                       ALTO schema (output by ABBYY via
+                       docWORKS). Future encodings will likely
+                       include TEI representations, derived from the
+                       ALTO documents, for detailed textual analysis.
+</dd>
+<dt>deliverable text-under-image PDF</dt><dd>another ABBYY output format.
+</dd>
+<dt>issue-level metadata wrapper</dt><dd>a METS document.  The METS half
+        of METS/ALTO, the structMap of this document links
+        constituent-level items to the regions identified in the ALTO
+        documents, and to the page image.  (See below for detailed
+        specification.)
+</dd>
+</dl>
+
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Arrangement (Blue Mountain Directory Structure)</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>  The components of the journal object have different storage and
+  access requirements.  Master TIFF files are very large binary
+  files that will seldom be accessed but must be carefully preserved
+  (they are expensive or impossible to replace). Image derivatives,
+  too, are large binary files, but they can be regenerated from the
+  master TIFFs and therefore require less care, but they will be
+  accessed from a variety of sources (primarily the web).  PDF files
+  are hybrids: they are large binary files, composites of image
+  derivatives and OCR output that cannot easily be recreated and so
+  must be preserved more carefully than image derivatives while
+  still being accessible.  Metadata files are relatively small but
+  very expensive to replace, and so must be curated carefully.  They
+  are also liable to updating, so version tracking is important.
+</p>
+<p>
+  The Blue Mountain Project will manage these assets separately.
+  The non-binary data and metadata will be stored and managed in a
+  distributed version control system (DVCS), which will enable
+  change management, collaborative development among PUL and its
+  METS/ALTO vendor, and resource sharing, as stipulated in the
+  grant.
+</p>
+<p>
+  Master TIFF files and text-under-image PDFs will be maintained in a
+  <i>preservation store</i>; image derivatives, and copies of the PDFs and
+  the metadata, will be kept in an <i>access store.</i>
+</p>
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> The Metadata Store</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<p>   Metadata will be organized as a hierarchy of files and
+   directories, like this:
+</p>
+
+
+<pre class="example">- periodicals/
+  - bmtnID/
+    - bmtnID.mets.xml
+    - bmtnID.mods.xml
+    - bmtnID.tei.xml
+    - issues/
+</pre>
+
+<p>
+   The issues/ directory will be organized by publication date,
+   following the same convention as that used for constructing
+   identifiers.  So, for example,
+</p>
+
+
+<pre class="example">- bmtnabi/
+  - issues/
+    - 1859/
+      - 01/
+        - 05_01/
+          - bmtnid_issueid.mets.xml
+          - bmtnid_issueid.mods.xml
+          - bmtnid_issueid.tei.xml
+          - alto/
+            - bmtnid_issueid-001.alto.xml
+            - bmtnid_issueid-002.alto.xml
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> The Preservation Store</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<p>   The Preservation Store will be arranged as a filesystem mirroring
+   the structure of the metadata tree and rooted at
+   /usr/share/BlueMountain/pstore/periodicals.
+</p>
+
+
+<pre class="example">- pstore/
+  - periodicals/
+    - bmtnid/
+      - issues/
+        - CCYY/
+          - MM/
+            - DD_II/
+              - bmtnid_issueid.pdf
+              - bmtnid_issueid_001.tif
+              - bmtnid_issueid_002.tif
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> The Access Store</h3>
+<div class="outline-text-3" id="text-3-3">
+
+<p>   Like the Preservation Store, the Access store will be arranged as
+   a filesystem mirroring the structure of the metadata tree; it will
+   be rooted at /usr/share/BlueMountain/astore/periodicals.
+</p>
+
+
+<pre class="example">- astore/
+  - periodicals/
+    - bmtnid/
+      - issues/
+        - CCYY/
+          - MM/
+            - DD_II/
+              - bmtnid_issueid.pdf
+              - generative/
+                - bmtnid_issueid_001.jp2
+                - bmtnid_issueid_002.jp2
+                - bmtnid_issueid_003.jp2
+              - delivery/
+                - bmtnid_issueid_001.jp2
+                - bmtnid_issueid_002.jp2
+                - bmtnid_issueid_003.jp2
+</pre>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Profiles</h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> METS Profile</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<p>   There are two kinds of METS records in Blue Mountain:
+</p>
+<ol>
+<li><b>Title-Level METS</b> &ndash; A METS document encapsulating information about
+      the magazine title as a whole.
+</li>
+<li><b>Issue-Level METS</b> &ndash; A METS document encapsulating information
+      about an individual issue of a magazine.
+</li>
+</ol>
+
+
+<p>
+   These are described in greater detail below.
+</p>
+
+</div>
+
+<div id="outline-container-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> Title-Level METS</h4>
+<div class="outline-text-4" id="text-4-1-1">
+
+<p>    ( Greater detail to come. )
+</p>
+<p>
+    The metadata for the title will be encapsulated in a title-level
+    METS record: the title-level descriptive metadata (either as an
+    embedded MODS record or pointed to), a pointer to the
+    bibliographic history, and (possibly) pointers to issue-level metadata.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> Issue-Level METS</h4>
+<div class="outline-text-4" id="text-4-1-2">
+
+<p>   The metadata for each issue shall be encapsulated in a METS
+   record.  A skeleton sample of such a record is the following:
+</p>
+
+
+
+<pre class="src src-xml">&lt;?<span style="color: #f0dfaf; font-weight: bold;">xml</span> <span style="color: #dfaf8f;">version</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">1.0</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">encoding</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">UTF-8</span><span style="color: #cc9393;">"</span>?&gt;
+&lt;<span style="color: #8cd0d3;">mets</span> <span style="color: #93e0e3;">xmlns</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.loc.gov/METS/</span><span style="color: #cc9393;">"</span>
+      <span style="color: #93e0e3;">xmlns</span>:<span style="color: #dfaf8f;">xlink</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.w3.org/1999/xlink</span><span style="color: #cc9393;">"</span>
+      <span style="color: #93e0e3;">xmlns</span>:<span style="color: #dfaf8f;">xsi</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.w3.org/2001/XMLSchema-instance</span><span style="color: #cc9393;">"</span>
+      <span style="color: #93e0e3;">xsi</span>:<span style="color: #dfaf8f;">schemaLocation</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd</span><span style="color: #cc9393;">"</span> 
+      <span style="color: #dfaf8f;">TYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">Magazine</span><span style="color: #cc9393;">"</span>
+      <span style="color: #dfaf8f;">OBJID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">urn:PUL:bluemountain:bmtnaad_1925-06-03_01</span><span style="color: #cc9393;">"</span>
+      <span style="color: #dfaf8f;">LABEL</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">vozrozhdenie_1925-06-03_01</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">metsHdr</span>&gt;
+    &lt;<span style="color: #8cd0d3;">agent</span> <span style="color: #dfaf8f;">ROLE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CREATOR</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">TYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ORGANIZATION</span><span style="color: #cc9393;">"</span>&gt;
+      &lt;<span style="color: #8cd0d3;">name</span>&gt;Princeton University Library, Digital Initiatives&lt;/<span style="color: #8cd0d3;">name</span>&gt;
+    &lt;/<span style="color: #8cd0d3;">agent</span>&gt;
+    &lt;<span style="color: #8cd0d3;">metsDocumentID</span> <span style="color: #dfaf8f;">TYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">URN</span><span style="color: #cc9393;">"</span>&gt;urn:PUL:bluemountain:td:bmtnaad_1925-06-03_01&lt;/<span style="color: #8cd0d3;">metsDocumentID</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">metsHdr</span>&gt;
+  &lt;<span style="color: #8cd0d3;">dmdSec</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">dmd1</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">mdWrap</span> <span style="color: #dfaf8f;">MDTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">MODS</span><span style="color: #cc9393;">"</span>&gt;
+      &lt;<span style="color: #8cd0d3;">xmlData</span>&gt;
+        <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> MODS record goes here </span><span style="color: #7f9f7f;">--&gt;</span>
+      &lt;/<span style="color: #8cd0d3;">xmlData</span>&gt;
+    &lt;/<span style="color: #8cd0d3;">mdWrap</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">dmdSec</span>&gt;
+
+    <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;">Use a single administrative section (&lt;amdSec&gt;) as a </span>
+<span style="color: #7f9f7f;">        wrapper for the technical metadata for all the images</span><span style="color: #7f9f7f;">--&gt;</span>
+  &lt;<span style="color: #8cd0d3;">amdSec</span>&gt;
+    &lt;<span style="color: #8cd0d3;">techMD</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">techmd1</span><span style="color: #cc9393;">"</span>&gt;
+      <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> technical metadata (MIX) for first image </span><span style="color: #7f9f7f;">--&gt;</span>
+      &lt;<span style="color: #8cd0d3;">mdWrap</span> <span style="color: #dfaf8f;">MDTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">NISOIMG</span><span style="color: #cc9393;">"</span>&gt;
+        <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> The technical metadata docWorks provides goes here </span><span style="color: #7f9f7f;">--&gt;</span>
+      &lt;/<span style="color: #8cd0d3;">mdWrap</span>&gt;
+    &lt;/<span style="color: #8cd0d3;">techMD</span>&gt;
+    &lt;<span style="color: #8cd0d3;">techMD</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">techmd2</span><span style="color: #cc9393;">"</span>&gt;
+      <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> technical metadata for the second image </span><span style="color: #7f9f7f;">--&gt;</span>
+      &lt;<span style="color: #8cd0d3;">mdWrap</span> <span style="color: #dfaf8f;">MDTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">NISOIMG</span><span style="color: #cc9393;">"</span>/&gt;
+    &lt;/<span style="color: #8cd0d3;">techMD</span>&gt;
+
+    <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> &lt;techMD&gt; elements for remaining image files </span><span style="color: #7f9f7f;">--&gt;</span>
+  &lt;/<span style="color: #8cd0d3;">amdSec</span>&gt;
+
+  &lt;<span style="color: #8cd0d3;">fileSec</span>&gt;
+    &lt;<span style="color: #8cd0d3;">fileGrp</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">IMGGRP</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">USE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">Images</span><span style="color: #cc9393;">"</span>&gt;
+
+      <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> Note that the AMDID attribute contains the ID of the</span>
+<span style="color: #7f9f7f;">      &lt;techMD&gt; element corresponding to the file. Note, too,</span>
+<span style="color: #7f9f7f;">      the use of the GROUPID attribute, which groups together</span>
+<span style="color: #7f9f7f;">      the image file and its corresponding ALTO file. </span><span style="color: #7f9f7f;">--&gt;</span>
+
+      &lt;<span style="color: #8cd0d3;">file</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">IMG001</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">AMDID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">techmd1</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">GROUPID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page1</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">MIMETYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">image/jp2</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUM</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">xxxx</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUMTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">SHA-1</span><span style="color: #cc9393;">"</span>&gt;
+        &lt;<span style="color: #8cd0d3;">FLocat</span> <span style="color: #dfaf8f;">LOCTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">URL</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">href</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">file://.bmtnaad_1925-06-03_01_001.jp2</span><span style="color: #cc9393;">"</span>/&gt;
+      &lt;/<span style="color: #8cd0d3;">file</span>&gt;
+      &lt;<span style="color: #8cd0d3;">file</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">IMG002</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">AMDID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">techmd2</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">GROUPID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page2</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">MIMETYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">image/jp2</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUM</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">xxxx</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUMTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">SHA-1</span><span style="color: #cc9393;">"</span>&gt;
+        &lt;<span style="color: #8cd0d3;">FLocat</span> <span style="color: #dfaf8f;">LOCTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">URL</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">href</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">file://.bmtnaad_1925-06-03_01_002.jp2</span><span style="color: #cc9393;">"</span>/&gt;
+      &lt;/<span style="color: #8cd0d3;">file</span>&gt;
+    &lt;/<span style="color: #8cd0d3;">fileGrp</span>&gt;
+
+    &lt;<span style="color: #8cd0d3;">fileGrp</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ALTOGRP</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">USE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">OCR</span><span style="color: #cc9393;">"</span>&gt;
+      &lt;<span style="color: #8cd0d3;">file</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ALTO001</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">GROUPID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page1</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">MIMETYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">text/xml</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUM</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">xxxx</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUMTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">SHA-1</span><span style="color: #cc9393;">"</span>&gt;
+        &lt;<span style="color: #8cd0d3;">FLocat</span> <span style="color: #dfaf8f;">LOCTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">URL</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">href</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">file://.bmtnaad_1925-06-03_01_001.alto.xml</span><span style="color: #cc9393;">"</span>/&gt;
+      &lt;/<span style="color: #8cd0d3;">file</span>&gt;
+      &lt;<span style="color: #8cd0d3;">file</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ALTO002</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">GROUPID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page2</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">MIMETYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">text/xml</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUM</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">xxxx</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">CHECKSUMTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">SHA-1</span><span style="color: #cc9393;">"</span>&gt;
+        &lt;<span style="color: #8cd0d3;">FLocat</span> <span style="color: #dfaf8f;">LOCTYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">URL</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">href</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">file://.bmtnaad_1925-06-03_01_002.alto.xml</span><span style="color: #cc9393;">"</span>/&gt;
+      &lt;/<span style="color: #8cd0d3;">file</span>&gt;
+    &lt;/<span style="color: #8cd0d3;">fileGrp</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">fileSec</span>&gt;
+  &lt;<span style="color: #8cd0d3;">structMap</span> <span style="color: #dfaf8f;">TYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">PHYSICAL</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">div</span>/&gt;
+  &lt;/<span style="color: #8cd0d3;">structMap</span>&gt;
+  &lt;<span style="color: #8cd0d3;">structMap</span> <span style="color: #dfaf8f;">TYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">LOGICAL</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">div</span>/&gt;
+  &lt;/<span style="color: #8cd0d3;">structMap</span>&gt;
+&lt;/<span style="color: #8cd0d3;">mets</span>&gt;
+</pre>
+
+
+<p>
+   The root element &lt;mets&gt; contains these attributes:
+</p><dl>
+<dt>TYPE</dt><dd>the fixed value <i>Magazine</i>
+</dd>
+<dt>OBJID</dt><dd>the URN for the issue
+</dd>
+<dt>LABEL</dt><dd>the <i>issueid</i>
+</dd>
+</dl>
+
+
+</div>
+
+<div id="outline-container-4-1-2-1" class="outline-5">
+<h5 id="sec-4-1-2-1"><span class="section-number-5">4.1.2.1</span> &lt;metsHdr&gt;</h5>
+<div class="outline-text-5" id="text-4-1-2-1">
+
+<p>     The &lt;metsHdr&gt; element shall contain two elements:
+</p>
+</div>
+
+<div id="outline-container-4-1-2-1-1" class="outline-6">
+<h6 id="sec-4-1-2-1-1"><span class="section-number-6">4.1.2.1.1</span> &lt;agent&gt;</h6>
+<div class="outline-text-6" id="text-4-1-2-1-1">
+
+<p>      A constant value for all records:
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">agent</span> <span style="color: #dfaf8f;">ROLE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CREATOR</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">TYPE</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ORGANIZATION</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">name</span>&gt;Princeton University Library, Digital Initiatives&lt;/<span style="color: #8cd0d3;">name</span>&gt;
+&lt;/<span style="color: #8cd0d3;">agent</span>&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2-1-2" class="outline-6">
+<h6 id="sec-4-1-2-1-2"><span class="section-number-6">4.1.2.1.2</span> &lt;metsDocumentID TYPE="URN"&gt;</h6>
+<div class="outline-text-6" id="text-4-1-2-1-2">
+
+<p>     Contains a string whose contents is composed as follows:
+</p>
+
+
+<pre class="example">PREFIX:ISSUID
+</pre>
+
+<p>
+      Where <i>PREFIX</i> is the following fixed value:
+</p>
+
+
+<pre class="example">urn:PUL:bluemountain:td:
+</pre>
+
+<p>
+      And <i>ISSUEID</i> is the issue identifier, computed using the rules
+      above.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2-2" class="outline-5">
+<h5 id="sec-4-1-2-2"><span class="section-number-5">4.1.2.2</span> &lt;dmdSec&gt;</h5>
+<div class="outline-text-5" id="text-4-1-2-2">
+
+<p>     The record contains a single &lt;dmdSec&gt; element with an ID
+     attribute of "dmd1"' it contains an embedded MODS record for the
+     issue (described below).
+</p></div>
+
+</div>
+
+<div id="outline-container-4-1-2-3" class="outline-5">
+<h5 id="sec-4-1-2-3"><span class="section-number-5">4.1.2.3</span> &lt;amdSec&gt;</h5>
+<div class="outline-text-5" id="text-4-1-2-3">
+
+<p>     The &lt;amdSec&gt; contains a <i>&lt;techMD&gt;</i> element for each image file (a
+     &lt;mix&gt; record).
+</p></div>
+
+</div>
+
+<div id="outline-container-4-1-2-4" class="outline-5">
+<h5 id="sec-4-1-2-4"><span class="section-number-5">4.1.2.4</span> &lt;fileSec&gt;</h5>
+<div class="outline-text-5" id="text-4-1-2-4">
+
+<p>     The fileSec comprises two <i>&lt;fileGrp&gt;</i> elements: one for the
+     images and one for the ALTO records.
+</p>
+</div>
+
+<div id="outline-container-4-1-2-4-1" class="outline-6">
+<h6 id="sec-4-1-2-4-1"><span class="section-number-6">4.1.2.4.1</span> &lt;fileGrp ID="IMGGRP" USE="Images"&gt;</h6>
+<div class="outline-text-6" id="text-4-1-2-4-1">
+
+<p>      The <i>IMGGRP</i> file group contains &lt;file&gt; elements that indicate
+      the location of each image file, with attributes linking the
+      file to the corresponding technical metadata and to the
+      corresponding ALTO file.
+</p>
+</div>
+
+<div id="outline-container-4-1-2-4-1-1" class="outline-7">
+<h7 id="sec-4-1-2-4-1-1"><span class="section-number-7">4.1.2.4.1.1</span> &lt;file&gt;</h7>
+<div class="outline-text-7" id="text-4-1-2-4-1-1">
+
+<dl>
+<dt><i>ID</i></dt><dd>a unique XML id
+</dd>
+<dt>AMDID</dt><dd>the ID of the <i>&lt;techmd&gt;</i> element corresponding to the
+                 image file
+</dd>
+<dt>GROUPID</dt><dd>an ID that links an image file to an ALTO file.
+                   The image file for a page and the ALTO file
+                   containing the OCR output for that page share an id
+                   (conventionally named <i>pageN</i>, where N is a
+                   sequence number).
+</dd>
+<dt>MIMETYPE</dt><dd>the constant "image/jp2" for jpeg2000 images
+</dd>
+<dt>CHECKSUM</dt><dd>the checksum of the file, according to the
+                    algorithm specified in <i>CHECKSUMTYPE</i>
+</dd>
+<dt>CHECKSUMTYPE</dt><dd>the algorithm used to compute the checksum;
+                        usually SHA-1.
+</dd>
+</dl>
+
+<ul>
+<li id="sec-4-1-2-4-1-1-1">&lt;FLocat&gt;<br/>
+       The METS element indicating the actual file location.
+<dl>
+<dt>LOCTYPE</dt><dd>the constant <i>URL</i>
+</dd>
+<dt>xlink:href</dt><dd>the path to the file.  For this project, it will
+                       be a local path.  For example:
+
+
+
+<pre class="example">file://./bmtnaad_1925-06-03_01_001.jp2
+</pre>
+
+</dd>
+</dl>
+
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2-4-2" class="outline-6">
+<h6 id="sec-4-1-2-4-2"><span class="section-number-6">4.1.2.4.2</span> &lt;fileGrp ID="ALTOGRP" USE="OCR"&gt;</h6>
+<div class="outline-text-6" id="text-4-1-2-4-2">
+
+<p>      Like the <i>&lt;fileGrp&gt;</i> for images, but corresponding to the ALTO
+      files. (The ALTO files do not have technical metadata, so there
+      is no AMDID attribute.)
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2-5" class="outline-5">
+<h5 id="sec-4-1-2-5"><span class="section-number-5">4.1.2.5</span> &lt;structMap&gt;</h5>
+<div class="outline-text-5" id="text-4-1-2-5">
+
+<p>     The &lt;structMap&gt; element describes a hierarchical arrangement of
+     the parts (&lt;div&gt;s) making up the digital object described by the
+     METS.  For this project, there are two kinds: a <i>physical      structMap</i>, which delineates the pages of the newspaper issue in
+     reading order, and a <i>logical structMap</i>, which functions as an
+     outline of the newspaper's contents.  Both of these are assembled
+     by docWorks, using configuration rules.
+</p>
+</div>
+
+<div id="outline-container-4-1-2-5-1" class="outline-6">
+<h6 id="sec-4-1-2-5-1"><span class="section-number-6">4.1.2.5.1</span> &lt;structMap type="PHYSICAL"&gt;</h6>
+<div class="outline-text-6" id="text-4-1-2-5-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2-5-2" class="outline-6">
+<h6 id="sec-4-1-2-5-2"><span class="section-number-6">4.1.2.5.2</span> &lt;structMap type="LOGICAL"&gt;</h6>
+<div class="outline-text-6" id="text-4-1-2-5-2">
+
+
+</div>
+
+<div id="outline-container-4-1-2-5-2-1" class="outline-7">
+<h7 id="sec-4-1-2-5-2-1"><span class="section-number-7">4.1.2.5.2.1</span> The &lt;div&gt; hierarchy</h7>
+<div class="outline-text-7" id="text-4-1-2-5-2-1">
+
+<p>       The outlines below show the hierarchical relationship among the
+       &lt;div&gt; elements in the logical structMap.  Each div is described
+       more fully below.
+</p>
+<ul>
+<li>Magazine
+<ul>
+<li>Volume+
+<ul>
+<li>Issue+
+<ul>
+<li>Contents
+<ul>
+<li>{ Article* | Illustration* | Section* }
+</li>
+</ul>
+
+</li>
+<li>Advertisements
+<ul>
+<li>{ SponsoredAd+ | Section* }
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>Article
+<ul>
+<li>Header*
+<ul>
+<li>Head+
+</li>
+<li>Byline*
+</li>
+</ul>
+
+</li>
+<li>Body
+<ul>
+<li>{ Paragraph* | Section* }
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>Illustration
+<ul>
+<li>Graphic+
+</li>
+<li>Caption?
+<ul>
+<li>Paragraph+
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>SponsoredAd
+<ul>
+<li>{ Graphic* | Paragraph* }
+
+</li>
+</ul>
+
+</li>
+<li>Section
+<ul>
+<li>Header?
+</li>
+<li>Body
+<ul>
+<li>{ Article* | Illustration* | SponsoredAd* | Section* }
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>Paragraph
+<ul>
+<li>TextBlock+
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+<ul>
+<li id="sec-4-1-2-5-2-1-1">&lt;div TYPE="Magazine"&gt;<br/>
+        The root &lt;div&gt; of the logical structMap is &lt;div
+        TYPE="Magazine"&gt;.  It must contain one or more &lt;div
+        TYPE="Volume"&gt; elements (in practice it will contain only
+        one).
+
+<p>        
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "Magazine"
+
+</dd>
+<dt>LABEL</dt><dd>The name of the magazine, equivalent to the
+                   top-level &lt;mods:titleInfo&gt; element.
+</dd>
+</dl>
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-2">&lt;div TYPE="Volume"&gt;?<br/>
+        A &lt;div&gt; representing a (possibly) bound volume of issues.  In
+        most cases, we are representing each issue of a magazine
+        as a separate digital object, so the &lt;div TYPE="Volume"&gt;
+        element will in practice contain only one &lt;div TYPE="Issue"&gt;.
+
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "VOLUME"
+</dd>
+<dt>LABEL</dt><dd>The volume caption, if present
+</dd>
+</dl>
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-3">&lt;div TYPE="Issue"&gt;<br/>
+        A &lt;div&gt; representing the actual issue.  It contains the
+        "contents" of the paper: the editorial content and the
+        advertisements.
+
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "ISSUE"
+</dd>
+<dt>LABEL</dt><dd>The issue number and the date of publication
+</dd>
+<dt>DMDID</dt><dd>the ID of the &lt;dmdSec&gt; for the object (in practice,
+                   always "dmd1")
+</dd>
+</dl>
+
+
+<p>
+        The Issue &lt;div&gt; contains, in most cases, three sub-&lt;div&gt;s: &lt;div
+        TYPE="PublicationInfo"&gt;, &lt;div TYPE="EditorialContent"&gt; and &lt;div
+        TYPE="SponsoredAdvertisements"&gt;, described below.
+</p></li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-4">&lt;div TYPE="PublicationInfo"&gt;<br/>
+        Contains &lt;div&gt;s corresponding to the metadata about the
+        magazine printed in the issue itself: mastheads, nameplates,
+        folio lines, page numbers, etc.
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-5">&lt;div TYPE="EditorialContent" LABEL="Contents"&gt;<br/>
+        Contains &lt;div&gt;s corresponding to the TextContent and
+        Illustration elements, in publication order.  These elements
+        have DMDID attributes whose values link them to the
+        corresponding &lt;relatedItem&gt; elements in the &lt;mods&gt; record.
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-6">&lt;div TYPE="SponsoredAdvertisements" LABEL="Advertisements"&gt;<br/>
+        Contains &lt;div&gt;s corresponding to the SponsoredAdvertisement
+        elements, in publication order.  These elements have DMDID
+        attributes whose values link them to the corresponding
+        &lt;relatedItem&gt; elements in the &lt;mods&gt; record.
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-7">&lt;div TYPE="TextContent"&gt;<br/>
+        A &lt;div&gt; representing a piece of editorial content: an article,
+        a review, a letter, a poem, etc.
+
+<p>
+        Editorial content takes a number of forms: it may or may not
+        have a headline; it may or may not have a byline; it may have
+        subsections, each with its own headline (subhead).
+</p>
+<p>
+        A TextContent &lt;div&gt; MAY contain a &lt;div TYPE="Header"&gt;; it will
+        always have a &lt;div TYPE="Body"&gt;.
+</p>
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "TextContent"
+</dd>
+<dt>DMDID</dt><dd>the ID of the &lt;mods:relatedItem type="constituent"&gt;
+                   element corresponding to this piece in the newspaper.
+</dd>
+<dt>LABEL</dt><dd>SHOULD be equivalent to the contents of the
+                   mods:relatedItem/mods:titleInfo/mods:title element
+</dd>
+</dl>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-8">&lt;div TYPE="Header"&gt;<br/>
+        A &lt;div&gt; containing the component's (the TextContent, SponsoredAd,
+        or Section) heading information: a combination of headline and
+        byline.  The Header may contain one or more Head elements
+        (encompassing, for example, a headline and a subhead); it may
+        also contain one or more Byline elements (which may not
+        necessarily be physically contiguous in the physical layout of
+        the page).
+
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "Header"
+</dd>
+</dl>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-9">&lt;div TYPE="Head"&gt;<br/>
+        A &lt;div&gt; designating the region associated with a head of some
+        kind: a headline, a subhead, etc.
+
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "Head"
+</dd>
+</dl>
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-10">&lt;div TYPE="Byline"&gt;<br/>
+        A &lt;div&gt; designating one or more regions associated with the
+        writer of an article: usually the writer's name, but sometimes
+        also the writer's position or other biographical information.
+
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "Byline"
+</dd>
+</dl>
+
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-11">&lt;div TYPE="Body"&gt;<br/>
+        A container &lt;div&gt; for the body of an article or
+        section.  A BODY may contain paragraphs, illustrations, or
+        sections, in any order.
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-12">&lt;div TYPE="Paragraph"&gt;<br/>
+        A &lt;div&gt; that contains one or more text blocks representing the
+        contents of a logical paragraph.  Paragraphs have a sequential
+        order within their containing article, caption, or sponsored
+        ad.
+
+<p>
+        Attributes:
+</p><dl>
+<dt>TYPE</dt><dd>must be "Paragraph"
+</dd>
+<dt>ORDER</dt><dd>the index of the paragraph in its containing div
+                   (1, 2, etc.).
+</dd>
+</dl>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-13">&lt;div TYPE="Section"&gt;<br/>
+        A section is a container &lt;div&gt; of other &lt;div&gt;s.  It may or may
+        not have a Header; it will contain some combination of
+        articles, illustrations, SponsoredAds, and other sections.
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-14">&lt;div TYPE="Illustration"&gt;<br/>
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-15">&lt;div TYPE="Graphic"&gt;<br/>
+        A div designating the location of a graphic on the page.
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-16">&lt;div TYPE="Caption"&gt;<br/>
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-17">&lt;div TYPE="SponsoredAd"&gt;<br/>
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-1-2-5-2-1-18">&lt;div TYPE="TextBlock"&gt;<br/>
+        A div designating the region of a block of text on a page.
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> MODS Profile</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<p>   There are two kinds of MODS records in Blue Mountain:
+</p>
+<ol>
+<li>Title-level MODS
+</li>
+<li>Issue-level MODS
+</li>
+</ol>
+
+
+
+</div>
+
+<div id="outline-container-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> Title-Level MODS</h4>
+<div class="outline-text-4" id="text-4-2-1">
+
+<p>    The descriptive metadata for most, if not all, of the Blue
+    Mountain titles has been taken from MARC records retrieved from
+    Princeton's OPAC and machine-converted, then edited and enhanced
+    by hand.  Here is a sample:
+</p>
+
+
+
+<pre class="src src-xml"><span class="linenr"> 1:  </span>&lt;?<span style="color: #f0dfaf; font-weight: bold;">xml</span> <span style="color: #dfaf8f;">version</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">1.0</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">encoding</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">UTF-8</span><span style="color: #cc9393;">"</span>?&gt;
+<span class="linenr"> 2:  </span>&lt;<span style="color: #8cd0d3;">mods</span> <span style="color: #93e0e3;">xmlns</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.loc.gov/mods/v3</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr"> 3:  </span>
+<span id="coderef-identifier" class="coderef-off"><span class="linenr"> 4:  </span>  &lt;<span style="color: #8cd0d3;">identifier</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">bmtn</span><span style="color: #cc9393;">"</span>&gt;urn:PUL:bluemountain:bmtnaad&lt;/<span style="color: #8cd0d3;">identifier</span>&gt; <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> (identifier) </span><span style="color: #7f9f7f;">--&gt;</span></span>
+<span class="linenr"> 5:  </span>
+<span class="linenr"> 6:  </span>  &lt;<span style="color: #8cd0d3;">recordInfo</span>&gt;
+<span id="coderef-ridentifier" class="coderef-off"><span class="linenr"> 7:  </span>    &lt;<span style="color: #8cd0d3;">recordIdentifier</span>&gt;urn:PUL:bluemountain:dmd:bmtnaad&lt;/<span style="color: #8cd0d3;">recordIdentifier</span>&gt; <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> (ridentifier) </span><span style="color: #7f9f7f;">--&gt;</span></span>
+<span class="linenr"> 8:  </span>    &lt;<span style="color: #8cd0d3;">recordContentSource</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">marcorg</span><span style="color: #cc9393;">"</span>&gt;NjP&lt;/<span style="color: #8cd0d3;">recordContentSource</span>&gt;
+<span class="linenr"> 9:  </span>    &lt;<span style="color: #8cd0d3;">recordOrigin</span>&gt;http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4939605&lt;/<span style="color: #8cd0d3;">recordOrigin</span>&gt;
+<span class="linenr">10:  </span>    &lt;<span style="color: #8cd0d3;">languageOfCataloging</span>&gt;
+<span class="linenr">11:  </span>      &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span>&gt;eng&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+<span class="linenr">12:  </span>    &lt;/<span style="color: #8cd0d3;">languageOfCataloging</span>&gt;
+<span class="linenr">13:  </span>  &lt;/<span style="color: #8cd0d3;">recordInfo</span>&gt;
+<span class="linenr">14:  </span>
+<span class="linenr">15:  </span>  &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+<span class="linenr">16:  </span>    &lt;<span style="color: #8cd0d3;">nonSort</span>&gt;Le&lt;/<span style="color: #8cd0d3;">nonSort</span>&gt;
+<span class="linenr">17:  </span>    &lt;<span style="color: #8cd0d3;">title</span>&gt;coeur &#224; barbe&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+<span class="linenr">18:  </span>    &lt;<span style="color: #8cd0d3;">subTitle</span>&gt;journal transparent&lt;/<span style="color: #8cd0d3;">subTitle</span>&gt;
+<span class="linenr">19:  </span>  &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+<span class="linenr">20:  </span>
+<span class="linenr">21:  </span>  &lt;<span style="color: #8cd0d3;">name</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">personal</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">viaf</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">valueURI</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://viaf.org/viaf/73848255</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr">22:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">family</span><span style="color: #cc9393;">"</span>&gt;Eluard&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">23:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">given</span><span style="color: #cc9393;">"</span>&gt;Paul&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">24:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">date</span><span style="color: #cc9393;">"</span>&gt;1895-1952&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">25:  </span>  &lt;/<span style="color: #8cd0d3;">name</span>&gt;
+<span class="linenr">26:  </span>  &lt;<span style="color: #8cd0d3;">name</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">personal</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">viaf</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">valueURI</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://viaf.org/viaf/96123513</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr">27:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">family</span><span style="color: #cc9393;">"</span>&gt;Ribemont-Dessaignes&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">28:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">given</span><span style="color: #cc9393;">"</span>&gt;Georges&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">29:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">date</span><span style="color: #cc9393;">"</span>&gt;1884-1974&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">30:  </span>  &lt;/<span style="color: #8cd0d3;">name</span>&gt;
+<span class="linenr">31:  </span>  &lt;<span style="color: #8cd0d3;">name</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">personal</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">viaf</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">valueURI</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://viaf.org/viaf/27072443</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr">32:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">family</span><span style="color: #cc9393;">"</span>&gt;Tzara&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">33:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">given</span><span style="color: #cc9393;">"</span>&gt;Tristan&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">34:  </span>    &lt;<span style="color: #8cd0d3;">namePart</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">date</span><span style="color: #cc9393;">"</span>&gt;1896-1963&lt;/<span style="color: #8cd0d3;">namePart</span>&gt;
+<span class="linenr">35:  </span>  &lt;/<span style="color: #8cd0d3;">name</span>&gt;
+<span class="linenr">36:  </span>
+<span class="linenr">37:  </span>  &lt;<span style="color: #8cd0d3;">typeOfResource</span>&gt;text&lt;/<span style="color: #8cd0d3;">typeOfResource</span>&gt;
+<span class="linenr">38:  </span>
+<span class="linenr">39:  </span>  &lt;<span style="color: #8cd0d3;">originInfo</span> <span style="color: #dfaf8f;">script</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">Latn</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr">40:  </span>    &lt;<span style="color: #8cd0d3;">place</span>&gt;
+<span class="linenr">41:  </span>      &lt;<span style="color: #8cd0d3;">placeTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">text</span><span style="color: #cc9393;">"</span>&gt;Paris&lt;/<span style="color: #8cd0d3;">placeTerm</span>&gt;
+<span class="linenr">42:  </span>    &lt;/<span style="color: #8cd0d3;">place</span>&gt;
+<span class="linenr">43:  </span>    &lt;<span style="color: #8cd0d3;">dateIssued</span>&gt;1922&lt;/<span style="color: #8cd0d3;">dateIssued</span>&gt;
+<span class="linenr">44:  </span>    &lt;<span style="color: #8cd0d3;">dateIssued</span> <span style="color: #dfaf8f;">encoding</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso8601</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">point</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">start</span><span style="color: #cc9393;">"</span>&gt;1922&lt;/<span style="color: #8cd0d3;">dateIssued</span>&gt;
+<span class="linenr">45:  </span>    &lt;<span style="color: #8cd0d3;">dateIssued</span> <span style="color: #dfaf8f;">encoding</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso8601</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">point</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">end</span><span style="color: #cc9393;">"</span>&gt;1922&lt;/<span style="color: #8cd0d3;">dateIssued</span>&gt;
+<span class="linenr">46:  </span>  &lt;/<span style="color: #8cd0d3;">originInfo</span>&gt;
+<span class="linenr">47:  </span>  &lt;<span style="color: #8cd0d3;">language</span>&gt;
+<span class="linenr">48:  </span>    &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span>&gt;fre&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+<span class="linenr">49:  </span>  &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+<span class="linenr">50:  </span>  &lt;<span style="color: #8cd0d3;">subject</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">lcsh</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr">51:  </span>    &lt;<span style="color: #8cd0d3;">topic</span>&gt;Dadaism&lt;/<span style="color: #8cd0d3;">topic</span>&gt;
+<span class="linenr">52:  </span>    &lt;<span style="color: #8cd0d3;">genre</span>&gt;Periodicals&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+<span class="linenr">53:  </span>  &lt;/<span style="color: #8cd0d3;">subject</span>&gt;
+<span class="linenr">54:  </span>  &lt;<span style="color: #8cd0d3;">subject</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">lcsh</span><span style="color: #cc9393;">"</span>&gt;
+<span class="linenr">55:  </span>    &lt;<span style="color: #8cd0d3;">topic</span>&gt;Dadaism&lt;/<span style="color: #8cd0d3;">topic</span>&gt;
+<span class="linenr">56:  </span>    &lt;<span style="color: #8cd0d3;">geographic</span>&gt;France&lt;/<span style="color: #8cd0d3;">geographic</span>&gt;
+<span class="linenr">57:  </span>    &lt;<span style="color: #8cd0d3;">genre</span>&gt;Periodicals&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+<span class="linenr">58:  </span>  &lt;/<span style="color: #8cd0d3;">subject</span>&gt;
+<span class="linenr">59:  </span>&lt;/<span style="color: #8cd0d3;">mods</span>&gt;
+</pre>
+
+<ul>
+<li>The MODS record contains an <a href="#coderef-identifer" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-identifer');" onmouseout="CodeHighlightOff(this, 'coderef-identifer');">&lt;identifier&gt;</a> element whose type is
+      <i>bmtn</i>.  Its value is a URN for the title, which is of the form
+
+
+
+
+<pre class="example">urn:PUL:bluemountain:BMTNID
+</pre>
+
+
+<p>
+      where the string <i>urn:PUL:bluemountain</i> is constant (for all
+      Blue Mountain URNs) and <i>BMTNID</i> is the Blue Mountain project
+      identifier of the periodical.
+</p>
+</li>
+<li>The MODS record also contains a &lt;recordInfo&gt; element, which
+      provides a link back to the original OPAC record, as well as a
+      <a href="#coderef-ridentifier" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-ridentifier');" onmouseout="CodeHighlightOff(this, 'coderef-ridentifier');">&lt;recordIdentifier&gt;</a> uniquely identifying the record itself; it is
+      simply the journal URN with <i>dmd</i> inserted into the identifier:
+
+
+
+<pre class="example">urn:PUL:bluemountain:dmd:BMTNID
+</pre>
+
+</li>
+<li>The &lt;name&gt; elements are associated with authorities to enhance
+      search and broaden the interconnectedness of the
+      data.  <a href="http://viaf.org">http://viaf.org</a> is the preferred authority;
+      <a href="http://id.loc.gov">http://id.loc.gov</a> should be consulted when a name is not found
+      in viaf.org; if a name is found in neither, a local authority
+      will be created (To be determined later).
+</li>
+<li>Dates are encoded in ISO standard 8601 format (see
+      <a href="http://www.iso.org/iso/catalogue_detail?csnumber=40874">http://www.iso.org/iso/catalogue\_detail?csnumber=40874</a>; for an
+      overview see <a href="http://en.wikipedia.org/wiki/ISO_8601">http://en.wikipedia.org/wiki/ISO\_8601</a>).  The
+      extended form of the representation is preferred.
+</li>
+<li>Subject headings will conform with existing standards in a
+      manner yet to be determined.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2"><span class="section-number-4">4.2.2</span> Issue-Level MODS</h4>
+<div class="outline-text-4" id="text-4-2-2">
+
+<p>    Blue Mountain encodes descriptive metadata for the contents of
+    each magazine issue, so the issues may be searched and analyzed.
+</p>
+
+
+
+<pre class="src src-xml">   &lt;<span style="color: #8cd0d3;">mods</span> <span style="color: #93e0e3;">xmlns</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.loc.gov/mods/v3</span><span style="color: #cc9393;">"</span>&gt;
+     &lt;<span style="color: #8cd0d3;">recordInfo</span>&gt;
+       &lt;<span style="color: #8cd0d3;">recordIdentifier</span>&gt;urn:PUL:bluemountain:dmd:bmtnabg_1911-01-05_01&lt;/<span style="color: #8cd0d3;">recordIdentifier</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">recordInfo</span>&gt;
+     &lt;<span style="color: #8cd0d3;">identifier</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">bmtn</span><span style="color: #cc9393;">"</span>&gt;urn:PUL:bluemountain:bmtnabg_1911-01-05_01&lt;/<span style="color: #8cd0d3;">identifier</span>&gt;
+     &lt;<span style="color: #8cd0d3;">typeOfResource</span>&gt;text&lt;/<span style="color: #8cd0d3;">typeOfResource</span>&gt;
+     &lt;<span style="color: #8cd0d3;">genre</span>&gt;Periodicals-Issue&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+     &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+       &lt;<span style="color: #8cd0d3;">title</span>&gt;Der Sturm&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+       &lt;<span style="color: #8cd0d3;">subTitle</span>&gt;Wochenschrift f&#252;r Kultur und die K&#252;nste&lt;/<span style="color: #8cd0d3;">subTitle</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+     &lt;<span style="color: #8cd0d3;">part</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">issue</span><span style="color: #cc9393;">"</span>&gt;
+       &lt;<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">volume</span><span style="color: #cc9393;">"</span>&gt;
+         &lt;<span style="color: #8cd0d3;">number</span>&gt;1&lt;/<span style="color: #8cd0d3;">number</span>&gt;
+         &lt;<span style="color: #8cd0d3;">caption</span>&gt;Jahrgang 1911&lt;/<span style="color: #8cd0d3;">caption</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">detail</span>&gt;
+       &lt;<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">number</span><span style="color: #cc9393;">"</span>&gt;
+         &lt;<span style="color: #8cd0d3;">number</span>&gt;45&lt;/<span style="color: #8cd0d3;">number</span>&gt;
+         &lt;<span style="color: #8cd0d3;">caption</span>&gt;Nummer 45&lt;/<span style="color: #8cd0d3;">caption</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">detail</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+     &lt;<span style="color: #8cd0d3;">originInfo</span>&gt;
+       &lt;<span style="color: #8cd0d3;">dateIssued</span>&gt;5. Januar 1911&lt;/<span style="color: #8cd0d3;">dateIssued</span>&gt;
+       &lt;<span style="color: #8cd0d3;">dateIssued</span> <span style="color: #dfaf8f;">keyDate</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">yes</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">encoding</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">w3cdtf</span><span style="color: #cc9393;">"</span>&gt;1911-01-05&lt;/<span style="color: #8cd0d3;">dateIssued</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">originInfo</span>&gt;
+     &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">host</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">simple</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">href</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">urn:PUL:bluemountain:bmtnabg</span><span style="color: #cc9393;">"</span>&gt;
+       &lt;<span style="color: #8cd0d3;">recordInfo</span>&gt;
+         &lt;<span style="color: #8cd0d3;">recordIdentifier</span>&gt;urn:PUL:bluemountain:dmd:bmtnabg&lt;/<span style="color: #8cd0d3;">recordIdentifier</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">recordInfo</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+     &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">c001</span><span style="color: #cc9393;">"</span>&gt;
+       &lt;<span style="color: #8cd0d3;">titleInfo</span> <span style="color: #dfaf8f;">lang</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ger</span><span style="color: #cc9393;">"</span>&gt;
+         &lt;<span style="color: #8cd0d3;">title</span>&gt;INHALT:&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+       &lt;<span style="color: #8cd0d3;">typeOfResource</span>&gt;text&lt;/<span style="color: #8cd0d3;">typeOfResource</span>&gt;
+       &lt;<span style="color: #8cd0d3;">language</span>&gt;
+         &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;ger&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+       &lt;<span style="color: #8cd0d3;">part</span>&gt;
+         &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+           &lt;<span style="color: #8cd0d3;">start</span>&gt;1&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+         &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+       &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;TextContent&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+     &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">c002</span><span style="color: #cc9393;">"</span>&gt;
+       &lt;<span style="color: #8cd0d3;">titleInfo</span> <span style="color: #dfaf8f;">lang</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">ger</span><span style="color: #cc9393;">"</span>&gt;
+         &lt;<span style="color: #8cd0d3;">title</span>&gt;Vor&#252;ber&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+       &lt;<span style="color: #8cd0d3;">name</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">personal</span><span style="color: #cc9393;">"</span>&gt;
+         &lt;<span style="color: #8cd0d3;">displayForm</span>&gt;Zeichnung von Oskar Kokoschka&lt;/<span style="color: #8cd0d3;">displayForm</span>&gt;
+         &lt;<span style="color: #8cd0d3;">role</span>&gt;
+           &lt;<span style="color: #8cd0d3;">roleTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">marcrelator</span><span style="color: #cc9393;">"</span>&gt;cre&lt;/<span style="color: #8cd0d3;">roleTerm</span>&gt;
+         &lt;/<span style="color: #8cd0d3;">role</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">name</span>&gt;
+       &lt;<span style="color: #8cd0d3;">typeOfResource</span>&gt;still image&lt;/<span style="color: #8cd0d3;">typeOfResource</span>&gt;
+       &lt;<span style="color: #8cd0d3;">part</span>&gt;
+         &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+           &lt;<span style="color: #8cd0d3;">start</span>&gt;1&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+         &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+       &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+       &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;Illustration&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+     &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+
+     <span style="color: #7f9f7f;">&lt;!--</span><span style="color: #7f9f7f;"> The remaining constituents go here </span><span style="color: #7f9f7f;">--&gt;</span>
+&lt;/<span style="color: #8cd0d3;">mods</span>&gt;
+</pre>
+
+
+
+</div>
+
+<div id="outline-container-4-2-2-1" class="outline-5">
+<h5 id="sec-4-2-2-1"><span class="section-number-5">4.2.2.1</span> &lt;mods&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-1">
+
+<p>     The root element of the document.  When output as a stand-alone
+     document, it has fixed attributes, as illustrated below:
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">mods</span> <span style="color: #93e0e3;">xmlns</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.loc.gov/mods/v3</span><span style="color: #cc9393;">"</span>
+      <span style="color: #93e0e3;">xmlns</span>:<span style="color: #dfaf8f;">xlink</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.w3.org/1999/xlink</span><span style="color: #cc9393;">"</span>
+      <span style="color: #93e0e3;">xmlns</span>:<span style="color: #dfaf8f;">xsi</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.w3.org/2001/XMLSchema-instance</span><span style="color: #cc9393;">"</span>
+      <span style="color: #93e0e3;">xsi</span>:<span style="color: #dfaf8f;">schemaLocation</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://www.loc.gov/mods/v3 </span>
+<span style="color: #cc9393;">        http://www.loc.gov/mods/v3/mods-3-4.xsd</span><span style="color: #cc9393;">"</span>&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-2" class="outline-5">
+<h5 id="sec-4-2-2-2"><span class="section-number-5">4.2.2.2</span> &lt;recordInfo&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-2">
+
+<p>     The &lt;recordInfo&gt; element contains information about the MODS
+     record itself.  It shall contain a <i>&lt;recordIdentifier&gt;</i> element, as
+     below.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-2-2-3" class="outline-5">
+<h5 id="sec-4-2-2-3"><span class="section-number-5">4.2.2.3</span> &lt;recordIdentifier&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-3">
+
+<p>     The &lt;recordIdentifier&gt; element contains the ISSUEMODSURI, the
+     unique identifier for the MODS record itself, as described above.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-2-2-4" class="outline-5">
+<h5 id="sec-4-2-2-4"><span class="section-number-5">4.2.2.4</span> &lt;identifier type="PUL"&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-4">
+
+<p>     The &lt;identifier&gt; element is used to identify the resource the MODS
+     record describes (the magazine issue).  Its value is the
+     resource's ISSUEURI, as described above.
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">identifier</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">PUL</span><span style="color: #cc9393;">"</span>&gt;urn:PUL:bluemountain:bmtnaad_1925-06-03_01&lt;/<span style="color: #8cd0d3;">identifier</span>&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-5" class="outline-5">
+<h5 id="sec-4-2-2-5"><span class="section-number-5">4.2.2.5</span> &lt;relatedItem type="host"&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-5">
+
+<p>     Each issue-level MODS record is related to the
+     title-level record <i>via</i> a &lt;relatedItem type='host'&gt; element.
+</p>
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">host</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">simple</span><span style="color: #cc9393;">"</span> <span style="color: #93e0e3;">xlink</span>:<span style="color: #dfaf8f;">href</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">urn:PUL:bluemountain:PUBID</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">recordInfo</span>&gt;
+    &lt;<span style="color: #8cd0d3;">recordIdentifier</span>&gt;urn:PUL:bluemountain:dmd:PUBID&lt;/<span style="color: #8cd0d3;">recordIdentifier</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">recordInfo</span>&gt;
+&lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+</pre>
+
+
+<p>
+     where <i>PUBID</i> is the publication identifier of the title.
+</p>
+<p>
+     The xlink:href shows the semantic relation between the issue and
+     its host; the &lt;recordIdentifier&gt; is a specific key to the
+     title-level record.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-6" class="outline-5">
+<h5 id="sec-4-2-2-6"><span class="section-number-5">4.2.2.6</span> &lt;language&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-6">
+
+<p>     The &lt;language&gt; element(s) indicates the language of the resource
+     (the magazine issue).  If the issue contains material written in
+     several languages, the record should include a &lt;language&gt;
+     element for each one.  The value of the &lt;languageTerm&gt; element
+     must be drawn from iso639-2b.  For example:
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">language</span>&gt;
+  &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;rus&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-7" class="outline-5">
+<h5 id="sec-4-2-2-7"><span class="section-number-5">4.2.2.7</span> &lt;titleInfo&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-7">
+
+<p>     The &lt;MODS:titleInfo&gt; element shall be determined by standard
+     cataloging rules.
+</p>
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">nonSort</span>&gt;Le&lt;/<span style="color: #8cd0d3;">nonSort</span>&gt;
+  &lt;<span style="color: #8cd0d3;">title</span>&gt;coeur &#224; barbe&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+  &lt;<span style="color: #8cd0d3;">subTitle</span>&gt;journal transparent&lt;/<span style="color: #8cd0d3;">subTitle</span>&gt;
+&lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-8" class="outline-5">
+<h5 id="sec-4-2-2-8"><span class="section-number-5">4.2.2.8</span> &lt;MODS:part&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-8">
+
+<p>     The &lt;MODS:part&gt; element shall take the following form:
+</p>
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">part</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">volume</span><span style="color: #cc9393;">"</span>&gt;...&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">issue</span><span style="color: #cc9393;">"</span>&gt;...&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span>&gt;
+&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">part</span>&gt;
+</pre>
+
+
+
+</div>
+
+<div id="outline-container-4-2-2-8-1" class="outline-6">
+<h6 id="sec-4-2-2-8-1"><span class="section-number-6">4.2.2.8.1</span> &lt;MODS:detail type="volume"&gt;</h6>
+<div class="outline-text-6" id="text-4-2-2-8-1">
+
+
+
+
+<pre class="src src-xml"> &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">volume</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">number</span>&gt;ARABICVOL&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">number</span>&gt;
+  &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">caption</span>&gt;Vol. MASTHEADVOL&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">caption</span>&gt;
+&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span>&gt;
+</pre>
+
+<p>
+      Where
+</p><ul>
+<li>ARABICVOL is the volume number expressed as a non-formatted arabic numeral (e.g., 1, 2, 3,
+       &hellip; 10, 11, &hellip;)
+</li>
+<li>MASTHEADVOL is the volume number as it appears in the
+        masthead.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-8-2" class="outline-6">
+<h6 id="sec-4-2-2-8-2"><span class="section-number-6">4.2.2.8.2</span> &lt;MODS:detail type="issue"&gt;</h6>
+<div class="outline-text-6" id="text-4-2-2-8-2">
+
+<p>      The &lt;MODS:detail type="issue"&gt; element shall take one of two possible
+      forms:
+</p><ul>
+<li>For "normal" issues (i.e., those following the recorded
+        sequence of publication), record both the sequential number of
+        the issue as an arabic numeral and the issue number as it
+        appears in the masthead:
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">issue</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">number</span>&gt;ARABICISSUE&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">number</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">caption</span>&gt;No. MASTHEADISSUE&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">caption</span>&gt;
+&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span>&gt;
+</pre>
+
+<p>
+        Where
+</p><ul>
+<li>ARABICISSUE is the issue number expressed as a non-formatted arabic numeral
+          (e.g., 1, 2, 3, &hellip;, 10, 11, &hellip;)
+</li>
+<li>MASTHEADISSUE is the volume number as it appears in the
+          masthead. 
+</li>
+</ul>
+
+</li>
+<li>For "special" issues (e.g., supplements, etc.), for which there is no sequential number for the
+        issue, the &lt;MODS:detail type="issue"&gt; element should take the
+        following form:
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">issue</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">caption</span>&gt;CAPTIONTEXT&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">caption</span>&gt;
+&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">detail</span>&gt;
+</pre>
+
+<p>
+        Where <i>CAPTIONTEXT</i> is determined using standard cataloging rules.
+</p></li>
+</ul>
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-2-9" class="outline-5">
+<h5 id="sec-4-2-2-9"><span class="section-number-5">4.2.2.9</span> &lt;MODS:originInfo&gt;</h5>
+<div class="outline-text-5" id="text-4-2-2-9">
+
+<p>     The &lt;MODS:originInfo&gt; element shall be used to record the date of
+     issuance, as follows:
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">originInfo</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">dateIssued</span>&gt;PRINTEDDATE&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">dateIssued</span>&gt;
+ &lt;<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">dateIssued</span> <span style="color: #dfaf8f;">encoding</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso8601</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">keyDate</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">yes</span><span style="color: #cc9393;">"</span>&gt;ISODATE&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">dateIssued</span>&gt;
+&lt;/<span style="color: #93e0e3;">MODS</span>:<span style="color: #8cd0d3;">originInfo</span>&gt;
+</pre>
+
+<p>
+     Where
+</p><ul>
+<li><i>PRINTEDDATE</i> is the date as it appears in the cover page
+       FolioLine, or in the Masthead.
+</li>
+<li><i>ISODATE</i> is the value of the date in the masthead, expressed
+       in iso8601 format (YYYY-MM-DD) &ndash; see
+       <a href="http://www.w3.org/TR/NOTE-datetime">http://www.w3.org/TR/NOTE-datetime</a> for details.
+</li>
+</ul>
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3" class="outline-4">
+<h4 id="sec-4-2-3"><span class="section-number-4">4.2.3</span> &lt;relatedItem type="constituent"&gt;</h4>
+<div class="outline-text-4" id="text-4-2-3">
+
+<p>     Traditional library cataloging does not extend to the contents
+     of periodicals, yet this level of description is precisely what
+     is required by scholars of periodicals, and the Blue
+     Mountain Project is committed to providing it, as well as to
+     formulating guidelines, in cooperation with scholars and
+     librarians, for this level of description.  The specifications
+     for this description, therefore, must be considered work in
+     progress, work that will necessarily evolve over the course of
+     the Project.
+</p>
+<p>
+     That being said, the Project will, at the outset, capture
+     information about the following sorts of constituents:
+</p>
+<ul>
+<li>traditional editorial content (articles, features, letters to the
+       editor, etc.)
+</li>
+<li>significant illustrations (figures, tip-ins, etc.)
+</li>
+<li>advertisements
+</li>
+</ul>
+
+
+<p>
+     The last sort &ndash; advertisements &ndash; is the most controversial,
+     and the most difficult for librarians to understand, although
+     advertisements are among the most heavily studied parts of
+     historical periodicals.  There are at present no established
+     rules for describing advertisements, and their variety and
+     abundance pose serious practical challenges to projects with
+     limited resources.  This version of the specification,
+     therefore, provides little guidance on the description of
+     periodicals, other than providing a framework for this level of
+     detail to be created at a future date, by scholars, researchers,
+     and other students of the material who wish to advance
+     scholarship by enhancing the data provided here.
+</p>
+<ul>
+<li>TextContent
+</li>
+<li>Illustration
+</li>
+<li>SponsoredAd
+</li>
+<li>Section
+</li>
+</ul>
+
+
+<p>
+   They are described in greater detail below.
+</p>
+<p>
+   Here is a hypothetical example, in English:
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">c17</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+   &lt;<span style="color: #8cd0d3;">nonSort</span>&gt;A&lt;/<span style="color: #8cd0d3;">nonSort</span>&gt;
+   &lt;<span style="color: #8cd0d3;">title</span>&gt;Modest Proposal&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">name</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">personal</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">viaf</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">valueURI</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">http://viaf.org/viaf/14777110</span><span style="color: #cc9393;">"</span>&gt;
+   &lt;<span style="color: #8cd0d3;">displayForm</span>&gt;Jonathan Swift&lt;/<span style="color: #8cd0d3;">displayForm</span>&gt;
+   &lt;<span style="color: #8cd0d3;">role</span>&gt;
+    &lt;<span style="color: #8cd0d3;">roleTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span>&gt;cre&lt;/<span style="color: #8cd0d3;">roleTerm</span>&gt;
+   &lt;/<span style="color: #8cd0d3;">role</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">name</span>&gt;
+  &lt;<span style="color: #8cd0d3;">language</span>&gt;
+   &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;eng&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+  &lt;<span style="color: #8cd0d3;">part</span>&gt;
+   &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">start</span>&gt;25&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+    &lt;<span style="color: #8cd0d3;">end</span>&gt;29&lt;/<span style="color: #8cd0d3;">end</span>&gt;
+   &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;TextContent&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+</pre>
+
+
+<ul>
+<li>The <i>type</i> attribute has the value <i>constituent</i>, because this
+     related item is a constituent (a part) of the newspaper.
+
+</li>
+<li>The <i>ID</i> attribute may be any valid XML ID (it must begin with a
+     character).  By convention, the ID will begin with the letter <i>c</i>
+     followed by a sequential number.  (The docWorks processing flow
+     seems to generate the <i>ID</i> attributes.)  This attribute links the
+     description to a &lt;div&gt; element in the METS logical structMap.
+</li>
+</ul>
+
+
+
+</div>
+
+<div id="outline-container-4-2-3-1" class="outline-5">
+<h5 id="sec-4-2-3-1"><span class="section-number-5">4.2.3.1</span> &lt;titleInfo&gt;</h5>
+<div class="outline-text-5" id="text-4-2-3-1">
+
+<p>     The &lt;title&gt; is transcribed as it appears on the page, using
+     standard cataloging rules.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-2-3-2" class="outline-5">
+<h5 id="sec-4-2-3-2"><span class="section-number-5">4.2.3.2</span> &lt;name&gt;</h5>
+<div class="outline-text-5" id="text-4-2-3-2">
+
+<ul>
+<li>The &lt;name&gt; elements (there may none, or there may be more than
+      one) are used to record the names of the people or organizations
+      who are responsible for the constituent &ndash; usually, this is
+      simply the author of the piece.
+
+<p>
+      The <i>&lt;name&gt;</i> is transcribed as it appears on the page and is
+      encoded in the <i>&lt;displayForm&gt;</i> element.  All <i>&lt;name&gt;</i> elements
+      shall include a <i>&lt;role&gt;</i> element, which shall designate the
+      generic role, <i>cre</i>, in the <i>&lt;roleTerm&gt;</i> subelement.
+</p>
+<p>
+      When possible, encoders should supply a link to a name
+      authority, preferably <a href="http://viaf.org">http://viaf.org</a>.  
+</p></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3-3" class="outline-5">
+<h5 id="sec-4-2-3-3"><span class="section-number-5">4.2.3.3</span> &lt;language&gt;</h5>
+<div class="outline-text-5" id="text-4-2-3-3">
+
+<ul>
+<li>The language used in the text.  If more than one language is
+      used, there should be a &lt;language&gt; element for each.
+</li>
+<li>The &lt;language&gt; element shall contain the subelement
+      <i>&lt;languageTerm&gt;</i>, a three-letter code derived from the ISO639-2
+      standard, found at <a href="http://www.loc.gov/standards/iso639-2/">http://www.loc.gov/standards/iso639-2/</a>.  The
+      code form should be used.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3-4" class="outline-5">
+<h5 id="sec-4-2-3-4"><span class="section-number-5">4.2.3.4</span> &lt;part&gt;</h5>
+<div class="outline-text-5" id="text-4-2-3-4">
+
+<p>     Contains a single &lt;extent&gt; element.
+</p>
+</div>
+
+<div id="outline-container-4-2-3-4-1" class="outline-6">
+<h6 id="sec-4-2-3-4-1"><span class="section-number-6">4.2.3.4.1</span> &lt;extent unit="page"&gt;</h6>
+<div class="outline-text-6" id="text-4-2-3-4-1">
+
+<ul>
+<li>The &lt;extent&gt; records the page or pages on which the constituent appears:
+<dl>
+<dt>when the item appears on a single page</dt><dd>
+<p>
+            encode the page number as a solitary <i>&lt;start&gt;</i> element.
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">start</span>&gt;3&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+&lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+</pre>
+
+
+</dd>
+<dt>when the item appears on multiple sequential pages</dt><dd>
+<p>
+            encode the first page in a <i>&lt;start&gt;</i> element and the last
+            page in an <i>&lt;end&gt;</i> element.
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">start</span>&gt;3&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+ &lt;<span style="color: #8cd0d3;">end</span>&gt;4&lt;/<span style="color: #8cd0d3;">end</span>&gt;
+&lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+</pre>
+
+
+</dd>
+<dt>when the item appears on non-sequential pages</dt><dd>
+<p>
+            encode the pages as a series in a <i>&lt;list&gt;</i> element, as in
+</p>
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">list</span>&gt;3; 5&lt;/<span style="color: #8cd0d3;">list</span>&gt;
+&lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+</pre>
+
+
+</dd>
+<dt>when the item appears on a mix of sequential and non-sequential pages</dt><dd>
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">list</span>&gt;1-2; 5&lt;/<span style="color: #8cd0d3;">list</span>&gt;
+&lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+</pre>
+
+
+<p>
+         For an article that starts on page 1, continues on page 2, and
+         then skips to page 5.
+</p></dd>
+</dl>
+
+</li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3-5" class="outline-5">
+<h5 id="sec-4-2-3-5"><span class="section-number-5">4.2.3.5</span> &lt;genre type="CCS"&gt;</h5>
+<div class="outline-text-5" id="text-4-2-3-5">
+
+<p>     The <i>&lt;genre type="CCS"&gt;</i> is determined from the docWorks configuration: for
+     articles and other editorial content, it will be <i>TextContent</i>;
+     for photographs, cartoons, and other illustrations, it will be
+     <i>Illustration</i>; for advertisements, is will be <i>SponsoredAd</i>.
+     Those &lt;relatedItem type="constituent"&gt; elements that contain
+     <i>other</i> constituents will have the genre <i>Section</i>.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-2-3-6" class="outline-5">
+<h5 id="sec-4-2-3-6"><span class="section-number-5">4.2.3.6</span> Kinds of Constituents</h5>
+<div class="outline-text-5" id="text-4-2-3-6">
+
+
+</div>
+
+<div id="outline-container-4-2-3-6-1" class="outline-6">
+<h6 id="sec-4-2-3-6-1"><span class="section-number-6">4.2.3.6.1</span> TextContent</h6>
+<div class="outline-text-6" id="text-4-2-3-6-1">
+
+<p>      These are the most common sorts of constituents: articles,
+      notices, poems, stories, sports scores &ndash; all textual editorial
+      content.
+</p>
+<p>
+      A TextContent constituent may contain <i>other constituents</i>: in
+      particular, an article may contain illustrations.
+</p>
+</div>
+
+<div id="outline-container-4-2-3-6-1-1" class="outline-7">
+<h7 id="sec-4-2-3-6-1-1"><span class="section-number-7">4.2.3.6.1.1</span> Examples</h7>
+<div class="outline-text-7" id="text-4-2-3-6-1-1">
+
+<ul>
+<li id="sec-4-2-3-6-1-1-1">A basic article<br/>
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">title</span>&gt;&#1055;&#1080;&#1089;&#1100;&#1084;&#1072; &#1080;&#1079;&#1098; &#1043;&#1077;&#1088;&#1084;&#1072;&#1085;i&#1080;&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+ &lt;<span style="color: #8cd0d3;">name</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">personal</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">displayForm</span>&gt;&#1040;. &#1041;&#1091;&#1085;&#1075;&#1077;.&lt;/<span style="color: #8cd0d3;">displayForm</span>&gt;
+  &lt;<span style="color: #8cd0d3;">role</span>&gt;
+   &lt;<span style="color: #8cd0d3;">roleTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span>&gt;cre&lt;/<span style="color: #8cd0d3;">roleTerm</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">role</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">name</span>&gt;
+ &lt;<span style="color: #8cd0d3;">language</span>&gt;
+  &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;rus&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+ &lt;<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+   &lt;<span style="color: #8cd0d3;">start</span>&gt;2&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+ &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;TextContent&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+&lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+</pre>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4-2-3-6-1-1-2">An article with an embedded illustration<br/>
+
+
+
+<pre class="src src-xml">       &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">title</span>&gt;&#1058;&#1077;&#1072;&#1090;&#1088;&#1100; &#1080; &#1052;&#1091;&#1079;&#1099;&#1082;&#1072;&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+
+ &lt;<span style="color: #8cd0d3;">language</span>&gt;
+  &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;rus&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+ &lt;<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+   &lt;<span style="color: #8cd0d3;">start</span>&gt;4&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+ &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;TextContent&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+
+ &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+   &lt;<span style="color: #8cd0d3;">title</span>&gt;&#1042;. &#1048;. &#1064;&#1086;&#1085;&#1090;&#1082;&#1086;&#1074;&#1089;&#1082;&#1072;&#1103;&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">part</span>&gt;
+   &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">start</span>&gt;4&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+   &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;Illustration&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+&lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+</pre>
+
+
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3-6-2" class="outline-6">
+<h6 id="sec-4-2-3-6-2"><span class="section-number-6">4.2.3.6.2</span> Illustration</h6>
+<div class="outline-text-6" id="text-4-2-3-6-2">
+
+<p>      We use <i>Illustration</i> to refer to all kinds of graphic "art":
+      photographs, cartoons, charts, etc.  Most illustrations in
+      <i>Vozrozhdenie</i> (but not all) are accompanied by some sort of
+      <i>caption</i>: a line or two of text, usually beneath the graphic,
+      that describes the illustration, or names the creator of the
+      illustration, or both.
+</p>
+<p>
+      For docWorks processing, the caption should be used as the
+      &lt;title&gt;. 
+</p>
+</div>
+
+<div id="outline-container-4-2-3-6-2-1" class="outline-7">
+<h7 id="sec-4-2-3-6-2-1"><span class="section-number-7">4.2.3.6.2.1</span> Examples</h7>
+<div class="outline-text-7" id="text-4-2-3-6-2-1">
+
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">c2</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+   &lt;<span style="color: #8cd0d3;">title</span>&gt;&#1052;&#1080;&#1090;&#1088;&#1086;&#1087;&#1086;&#1083;&#1080;&#1090;&#1098; &#1045;&#1074;&#1083;&#1086;&#1087;&#1081;&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">language</span>&gt;
+   &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;rus&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+  &lt;<span style="color: #8cd0d3;">part</span>&gt;
+   &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">start</span>&gt;1&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+   &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;Illustration&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+</pre>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3-6-3" class="outline-6">
+<h6 id="sec-4-2-3-6-3"><span class="section-number-6">4.2.3.6.3</span> SponsoredAd</h6>
+<div class="outline-text-6" id="text-4-2-3-6-3">
+
+<p>      Advertisements are an important and plentiful constituent of
+      <i>Vozrozhdenie</i>.  They usually appear in blocks or sections (see
+      below); we do not attempt to assign them titles or creators.
+</p>
+</div>
+
+<div id="outline-container-4-2-3-6-3-1" class="outline-7">
+<h7 id="sec-4-2-3-6-3-1"><span class="section-number-7">4.2.3.6.3.1</span> Examples</h7>
+<div class="outline-text-7" id="text-4-2-3-6-3-1">
+
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">ID</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">c3</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">title</span>&gt;[Advertisement]&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+ &lt;<span style="color: #8cd0d3;">language</span>&gt;
+  &lt;<span style="color: #8cd0d3;">languageTerm</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">code</span><span style="color: #cc9393;">"</span> <span style="color: #dfaf8f;">authority</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">iso639-2b</span><span style="color: #cc9393;">"</span>&gt;rus&lt;/<span style="color: #8cd0d3;">languageTerm</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">language</span>&gt;
+ &lt;<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">start</span>&gt;3&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+ &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;SponsoredAd&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+&lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+</pre>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2-3-6-4" class="outline-6">
+<h6 id="sec-4-2-3-6-4"><span class="section-number-6">4.2.3.6.4</span> Section</h6>
+<div class="outline-text-6" id="text-4-2-3-6-4">
+
+<p>      A section is a "composite constituent": it contains other
+      constituents.  Advertising blocks are encoded as sections;
+      named sections of the paper are encoded as sections, too.
+</p>
+</div>
+
+<div id="outline-container-4-2-3-6-4-1" class="outline-7">
+<h7 id="sec-4-2-3-6-4-1"><span class="section-number-7">4.2.3.6.4.1</span> Examples</h7>
+<div class="outline-text-7" id="text-4-2-3-6-4-1">
+
+
+
+
+<pre class="src src-xml">&lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span>&gt;
+ &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">title</span>&gt;&#1051;&#1080;&#1090;&#1077;&#1088;&#1072;&#1090;&#1091;&#1088;&#1072;, &#1082;&#1088;&#1080;&#1090;&#1080;&#1082;&#1072; &#1080; &#1080;&#1089;&#1082;&#1091;&#1089;&#1089;&#1090;&#1074;&#1086;&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+ &lt;<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+   &lt;<span style="color: #8cd0d3;">start</span>&gt;3&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+ &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;Section&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+
+ &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+   &lt;<span style="color: #8cd0d3;">title</span>&gt;"&#1052;&#1072;&#1096;&#1077;&#1085;&#1100;&#1082;&#1072;"&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">part</span>&gt;
+   &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">start</span>&gt;3&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+   &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;TextContent&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+
+ &lt;<span style="color: #8cd0d3;">relatedItem</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">constituent</span><span style="color: #cc9393;">"</span>&gt;
+  &lt;<span style="color: #8cd0d3;">titleInfo</span>&gt;
+   &lt;<span style="color: #8cd0d3;">title</span>&gt;"&#1047;&#1086;&#1083;&#1086;&#1090;&#1086;&#1081; &#1091;&#1079;&#1086;&#1088;&#1098;"&lt;/<span style="color: #8cd0d3;">title</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">titleInfo</span>&gt;
+  &lt;<span style="color: #8cd0d3;">part</span>&gt;
+   &lt;<span style="color: #8cd0d3;">extent</span> <span style="color: #dfaf8f;">unit</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">page</span><span style="color: #cc9393;">"</span>&gt;
+    &lt;<span style="color: #8cd0d3;">start</span>&gt;3&lt;/<span style="color: #8cd0d3;">start</span>&gt;
+   &lt;/<span style="color: #8cd0d3;">extent</span>&gt;
+  &lt;/<span style="color: #8cd0d3;">part</span>&gt;
+  &lt;<span style="color: #8cd0d3;">genre</span> <span style="color: #dfaf8f;">type</span>=<span style="color: #cc9393;">"</span><span style="color: #cc9393;">CCS</span><span style="color: #cc9393;">"</span>&gt;TextContent&lt;/<span style="color: #8cd0d3;">genre</span>&gt;
+ &lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;
+&lt;/<span style="color: #8cd0d3;">relatedItem</span>&gt;       
+</pre>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> ALTO Profile</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<p>   For each page, an encoded representation of the layout and the
+   machine-readable text on the page shall be provided, using the
+   ALTO schema, version 2.0 or higher, with the following
+   specifications, adopted from the NDNP:
+</p>
+<ul>
+<li>The text shall be encoded in the natural reading order of the
+     language in which the text is written;
+</li>
+<li>Point size and font data to at least the word level shall be included;
+</li>
+<li>The ALTO file shall include bounding-box coordinates to at least
+     the word level;
+</li>
+<li>Non-rectangular blocks shall not be used.  Some illustrations
+     may format as "tight" in the document.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Image Profiles</h3>
+<div class="outline-text-3" id="text-4-4">
+
+
+</div>
+
+<div id="outline-container-4-4-1" class="outline-4">
+<h4 id="sec-4-4-1"><span class="section-number-4">4.4.1</span> TIFF: Image Description</h4>
+<div class="outline-text-4" id="text-4-4-1">
+
+<p>    In general, Princeton University Library adheres to the standards
+    elaborated by the Federal Agencies Digitization Guidelines
+    Initiative (FADGI), whose Still Image Working Group produced
+    a document entitled <i>Technical Guidelines for Digitizing Cultural     Heritage Materials</i> in 2010.  Archival images will be captured in
+    24-bit RGB and digitally rendered at varying resolutions to produce
+    a uniform long dimension of 7200 pixels, then stored as
+    uncompressed TIFF files with a large, non-proprietary color profile
+    (Pro Photo RGB). The homogenization of the archival files to a long
+    dimension of 7200 pixels allows us to produce uniform derivative
+    images rapidly and estimate our storage needs more accurately.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-4-2" class="outline-4">
+<h4 id="sec-4-4-2"><span class="section-number-4">4.4.2</span> JPEG2000: Image Description</h4>
+<div class="outline-text-4" id="text-4-4-2">
+
+
+</div>
+
+<div id="outline-container-4-4-2-1" class="outline-5">
+<h5 id="sec-4-4-2-1"><span class="section-number-5">4.4.2.1</span> Generative Image Derivatives</h5>
+<div class="outline-text-5" id="text-4-4-2-1">
+
+<p>     Derived from the Master TIFF files with the following formula:
+</p>
+
+
+
+<pre class="example">kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2 Creversible=yes -rate -,1,0.5,0.25 \
+-jp2_space sRGB \
+-double_buffering 10 \
+-num_threads 4 \
+-no_weights \
+-quiet
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-4-2-2" class="outline-5">
+<h5 id="sec-4-4-2-2"><span class="section-number-5">4.4.2.2</span> Delivery Derivatives</h5>
+<div class="outline-text-5" id="text-4-4-2-2">
+
+<p>     To generate a JP2000 using Kakadu, use the following recipe (taken
+     from <i>The National Digital Newspaper Program (NDNP) Technical      Guidelines for Applicants</i>):
+</p>
+
+
+
+<pre class="example">kdu_compress -i YOURINPUT.tif -o YOUROUTPUT.jp2 -rate 
+1,0.84,0.7,0.6,0.5,0.4,0.35,0.3,0.25,0.21,0.18,0.15,0.125,0.1,0.088,0.0 
+75,0.0625,0.05,0.04419,0.03716,0.03125,0.025,0.0221,0.01858,0.015625 
+Clevels=6 Stiles={1024,1024} Corder=RLCP
+</pre>
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Blue Mountain DocWorks Configuration</h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Containers</h3>
+<div class="outline-text-3" id="text-5-1">
+
+
+</div>
+
+<div id="outline-container-5-1-1" class="outline-4">
+<h4 id="sec-5-1-1"><span class="section-number-4">5.1.1</span> Editorial Content Container</h4>
+<div class="outline-text-4" id="text-5-1-1">
+
+
+</div>
+
+<div id="outline-container-5-1-1-1" class="outline-5">
+<h5 id="sec-5-1-1-1"><span class="section-number-5">5.1.1.1</span> Article Copy</h5>
+<div class="outline-text-5" id="text-5-1-1-1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5-1-2" class="outline-4">
+<h4 id="sec-5-1-2"><span class="section-number-4">5.1.2</span> PubInfo Container</h4>
+<div class="outline-text-4" id="text-5-1-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-5-1-3" class="outline-4">
+<h4 id="sec-5-1-3"><span class="section-number-4">5.1.3</span> SponsoredAd Container</h4>
+<div class="outline-text-4" id="text-5-1-3">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> General Markup Policy for Blue Mountain Magazines</h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Preliminary</h3>
+<div class="outline-text-3" id="text-6-1">
+
+<p>   For each title, Princeton will provide the following:
+</p>
+<ol>
+<li>A "sample copy markup" (PDF): a full issue marked up according
+      to the General Markup Policy;
+</li>
+<li>A title-specific markup addendum clarifying unusual zoning and
+      structural features; and
+</li>
+<li>A marked up copy of any issue(s) deviating substantially from
+      either the general or title-specific markup policies.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> VerifyPageFrames (VPF)</h3>
+<div class="outline-text-3" id="text-6-2">
+
+<p>   Straighten and deskew all pages.  When the input files include
+   two-page spreads, do not split them into separate files unless
+   instructed.
+</p></div>
+
+</div>
+
+<div id="outline-container-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> VerifyLayoutElements (VLE)</h3>
+<div class="outline-text-3" id="text-6-3">
+
+<p>   The VLE step is skipped for serials and books, so zoning is
+   performed in VPN.
+</p></div>
+
+</div>
+
+<div id="outline-container-6-4" class="outline-3">
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> VerifyPageNumbers (VPN)</h3>
+<div class="outline-text-3" id="text-6-4">
+
+<p>   It is important to refer to any sample copy markup and any
+   title-specific markup addenda in addition to this document, as the
+   location and ways of identifying zones will vary by publication.
+</p>
+</div>
+
+<div id="outline-container-6-4-1" class="outline-4">
+<h4 id="sec-6-4-1"><span class="section-number-4">6.4.1</span> Zone Types to Tag</h4>
+<div class="outline-text-4" id="text-6-4-1">
+
+
+</div>
+
+<div id="outline-container-6-4-1-1" class="outline-5">
+<h5 id="sec-6-4-1-1"><span class="section-number-5">6.4.1.1</span> PubInfo Container</h5>
+<div class="outline-text-5" id="text-6-4-1-1">
+
+
+</div>
+
+<div id="outline-container-6-4-1-1-1" class="outline-6">
+<h6 id="sec-6-4-1-1-1"><span class="section-number-6">6.4.1.1.1</span> Page Number</h6>
+<div class="outline-text-6" id="text-6-4-1-1-1">
+
+<dl>
+<dt>Zone Name (in docWorks)</dt><dd>PageNumber
+</dd>
+<dt>Description</dt><dd>Used when the publication includes page numbers
+</dd>
+<dt>Location and Features</dt><dd>Varies by publication; consult
+           addenda.
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-1-2" class="outline-6">
+<h6 id="sec-6-4-1-1-2"><span class="section-number-6">6.4.1.1.2</span> Nameplate</h6>
+<div class="outline-text-6" id="text-6-4-1-1-2">
+
+<dl>
+<dt>Zone Name (docWorks)</dt><dd>Nameplate
+</dd>
+<dt>Description</dt><dd>The space at the top of the magazine cover,
+                       usually containing the name (the logo),
+                       location, volume, issue, and sometimes
+                       taglines.  Designs range from simple to
+                       intricate, depending on the design of the publication.
+</dd>
+<dt>Location and Features</dt><dd>The nameplate often contains the same
+           information as the <i>masthead</i> but is a different layout
+           element.  Its purpose is to make the magazine identifiable
+           when seen from a distance (as at a magazine stand, for
+           example).  The typeface is often a custom display type.
+
+<p>
+           Not every publication design includes a recognizable
+           nameplate.
+</p></dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-1-3" class="outline-6">
+<h6 id="sec-6-4-1-1-3"><span class="section-number-6">6.4.1.1.3</span> Masthead</h6>
+<div class="outline-text-6" id="text-6-4-1-1-3">
+
+<dl>
+<dt>Zone Name (docWorks)</dt><dd>Masthead
+</dd>
+<dt>Description</dt><dd>A section inside the magazine containing
+                       various pieces of publication information, such
+                       as the editor's names, contact information, and
+                       subscription rates.
+</dd>
+<dt>Location and Features</dt><dd>Mastheads vary in size and amount of
+           information included.  Some may take up an entire page.
+           In newspapers, the masthead often occurs on the editorial
+           page; in magazines, it may appear in various locations
+           (consult title-specfic mark-up addenda).
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-1-4" class="outline-6">
+<h6 id="sec-6-4-1-1-4"><span class="section-number-6">6.4.1.1.4</span> Folio Line (Inside)</h6>
+<div class="outline-text-6" id="text-6-4-1-1-4">
+
+<dl>
+<dt>Zone Name</dt><dd>InsideFolioLine
+</dd>
+<dt>Description</dt><dd>A folio line is an identification line,
+                       appearing (when it does appear) on each page of
+                       a newspaper or magazine.  The front-page folio
+                       line is different from those on inside pages.
+</dd>
+<dt>Location and Features</dt><dd>Not all magazine layouts feature a
+           folio line.  It may run at the top or bottom of each page.
+           It can also run as part of the logo on special pages or
+           within the masthead.  It often consists of the publication
+           date in one corner, the name of the publication (centered),
+           and the page number in the other corner.  It is sometimes
+           separated from the rest of the page by a cutoff rule.
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-1-5" class="outline-6">
+<h6 id="sec-6-4-1-1-5"><span class="section-number-6">6.4.1.1.5</span> Front Folio Line(s)</h6>
+<div class="outline-text-6" id="text-6-4-1-1-5">
+
+<dl>
+<dt>Zone Name</dt><dd>FrontFolioLine
+</dd>
+<dt>Description</dt><dd>An identification line or lines on cover of the
+                       magazine often containing one or more of the
+                       following elements: the volume number
+                       (or the number of years the publication has
+                       been in print); the issue number; the place of
+                       publication; and date of publication.
+</dd>
+<dt>Location and Features</dt><dd>Usually joins the nameplate. Often
+           separated from the logo by borders or cutoff rules.
+
+<p>
+           Not every publication layout includes a recognizable front
+           folio line.  Many of the Blue Mountain designs omit it, or
+           scatter the informaiton traditionally contained in a front
+           folio line across the front page.
+</p></dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-1-6" class="outline-6">
+<h6 id="sec-6-4-1-1-6"><span class="section-number-6">6.4.1.1.6</span> General Publication Information</h6>
+<div class="outline-text-6" id="text-6-4-1-1-6">
+
+<dl>
+<dt>Zone Name</dt><dd>GenericPubInfo
+</dd>
+<dt>Description</dt><dd>A catch-all category for other "metadata" about
+                       the magazine not identifiable as nameplate,
+                       masthead, or folio lines.
+</dd>
+<dt>Location and Features</dt><dd>Highly variable, but usually found on
+           outside or inside covers.  Consult title-specific addenda.
+</dd>
+</dl>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2" class="outline-5">
+<h5 id="sec-6-4-1-2"><span class="section-number-5">6.4.1.2</span> Editorial Content Container</h5>
+<div class="outline-text-5" id="text-6-4-1-2">
+
+
+</div>
+
+<div id="outline-container-6-4-1-2-1" class="outline-6">
+<h6 id="sec-6-4-1-2-1"><span class="section-number-6">6.4.1.2.1</span> Head</h6>
+<div class="outline-text-6" id="text-6-4-1-2-1">
+
+<dl>
+<dt>Zone Name</dt><dd>Headline
+</dd>
+<dt>Description</dt><dd>A phrase at the beginning of a magazine
+                       section, usually indicating the subject of the
+                       following copy text.
+</dd>
+<dt>Location and Features</dt><dd>A newspaper <i>headline</i> is a <i>kind</i> of
+           head; magazines usually have many other kinds of
+           heads. <i>Heads</i> are usually recognizable by weight, size, or
+           position of type: they are often heavier or larger, and are
+           often (though not always) centered above one or more
+           columns of type with space before and after.  A single
+           magazine constituent may have several <i>levels</i> of heading:
+           most have a top-level head (usually the title of the
+           piece), to distinguish the piece as a whole from other
+           magazine content, but many have typographically distinct
+           <i>subheads</i> that subdivide the constituent itself into
+           sections (see <i>Subhead</i> below).
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-2" class="outline-6">
+<h6 id="sec-6-4-1-2-2"><span class="section-number-6">6.4.1.2.2</span> Subhead</h6>
+<div class="outline-text-6" id="text-6-4-1-2-2">
+
+<dl>
+<dt>Zone Name</dt><dd>Subheadline
+</dd>
+<dt>Description</dt><dd>A phrase demarcating a part of a constituent
+                       or section of a magazine. A constituent or
+                       section cannot have a subhead without a head.
+</dd>
+<dt>Location and Features</dt><dd>Subheads break up a chunk (a
+           constituent, a section) into smaller units.  Subheads are
+           usually distinguished typographically from heads by smaller
+           type sizes and different spacing.
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-3" class="outline-6">
+<h6 id="sec-6-4-1-2-3"><span class="section-number-6">6.4.1.2.3</span> Article Copy</h6>
+<div class="outline-text-6" id="text-6-4-1-2-3">
+
+<dl>
+<dt>Zone Name</dt><dd>Textblock
+</dd>
+<dt>Description</dt><dd>A block of body text. <i>Article Copy</i> is a
+                       misnomer; <i>Editorial Copy</i> would be better.
+                       It is usually, though not always, divided into
+                       paragraphs; Blue Mountain zones tables and
+                       lists as Article Copy.
+</dd>
+<dt>Location and Features</dt><dd>May be preceded by a Head (though a
+           Head is not mandatory).  May be subdivided into smaller
+           units through the use of rules and/or subheads.
+</dd>
+<dt>Tagging Notes</dt><dd>
+<ul>
+<li>Blue Mountain zones tables and lists as
+          Article Copy.
+</li>
+<li>Blue Mountain also tags tables of contents as Article Copy.
+</li>
+</ul>
+
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-4" class="outline-6">
+<h6 id="sec-6-4-1-2-4"><span class="section-number-6">6.4.1.2.4</span> Byline</h6>
+<div class="outline-text-6" id="text-6-4-1-2-4">
+
+<dl>
+<dt>Zone Name</dt><dd>Author
+</dd>
+<dt>Description</dt><dd>A zone containing one or more regions
+                       associated with the writer of an article,
+                       musical composition, letter, or other editorial
+                       content: usually the writer's name, but
+                       sometimes also the writer's position or other
+                       biographical information.
+</dd>
+<dt>Location and Features</dt><dd>The byline is usually located either
+           at the beginning of the content, between the head and the
+           first zone of copy, or at the end of the copy text.
+           Bylines can be difficult to distinguish.  They are
+           sometimes set in italic or boldfaced type or in all-caps;
+           they are sometimes a full name (first name, last name),
+           sometimes a last name only, or one or two initials, or a
+           name with a term of address in the language of the
+           magazine (Mr., Dr., Madame, M., Herr, etc.)
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-5" class="outline-6">
+<h6 id="sec-6-4-1-2-5"><span class="section-number-6">6.4.1.2.5</span> Art</h6>
+<div class="outline-text-6" id="text-6-4-1-2-5">
+
+<dl>
+<dt>Zone Name</dt><dd>Illustration
+</dd>
+<dt>Description</dt><dd>A drawing, photograph, a reproduction of a
+                       print or a painting; a graphic poem.
+                       Sometimes has a caption above, below, or to
+                       the side of it.
+</dd>
+<dt>Location and Features</dt><dd>May occur anywhere; may occupy a
+           single column, several columns, or be set outside the
+           column grid of the page; or may take up a full page or a
+           multi-page spread.
+
+<p>
+           The Avant-garde saw the invention of "graphical text" like
+           concrete poetry, shape poetry, Futurist "words in
+           liberty," etc.  While these are in fact hybrid forms, both
+           graphic and text, Blue Mountain zones them as art.                
+</p></dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-6" class="outline-6">
+<h6 id="sec-6-4-1-2-6"><span class="section-number-6">6.4.1.2.6</span> Caption</h6>
+<div class="outline-text-6" id="text-6-4-1-2-6">
+
+<dl>
+<dt>Zone Name</dt><dd>Caption
+</dd>
+<dt>Description</dt><dd>One or more textual blocks associated with an
+                       Illustration.
+</dd>
+<dt>Location and Features</dt><dd>Captions may appear above, below, or
+           (occasionally) to the side of the illustration to which
+           they belong.  They may contain several lines and/or zones
+           of information: the identity of the subject; the name of
+           the artist/photographer/poet; the title of the artwork
+           being printed or reproduced.  Consult title-specific
+           addenda.
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-7" class="outline-6">
+<h6 id="sec-6-4-1-2-7"><span class="section-number-6">6.4.1.2.7</span> Music</h6>
+<div class="outline-text-6" id="text-6-4-1-2-7">
+
+<dl>
+<dt>Zone Name</dt><dd>Music
+</dd>
+<dt>Description</dt><dd>A zone of musical notation (in Western music,
+                       most often one or more staves, perhaps with
+                       clefs and key signatures, and notes; sometimes
+                       heavily annotated with text.)
+</dd>
+<dt>Location and Features</dt><dd>Size and extent varies.  May be a
+           small musical example occupying a few lines of a column,
+           or a multi-page musical compostion.  Some zones of music
+           may be accompanied by heads or captions.
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-2-8" class="outline-6">
+<h6 id="sec-6-4-1-2-8"><span class="section-number-6">6.4.1.2.8</span> Footnote</h6>
+<div class="outline-text-6" id="text-6-4-1-2-8">
+
+<dl>
+<dt>Zone Name</dt><dd>Footnote
+</dd>
+<dt>Description</dt><dd>A zone of type, usually at the foot of the
+                       page, serving as an annotation to some text on
+                       the page.
+</dd>
+<dt>NOTE</dt><dd>This zone is under consideration.
+</dd>
+</dl>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6-4-1-3" class="outline-5">
+<h5 id="sec-6-4-1-3"><span class="section-number-5">6.4.1.3</span> SponsoredAd Container</h5>
+<div class="outline-text-5" id="text-6-4-1-3">
+
+
+</div>
+
+<div id="outline-container-6-4-1-3-1" class="outline-6">
+<h6 id="sec-6-4-1-3-1"><span class="section-number-6">6.4.1.3.1</span> Sponsored Ad (Advertisement Copy)</h6>
+<div class="outline-text-6" id="text-6-4-1-3-1">
+
+<dl>
+<dt>Zone Name</dt><dd>Advertisement
+</dd>
+<dt>Description</dt><dd>An often-heterogenous zone of mixed
+                       typography, graphics, and layout whose
+                       function is to draw attention to some event,
+                       product, or service.  <i>Sponsored</i>
+                       advertisements are those advertisements that
+                       appear in the magazine because an outside
+                       agency (a company, a theater, a publisher) has
+                       paid for it to appear.
+</dd>
+<dt>Location and Description</dt><dd>Ads may appear anywhere, but most
+           often they appear in groups at the end of a magazine
+           issue.  They are often boxed.  They may be any size --
+           from a few inches to a partial or full page.
+</dd>
+</dl>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6-4-2" class="outline-4">
+<h4 id="sec-6-4-2"><span class="section-number-4">6.4.2</span> Zone Types to Ignore</h4>
+<div class="outline-text-4" id="text-6-4-2">
+
+<dl>
+<dt>Rules</dt><dd>Do not zone horizontal and vertical rules &ndash; the
+               (usually thin) lines used to separate regions of the page.
+</dd>
+<dt>Ornamental Artwork</dt><dd>Typographer's ornaments, ornamental
+         borders, anonymous graphics at the heads of sections.
+         (Consult title-specific addenda.)
+</dd>
+</dl>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6-5" class="outline-3">
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> VerifyPageHierarchy (VPH)</h3>
+<div class="outline-text-3" id="text-6-5">
+
+<p>   Add the following metadata, if available:
+</p>
+<ul>
+<li>Volume Number
+</li>
+<li>Issue Number
+</li>
+<li>Issue Date
+</li>
+<li>Publication Title
+</li>
+</ul>
+
+
+<p>
+   This information will always be supplied by Princeton in the form
+   of <i>preliminary issue-level MODS</i> (see below).
+</p></div>
+
+</div>
+
+<div id="outline-container-6-6" class="outline-3">
+<h3 id="sec-6-6"><span class="section-number-3">6.6</span> VerifyHiearchy (VH)</h3>
+<div class="outline-text-3" id="text-6-6">
+
+<p>   Identify all components as either PubInfo, EditorialContent, or
+   SponsoredAds.
+</p>
+<ul>
+<li>Classify all zones in PubInfo or Editorial Content containers
+     manually.  (All ad zones will be grouped automatically into
+     SponsoredAd containers.)
+</li>
+<li>Composition of magazine constituents is highly variable.  Some
+     general guidelines:
+<ul>
+<li>A constituent very often is composed of a head, a byline, and
+       one or more sections of body copy.  Look for a typographically
+       distinct head to begin the constituent; a byline will
+       sometimes follow immediately after the head, but it may also
+       appear at the very end.
+</li>
+<li>Use the head as the constituent's title.
+</li>
+<li>Many of the Blue Mountain titles are art magazines; the illustrations
+       often have heads, captions, and bylines. If a head is present,
+       treat it as the title.
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-7" class="outline-3">
+<h3 id="sec-6-7"><span class="section-number-3">6.7</span> OCR Correction</h3>
+<div class="outline-text-3" id="text-6-7">
+
+<ul>
+<li>Correct all heads, subheads, bylines, and captions.
+</li>
+<li>Delete empty zones.
+</li>
+<li>Ignore hand-written text blocks.
+</li>
+</ul>
+
+
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn-.1" href="#fnr-.1">1</a></sup> This convention has been adopted to suport the naming conventions
+in Veridian, which prohibit the use of integers in identifiers.
+</p>
+
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2013-01-22 Tue</p>
+<p class="author">Author: Cliff Wulfman</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.2 with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
