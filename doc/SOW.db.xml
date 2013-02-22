@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 version="5.0">
+  <info>
+    <title>Statement of Work</title>
+    <subtitle>METS/ALTO Production for Phase I of the Blue Mountain
+    Project</subtitle>
+    <author>
+      <orgname>Princeton University Library</orgname>
+    </author>
+    <revhistory>
+      <revision>
+	<date>February 21, 2013</date>
+	<authorinitials>CEW</authorinitials>
+	<revremark>First circulating draft.</revremark>
+      </revision>
+    </revhistory>
+    <abstract>
+      <para>The Statement of Work agreement between Princeton
+      University Library (PUL) and Digital Divide Data (DDD) for the
+      remaining portion of the Blue Mountain Project, Phase I. It
+      supercedes all prior statements of work and production
+      schedules, whether produced by DDDD or by PUL, in whatever
+      form.</para>
+    </abstract>
+  </info>
+  <sect1>
+    <title>Rationale</title>
+
+    <para> The total page count for Blue Mountain, Phase I is
+    approximately 92,305. The grant cycle for Phase I ends on
+    September 1, 2014, and production should be completed well before
+    then. The following schedule, then, is based on 7 two-month
+    production cycles for Digital Divide Data, where a cycle is
+    defined in the plan of work below. </para>
+  </sect1>
+
+  <sect1>
+    <title>Reference Documents</title>
+    <para> The Blue Mountain Project has detailed its policies,
+    requirements, and formats in a Reference Document, maintained and
+    distributed on the wiki at the Blue Mountain Project's GitHub
+    portal <link
+    xlink:href="https://github.com/pulibrary/BlueMountain"
+    >https://github.com/pulibrary/BlueMountain</link>. </para>
+  </sect1>
+
+  <sect1>
+    <title>Plan of Work</title>
+    <para>The Work shall be divided into discrete units (hereafter
+    referred to as batches, deliveries, or tranches), as defined in
+    the section below.  Processing of each unit shall follow this
+    procedure:
+    </para>
+
+    <procedure>
+      <title>Processing Procedure</title>
+
+      <step>
+	<para>For each unit, PUL shall provide DDD with the following
+	items:</para>
+	<itemizedlist>
+	  <listitem>
+	    <formalpara>
+	      <title>LZW-Compressed TIFF Files</title>
+	      <para>For each title, PUL shall provide image files in the
+	      format specified in the reference document. PUL shall
+	      arrange these image files into systems of directories
+	      (folders) organized by date of publication, as specified in
+	      the reference document. Princeton shall make every
+	      reasonable effort to ensure these issue sets are accurate
+	      and complete. If, upon DDD's inspection at receipt, there
+	      are missing pages, duplicate pages, or other directory-level
+	      or file-level anomalies which impede or otherwise interfere
+	      with DDD's subsequent processing of the materials, DDD shall
+	      inform Princeton immediately for remedy. Princeton shall not
+	      be responsible for redundant work performed by DDD in remedy
+	      of such anomalies.  These page-image files shall be
+	      delivered via one of two media, subject to negotiation:
+
+	      <orderedlist>
+		<listitem><para>File transfer via Box.com.  This is
+		preferred.</para></listitem>
+		
+		<listitem><para>Portable hard drive, shipped to DDD in
+		Cambodia via FedEx.  If the hard drive option is chosen,
+		DDD will absorb the cost of shipping.</para></listitem>
+	      </orderedlist>
+	      </para>
+	    </formalpara>
+	  </listitem>
+	  <listitem>
+	    <formalpara>
+	      <title>Title-Specific Markup Policies</title>
+	      <para>For each title, PUL shall provide the following:
+	      <orderedlist>
+		<listitem>
+		  <para>A title-specific markup addendum clarifying
+		  unusual zoning and structural features;</para>
+		</listitem>
+		<listitem>
+		  <para>A sample copy (in PDF format) marked up according
+		  to the markup policy;</para>
+		</listitem>
+		<listitem>
+		  <para>A marked up copy of any issue(s) deviating
+		  substantially from either the general or title-specific
+		  markup policies.</para>
+		</listitem>
+	      </orderedlist>
+	      </para>
+	    </formalpara>
+	  </listitem>
+	  <listitem>
+      	    <formalpara>
+	      <title>Descriptive Metadata for each Issue</title>
+	      <para>PUL shall prepare provide title, volume and issue
+	      numbers and labels, dates of publication, and the
+	      identifiers required by Blue Mountain as described in the
+	      reference document.  PUL will deliver this metadata in MODS
+	      format, as described in the reference document (The Metadata
+	      Store).  PUL will maintain the metadata store in the Blue
+	      Mountain Github repository; DDD shall be responsible for
+	      retrieving these files from the Blue Mountain GitHub
+	      repository and for updating their local copies should
+	      changes become necessary after production of a batch begins.</para>
+	    </formalpara>
+	  </listitem>
+	</itemizedlist>
+      </step>
+      <step>
+	<para>
+	  DDD shall process the page images and descriptive metadata into
+	  METS/ALTO, JPEG2000, and PDF outputs (the PRODUCT) according to
+	  the reference document.
+	</para>
+      </step>
+      <step>
+	<para>
+	  DDD shall deliver the Product to Princeton via one of the
+	  authorized transmission media, as specified above.
+	</para>
+      </step>
+      <step>
+	<para>
+	  DDD shall issue an invoice to Princeton for EXACTLY the work
+	  performed in fulfillment of this batch.  The Blue Mountain
+	  Project will not accept invoices that fail to specify, in
+	  detail, the work being billed, or that bill for work that spans
+	  discrete batches, or that entail work done for other
+	  Princeton-related projects.
+	</para>
+      </step>
+      <step>
+	<para>
+	  Princeton shall ingest the Product into its content-management
+	  system and the Veridian content-delivery system.  Princeton
+	  shall evaluate the Product, in its raw form and in its deployed
+	  form, and shall notify DDD in a timely fashion of any anomalies
+	  outside the tolerances set forth in the contract agreement (to
+	  be negotiated).
+	</para>
+      </step>
+      <step>
+	<para>
+	  When the Product meets the agreed-upon acceptance criteria (see
+	  below), Princeton shall authorize payment.
+	</para>
+      </step>
+    </procedure>
+  </sect1>
+  <sect1>
+    <title>Schedule of Work</title>
+    <para>
+      The following shall be the agreed-upon schedule of work.  The
+      schedule shall be maintained as a set of milestones in the
+      Project's Goplan tracking system.
+    </para>
+    <table frame="all">
+      <title>Composition of Blue Mountain Work by Batch</title>
+      <tgroup cols="8">
+	<colspec colname="c1" colwidth="2*"/>
+	<colspec colname="c2" colwidth="1*"/>
+	<colspec colname="c3"/>
+	<colspec colname="c4"/>
+	<colspec colname="c5"/>
+	<colspec colname="c6"/>
+	<colspec colname="c7"/>
+	<colspec colname="c8"/>
+
+	<thead>
+	  <row>
+	    <entry></entry>
+	    <entry>Jan-Feb</entry>
+	    <entry>Feb-Mar</entry>
+	    <entry>Apr-May</entry>
+	    <entry>Jun-Jul</entry>
+	    <entry>Aug-Sep</entry>
+	    <entry>Oct-Nov</entry>
+	    <entry>Dec-Jan</entry>
+	  </row>
+	</thead>
+	<tbody>
+	  <row>
+	    <entry>291</entry>
+	    <entry>30</entry>
+	  </row>
+	  <row>
+	    <entry>Dada</entry>
+	    <entry>94</entry>
+	  </row>
+	  <row>
+	    <entry>Der Sturm</entry>
+	    <entry>4959</entry>
+	  </row>
+	  <row>
+	    <entry>l'elan</entry>
+	    <entry>254</entry>
+	  </row>
+	  <row>
+	    <entry>Le coeur à barbe</entry>
+	    <entry>8</entry>
+	  </row>
+	  <row>
+	    <entry>Action</entry>
+	    <entry namest="c3">942</entry>
+	  </row>
+	  <row>
+	    <entry>Broom</entry>
+	    <entry namest="c3">2550</entry>
+	  </row>
+	  <row>
+	    <entry>Bruno's Weekly</entry>
+	    <entry namest="c3">1234</entry>
+	  </row>
+	  <row>
+	    <entry>New Numbers</entry>
+	    <entry namest="c3">210</entry>
+	  </row>
+	  <row>
+	    <entry>Secession</entry>
+	    <entry namest="c3">30</entry>
+	  </row>
+	  <row>
+	    <entry>The Signature</entry>
+	    <entry namest="c3">100</entry>
+	  </row>
+	  <row>
+	    <entry>Sturm Buhne</entry>
+	    <entry namest="c3">32</entry>
+	  </row>
+
+	  <row>
+	    <entry>MA</entry>
+	    <entry namest="c4">700</entry>
+	  </row>
+	  <row>
+	    <entry>Umělecký mĕsíčník</entry>
+	    <entry namest="c4">976</entry>
+	  </row>
+	  <row>
+	    <entry>Veshch</entry>
+	    <entry namest="c4">172</entry>
+	  </row>
+	  <row>
+	    <entry>Volné směry</entry>
+	    <entry namest="c4">13,561</entry>
+	  </row>
+
+	  <row>
+	    <entry>291</entry>
+	    <entry namest="c5">22</entry>
+	  </row>
+	  <row>
+	    <entry>La Chronique musicale</entry>
+	    <entry namest="c5">3,929</entry>
+	  </row>
+	  <row>
+	    <entry>La Cité</entry>
+	    <entry namest="c5">5,271</entry>
+	  </row>
+	  <row>
+	    <entry>La Revue musicale</entry>
+	    <entry namest="c5">5,700</entry>
+	  </row>
+	  <row>
+	    <entry>Surrealisme</entry>
+	    <entry namest="c5">16</entry>
+	  </row>
+
+
+	  
+	  <row>
+	    <entry>Le Mecure musicale</entry>
+	    <entry namest="c6">10,327</entry>
+	  </row>
+	  <row>
+	    <entry>Niederrheinische Musik-Zeitung</entry>
+	    <entry namest="c6">8,866</entry>
+	  </row>
+
+	  <row>
+	    <entry>Dalibor</entry>
+	    <entry namest="c7">17,425</entry>
+	  </row>
+
+	  <row>
+	    <entry>East and West</entry>
+	    <entry namest="c8">600</entry>
+	  </row>
+	  <row>
+	    <entry>The Glebe</entry>
+	    <entry namest="c8">618</entry>
+	  </row>
+	  <row>
+	    <entry>Klingen</entry>
+	    <entry namest="c8">770</entry>
+	  </row>
+	  <row>
+	    <entry>Les Entretien</entry>
+	    <entry namest="c8">2,871</entry>
+	  </row>
+	  <row>
+	    <entry>The Mask</entry>
+	    <entry namest="c8">2370</entry>
+	  </row>
+	  <row>
+	    <entry>Nord-Sud</entry>
+	    <entry namest="c8">230</entry>
+	  </row>
+	  <row>
+	    <entry>Nowa Sztuka</entry>
+	    <entry namest="c8">65</entry>
+	  </row>
+	  <row>
+	    <entry>The Plowshare</entry>
+	    <entry namest="c8">4,280</entry>
+	  </row>
+	  <row>
+	    <entry>Poesia</entry>
+	    <entry namest="c8">1652</entry>
+	  </row>
+	  <row>
+	    <entry>Proverbe</entry>
+	    <entry namest="c8">60</entry>
+	  </row>
+	  <row>
+	    <entry>SIC</entry>
+	    <entry namest="c8">448</entry>
+	  </row>
+	  <row>
+	    <entry>Ultra</entry>
+	    <entry namest="c8">130</entry>
+	  </row>
+	  <row>
+	    <entry>Zeit-Echo</entry>
+	    <entry namest="c8">493</entry>
+	  </row>
+
+	</tbody>
+      </tgroup>
+    </table>
+  </sect1>
+  <sect1>
+    <title>Acceptance Criteria</title>
+    <orderedlist>
+      <listitem>
+	<para>
+	  METS/ALTO data will meet the following criteria:
+	  <orderedlist>
+	    <listitem>
+	      <para>All identifiers are present and accurate.</para>
+	    </listitem>
+	    <listitem>
+	      <para>The MODS descriptive metadata meets th
+	      specifications detailed in the reference document.</para>
+	    </listitem>
+	    <listitem>
+	      <para>The technical metadata is accurate, and conforms
+	      with the specifications detailed in the reference
+	      document.</para>
+	    </listitem>
+	    <listitem>
+	      <para>The file data (the fileSec) conforms with the specifications.</para>
+	    </listitem>
+	    <listitem>
+	      <para>The logical and physical structMap elements are
+	      consistent with the docWorks configuration AND conform
+	      with the specifications outlined in the reference
+	      document and any markup policies agreed to by both
+	      parties.</para>
+	    </listitem>
+	  </orderedlist>
+	</para>
+      </listitem>
+      <listitem>
+	<para>OCR accuracy meets or exceeds the standards established
+	by agreement among the parties.</para>
+      </listitem>
+      <listitem>
+	<para>All image derivatives conform with the specifications
+	detailed in the reference document.</para>
+      </listitem>
+      <listitem>
+	<para>All PDF derivatives conform with the specifications
+	detailed in the reference document.</para>
+      </listitem>
+      <listitem>
+	<para>All file names, directory names, and general
+	organization of files as delivered conform with the
+	specifications detailed in the reference document.</para>
+      </listitem>
+    </orderedlist>
+  </sect1>
+  <sect1>
+    <title>Communication</title>
+    <table>
+      <title>Escalation Table</title>
+      <tgroup cols="3">
+	<thead>
+	  <row>
+	    <entry>Level</entry>
+	    <entry>PUL</entry>
+	    <entry>DDD</entry>
+	  </row>
+	</thead>
+	<tbody>
+	  <row>
+	    <entry>Level 1</entry>
+	    <entry>
+	      <para>
+		<personname>Natalia Ermolaev</personname>
+		<variablelist>
+		  <title/>
+		  <varlistentry>
+		    <term>Title</term>
+		    <listitem><para>Project Manager</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Phone</term>
+		    <listitem><para>609-258-6243</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Email</term>
+		    <listitem><para>nataliae@Princeton.EDU</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Skype</term>
+		    <listitem><para>Natalia</para></listitem>
+		  </varlistentry>
+		</variablelist>
+	      </para>
+	    </entry>
+	    <entry>
+	      <para>
+		<personname>Rady ROS</personname>
+		<variablelist>
+		  <title/>
+		  <varlistentry>
+		    <term>Title</term>
+		    <listitem><para>Project Manager</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Phone</term>
+		    <listitem><para>+855.23.220.843</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Email</term>
+		    <listitem><para>rady.ros@digitaldividedata.org</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Skype</term>
+		    <listitem><para>radyros</para></listitem>
+		  </varlistentry>
+		</variablelist>
+	      </para>
+	    </entry>
+	  </row>
+	  <row>
+	    <entry>Level 2</entry>
+	    <entry>
+	      <para>
+		<personname>Clifford Wulfman</personname>
+		<variablelist>
+		  <title/>
+		  <varlistentry>
+		    <term>Title</term>
+		    <listitem><para>Project Director</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Phone</term>
+		    <listitem><para>609-258-7290</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Email</term>
+		    <listitem><para>cwulfman@Princeton.EDU</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Skype</term>
+		    <listitem><para>thecoldi</para></listitem>
+		  </varlistentry>
+		</variablelist>
+	      </para>
+	    </entry>
+	    <entry>
+	      <para>
+		<personname>Jason Judd</personname>
+		<variablelist>
+		  <title/>
+		  <varlistentry>
+		    <term>Title</term>
+		    <listitem><para>Snr. Director Production</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Phone</term>
+		    <listitem><para>+855.23.220.843</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Email</term>
+		    <listitem><para>jason.judd@digitaldividedata.org</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Skype</term>
+		    <listitem><para>jasonjudd</para></listitem>
+		  </varlistentry>
+		</variablelist>
+	      </para>
+	    </entry>
+	  </row>
+	  <row>
+	    <entry>Level 3</entry>
+	    <entry>
+	      <para>
+		<personname>Marvin Bielawski</personname>
+		<variablelist>
+		  <title/>
+		  <varlistentry>
+		    <term>Title</term>
+		    <listitem><para>Deputy University Librarian</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Phone</term>
+		    <listitem><para>609-258-3190</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Email</term>
+		    <listitem><para>marvinb@Princeton.EDU</para></listitem>
+		  </varlistentry>
+		</variablelist>
+	      </para>
+	    </entry>
+	    <entry>
+	      <para>
+		<personname>Jeremy Hokenstein</personname>
+		<variablelist>
+		  <title/>
+		  <varlistentry>
+		    <term>Title</term>
+		    <listitem><para>CEO</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Phone</term>
+		    <listitem><para>212-461-3703</para></listitem>
+		  </varlistentry>
+		  <varlistentry>
+		    <term>Email</term>
+		    <listitem><para>jeremy@digitaldividedata.org</para></listitem>
+		  </varlistentry>
+		</variablelist>
+	      </para>
+	    </entry>
+	  </row>
+	</tbody>
+      </tgroup>
+    </table>
+  </sect1>
+</article>
