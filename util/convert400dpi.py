@@ -15,7 +15,8 @@ def convert_images(sourcedir, targetdir):
     '''Use ImageMagick convert to create files that have uniform pixel density.'''
 
     for root, dirs, files in os.walk(sourcedir):
-        target_subdir = targetdir.rstrip('/') + '/' + root.lstrip('/')
+        # target_subdir = targetdir.rstrip('/') + '/' + root.lstrip('/')
+        target_subdir = '/'.join((targetdir.rstrip('/'),  root.lstrip('/')))
         print 'mkdir -p ' + target_subdir
         for fname in files:
             if fname.endswith('.tif'):

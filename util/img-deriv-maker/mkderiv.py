@@ -47,7 +47,7 @@ TMP_DIR = "/tmp/"
 # Recipes for Image Magick and Kakadu.
 # TWENTY_FOUR_BIT_IMAGEMAGICK_OPTS = " -resize 4200x4200 -quality 100 -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
 TWENTY_FOUR_BIT_IMAGEMAGICK_OPTS = " -quality 100 -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
-LZW_IMAGEMAGICK_OPTS = " -compress lzw -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
+LZW_IMAGEMAGICK_OPTS = " -density 400 -compress lzw -profile \"" + os.getcwd() + "/lib/sRGB.icc\""
 TWENTY_FOUR_BIT_KDU_RECIPE = "\
 Creversible=yes -rate -,1,0.5,0.25 \
 -jp2_space sRGB \
