@@ -418,6 +418,206 @@
 	specifications detailed in the reference document.</para>
       </listitem>
     </orderedlist>
+    <sect2>
+      <title>Quality Control Guidelines</title>
+      <variablelist>
+	<title>Definitions</title>
+	<varlistentry>
+	  <term>Article Segmentation</term>
+	  <listitem>
+	    <para>The division of an article or other text across
+	    columns or pages; in digitization, the process of
+	    analyzing these divisions and encoding it in
+	    metadata.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Batch</term>
+	  <listitem>
+	    <para>A segment of the total set of titles processed
+	    by DDD as a unit. Batches are identified and enumerated on
+	    tracking sheets shared by DDD and Princeton.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Entry Operator</term>
+	  <listitem>
+	    <para>DDD staff member responsible for converting raw
+	    image files into required output files using
+	    docWorks.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Issue Metadata</term>
+	<listitem>
+	  <para>The title, volume, issue, date, and page number order
+	  of an issue.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Quality Criteria</term>
+	  <listitem>
+	    <para>The critical requirements metrics and standards as
+	    described here, including accuracy rates and criteria for
+	    acceptance or rejection of work produced.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Quality Control (QC)</term>
+	  <listitem>
+	    <para>The procedures used by DDD to ensure compliance with
+	    the established quality standards.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Quality Evaluation and Acceptance (QEA)</term>
+	  <listitem>
+	    <para>The procedures used by Princeton University to apply
+	    acceptance criteria to work produced by DDD.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>QC Operator</term>
+	  <listitem>
+	    <para>A member of DDD’s quality control team.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Significant Error</term>
+	  <listitem>
+	    <para>A discrepancy between the source copy as represented
+	    on a page image and the computer-readable text output
+	    produced by DDD that is counted when calculating error
+	    rates for compliance with quality standards.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+      <orderedlist>
+	<title>Quality Standards</title>
+
+	<listitem><para>Headlines and bylines will be 99.95% free of
+	significant errors.</para></listitem>
+
+	<listitem><para>Issue metadata will be 99.95% free of
+	significant errors.</para></listitem>
+
+	<listitem><para>Body text (defined as text occurring in
+	articles, editorials and other printed material but not
+	advertisements) will be 90% free of significant
+	errors.</para></listitem>
+
+	<listitem><para>Article segmentation will be 99% free of
+	significant errors.</para></listitem>
+
+	<listitem><para>The XML files produced during digitization
+	will be well-formed and valid against the following schemas
+	where appropriate:</para>
+	<orderedlist>
+	  <listitem><para>http://schema.ccs-gmbh.com/docworks/alto-1-2.xsd</para></listitem>
+	  <listitem><para>http://schema.ccs-gmbh.com/docworks/mets-docWORKS.xsd</para></listitem>
+	  <listitem><para>http://www.w3.org/TR/xlink</para></listitem>
+	  <listitem><para>http://www.loc.gov/mix</para></listitem>
+	  <listitem><para>http://www.w3.org/1999/02/22-rdf-syntax-ns# </para></listitem>
+	</orderedlist>
+	</listitem>
+      </orderedlist>
+
+      <orderedlist>
+	<title>Significant Errors</title>
+	<listitem><para>incorrect characters (e.g., c for e) </para></listitem>
+	<listitem><para>transposed characters (e.g., teh for the) </para></listitem>
+	<listitem><para>missing characters (e.g., tht for that) </para></listitem>
+	<listitem><para>inserted characters (e.g., c a t for cat) </para></listitem>
+      </orderedlist>
+
+      <orderedlist>
+	<title>Non-Significant Errorst</title>
+	<listitem><para>differences in capitalization (gOlD is
+	equivalent to Gold) </para></listitem>
+	<listitem><para>padded spacing (more than one whitespace
+	character when original has only one) </para></listitem>
+	<listitem><para>line breaks</para></listitem>
+      </orderedlist>
+    </sect2>
+    <sect2>
+    <title>Quality Evaluation Guidelines</title>
+    <para>When DDD has completed a batch, it shall submit output to
+    Princeton for ingestion into Princeton's Veridian
+    installation.</para>
+
+    <para>Upon receipt of a batch, Princeton will have 30 days to
+    accept or reject it. Princeton will employ the following
+    procedures to evaluate a batch.</para>
+
+    <procedure>
+      <step>
+	<title>Evaluation of Zoning and Segmentation</title>
+	<para>
+	  Princeton will examine five (5) issues for zoning and
+	  segmentation errors. A zoning or segmentation error shall be
+	  identified using the following criteria:
+	</para>
+	<orderedlist>
+	  <listitem><para>If an article is missing one or more zones, that shall
+	  count as an error.</para></listitem>
+	  <listitem><para>If an article contains one or more zones that are not
+	  part of the article in the original, it shall be counted as an
+	  error.</para></listitem>
+	  <listitem><para>If the sequence of zoned regions is not in the proper
+	  order, it shall count as an error.</para></listitem>
+	</orderedlist>
+      </step>
+    </procedure>
+
+    <para>Princeton will record the results of these examinations in
+    its report. If significant errors are discovered, Princeton and
+    DDD will confer.</para>
+
+    <procedure>
+      <title>Evaluation of Headlines</title>
+      <step>
+	<para>Princeton will draw a random sample of 350 headlines
+	from the batch and measure its accuracy by comparing each
+	headline with its original and recording all significant
+	errors. The accuracy rate of the sample should meet or exceed
+	99.95%.</para>
+      </step>
+    </procedure>
+    <procedure>
+      <title>Evaluation of Body Text</title>
+      <step>
+	<para>Princeton will examine the fifth article in every sample
+	(as above) for errors in the body text, counting the number of
+	significant errors that occur, where significance is as
+	defined above.
+	</para>
+	<para>We shall assume an average article length of 500
+	words. For an accuracy rate of 90% or better an article should
+	therefore contain no more than 50 significant errors.</para>
+	<para>Princeton and DDD shall agree that if more than 5% of
+	the samples from a given batch fail, the batch is not
+	acceptable.</para>
+      </step>
+    </procedure>
+    <procedure>
+      <title>Evaluation of Metadata</title>
+      <step>
+	<para>Princeton will evaluate 1 random 2,000 character
+	sampling of Issue Metadata. If the sample contains more than 1
+	error (i.e., it falls below 99.95%), the issue metadata fails
+	and must be rechecked and resubmitted by DDD.</para>
+      </step>
+    </procedure>
+    <procedure>
+      <title>Evaluation of XML</title>
+      <step>
+	<para>Princeton will not verify XML validity, as docWorks
+	automatically validates the files it produces against the
+	appropriate schemas.</para>
+      </step>
+    </procedure>
+    </sect2>
   </sect1>
   <sect1>
     <title>Communication</title>
