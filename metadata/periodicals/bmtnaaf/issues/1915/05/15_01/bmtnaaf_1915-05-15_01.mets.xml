@@ -78,6 +78,13 @@
 						<titleInfo lang="fre">
 							<title>dessin de A.-D. DE SEGONZAC, sergent au n° d'infanterie</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>A.-D. DE SEGONZAC</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+					
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -114,11 +121,18 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="fre">
-							<title>PAS DE WAGNER A L'HORIZON? dessin de CHAZALVIEL</title>
+							<title>PAS DE WAGNER A L'HORIZON?</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+						<name type="personal">
+							<displayForm>CHAZALVIEL</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>still image</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
 						</language>
@@ -127,24 +141,22 @@
 								<start>5</start>
 							</extent>
 						</part>
-						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c006">
-							<titleInfo lang="fre">
-								<title>PAS DE WAGNER A L'HORIZON? dessin de CHAZALVIEL</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>5</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
+						<genre type="CCS">Illustration</genre>
+						
+
 					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c007">
 						<titleInfo lang="fre">
-							<title>Untitled</title>
+							<nonSort>La</nonSort>
+							<title>Gardienne du Foyer</title>
 						</titleInfo>
+						<name>
+							<displayForm>Jean Marchaud</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -1390,7 +1402,7 @@
 						</div>
 					</div>
 					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="PAS DE WAGNER A L'HORIZON? dessin de CHAZALVIEL">
-						<div ID="L.1.1.2.5.1" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="PAS DE WAGNER A L'HORIZON? dessin de CHAZALVIEL">
+						
 							<div ID="L.1.1.2.5.1.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
@@ -1401,7 +1413,11 @@
 									<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
 								</fptr>
 							</div>
-						</div>
+						
+						
+					</div>
+					<div ID="L.1.1.2.6" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="La Gardienne du Foyer">
+						
 						<div ID="L.1.1.2.5.2" TYPE="Copy">
 							<div ID="L.1.1.2.5.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.2.5.2.1.1" TYPE="Paragraph" ORDER="1">
@@ -1413,8 +1429,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.2.6" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="Untitled">
+						
 						<div ID="L.1.1.2.6.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_CB00001"/>
