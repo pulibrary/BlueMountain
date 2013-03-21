@@ -41,12 +41,11 @@
 	      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaao</recordIdentifier>
 	    </recordInfo>
 	  </relatedItem>
-	  <relatedItem type="constituent" ID="c001">
-	    
+		
+	  <relatedItem type="constituent" ID="c001">   
 	    <titleInfo lang="eng">
 	      <title>[Cover Illustration]</title>
 	    </titleInfo>
-	    
 	    <name type="personal">
 	      <displayForm>A. Walkowitz</displayForm>
 	      <role>
@@ -61,16 +60,34 @@
 	    </part>
 	    <genre type="CCS">Illustration</genre>
 	  </relatedItem>
+		
 	  <relatedItem type="constituent" ID="c002">
 	    <titleInfo lang="eng">
 	      <title>WOMAN</title>
 	    </titleInfo>
 	    <name type="personal">
-	      <displayForm>M.de Zayas</displayForm>
+	      <displayForm>Agnes Ernst</displayForm>
 	      <role>
 		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 	      </role>
 	    </name>
+	  	<typeOfResource>text</typeOfResource>
+	  	<language>
+	  		<languageTerm authority="iso639-2b">eng</languageTerm>
+	  	</language>
+	  	<part>
+	  		<extent unit="page">
+	  			<start>3</start>
+	  			<end>2</end>
+	  		</extent>
+	  	</part>
+	  	<genre type="CCS">TextContent</genre>
+	  </relatedItem>
+		
+	  <relatedItem type="constituent" ID="c002a">
+			<titleInfo lang="eng">
+				<title>I WALKED INTO A MOMENT OF GREATNESS</title>
+			</titleInfo>
 	    <name type="personal">
 	      <displayForm>Katharine N. Rhoades</displayForm>
 	      <role>
@@ -87,54 +104,65 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
+	  </relatedItem>
+		
 	    <relatedItem type="constituent" ID="c003">
 	      <titleInfo lang="eng">
-		<title>April 7—1915</title>
+		<title>[Illustration]</title>
 	      </titleInfo>
+	    	<name type="personal">
+	    		<displayForm>M. de Zayas</displayForm>
+	    		<role>
+	    			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	    		</role>
+	    	</name>
 	      <typeOfResource>still image</typeOfResource>
 	      <part>
 		<extent unit="page">
-		  <start>2</start>
+		  <start>2</start> 
+			<end>3</end>
 		</extent>
 	      </part>
 	      <genre type="CCS">Illustration</genre>
 	    </relatedItem>
-	  </relatedItem>
+		
 	  <relatedItem type="constituent" ID="c004">
 	    <titleInfo lang="eng">
 	      <title>MATERNITY</title>
 	    </titleInfo>
-	    <name type="personal">
-	      <displayForm>DRAWING BY STEICHEN</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
 	    <typeOfResource>text</typeOfResource>
 	    <language>
 	      <languageTerm authority="iso639-2b">eng</languageTerm>
 	    </language>
 	    <part>
 	      <extent unit="page">
-		<start>3</start>
+		<start>4</start>
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
+	  </relatedItem>
+		
 	    <relatedItem type="constituent" ID="c005">
 	      <titleInfo lang="eng">
 		<nonSort>LE</nonSort>
 		<title>COQ GAULOIS</title>
 	      </titleInfo>
+	    	<name type="personal">
+	    		<displayForm>STEICHEN</displayForm>
+	    		<role>
+	    			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	    		</role>
+	    	</name>
 	      <typeOfResource>still image</typeOfResource>
 	      <part>
 		<extent unit="page">
-		  <start>3</start>
+		  <start>4</start>
 		</extent>
 	      </part>
 	      <genre type="CCS">Illustration</genre>
 	    </relatedItem>
-	  </relatedItem>
-	  <relatedItem type="constituent" ID="c006">
+	  
+		<relatedItem type="constituent" ID="c006">
 	    <titleInfo lang="eng">
 	      <title>BEING HUMAN IN NEW YORK</title>
 	    </titleInfo>
@@ -149,6 +177,7 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+		
 	  <relatedItem type="constituent" ID="c007">
 	    <titleInfo lang="eng">
 	      <title>WATCH THEIR STEPS</title>
@@ -159,10 +188,12 @@
 	    </language>
 	    <part>
 	      <extent unit="page">
-		<start>3</start>
+		<start>4</start>
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
+	  </relatedItem>
+		
 	    <relatedItem type="constituent" ID="c008">
 	      <titleInfo lang="eng">
 		<nonSort>A</nonSort>
@@ -177,12 +208,12 @@
 	      <typeOfResource>still image</typeOfResource>
 	      <part>
 		<extent unit="page">
-		  <start>3</start>
+		  <start>4</start>
 		</extent>
 	      </part>
 	      <genre type="CCS">Illustration</genre>
 	    </relatedItem>
-	  </relatedItem>
+		
 	  <relatedItem type="constituent" ID="c009">
 	    <titleInfo lang="eng">
 	      <title>AVE CAESAR IMPERATOR!!! MORITURI TE SALUTANT!</title>
@@ -198,6 +229,7 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+		
 	</mods>
       </xmlData>
     </mdWrap>
@@ -523,7 +555,8 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="WOMAN">
+		
+	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="WOMAN; I WALKED INTO A MOMENT OF GREATNESS">
 	    <div ID="L.1.1.2.2.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
@@ -539,18 +572,19 @@
 		<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00006"/>
 	      </fptr>
 	    </div>
-	    <div ID="L.1.1.2.2.4" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="April 7—1915">
-	      <div ID="L.1.1.2.2.4.1" TYPE="Image">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_CB00001"/>
-		</fptr>
-	      </div>
-	      <div ID="L.1.1.2.2.4.2" TYPE="Caption">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
-		</fptr>
-	      </div>
-	    </div>
+	
+	  	<div ID="L.1.1.2.2.4" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="design by M. de Zayas">
+	  		<div ID="L.1.1.2.2.4.1" TYPE="Image">
+	  			<fptr>
+	  				<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_CB00001"/>
+	  			</fptr>
+	  		</div>
+	  		<div ID="L.1.1.2.2.4.2" TYPE="Caption">
+	  			<fptr>
+	  				<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
+	  			</fptr>
+	  		</div>
+	  		
 	    <div ID="L.1.1.2.2.5" TYPE="Copy">
 	      <div ID="L.1.1.2.2.5.1" TYPE="BodyContent">
 		<div ID="L.1.1.2.2.5.1.1" TYPE="Paragraph" ORDER="1">
@@ -577,6 +611,7 @@
 	      </div>
 	    </div>
 	  </div>
+		
 	  <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c004" LABEL="MATERNITY">
 	    <div ID="L.1.1.2.3.1" TYPE="Head">
 	      <fptr>
@@ -588,18 +623,7 @@
 		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00009"/>
 	      </fptr>
 	    </div>
-	    <div ID="L.1.1.2.3.3" TYPE="Illustration" ORDER="1" DMDID="c005" LABEL="LE COQ GAULOIS">
-	      <div ID="L.1.1.2.3.3.1" TYPE="Image">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00002"/>
-		</fptr>
-	      </div>
-	      <div ID="L.1.1.2.3.3.2" TYPE="Caption">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00017"/>
-		</fptr>
-	      </div>
-	    </div>
+		
 	    <div ID="L.1.1.2.3.4" TYPE="Copy">
 	      <div ID="L.1.1.2.3.4.1" TYPE="BodyContent">
 		<div ID="L.1.1.2.3.4.1.1" TYPE="Paragraph" ORDER="1">
@@ -612,6 +636,20 @@
 	      </div>
 	    </div>
 	  </div>
+  
+		<div ID="L.1.1.2.3.3" TYPE="Illustration" ORDER="1" DMDID="c005" LABEL="LE COQ GAULOIS">
+			<div ID="L.1.1.2.3.3.1" TYPE="Image">
+				<fptr>
+					<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00002"/>
+				</fptr>
+			</div>
+			<div ID="L.1.1.2.3.3.2" TYPE="Caption">
+				<fptr>
+					<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00017"/>
+				</fptr>
+			</div>
+		</div>
+  
 	  <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c006" LABEL="BEING HUMAN IN NEW YORK">
 	    <div ID="L.1.1.2.4.1" TYPE="Head">
 	      <fptr>
@@ -630,26 +668,12 @@
 	      </div>
 	    </div>
 	  </div>
+		
 	  <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c007" LABEL="WATCH THEIR STEPS">
 	    <div ID="L.1.1.2.5.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
 	      </fptr>
-	    </div>
-	    <div ID="L.1.1.2.5.2" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="A BUNCH OF KEYS">
-	      <div ID="L.1.1.2.5.2.1" TYPE="Image">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00001"/>
-		</fptr>
-	      </div>
-	      <div ID="L.1.1.2.5.2.2" TYPE="Caption">
-		<fptr>
-		  <seq>
-		    <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
-		    <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00008"/>
-		  </seq>
-		</fptr>
-	      </div>
 	    </div>
 	    <div ID="L.1.1.2.5.3" TYPE="Copy">
 	      <div ID="L.1.1.2.5.3.1" TYPE="BodyContent">
@@ -670,6 +694,23 @@
 	      </div>
 	    </div>
 	  </div>
+	  	
+	  	<div ID="L.1.1.2.5.2" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="A BUNCH OF KEYS">
+	  		<div ID="L.1.1.2.5.2.1" TYPE="Image">
+	  			<fptr>
+	  				<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00001"/>
+	  			</fptr>
+	  		</div>
+	  		<div ID="L.1.1.2.5.2.2" TYPE="Caption">
+	  			<fptr>
+	  				<seq>
+	  					<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
+	  					<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00008"/>
+	  				</seq>
+	  			</fptr>
+	  		</div>
+	  	</div>
+	  	
 	  <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c009" LABEL="AVE CAESAR IMPERATOR!!! MORITURI TE SALUTANT!">
 	    <div ID="L.1.1.2.6.1" TYPE="Head">
 	      <fptr>
@@ -692,7 +733,9 @@
 	    </div>
 	  </div>
 	</div>
+	</div>
       </div>
-    </div>
+  </div>
   </structMap>
+	
 </mets>
