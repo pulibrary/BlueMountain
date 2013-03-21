@@ -192,19 +192,26 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c011">
-							<titleInfo lang="eng">
-								<title>Untitled</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>1</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
 					</relatedItem>
+					<relatedItem type="constituent" ID="c011">
+						<titleInfo lang="eng">
+							<title>Untitled by Picabia</title>
+						</titleInfo>
+						<name type="personal">
+							<displayForm>Picabia</displayForm>
+							<role>
+							<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						</role>
+						</name>
+						<typeOfResource>still image</typeOfResource>
+						<part>
+							<extent unit="page">
+								<start>1</start>
+							</extent>
+						</part>
+						<genre type="CCS">Illustration</genre>
+					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="eng">
 							<title>PUBLIC SPIRIT:</title>
@@ -252,8 +259,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c015">
 						<titleInfo lang="eng">
-							<title>Katharine N. Rhoades</title>
+							<title>Untitled by Katharine N. Rhoades</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Katharine N. Rhoades</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								<roleTerm></roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -264,11 +278,20 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c016">
 						<titleInfo lang="eng">
-							<title>M.de Zayas</title>
+							<title>Mental Reactions</title>
 						</titleInfo>
-						<titleInfo lang="eng">
-							<title>Mental Reactions Agnes Ernst Meyer</title>
-						</titleInfo>
+						<name type="personal">
+							<displayForm>Agnes Ernst Meyer</displayForm>
+							<role>
+								<roleTerm type="code" authority="macrelator">cre</roleTerm>
+							</role>
+						</name>
+						<name type="personal">
+							<displayForm>M.de Zayas</displayForm>
+							<role>
+								<roleTerm type="code" authority="macrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -279,7 +302,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c017">
 						<titleInfo lang="eng">
-							<title>• CM rH • o Z • CO _4&gt; CQ U« (0 &lt;y &gt; "3 CQ</title>
+							<title>Bellovees Fatales. No. 12</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -773,13 +796,7 @@
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00024"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.10.2" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="Untitled">
-							<div ID="L.1.1.2.10.2.1" TYPE="Image">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
-								</fptr>
-							</div>
-						</div>
+					
 						<div ID="L.1.1.2.10.3" TYPE="Copy">
 							<div ID="L.1.1.2.10.3.1" TYPE="BodyContent">
 								<div ID="L.1.1.2.10.3.1.1" TYPE="Paragraph" ORDER="1">
@@ -797,6 +814,13 @@
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div ID="L.1.1.2.10.2" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="Untitled by Picbia">
+						<div ID="L.1.1.2.10.2.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
+							</fptr>
 						</div>
 					</div>
 					<div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c012" LABEL="PUBLIC SPIRIT:">
@@ -856,7 +880,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.14" TYPE="Illustration" ORDER="1" DMDID="c015" LABEL="Katharine N. Rhoades">
+					<div ID="L.1.1.2.14" TYPE="Illustration" ORDER="1" DMDID="c015" LABEL="Untitled by Katharine N. Rhoades">
 						<div ID="L.1.1.2.14.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_CB00002"/>
@@ -868,7 +892,7 @@
 							</fptr>
 						</div>
 					</div>
-					<div ID="L.1.1.2.15" TYPE="Illustration" ORDER="2" DMDID="c016" LABEL="M.de Zayas Mental Reactions Agnes Ernst Meyer">
+					<div ID="L.1.1.2.15" TYPE="Illustration" ORDER="2" DMDID="c016" LABEL="Mental Reactions by Agnes Ernst Meyer; design by M.de Zayas">
 						<div ID="L.1.1.2.15.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_CB00001"/>
@@ -883,7 +907,7 @@
 							</fptr>
 						</div>
 					</div>
-					<div ID="L.1.1.2.16" TYPE="TextContent" ORDER="15" DMDID="c017" LABEL='• CM rH • o Z • CO _4&gt; CQ U« (0 &lt;y &gt; "3 CQ'>
+					<div ID="L.1.1.2.16" TYPE="TextContent" ORDER="15" DMDID="c017" LABEL='Bellovees Fatales. No. 12'>
 						<div ID="L.1.1.2.16.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00002"/>
