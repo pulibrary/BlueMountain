@@ -10,7 +10,7 @@ import module namespace config="http://exist-db.org/xquery/apps/config" at "conf
 declare %templates:wrap function app:catEntry($node as node(), $model as map(*), $bmtnid as xs:string?) {
     let $entry :=
         if ($bmtnid) then
-            collection($config:data-root)/mods:mods[./mods:identifier = "urn:PUL:bluemountain:" || $bmtnid]
+            collection($config:data-root)//mods:mods[./mods:identifier = "urn:PUL:bluemountain:" || $bmtnid]
         else
             ()
     return map:entry("title", $entry)
@@ -26,7 +26,7 @@ declare
     %templates:wrap
 function app:titles($node as node(), $model as map(*)) as map(*) {
     let $titleSet :=
-        for $rec in collection($config:data-root)/mods:mods
+        for $rec in collection($config:data-root)//mods:mods
         where empty($rec/mods:relatedItem[@type='host'])
         order by upper-case($rec/mods:titleInfo[empty(@type)]/mods:title/string())
         return $rec
@@ -81,7 +81,7 @@ declare
     %templates:wrap
 function app:issues($node as node(), $model as map(*)) {
     let $titleRecId := $model("title")/mods:recordInfo/mods:recordIdentifier
-    let $issues := collection($config:data-root)/mods:mods[./mods:relatedItem[@type='host']/mods:recordInfo/mods:recordIdentifier
+    let $issues := collection($config:data-root)//mods:mods[./mods:relatedItem[@type='host']/mods:recordInfo/mods:recordIdentifier
         = $titleRecId]
         return map:entry("issues", $issues)
 };
@@ -204,7 +204,7 @@ declare
 function app:issue($node as node(), $model as map(*), $issueid as xs:string?) {
     let $issue :=
         if ($issueid) then
-            collection($config:data-root)/mods:mods[./mods:identifier = $issueid]
+            collection($config:data-root)//mods:mods[./mods:identifier = $issueid]
         else
             ()
     return map:entry("issue", $issue)
@@ -255,7 +255,7 @@ function app:print-toc($node as node(), $model as map(*)) {
     for $item at $pos in $model("issue-constituents")
     let $title := 
         if ($item/mods:titleInfo) then
-            app:_format-title($item/mods:titleInfo)
+            app:_format-title($item/mods:titleInfo[1])
         else "[untitled]"
     let $names := for $n in $item/mods:name return app:encode-name($n)
     let $rank := if ($pos mod 2 = 0) then "even" else "odd"
