@@ -87,12 +87,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="fre">
-							<title>dessin de lucien mainssieux</title>
-						</titleInfo>
-						<titleInfo lang="fre">
 							<nonSort>la</nonSort>
 							<title>petite Germaine Fischel dansant à la cantine de guerre des artistes, au Lapin agile</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>lucien mainssieux</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -184,6 +187,9 @@
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c009">
+							<titleInfo lang="fre">
+								<title>PRIONS</title>
+							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -197,7 +203,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="fre">
-								<title>Untitled</title>
+								<title>LITANIES DE SAINTE ANASTASIE</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -209,10 +215,11 @@
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
-							<relatedItem type="constituent" ID="c011">
+						<relatedItem type="constituent" ID="c011">
 								<titleInfo lang="fre">
-									<title>Untitled</title>
+									<title>[Advertisement]</title>
 								</titleInfo>
+							 	<genre>advertisement</genre>
 								<typeOfResource>still image</typeOfResource>
 								<part>
 									<extent unit="page">
@@ -220,7 +227,7 @@
 									</extent>
 								</part>
 								<genre type="CCS">Illustration</genre>
-							</relatedItem>
+						</relatedItem>
 						</relatedItem>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
@@ -228,9 +235,12 @@
 							<nonSort>La</nonSort>
 							<title>mer de MARMARA</title>
 						</titleInfo>
-						<titleInfo lang="fre">
-							<title>dessin de FAUCONNET.</title>
-						</titleInfo>
+						<name type="personal">
+							<displayForm>FAUCONNET</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -263,11 +273,20 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c014">
 						<titleInfo lang="fre">
-							<title>TYPES DE LA GRANDE GUERRE N° I</title>
+							<title>TYPES DE LA GRANDE GUERRE N° I: LE MÉTÈQUE</title>
 						</titleInfo>
-						<titleInfo lang="fre">
-							<title>dissin de L. A. MOREAU LE MÉTÈQUE</title>
-						</titleInfo>
+						<name type="personal">
+							<displayForm>L. A. MOREAU</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<name type="personal">
+							<displayForm>Jupapards</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -280,12 +299,6 @@
 						<titleInfo lang="fre">
 							<title>poussières</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Jupapards</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -1511,18 +1524,18 @@
 								</div>
 							</div>
 						</div>
-						<div ID="L.1.1.2.7.5" TYPE="TextContent" ORDER="3" DMDID="c010" LABEL="Untitled">
+						<div ID="L.1.1.2.7.5" TYPE="TextContent" ORDER="3" DMDID="c010" LABEL="LITANIES DE SAINTE ANASTASIE">
 							<div ID="L.1.1.2.7.5.1" TYPE="Subhead">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00006"/>
 								</fptr>
 							</div>
-							<div ID="L.1.1.2.7.5.2" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="Untitled">
+						<div ID="L.1.1.2.7.5.2" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="Page 8 Advertisement">
 								<div ID="L.1.1.2.7.5.2.1" TYPE="Image">
 									<fptr>
 										<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
 									</fptr>
-								</div>
+						</div>
 							</div>
 							<div ID="L.1.1.2.7.5.3" TYPE="Copy">
 								<div ID="L.1.1.2.7.5.3.1" TYPE="BodyContent">
@@ -1575,7 +1588,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.8" TYPE="Illustration" ORDER="1" DMDID="c012" LABEL="La mer de MARMARA dessin de FAUCONNET.">
+					<div ID="L.1.1.2.8" TYPE="Illustration" ORDER="1" DMDID="c012" LABEL="La mer de MARMARA">
 						<div ID="L.1.1.2.8.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_CB00001"/>
@@ -1613,7 +1626,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.10" TYPE="Illustration" ORDER="1" DMDID="c014" LABEL="TYPES DE LA GRANDE GUERRE N° I dissin de L. A. MOREAU LE MÉTÈQUE">
+					<div ID="L.1.1.2.10" TYPE="Illustration" ORDER="1" DMDID="c014" LABEL="TYPES DE LA GRANDE GUERRE N° I: LE MÉTÈQUE">
 						<div ID="L.1.1.2.10.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_CB00001"/>
