@@ -1,0 +1,284 @@
+#+TITLE:     Blue Mountain Bound Volumes
+#+AUTHOR:    Cliff Wulfman
+#+EMAIL:     cwulfman@Princeton.EDU
+#+DATE:      2013-04-15 Mon
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* Dealing with Bound Volumes in Blue Mountain
+** Introduction
+   After several months of processing magazines with the docWorks
+   configuration CCS devised for us, we have discovered that
+   configuration is not sufficient for all the Blue Mountain
+   materials.  We need to extend the configuration, or create a new
+   one, to handle magazine issues that exist in bound form.
+
+   Up until now, Blue Mountain's policy was to treat the /issue/ as
+   the atomic entity, or primary object.  More specifically, the
+   metadata for Blue Mountain centered on the issue: our MODS documents
+   (descriptive metadata records) were /issue-level/, and the
+   METS/ALTO documents we contracted with DDD to produce described and
+   constituted digital realizations of issues.  We were aware that for
+   a number of our titles, the physical items held by the PUL were
+   parts of bound volumes, but we assumed we could disbind those
+   volumes, either physically or virtually, and retain the
+   issue-centered nature of our archive without harm.
+
+   That assumption was wrong, for several reasons.  The relationships
+   among the physical objects, the digital photographs of them, and the
+   resources created by Blue Mountain are not entirely clear, but we
+   have always been uneasy about creating a derivational/generational
+   gap between the physical items that were photographed and the
+   virtual objects Blue Mountain produced.  This gap, and how a project
+   chooses to treat it, distinguishes among digital reproductions and
+   digital editions.
+
+   We also believed we could safely reconstruct issues /as issued/
+   without distortion: that is, we assumed that binding was a secondary
+   format imposed on singly-issued items.  This assumption has proven
+   false: while it is true that some issues were acquired separately by
+   the library (or the private collector) and then bound (for
+   convenience, for preservation, etc.), it is also true that
+   publishers often printed (or reprinted) issues already bound
+   together, not infrequently with additional material that had not
+   been published serially (indexes, for example, or prefaces).  These
+   latter sort of bound volumes are first-class bibliographic
+   entities, not simple, decomposable collections.
+
+   We have concluded, therefore, that Blue Mountain's policy of
+   virtual disbinding was an error.  None of the materials already
+   digitized by Blue Mountain have been virtually disbound, so there
+   is little harm done.  But there are practical ramifications to
+   designing and creating new kinds of virtual objects for the Blue
+   Mountain collection:
+
+    - A new docWorks configuration must be designed and implemented,
+      with the help of CCS;
+    - DDD must be trained to use it;
+    - Veridian must be configured to handle it.
+
+** Blue Mountain Objects
+   - Free Issues :: the status quo: digitizations of free-standing
+                    issues, usually with covers.
+   - Bound Volumes :: a set of issues bound together, usually
+                      reformatted (covers and advertisements left
+                      out), and often containing supplementary
+                      material (indexes, prefaces, additional front-
+                      and back-matter).
+   - Bound Issues :: The issues collected in a bound volume.
+
+*** Bound Volumes
+**** DmdSec
+     A MODS record whose constitutents are pointers to issue-level
+     MODS records. We now make use of the /series/ type of
+     relatedItem to indicate what magazine the volume contains. (NB:
+     we must retrospectively modify all the MODS records we've
+     created for the unbound issues to use this element.)
+
+     #+BEGIN_SRC xml
+       <mdWrap MDTYPE="MODS">
+         <xmlData>
+           <mods xmlns="http://www.loc.gov/mods/v3" ID="v">
+             <recordInfo>
+               <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc_1873_01</recordIdentifier>
+             </recordInfo>
+             <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc_1873_01</identifier>
+             <titleInfo>
+               <nonSort>La</nonSort>
+               <title>Chronique Musicale</title>
+             </titleInfo>
+       
+             <relatedItem type="series" ID="v.series" xlink:href="urn:PUL:bluemountain:bmtnabc">
+               <recordInfo>
+                 <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc</recordIdentifier>
+               </recordInfo>
+               <mods:part type="volume">
+                 <mods:detail type="volume">
+                   <mods:number>1</mods:number>
+                 </mods:detail>
+               </mods:part>
+             </relatedItem>
+       
+             <mods:relatedItem ID="v.issue1" type="constituent"
+                               xlink:href="urn:PUL:bluemountain:bmtnabc_1873-07-01_01">
+               <mods:recordInfo>
+                 <mods:recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc_1873-07-01_01</mods:recordIdentifier>
+               </mods:recordInfo>
+               <mods:part type="issue" order="1"/>
+             </mods:relatedItem>
+       
+             <mods:relatedItem ID="v.issue2" type="constituent"
+                               xlink:href="urn:PUL:bluemountain:bmtnabc_1873-07-15_01">
+               <mods:recordInfo>
+                 <mods:recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc_1873-07-15_01</mods:recordIdentifier>
+               </mods:recordInfo>
+               <mods:part type="issue" order="2"/>
+             </mods:relatedItem>
+     #+END_SRC
+
+**** FileSec
+     The <fileSec> contains pointers to all the files comprising the
+     digital object: all the image files and official derivations;
+     the ALTO files; PDFs.
+
+**** Physical StructMap
+     Represents the physical makeup of the bound volume:
+
+     #+BEGIN_SRC xml
+       <structMap TYPE="Physical">
+         <div TYPE="BoundVolume">
+           <div TYPE="Binding"/>
+           <div TYPE="FrontMatter"/>
+           <div TYPE="BodyMatter"/>
+           <div TYPE="BackMatter"/>
+           <div TYPE="Binding"/>
+         </div>
+       </structMap>
+     #+END_SRC
+
+***** <div TYPE="Binding" />
+      Represents the binding of the volume
+
+      #+BEGIN_SRC xml
+        <div TYPE="Binding">
+          <div TYPE="OuterUpper"/>
+          <div TYPE="InnerUpper"/>
+          <div TYPE="EndPaper" />
+          <div TYPE="Blank" />
+        </div>
+
+        <!-- the contents of the volume go here -->
+
+        <div TYPE="Binding">
+          <div TYPE="Blank" />
+          <div TYPE="EndPaper" />
+          <div TYPE="InnerLower"/>
+          <div TYPE="OuterLower"/>
+        </div>
+      #+END_SRC
+
+      This degree of div-type specificity may be overkill; it may be
+      enough to designate "Cover" and "Page":
+
+      #+BEGIN_SRC xml
+        <div TYPE="Binding">
+          <div TYPE="Cover"/>
+          <div TYPE="Cover"/>
+          <div TYPE="Page" />
+          <div TYPE="Page" />
+        </div>      
+      #+END_SRC
+***** <div TYPE="FrontMatter" />
+      Contains a set of pages comprising the front matter of the
+      volume not part of any issue -- title pages, dedications, etc.
+***** <div TYPE="BodyMatter" />
+      Contains the main contents of the volume, usually magazine
+      issues.  In order to keep the size of the volume METS
+      manageable, a <mets:mptr/> element is used to point to an
+      external METS document representing each issue, rather than
+      representing the issues explicitly in line.
+
+      #+BEGIN_SRC xml
+        <div TYPE="BodyMatter" LABEL="Body Matter" ORDER=">
+          <!-- First issue -->
+          <div TYPE="BoundIssue" DMDID="v.issue1" LABEL="Issue 1" ORDER="1">
+            <div TYPE="Page" LABEL="Page" ORDER="1">
+              <fptr FILEID="img11"/>
+            </div>
+            <div TYPE="Page" LABEL="Page" ORDER="2">
+              <fptr FILEID="img12"/>
+            </div>
+            <div TYPE="Page" LABEL="Page" ORDER="3">
+              <fptr FILEID="img13"/>
+            </div>
+          </div>
+          <!-- Second issue -->
+          <div TYPE="BoundIssue" DMDID="v.issue1" LABEL="Issue 1" ORDER="2">
+            <div TYPE="Page" LABEL="Page" ORDER="1">
+              <fptr FILEID="img11"/>
+            </div>
+            <div TYPE="Page" LABEL="Page" ORDER="2">
+              <fptr FILEID="img12"/>
+            </div>
+            <div TYPE="Page" LABEL="Page" ORDER="3">
+              <fptr FILEID="img13"/>
+            </div>
+          </div>
+          <!-- remaining issues -->
+        </div>
+        
+      #+END_SRC
+***** <div TYPE="BackMatter" />
+      Contains a set of pages comprising the back matter of the
+      volume not part of any issue -- indexes, etc.
+**** Logical StructMap
+     Not sure yet what to do with the Logical StructMap: it should
+     almost certainly be based on <mptr>s.
+
+*** Bound Issues
+    The typical content of a Bound Volume.
+**** DmdSec
+     A MODS record describing the issue.  It includes a <relatedItem
+     type="series"/> to indicate the magazine, and a <relatedItem
+     type="host"/> to indicate the physical volume containing it.
+
+     #+BEGIN_SRC xml
+       <dmdSec ID="dmd1">
+         <mdWrap MDTYPE="MODS">
+           <xmlData>
+             <mods xmlns="http://www.loc.gov/mods/v3" ID="issue">
+               <recordInfo>
+                 <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc_1873-07-01_01</recordIdentifier>
+               </recordInfo>
+               <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc_1873-07-01_01</identifier>
+               <titleInfo>
+                 <nonSort>La</nonSort>
+                 <title>Chronique Musicale</title>
+               </titleInfo>
+       
+               <relatedItem type="series" ID="i.series" xlink:href="urn:PUL:bluemountain:bmtnabc">
+                 <recordInfo>
+                   <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc</recordIdentifier>
+                 </recordInfo>
+                 <part type="issue">
+                   <detail type="volume">
+                     <number>1</number>
+                   </detail>
+                   <detail type="issue">
+                     <number>1</number>
+                   </detail>
+                 </part>
+               </relatedItem>
+       
+               <relatedItem type="host" xlink:href="urn:PUL:bluemountain:bmtnabc_1873_01">
+                 <recordInfo>
+                   <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc_1873_01</recordIdentifier>
+                 </recordInfo>
+                 <part type="issue">
+                   <detail type="issue">
+                     <number>1</number>
+                   </detail>
+                 </part>
+               </relatedItem>
+       
+               <relatedItem type="constituent" ID="c1">
+                 <titleInfo>
+                   <title>Préface</title>
+                 </titleInfo>
+                 <name>
+                   <displayForm>Arthur Heulhard</displayForm>
+                   <role>
+                     <roleTerm type="code">cre</roleTerm>
+                   </role>
+                 </name>
+               </relatedItem>
+     #+END_SRC
+*** Free Issues
