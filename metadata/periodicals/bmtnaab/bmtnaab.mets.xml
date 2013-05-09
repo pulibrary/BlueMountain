@@ -1,37 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaab">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaab</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaab">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaab</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaab">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaab">
             
-                        <dc:title>Action</dc:title>
+            <dc:title>Action</dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnaab"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  <dmdSec ID="dmd1">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnaab"/>
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3">
+	  
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaab</identifier>
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaab</recordIdentifier>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4545005</recordOrigin>
+	    <languageOfCataloging>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+	  
+	  <titleInfo>
+	    <title>Action</title>
+	  </titleInfo>
+	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/114964792">
+	    <namePart type="family">Fels</namePart>
+	    <namePart type="given">Florent</namePart>
+	    <namePart type="date">1891-1977</namePart>
+	    <role>
+	      <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
+	    </role>
+	  </name>
+	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/68935531">
+	    <namePart type="family">Sauvage</namePart>
+	    <namePart type="given">Marcel</namePart>
+	    <namePart type="date">1895-1988</namePart>
+	    <role>
+	      <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
+	    </role>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo script="Latn">
+	    <place>
+	      <placeTerm type="text">Paris</placeTerm>
+	    </place>
+	    <publisher>Action</publisher>
+	    <dateIssued>1920-1922</dateIssued>
+	    <dateIssued encoding="marc" point="start">1920</dateIssued>
+	    <dateIssued encoding="marc" point="end">1922</dateIssued>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <extent>3 v. : ill. ; 22-24 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">1. année, no 1 (févr. 1920)-3. année (mars-avril 1922)</note>
+	  <note>"Directeurs, Florent Fels et Marcel Sauvage".</note>
+	  <note>Title from cover.</note>
+	  <note>"Cahiers individualistes de philosophie et d'art."</note>
+	  <subject authority="lcsh">
+	    <topic>Arts, French</topic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <location>
+	    <physicalLocation type="text">Princeton University. Library.</physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>sax</subLocation>
+		<shelfLocator>NX2 .A27</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>
