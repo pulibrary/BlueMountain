@@ -1,784 +1,764 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 version="5.0">
-  <info>
-    <title>Statement of Work</title>
-    <subtitle>METS/ALTO Production for Phase I of the Blue Mountain
-    Project</subtitle>
-    <author>
-      <orgname>Princeton University Library</orgname>
-    </author>
-    <revhistory>
-      <revision>
-	<date>February 21, 2013</date>
-	<authorinitials>CEW</authorinitials>
-	<revremark>First circulating draft.</revremark>
-      </revision>
-    </revhistory>
-    <abstract>
-      <para>The Statement of Work agreement between Princeton
-      University Library (PUL) and Digital Divide Data (DDD) for the
-      remaining portion of the Blue Mountain Project, Phase I. It
-      supercedes all prior statements of work and production
-      schedules, whether produced by DDDD or by PUL, in whatever
-      form.</para>
-    </abstract>
-  </info>
-  <sect1>
-    <title>Rationale</title>
+ version="5.0">
+ <info>
+  <title>Statement of Work</title>
+  <subtitle>METS/ALTO Production for Phase I of the Blue Mountain Project</subtitle>
+  <author>
+   <orgname>Princeton University Library</orgname>
+  </author>
+  <revhistory>
+   <revision>
+    <date>February 21, 2013</date>
+    <authorinitials>CEW</authorinitials>
+    <revremark>First circulating draft.</revremark>
+   </revision>
+   <revision>
+    <date>May 17, 2013</date>
+    <authorinitials>CEW</authorinitials>
+    <revremark>Second circulating draft.</revremark>
+   </revision>
+  </revhistory>
+  <abstract>
+   <para>The Statement of Work agreement between Princeton University Library (PUL) and Digital
+    Divide Data (DDD) for the remaining portion of the Blue Mountain Project, Phase I. It supercedes
+    all prior statements of work and production schedules, whether produced by DDD or by PUL, in
+    whatever form.</para>
+  </abstract>
+ </info>
+ <sect1>
+  <title>Rationale</title>
 
-    <para> The total page count for Blue Mountain, Phase I is
-    approximately 92,305. The grant cycle for Phase I ends on
-    September 1, 2014, and production should be completed well before
-    then. The following schedule, then, is based on 7 two-month
-    production cycles for Digital Divide Data, where a cycle is
-    defined in the plan of work below. </para>
-  </sect1>
+  <para>The total page count for Blue Mountain, Phase I is approximately 92,305. The grant cycle for
+   Phase I ends on September 1, 2014, and production should be completed well before then. The
+   following schedule, then, is based on 7 two-month production cycles for Digital Divide Data,
+   where a cycle is defined in the plan of work below. </para>
+ </sect1>
 
-  <sect1>
-    <title>Reference Documents</title>
-    <para> The Blue Mountain Project has detailed its policies,
-    requirements, and formats in a Reference Document, maintained and
-    distributed on the wiki at the Blue Mountain Project's GitHub
-    portal <link
+ <sect1>
+  <title>Reference Documents</title>
+  <para> The Blue Mountain Project has detailed its policies, requirements, and formats in a series
+   of reference documents maintained and distributed on the <link
+    xlink:href="https://github.com/pulibrary/BlueMountain/wiki">Blue Mountain wiki</link> at the
+   Blue Mountain Project's GitHub portal <link
     xlink:href="https://github.com/pulibrary/BlueMountain"
     >https://github.com/pulibrary/BlueMountain</link>. </para>
-  </sect1>
+ </sect1>
 
-  <sect1>
-    <title>Plan of Work</title>
-    <para>The Work shall be divided into discrete units (hereafter
-    referred to as batches, deliveries, or tranches), as defined in
-    the section below.  Processing of each unit shall follow this
-    procedure:
+ <sect1>
+  <title>Plan of Work</title>
+  <para>The Work shall be divided into discrete units (hereafter referred to as batches, deliveries,
+   or tranches), as defined in the section below. Processing of each unit shall follow this
+   procedure: </para>
+
+  <procedure>
+   <title>Processing Procedure</title>
+
+   <step>
+    <para>For each unit, PUL shall provide DDD with the following items:</para>
+    <itemizedlist>
+     <listitem>
+      <formalpara>
+       <title>LZW-Compressed TIFF Files</title>
+       <para>For each title, PUL shall provide image files in the format specified in the reference
+        document. PUL shall arrange these image files into systems of directories (folders)
+        organized by date of publication, as specified in the reference document. Princeton shall
+        make every reasonable effort to ensure these issue sets are accurate and complete. If, upon
+        DDD's inspection at receipt, there are missing pages, duplicate pages, or other
+        directory-level or file-level anomalies which impede or otherwise interfere with DDD's
+        subsequent processing of the materials, DDD shall inform Princeton immediately for remedy.
+        Princeton shall not be responsible for redundant work performed by DDD in remedy of such
+        anomalies. These page-image files shall be delivered via one of two media, subject to
+        negotiation: <orderedlist>
+         <listitem>
+          <para>File transfer via FTP. This is preferred. Princeton shall provide an FTP portal for
+           this purpose.</para>
+         </listitem>
+
+         <listitem>
+          <para>Portable hard drive, shipped to DDD in Cambodia via FedEx. If the hard drive option
+           is chosen, DDD will absorb the cost of shipping.</para>
+         </listitem>
+        </orderedlist>
+       </para>
+      </formalpara>
+     </listitem>
+     <listitem>
+      <formalpara>
+       <title>Title-Specific Markup Policies</title>
+       <para>For each title, PUL shall provide the following: <orderedlist>
+         <listitem>
+          <para>A title-specific markup addendum clarifying unusual zoning and structural
+           features;</para>
+         </listitem>
+         <listitem>
+          <para>A sample copy (in PDF format) marked up according to the markup policy;</para>
+         </listitem>
+         <listitem>
+          <para>A marked up copy of any issue(s) deviating substantially from either the general or
+           title-specific markup policies.</para>
+         </listitem>
+        </orderedlist> DDD shall work with PUL to produce these items. Modifications to the markup
+        instructions or changes to the Blue Mountain docWorks configuration must be completed before
+        DDD begins work on the batch. </para>
+
+      </formalpara>
+     </listitem>
+     <listitem>
+      <formalpara>
+       <title>Descriptive Metadata for each Issue</title>
+       <para>PUL shall prepare provide title, volume and issue numbers and labels, dates of
+        publication, and the identifiers required by Blue Mountain as described in the reference
+        documentation. PUL will deliver this metadata in MODS format, as described in the reference
+        documentation (The Metadata Store). PUL will maintain the metadata store in the Blue
+        Mountain Github repository; DDD shall be responsible for retrieving these files from the
+        Blue Mountain GitHub repository and for updating their local copies should changes become
+        necessary after production of a batch begins.</para>
+      </formalpara>
+     </listitem>
+    </itemizedlist>
+   </step>
+   <step>
+    <para> DDD shall process the page images and descriptive metadata into METS/ALTO, JPEG2000, and
+     PDF outputs (the PRODUCT) according to the Blue Mountain docWorks configuration. </para>
+   </step>
+   <step>
+    <para> DDD shall deliver the Product to Princeton via one of the authorized transmission media,
+     as specified above. </para>
+   </step>
+   <step>
+    <para> DDD shall issue an invoice to Princeton for EXACTLY the work performed in fulfillment of
+     this batch. The Blue Mountain Project will not accept invoices that fail to specify, in detail,
+     the work being billed, or that bill for work that spans discrete batches, or that entail work
+     done for other Princeton-related projects. </para>
+   </step>
+   <step>
+    <para>Princeton shall ingest the Product into its content-management system and the Veridian
+     content-delivery system. Princeton shall evaluate the Product, in its raw form and in its
+     deployed form, and shall notify DDD in a timely fashion of any anomalies outside the tolerances
+     set forth below. </para>
+   </step>
+   <step>
+    <para> Princeton shall have 30 days to request corrections. At the end of 30 days, Princeton
+     shall either (a) accept the work and pay the invoice; or (b) reject the work and delete it from
+     its systems. </para>
+   </step>
+  </procedure>
+ </sect1>
+ <sect1>
+  <title>Schedule of Work</title>
+  <para> The schedule shall be maintained as a set of milestones in the Project's Goplan tracking
+   system. </para>
+
+ </sect1>
+ <sect1>
+  <title>Acceptance Criteria</title>
+  <orderedlist>
+   <listitem>
+    <para> METS/ALTO data will meet the following criteria: <orderedlist>
+      <listitem>
+       <para>All identifiers are present and accurate.</para>
+      </listitem>
+      <listitem>
+       <para>The MODS descriptive metadata meets the specifications detailed in the reference
+        document.</para>
+      </listitem>
+      <listitem>
+       <para>The technical metadata is accurate, and conforms with the specifications detailed in
+        the reference document.</para>
+      </listitem>
+      <listitem>
+       <para>The file data (the fileSec) conforms with the specifications.</para>
+      </listitem>
+      <listitem>
+       <para>The logical and physical structMap elements are consistent with the docWorks
+        configuration AND conform with the specifications outlined in the reference document and any
+        markup policies agreed to by both parties.</para>
+      </listitem>
+     </orderedlist>
     </para>
+   </listitem>
+   <listitem>
+    <para>OCR accuracy meets or exceeds the standards established by agreement among the
+     parties.</para>
+   </listitem>
+   <listitem>
+    <para>All image derivatives conform with the specifications detailed in the reference
+     document.</para>
+   </listitem>
+   <listitem>
+    <para>All PDF derivatives conform with the specifications detailed in the reference
+     document.</para>
+   </listitem>
+   <listitem>
+    <para>All file names, directory names, and general organization of files as delivered conform
+     with the specifications detailed in the reference document.</para>
+   </listitem>
+  </orderedlist>
+  <sect2>
+   <title>Quality Control Guidelines</title>
+   <variablelist>
+    <title>Definitions</title>
+    <varlistentry>
+     <term>Article Segmentation</term>
+     <listitem>
+      <para>The division of an article or other text across columns or pages; in digitization, the
+       process of analyzing these divisions and encoding it in metadata.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Batch</term>
+     <listitem>
+      <para>A segment of the total set of titles processed by DDD as a unit. Batches are identified
+       and enumerated on tracking sheets shared by DDD and Princeton.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Entry Operator</term>
+     <listitem>
+      <para>DDD staff member responsible for converting raw image files into required output files
+       using docWorks.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Issue Metadata</term>
+     <listitem>
+      <para>The title, volume, issue, date, and page number order of an issue.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Quality Criteria</term>
+     <listitem>
+      <para>The critical requirements metrics and standards as described here, including accuracy
+       rates and criteria for acceptance or rejection of work produced.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Quality Control (QC)</term>
+     <listitem>
+      <para>The procedures used by DDD to ensure compliance with the established quality
+       standards.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Quality Evaluation and Acceptance (QEA)</term>
+     <listitem>
+      <para>The procedures used by Princeton University to apply acceptance criteria to work
+       produced by DDD.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>QC Operator</term>
+     <listitem>
+      <para>A member of DDD’s quality control team.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Significant Error</term>
+     <listitem>
+      <para>A discrepancy between the source copy as represented on a page image and the
+       computer-readable text output produced by DDD that is counted when calculating error rates
+       for compliance with quality standards.</para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
 
-    <procedure>
-      <title>Processing Procedure</title>
+   <orderedlist>
+    <title>Quality Standards</title>
 
-      <step>
-	<para>For each unit, PUL shall provide DDD with the following
-	items:</para>
-	<itemizedlist>
-	  <listitem>
-	    <formalpara>
-	      <title>LZW-Compressed TIFF Files</title>
-	      <para>For each title, PUL shall provide image files in the
-	      format specified in the reference document. PUL shall
-	      arrange these image files into systems of directories
-	      (folders) organized by date of publication, as specified in
-	      the reference document. Princeton shall make every
-	      reasonable effort to ensure these issue sets are accurate
-	      and complete. If, upon DDD's inspection at receipt, there
-	      are missing pages, duplicate pages, or other directory-level
-	      or file-level anomalies which impede or otherwise interfere
-	      with DDD's subsequent processing of the materials, DDD shall
-	      inform Princeton immediately for remedy. Princeton shall not
-	      be responsible for redundant work performed by DDD in remedy
-	      of such anomalies.  These page-image files shall be
-	      delivered via one of two media, subject to negotiation:
+    <listitem>
+     <para>Headlines and bylines will be 99.95% free of significant errors.</para>
+    </listitem>
 
-	      <orderedlist>
-		<listitem><para>File transfer via Box.com.  This is
-		preferred.</para></listitem>
-		
-		<listitem><para>Portable hard drive, shipped to DDD in
-		Cambodia via FedEx.  If the hard drive option is chosen,
-		DDD will absorb the cost of shipping.</para></listitem>
-	      </orderedlist>
-	      </para>
-	    </formalpara>
-	  </listitem>
-	  <listitem>
-	    <formalpara>
-	      <title>Title-Specific Markup Policies</title>
-	      <para>For each title, PUL shall provide the following:
-	      <orderedlist>
-		<listitem>
-		  <para>A title-specific markup addendum clarifying
-		  unusual zoning and structural features;</para>
-		</listitem>
-		<listitem>
-		  <para>A sample copy (in PDF format) marked up according
-		  to the markup policy;</para>
-		</listitem>
-		<listitem>
-		  <para>A marked up copy of any issue(s) deviating
-		  substantially from either the general or title-specific
-		  markup policies.</para>
-		</listitem>
-	      </orderedlist>
-	      DDD shall work with PUL to produce these items.
-	      Modifications to the markup instructions or changes to
-	      the Blue Mountain docWorks configuration must be
-	      completed before DDD begins work on the batch.
-	      </para>
+    <listitem>
+     <para>Issue metadata will be 99.95% free of significant errors.</para>
+    </listitem>
 
-	    </formalpara>
-	  </listitem>
-	  <listitem>
-      	    <formalpara>
-	      <title>Descriptive Metadata for each Issue</title>
-	      <para>PUL shall prepare provide title, volume and issue
-	      numbers and labels, dates of publication, and the
-	      identifiers required by Blue Mountain as described in the
-	      reference document.  PUL will deliver this metadata in MODS
-	      format, as described in the reference document (The Metadata
-	      Store).  PUL will maintain the metadata store in the Blue
-	      Mountain Github repository; DDD shall be responsible for
-	      retrieving these files from the Blue Mountain GitHub
-	      repository and for updating their local copies should
-	      changes become necessary after production of a batch begins.</para>
-	    </formalpara>
-	  </listitem>
-	</itemizedlist>
-      </step>
-      <step>
-	<para>
-	  DDD shall process the page images and descriptive metadata into
-	  METS/ALTO, JPEG2000, and PDF outputs (the PRODUCT) according to
-	  the Blue Mountain docWorks configuration.
-	</para>
-      </step>
-      <step>
-	<para>
-	  DDD shall deliver the Product to Princeton via one of the
-	  authorized transmission media, as specified above.
-	</para>
-      </step>
-      <step>
-	<para>
-	  DDD shall issue an invoice to Princeton for EXACTLY the work
-	  performed in fulfillment of this batch.  The Blue Mountain
-	  Project will not accept invoices that fail to specify, in
-	  detail, the work being billed, or that bill for work that spans
-	  discrete batches, or that entail work done for other
-	  Princeton-related projects.
-	</para>
-      </step>
-      <step>
-	<para>Princeton shall ingest the Product into its
-	content-management system and the Veridian content-delivery
-	system.  Princeton shall evaluate the Product, in its raw form
-	and in its deployed form, and shall notify DDD in a timely
-	fashion of any anomalies outside the tolerances set forth
-	below.
-	</para>
-      </step>
-      <step>
-	<para>
-	  Princeton shall have 30 days to request corrections.  At the
-	  end of 30 days, Princeton shall either (a) accept the work
-	  and pay the invoice; or (b) reject the work and delete it
-	  from its systems.
-	</para>
-      </step>
-    </procedure>
-  </sect1>
-  <sect1>
-    <title>Schedule of Work</title>
-    <para>
-      The following shall be the agreed-upon schedule of work.  The
-      schedule shall be maintained as a set of milestones in the
-      Project's Goplan tracking system.
-    </para>
-    <table frame="all">
-      <title>Composition of Blue Mountain Work by Batch</title>
-      <tgroup cols="8">
-	<colspec colname="c1" colwidth="2*"/>
-	<colspec colname="c2" colwidth="1*"/>
-	<colspec colname="c3"/>
-	<colspec colname="c4"/>
-	<colspec colname="c5"/>
-	<colspec colname="c6"/>
-	<colspec colname="c7"/>
-	<colspec colname="c8"/>
+    <listitem>
+     <para>Body text (defined as text occurring in articles, editorials and other printed material
+      but not advertisements) will be 90% free of significant errors.</para>
+    </listitem>
 
-	<thead>
-	  <row>
-	    <entry></entry>
-	    <entry>Jan-Feb</entry>
-	    <entry>Feb-Mar</entry>
-	    <entry>Apr-May</entry>
-	    <entry>Jun-Jul</entry>
-	    <entry>Aug-Sep</entry>
-	    <entry>Oct-Nov</entry>
-	    <entry>Dec-Jan</entry>
-	  </row>
-	</thead>
-	<tbody>
-	  <row>
-	    <entry>291</entry>
-	    <entry>30</entry>
-	  </row>
-	  <row>
-	    <entry>Dada</entry>
-	    <entry>94</entry>
-	  </row>
-	  <row>
-	    <entry>Der Sturm</entry>
-	    <entry>4959</entry>
-	  </row>
-	  <row>
-	    <entry>l'elan</entry>
-	    <entry>254</entry>
-	  </row>
-	  <row>
-	    <entry>Le coeur à barbe</entry>
-	    <entry>8</entry>
-	  </row>
-	  <row>
-	    <entry>Action</entry>
-	    <entry namest="c3">942</entry>
-	  </row>
-	  <row>
-	    <entry>Broom</entry>
-	    <entry namest="c3">2550</entry>
-	  </row>
-	  <row>
-	    <entry>Bruno's Weekly</entry>
-	    <entry namest="c3">1234</entry>
-	  </row>
-	  <row>
-	    <entry>New Numbers</entry>
-	    <entry namest="c3">210</entry>
-	  </row>
-	  <row>
-	    <entry>Secession</entry>
-	    <entry namest="c3">30</entry>
-	  </row>
-	  <row>
-	    <entry>The Signature</entry>
-	    <entry namest="c3">100</entry>
-	  </row>
-	  <row>
-	    <entry>Sturm Buhne</entry>
-	    <entry namest="c3">32</entry>
-	  </row>
+    <listitem>
+     <para>Article segmentation will be 99% free of significant errors.</para>
+    </listitem>
 
-	  <row>
-	    <entry>MA</entry>
-	    <entry namest="c4">700</entry>
-	  </row>
-	  <row>
-	    <entry>Umělecký mĕsíčník</entry>
-	    <entry namest="c4">976</entry>
-	  </row>
-	  <row>
-	    <entry>Veshch</entry>
-	    <entry namest="c4">172</entry>
-	  </row>
-	  <row>
-	    <entry>Volné směry</entry>
-	    <entry namest="c4">13,561</entry>
-	  </row>
-
-	  <row>
-	    <entry>291</entry>
-	    <entry namest="c5">22</entry>
-	  </row>
-	  <row>
-	    <entry>La Chronique musicale</entry>
-	    <entry namest="c5">3,929</entry>
-	  </row>
-	  <row>
-	    <entry>La Cité</entry>
-	    <entry namest="c5">5,271</entry>
-	  </row>
-	  <row>
-	    <entry>La Revue musicale</entry>
-	    <entry namest="c5">5,700</entry>
-	  </row>
-	  <row>
-	    <entry>Surrealisme</entry>
-	    <entry namest="c5">16</entry>
-	  </row>
-
-
-	  
-	  <row>
-	    <entry>Le Mecure musicale</entry>
-	    <entry namest="c6">10,327</entry>
-	  </row>
-	  <row>
-	    <entry>Niederrheinische Musik-Zeitung</entry>
-	    <entry namest="c6">8,866</entry>
-	  </row>
-
-	  <row>
-	    <entry>Dalibor</entry>
-	    <entry namest="c7">17,425</entry>
-	  </row>
-
-	  <row>
-	    <entry>East and West</entry>
-	    <entry namest="c8">600</entry>
-	  </row>
-	  <row>
-	    <entry>The Glebe</entry>
-	    <entry namest="c8">618</entry>
-	  </row>
-	  <row>
-	    <entry>Klingen</entry>
-	    <entry namest="c8">770</entry>
-	  </row>
-	  <row>
-	    <entry>Les Entretien</entry>
-	    <entry namest="c8">2,871</entry>
-	  </row>
-	  <row>
-	    <entry>The Mask</entry>
-	    <entry namest="c8">2370</entry>
-	  </row>
-	  <row>
-	    <entry>Nord-Sud</entry>
-	    <entry namest="c8">230</entry>
-	  </row>
-	  <row>
-	    <entry>Nowa Sztuka</entry>
-	    <entry namest="c8">65</entry>
-	  </row>
-	  <row>
-	    <entry>The Plowshare</entry>
-	    <entry namest="c8">4,280</entry>
-	  </row>
-	  <row>
-	    <entry>Poesia</entry>
-	    <entry namest="c8">1652</entry>
-	  </row>
-	  <row>
-	    <entry>Proverbe</entry>
-	    <entry namest="c8">60</entry>
-	  </row>
-	  <row>
-	    <entry>SIC</entry>
-	    <entry namest="c8">448</entry>
-	  </row>
-	  <row>
-	    <entry>Ultra</entry>
-	    <entry namest="c8">130</entry>
-	  </row>
-	  <row>
-	    <entry>Zeit-Echo</entry>
-	    <entry namest="c8">493</entry>
-	  </row>
-
-	</tbody>
-      </tgroup>
-    </table>
-  </sect1>
-  <sect1>
-    <title>Acceptance Criteria</title>
-    <orderedlist>
+    <listitem>
+     <para>The XML files produced during digitization will be well-formed and valid against the
+      following schemas where appropriate:</para>
+     <orderedlist>
       <listitem>
-	<para>
-	  METS/ALTO data will meet the following criteria:
-	  <orderedlist>
-	    <listitem>
-	      <para>All identifiers are present and accurate.</para>
-	    </listitem>
-	    <listitem>
-	      <para>The MODS descriptive metadata meets th
-	      specifications detailed in the reference document.</para>
-	    </listitem>
-	    <listitem>
-	      <para>The technical metadata is accurate, and conforms
-	      with the specifications detailed in the reference
-	      document.</para>
-	    </listitem>
-	    <listitem>
-	      <para>The file data (the fileSec) conforms with the specifications.</para>
-	    </listitem>
-	    <listitem>
-	      <para>The logical and physical structMap elements are
-	      consistent with the docWorks configuration AND conform
-	      with the specifications outlined in the reference
-	      document and any markup policies agreed to by both
-	      parties.</para>
-	    </listitem>
-	  </orderedlist>
-	</para>
+       <para>http://schema.ccs-gmbh.com/docworks/alto-1-2.xsd</para>
       </listitem>
       <listitem>
-	<para>OCR accuracy meets or exceeds the standards established
-	by agreement among the parties.</para>
+       <para>http://schema.ccs-gmbh.com/docworks/mets-docWORKS.xsd</para>
       </listitem>
       <listitem>
-	<para>All image derivatives conform with the specifications
-	detailed in the reference document.</para>
+       <para>http://www.w3.org/TR/xlink</para>
       </listitem>
       <listitem>
-	<para>All PDF derivatives conform with the specifications
-	detailed in the reference document.</para>
+       <para>http://www.loc.gov/mix</para>
       </listitem>
       <listitem>
-	<para>All file names, directory names, and general
-	organization of files as delivered conform with the
-	specifications detailed in the reference document.</para>
+       <para>http://www.w3.org/1999/02/22-rdf-syntax-ns# </para>
       </listitem>
-    </orderedlist>
-    <sect2>
-      <title>Quality Control Guidelines</title>
-      <variablelist>
-	<title>Definitions</title>
-	<varlistentry>
-	  <term>Article Segmentation</term>
-	  <listitem>
-	    <para>The division of an article or other text across
-	    columns or pages; in digitization, the process of
-	    analyzing these divisions and encoding it in
-	    metadata.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>Batch</term>
-	  <listitem>
-	    <para>A segment of the total set of titles processed
-	    by DDD as a unit. Batches are identified and enumerated on
-	    tracking sheets shared by DDD and Princeton.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>Entry Operator</term>
-	  <listitem>
-	    <para>DDD staff member responsible for converting raw
-	    image files into required output files using
-	    docWorks.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	<term>Issue Metadata</term>
-	<listitem>
-	  <para>The title, volume, issue, date, and page number order
-	  of an issue.</para>
-	</listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>Quality Criteria</term>
-	  <listitem>
-	    <para>The critical requirements metrics and standards as
-	    described here, including accuracy rates and criteria for
-	    acceptance or rejection of work produced.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>Quality Control (QC)</term>
-	  <listitem>
-	    <para>The procedures used by DDD to ensure compliance with
-	    the established quality standards.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>Quality Evaluation and Acceptance (QEA)</term>
-	  <listitem>
-	    <para>The procedures used by Princeton University to apply
-	    acceptance criteria to work produced by DDD.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>QC Operator</term>
-	  <listitem>
-	    <para>A member of DDD’s quality control team.</para>
-	  </listitem>
-	</varlistentry>
-	<varlistentry>
-	  <term>Significant Error</term>
-	  <listitem>
-	    <para>A discrepancy between the source copy as represented
-	    on a page image and the computer-readable text output
-	    produced by DDD that is counted when calculating error
-	    rates for compliance with quality standards.</para>
-	  </listitem>
-	</varlistentry>
-      </variablelist>
+     </orderedlist>
+    </listitem>
+   </orderedlist>
 
-      <orderedlist>
-	<title>Quality Standards</title>
+   <orderedlist>
+    <title>Significant Errors</title>
+    <listitem>
+     <para>incorrect characters (e.g., c for e) </para>
+    </listitem>
+    <listitem>
+     <para>transposed characters (e.g., teh for the) </para>
+    </listitem>
+    <listitem>
+     <para>missing characters (e.g., tht for that) </para>
+    </listitem>
+    <listitem>
+     <para>inserted characters (e.g., c a t for cat) </para>
+    </listitem>
+   </orderedlist>
 
-	<listitem><para>Headlines and bylines will be 99.95% free of
-	significant errors.</para></listitem>
+   <orderedlist>
+    <title>Non-Significant Errorst</title>
+    <listitem>
+     <para>differences in capitalization (gOlD is equivalent to Gold) </para>
+    </listitem>
+    <listitem>
+     <para>padded spacing (more than one whitespace character when original has only one) </para>
+    </listitem>
+    <listitem>
+     <para>line breaks</para>
+    </listitem>
+   </orderedlist>
+  </sect2>
+  <sect2>
+   <title>Quality Evaluation Guidelines</title>
+   <para>When DDD has completed a batch, it shall submit output to Princeton for ingestion into
+    Princeton's Veridian installation.</para>
 
-	<listitem><para>Issue metadata will be 99.95% free of
-	significant errors.</para></listitem>
+   <para>Upon receipt of a batch, Princeton will have 30 days to accept or reject it. Princeton will
+    employ the following procedures to evaluate a batch.</para>
 
-	<listitem><para>Body text (defined as text occurring in
-	articles, editorials and other printed material but not
-	advertisements) will be 90% free of significant
-	errors.</para></listitem>
+   <procedure>
+    <step>
+     <title>Evaluation of Zoning and Segmentation</title>
+     <para> Princeton will examine five (5) issues for zoning and segmentation errors. A zoning or
+      segmentation error shall be identified using the following criteria: </para>
+     <orderedlist>
+      <listitem>
+       <para>If an article is missing one or more zones, that shall count as an error.</para>
+      </listitem>
+      <listitem>
+       <para>If an article contains one or more zones that are not part of the article in the
+        original, it shall be counted as an error.</para>
+      </listitem>
+      <listitem>
+       <para>If the sequence of zoned regions is not in the proper order, it shall count as an
+        error.</para>
+      </listitem>
+     </orderedlist>
+    </step>
+   </procedure>
 
-	<listitem><para>Article segmentation will be 99% free of
-	significant errors.</para></listitem>
+   <para>Princeton will record the results of these examinations in its report. If significant
+    errors are discovered, Princeton and DDD will confer.</para>
 
-	<listitem><para>The XML files produced during digitization
-	will be well-formed and valid against the following schemas
-	where appropriate:</para>
-	<orderedlist>
-	  <listitem><para>http://schema.ccs-gmbh.com/docworks/alto-1-2.xsd</para></listitem>
-	  <listitem><para>http://schema.ccs-gmbh.com/docworks/mets-docWORKS.xsd</para></listitem>
-	  <listitem><para>http://www.w3.org/TR/xlink</para></listitem>
-	  <listitem><para>http://www.loc.gov/mix</para></listitem>
-	  <listitem><para>http://www.w3.org/1999/02/22-rdf-syntax-ns# </para></listitem>
-	</orderedlist>
-	</listitem>
-      </orderedlist>
+   <procedure>
+    <title>Evaluation of Headlines</title>
+    <step>
+     <para>Princeton will draw a random sample of 350 headlines from the batch and measure their
+      accuracy by comparing each headline with its original and recording all significant errors.
+      The accuracy rate of the sample should meet or exceed 99.95%.</para>
+    </step>
+   </procedure>
+   <procedure>
+    <title>Evaluation of Body Text</title>
+    <step>
+     <para>Princeton will examine the fifth article in every sample (as above) for errors in the
+      body text, counting the number of significant errors that occur, where significance is as
+      defined above. </para>
+     <para>We shall assume an average article length of 500 words. For an accuracy rate of 90% or
+      better an article should therefore contain no more than 50 significant errors.</para>
+     <para>Princeton and DDD shall agree that if more than 5% of the samples from a given batch
+      fail, the batch is not acceptable.</para>
+    </step>
+   </procedure>
+   <procedure>
+    <title>Evaluation of Metadata</title>
+    <step>
+     <para>Princeton will evaluate 1 random 2,000 character sampling of Issue Metadata. If the
+      sample contains more than 1 error (i.e., it falls below 99.95%), the issue metadata fails and
+      must be rechecked and resubmitted by DDD.</para>
+    </step>
+   </procedure>
+   <procedure>
+    <title>Evaluation of XML</title>
+    <step>
+     <para>Princeton will not verify XML validity, as docWorks automatically validates the files it
+      produces against the appropriate schemas.</para>
+    </step>
+   </procedure>
+  </sect2>
+ </sect1>
+ <sect1>
+  <title>Cost and Scope</title>
+  <table>
+   <title>Cost and Scope</title>
+   <tgroup cols="4">
+    <thead>
+     <row>
+      <entry>Product Description</entry>
+      <entry>Quantity (Approximate)</entry>
+      <entry>Unit Price</entry>
+      <entry>Unit</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>METS/ALTO Processing, including DocWorks and Setup</entry>
+      <entry>92,305</entry>
+      <entry>$0.56</entry>
+      <entry>Page</entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <para>Total: $51,690.00</para>
+ </sect1>
 
-      <orderedlist>
-	<title>Significant Errors</title>
-	<listitem><para>incorrect characters (e.g., c for e) </para></listitem>
-	<listitem><para>transposed characters (e.g., teh for the) </para></listitem>
-	<listitem><para>missing characters (e.g., tht for that) </para></listitem>
-	<listitem><para>inserted characters (e.g., c a t for cat) </para></listitem>
-      </orderedlist>
+ <sect1>
+  <title>Assumptions</title>
+  <orderedlist>
+   <listitem>
+    <para>Pricing for METS/ALTO processing is determined by the level of service set out in
+     “Description of Work” above.</para>
+   </listitem>
+   <listitem>
+    <para>Exact costs for shipping will be determined by the project schedule and number of batches
+     required. </para>
+   </listitem>
+   <listitem>
+    <para>This pricing is contingent upon the Library’s commitment to complete the project under one
+     contract, in a timely manner based on our mutually agreed schedule. See “Schedule” for
+     details.</para>
+   </listitem>
+  </orderedlist>
+ </sect1>
+ <sect1>
+  <title>Notes to Pricing</title>
+  <para> Client shall pay DDD all amounts due as provided above. Since the actual number of output
+   characters, pages, records and the like may differ from the parties' best estimates made as of
+   the date of this Agreement, it is understood and agreed the final Price due shall be based upon
+   the actual amount of Work delivered to Client by DDD. </para>
+  <para>DDD shall have the right to change the Price if the input provided by Client differs
+   materially from the sample(s) provided or the assumptions or estimates used by the parties. DDD
+   will promptly give written notice of any such change to Client and may suspend Work until the
+   change is approved in writing by Client. </para>
+ </sect1>
 
-      <orderedlist>
-	<title>Non-Significant Errorst</title>
-	<listitem><para>differences in capitalization (gOlD is
-	equivalent to Gold) </para></listitem>
-	<listitem><para>padded spacing (more than one whitespace
-	character when original has only one) </para></listitem>
-	<listitem><para>line breaks</para></listitem>
-      </orderedlist>
-    </sect2>
-    <sect2>
-    <title>Quality Evaluation Guidelines</title>
-    <para>When DDD has completed a batch, it shall submit output to
-    Princeton for ingestion into Princeton's Veridian
-    installation.</para>
+ <sect1>
+  <title>Terms and Conditions</title>
+  <orderedlist>
+   <listitem>
+    <para>Both DDD and Client agree that this Agreement commits them only to the Work outlined in
+     this Agreement, and not to any additional work.</para>
+   </listitem>
 
-    <para>Upon receipt of a batch, Princeton will have 30 days to
-    accept or reject it. Princeton will employ the following
-    procedures to evaluate a batch.</para>
+   <listitem>
+    <para>Client shall be responsible to pay for any sales, use or other taxes due as a result of
+     this Agreement or the Work.</para>
+   </listitem>
 
-    <procedure>
-      <step>
-	<title>Evaluation of Zoning and Segmentation</title>
-	<para>
-	  Princeton will examine five (5) issues for zoning and
-	  segmentation errors. A zoning or segmentation error shall be
-	  identified using the following criteria:
-	</para>
-	<orderedlist>
-	  <listitem><para>If an article is missing one or more zones, that shall
-	  count as an error.</para></listitem>
-	  <listitem><para>If an article contains one or more zones that are not
-	  part of the article in the original, it shall be counted as an
-	  error.</para></listitem>
-	  <listitem><para>If the sequence of zoned regions is not in the proper
-	  order, it shall count as an error.</para></listitem>
-	</orderedlist>
-      </step>
-    </procedure>
+   <listitem>
+    <para>This Agreement shall be governed and construed in accordance with the laws of the State of
+     New York.</para>
+   </listitem>
 
-    <para>Princeton will record the results of these examinations in
-    its report. If significant errors are discovered, Princeton and
-    DDD will confer.</para>
+   <listitem>
+    <para>Neither party shall be liable for any delay or default in the performance of this
+     Agreement if such delay is due to Acts of God or acts of war, insurrections, riots, fires,
+     explosions, governmental order or regulation or other causes reasonably beyond the control of
+     the parties. In the event of such delay, the parties agree to promptly discuss the appropriate
+     steps to be taken as the result of such delay. </para>
+   </listitem>
+   <listitem>
+    <para>DDD agrees to promptly correct any defects or mistakes that it makes in the Work at no
+     charge to Client for a period of sixty (60) days following the completion of the Work. </para>
+   </listitem>
+   <listitem>
+    <para>DDD shall be responsible for loss or damage to any of Client’s property which is caused by
+     DDD; provided, however, in no event shall DDD's liability under this Agreement or in any way
+     connected with the Work exceed the Price paid by Client to DDD for the Work pursuant to this
+     Agreement. </para>
+   </listitem>
+  </orderedlist>
+ </sect1>
 
-    <procedure>
-      <title>Evaluation of Headlines</title>
-      <step>
-	<para>Princeton will draw a random sample of 350 headlines
-	from the batch and measure its accuracy by comparing each
-	headline with its original and recording all significant
-	errors. The accuracy rate of the sample should meet or exceed
-	99.95%.</para>
-      </step>
-    </procedure>
-    <procedure>
-      <title>Evaluation of Body Text</title>
-      <step>
-	<para>Princeton will examine the fifth article in every sample
-	(as above) for errors in the body text, counting the number of
-	significant errors that occur, where significance is as
-	defined above.
-	</para>
-	<para>We shall assume an average article length of 500
-	words. For an accuracy rate of 90% or better an article should
-	therefore contain no more than 50 significant errors.</para>
-	<para>Princeton and DDD shall agree that if more than 5% of
-	the samples from a given batch fail, the batch is not
-	acceptable.</para>
-      </step>
-    </procedure>
-    <procedure>
-      <title>Evaluation of Metadata</title>
-      <step>
-	<para>Princeton will evaluate 1 random 2,000 character
-	sampling of Issue Metadata. If the sample contains more than 1
-	error (i.e., it falls below 99.95%), the issue metadata fails
-	and must be rechecked and resubmitted by DDD.</para>
-      </step>
-    </procedure>
-    <procedure>
-      <title>Evaluation of XML</title>
-      <step>
-	<para>Princeton will not verify XML validity, as docWorks
-	automatically validates the files it produces against the
-	appropriate schemas.</para>
-      </step>
-    </procedure>
-    </sect2>
-  </sect1>
-  <sect1>
-    <title>Communication</title>
-    <table>
-      <title>Escalation Table</title>
-      <tgroup cols="3">
-	<thead>
-	  <row>
-	    <entry>Level</entry>
-	    <entry>PUL</entry>
-	    <entry>DDD</entry>
-	  </row>
-	</thead>
-	<tbody>
-	  <row>
-	    <entry>Level 1</entry>
-	    <entry>
-	      <para>
-		<personname>Natalia Ermolaev</personname>
-		<variablelist>
-		  <title/>
-		  <varlistentry>
-		    <term>Title</term>
-		    <listitem><para>Project Manager</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Phone</term>
-		    <listitem><para>609-258-6243</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Email</term>
-		    <listitem><para>nataliae@Princeton.EDU</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Skype</term>
-		    <listitem><para>Natalia</para></listitem>
-		  </varlistentry>
-		</variablelist>
-	      </para>
-	    </entry>
-	    <entry>
-	      <para>
-		<personname>Rady ROS</personname>
-		<variablelist>
-		  <title/>
-		  <varlistentry>
-		    <term>Title</term>
-		    <listitem><para>Project Manager</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Phone</term>
-		    <listitem><para>+855.23.220.843</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Email</term>
-		    <listitem><para>rady.ros@digitaldividedata.org</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Skype</term>
-		    <listitem><para>radyros</para></listitem>
-		  </varlistentry>
-		</variablelist>
-	      </para>
-	    </entry>
-	  </row>
-	  <row>
-	    <entry>Level 2</entry>
-	    <entry>
-	      <para>
-		<personname>Clifford Wulfman</personname>
-		<variablelist>
-		  <title/>
-		  <varlistentry>
-		    <term>Title</term>
-		    <listitem><para>Project Director</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Phone</term>
-		    <listitem><para>609-258-7290</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Email</term>
-		    <listitem><para>cwulfman@Princeton.EDU</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Skype</term>
-		    <listitem><para>thecoldi</para></listitem>
-		  </varlistentry>
-		</variablelist>
-	      </para>
-	    </entry>
-	    <entry>
-	      <para>
-		<personname>Jason Judd</personname>
-		<variablelist>
-		  <title/>
-		  <varlistentry>
-		    <term>Title</term>
-		    <listitem><para>Snr. Director Production</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Phone</term>
-		    <listitem><para>+855.23.220.843</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Email</term>
-		    <listitem><para>jason.judd@digitaldividedata.org</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Skype</term>
-		    <listitem><para>jasonjudd</para></listitem>
-		  </varlistentry>
-		</variablelist>
-	      </para>
-	    </entry>
-	  </row>
-	  <row>
-	    <entry>Level 3</entry>
-	    <entry>
-	      <para>
-		<personname>Marvin Bielawski</personname>
-		<variablelist>
-		  <title/>
-		  <varlistentry>
-		    <term>Title</term>
-		    <listitem><para>Deputy University Librarian</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Phone</term>
-		    <listitem><para>609-258-3190</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Email</term>
-		    <listitem><para>marvinb@Princeton.EDU</para></listitem>
-		  </varlistentry>
-		</variablelist>
-	      </para>
-	    </entry>
-	    <entry>
-	      <para>
-		<personname>Jeremy Hokenstein</personname>
-		<variablelist>
-		  <title/>
-		  <varlistentry>
-		    <term>Title</term>
-		    <listitem><para>CEO</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Phone</term>
-		    <listitem><para>212-461-3703</para></listitem>
-		  </varlistentry>
-		  <varlistentry>
-		    <term>Email</term>
-		    <listitem><para>jeremy@digitaldividedata.org</para></listitem>
-		  </varlistentry>
-		</variablelist>
-	      </para>
-	    </entry>
-	  </row>
-	</tbody>
-      </tgroup>
-    </table>
-  </sect1>
+
+ <sect1>
+  <title> Representation and Warranties </title>
+
+  <para> Client represents and warrants the following: </para>
+  <orderedlist>
+   <listitem>
+    <para> Client owns the copyright or has permission to copy any data or materials ("Materials")
+     that it submits for Servicing; </para>
+   </listitem>
+   <listitem>
+    <para>The Materials are not unlawful, threatening, abusive, defamatory, obscene or invade
+     another person's privacy or further the commission or concealment of a crime; </para>
+   </listitem>
+   <listitem>
+    <para>Client is lawfully authorized to transmit the Materials; and </para>
+   </listitem>
+   <listitem>
+    <para>The Materials are not the subject of, or infringe upon, any patent, trademark, trade name,
+     trade secret, copyright, right of publicity, moral right or other intellectual property right
+     of another person or entity. </para>
+   </listitem>
+  </orderedlist>
+ </sect1>
+
+ <sect1>
+
+  <title>Mediation and Arbitration </title>
+
+  <para> In the event of a dispute under this Agreement, the parties agree to submit such dispute to
+   non-binding mediation and to use their best efforts in resolving such a dispute through
+   mediation. In the event the parties are unable to resolve such a dispute through mediation, then
+   such dispute or other controversy arising under or in connection with this Agreement shall be
+   settled exclusively by Arbitration conducted before an Arbitrator in accordance with the rules of
+   the American Arbitration Association then in effect. Said Arbitration shall be held in New York,
+   New York. The decision of the Arbitrator shall be final and binding on both parties and their
+   heirs and legal representatives. Judgment may be entered upon the Arbitrator’s award in any court
+   located in New York, New York. Each party shall be responsible to pay for its own costs in
+   connection with the Arbitration and the parties shall bear the costs of Arbitration itself and
+   the mediation in equal shares. </para>
+ </sect1>
+ <sect1>
+
+  <title> Successors and Assigns </title>
+  <para> The parties agree that this Agreement shall be binding upon and inure to the benefit of
+   each of the parties hereto and their successors and assigns. </para>
+ </sect1>
+ <sect1>
+  <title>Cooperation</title>
+  <para> Each party hereto agrees to cooperate with the other in carrying out the terms of this
+   Agreement. In connection therewith, each party agrees to execute such documents and take such
+   steps as may be necessary or advisable to carry out the purposes of this Agreement, whether
+   before or after the date of this Agreement. </para>
+ </sect1>
+
+
+ <sect1>
+  <title>Communication</title>
+  <table>
+   <title>Escalation Table</title>
+   <tgroup cols="3">
+    <thead>
+     <row>
+      <entry>Level</entry>
+      <entry>PUL</entry>
+      <entry>DDD</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>Level 1</entry>
+      <entry>
+       <para>
+        <personname>Natalia Ermolaev</personname>
+        <variablelist>
+         <title/>
+         <varlistentry>
+          <term>Title</term>
+          <listitem>
+           <para>Project Manager</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Phone</term>
+          <listitem>
+           <para>609-258-6243</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Email</term>
+          <listitem>
+           <para>nataliae@Princeton.EDU</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Skype</term>
+          <listitem>
+           <para>Natalia</para>
+          </listitem>
+         </varlistentry>
+        </variablelist>
+       </para>
+      </entry>
+      <entry>
+       <para>
+        <personname>Rady ROS</personname>
+        <variablelist>
+         <title/>
+         <varlistentry>
+          <term>Title</term>
+          <listitem>
+           <para>Project Manager</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Phone</term>
+          <listitem>
+           <para>+855.23.220.843</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Email</term>
+          <listitem>
+           <para>rady.ros@digitaldividedata.org</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Skype</term>
+          <listitem>
+           <para>radyros</para>
+          </listitem>
+         </varlistentry>
+        </variablelist>
+       </para>
+      </entry>
+     </row>
+     <row>
+      <entry>Level 2</entry>
+      <entry>
+       <para>
+        <personname>Clifford Wulfman</personname>
+        <variablelist>
+         <title/>
+         <varlistentry>
+          <term>Title</term>
+          <listitem>
+           <para>Project Director</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Phone</term>
+          <listitem>
+           <para>609-258-7290</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Email</term>
+          <listitem>
+           <para>cwulfman@Princeton.EDU</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Skype</term>
+          <listitem>
+           <para>thecoldi</para>
+          </listitem>
+         </varlistentry>
+        </variablelist>
+       </para>
+      </entry>
+      <entry>
+       <para>
+        <personname>Jason Judd</personname>
+        <variablelist>
+         <title/>
+         <varlistentry>
+          <term>Title</term>
+          <listitem>
+           <para>Snr. Director Production</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Phone</term>
+          <listitem>
+           <para>+855.23.220.843</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Email</term>
+          <listitem>
+           <para>jason.judd@digitaldividedata.org</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Skype</term>
+          <listitem>
+           <para>jasonjudd</para>
+          </listitem>
+         </varlistentry>
+        </variablelist>
+       </para>
+      </entry>
+     </row>
+     <row>
+      <entry>Level 3</entry>
+      <entry>
+       <para>
+        <personname>Marvin Bielawski</personname>
+        <variablelist>
+         <title/>
+         <varlistentry>
+          <term>Title</term>
+          <listitem>
+           <para>Deputy University Librarian</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Phone</term>
+          <listitem>
+           <para>609-258-3190</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Email</term>
+          <listitem>
+           <para>marvinb@Princeton.EDU</para>
+          </listitem>
+         </varlistentry>
+        </variablelist>
+       </para>
+      </entry>
+      <entry>
+       <para>
+        <personname>Jeremy Hokenstein</personname>
+        <variablelist>
+         <title/>
+         <varlistentry>
+          <term>Title</term>
+          <listitem>
+           <para>CEO</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Phone</term>
+          <listitem>
+           <para>212-461-3703</para>
+          </listitem>
+         </varlistentry>
+         <varlistentry>
+          <term>Email</term>
+          <listitem>
+           <para>jeremy@digitaldividedata.org</para>
+          </listitem>
+         </varlistentry>
+        </variablelist>
+       </para>
+      </entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+ </sect1>
 </article>
