@@ -17,10 +17,10 @@
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaap_1921-12_01</identifier>
 	  <typeOfResource>text</typeOfResource>
 	  <genre>Periodicals-Issue</genre>
-	  <titleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <titleInfo>
 	    <title>Broom</title>
 	  </titleInfo>
-	  <part xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="issue">
+	  <part type="issue">
 	    <detail type="volume">
 	      <number>1</number>
 	      <caption>Vol. II</caption>
@@ -30,20 +30,26 @@
 	      <caption>No. 2</caption>
 	    </detail>
 	  </part>
-	  <originInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <originInfo>
 	    <dateIssued>December 1921</dateIssued>
 	    <dateIssued keyDate="yes" encoding="w3cdtf">1921-12</dateIssued>
 	  </originInfo>
-	  <note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Volume number is incorrectly printed on inside front cover.</note>
-	  <relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaap">
+	  <note>Volume number is incorrectly printed on inside front cover.</note>
+	  <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaap">
 	    <recordInfo>
 	      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaap</recordIdentifier>
 	    </recordInfo>
 	  </relatedItem>
 	  <relatedItem type="constituent" ID="c001">
 	    <titleInfo lang="eng">
-	      <title>Untitled</title>
+	      <title>[Woodcut]</title>
 	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>E. Prampolini</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
 	    <typeOfResource>still image</typeOfResource>
 	    <part>
 	      <extent unit="page">
@@ -52,9 +58,10 @@
 	    </part>
 	    <genre type="CCS">Illustration</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c002">
 	    <titleInfo lang="eng">
-	      <title>Page</title>
+	      <title>Table of Contents</title>
 	    </titleInfo>
 	    <typeOfResource>text</typeOfResource>
 	    <language>
@@ -67,9 +74,10 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c003">
 	    <titleInfo lang="eng">
-	      <title>PORTRAIT OF A GIRL.</title>
+	      <title>Portrait of a Girl</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Conrad Aiken</displayForm>
@@ -88,10 +96,32 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
+
+	  <relatedItem type="constituent" ID="c005">
+	    <titleInfo lang="eng">
+	      <nonSort>The</nonSort>
+	      <title>Swans</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Joseph Stella</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>4</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c004">
 	    <titleInfo lang="eng">
-	      <nonSort>THE</nonSort>
-	      <title>HELPLESS ONES.</title>
+	      <nonSort>The</nonSort>
+	      <title>Helpless Ones</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Frederick Booth</displayForm>
@@ -105,31 +135,22 @@
 	    </language>
 	    <part>
 	      <extent unit="page">
-		<list>4-21</list>
+		<list>4; 5-21</list>
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-	    <relatedItem type="constituent" ID="c005">
-	      <titleInfo lang="eng">
-		<title>Joseph Stella.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<nonSort>The</nonSort>
-		<title>Swans.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>4</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c006">
 	    <titleInfo lang="eng">
-	      <title>OECORATIONS FOR AN IMAGINARY BALLET.</title>
+	      <title>Decorations for an Imaginary Ballet</title>
 	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Henry Bellamann</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
 	    <typeOfResource>text</typeOfResource>
 	    <language>
 	      <languageTerm authority="iso639-2b">eng</languageTerm>
@@ -140,77 +161,31 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-	    <relatedItem type="constituent" ID="c007">
-	      <titleInfo lang="eng">
-		<title>Lorenzo Viani.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<nonSort>The</nonSort>
-		<title>old part of Viareggio.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>24</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c008">
-	      <titleInfo lang="eng">
-		<title>I.</title>
-	      </titleInfo>
-	      <typeOfResource>text</typeOfResource>
-	      <language>
-		<languageTerm authority="iso639-2b">eng</languageTerm>
-	      </language>
-	      <part>
-		<extent unit="page">
-		  <start>22</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">TextContent</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c009">
-	      <titleInfo lang="eng">
-		<title>II.</title>
-	      </titleInfo>
-	      <typeOfResource>text</typeOfResource>
-	      <language>
-		<languageTerm authority="iso639-2b">eng</languageTerm>
-	      </language>
-	      <part>
-		<extent unit="page">
-		  <start>23</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">TextContent</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c010">
-	      <titleInfo lang="eng">
-		<title>III.</title>
-	      </titleInfo>
-	      <name type="personal">
-		<displayForm>Henry Bellamann</displayForm>
-		<role>
-		  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-		</role>
-	      </name>
-	      <typeOfResource>text</typeOfResource>
-	      <language>
-		<languageTerm authority="iso639-2b">eng</languageTerm>
-	      </language>
-	      <part>
-		<extent unit="page">
-		  <list>23-24</list>
-		</extent>
-	      </part>
-	      <genre type="CCS">TextContent</genre>
-	    </relatedItem>
 	  </relatedItem>
+
+	  <relatedItem type="constituent" ID="c007">
+	    <titleInfo lang="eng">
+	      <nonSort>The</nonSort>
+	      <title>old part of Viareggio.</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Lorenzo Viani</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>24</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+	  
 	  <relatedItem type="constituent" ID="c011">
 	    <titleInfo lang="eng">
-	      <title>ON PAINTING.</title>
+	      <title>On Painting</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Joseph Stella</displayForm>
@@ -228,41 +203,46 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-	    <relatedItem type="constituent" ID="c012">
-	      <titleInfo lang="eng">
-		<nonSort>The</nonSort>
-		<title>Nightingale.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<title>Joseph Stella.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>26</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c013">
-	      <titleInfo lang="eng">
-		<title>Serenade.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<title>Joseph Stella.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>27</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
+
 	  </relatedItem>
+
+	  <relatedItem type="constituent" ID="c012">
+	    <titleInfo lang="eng">
+	      <nonSort>The</nonSort>
+	      <title>Nightingale</title>
+	    </titleInfo>
+	    <titleInfo lang="eng">
+	      <title>Joseph Stella</title>
+	    </titleInfo>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>26</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent" ID="c013">
+	    <titleInfo lang="eng">
+	      <title>Serenade</title>
+	    </titleInfo>
+	    <titleInfo lang="eng">
+	      <title>Joseph Stella</title>
+	    </titleInfo>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>27</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+
+	  
 	  <relatedItem type="constituent" ID="c014">
 	    <titleInfo lang="eng">
-	      <title>PROTEUS.</title>
+	      <title>Proteus</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Paul Claudel</displayForm>
@@ -271,9 +251,9 @@
 	      </role>
 	    </name>
 	    <name type="personal">
-	      <displayForm>Translated from the French by John Strong Newberry</displayForm>
+	      <displayForm>John Strong Newberry</displayForm>
 	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+		<roleTerm type="code" authority="marcrelator">trl</roleTerm>
 	      </role>
 	    </name>
 	    <typeOfResource>text</typeOfResource>
@@ -287,9 +267,29 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
+	  <relatedItem type="constituent" ID="c016">
+	    <titleInfo lang="eng">
+	      <title>Interior</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Henri Matisse</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>43</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c015">
 	    <titleInfo lang="eng">
-	      <title>PARAGRAPHS CONCERNING THE PRINCESS VEHANA.</title>
+	      <title>Paragraphs Concerning the Princess Vehana</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Haniel Long</displayForm>
@@ -307,50 +307,58 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-	    <relatedItem type="constituent" ID="c016">
-	      <titleInfo lang="eng">
-		<title>Henri Matisse. Interior. Courtesy Bernheim-June Gallery — Paris.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>43</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c017">
-	      <titleInfo lang="eng">
-		<title>Rockwell, Kent. The Young Sailor. Young Sailor. Courtesy Daniel Gallery — New York.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>50</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c018">
-	      <titleInfo lang="eng">
-		<title>Rockwell Kent. Newfoundland Dirge. Courtesy Daniel Gallery — New York.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>51</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
 	  </relatedItem>
+	  <relatedItem type="constituent" ID="c017">
+	    <titleInfo lang="eng">
+	      <nonSort>The</nonSort>
+	      <title>Young Sailor</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Rockwell Kent</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>50</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent" ID="c018">
+	    <titleInfo lang="eng">
+	      <title>Newfoundland Dirge</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Rockwell Kent</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>51</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+	    
+
+
 	  <relatedItem type="constituent" ID="c019">
 	    <titleInfo lang="eng">
-	      <title>I.</title>
+	      <title>Comfort</title>
 	    </titleInfo>
-	    <titleInfo lang="eng">
-	      <title>COMFORT.</title>
-	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>W. de la Mare</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
 	    <typeOfResource>text</typeOfResource>
 	    <language>
 	      <languageTerm authority="iso639-2b">eng</languageTerm>
@@ -362,12 +370,10 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c020">
 	    <titleInfo lang="eng">
-	      <title>II.</title>
-	    </titleInfo>
-	    <titleInfo lang="eng">
-	      <title>NOT THAT WAY.</title>
+	      <title>Not that Way</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>W. de la Mare</displayForm>
@@ -386,10 +392,11 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c021">
 	    <titleInfo lang="eng">
-	      <nonSort>THE</nonSort>
-	      <title>CONTRACT.</title>
+	      <nonSort>The</nonSort>
+	      <title>Contract</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Sherwood Anderson</displayForm>
@@ -408,9 +415,10 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c022">
 	    <titleInfo lang="eng">
-	      <title>NOTRE AMERIQUE</title>
+	      <title>Notre Amerique</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Leon Bazalgette</displayForm>
@@ -429,10 +437,17 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c023">
 	    <titleInfo lang="eng">
-	      <title>RIO BO.</title>
+	      <title>Rio Bo</title>
 	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Aldo Palazzeschi</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
 	    <typeOfResource>text</typeOfResource>
 	    <language>
 	      <languageTerm authority="iso639-2b">eng</languageTerm>
@@ -444,12 +459,13 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c024">
 	    <titleInfo lang="eng">
-	      <title>CHI SONO ?</title>
+	      <title>Chi Sono?</title>
 	    </titleInfo>
 	    <name type="personal">
-	      <displayForm>From the Italian of Aldo Palazzeschi</displayForm>
+	      <displayForm>Aldo Palazzeschi</displayForm>
 	      <role>
 		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 	      </role>
@@ -465,12 +481,13 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c025">
 	    <titleInfo lang="eng">
-	      <title>NUDE.</title>
+	      <title>Nude</title>
 	    </titleInfo>
 	    <name type="personal">
-	      <displayForm>From the Italian of Luciano Folgore</displayForm>
+	      <displayForm>Luciano Folgore</displayForm>
 	      <role>
 		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 	      </role>
@@ -486,9 +503,29 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
+	  <relatedItem type="constituent" ID="c027">
+	    <titleInfo lang="eng">
+	      <title>Still Life</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Henri Matisse</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>67</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c026">
 	    <titleInfo lang="eng">
-	      <title>HAZI, WIFE OF SENDER SURTUCK.</title>
+	      <title>Hazi, Wife of Sender Surtuck</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Konrad Bercovici</displayForm>
@@ -506,26 +543,11 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-	    <relatedItem type="constituent" ID="c027">
-	      <titleInfo lang="eng">
-		<title>Henri Matisse. Courtesy Bernheim-Jeune Gallery — Paris.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<title>Still Life.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>67</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
 	  </relatedItem>
 	  <relatedItem type="constituent" ID="c028">
 	    <titleInfo lang="eng">
-	      <nonSort>THE</nonSort>
-	      <title>BIRD WITH THE COPPERY, KEEN CLAWS.</title>
+	      <nonSort>The</nonSort>
+	      <title>Bird with the Coppery, Keen Claws</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Wallace Stevens</displayForm>
@@ -544,13 +566,17 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c029">
 	    <titleInfo lang="eng">
-	      <title>I.</title>
+	      <title>Mist</title>
 	    </titleInfo>
-	    <titleInfo lang="eng">
-	      <title>MIST.</title>
-	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Jean Starr Untermeyer</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
 	    <typeOfResource>text</typeOfResource>
 	    <language>
 	      <languageTerm authority="iso639-2b">eng</languageTerm>
@@ -562,10 +588,8 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c030">
-	    <titleInfo lang="eng">
-	      <title>II.</title>
-	    </titleInfo>
 	    <titleInfo lang="eng">
 	      <title>ANTI-EROTIC.</title>
 	    </titleInfo>
@@ -586,9 +610,10 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c031">
 	    <titleInfo lang="eng">
-	      <title>ONE MOMENT ONLY.</title>
+	      <title>One Moment Only</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Harold Munro</displayForm>
@@ -607,9 +632,10 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c032">
 	    <titleInfo lang="eng">
-	      <title>PELLEAS NIGHT.</title>
+	      <title>Pelleas Night</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Donald Corley</displayForm>
@@ -628,9 +654,48 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
+	  <relatedItem type="constituent" ID="c034">
+	    <titleInfo lang="eng">
+f	      <title>Sunday Morning</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Adolph Dehn</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>90</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent" ID="c035">
+	    <titleInfo lang="eng">
+	      <title>Charcoal Drawing.</title>
+	    </titleInfo>
+	    <name type="personal">
+	      <displayForm>Wanda Gag</displayForm>
+	      <role>
+		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+	      </role>
+	    </name>
+	    <typeOfResource>still image</typeOfResource>
+	    <part>
+	      <extent unit="page">
+		<start>91</start>
+	      </extent>
+	    </part>
+	    <genre type="CCS">Illustration</genre>
+	  </relatedItem>
+	  
 	  <relatedItem type="constituent" ID="c033">
 	    <titleInfo lang="eng">
-	      <title>ANNE BARD.</title>
+	      <title>Anne Bard</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Wallace Gould</displayForm>
@@ -648,40 +713,11 @@
 	      </extent>
 	    </part>
 	    <genre type="CCS">TextContent</genre>
-	    <relatedItem type="constituent" ID="c034">
-	      <titleInfo lang="eng">
-		<title>A dolph Dehn.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<title>Sunday Morning.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>90</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
-	    <relatedItem type="constituent" ID="c035">
-	      <titleInfo lang="eng">
-		<title>Charcoal Drawing.</title>
-	      </titleInfo>
-	      <titleInfo lang="eng">
-		<title>Wanda Gag.</title>
-	      </titleInfo>
-	      <typeOfResource>still image</typeOfResource>
-	      <part>
-		<extent unit="page">
-		  <start>91</start>
-		</extent>
-	      </part>
-	      <genre type="CCS">Illustration</genre>
-	    </relatedItem>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c036">
 	    <titleInfo lang="eng">
-	      <title>BROOMIDES.</title>
+	      <title>Broomides</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>Vachel Lindsay</displayForm>
@@ -712,6 +748,7 @@
 	    </part>
 	    <genre type="CCS">TextContent</genre>
 	  </relatedItem>
+
 	  <relatedItem type="constituent" ID="c037">
 	    <titleInfo lang="eng">
 	      <title>Untitled</title>
@@ -9509,14 +9546,14 @@
 	  </div>
 	</div>
 	<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-	  <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled">
+	  <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled Woodcut by E. Prampolini">
 	    <div ID="L.1.1.2.1.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="Page">
+	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="Table of Contents">
 	    <div ID="L.1.1.2.2.1" TYPE="Copy">
 	      <div ID="L.1.1.2.2.1.1" TYPE="BodyContent">
 		<div ID="L.1.1.2.2.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -9529,7 +9566,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c003" LABEL="PORTRAIT OF A GIRL.">
+	  <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c003" LABEL="'Portrait of a Girl' by Conrad Aiken">
 	    <div ID="L.1.1.2.3.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
@@ -9559,7 +9596,23 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004" LABEL="THE HELPLESS ONES.">
+	  <div ID="L.1.1.2.4.3" TYPE="Illustration" ORDER="1" DMDID="c005" LABEL="'The Swans' by Joseph Stella">
+	    <div ID="L.1.1.2.4.3.1" TYPE="Image">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="L.1.1.2.4.3.2" TYPE="Caption">
+	      <fptr>
+		<seq>
+		  <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
+		  <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
+		</seq>
+	      </fptr>
+	    </div>
+	  </div>
+
+	  <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004" LABEL="'The Helpless Ones' by Frederick Booth">
 	    <div ID="L.1.1.2.4.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00002"/>
@@ -9569,21 +9622,6 @@
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00003"/>
 	      </fptr>
-	    </div>
-	    <div ID="L.1.1.2.4.3" TYPE="Illustration" ORDER="1" DMDID="c005" LABEL="Joseph Stella. The Swans.">
-	      <div ID="L.1.1.2.4.3.1" TYPE="Image">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
-		</fptr>
-	      </div>
-	      <div ID="L.1.1.2.4.3.2" TYPE="Caption">
-		<fptr>
-		  <seq>
-		    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
-		    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
-		  </seq>
-		</fptr>
-	      </div>
 	    </div>
 	    <div ID="L.1.1.2.4.4" TYPE="Copy">
 	      <div ID="L.1.1.2.4.4.1" TYPE="BodyContent">
@@ -9712,28 +9750,13 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006" LABEL="OECORATIONS FOR AN IMAGINARY BALLET.">
+	  <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006" LABEL="'Decorations for an Imaginary Ballet' by Henry Bellamann">
 	    <div ID="L.1.1.2.5.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00002"/>
 	      </fptr>
 	    </div>
-	    <div ID="L.1.1.2.5.2" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="Lorenzo Viani. The old part of Viareggio.">
-	      <div ID="L.1.1.2.5.2.1" TYPE="Image">
-		<fptr>
-		  <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00001"/>
-		</fptr>
-	      </div>
-	      <div ID="L.1.1.2.5.2.2" TYPE="Caption">
-		<fptr>
-		  <seq>
-		    <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00004"/>
-		    <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00005"/>
-		  </seq>
-		</fptr>
-	      </div>
-	    </div>
-	    <div ID="L.1.1.2.5.3" TYPE="TextContent" ORDER="1" DMDID="c008" LABEL="I.">
+	    <div ID="L.1.1.2.5.3" TYPE="TextContent" ORDER="1" LABEL="I.">
 	      <div ID="L.1.1.2.5.3.1" TYPE="Head">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00003"/>
@@ -9751,7 +9774,7 @@
 		</div>
 	      </div>
 	    </div>
-	    <div ID="L.1.1.2.5.4" TYPE="TextContent" ORDER="2" DMDID="c009" LABEL="II.">
+	    <div ID="L.1.1.2.5.4" TYPE="TextContent" ORDER="2" LABEL="II.">
 	      <div ID="L.1.1.2.5.4.1" TYPE="Head">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00002"/>
@@ -9769,7 +9792,7 @@
 		</div>
 	      </div>
 	    </div>
-	    <div ID="L.1.1.2.5.5" TYPE="TextContent" ORDER="3" DMDID="c010" LABEL="III.">
+	    <div ID="L.1.1.2.5.5" TYPE="TextContent" ORDER="3" LABEL="III.">
 	      <div ID="L.1.1.2.5.5.1" TYPE="Head">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00004"/>
@@ -9800,6 +9823,22 @@
 	      </div>
 	    </div>
 	  </div>
+	  <div ID="L.1.1.2.5.2" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="Lorenzo Viani. The old part of Viareggio.">
+	    <div ID="L.1.1.2.5.2.1" TYPE="Image">
+	      <fptr>
+		<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00001"/>
+	      </fptr>
+	    </div>
+	    <div ID="L.1.1.2.5.2.2" TYPE="Caption">
+	      <fptr>
+		<seq>
+		  <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00004"/>
+		  <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00005"/>
+		</seq>
+	      </fptr>
+	    </div>
+	  </div>
+
 	  <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c011" LABEL="ON PAINTING.">
 	    <div ID="L.1.1.2.6.1" TYPE="Head">
 	      <fptr>
