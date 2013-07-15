@@ -6,7 +6,7 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://exist-db.org/xquery/apps/config" at "config.xqm" ;
 
-
+(: 5/12/2013: looks like the syntax has changed; %templates:wrap is now %templating:wrap? :)
 declare %templates:wrap function app:catEntry($node as node(), $model as map(*), $bmtnid as xs:string?) {
     let $entry :=
         if ($bmtnid) then
@@ -166,7 +166,13 @@ declare
 function app:issue-list($node as node(), $model as map(*)) {
     for $issue in $model("issues")
     let $id := $issue/mods:identifier/string()
-    let $dateString := $issue/mods:originInfo/mods:dateIssued[empty(@encoding)]/string()
+    let $dateString := 
+        if ($issue/mods:originInfo/mods:dateIssued[empty(@encoding)])
+        then
+            $issue/mods:originInfo/mods:dateIssued[empty(@encoding)]/string()
+        else
+            $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']/string()
+    order by $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
     return
         <li>{ $id  || ' ' ||  $dateString }</li>
 };
@@ -181,6 +187,7 @@ function app:issue-form($node as node(), $model as map(*)) {
                 for $issue in $model("issues")
                 let $id := $issue/mods:identifier/string()
                 let $dateString := $issue/mods:originInfo/mods:dateIssued[empty(@encoding)]/string()
+                order by $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
                 return
                     <option value="{ $id }">{ $dateString }</option>
             }
@@ -274,6 +281,47 @@ function app:print-toc($node as node(), $model as map(*)) {
          </li>        
 };
 
+(:~
+ : This function retrieves all <name>s in constituents and
+ : puts them into the Model.
+ : @param $node the HTML node with the class attribute which triggered this call
+ : @param $model a map containing arbitrary data - used to pass information between template calls
+ :)
+declare
+    %templates:wrap
+function app:bylines($node as node(), $model as map(*)) as map(*) {
+    let $nameSet :=
+        for $name in collection($config:data-root)//mods:relatedItem[@type='constituent']/mods:name
+        order by $name/mods:displayForm
+        return $name
+    return map { "bylines" := $nameSet }
+};
+
+declare 
+    %templates:wrap 
+function app:print-byline($node as node(), $model as map(*)) {
+    app:encode-name($model("byline"))
+};
+
+declare function app:collection-stats($node as node(), $model as map(*)) {    
+    let $mods := collection($config:data-root)//mods:mods
+    let $titleCount := count($mods[empty(mods:relatedItem[@type='host'])])
+    return 
+      <table class="content-status">
+        <tr>
+            <td>Number of Titles:</td>
+            <td>{ $titleCount }</td>
+        </tr>
+        <tr>
+            <td>Number of Issues:</td>
+            <td>{ count($mods[mods:relatedItem[@type='host']])  }</td>
+        </tr>
+        <tr>
+            <td>Number of Constituents:</td>
+            <td>{ count($mods//mods:relatedItem[@type='constituent']) }</td>
+        </tr>
+      </table>
+};
 
 
 
