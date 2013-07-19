@@ -7,7 +7,39 @@
 
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-  <xsl:variable name="bmtnid" as="xs:string">bmtnabh</xsl:variable>
+  <xsl:variable name="bmtnid" as="xs:string">bmtnabj</xsl:variable>
+  <xsl:variable name="pathroot" as="xs:string">/tmp</xsl:variable>
+
+  <!-- Begin insertion of functions from makeissues.xsl -->
+
+    <xsl:function name="local:issueID">
+      <xsl:param name="bmtnID" as="xs:string"/>
+      <xsl:param name="keyDate" as="xs:string" />
+      <xsl:param name="issueString" as="xs:string"/>
+
+      <xsl:value-of select="concat($bmtnID, '_', $keyDate, '_', format-number(xs:integer($issueString), '00'))"/>
+    </xsl:function>
+
+    <xsl:function name="local:pathname">
+      <xsl:param name="bmtnID" as="xs:string"/>
+      <xsl:param name="keyDate" as="xs:string" />
+      <xsl:param name="issueString" as="xs:string"/>
+
+      <xsl:value-of select="concat(
+			    $pathroot,
+			    '/',
+			    $bmtnID,
+			    '/issues/',
+			    replace($keyDate, '-', '/'),
+			    '_',
+			    format-number(xs:integer($issueString), '00')
+			    )"/>
+    </xsl:function>
+
+
+
+  <!-- End insertion of functions from makeissues.xsl -->
+
 
   <xsl:template match="ss:Workbook">
     <xsl:apply-templates select="ss:Worksheet" mode="mods"/>
@@ -55,23 +87,22 @@
       <xsl:variable name="notes" select="ss:Cell[12]/ss:Data"/>
 
 
-      <xsl:variable name="basename">
+      <xsl:variable name="issueString">
 	<xsl:choose>
-	  <xsl:when test="$issueno = 'supplement'">
-	    <xsl:value-of select="concat($bmtnid, '_', $keydate, '_02')"/>
-	  </xsl:when>
-	  <xsl:otherwise>		  
-            <xsl:value-of select="concat($bmtnid, '_', $keydate, '_01')"/>
-	  </xsl:otherwise>
+	  <xsl:when test="$issueno = 'supplement'">02</xsl:when>
+	  <xsl:otherwise>01</xsl:otherwise>
 	</xsl:choose>
       </xsl:variable>
 
-      <xsl:variable name="filename">
-        <xsl:value-of
-            select="concat('/tmp/bmtnabh/issues/',$basename,'/',$basename,'.mets.xml' )"/>
+      <xsl:variable name="basename">
+	<xsl:value-of select="local:issueID($bmtnid, $keydate, $issueString)"/>
       </xsl:variable>
 
-      <xsl:result-document href="{$filename}">
+      <xsl:variable name="filename" select="concat($basename, '.mets.xml')" as="xs:string" />
+      
+      <xsl:variable name="filepath" select="concat(local:pathname($bmtnid, $keydate, $issueString), '/', $filename)" as="xs:string"/>
+
+      <xsl:result-document href="{$filepath}">
         <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
               TYPE="Periodical-Issue" OBJID="urn:PUL:bluemountain:{$basename}">
           <metsHdr>
@@ -113,22 +144,22 @@
       <xsl:variable name="notes" select="ss:Cell[12]/ss:Data"/>
 
 
-      <xsl:variable name="basename">
+      <xsl:variable name="issueString">
 	<xsl:choose>
-	  <xsl:when test="$issueno = 'supplement'">
-	    <xsl:value-of select="concat($bmtnid, '_', $keydate, '_02')"/>
-	  </xsl:when>
-	  <xsl:otherwise>		  
-            <xsl:value-of select="concat($bmtnid, '_', $keydate, '_01')"/>
-	  </xsl:otherwise>
+	  <xsl:when test="$issueno = 'supplement'">02</xsl:when>
+	  <xsl:otherwise>01</xsl:otherwise>
 	</xsl:choose>
       </xsl:variable>
 
-      <xsl:variable name="filename">
-        <xsl:value-of
-            select="concat('/tmp/bmtnabh/issues/',$basename,'/',$basename,'.mods.xml' )"/>
+      <xsl:variable name="basename">
+	<xsl:value-of select="local:issueID($bmtnid, $keydate, $issueString)"/>
       </xsl:variable>
-      <xsl:result-document href="{$filename}">
+
+      <xsl:variable name="filename" select="concat($basename, '.mods.xml')" as="xs:string" />
+      
+      <xsl:variable name="filepath" select="concat(local:pathname($bmtnid, $keydate, $issueString), '/', $filename)" as="xs:string"/>
+
+      <xsl:result-document href="{$filepath}">
         <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
           <recordInfo>
             <recordIdentifier>
