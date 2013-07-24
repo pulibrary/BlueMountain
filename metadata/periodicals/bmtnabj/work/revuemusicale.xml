@@ -8,7 +8,7 @@
   <Author>Clifford Wulfman</Author>
   <LastAuthor>Cliff Wulfman</LastAuthor>
   <Created>2012-06-22T17:38:09Z</Created>
-  <LastSaved>2013-07-24T20:45:30Z</LastSaved>
+  <LastSaved>2013-07-24T21:00:56Z</LastSaved>
   <Company>Princeton University</Company>
   <Version>14.0</Version>
  </DocumentProperties>
@@ -31,6 +31,10 @@
    <Interior/>
    <NumberFormat/>
    <Protection/>
+  </Style>
+  <Style ss:ID="s27" ss:Name="Bad">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#F20884"/>
+   <Interior ss:Color="#FF99CC" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s29" ss:Name="Input">
    <Borders>
@@ -627,6 +631,9 @@
    <Alignment ss:Vertical="Bottom"/>
    <NumberFormat/>
    <Protection/>
+  </Style>
+  <Style ss:ID="s151" ss:Parent="s27">
+   <NumberFormat ss:Format="@"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Revue D'Histoire et de Critique">
@@ -2780,7 +2787,7 @@
     <Cell ss:StyleID="Default"><Data ss:Type="String">Publication bi-mensuelle Honorée d'une souscription du Ministère de l'Instruction publique et des Beaux-Arts</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">ML5.R35</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">15 Juin 1906</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">1906-06-15</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">1906-06-15</Data></Cell>
     <Cell ss:StyleID="s137"><Data ss:Type="String">283-306</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="Number">24</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">yes</Data></Cell>
@@ -3004,7 +3011,7 @@
     <Cell ss:StyleID="Default"><Data ss:Type="String">Supplément à la Revue Musicale du 15 Juin 1906</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">ML5.R35</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">15 Juin 1906</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">1906-06-15</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">1906-06-15</Data></Cell>
     <Cell ss:StyleID="s137"><Data ss:Type="String">57-62</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="Number">6</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">yes</Data></Cell>
@@ -9950,7 +9957,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>150</TopRowBottomPane>
+   <TopRowBottomPane>133</TopRowBottomPane>
    <ActivePane>2</ActivePane>
    <Panes>
     <Pane>
