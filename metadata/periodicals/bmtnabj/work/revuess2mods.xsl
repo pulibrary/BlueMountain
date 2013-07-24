@@ -89,6 +89,7 @@
 
       <xsl:variable name="issueString">
 	<xsl:choose>
+	  <xsl:when test="$secondtitle = 'Les Caracteres de la Dance'">03</xsl:when>
 	  <xsl:when test="$issueno = 'supplement'">02</xsl:when>
 	  <xsl:otherwise>01</xsl:otherwise>
 	</xsl:choose>
@@ -146,6 +147,7 @@
 
       <xsl:variable name="issueString">
 	<xsl:choose>
+	  <xsl:when test="$secondtitle = 'Les Caracteres de la Dance'">03</xsl:when>
 	  <xsl:when test="$issueno = 'supplement'">02</xsl:when>
 	  <xsl:otherwise>01</xsl:otherwise>
 	</xsl:choose>
