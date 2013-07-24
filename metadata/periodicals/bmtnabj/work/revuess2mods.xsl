@@ -173,10 +173,19 @@
           </identifier>
           <typeOfResource>text</typeOfResource>
           <genre>Periodicals-Issue</genre>
-          <titleInfo>
-            <title>
-              <xsl:value-of select="$title"/>
-            </title>
+<!-- HACK: check for explicit string and emit a <nonSort> element -->
+          <titleInfo>             
+            <xsl:choose>
+              <xsl:when test="$title = 'La revue musicale'">
+                <nonSort>La</nonSort>
+                <title>revue musicale</title>
+              </xsl:when>
+              <xsl:otherwise>
+                <title>
+                  <xsl:value-of select="$title"/>
+                </title>
+              </xsl:otherwise>
+            </xsl:choose>
             <subTitle>
               <xsl:value-of select="$secondtitle"/>
             </subTitle>
