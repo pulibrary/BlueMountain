@@ -22,7 +22,7 @@
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
   <property name="xmldb.approot" value="${xmldb.url}/bluemtn" />
 
-  <property name="approot" value="/opt/local/BlueMountain" />
+  <property name="approot" value="/Users/cwulfman/BlueMountain" />
   
   <target name="load-conf" description="load the Blue Mountain collection.xconf record">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
@@ -34,9 +34,14 @@
     </xdb:store>
   </target>
 
+  <target name="load-all" description="load all batches" depends="load-batch2, load-batch3, load-batch4"></target>
+
   <target name="load-batch1" description="load batch1" depends="load-bmtnaad, load-bmtnaae, load-bmtnaaf, load-bmtnaao, load-bmtnabg"></target>
 
   <target name="load-batch2" description="load batch2" depends="load-bmtnaab, load-bmtnaal, load-bmtnaap, load-bmtnaaq, load-bmtnaav, load-bmtnaay, load-bmtnaba"></target>
+
+  <target name="load-batch3" description="load batch3" depends="load-bmtnabk, load-bmtnaag, load-bmtnaai"></target>
+  <target name="load-batch4" description="load batch4" depends="load-bmtnaac, load-bmtnabc, load-bmtnabh"></target>
 
 
   <target name="load-bmtnaab" description="load Action">
@@ -85,11 +90,41 @@
 
   <target name="load-bmtnaaf" description="load l'elan">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}/metadata/periodicals/bnmtnaaf" createcollection="true"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaaf" createcollection="true"
 	       createsubcollections="true"
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaaf">
+	<include name="*.mods.xml" />
+	<include name="**/*.mets.xml" />
+<!-- 	<include name="**/*.alto.xml" /> -->
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnaag" description="load Klingen">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaag" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaag">
+	<include name="*.mods.xml" />
+	<include name="**/*.mets.xml" />
+<!-- 	<include name="**/*.alto.xml" /> -->
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnaai" description="load Poesia">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaai" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaai">
 	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 <!-- 	<include name="**/*.alto.xml" /> -->
@@ -203,6 +238,36 @@
     </xdb:store>
   </target>
 
+  <target name="load-bmtnaac" description="load la cite">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnaac" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnaac">
+	<include name="*.mods.xml" />
+	<include name="**/*.mets.xml" />
+<!-- 	<include name="**/*.alto.xml" /> -->
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnabc" description="load la Chronique musicale">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnabc" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnabc">
+	<include name="*.mods.xml" />
+	<include name="**/*.mets.xml" />
+<!-- 	<include name="**/*.alto.xml" /> -->
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
   <target name="load-bmtnabg" description="load der Sturm">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
 	       uri="${xmldb.approot}/metadata/periodicals/bmtnabg" createcollection="true"
@@ -210,6 +275,36 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabg">
+	<include name="*.mods.xml" />
+	<include name="**/*.mets.xml" />
+<!-- 	<include name="**/*.alto.xml" /> -->
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnabh" description="load SIM">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnabh" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnabh">
+	<include name="*.mods.xml" />
+	<include name="**/*.mets.xml" />
+<!-- 	<include name="**/*.alto.xml" /> -->
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-bmtnabk" description="load Umelecky">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnabk" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnabk">
 	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 <!-- 	<include name="**/*.alto.xml" /> -->
