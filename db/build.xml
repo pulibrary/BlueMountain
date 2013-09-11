@@ -34,7 +34,7 @@
     </xdb:store>
   </target>
 
-  <target name="load-all" description="load all batches" depends="load-batch2, load-batch3, load-batch4"></target>
+  <target name="load-all" description="load all batches" depends="load-batch1, load-batch2, load-batch3, load-batch4"></target>
 
   <target name="load-batch1" description="load batch1" depends="load-bmtnaad, load-bmtnaae, load-bmtnaaf, load-bmtnaao, load-bmtnabg"></target>
 
