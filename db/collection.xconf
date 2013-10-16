@@ -19,7 +19,11 @@
       <text qname="mods:subject"/>
       <text qname="mods:genre"/>
 
+      <!-- Try using named fields now -->
 
+      <text field="creator" qname="mods:name" />
+      <text field="title" qname="mods:titleInfo" />
+      <text field="language" qname="mods:languageTerm" />
 
 
       <!-- METS indexes -->
