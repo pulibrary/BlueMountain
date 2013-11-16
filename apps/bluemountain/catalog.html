@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="row-fluid">
+        <div class="span8">
+            <div class="page-header">
+                <h1>Catalog</h1>
+            </div>
+        </div>
+        <div class="span4">
+            <!-- Empty for now -->
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span4" data-template="app:selected-titles">
+         <!-- Titles -->
+            <h2>Titles</h2>
+            <p>Collection contains <span data-template="app:title-count"/> title(s).</p>
+            <ol>
+                <li data-template="templates:each" data-template-from="titles" data-template-to="title">
+                    <span data-template="app:title-label">Lorem Ipsum</span>
+                </li>
+            </ol>
+        </div>
+        <div class="span4">
+            <h2>Issues</h2>
+        </div>
+        <div class="span4">
+            <h2>Constituents</h2>
+        </div>
+    </div>
+</div>

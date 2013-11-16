@@ -67,7 +67,14 @@ return
     </section>
     <section>
     <h1>Plain Text</h1>
-    
+    {
+            for $area in $logicalDiv//mets:area
+            let $adoc := local:altodoc($mets, $area/@FILEID) 
+            let $uri := concat($adoc, '#', $area/@BEGIN/string())
+            return 
+                        local:alto2txt(doc($adoc)//node()[@ID = $area/@BEGIN])
+
+        }
     </section>
     <section>
         <h1>Page Images</h1>
