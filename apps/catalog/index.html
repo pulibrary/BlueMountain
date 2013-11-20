@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="row-fluid">
+        <div class="span8">
+            <div class="page-header">
+                <h1 data-template="config:app-title">Generated page</h1>
+            </div>
+            <div>
+      </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    <h2>Search Forms</h2>
+                    <form action="" method="POST">
+                        <div class="inputrow">
+                            <label for="creator-query">Creator (author, artist, etc.):</label>
+                            <input id="creator-query" type="text" size="40" name="creator-query" class="templates:form-control"/>
+                        </div>
+                        <div class="inputrow">
+                            <label for="title-query">Title:</label>
+                            <input id="title-query" type="text" size="40" name="title-query" class="templates:form-control"/>
+                        </div>
+                        <div class="inputrow">
+                            <button class="btn" type="submit">Query</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="span6">
+                    <h2>Search Results</h2>
+                    <div data-template="app:query">
+                        <p>Found: <span id="hit-count" data-template="app:hit-count"/> matches.</p>
+                        <div id="results">
+                            <div data-template="app:show-hits"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" version="2.0" exclude-result-prefixes="xs mods mets">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" exclude-result-prefixes="xs" version="2.0">
     <xsl:output method="html"/>
-    <xsl:param name="context"/>
-    <xsl:template name="title-string">
-        <xsl:param name="modsrec"/>
-        <span class="titleInfo">
-            <xsl:apply-templates select="$modsrec/mods:titleInfo[not(@type='uniform')]"/>
-        </span>
-    </xsl:template>
+
+    <!-- Driver template for testing. -->
     <xsl:template match="mods:relatedItem">
         <div>
             <span class="title">
@@ -29,29 +24,15 @@
         </xsl:if>
         <xsl:value-of select="mods:title/text()"/>
     </xsl:template>
-    <xsl:template match="mods:mods">
-        <xsl:choose>
-            <xsl:when test="$context = 'selected-title-label'">
-                <xsl:call-template name="title-string">
-                    <xsl:with-param name="modsrec" select="current()"/>
-                </xsl:call-template>
-            </xsl:when>
-            <xsl:when test="$context = 'selected-issue-label'">
-                <xsl:call-template name="title-string">
-                    <xsl:with-param name="modsrec" select="current()"/>
-                </xsl:call-template>
-            </xsl:when>
-            <xsl:otherwise>
-                <i>
-                    <xsl:apply-templates select="mods:titleInfo[not(@type='uniform')]"/>
-                </i>
-                <xsl:text>, </xsl:text>
-                <xsl:apply-templates select="mods:part[@type='issue']"/>
-                <xsl:text> (</xsl:text>
-                <xsl:apply-templates select="mods:originInfo"/>
-                <xsl:text>)</xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
+    <xsl:template match="host">
+        <i>
+            <xsl:apply-templates select="mods:mods/mods:titleInfo"/>
+        </i>
+        <xsl:text>, </xsl:text>
+        <xsl:apply-templates select="mods:mods/mods:part[@type='issue']"/>
+        <xsl:text> (</xsl:text>
+        <xsl:apply-templates select="mods:mods/mods:originInfo"/>
+        <xsl:text>)</xsl:text>
     </xsl:template>
     <xsl:template match="mods:part">
         <xsl:if test="mods:detail[@type='volume']">
