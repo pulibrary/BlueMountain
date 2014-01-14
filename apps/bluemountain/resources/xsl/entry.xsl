@@ -8,6 +8,14 @@
             <xsl:apply-templates select="$modsrec/mods:titleInfo[not(@type='uniform')]"/>
         </span>
     </xsl:template>
+    <xsl:template name="issue-label-string">
+        <xsl:param name="modsrec"/>
+        <span class="issueLabel">
+            <xsl:apply-templates select="$modsrec/mods:part"/>
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="$modsrec/mods:originInfo"/>
+        </span>
+    </xsl:template>
     <xsl:template match="mods:relatedItem">
         <div>
             <span class="title">
@@ -38,6 +46,11 @@
             </xsl:when>
             <xsl:when test="$context = 'selected-issue-label'">
                 <xsl:call-template name="title-string">
+                    <xsl:with-param name="modsrec" select="current()"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="$context = 'issue-listing-label'">
+                <xsl:call-template name="issue-label-string">
                     <xsl:with-param name="modsrec" select="current()"/>
                 </xsl:call-template>
             </xsl:when>
