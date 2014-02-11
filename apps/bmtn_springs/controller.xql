@@ -40,12 +40,39 @@ else if ($tokens[count($tokens) - 1] = "issues") then
             <add-parameter name="bmtnid" value="{$exist:resource}"/>
         </forward>
     </dispatch>
-    else if ($tokens[count($tokens) - 2] = "constituents") then
+else if ($tokens[count($tokens) - 2] = "constituents-original") then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <forward url="{$exist:controller}/modules/constituent.xql">
             <add-parameter name="bmtnid" value="{$tokens[count($tokens) - 1]}"/>
             <add-parameter name="constituentid" value="{$exist:resource}"/>
         </forward>
+    </dispatch>
+    
+else if ($tokens[count($tokens) - 2] = "constituents") then
+let $constituentid := 
+                if (ends-with($exist:resource, ".txt")) then
+                substring-before($exist:resource, ".txt")
+                else $exist:resource
+let $mode :=
+                if (ends-with($exist:resource, ".txt")) then
+                "txt" else ()
+     return
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <forward url="{$exist:controller}/modules/constituent2.xql">
+            <add-parameter name="bmtnid" value="{$tokens[count($tokens) - 1]}"/>
+            <add-parameter name="constituentid" value="{$constituentid}"/>
+            <add-parameter name="mode" value="{$mode}"/>
+            <set-attribute name="xquery.attribute" value="model"/>
+        </forward>
+
+        <view>
+            <forward servlet ="XSLTServlet">
+      <set-attribute name="xslt.stylesheet" value = "{$exist:root}/bmtn_springs/resources/xsl/foo.xsl"/>
+      <set-attribute name="xslt.input" value="model"/>
+    </forward>
+
+        </view>
+
     </dispatch>
 
 (: Resource paths starting with $shared are loaded from the shared-resources app :)

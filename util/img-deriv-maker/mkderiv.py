@@ -15,7 +15,7 @@ from datetime import datetime
 ###############################################################################
 # Generic location in the pudl file system - e.g., pudl0001 or pudl0001/4609321 
 # DO NOT include a leading slash, e.g., "/pudl0001".
-PUDL_LOCATORS = [ "2612861" ]
+PUDL_LOCATORS = [ "001" ]
 PUDL_LOCATORS_TEST = [
 	"pudl0097/4939605"
 ]
@@ -31,7 +31,8 @@ OVERWRITE_EXISTING = False
 #SOURCE_ROOT = "/usr/share/BlueMountain/pstore/periodicals/"
 #SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/pstore/periodicals/"
 #SOURCE_ROOT = "/Volumes/BLUEMNTN_HD/source_tiffs/periodicals/"
-SOURCE_ROOT = "/Users/cwulfman/Desktop/archival_batch_2/"
+#SOURCE_ROOT = "/Users/cwulfman/Desktop/archival_batch_2/"
+SOURCE_ROOT = "/tmp/incoming/"
 
 #
 # Location of target images. "pudlXXXX" directories and subdirectories will be
@@ -41,7 +42,7 @@ SOURCE_ROOT = "/Users/cwulfman/Desktop/archival_batch_2/"
 TARGET_ROOT = "/usr/share/BlueMountain/pstore/periodicals/"
 #
 # Location for temporary half-size TIFFs, required for setting color profile.
-TMP_DIR = "/tmp/"
+TMP_DIR = "/tmp/output/"
 #
 
 # Recipes for Image Magick and Kakadu.
@@ -60,10 +61,10 @@ Creversible=yes -rate -,1,0.5,0.25 \
 EXIV2_GET_BPS = "-Pt -g Exif.Image.BitsPerSample print"
 
 # Installations may need to adjust these
-EXIV2 = "/opt/local/bin/exiv2"
-CONVERT = "/opt/local/bin/convert"
+EXIV2 = "/usr/bin/exiv2"
+CONVERT = "/usr/bin/convert"
 TIFFCP = "/opt/local/bin/tiffcp"
-KDU_COMPRESS = "/usr/bin/kdu_compress"
+KDU_COMPRESS = "/usr/local/bin/kdu_compress"
 ################################################################################
 # Code. Leave this alone :). ###################################################
 ################################################################################

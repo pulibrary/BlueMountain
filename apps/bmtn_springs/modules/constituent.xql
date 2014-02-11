@@ -26,13 +26,22 @@ declare function local:alto2txt($textblock) {
 
 let $bmtnid := request:get-parameter("bmtnid", ())
 let $constituentid := request:get-parameter("constituentid", ())
+let $mode := request:get-parameter("mode", ())
 let $issueURN := concat('urn:PUL:bluemountain:', $bmtnid)
 let $issueRec := collection('/db/bluemtn')//mods:mods[mods:identifier[@type='bmtn'] = $issueURN]
 let $constituent := $issueRec/mods:relatedItem[@ID = $constituentid]
 let $mets := $issueRec/ancestor::mets:mets
 let $logicalDiv := $issueRec/ancestor::mets:mets/mets:structMap[@TYPE='LOGICAL']//mets:div[@DMDID = $constituentid]
 
+let $plaintext :=
+            for $area in $logicalDiv//mets:area
+            let $adoc := local:altodoc($mets, $area/@FILEID) 
+            let $uri := concat($adoc, '#', $area/@BEGIN/string())
+            return local:alto2txt(doc($adoc)//node()[@ID = $area/@BEGIN])
 return
+
+if ($mode = "txt") then <p>foo</p> else
+
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>{$constituentid}</title>
@@ -56,12 +65,7 @@ return
             for $area in $logicalDiv//mets:area
             let $adoc := local:altodoc($mets, $area/@FILEID) 
             let $uri := concat($adoc, '#', $area/@BEGIN/string())
-            return <li>
-                    <dl>
-                        <dt><a href="http://localhost:8080/exist/rest{$uri}">{$uri}</a></dt>
-                        <dd>{local:alto2txt(doc($adoc)//node()[@ID = $area/@BEGIN])}</dd>
-                    </dl>
-                    </li>
+            return <li><a href="http://localhost:8080/exist/rest{$uri}">{$uri}</a></li>
         }
         </ol>
     </section>

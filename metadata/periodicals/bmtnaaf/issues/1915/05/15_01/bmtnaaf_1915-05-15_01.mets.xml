@@ -84,7 +84,6 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-					
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -121,7 +120,6 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
-					
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="fre">
 							<title>PAS DE WAGNER A L'HORIZON?</title>
@@ -142,10 +140,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
-						
-
 					</relatedItem>
-					
 					<relatedItem type="constituent" ID="c007">
 						<titleInfo lang="fre">
 							<nonSort>La</nonSort>
@@ -1190,6 +1185,11 @@
 				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaf_1915-05-15_01_0011.alto.xml"/>
 			</file>
 		</fileGrp>
+		<fileGrp ID="PDFGRP" USE="PDF">
+			<file ID="PDF_ISSUELEVEL" CREATED="2013-10-24T06:19:50" MIMETYPE="application/pdf" CHECKSUM="05065134db474ae38611c50b05ed9236bbc9d1e8" CHECKSUMTYPE="SHA-1" SIZE="4999212">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaf/issues/1915/05/15_01/bmtnaaf_1915-05-15_01.pdf"/>
+			</file>
+		</fileGrp>
 	</fileSec>
 	<structMap LABEL="Physical Structure" TYPE="PHYSICAL">
 		<div ID="DIVP1" LABEL="" TYPE="Magazine" DMDID="dmd1">
@@ -1402,22 +1402,18 @@
 						</div>
 					</div>
 					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="PAS DE WAGNER A L'HORIZON?">
-						
-							<div ID="L.1.1.2.5.1.1" TYPE="Image">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
-								</fptr>
-							</div>
-							<div ID="L.1.1.2.5.1.2" TYPE="Caption">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
-								</fptr>
-							</div>
-						
-						
+						<div ID="L.1.1.2.5.1.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.5.1.2" TYPE="Caption">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
+							</fptr>
+						</div>
 					</div>
 					<div ID="L.1.1.2.6" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="La Gardienne du Foyer">
-						
 						<div ID="L.1.1.2.5.2" TYPE="Copy">
 							<div ID="L.1.1.2.5.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.2.5.2.1.1" TYPE="Paragraph" ORDER="1">
@@ -1429,7 +1425,6 @@
 								</div>
 							</div>
 						</div>
-						
 						<div ID="L.1.1.2.6.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_CB00001"/>
