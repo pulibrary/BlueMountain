@@ -43,27 +43,42 @@
                 <title>Fin-de-siècle</title>
             </titleInfo>
         </relatedItem>
-        <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
         <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-            <holdingSimple>
-                <copyInformation>
-                    <subLocation>flm</subLocation>
-                    <!--DELETE COPY NUMBER BELOW-->
-                    <shelfLocator>1 MICROFILM S01427 reel 225-226</shelfLocator>
-                </copyInformation>
-            </holdingSimple>
-        </location>
-        <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
             <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
             <holdingSimple>
                 <copyInformation>
                     <subLocation>ex</subLocation>
-                    <!--DELETE COPY NUMBER BELOW-->
                     <shelfLocator>1 0904.327</shelfLocator>
                 </copyInformation>
             </holdingSimple>
         </location>
+    
+    <relatedItem type="constituent">
+        <part type="issue">
+            <detail type="volume">
+                <caption><!-- fill me in --></caption>
+                <number><!-- fill me in --></number>
+            </detail>
+            <detail type="number">
+                <caption><!-- fill me in --></caption>
+                <number><!-- fill me in --></number>
+            </detail>
+        </part>
+        <originInfo>
+            <dateIssued><!-- fill me in --></dateIssued>
+            <dateIssued keyDate="yes" encoding="w3cdtf"><!-- fill me in --></dateIssued>
+        </originInfo>
+        <location>
+            <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+                <copyInformation>
+                    <subLocation>ex</subLocation>
+                    <shelfLocator>1 0904.327</shelfLocator>
+                </copyInformation>
+            </holdingSimple>
+        </location>
+    </relatedItem>
+    
 </mods>
