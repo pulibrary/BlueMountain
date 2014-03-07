@@ -2,7 +2,9 @@
   <index
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:mets="http://www.loc.gov/METS/"
-      xmlns:mods="http://www.loc.gov/mods/v3">
+      xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:alto="http://www.loc.gov/standards/alto/ns-v2#"
+      >
 
     <!-- Not using the Legacy Fulltext Index -->
     <fulltext default="none" attributes="no"/>
@@ -28,6 +30,9 @@
 
       <!-- METS indexes -->
       <text qname="mets:metsDocumentId"/>
+
+      <!-- ALTO indexes -->
+      <text qname="@CONTENT"/>
 
     </lucene>
 
