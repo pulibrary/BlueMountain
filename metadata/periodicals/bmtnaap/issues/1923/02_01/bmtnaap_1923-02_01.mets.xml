@@ -17,10 +17,10 @@
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaap_1923-02_01</identifier>
 	  <typeOfResource>text</typeOfResource>
 	  <genre>Periodicals-Issue</genre>
-	  <titleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <titleInfo>
 	    <title>Broom</title>
 	  </titleInfo>
-	  <part xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="issue">
+	  <part type="issue">
 	    <detail type="volume">
 	      <number>4</number>
 	      <caption>Vol. 4</caption>
@@ -30,11 +30,11 @@
 	      <caption>No. 3</caption>
 	    </detail>
 	  </part>
-	  <originInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <originInfo>
 	    <dateIssued>February 1923</dateIssued>
 	    <dateIssued keyDate="yes" encoding="w3cdtf">1923-02</dateIssued>
 	  </originInfo>
-	  <relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaap">
+	  <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaap">
 	    <recordInfo>
 	      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaap</recordIdentifier>
 	    </recordInfo>
@@ -306,7 +306,7 @@
 
 	  <relatedItem type="constituent" ID="c014">
 	    <titleInfo lang="eng">
-	      <title>LAndscape</title>
+	      <title>Landscape</title>
 	    </titleInfo>
 	    <name type="personal">
 	      <displayForm>William Gamaliel Shephard</displayForm>
@@ -7491,14 +7491,14 @@
 	  </div>
 	</div>
 	<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-	  <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled">
+	  <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Cover Design (Woodcut) by Lissitzky">
 	    <div ID="L.1.1.2.1.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="Page">
+	  <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="Table of Contents">
 	    <div ID="L.1.1.2.2.1" TYPE="Copy">
 	      <div ID="L.1.1.2.2.1.1" TYPE="BodyContent">
 		<div ID="L.1.1.2.2.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -7511,7 +7511,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c003" LABEL="TRANSFORMATIONS">
+	  <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c003" LABEL="'Transformations' by Richard Huelsenbeck">
 	    <div ID="L.1.1.2.3.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00002"/>
@@ -7654,7 +7654,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004" LABEL="POST MORTEM">
+	  <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004" LABEL="'Post Mortem' by Paul Eldridge">
 	    <div ID="L.1.1.2.4.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00002"/>
@@ -7725,7 +7725,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="INFALLIBILITY">
+	  <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="'Infallibility' by Paul Eldridge">
 	    <div ID="L.1.1.2.5.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00004"/>
@@ -7748,7 +7748,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.6" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="George Grosz Periphery">
+	  <div ID="L.1.1.2.6" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="'Periphery' by George Grosz">
 	    <div ID="L.1.1.2.6.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_CB00001"/>
@@ -7763,7 +7763,7 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c007" LABEL="GEORGE GROSZ">
+	  <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c007" LABEL="'George Grosz' by Westheim">
 	    <div ID="L.1.1.2.7.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00003"/>
@@ -7774,7 +7774,7 @@
 		<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00004"/>
 	      </fptr>
 	    </div>
-	    <div ID="L.1.1.2.7.3" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="George Grosz Pop and Mom">
+	    <div ID="L.1.1.2.7.3" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="'Pop and Mom' by George Grosz">
 	      <div ID="L.1.1.2.7.3.1" TYPE="Image">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_CB00001"/>
@@ -7789,7 +7789,7 @@
 		</fptr>
 	      </div>
 	    </div>
-	    <div ID="L.1.1.2.7.4" TYPE="Illustration" ORDER="2" DMDID="c009" LABEL="George Grosz Bourgeois Charity">
+	    <div ID="L.1.1.2.7.4" TYPE="Illustration" ORDER="2" DMDID="c009" LABEL="'Bourgeois Charity' by George Grosz">
 	      <div ID="L.1.1.2.7.4.1" TYPE="Image">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00001"/>
@@ -7886,7 +7886,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c010" LABEL="MORTUARY">
+	  <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c010" LABEL="'Mortuary' by Malcolm Cowley">
 	    <div ID="L.1.1.2.8.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00002"/>
@@ -7909,7 +7909,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.9" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="Paul Klee Suicide on the Bridge">
+	  <div ID="L.1.1.2.9" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="'Suicide on the Bridge' by Paul Klee">
 	    <div ID="L.1.1.2.9.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_CB00001"/>
@@ -7924,7 +7924,7 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c012" LABEL="THE SONG OF THE WHIP">
+	  <div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c012" LABEL="'The Song of the Whip' by Carleton Beals">
 	    <div ID="L.1.1.2.10.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00002"/>
@@ -7935,7 +7935,7 @@
 		<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00003"/>
 	      </fptr>
 	    </div>
-	    <div ID="L.1.1.2.10.3" TYPE="Illustration" ORDER="1" DMDID="c013" LABEL="Paul Klee Murder">
+	    <div ID="L.1.1.2.10.3" TYPE="Illustration" ORDER="1" DMDID="c013" LABEL="'Murder' by Paul Klee">
 	      <div ID="L.1.1.2.10.3.1" TYPE="Image">
 		<fptr>
 		  <area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_CB00001"/>
@@ -8018,7 +8018,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c014" LABEL="LANDSCAPE">
+	  <div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c014" LABEL="'Landscape' by William Gamaliel Shephard">
 	    <div ID="L.1.1.2.11.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00002"/>
@@ -8048,7 +8048,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.12" TYPE="Illustration" ORDER="1" DMDID="c016" LABEL="Paul Klee Acrobats">
+	  <div ID="L.1.1.2.12" TYPE="Illustration" ORDER="1" DMDID="c016" LABEL="'Acrobats' by Paul Klee">
 	    <div ID="L.1.1.2.12.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00039" BEGIN="P39_CB00001"/>
@@ -8063,7 +8063,7 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.13" TYPE="TextContent" ORDER="13" DMDID="c017" LABEL="THE DISCOVERERS I. Red Eric">
+	  <div ID="L.1.1.2.13" TYPE="TextContent" ORDER="13" DMDID="c017" LABEL="'The Discoverers I. Red Eric' by William Carlos Williams">
 	    <div ID="L.1.1.2.13.1" TYPE="Head">
 	      <fptr>
 		<seq>
@@ -8118,7 +8118,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.14" TYPE="Illustration" ORDER="1" DMDID="c018" LABEL="George Grosz The Pimps of Death">
+	  <div ID="L.1.1.2.14" TYPE="Illustration" ORDER="1" DMDID="c018" LABEL="'The Pimps of Death' by George Grosz">
 	    <div ID="L.1.1.2.14.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_CB00001"/>
@@ -8133,7 +8133,7 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.15" TYPE="TextContent" ORDER="15" DMDID="c019" LABEL="THE KID">
+	  <div ID="L.1.1.2.15" TYPE="TextContent" ORDER="15" DMDID="c019" LABEL="'The Kid' by Vsevolod Ivanov">
 	    <div ID="L.1.1.2.15.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00046" BEGIN="P46_TB00002"/>
@@ -8305,7 +8305,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.16" TYPE="Illustration" ORDER="1" DMDID="c021" LABEL="Saturday Night George Grosz">
+	  <div ID="L.1.1.2.16" TYPE="Illustration" ORDER="1" DMDID="c021" LABEL="'Saturday Night' by George Grosz">
 	    <div ID="L.1.1.2.16.1" TYPE="Image">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00057" BEGIN="P57_CB00001"/>
@@ -8320,7 +8320,7 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.17" TYPE="TextContent" ORDER="17" DMDID="c022" LABEL="A NOTE ON MODERN RUSSIAN ART">
+	  <div ID="L.1.1.2.17" TYPE="TextContent" ORDER="17" DMDID="c022" LABEL="'A Note on Modern Russian Art' by Louis Lozowick">
 	    <div ID="L.1.1.2.17.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00058" BEGIN="P58_TB00002"/>
@@ -8395,7 +8395,7 @@
 	      </fptr>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.19" TYPE="TextContent" ORDER="19" DMDID="c025" LABEL="BERLIN AND THE BUBBLING RHINE">
+	  <div ID="L.1.1.2.19" TYPE="TextContent" ORDER="19" DMDID="c025" LABEL="'Berlin and the Bubbling Rhine' by M. J.">
 	    <div ID="L.1.1.2.19.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00064" BEGIN="P64_TB00002"/>
@@ -8460,7 +8460,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div ID="L.1.1.2.20" TYPE="TextContent" ORDER="20" DMDID="c026" LABEL="COMMENT">
+	  <div ID="L.1.1.2.20" TYPE="TextContent" ORDER="20" DMDID="c026" LABEL="'Comment' by L. M.">
 	    <div ID="L.1.1.2.20.1" TYPE="Head">
 	      <fptr>
 		<area BETYPE="IDREF" FILEID="ALTO00070" BEGIN="P70_TB00002"/>
