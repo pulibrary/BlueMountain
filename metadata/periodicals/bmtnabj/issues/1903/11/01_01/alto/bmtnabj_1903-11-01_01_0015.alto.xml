@@ -9,8 +9,8 @@
 			<preProcessingStep>
 				<processingSoftware>
 					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
-					<softwareName>CCS docWORKS</softwareName>
-					<softwareVersion>6.6-2.8</softwareVersion>
+					<softwareName>CCS docWorks</softwareName>
+					<softwareVersion>6.7-1.20</softwareVersion>
 				</processingSoftware>
 			</preProcessingStep>
 			<ocrProcessingStep>
@@ -18,6 +18,21 @@
 					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
 					<softwareName>FineReader</softwareName>
 					<softwareVersion>10.0</softwareVersion>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+		<OCRProcessing ID="OCRPROCESSING_2">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWorks</softwareName>
+					<softwareVersion>6.7-1.20</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>NA</softwareName>
 				</processingSoftware>
 			</ocrProcessingStep>
 		</OCRProcessing>
@@ -29,7 +44,7 @@
 		<TextStyle ID="TXT_3" FONTSIZE="15" FONTFAMILY="Times New Roman"/>
 		<TextStyle ID="TXT_4" FONTSIZE="12" FONTFAMILY="Times New Roman"/>
 		<TextStyle ID="TXT_5" FONTSIZE="12" FONTFAMILY="Times New Roman" FONTSTYLE="italics"/>
-		<TextStyle ID="TXT_6" FONTSIZE="16" FONTFAMILY="Times New Roman"/>
+		<TextStyle ID="TXT_6" FONTSIZE="34" FONTFAMILY="Arial"/>
 		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
 		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
 		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
@@ -680,11 +695,11 @@
 						<String ID="P15_ST00298" HPOS="994" VPOS="3244" WIDTH="167" HEIGHT="40" CONTENT="l'oubli." WC="0.99" CC="34000021"/>
 					</TextLine>
 				</TextBlock>
-				<TextBlock ID="P15_TB00008" HPOS="1572" VPOS="3325" WIDTH="347" HEIGHT="44" STYLEREFS="TXT_1 PAR_RIGHT">
+				<TextBlock ID="P15_TB00008" HPOS="1572" VPOS="3325" WIDTH="347" HEIGHT="44" STYLEREFS="TXT_3 PAR_RIGHT">
 					<TextLine ID="P15_TL00028" HPOS="1575" VPOS="3328" WIDTH="343" HEIGHT="41">
-						<String ID="P15_ST00299" HPOS="1575" VPOS="3328" WIDTH="141" HEIGHT="41" CONTENT="Louis" WC="0.99" CC="43100" STYLEREFS="TXT_3"/>
+						<String ID="P15_ST00299" HPOS="1575" VPOS="3328" WIDTH="141" HEIGHT="41" CONTENT="LOUIS" WC="1.00" CC="40000"/>
 						<SP ID="P15_SP00270" HPOS="1716" VPOS="3369" WIDTH="39"/>
-						<String ID="P15_ST00300" HPOS="1755" VPOS="3328" WIDTH="163" HEIGHT="40" CONTENT="LALOY." WC="0.93" CC="001001"/>
+						<String ID="P15_ST00300" HPOS="1755" VPOS="3328" WIDTH="163" HEIGHT="40" CONTENT="LALOY." WC="0.93" CC="001001" STYLEREFS="TXT_1"/>
 					</TextLine>
 				</TextBlock>
 				<TextBlock ID="P15_TB00009" HPOS="204" VPOS="3472" WIDTH="1410" HEIGHT="48" STYLEREFS="TXT_4 PAR_LEFT">
@@ -722,8 +737,8 @@
 				<ComposedBlock ID="P15_CB00001" HPOS="747" VPOS="582" WIDTH="764" HEIGHT="109" STYLEREFS="TXT_6 PAR_LEFT" TYPE="Music">
 					<GraphicalElement ID="P15_CB00001_SUB" HPOS="747" VPOS="582" WIDTH="764" HEIGHT="109"/>
 				</ComposedBlock>
-				<ComposedBlock ID="P15_CB00002" HPOS="257" VPOS="1011" WIDTH="1282" HEIGHT="117" STYLEREFS="TXT_6 PAR_LEFT" TYPE="Music">
-					<GraphicalElement ID="P15_CB00002_SUB" HPOS="257" VPOS="1011" WIDTH="1282" HEIGHT="117"/>
+				<ComposedBlock ID="P15_CB00002" HPOS="718" VPOS="1011" WIDTH="821" HEIGHT="117" STYLEREFS="TXT_6 PAR_LEFT" TYPE="Music">
+					<GraphicalElement ID="P15_CB00002_SUB" HPOS="718" VPOS="1011" WIDTH="821" HEIGHT="117"/>
 				</ComposedBlock>
 				<ComposedBlock ID="P15_CB00003" HPOS="761" VPOS="1448" WIDTH="764" HEIGHT="115" STYLEREFS="TXT_6 PAR_LEFT" TYPE="Music">
 					<GraphicalElement ID="P15_CB00003_SUB" HPOS="761" VPOS="1448" WIDTH="764" HEIGHT="115"/>
