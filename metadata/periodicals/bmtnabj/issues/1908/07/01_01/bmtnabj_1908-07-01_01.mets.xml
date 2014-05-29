@@ -1,23 +1,4060 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:mods="http://www.loc.gov/mods/v3"
-      xmlns:local="http://diglib.princeton.edu"
-      TYPE="Periodical-Issue"
-      OBJID="urn:PUL:bluemountain:bmtnabj_1908-07-01_01">
-   <metsHdr>
-      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-         <name>Princeton University Library, Digital Initiatives</name>
-      </agent>
-   </metsHdr>
-   <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabj_1908-07-01_01</metsDocumentID>
-   <dmdSec ID="dmd1">
-      <mdRef LOCTYPE="URN"
-             MDTYPE="MODS"
-             MIMETYPE="application/mods+xml"
-             xlink:href="urn:PUL:bluemountain:dmd:bmtnabj_1908-07-01_01"/>
-   </dmdSec>
-   <structMap>
-      <div/>
-   </structMap>
+<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabj_1908-07-01_01">
+	<metsHdr>
+		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
+			<name>Princeton University Library, Digital Initiatives</name>
+			<note>docWORKS-ID: 405648</note>
+		</agent>
+		<metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabj_1908-07-01_01</metsDocumentID>
+	</metsHdr>
+	<dmdSec ID="dmd1">
+		<mdWrap MDTYPE="MODS">
+			<xmlData>
+				<mods xmlns="http://www.loc.gov/mods/v3">
+					<recordInfo>
+						<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabj_1908-07-01_01</recordIdentifier>
+					</recordInfo>
+					<identifier type="bmtn">urn:PUL:bluemountain:bmtnabj_1908-07-01_01</identifier>
+					<typeOfResource>text</typeOfResource>
+					<genre>Periodicals-Issue</genre>
+					<titleInfo>
+						<nonSort>La</nonSort>
+						<title>revue musicale</title>
+						<subTitle>Publication bi-mensuelle Honorée d'une souscription du Ministère de l'Instruction publique et des Beaux-Arts</subTitle>
+					</titleInfo>
+					<part type="issue">
+						<extent unit="pages">
+							<list>369-400</list>
+						</extent>
+						<extent unit="pageimages">
+							<total>32</total>
+						</extent>
+						<detail type="number">
+							<number>13</number>
+						</detail>
+						<detail type="volume">
+							<number>8</number>
+						</detail>
+					</part>
+					<originInfo>
+						<dateIssued>1er Mai 1908 [1er Juillet 1908] ??</dateIssued>
+						<dateIssued keyDate="yes" encoding="iso8601">1908-07-01</dateIssued>
+					</originInfo>
+					<location>
+						<physicalLocation>SVL</physicalLocation>
+						<holdingSimple>
+							<copyInformation>
+								<form>bound without covers</form>
+								<shelfLocator>ML5.R35</shelfLocator>
+								<note/>
+							</copyInformation>
+						</holdingSimple>
+					</location>
+					<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabj">
+						<recordInfo>
+							<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabj</recordIdentifier>
+						</recordInfo>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c001">
+						<titleInfo lang="fre">
+							<title>COURS DU COLLÈGE DE FRANCE</title>
+						</titleInfo>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<list>1-6</list>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c002">
+							<titleInfo lang="fre">
+								<title>Histoire du théâtre lyrique Le Chorège antique.</title>
+							</titleInfo>
+							<name type="personal">
+								<displayForm>JULES COMBARIEU</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>1-6</list>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c003">
+						<titleInfo lang="fre">
+							<nonSort>Les</nonSort>
+							<title>exécutions récentes.</title>
+						</titleInfo>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<list>6-8</list>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c004">
+							<titleInfo lang="fre">
+								<title>RECETTES DES THÉÂTRES.</title>
+							</titleInfo>
+							<name type="personal">
+								<displayForm>S</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>6-7</list>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c005">
+							<titleInfo lang="fre">
+								<title>M. DEBUSSY ET LA MUSIQUE RUSSE. — A propos de la récente et très brillante</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>7</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c006">
+							<titleInfo lang="fre">
+								<title>CHEZ FÉLIA LITVINNE.</title>
+							</titleInfo>
+							<name type="personal">
+								<displayForm>T</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>7</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c007">
+							<titleInfo lang="fre">
+								<title>Mme ROSE CARON.</title>
+							</titleInfo>
+							<name type="personal">
+								<displayForm>T</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>7-8</list>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c008">
+							<titleInfo lang="fre">
+								<title>UN TÉNOR RUSSE.  Chez Mme Edmée 8...; au programme de cette soirée</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>8</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c009">
+						<titleInfo lang="fre">
+							<title>ALEXANDRE CHORON, d'après des documents inédits.</title>
+						</titleInfo>
+						<name type="personal">
+							<displayForm>UN CHORÈGE MODERNE</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<name type="personal">
+							<displayForm>N. D. L. R</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<list>8-9</list>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c010">
+						<titleInfo lang="fre">
+							<nonSort>La</nonSort>
+							<title>famille de Choron (1). — Sa vie jusqu'en 1804.</title>
+						</titleInfo>
+						<name type="personal">
+							<displayForm>GABRIEL VAUTHIER</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<list>9-21</list>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c011">
+						<titleInfo lang="fre">
+							<title>Pierre Montan Berton (Fragments inédits.)</title>
+						</titleInfo>
+						<name type="personal">
+							<displayForm>MARTIAL TENEO</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<list>21-29</list>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c012">
+						<titleInfo lang="fre">
+							<title>Informations.</title>
+						</titleInfo>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<list>29-30</list>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c013">
+							<titleInfo lang="fre">
+								<nonSort>LE</nonSort>
+								<title>BAROMÈTRE MUSICAL : I. – Opéra. Recettes détaillées du 16 mai au 15 juin 1908.</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>29</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+							<relatedItem type="constituent" ID="c014">
+								<titleInfo lang="fre">
+									<title>Untitled</title>
+								</titleInfo>
+								<typeOfResource>text</typeOfResource>
+								<part>
+									<extent unit="page">
+										<start>29</start>
+									</extent>
+								</part>
+								<genre type="CCS">TextContent</genre>
+							</relatedItem>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c015">
+							<titleInfo lang="fre">
+								<title>II. – Opéra-Comique. Recettes détaillées du 16 mai au 15 juin 1908.</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>30</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+							<relatedItem type="constituent" ID="c016">
+								<titleInfo lang="fre">
+									<title>Untitled</title>
+								</titleInfo>
+								<typeOfResource>text</typeOfResource>
+								<part>
+									<extent unit="page">
+										<start>30</start>
+									</extent>
+								</part>
+								<genre type="CCS">TextContent</genre>
+							</relatedItem>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c017">
+							<titleInfo lang="fre">
+								<title>Aux amateurs de cartes postales.  La Compagnie de l'Ouest a</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">fre</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>30</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c018">
+						<titleInfo>
+							<title>[Advertisement]</title>
+						</titleInfo>
+						<genre>advertisement</genre>
+						<typeOfResource>text</typeOfResource>
+						<part>
+							<extent unit="page">
+								<start>31</start>
+							</extent>
+						</part>
+						<genre type="CCS">SponsoredAdvertisement</genre>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c019">
+						<titleInfo>
+							<title>[Advertisement]</title>
+						</titleInfo>
+						<genre>advertisement</genre>
+						<typeOfResource>text</typeOfResource>
+						<part>
+							<extent unit="page">
+								<start>32</start>
+							</extent>
+						</part>
+						<genre type="CCS">SponsoredAdvertisement</genre>
+					</relatedItem>
+				</mods>
+			</xmlData>
+		</mdWrap>
+	</dmdSec>
+	<amdSec>
+		<techMD ID="techmd1">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0001.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777843</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000387.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd2">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0002.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777837</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000388.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd3">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0003.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777834</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000389.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd4">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0004.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777843</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000390.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd5">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0005.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777821</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000391.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd6">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0006.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777841</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000392.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd7">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0007.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777842</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000393.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd8">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0008.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777823</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000394.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd9">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0009.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777831</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000395.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd10">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0010.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000396.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd11">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0011.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777842</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000397.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd12">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0012.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777818</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000398.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd13">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0013.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000399.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd14">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0014.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777831</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000400.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd15">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0015.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777840</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000401.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd16">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0016.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777736</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000402.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd17">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0017.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000403.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd18">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0018.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777838</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000404.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd19">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0019.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777816</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000405.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd20">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0020.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777830</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000406.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd21">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0021.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777812</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000407.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd22">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0022.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777842</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000408.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd23">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0023.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000409.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd24">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0024.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000410.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd25">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0025.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777832</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000411.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd26">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0026.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777838</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000412.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd27">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0027.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777599</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000413.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd28">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0028.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000414.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd29">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0029.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777840</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000415.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd30">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0030.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777838</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000416.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd31">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0031.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777813</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000417.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+		<techMD ID="techmd32">
+			<mdWrap MDTYPE="NISOIMG">
+				<xmlData>
+					<mix:mix>
+						<mix:BasicImageParameters>
+							<mix:Format>
+								<mix:MIMEType>image/jp2</mix:MIMEType>
+								<mix:ByteOrder>little-endian</mix:ByteOrder>
+								<mix:Compression>
+									<mix:CompressionScheme>34712</mix:CompressionScheme>
+								</mix:Compression>
+								<mix:PhotometricInterpretation>
+									<mix:ColorSpace>2</mix:ColorSpace>
+								</mix:PhotometricInterpretation>
+							</mix:Format>
+							<mix:File>
+								<mix:ImageIdentifier imageIdentifierLocation="//fileserver8/OUT2-2/Princeton/Revue d'Histoire et de Critique Musicales/bmtnabj/issues/1908/07/01_01/alto">bmtnabj_1908-07-01_01_0032.jp2</mix:ImageIdentifier>
+								<mix:FileSize>2777844</mix:FileSize>
+								<mix:Orientation>1</mix:Orientation>
+								<mix:DisplayOrientation>1</mix:DisplayOrientation>
+							</mix:File>
+						</mix:BasicImageParameters>
+						<mix:ImageCreation>
+							<mix:SourceType>METAe_Serial</mix:SourceType>
+							<mix:SourceID/>
+							<mix:ImageProducer/>
+							<mix:Host>
+								<mix:HostComputer>DWP11</mix:HostComputer>
+								<mix:OperatingSystem>windows</mix:OperatingSystem>
+								<mix:OSVersion>6.1 Service Pack 1</mix:OSVersion>
+							</mix:Host>
+							<mix:DeviceSource/>
+							<mix:ScanningSystemCapture>
+								<mix:ScanningSystemHardware>
+									<mix:ScannerManufacturer/>
+									<mix:ScannerModel>
+										<mix:ScannerModelName/>
+										<mix:ScannerModelNumber/>
+										<mix:ScannerModelSerialNo/>
+									</mix:ScannerModel>
+								</mix:ScanningSystemHardware>
+								<mix:ScanningSystemSoftware>
+									<mix:ScanningSoftware>CCS docWorks</mix:ScanningSoftware>
+									<mix:ScanningSoftwareVersionNo/>
+								</mix:ScanningSystemSoftware>
+								<mix:ScannerCaptureSettings>
+									<mix:PixelSize>0.0635000</mix:PixelSize>
+									<mix:PhysScanResolution>
+										<mix:XphysScanResolution>400</mix:XphysScanResolution>
+										<mix:YphysScanResolution>400</mix:YphysScanResolution>
+									</mix:PhysScanResolution>
+								</mix:ScannerCaptureSettings>
+							</mix:ScanningSystemCapture>
+						</mix:ImageCreation>
+						<mix:ImagingPerformanceAssessment>
+							<mix:SpatialMetrics>
+								<mix:ImageWidth>3631</mix:ImageWidth>
+								<mix:ImageLength>6120</mix:ImageLength>
+							</mix:SpatialMetrics>
+							<mix:Energetics>
+								<mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+								<mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+							</mix:Energetics>
+						</mix:ImagingPerformanceAssessment>
+						<mix:ChangeHistory>
+							<mix:ImageProcessing>
+								<mix:SourceData>./Princeton/bmtnabj/1908/07/01_01/00000418.tif</mix:SourceData>
+							</mix:ImageProcessing>
+						</mix:ChangeHistory>
+					</mix:mix>
+				</xmlData>
+			</mdWrap>
+		</techMD>
+	</amdSec>
+	<fileSec>
+		<fileGrp ID="IMGGRP" USE="Images">
+			<file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2014-04-21T22:19:15" MIMETYPE="image/jp2" SEQ="1" CHECKSUM="1ecf3113142a56089366db254f90e0eaeb7f8f59" CHECKSUMTYPE="SHA-1" SIZE="2777843">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0001.jp2"/>
+			</file>
+			<file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2014-04-21T22:19:26" MIMETYPE="image/jp2" SEQ="2" CHECKSUM="09488907784db9edd060648654525848732c5c83" CHECKSUMTYPE="SHA-1" SIZE="2777837">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0002.jp2"/>
+			</file>
+			<file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2014-04-21T22:19:36" MIMETYPE="image/jp2" SEQ="3" CHECKSUM="d80e79b068c5596c0b9071f35d131591d775cecb" CHECKSUMTYPE="SHA-1" SIZE="2777834">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0003.jp2"/>
+			</file>
+			<file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2014-04-21T22:19:46" MIMETYPE="image/jp2" SEQ="4" CHECKSUM="887a18bf956b0342d931e718de2e29b6f07d1822" CHECKSUMTYPE="SHA-1" SIZE="2777843">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0004.jp2"/>
+			</file>
+			<file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2014-04-21T22:19:56" MIMETYPE="image/jp2" SEQ="5" CHECKSUM="3801c9ba39553b297dae8070324f449378a8901a" CHECKSUMTYPE="SHA-1" SIZE="2777821">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0005.jp2"/>
+			</file>
+			<file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2014-04-21T22:20:05" MIMETYPE="image/jp2" SEQ="6" CHECKSUM="74c35044b38623c4b4bca2a6422b8668fcfdd38c" CHECKSUMTYPE="SHA-1" SIZE="2777841">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0006.jp2"/>
+			</file>
+			<file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2014-04-21T22:20:14" MIMETYPE="image/jp2" SEQ="7" CHECKSUM="0d35d257bee560d1c2c4a2c88d860179b49bd539" CHECKSUMTYPE="SHA-1" SIZE="2777842">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0007.jp2"/>
+			</file>
+			<file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2014-04-21T22:20:22" MIMETYPE="image/jp2" SEQ="8" CHECKSUM="8912f102d834596c7383b6f3f2205a603453d0d0" CHECKSUMTYPE="SHA-1" SIZE="2777823">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0008.jp2"/>
+			</file>
+			<file ID="IMG00009" ADMID="techmd9" GROUPID="page9" CREATED="2014-04-21T22:20:32" MIMETYPE="image/jp2" SEQ="9" CHECKSUM="5bdc40e93885235d2c92ca43651b36b27d7591e6" CHECKSUMTYPE="SHA-1" SIZE="2777831">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0009.jp2"/>
+			</file>
+			<file ID="IMG00010" ADMID="techmd10" GROUPID="page10" CREATED="2014-04-21T22:20:41" MIMETYPE="image/jp2" SEQ="10" CHECKSUM="2bd746e990fc4a266e572aea16e973790266f9a6" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0010.jp2"/>
+			</file>
+			<file ID="IMG00011" ADMID="techmd11" GROUPID="page11" CREATED="2014-04-21T22:20:53" MIMETYPE="image/jp2" SEQ="11" CHECKSUM="f235a1eb6797257419bd38de03b9f6d069fa3bcd" CHECKSUMTYPE="SHA-1" SIZE="2777842">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0011.jp2"/>
+			</file>
+			<file ID="IMG00012" ADMID="techmd12" GROUPID="page12" CREATED="2014-04-21T22:21:02" MIMETYPE="image/jp2" SEQ="12" CHECKSUM="ffe912ee459e1b8f42da70d47bd9f760286bf784" CHECKSUMTYPE="SHA-1" SIZE="2777818">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0012.jp2"/>
+			</file>
+			<file ID="IMG00013" ADMID="techmd13" GROUPID="page13" CREATED="2014-04-21T22:21:11" MIMETYPE="image/jp2" SEQ="13" CHECKSUM="192563c242c3d607e0218653ce90da14fbd91078" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0013.jp2"/>
+			</file>
+			<file ID="IMG00014" ADMID="techmd14" GROUPID="page14" CREATED="2014-04-21T22:21:20" MIMETYPE="image/jp2" SEQ="14" CHECKSUM="c9290646a195053a7b39ea86c08b1994094d0f63" CHECKSUMTYPE="SHA-1" SIZE="2777831">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0014.jp2"/>
+			</file>
+			<file ID="IMG00015" ADMID="techmd15" GROUPID="page15" CREATED="2014-04-21T22:21:30" MIMETYPE="image/jp2" SEQ="15" CHECKSUM="25b9525e594f097eabc92fe19eb6e31c0dfe1712" CHECKSUMTYPE="SHA-1" SIZE="2777840">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0015.jp2"/>
+			</file>
+			<file ID="IMG00016" ADMID="techmd16" GROUPID="page16" CREATED="2014-04-21T22:21:40" MIMETYPE="image/jp2" SEQ="16" CHECKSUM="0d3d8812d2da949e23aab2142113772a0e077d40" CHECKSUMTYPE="SHA-1" SIZE="2777736">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0016.jp2"/>
+			</file>
+			<file ID="IMG00017" ADMID="techmd17" GROUPID="page17" CREATED="2014-04-21T22:21:50" MIMETYPE="image/jp2" SEQ="17" CHECKSUM="3ea790d8920f7ce46a2c0715e2878a47e1bc8f96" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0017.jp2"/>
+			</file>
+			<file ID="IMG00018" ADMID="techmd18" GROUPID="page18" CREATED="2014-04-21T22:21:59" MIMETYPE="image/jp2" SEQ="18" CHECKSUM="2f1d3e44a427c24cdff04bdded704b5249c014ec" CHECKSUMTYPE="SHA-1" SIZE="2777838">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0018.jp2"/>
+			</file>
+			<file ID="IMG00019" ADMID="techmd19" GROUPID="page19" CREATED="2014-04-21T22:22:10" MIMETYPE="image/jp2" SEQ="19" CHECKSUM="b5589c995a6a2ff6cf6fcc00fe1f68262b6ec339" CHECKSUMTYPE="SHA-1" SIZE="2777816">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0019.jp2"/>
+			</file>
+			<file ID="IMG00020" ADMID="techmd20" GROUPID="page20" CREATED="2014-04-21T22:22:20" MIMETYPE="image/jp2" SEQ="20" CHECKSUM="3957bf78c6cb7832a1e2d508f319f0a5dc6a1d22" CHECKSUMTYPE="SHA-1" SIZE="2777830">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0020.jp2"/>
+			</file>
+			<file ID="IMG00021" ADMID="techmd21" GROUPID="page21" CREATED="2014-04-21T22:22:29" MIMETYPE="image/jp2" SEQ="21" CHECKSUM="d40614c1993713993af2549394533e700f616644" CHECKSUMTYPE="SHA-1" SIZE="2777812">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0021.jp2"/>
+			</file>
+			<file ID="IMG00022" ADMID="techmd22" GROUPID="page22" CREATED="2014-04-21T22:22:38" MIMETYPE="image/jp2" SEQ="22" CHECKSUM="54ec7c5dcad44d953a15a53748635a8bd63524fb" CHECKSUMTYPE="SHA-1" SIZE="2777842">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0022.jp2"/>
+			</file>
+			<file ID="IMG00023" ADMID="techmd23" GROUPID="page23" CREATED="2014-04-21T22:22:49" MIMETYPE="image/jp2" SEQ="23" CHECKSUM="43ed2121109373f9bbe55ece1b0f7080a5258af9" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0023.jp2"/>
+			</file>
+			<file ID="IMG00024" ADMID="techmd24" GROUPID="page24" CREATED="2014-04-21T22:22:59" MIMETYPE="image/jp2" SEQ="24" CHECKSUM="b98df5512a4ee413a9cf4ca056f44316ec8b9de4" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0024.jp2"/>
+			</file>
+			<file ID="IMG00025" ADMID="techmd25" GROUPID="page25" CREATED="2014-04-21T22:23:09" MIMETYPE="image/jp2" SEQ="25" CHECKSUM="7a1a190b19774862c0db0780ca2e58f2944bd008" CHECKSUMTYPE="SHA-1" SIZE="2777832">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0025.jp2"/>
+			</file>
+			<file ID="IMG00026" ADMID="techmd26" GROUPID="page26" CREATED="2014-04-21T22:23:19" MIMETYPE="image/jp2" SEQ="26" CHECKSUM="7de192e877ef3528b9e015dbfdca559cf726062a" CHECKSUMTYPE="SHA-1" SIZE="2777838">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0026.jp2"/>
+			</file>
+			<file ID="IMG00027" ADMID="techmd27" GROUPID="page27" CREATED="2014-04-21T22:23:31" MIMETYPE="image/jp2" SEQ="27" CHECKSUM="3edd752585843bb6bf75e4c3be3552691df32b74" CHECKSUMTYPE="SHA-1" SIZE="2777599">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0027.jp2"/>
+			</file>
+			<file ID="IMG00028" ADMID="techmd28" GROUPID="page28" CREATED="2014-04-21T22:23:41" MIMETYPE="image/jp2" SEQ="28" CHECKSUM="da4cc490798e5120b4f3d9bdb8a702a75aa9e33d" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0028.jp2"/>
+			</file>
+			<file ID="IMG00029" ADMID="techmd29" GROUPID="page29" CREATED="2014-04-21T22:23:49" MIMETYPE="image/jp2" SEQ="29" CHECKSUM="dd0c96ecc80968818d41a6ff4b8cedd57080c3b9" CHECKSUMTYPE="SHA-1" SIZE="2777840">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0029.jp2"/>
+			</file>
+			<file ID="IMG00030" ADMID="techmd30" GROUPID="page30" CREATED="2014-04-21T22:23:57" MIMETYPE="image/jp2" SEQ="30" CHECKSUM="d49bb65434d1fc1088eb4d81c1bc8c1798bd76be" CHECKSUMTYPE="SHA-1" SIZE="2777838">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0030.jp2"/>
+			</file>
+			<file ID="IMG00031" ADMID="techmd31" GROUPID="page31" CREATED="2014-04-21T22:24:06" MIMETYPE="image/jp2" SEQ="31" CHECKSUM="08eddc8ad56c0c4d462695eed6ba112469180d46" CHECKSUMTYPE="SHA-1" SIZE="2777813">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0031.jp2"/>
+			</file>
+			<file ID="IMG00032" ADMID="techmd32" GROUPID="page32" CREATED="2014-04-21T22:24:15" MIMETYPE="image/jp2" SEQ="32" CHECKSUM="4d2f8f6f2a31dbe01e53306064ef3da507888ea9" CHECKSUMTYPE="SHA-1" SIZE="2777844">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/delivery/bmtnabj_1908-07-01_01_0032.jp2"/>
+			</file>
+		</fileGrp>
+		<fileGrp ID="ALTOGRP" USE="OCR">
+			<file ID="ALTO00001" GROUPID="page1" CREATED="2014-04-21T22:24:21" MIMETYPE="text/xml" CHECKSUM="ad1e0423843b7a5095729bccd1d6ead376b44f40" CHECKSUMTYPE="SHA-1" SIZE="79894">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0001.alto.xml"/>
+			</file>
+			<file ID="ALTO00002" GROUPID="page2" CREATED="2014-04-21T22:24:21" MIMETYPE="text/xml" CHECKSUM="24db452cc56c8a1f6b0890224f0f22e04a51ce39" CHECKSUMTYPE="SHA-1" SIZE="114147">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0002.alto.xml"/>
+			</file>
+			<file ID="ALTO00003" GROUPID="page3" CREATED="2014-04-21T22:24:21" MIMETYPE="text/xml" CHECKSUM="14b6ec365f77a8540ed3a49e706ea4c7dfc65ab5" CHECKSUMTYPE="SHA-1" SIZE="106664">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0003.alto.xml"/>
+			</file>
+			<file ID="ALTO00004" GROUPID="page4" CREATED="2014-04-21T22:24:22" MIMETYPE="text/xml" CHECKSUM="c62bfb5bc9d36ef4cd56195633f6424183abfaef" CHECKSUMTYPE="SHA-1" SIZE="118706">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0004.alto.xml"/>
+			</file>
+			<file ID="ALTO00005" GROUPID="page5" CREATED="2014-04-21T22:24:22" MIMETYPE="text/xml" CHECKSUM="b4188def4cb066b82929d14c076ea7172460987f" CHECKSUMTYPE="SHA-1" SIZE="123437">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0005.alto.xml"/>
+			</file>
+			<file ID="ALTO00006" GROUPID="page6" CREATED="2014-04-21T22:24:23" MIMETYPE="text/xml" CHECKSUM="00275e3a72e3c9fb4d8eee05838eca1066312f6b" CHECKSUMTYPE="SHA-1" SIZE="109303">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0006.alto.xml"/>
+			</file>
+			<file ID="ALTO00007" GROUPID="page7" CREATED="2014-04-21T22:24:23" MIMETYPE="text/xml" CHECKSUM="dbe31d3c4534179f8d2b4b4667c1cb5c54b39227" CHECKSUMTYPE="SHA-1" SIZE="115417">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0007.alto.xml"/>
+			</file>
+			<file ID="ALTO00008" GROUPID="page8" CREATED="2014-04-21T22:24:24" MIMETYPE="text/xml" CHECKSUM="e2c8d8d1946b44865893d45abad3f41a5fe17eaa" CHECKSUMTYPE="SHA-1" SIZE="95990">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0008.alto.xml"/>
+			</file>
+			<file ID="ALTO00009" GROUPID="page9" CREATED="2014-04-21T22:24:24" MIMETYPE="text/xml" CHECKSUM="6ac01a211f73c6f47416a64417c3aae9bc9e3d1e" CHECKSUMTYPE="SHA-1" SIZE="98546">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0009.alto.xml"/>
+			</file>
+			<file ID="ALTO00010" GROUPID="page10" CREATED="2014-04-21T22:24:25" MIMETYPE="text/xml" CHECKSUM="2ae21ece446b85303a31f44342a9021a45916e42" CHECKSUMTYPE="SHA-1" SIZE="85358">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0010.alto.xml"/>
+			</file>
+			<file ID="ALTO00011" GROUPID="page11" CREATED="2014-04-21T22:24:26" MIMETYPE="text/xml" CHECKSUM="f2a12b79662612c61d5a05c06df3134f54aaa5ec" CHECKSUMTYPE="SHA-1" SIZE="96791">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0011.alto.xml"/>
+			</file>
+			<file ID="ALTO00012" GROUPID="page12" CREATED="2014-04-21T22:24:27" MIMETYPE="text/xml" CHECKSUM="340503c473fd70f8c066e95bdcea917021caec23" CHECKSUMTYPE="SHA-1" SIZE="87425">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0012.alto.xml"/>
+			</file>
+			<file ID="ALTO00013" GROUPID="page13" CREATED="2014-04-21T22:24:27" MIMETYPE="text/xml" CHECKSUM="59a83e5a9ee30d81e25ed43724fc44f817925ef4" CHECKSUMTYPE="SHA-1" SIZE="84694">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0013.alto.xml"/>
+			</file>
+			<file ID="ALTO00014" GROUPID="page14" CREATED="2014-04-21T22:24:27" MIMETYPE="text/xml" CHECKSUM="75467330b438e6e13058f87ee5085359e0857f6b" CHECKSUMTYPE="SHA-1" SIZE="77083">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0014.alto.xml"/>
+			</file>
+			<file ID="ALTO00015" GROUPID="page15" CREATED="2014-04-21T22:24:28" MIMETYPE="text/xml" CHECKSUM="c765ecfab142a2395ddd29ac3e9877a127418b8d" CHECKSUMTYPE="SHA-1" SIZE="91600">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0015.alto.xml"/>
+			</file>
+			<file ID="ALTO00016" GROUPID="page16" CREATED="2014-04-21T22:24:28" MIMETYPE="text/xml" CHECKSUM="79a7a9570742eefd2fa9ef6f4bebcd338c3d33e7" CHECKSUMTYPE="SHA-1" SIZE="112901">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0016.alto.xml"/>
+			</file>
+			<file ID="ALTO00017" GROUPID="page17" CREATED="2014-04-21T22:24:28" MIMETYPE="text/xml" CHECKSUM="06192699b166d8855fc6a11a6d40ed4abab977d7" CHECKSUMTYPE="SHA-1" SIZE="88814">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0017.alto.xml"/>
+			</file>
+			<file ID="ALTO00018" GROUPID="page18" CREATED="2014-04-21T22:24:29" MIMETYPE="text/xml" CHECKSUM="2c93f20f3f23a6f5f4a7ae82b0df5825c516616a" CHECKSUMTYPE="SHA-1" SIZE="90090">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0018.alto.xml"/>
+			</file>
+			<file ID="ALTO00019" GROUPID="page19" CREATED="2014-04-21T22:24:29" MIMETYPE="text/xml" CHECKSUM="0a9cf6611b030715aa1b7d87bcbdd761a443e8b2" CHECKSUMTYPE="SHA-1" SIZE="89346">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0019.alto.xml"/>
+			</file>
+			<file ID="ALTO00020" GROUPID="page20" CREATED="2014-04-21T22:24:30" MIMETYPE="text/xml" CHECKSUM="f82dc1fedd969a7b0a364eacd7bf0f6134a48794" CHECKSUMTYPE="SHA-1" SIZE="89184">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0020.alto.xml"/>
+			</file>
+			<file ID="ALTO00021" GROUPID="page21" CREATED="2014-04-21T22:24:30" MIMETYPE="text/xml" CHECKSUM="884168a319cff2c73b3d47ed4f06bfa2448c5342" CHECKSUMTYPE="SHA-1" SIZE="91435">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0021.alto.xml"/>
+			</file>
+			<file ID="ALTO00022" GROUPID="page22" CREATED="2014-04-21T22:24:31" MIMETYPE="text/xml" CHECKSUM="5b03084b860b3bea34f5be0af0bd9a1c575706fa" CHECKSUMTYPE="SHA-1" SIZE="114941">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0022.alto.xml"/>
+			</file>
+			<file ID="ALTO00023" GROUPID="page23" CREATED="2014-04-21T22:24:31" MIMETYPE="text/xml" CHECKSUM="3fb1eaa89161c4d01395b112e0a4316cee057e0d" CHECKSUMTYPE="SHA-1" SIZE="125062">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0023.alto.xml"/>
+			</file>
+			<file ID="ALTO00024" GROUPID="page24" CREATED="2014-04-21T22:24:31" MIMETYPE="text/xml" CHECKSUM="022d1f5db07c02e575594641d01c7784b344a8af" CHECKSUMTYPE="SHA-1" SIZE="115086">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0024.alto.xml"/>
+			</file>
+			<file ID="ALTO00025" GROUPID="page25" CREATED="2014-04-21T22:24:32" MIMETYPE="text/xml" CHECKSUM="bee99273a7b2c431b1cfdd71f20b38ddd73c75ea" CHECKSUMTYPE="SHA-1" SIZE="118842">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0025.alto.xml"/>
+			</file>
+			<file ID="ALTO00026" GROUPID="page26" CREATED="2014-04-21T22:24:32" MIMETYPE="text/xml" CHECKSUM="d7fd0992f0ae9e80b5608d81750b98483afe3943" CHECKSUMTYPE="SHA-1" SIZE="122991">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0026.alto.xml"/>
+			</file>
+			<file ID="ALTO00027" GROUPID="page27" CREATED="2014-04-21T22:24:32" MIMETYPE="text/xml" CHECKSUM="f92289327dddc23058de60caa8f7d2091e229bf4" CHECKSUMTYPE="SHA-1" SIZE="117613">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0027.alto.xml"/>
+			</file>
+			<file ID="ALTO00028" GROUPID="page28" CREATED="2014-04-21T22:24:33" MIMETYPE="text/xml" CHECKSUM="cfb515cd613fbbc776e984583f9a481699ee3e86" CHECKSUMTYPE="SHA-1" SIZE="120025">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0028.alto.xml"/>
+			</file>
+			<file ID="ALTO00029" GROUPID="page29" CREATED="2014-04-21T22:24:33" MIMETYPE="text/xml" CHECKSUM="92462845668abf48a1294f19ed5fe50222243f8d" CHECKSUMTYPE="SHA-1" SIZE="99214">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0029.alto.xml"/>
+			</file>
+			<file ID="ALTO00030" GROUPID="page30" CREATED="2014-04-21T22:24:34" MIMETYPE="text/xml" CHECKSUM="d712ce727a4d981c4e8c77f9ba3b190d2b625159" CHECKSUMTYPE="SHA-1" SIZE="91355">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0030.alto.xml"/>
+			</file>
+			<file ID="ALTO00031" GROUPID="page31" CREATED="2014-04-21T22:24:35" MIMETYPE="text/xml" CHECKSUM="733596fce5b45168fe0a8234c539ac55c1acf3f7" CHECKSUMTYPE="SHA-1" SIZE="84459">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0031.alto.xml"/>
+			</file>
+			<file ID="ALTO00032" GROUPID="page32" CREATED="2014-04-21T22:24:35" MIMETYPE="text/xml" CHECKSUM="1fe5ddb74ef30dcb74bc62db5f73772b9dbb64f9" CHECKSUMTYPE="SHA-1" SIZE="28286">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabj_1908-07-01_01_0032.alto.xml"/>
+			</file>
+		</fileGrp>
+		<fileGrp ID="PDFGRP" USE="PDF">
+			<file ID="PDF_ISSUELEVEL" CREATED="2014-04-21T22:25:20" MIMETYPE="application/pdf" CHECKSUM="cc6b4bbd0e6572aef25439898cff838618580f92" CHECKSUMTYPE="SHA-1" SIZE="12279111">
+				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabj/issues/1908/07/01_01/bmtnabj_1908-07-01_01.pdf"/>
+			</file>
+		</fileGrp>
+	</fileSec>
+	<structMap LABEL="Physical Structure" TYPE="PHYSICAL">
+		<div ID="DIVP1" LABEL="" TYPE="Magazine" DMDID="dmd1">
+			<div ID="DIVP2" ORDER="1" ORDERLABEL="369" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00001"/>
+						<area FILEID="ALTO00001" BETYPE="IDREF" BEGIN="P1"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP3" ORDER="2" ORDERLABEL="370" LABEL="370" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00002"/>
+						<area FILEID="ALTO00002" BETYPE="IDREF" BEGIN="P2"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP4" ORDER="3" ORDERLABEL="371" LABEL="371" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00003"/>
+						<area FILEID="ALTO00003" BETYPE="IDREF" BEGIN="P3"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP5" ORDER="4" ORDERLABEL="372" LABEL="372" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00004"/>
+						<area FILEID="ALTO00004" BETYPE="IDREF" BEGIN="P4"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP6" ORDER="5" ORDERLABEL="373" LABEL="373" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00005"/>
+						<area FILEID="ALTO00005" BETYPE="IDREF" BEGIN="P5"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP7" ORDER="6" ORDERLABEL="374" LABEL="374" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00006"/>
+						<area FILEID="ALTO00006" BETYPE="IDREF" BEGIN="P6"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP8" ORDER="7" ORDERLABEL="375" LABEL="375" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00007"/>
+						<area FILEID="ALTO00007" BETYPE="IDREF" BEGIN="P7"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP9" ORDER="8" ORDERLABEL="376" LABEL="376" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00008"/>
+						<area FILEID="ALTO00008" BETYPE="IDREF" BEGIN="P8"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP10" ORDER="9" ORDERLABEL="377" LABEL="377" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00009"/>
+						<area FILEID="ALTO00009" BETYPE="IDREF" BEGIN="P9"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP11" ORDER="10" ORDERLABEL="378" LABEL="378" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00010"/>
+						<area FILEID="ALTO00010" BETYPE="IDREF" BEGIN="P10"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP12" ORDER="11" ORDERLABEL="379" LABEL="379" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00011"/>
+						<area FILEID="ALTO00011" BETYPE="IDREF" BEGIN="P11"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP13" ORDER="12" ORDERLABEL="380" LABEL="380" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00012"/>
+						<area FILEID="ALTO00012" BETYPE="IDREF" BEGIN="P12"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP14" ORDER="13" ORDERLABEL="381" LABEL="381" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00013"/>
+						<area FILEID="ALTO00013" BETYPE="IDREF" BEGIN="P13"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP15" ORDER="14" ORDERLABEL="382" LABEL="382" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00014"/>
+						<area FILEID="ALTO00014" BETYPE="IDREF" BEGIN="P14"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP16" ORDER="15" ORDERLABEL="383" LABEL="383" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00015"/>
+						<area FILEID="ALTO00015" BETYPE="IDREF" BEGIN="P15"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP17" ORDER="16" ORDERLABEL="384" LABEL="384" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00016"/>
+						<area FILEID="ALTO00016" BETYPE="IDREF" BEGIN="P16"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP18" ORDER="17" ORDERLABEL="385" LABEL="385" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00017"/>
+						<area FILEID="ALTO00017" BETYPE="IDREF" BEGIN="P17"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP19" ORDER="18" ORDERLABEL="386" LABEL="386" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00018"/>
+						<area FILEID="ALTO00018" BETYPE="IDREF" BEGIN="P18"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP20" ORDER="19" ORDERLABEL="387" LABEL="387" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00019"/>
+						<area FILEID="ALTO00019" BETYPE="IDREF" BEGIN="P19"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP21" ORDER="20" ORDERLABEL="388" LABEL="388" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00020"/>
+						<area FILEID="ALTO00020" BETYPE="IDREF" BEGIN="P20"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP22" ORDER="21" ORDERLABEL="389" LABEL="389" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00021"/>
+						<area FILEID="ALTO00021" BETYPE="IDREF" BEGIN="P21"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP23" ORDER="22" ORDERLABEL="390" LABEL="390" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00022"/>
+						<area FILEID="ALTO00022" BETYPE="IDREF" BEGIN="P22"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP24" ORDER="23" ORDERLABEL="391" LABEL="391" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00023"/>
+						<area FILEID="ALTO00023" BETYPE="IDREF" BEGIN="P23"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP25" ORDER="24" ORDERLABEL="392" LABEL="392" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00024"/>
+						<area FILEID="ALTO00024" BETYPE="IDREF" BEGIN="P24"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP26" ORDER="25" ORDERLABEL="393" LABEL="393" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00025"/>
+						<area FILEID="ALTO00025" BETYPE="IDREF" BEGIN="P25"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP27" ORDER="26" ORDERLABEL="394" LABEL="394" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00026"/>
+						<area FILEID="ALTO00026" BETYPE="IDREF" BEGIN="P26"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP28" ORDER="27" ORDERLABEL="395" LABEL="395" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00027"/>
+						<area FILEID="ALTO00027" BETYPE="IDREF" BEGIN="P27"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP29" ORDER="28" ORDERLABEL="396" LABEL="396" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00028"/>
+						<area FILEID="ALTO00028" BETYPE="IDREF" BEGIN="P28"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP30" ORDER="29" ORDERLABEL="397" LABEL="397" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00029"/>
+						<area FILEID="ALTO00029" BETYPE="IDREF" BEGIN="P29"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP31" ORDER="30" ORDERLABEL="398" LABEL="398" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00030"/>
+						<area FILEID="ALTO00030" BETYPE="IDREF" BEGIN="P30"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP32" ORDER="31" ORDERLABEL="399" LABEL="399" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00031"/>
+						<area FILEID="ALTO00031" BETYPE="IDREF" BEGIN="P31"/>
+					</par>
+				</fptr>
+			</div>
+			<div ID="DIVP33" ORDER="32" ORDERLABEL="400" LABEL="400" TYPE="INSIDE">
+				<fptr>
+					<par>
+						<area FILEID="IMG00032"/>
+						<area FILEID="ALTO00032" BETYPE="IDREF" BEGIN="P32"/>
+					</par>
+				</fptr>
+			</div>
+		</div>
+	</structMap>
+	<structMap LABEL="Logical Structure" TYPE="LOGICAL">
+		<div ID="L.1" TYPE="Magazine" LABEL="Revue d'Histoire et de Critique Musicales">
+			<div ID="L.1.1" TYPE="Issue" LABEL="Revue d'Histoire et de Critique Musicales no. 13 01.07.1908">
+				<div ID="L.1.1.1" TYPE="PublicationInfo" LABEL="Publication Information">
+					<div ID="L.1.1.1.1" TYPE="GenericPubInfo" ORDER="1">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.2" TYPE="GenericPubInfo" ORDER="2">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00002"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.3" TYPE="GenericPubInfo" ORDER="3">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00003"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.4" TYPE="GenericPubInfo" ORDER="4">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00004"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.5" TYPE="GenericPubInfo" ORDER="5">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00009"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.6" TYPE="GenericPubInfo" ORDER="6">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00010"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.7" TYPE="GenericPubInfo" ORDER="7">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.8" TYPE="GenericPubInfo" ORDER="8">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.9" TYPE="GenericPubInfo" ORDER="9">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.10" TYPE="GenericPubInfo" ORDER="10">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.11" TYPE="GenericPubInfo" ORDER="11">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.12" TYPE="GenericPubInfo" ORDER="12">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.13" TYPE="GenericPubInfo" ORDER="13">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00002"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.14" TYPE="GenericPubInfo" ORDER="14">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.15" TYPE="GenericPubInfo" ORDER="15">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00002"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.16" TYPE="GenericPubInfo" ORDER="16">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.17" TYPE="GenericPubInfo" ORDER="17">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.18" TYPE="GenericPubInfo" ORDER="18">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.19" TYPE="GenericPubInfo" ORDER="19">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00002"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.20" TYPE="GenericPubInfo" ORDER="20">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.21" TYPE="GenericPubInfo" ORDER="21">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.22" TYPE="GenericPubInfo" ORDER="22">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.23" TYPE="GenericPubInfo" ORDER="23">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00005"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.24" TYPE="GenericPubInfo" ORDER="24">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00006"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.25" TYPE="GenericPubInfo" ORDER="25">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00002"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.26" TYPE="GenericPubInfo" ORDER="26">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.27" TYPE="GenericPubInfo" ORDER="27">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.28" TYPE="GenericPubInfo" ORDER="28">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.29" TYPE="GenericPubInfo" ORDER="29">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.30" TYPE="GenericPubInfo" ORDER="30">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.31" TYPE="GenericPubInfo" ORDER="31">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.32" TYPE="GenericPubInfo" ORDER="32">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.33" TYPE="GenericPubInfo" ORDER="33">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.34" TYPE="GenericPubInfo" ORDER="34">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.35" TYPE="GenericPubInfo" ORDER="35">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.36" TYPE="GenericPubInfo" ORDER="36">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.37" TYPE="GenericPubInfo" ORDER="37">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00002"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.38" TYPE="GenericPubInfo" ORDER="38">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.39" TYPE="GenericPubInfo" ORDER="39">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.40" TYPE="GenericPubInfo" ORDER="40">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00003"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.1.41" TYPE="GenericPubInfo" ORDER="41">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00004"/>
+						</fptr>
+					</div>
+				</div>
+				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="COURS DU COLLÈGE DE FRANCE">
+						<div ID="L.1.1.2.1.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00005"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.1.2" TYPE="TextContent" ORDER="1" DMDID="c002" LABEL="Histoire du théâtre lyrique Le Chorège antique.">
+							<div ID="L.1.1.2.1.2.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00006"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.1.2.2" TYPE="Byline">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00005"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.1.2.3" TYPE="Copy">
+								<div ID="L.1.1.2.1.2.3.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.1.2.3.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.1.2.3.1.1.1" TYPE="Text">
+											<fptr>
+												<seq>
+													<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00007"/>
+													<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00008"/>
+												</seq>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.2" TYPE="Paragraph" ORDER="2">
+										<div ID="L.1.1.2.1.2.3.1.2.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.3" TYPE="Paragraph" ORDER="3">
+										<div ID="L.1.1.2.1.2.3.1.3.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.4" TYPE="MinorHead" ORDER="4">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
+										</fptr>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.5" TYPE="Paragraph" ORDER="5">
+										<div ID="L.1.1.2.1.2.3.1.5.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.6" TYPE="Paragraph" ORDER="6">
+										<div ID="L.1.1.2.1.2.3.1.6.1" TYPE="Text">
+											<fptr>
+												<seq>
+													<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
+													<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00003"/>
+												</seq>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.7" TYPE="Paragraph" ORDER="7">
+										<div ID="L.1.1.2.1.2.3.1.7.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.8" TYPE="Paragraph" ORDER="8">
+										<div ID="L.1.1.2.1.2.3.1.8.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00004"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.9" TYPE="Paragraph" ORDER="9">
+										<div ID="L.1.1.2.1.2.3.1.9.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.1.2.3.1.10" TYPE="Paragraph" ORDER="10">
+										<div ID="L.1.1.2.1.2.3.1.10.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00006"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c003" LABEL="Les exécutions récentes.">
+						<div ID="L.1.1.2.2.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00006"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.2.2" TYPE="TextContent" ORDER="1" DMDID="c004" LABEL="RECETTES DES THÉÂTRES.">
+							<div ID="L.1.1.2.2.2.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00008"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.2.2.2" TYPE="Byline">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00005"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.2.2.3" TYPE="Copy">
+								<div ID="L.1.1.2.2.2.3.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.2.2.3.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.2.2.3.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00007"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.2.2.3.1.2" TYPE="Paragraph" ORDER="2">
+										<div ID="L.1.1.2.2.2.3.1.2.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.2.2.3.1.3" TYPE="Paragraph" ORDER="3">
+										<div ID="L.1.1.2.2.2.3.1.3.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00004"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.2.3" TYPE="TextContent" ORDER="2" DMDID="c005" LABEL="M. DEBUSSY ET LA MUSIQUE RUSSE. — A propos de la récente et très brillante">
+							<div ID="L.1.1.2.2.3.1" TYPE="Copy">
+								<div ID="L.1.1.2.2.3.1.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.2.3.1.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.2.3.1.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00006"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.2.4" TYPE="TextContent" ORDER="3" DMDID="c006" LABEL="CHEZ FÉLIA LITVINNE.">
+							<div ID="L.1.1.2.2.4.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00012"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.2.4.2" TYPE="Byline">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00009"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.2.4.3" TYPE="Copy">
+								<div ID="L.1.1.2.2.4.3.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.2.4.3.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.2.4.3.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00007"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.2.4.3.1.2" TYPE="Paragraph" ORDER="2">
+										<div ID="L.1.1.2.2.4.3.1.2.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00008"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.2.5" TYPE="TextContent" ORDER="4" DMDID="c007" LABEL="Mme ROSE CARON.">
+							<div ID="L.1.1.2.2.5.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00011"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.2.5.2" TYPE="Byline">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00004"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.2.5.3" TYPE="Copy">
+								<div ID="L.1.1.2.2.5.3.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.2.5.3.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.2.5.3.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00010"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.2.5.3.1.2" TYPE="Paragraph" ORDER="2">
+										<div ID="L.1.1.2.2.5.3.1.2.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00003"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.2.6" TYPE="TextContent" ORDER="5" DMDID="c008" LABEL="UN TÉNOR RUSSE. Chez Mme Edmée 8...; au programme de cette soirée">
+							<div ID="L.1.1.2.2.6.1" TYPE="Copy">
+								<div ID="L.1.1.2.2.6.1.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.2.6.1.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.2.6.1.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00005"/>
+											</fptr>
+										</div>
+									</div>
+									<div ID="L.1.1.2.2.6.1.1.2" TYPE="Paragraph" ORDER="2">
+										<div ID="L.1.1.2.2.6.1.1.2.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00006"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c009" LABEL="ALEXANDRE CHORON, d'après des documents inédits.">
+						<div ID="L.1.1.2.3.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00008"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.3.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00007"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.3.3" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00011"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.3.4" TYPE="Copy">
+							<div ID="L.1.1.2.3.4.1" TYPE="BodyContent">
+								<div ID="L.1.1.2.3.4.1.1" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.2.3.4.1.1.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00009"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.3.4.1.2" TYPE="Paragraph" ORDER="2">
+									<div ID="L.1.1.2.3.4.1.2.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00010"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.3.4.1.3" TYPE="Paragraph" ORDER="3">
+									<div ID="L.1.1.2.3.4.1.3.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00012"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.3.4.1.4" TYPE="Paragraph" ORDER="4">
+									<div ID="L.1.1.2.3.4.1.4.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c010" LABEL="La famille de Choron (1). — Sa vie jusqu'en 1804.">
+						<div ID="L.1.1.2.4.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00004"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.4.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00004"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.4.3" TYPE="Copy">
+							<div ID="L.1.1.2.4.3.1" TYPE="BodyContent">
+								<div ID="L.1.1.2.4.3.1.1" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.2.4.3.1.1.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00005"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.2" TYPE="Paragraph" ORDER="2">
+									<div ID="L.1.1.2.4.3.1.2.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00003"/>
+												<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00003"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.3" TYPE="Paragraph" ORDER="3">
+									<div ID="L.1.1.2.4.3.1.3.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00003"/>
+												<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00003"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.4" TYPE="Paragraph" ORDER="4">
+									<div ID="L.1.1.2.4.3.1.4.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.5" TYPE="Paragraph" ORDER="5">
+									<div ID="L.1.1.2.4.3.1.5.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00004"/>
+												<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00005"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.6" TYPE="Paragraph" ORDER="6">
+									<div ID="L.1.1.2.4.3.1.6.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.7" TYPE="Paragraph" ORDER="7">
+									<div ID="L.1.1.2.4.3.1.7.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.8" TYPE="Paragraph" ORDER="8">
+									<div ID="L.1.1.2.4.3.1.8.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.9" TYPE="Paragraph" ORDER="9">
+									<div ID="L.1.1.2.4.3.1.9.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.10" TYPE="Paragraph" ORDER="10">
+									<div ID="L.1.1.2.4.3.1.10.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.11" TYPE="Paragraph" ORDER="11">
+									<div ID="L.1.1.2.4.3.1.11.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.12" TYPE="Paragraph" ORDER="12">
+									<div ID="L.1.1.2.4.3.1.12.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00003"/>
+												<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00005"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.13" TYPE="Paragraph" ORDER="13">
+									<div ID="L.1.1.2.4.3.1.13.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00006"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.14" TYPE="Paragraph" ORDER="14">
+									<div ID="L.1.1.2.4.3.1.14.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.15" TYPE="Paragraph" ORDER="15">
+									<div ID="L.1.1.2.4.3.1.15.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.16" TYPE="Paragraph" ORDER="16">
+									<div ID="L.1.1.2.4.3.1.16.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00004"/>
+												<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00004"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.17" TYPE="Paragraph" ORDER="17">
+									<div ID="L.1.1.2.4.3.1.17.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.18" TYPE="Paragraph" ORDER="18">
+									<div ID="L.1.1.2.4.3.1.18.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.19" TYPE="Paragraph" ORDER="19">
+									<div ID="L.1.1.2.4.3.1.19.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.4.3.1.20" TYPE="Paragraph" ORDER="20">
+									<div ID="L.1.1.2.4.3.1.20.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c011" LABEL="Pierre Montan Berton (Fragments inédits.)">
+						<div ID="L.1.1.2.5.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00006"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.5.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00005"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.5.3" TYPE="Copy">
+							<div ID="L.1.1.2.5.3.1" TYPE="BodyContent">
+								<div ID="L.1.1.2.5.3.1.1" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.2.5.3.1.1.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00007"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.2" TYPE="Paragraph" ORDER="2">
+									<div ID="L.1.1.2.5.3.1.2.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00008"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.3" TYPE="Paragraph" ORDER="3">
+									<div ID="L.1.1.2.5.3.1.3.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.4" TYPE="Paragraph" ORDER="4">
+									<div ID="L.1.1.2.5.3.1.4.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.5" TYPE="Paragraph" ORDER="5">
+									<div ID="L.1.1.2.5.3.1.5.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.6" TYPE="Paragraph" ORDER="6">
+									<div ID="L.1.1.2.5.3.1.6.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.7" TYPE="Paragraph" ORDER="7">
+									<div ID="L.1.1.2.5.3.1.7.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.8" TYPE="Paragraph" ORDER="8">
+									<div ID="L.1.1.2.5.3.1.8.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.9" TYPE="Paragraph" ORDER="9">
+									<div ID="L.1.1.2.5.3.1.9.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.10" TYPE="Paragraph" ORDER="10">
+									<div ID="L.1.1.2.5.3.1.10.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.11" TYPE="Paragraph" ORDER="11">
+									<div ID="L.1.1.2.5.3.1.11.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00003"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.12" TYPE="Paragraph" ORDER="12">
+									<div ID="L.1.1.2.5.3.1.12.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.13" TYPE="Paragraph" ORDER="13">
+									<div ID="L.1.1.2.5.3.1.13.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00009"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.14" TYPE="Paragraph" ORDER="14">
+									<div ID="L.1.1.2.5.3.1.14.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.15" TYPE="Paragraph" ORDER="15">
+									<div ID="L.1.1.2.5.3.1.15.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_TB00004"/>
+												<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00004"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.16" TYPE="Paragraph" ORDER="16">
+									<div ID="L.1.1.2.5.3.1.16.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00004"/>
+										</fptr>
+									</div>
+								</div>
+								<div ID="L.1.1.2.5.3.1.17" TYPE="Paragraph" ORDER="17">
+									<div ID="L.1.1.2.5.3.1.17.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00008"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c012" LABEL="Informations.">
+						<div ID="L.1.1.2.6.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00006"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.6.2" TYPE="TextContent" ORDER="1" DMDID="c013" LABEL="LE BAROMÈTRE MUSICAL : I. – Opéra. Recettes détaillées du 16 mai au 15 juin 1908.">
+							<div ID="L.1.1.2.6.2.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00007"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.6.2.2" TYPE="Copy">
+								<div ID="L.1.1.2.6.2.2.1" TYPE="TextContent" ORDER="1" DMDID="c014" LABEL="Untitled">
+									<div ID="L.1.1.2.6.2.2.1.1" TYPE="Table">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_CB00001"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.6.3" TYPE="TextContent" ORDER="2" DMDID="c015" LABEL="II. – Opéra-Comique. Recettes détaillées du 16 mai au 15 juin 1908.">
+							<div ID="L.1.1.2.6.3.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00003"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.6.3.2" TYPE="Copy">
+								<div ID="L.1.1.2.6.3.2.1" TYPE="TextContent" ORDER="1" DMDID="c016" LABEL="Untitled">
+									<div ID="L.1.1.2.6.3.2.1.1" TYPE="Table">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_CB00001"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.6.4" TYPE="TextContent" ORDER="3" DMDID="c017" LABEL="Aux amateurs de cartes postales. La Compagnie de l'Ouest a">
+							<div ID="L.1.1.2.6.4.1" TYPE="Copy">
+								<div ID="L.1.1.2.6.4.1.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.6.4.1.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.6.4.1.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00004"/>
+											</fptr>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div ID="L.1.1.3" TYPE="SponsoredAdvertisement" LABEL="Sponsored Advertisements">
+					<div ID="L.1.1.3.1" TYPE="SponsoredAd" DMDID="c018">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00001"/>
+						</fptr>
+					</div>
+					<div ID="L.1.1.3.2" TYPE="SponsoredAd" DMDID="c019">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00001"/>
+						</fptr>
+					</div>
+				</div>
+			</div>
+		</div>
+	</structMap>
 </mets>
