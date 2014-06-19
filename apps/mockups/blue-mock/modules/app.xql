@@ -100,6 +100,29 @@ let $row-count := xs:int(ceiling(count($titles) div $w-size) )
                 <param name="context" value="title-listing"/>
             </parameters>
 
+
+return
+<div class="row">
+{ 
+for $title in $titles
+return
+transform:transform($title, $xsl, $xslt-parameters)
+}
+</div>
+};
+
+declare function app:selected-title-listing-complex($node as node(), $model as map(*))
+as element()*
+{
+       let $titles := $model("titles")
+  let $w-size := 3
+let $row-count := xs:int(ceiling(count($titles) div $w-size) )
+        let $xsl := doc("/db/apps/blue-mock/resources/xsl/entry.xsl")
+        let $xslt-parameters := 
+            <parameters>
+                <param name="context" value="title-listing"/>
+            </parameters>
+
 for $r in 0 to ($row-count - 1)
 return
 <div class="row">
