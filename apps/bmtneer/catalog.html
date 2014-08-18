@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1>Catalog</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3" data-template="app:selected-titles">
+            <!-- Titles -->
+            <h2>Titles</h2>
+            <p>Collection contains <span data-template="app:title-count"/> title(s).</p>
+            <ol data-template="app:selected-title-listing">
+                <li>Lorem ipsum</li>
+            </ol>
+        </div>
+        <div class="col-md-3" data-template="app:selected-title">
+            <h2>Issues</h2>
+            <h3 data-template="app:selected-title-label"/>
+            <div data-template="app:selected-title-issues">
+                <p>Blue Mountain contains <span data-template="app:selected-title-issue-count"/>
+                    issues of <span data-template="app:selected-title-label"/>.</p>
+                <ol data-template="app:selected-title-issue-listing">
+                    <li>Lorem ipsum</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-3" data-template="app:selected-issue">
+            <h2>Constituents</h2>
+            <h3 data-template="app:selected-issue-label"/>
+            <div data-template="app:selected-issue-constituents">
+                <ol data-template="app:selected-issue-constituents-listing">
+                    <li>Lorem ipsum</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-3" data-template="app:selected-constituent">
+            <h3 data-template="app:selected-constituent-label"/>
+            <div data-template="app:selected-constituent-contents"/>
+        </div>
+    </div>
+</article>
