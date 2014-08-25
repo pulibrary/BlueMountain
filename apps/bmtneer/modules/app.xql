@@ -4,6 +4,7 @@ module namespace app="http://blaueberg.info/bmtneer/templates";
 
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://blaueberg.info/bmtneer/config" at "config.xqm";
+import module namespace bmtneer="http://blaueberg.info/bmtneer" at "bmtneer-module.xqm";
 
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace mods="http://www.loc.gov/mods/v3";
@@ -120,7 +121,9 @@ as element()
             </parameters>
         let $label := transform:transform($issue, $xsl, $xslt-parameters)
         return
-            <li><a href="catalog.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">{$label}</a></li>
+            <li><a href="catalog.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">{$label}</a>
+                <br/><a href="{bmtneer:veridian-url-from-bmtnid($issueURN)}">stuff</a>
+            </li>
     }</ol>
 };
 
