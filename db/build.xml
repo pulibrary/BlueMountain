@@ -395,7 +395,17 @@
     </xdb:store>
   </target>
 
-
-
+  <target name="load-bmtnabi-mets" description="load NMZ METS">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/metadata/periodicals/bmtnabi" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/metadata/periodicals/bmtnabi">
+	<include name="**/*.mets.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
 </project>
 
