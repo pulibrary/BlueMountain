@@ -151,7 +151,9 @@ as element()
     }</ol>
 };
 
-declare function app:selected-title-label($node as node(), $model as map(*))
+declare 
+%templates:wrap
+function app:selected-title-label($node as node(), $model as map(*))
 as element()*
 {
     let $selected-title := $model("selected-title")
