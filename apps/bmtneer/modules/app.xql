@@ -165,6 +165,21 @@ as element()*
     return transform:transform($selected-title, $xsl, $xslt-parameters)
 };
 
+declare
+%templates:wrap
+function app:selected-title-icon($node as node(), $model as map(*))
+as element()*
+{
+    let $selected-title := $model("selected-title")
+    let $bmtnid := fn:tokenize($selected-title/mods:identifier[@type='bmtn'], ':')[last()]
+    let $path-to-icon := "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals"
+    
+    return 
+        <img src="{string-join(($path-to-icon, $bmtnid, 'large.jpg'), '/')}"
+             alt="icon" />
+    
+};
+
 declare function app:selected-issue-label($node as node(), $model as map(*))
 as element()*
 {
