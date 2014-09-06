@@ -70,7 +70,7 @@ as element()
          let $tstring := $tstring || $titleInfo/mods:title/string()
          return
            <li>
-            <a href="catalog.html?titleURN={$titleURN}">{$tstring}</a>
+            <a href="title.html?titleURN={$titleURN}">{$tstring}</a>
            </li>
     }</ol>
 };
