@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" version="2.0" exclude-result-prefixes="xs mods mets">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bmtnfoo" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" version="2.0" exclude-result-prefixes="xs mods mets">
     <xsl:output method="html"/>
     <xsl:param name="context"/>
+    <xsl:function name="local:title-icon">
+        <xsl:param name="titleURN"/>
+        <xsl:variable name="bmtnid" select="substring-after($titleURN, 'urn:PUL:bluemountain:')"/>
+        <xsl:variable name="the-result">
+            <xsl:analyze-string select="$titleURN" regex=".*:(.*?)$">
+                <xsl:matching-substring>
+                    <xsl:value-of select="concat('http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/', $titleURN, '/large.jpg')"/>
+                </xsl:matching-substring>
+            </xsl:analyze-string>
+        </xsl:variable>
+        <xsl:value-of select="concat('http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/', $bmtnid, '/large.jpg')"/>
+    </xsl:function>
     <xsl:template name="title-string">
         <xsl:param name="modsrec"/>
         <span class="titleInfo">
@@ -15,6 +27,23 @@
             <xsl:text> </xsl:text>
             <xsl:apply-templates select="$modsrec/mods:originInfo"/>
         </span>
+    </xsl:template>
+    <xsl:template name="title-thumbnail">
+        <xsl:param name="modsrec"/>
+        <xsl:variable name="iconpath" select="local:title-icon($modsrec/mods:identifier)"/>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img class="thumbnail" src="{$iconpath}" alt="icon"/>
+                <div class="caption">
+                    <p>
+                        <span class="titleInfo">
+                            <xsl:apply-templates select="$modsrec/mods:titleInfo[empty(@type)]"/>
+                        </span>
+                    </p>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
     </xsl:template>
     <xsl:template match="mods:relatedItem">
         <div class="constituent">
@@ -40,6 +69,11 @@
     </xsl:template>
     <xsl:template match="mods:mods">
         <xsl:choose>
+            <xsl:when test="$context = 'title-listing'">
+                <xsl:call-template name="title-thumbnail">
+                    <xsl:with-param name="modsrec" select="current()"/>
+                </xsl:call-template>
+            </xsl:when>
             <xsl:when test="$context = 'selected-title-label'">
                 <xsl:call-template name="title-string">
                     <xsl:with-param name="modsrec" select="current()"/>
