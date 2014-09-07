@@ -2,16 +2,13 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bmtnfoo" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" version="2.0" exclude-result-prefixes="xs mods mets">
     <xsl:output method="html"/>
     <xsl:param name="context"/>
+    <xsl:function name="local:urn-to-bmtnid">
+        <xsl:param name="urn"/>
+        <xsl:value-of select="substring-after($urn, 'urn:PUL:bluemountain:')"/>
+    </xsl:function>
     <xsl:function name="local:title-icon">
         <xsl:param name="titleURN"/>
         <xsl:variable name="bmtnid" select="substring-after($titleURN, 'urn:PUL:bluemountain:')"/>
-        <xsl:variable name="the-result">
-            <xsl:analyze-string select="$titleURN" regex=".*:(.*?)$">
-                <xsl:matching-substring>
-                    <xsl:value-of select="concat('http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/', $titleURN, '/large.jpg')"/>
-                </xsl:matching-substring>
-            </xsl:analyze-string>
-        </xsl:variable>
         <xsl:value-of select="concat('http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/', $bmtnid, '/large.jpg')"/>
     </xsl:function>
     <xsl:template name="title-string">
@@ -31,14 +28,17 @@
     <xsl:template name="title-thumbnail">
         <xsl:param name="modsrec"/>
         <xsl:variable name="iconpath" select="local:title-icon($modsrec/mods:identifier)"/>
+        <xsl:variable name="linkpath" select="concat('http://localhost:8080/exist/apps/bmtneer/title.html?titleURN=', $modsrec/mods:identifier)"/>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
                 <img class="thumbnail" src="{$iconpath}" alt="icon"/>
                 <div class="caption">
                     <p>
-                        <span class="titleInfo">
-                            <xsl:apply-templates select="$modsrec/mods:titleInfo[empty(@type)]"/>
-                        </span>
+                        <a href="{$linkpath}">
+                            <span class="titleInfo">
+                                <xsl:apply-templates select="$modsrec/mods:titleInfo[empty(@type)]"/>
+                            </span>
+                        </a>
                     </p>
                     <p>Lorem ipsum</p>
                 </div>
