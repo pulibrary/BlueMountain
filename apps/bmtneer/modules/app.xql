@@ -311,6 +311,25 @@ as element()
     }</ol>
 };
 
+declare function app:selected-issue-constituents-table($node as node(), $model as map(*))
+as element()
+{
+    <table class="table">{
+        
+        let $issueURN := $model("selected-issue")/mods:identifier[@type='bmtn']
+        let $titleURN := $model("selected-issue")/mods:relatedItem[@type='host']/@xlink:href
+        for $constituent in $model("selected-issue-constituents")
+        let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
+        let $xslt-parameters := 
+            <parameters>
+                <param name="context" value="constituent-listing-table"/>
+            </parameters>
+        let $row := transform:transform($constituent, $xsl, $xslt-parameters)
+        return
+            $row
+    }</table>
+};
+
 
 declare function app:selected-issue-label($node as node(), $model as map(*))
 as element()*
@@ -322,6 +341,27 @@ as element()*
             <param name="context" value="selected-issue-label"/>
         </parameters>
     return transform:transform($selected-issue, $xsl, $xslt-parameters)
+};
+
+declare function app:issue-volume($node as node(), $model as map(*))
+as xs:string*
+{
+    let $issue := $model("selected-issue")
+    return $issue/mods:part[@type='issue']/detail[@type='volume']/number/text()
+};
+
+declare function app:issue-number($node as node(), $model as map(*))
+as xs:string*
+{
+    let $issue := $model("selected-issue")
+    return "Number " || $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number/text()
+};
+
+declare function app:issue-pubDate($node as node(), $model as map(*))
+as xs:string*
+{
+    let $issue := $model("selected-issue")
+    return $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']/text()
 };
 
 declare function app:selected-constituent-label($node as node(), $model as map(*))

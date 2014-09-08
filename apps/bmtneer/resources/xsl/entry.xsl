@@ -45,7 +45,7 @@
             </div>
         </div>
     </xsl:template>
-    <xsl:template match="mods:relatedItem">
+    <xsl:template match="mods:relatedItem" mode="list">
         <div class="constituent">
             <span class="title">
                 <xsl:choose>
@@ -60,6 +60,33 @@
                 <xsl:value-of select="mods:name/mods:displayForm" separator=", "/>
             </span>
         </div>
+    </xsl:template>
+    <xsl:template match="mods:relatedItem">
+        <xsl:variable name="title">
+            <xsl:choose>
+                <xsl:when test="mods:titleInfo">
+                    <xsl:apply-templates select="mods:titleInfo"/>
+                </xsl:when>
+                <xsl:otherwise>[untitled]</xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="creators">
+            <xsl:value-of select="mods:name/mods:displayForm" separator=", "/>
+        </xsl:variable>
+        <xsl:variable name="pages">
+            <xsl:text>pages</xsl:text>
+        </xsl:variable>
+        <tr>
+            <td>
+                <xsl:value-of select="$title"/>
+            </td>
+            <td>
+                <xsl:value-of select="$creators"/>
+            </td>
+            <td>
+                <xsl:value-of select="$pages"/>
+            </td>
+        </tr>
     </xsl:template>
     <xsl:template match="mods:titleInfo">
         <xsl:if test="mods:nonSort">
