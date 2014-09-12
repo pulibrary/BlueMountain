@@ -31,7 +31,8 @@
 
  <xsl:function name="local:altopath">
   <xsl:param name="rawpath"/>
-  <xsl:value-of select="replace($rawpath, 'file://./', $path)"/>
+<!--  <xsl:value-of select="replace($rawpath, 'file://./', $path)"/> -->
+  <xsl:value-of select="replace($rawpath, 'file://.', $path)"/>
  </xsl:function>
  
 
@@ -55,9 +56,9 @@
     </fileDesc>
    </teiHeader>
 
-   <facsimile>
+<!--   <facsimile>
     <xsl:apply-templates select="mets:structMap[@TYPE='PHYSICAL']" mode="facsimile"/>
-   </facsimile>
+   </facsimile>-->
 
    <text>
 
@@ -119,7 +120,7 @@
      <xsl:value-of select="./@BEGIN" />
    </xsl:variable>
   <xsl:variable name="altopath"
-   select="local:altopath(key('files', @FILEID)/mets:FLocat/@xlink:href)"/>
+   select="local:altopath(string(key('files', @FILEID)/mets:FLocat/@xlink:href))"/>
 
   <xsl:apply-templates select="document($altopath)//node()[@ID=$start]" mode="#current" />
  </xsl:template>
