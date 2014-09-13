@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bmtnfoo" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" version="2.0" exclude-result-prefixes="xs mods mets">
     <xsl:output method="html"/>
     <xsl:param name="context"/>
-    <xsl:function name="local:urn-to-bmtnid">
+    <xsl:param name="veridianLink"/>
+    <xsl:function name="local:urn-to-veridian-bmtnid">
         <xsl:param name="urn"/>
         <xsl:value-of select="substring-after($urn, 'urn:PUL:bluemountain:')"/>
     </xsl:function>
@@ -10,6 +11,18 @@
         <xsl:param name="titleURN"/>
         <xsl:variable name="bmtnid" select="substring-after($titleURN, 'urn:PUL:bluemountain:')"/>
         <xsl:value-of select="concat('http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/', $bmtnid, '/large.jpg')"/>
+    </xsl:function>
+    <xsl:function name="local:veridian-url-from-bmtnid">
+        <xsl:param name="issueURN"/>
+        <xsl:variable name="bmtnid" select="local:urn-to-veridian-bmtnid($issueURN)"/>
+        <xsl:variable name="protocol" as="xs:string">http://</xsl:variable>
+        <xsl:variable name="host" as="xs:string">bluemountain.princeton.edu</xsl:variable>
+        <xsl:variable name="servicePath" as="xs:string">bluemtn</xsl:variable>
+        <xsl:variable name="scriptPath" as="xs:string">cgi-bin/bluemtn</xsl:variable>
+        <xsl:variable name="a" as="xs:string">d</xsl:variable>
+        <xsl:variable name="e" as="xs:string">-------en-20--1--txt-IN-----</xsl:variable>
+        <xsl:variable name="args" as="xs:string" select="concat('?a=',$a,'&amp;d=',$bmtnid,'&amp;e=',$e)"/>
+        <xsl:value-of select="concat($protocol, $host, '/', $servicePath, '/', $scriptPath, $args)"/>
     </xsl:function>
     <xsl:template name="title-string">
         <xsl:param name="modsrec"/>
@@ -73,9 +86,6 @@
         <xsl:variable name="creators">
             <xsl:value-of select="mods:name/mods:displayForm" separator=", "/>
         </xsl:variable>
-        <xsl:variable name="pages">
-            <xsl:text>pages</xsl:text>
-        </xsl:variable>
         <tr>
             <td>
                 <xsl:value-of select="$title"/>
@@ -84,7 +94,7 @@
                 <xsl:value-of select="$creators"/>
             </td>
             <td>
-                <xsl:value-of select="$pages"/>
+                <a href="{$veridianLink}">view</a>
             </td>
         </tr>
     </xsl:template>
