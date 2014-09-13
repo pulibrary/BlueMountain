@@ -11,6 +11,18 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace alto="http://www.loc.gov/standards/alto/ns-v2#";
 
+declare function app:icon-path($bmtnURN as xs:string)
+as xs:string
+{
+    let $rootpath := "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/"
+    let $bmtnid   := tokenize($bmtnURN, ':')[last()] (: e.g., bmtnaae_1920-03_01 :)
+    let $iconpath := replace($bmtnid, '(bmtn[a-z]{3})_([^_]+)_([0-9]+)', '$1/issues/$2_$3') (: e.g., bmtnaae/issues/1920-03_01 :)
+    let $iconpath := replace($iconpath, '-', '/')
+    (:     "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/bmtnaab/issues/1921/05_01" :)
+    return $rootpath || $iconpath
+
+};
+
 (: 
  TITLE TEMPLATES
  :)
@@ -147,6 +159,14 @@ as element()*
 (: 
  : ISSUE TEMPLATES
  :)
+ 
+ declare %templates:wrap function app:issue-icon($node as node(), $model as map(*))
+ as element()
+ {
+    let $issueURN := $model("selected-issue")//mods:identifier
+    let $iconpath := app:icon-path($issueURN)
+    return <img src="{$iconpath}/large.jpg" />
+ };
 
 declare %templates:wrap function app:selected-issue($node as node(), $model as map(*), $issueURN as xs:string?)
 as map(*)? 
@@ -323,6 +343,7 @@ as element()
         let $xslt-parameters := 
             <parameters>
                 <param name="context" value="constituent-listing-table"/>
+                <param name="veridianLink" value="{bmtneer:veridian-url-from-bmtnid($issueURN)}"/>
             </parameters>
         let $row := transform:transform($constituent, $xsl, $xslt-parameters)
         return
