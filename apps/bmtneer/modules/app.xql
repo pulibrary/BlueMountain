@@ -63,7 +63,7 @@ as map(*)
         for $issue in
             collection('/db/bluemtn/metadata/periodicals')//mods:mods[mods:relatedItem[@type='host']/@xlink:href = $titleURN]
         let $date := $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
-        order by $date
+        order by xs:dateTime(app:w3cdtf-to-xsdate($date))
         return $issue
     return map { "selected-title-issues" := $issues }
 };
@@ -194,7 +194,7 @@ as element()
         let $titleURN := $issueByVolume/mods:relatedItem[@type='host']/@xlink:href
 
     let $volnum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
-    let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
+    let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
     let $date := $issueByVolume/mods:originInfo/mods:dateIssued[@keyDate='yes']
     order by xs:integer($volnum[1]),xs:integer($issuenum)
     return
@@ -211,7 +211,7 @@ declare function app:selected-title-issue-listing-group($node as node(), $model 
 as element()*
 {
   for $issueByVolume in $model("selected-title-issues")  
-  group by $volnum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number
+  group by $volnum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
   order by $volnum
   return
         <ul>
@@ -220,7 +220,7 @@ as element()*
                 <ul>
                 {
                     for $issue in $issueByVolume
-                    group by $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
+                    group by $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
                     order by $issuenum
                     return
                         <li>Number { $issuenum }</li>
@@ -237,8 +237,8 @@ as element()
         for $issue in $model("selected-title-issues")
         let $issueURN := $issue/mods:identifier[@type='bmtn']/string()
         let $titleURN := $issue/mods:relatedItem[@type='host']/@xlink:href
-        let $volnum   := $issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number
-        let $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
+        let $volnum   := $issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
+        let $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
         let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
         let $xslt-parameters := 
             <parameters>
@@ -296,7 +296,11 @@ as map(*)?
             for $area in $logicalDiv//mets:area
             let $adoc := local:altodoc($mets, $area/@FILEID)
             return local:alto2txt(doc($adoc)//node()[@ID = $area/@BEGIN])
-        return map { "selected-constituent-text" := $plaintext, "selected-constituent" := $constituent-r-item, "selected-title" := $titleRec }
+        return map { "selected-constituent-text" := $plaintext, 
+                     "selected-constituent" := $constituent-r-item, 
+                     "selected-title" := $titleRec,
+                     "selected-constituent-logical-div" := $logicalDiv                     
+                     }
      else ()
 };
 
@@ -305,7 +309,10 @@ declare function app:selected-constituent-contents($node as node(), $model as ma
   $model("selected-constituent-text")  
 };
 
-
+declare function app:selected-constituent-contents-html($node as node(), $model as map(*))
+{
+    $model("selected-constituent-logical-div")
+};
 
 declare function app:selected-issue-constituents-listing($node as node(), $model as map(*))
 as element()
@@ -343,6 +350,8 @@ as element()
         let $xslt-parameters := 
             <parameters>
                 <param name="context" value="constituent-listing-table"/>
+                <param name="titleURN" value="{ xs:string($titleURN) }" />
+                <param name="issueURN" value="{ xs:string($issueURN) }" />
                 <param name="veridianLink" value="{bmtneer:veridian-url-from-bmtnid($issueURN)}"/>
             </parameters>
         let $row := transform:transform($constituent, $xsl, $xslt-parameters)
@@ -375,7 +384,7 @@ declare function app:issue-number($node as node(), $model as map(*))
 as xs:string*
 {
     let $issue := $model("selected-issue")
-    return "Number " || $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number/text()
+    return "Number " || $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]/text()
 };
 
 declare function app:issue-pubDate($node as node(), $model as map(*))
@@ -398,6 +407,31 @@ as element()*
     return transform:transform($selected-constituent, $xsl, $xslt-parameters)
 };
 
+declare %templates:wrap function app:selected-constituent-creators($node as node(), $model as map(*))
+as xs:string*
+{
+ (:<h2>{ $model("selected-constituent")/mods:titleInfo/mods:title/text() }</h2> :)
+ let $selected-constituent := $model("selected-constituent")
+    let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
+    let $xslt-parameters := 
+        <parameters>
+            <param name="context" value="selected-constituent-creators"/>
+        </parameters>
+    return transform:transform($selected-constituent, $xsl, $xslt-parameters)
+};
+
+declare %templates:wrap function app:selected-constituent-title($node as node(), $model as map(*))
+as xs:string*
+{
+ (:<h2>{ $model("selected-constituent")/mods:titleInfo/mods:title/text() }</h2> :)
+ let $selected-constituent := $model("selected-constituent")
+    let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
+    let $xslt-parameters := 
+        <parameters>
+            <param name="context" value="selected-constituent-title"/>
+        </parameters>
+    return transform:transform($selected-constituent, $xsl, $xslt-parameters)
+};
 
 declare function app:w3cdtf-to-xsdate($d as xs:string) as xs:date
 {

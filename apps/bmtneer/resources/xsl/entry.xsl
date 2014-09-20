@@ -3,6 +3,8 @@
     <xsl:output method="html"/>
     <xsl:param name="context"/>
     <xsl:param name="veridianLink"/>
+    <xsl:param name="titleURN"/>
+    <xsl:param name="issueURN"/>
     <xsl:function name="local:urn-to-veridian-bmtnid">
         <xsl:param name="urn"/>
         <xsl:value-of select="substring-after($urn, 'urn:PUL:bluemountain:')"/>
@@ -86,17 +88,33 @@
         <xsl:variable name="creators">
             <xsl:value-of select="mods:name/mods:displayForm" separator=", "/>
         </xsl:variable>
-        <tr>
-            <td>
+        <xsl:choose>
+            <xsl:when test="$context = 'constituent-listing-table'">
+                <tr>
+                    <td>
+                        <xsl:value-of select="$title"/>
+                    </td>
+                    <td>
+                        <xsl:value-of select="$creators"/>
+                    </td>
+                    <td>
+                        <a href="{$veridianLink}">view pages</a>
+                    </td>
+                    <td>
+                        <a href="constituent.html?titleURN={$titleURN}&amp;issueURN={$issueURN}&amp;constituentID={@ID}">view text</a>
+                    </td>
+                </tr>
+            </xsl:when>
+            <xsl:when test="$context = 'selected-constituent-title'">
                 <xsl:value-of select="$title"/>
-            </td>
-            <td>
+            </xsl:when>
+            <xsl:when test="$context = 'selected-constituent-creators'">
                 <xsl:value-of select="$creators"/>
-            </td>
-            <td>
-                <a href="{$veridianLink}">view</a>
-            </td>
-        </tr>
+            </xsl:when>
+            <xsl:otherwise>
+                foo
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="mods:titleInfo">
         <xsl:if test="mods:nonSort">
