@@ -45,7 +45,8 @@
      </titleStmt>
      <publicationStmt>
       <publisher>Princeton University</publisher>
-      <idno type="bmtnid"><xsl:value-of select="@OBJID" /></idno>
+      <!--      <idno type="bmtnid"><xsl:value-of select="@OBJID" /></idno> -->
+      <idno type="bmtnid"><xsl:value-of select="./mets:dmdSec//mods:identifier[@type='bmtn']" /></idno>
      </publicationStmt>
      <seriesStmt>
       <title level="s">The Blue Mountain Project</title>
