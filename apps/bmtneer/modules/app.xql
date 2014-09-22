@@ -172,7 +172,7 @@ declare %templates:wrap function app:selected-issue($node as node(), $model as m
 as map(*)? 
 {
     if ($issueURN) then
-        let $issueRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mods:mods
+        let $issueRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mets:mets
         return map { "selected-issue" := $issueRec }    
      else ()
 };
@@ -180,7 +180,7 @@ as map(*)?
 declare function app:selected-issue-constituents($node as node(), $model as map(*))
 as map(*)
 {
-    map { "selected-issue-constituents" := $model("selected-issue")/mods:relatedItem[@type='constituent'] }    
+    map { "selected-issue-constituents" := $model("selected-issue")//mods:relatedItem[@type='constituent'] }    
 };
 
 declare function app:selected-title-issue-listing($node as node(), $model as map(*))
@@ -299,6 +299,7 @@ as map(*)?
         return map { "selected-constituent-text" := $plaintext, 
                      "selected-constituent" := $constituent-r-item, 
                      "selected-title" := $titleRec,
+                     "selected-issue" := $issueRec/ancestor::mets:mets,
                      "selected-constituent-logical-div" := $logicalDiv                     
                      }
      else ()
@@ -311,7 +312,35 @@ declare function app:selected-constituent-contents($node as node(), $model as ma
 
 declare function app:selected-constituent-contents-html($node as node(), $model as map(*))
 {
-    $model("selected-constituent-logical-div")
+   (: $model("selected-constituent-logical-div") :)
+   
+    (: $model("selected-issue") :)
+    local:parse-structMap-div($model("selected-constituent-logical-div")) 
+   
+};
+
+declare function local:parse-structMap-div($div as element()?)
+{
+    if (empty($div)) then <h1>empty structmap!</h1>
+    else 
+    <div class="{$div/@TYPE}">
+        {
+          for $div in $div/mets:div
+          return local:parse-structMap-div($div)
+        }
+        {
+            for $fptr in $div/mets:fptr
+            return local:parse-fptr($fptr)
+        }
+    </div>    
+    };
+    
+declare function local:parse-fptr($fptr as node())
+{
+    let $metsdoc := $fptr/ancestor::mets:mets
+    let $altoID  := $fptr/mets:area/@FILEID
+    let $altodoc := local:altodoc($metsdoc, $altoID)
+    return local:alto2html(doc($altodoc)//node()[@ID = $fptr/mets:area/@BEGIN])
 };
 
 declare function app:selected-issue-constituents-listing($node as node(), $model as map(*))
@@ -319,10 +348,9 @@ as element()
 {
     <ol class="constituent-listing">{
         
-        let $issueURN := $model("selected-issue")/mods:identifier[@type='bmtn']
-        let $titleURN := $model("selected-issue")/mods:relatedItem[@type='host']/@xlink:href
+        let $issueURN := $model("selected-issue")//mods:identifier[@type='bmtn']
+        let $titleURN := $model("selected-issue")//mods:relatedItem[@type='host']/@xlink:href
         for $constituent in $model("selected-issue-constituents")
-        let $label-old := $constituent/@ID/string()
         let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
         let $xslt-parameters := 
             <parameters>
@@ -343,8 +371,8 @@ as element()
 {
     <table class="table">{
         
-        let $issueURN := $model("selected-issue")/mods:identifier[@type='bmtn']
-        let $titleURN := $model("selected-issue")/mods:relatedItem[@type='host']/@xlink:href
+        let $issueURN := $model("selected-issue")//mods:identifier[@type='bmtn']
+        let $titleURN := $model("selected-issue")//mods:relatedItem[@type='host']/@xlink:href
         for $constituent in $model("selected-issue-constituents")
         let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
         let $xslt-parameters := 
@@ -364,7 +392,7 @@ as element()
 declare function app:selected-issue-label($node as node(), $model as map(*))
 as element()*
 {
-    let $selected-issue := $model("selected-issue")
+    let $selected-issue := $model("selected-issue")//mods:mods
     let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
     let $xslt-parameters := 
         <parameters>
@@ -456,4 +484,13 @@ as xs:string {
 declare function local:alto2txt($textblock) {
     for $string in $textblock//alto:String
     return $string/@CONTENT/string()
+};
+
+declare function local:alto2html($textblock) {
+    <div class="TextBlock"> {
+        for $textline in $textblock/alto:TextLine
+        let $strings := for $string in $textline/alto:String
+                        return $string/@CONTENT/string()
+        return (<br/>, $strings)
+    } </div>
 };
