@@ -25,15 +25,25 @@ declare variable $collection as xs:string := "/db/bluemtn/transcriptions";
         <h1>{$page-title}</h1>
         <p>Search expression: <code>{$search-expression}</code></p>
         <h3>Results:</h3>
+        <table>
+            <tr><th>score</th><th>magazine</th><th>date</th><th>hit</th></tr>
         {
             for $hit in collection($collection)//tei:ab[ft:query(., $search-expression)]
             let $score as xs:float := ft:score($hit)
+            let $issueURN := $hit/ancestor::tei:TEI//tei:idno[ @type="bmtnid" ]
+            let $constituentID := $hit/ancestor::tei:div/@corresp
+            let $monogr := $hit/ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr
+            let $title := $monogr/tei:title/tei:seg[@type='main']
             order by $score descending
             return
-            (
-                <p>Score: {$score}:</p>, 
-                kwic:summarize($hit, <config width="40"/>)
-            )			
+                <tr>
+                    <td>{$score}</td>
+                    <td><a href="constituent.html?issueURN={$issueURN}&amp;constituentID={$constituentID}">{$title}</a></td>
+                    <td>{string($monogr/tei:imprint/tei:date/@when)}</td>
+                    <td>{kwic:summarize($hit, <config width="40"/>)}</td>
+                </tr>
+ 
 		}
+		</table>
 	</body>
 </html>

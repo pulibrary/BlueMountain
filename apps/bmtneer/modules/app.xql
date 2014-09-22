@@ -286,9 +286,10 @@ as element()
 declare %templates:wrap function app:selected-constituent($node as node(), $model as map(*), $titleURN as xs:string?, $issueURN as xs:string?, $constituentID as xs:string?)
 as map(*)? 
 {
-    if ($issueURN and $titleURN and $constituentID) then
+    if ($issueURN and $constituentID) then
         let $issueRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mods:mods
-        let $titleRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and .= $titleURN]/ancestor::mods:mods
+        let $titleReca := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and .= $titleURN]/ancestor::mods:mods
+        let $titleRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and .= $issueRec//mods:relatedItem[@type='host']/@xlink:href]/ancestor::mods:mods
         let $constituent-r-item := $issueRec/mods:relatedItem[@ID = $constituentID]
         let $mets := $issueRec/ancestor::mets:mets
         let $logicalDiv := $issueRec/ancestor::mets:mets/mets:structMap[@TYPE='LOGICAL']//mets:div[@DMDID = $constituentID]
