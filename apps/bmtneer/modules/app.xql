@@ -11,17 +11,6 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace alto="http://www.loc.gov/standards/alto/ns-v2#";
 
-declare function app:icon-path($bmtnURN as xs:string)
-as xs:string
-{
-    let $rootpath := "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/"
-    let $bmtnid   := tokenize($bmtnURN, ':')[last()] (: e.g., bmtnaae_1920-03_01 :)
-    let $iconpath := replace($bmtnid, '(bmtn[a-z]{3})_([^_]+)_([0-9]+)', '$1/issues/$2_$3') (: e.g., bmtnaae/issues/1920-03_01 :)
-    let $iconpath := replace($iconpath, '-', '/')
-    (:     "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/bmtnaab/issues/1921/05_01" :)
-    return $rootpath || $iconpath
-
-};
 
 (: 
  TITLE TEMPLATES
@@ -156,31 +145,28 @@ as element()*
              alt="icon" />
     
 };
-(: 
- : ISSUE TEMPLATES
- :)
- 
- declare %templates:wrap function app:issue-icon($node as node(), $model as map(*))
- as element()
- {
-    let $issueURN := $model("selected-issue")//mods:identifier
-    let $iconpath := app:icon-path($issueURN)
-    return <img src="{$iconpath}/large.jpg" />
- };
 
-declare %templates:wrap function app:selected-issue($node as node(), $model as map(*), $issueURN as xs:string?)
-as map(*)? 
+declare function app:selected-title-issue-listing-group($node as node(), $model as map(*))
+as element()*
 {
-    if ($issueURN) then
-        let $issueRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mets:mets
-        return map { "selected-issue" := $issueRec }    
-     else ()
-};
-
-declare function app:selected-issue-constituents($node as node(), $model as map(*))
-as map(*)
-{
-    map { "selected-issue-constituents" := $model("selected-issue")//mods:relatedItem[@type='constituent'] }    
+  for $issueByVolume in $model("selected-title-issues")  
+  group by $volnum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
+  order by $volnum
+  return
+        <ul>
+            <li>
+                <h3>Volume { $volnum/text() }</h3>
+                <ul>
+                {
+                    for $issue in $issueByVolume
+                    group by $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
+                    order by $issuenum
+                    return
+                        <li>Number { $issuenum }</li>
+                }    
+                </ul>
+            </li>  
+        </ul>
 };
 
 declare function app:selected-title-issue-listing($node as node(), $model as map(*))
@@ -207,77 +193,37 @@ as element()
     }</table>
 };
 
-declare function app:selected-title-issue-listing-group($node as node(), $model as map(*))
-as element()*
+
+
+(: 
+ : ISSUE TEMPLATES
+ :)
+ 
+ declare %templates:wrap function app:issue-icon($node as node(), $model as map(*))
+ as element()
+ {
+    let $issueURN := $model("selected-issue")//mods:identifier
+    let $iconpath := bmtneer:icon-path($issueURN)
+    return <img src="{$iconpath}/large.jpg" />
+ };
+
+declare %templates:wrap function app:selected-issue($node as node(), $model as map(*), $issueURN as xs:string?)
+as map(*)? 
 {
-  for $issueByVolume in $model("selected-title-issues")  
-  group by $volnum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
-  order by $volnum
-  return
-        <ul>
-            <li>
-                <h3>Volume { $volnum/text() }</h3>
-                <ul>
-                {
-                    for $issue in $issueByVolume
-                    group by $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
-                    order by $issuenum
-                    return
-                        <li>Number { $issuenum }</li>
-                }    
-                </ul>
-            </li>  
-        </ul>
+    if ($issueURN) then
+        let $issueRec := collection('/db/bluemtn/metadata/periodicals')//mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mets:mets
+        return map { "selected-issue" := $issueRec }    
+     else ()
 };
 
-declare function app:selected-title-issue-listing-thunk($node as node(), $model as map(*))
-as element()
+declare function app:selected-issue-constituents($node as node(), $model as map(*))
+as map(*)
 {
-    <ol class="issue-listing">{
-        for $issue in $model("selected-title-issues")
-        let $issueURN := $issue/mods:identifier[@type='bmtn']/string()
-        let $titleURN := $issue/mods:relatedItem[@type='host']/@xlink:href
-        let $volnum   := $issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
-        let $issuenum := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
-        let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-        let $xslt-parameters := 
-            <parameters>
-                <param name="context" value="issue-listing-label"/>
-            </parameters>
-        let $label := transform:transform($issue, $xsl, $xslt-parameters)
-        group by $volnum
-        order by $volnum
-        return
-            <li><h3>{$volnum/text()}</h3>
-                <ol>
-                    <li><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">{$label}</a>
-                
-            </li>
-                </ol>
-            </li>
-            
-    }</ol>
+    map { "selected-issue-constituents" := $model("selected-issue")//mods:relatedItem[@type='constituent'] }    
 };
 
-declare function app:selected-title-issue-listing-old($node as node(), $model as map(*))
-as element()
-{
-    <ol class="issue-listing">{
-        for $issue in $model("selected-title-issues")
-        let $issueURN := $issue/mods:identifier[@type='bmtn']/string()
-        let $titleURN := $issue/mods:relatedItem[@type='host']/@xlink:href
-        let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-        let $xslt-parameters := 
-            <parameters>
-                <param name="context" value="issue-listing-label"/>
-            </parameters>
-        let $label := transform:transform($issue, $xsl, $xslt-parameters)
-        return
-            <li><a href="catalog.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">{$label}</a>
-                <br/><a href="{bmtneer:veridian-url-from-bmtnid($issueURN)}">stuff</a>
-            </li>
-    }</ol>
-};
+
+
 
 (: 
  : Constituent Templates
@@ -352,12 +298,7 @@ as element()
         let $issueURN := $model("selected-issue")//mods:identifier[@type='bmtn']
         let $titleURN := $model("selected-issue")//mods:relatedItem[@type='host']/@xlink:href
         for $constituent in $model("selected-issue-constituents")
-        let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-        let $xslt-parameters := 
-            <parameters>
-                <param name="context" value="constituent-listing-label"/>
-            </parameters>
-        let $label := transform:transform($constituent, $xsl, $xslt-parameters)
+         let $label := bmtneer:format-element($constituent, "constituent-listing-label")
         return
             <li>
                 <a href="catalog.html?titleURN={$titleURN}&amp;issueURN={$issueURN}&amp;constituentID={$constituent/@ID/string()}">
@@ -390,76 +331,51 @@ as element()
 };
 
 
+
 declare function app:selected-issue-label($node as node(), $model as map(*))
 as element()*
 {
-    let $selected-issue := $model("selected-issue")//mods:mods
-    let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-    let $xslt-parameters := 
-        <parameters>
-            <param name="context" value="selected-issue-label"/>
-        </parameters>
-    return transform:transform($selected-issue, $xsl, $xslt-parameters)
+    bmtneer:format-element($model("selected-issue")//mods:mods, "selected-issue-label")
 };
 
 declare function app:issue-volume($node as node(), $model as map(*))
 as xs:string*
 {
     let $issue := $model("selected-issue")
-    return $issue/mods:part[@type='issue']/detail[@type='volume']/number/text()
+    let $label := string($issue//mods:part[@type='issue']/mods:detail[@type='volume']/mods:number)
+    return $label
 };
 
 declare function app:issue-number($node as node(), $model as map(*))
 as xs:string*
 {
     let $issue := $model("selected-issue")
-    return "Number " || $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]/text()
+    return  string($issue//mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1])
 };
 
 declare function app:issue-pubDate($node as node(), $model as map(*))
 as xs:string*
 {
     let $issue := $model("selected-issue")
-    return $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']/text()
+    return string($issue//mods:originInfo/mods:dateIssued[@keyDate='yes'])
 };
 
 declare function app:selected-constituent-label($node as node(), $model as map(*))
 as element()*
-{
- (:<h2>{ $model("selected-constituent")/mods:titleInfo/mods:title/text() }</h2> :)
- let $selected-constituent := $model("selected-constituent")
-    let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-    let $xslt-parameters := 
-        <parameters>
-            <param name="context" value="selected-constituent-label"/>
-        </parameters>
-    return transform:transform($selected-constituent, $xsl, $xslt-parameters)
+{   
+    bmtneer:format-element($model("selected-constituent"), "selected-constituent-label")
 };
 
 declare %templates:wrap function app:selected-constituent-creators($node as node(), $model as map(*))
 as xs:string*
 {
- (:<h2>{ $model("selected-constituent")/mods:titleInfo/mods:title/text() }</h2> :)
- let $selected-constituent := $model("selected-constituent")
-    let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-    let $xslt-parameters := 
-        <parameters>
-            <param name="context" value="selected-constituent-creators"/>
-        </parameters>
-    return transform:transform($selected-constituent, $xsl, $xslt-parameters)
+    bmtneer:format-element($model("selected-constituent"), "selected-constituent-creators" )
 };
 
 declare %templates:wrap function app:selected-constituent-title($node as node(), $model as map(*))
 as xs:string*
 {
- (:<h2>{ $model("selected-constituent")/mods:titleInfo/mods:title/text() }</h2> :)
- let $selected-constituent := $model("selected-constituent")
-    let $xsl := doc("/db/apps/bmtneer/resources/xsl/entry.xsl")
-    let $xslt-parameters := 
-        <parameters>
-            <param name="context" value="selected-constituent-title"/>
-        </parameters>
-    return transform:transform($selected-constituent, $xsl, $xslt-parameters)
+    bmtneer:format-element($model("selected-constituent"), "selected-constituent-title" )
 };
 
 declare function app:w3cdtf-to-xsdate($d as xs:string) as xs:date
