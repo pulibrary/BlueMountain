@@ -5,6 +5,9 @@ module namespace app="http://blaueberg.info/bmtneer/templates";
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://blaueberg.info/bmtneer/config" at "config.xqm";
 import module namespace bmtneer="http://blaueberg.info/bmtneer" at "bmtneer-module.xqm";
+import module namespace kwic = "http://exist-db.org/xquery/kwic"
+    at "resource:org/exist/xquery/lib/kwic.xql";
+
 
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace mods="http://www.loc.gov/mods/v3";
@@ -428,12 +431,14 @@ declare function local:alto2html($textblock) {
 };
 
 
-declare function app:search($node as node(), $model as map(*), $searchexpr as xs:string)
+declare function app:search($node as node(), $model as map(*), $searchexpr as xs:string?)
 {
     let $result :=
-        for $hit in collection($config:transcription-root)//tei:ab[ft:query(., $searchexpr)]
-        order by ft:score($hit) descending
-        return $hit
+        if ($searchexpr) then
+            for $hit in collection($config:transcription-root)//tei:ab[ft:query(., $searchexpr)]
+            order by ft:score($hit) descending
+            return $hit
+        else ()
      return
         map { "search-result" := $result }
 };
@@ -441,4 +446,26 @@ declare function app:search($node as node(), $model as map(*), $searchexpr as xs
 declare function app:hit-count($node as node(), $model as map(*)) as xs:integer
 {
     count($model("search-result"))
+};
+
+declare function app:hit-table($node as node(), $model as map(*))
+{
+    <table class="table">
+        <tr><th>score</th><th>magazine</th><th>date</th><th>hit</th></tr>
+        {
+            for $result in $model("search-result")
+
+            let $issueURN := $result/ancestor::tei:TEI//tei:idno[ @type="bmtnid" ]
+            let $constituentID := $result/ancestor::tei:div/@corresp
+            let $monogr := $result/ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:monogr
+            let $title := $monogr/tei:title/tei:seg[@type='main']
+            return
+                <tr>
+                    <td>{ft:score($result)}</td>
+                    <td><a href="constituent.html?issueURN={$issueURN}&amp;constituentID={$constituentID}">{$title}</a></td>
+                    <td>{string($monogr/tei:imprint/tei:date/@when)}</td>
+                    <td>{kwic:summarize($result, <config width="40"/>)}</td>
+                </tr>
+        }
+     </table>
 };
