@@ -106,6 +106,8 @@ declare variable $config:icon-root := "http://localhost:8080/exist/rest/db/bluem
 
 declare variable $config:format-stylesheet-path := "/db/apps/bmtneer/resources/xsl/entry.xsl";
 
+declare variable $config:transcription-root := "/db/bluemtn/transcriptions";
+
 declare function config:format-stylesheet-doc()
 {
     doc($config:format-stylesheet-path)

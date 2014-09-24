@@ -10,6 +10,9 @@ declare namespace mets="http://www.loc.gov/METS/";
 declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace alto="http://www.loc.gov/standards/alto/ns-v2#";
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+
+
 
 
 (: 
@@ -282,12 +285,24 @@ declare function local:parse-structMap-div($div as element()?)
     </div>    
     };
     
-declare function local:parse-fptr($fptr as node())
+declare function local:parse-fptr-old($fptr as node())
 {
     let $metsdoc := $fptr/ancestor::mets:mets
     let $altoID  := $fptr/mets:area/@FILEID
     let $altodoc := local:altodoc($metsdoc, $altoID)
     return local:alto2html(doc($altodoc)//node()[@ID = $fptr/mets:area/@BEGIN])
+};
+
+declare function local:parse-fptr($fptr as node())
+{
+    let $metsdoc := $fptr/ancestor::mets:mets
+    let $html    :=
+        for $area in $fptr//mets:area
+        let $altoID  := $area/@FILEID
+        let $altodoc := local:altodoc($metsdoc, $altoID)
+        return local:alto2html(doc($altodoc)//node()[@ID = $area/@BEGIN])
+
+    return $html
 };
 
 declare function app:selected-issue-constituents-listing($node as node(), $model as map(*))
@@ -410,4 +425,20 @@ declare function local:alto2html($textblock) {
                         return $string/@CONTENT/string()
         return (<br/>, $strings)
     } </div>
+};
+
+
+declare function app:search($node as node(), $model as map(*), $searchexpr as xs:string)
+{
+    let $result :=
+        for $hit in collection($config:transcription-root)//tei:ab[ft:query(., $searchexpr)]
+        order by ft:score($hit) descending
+        return $hit
+     return
+        map { "search-result" := $result }
+};
+
+declare function app:hit-count($node as node(), $model as map(*)) as xs:integer
+{
+    count($model("search-result"))
 };
