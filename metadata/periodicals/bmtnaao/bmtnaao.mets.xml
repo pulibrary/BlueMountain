@@ -27,8 +27,7 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaao</identifier>
 	  <recordInfo>
 	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaao</recordIdentifier>
@@ -38,6 +37,7 @@
 	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	    </languageOfCataloging>
 	  </recordInfo>
+	  
 	  
 	  <titleInfo>
 	    <title>291</title>
@@ -93,7 +93,7 @@
 	  <genre authority="aat">Photogravures-20th century.</genre>
 	  <originInfo script="Latn">
 	    <place>
-	      <placeTerm type="text">New York, N.Y</placeTerm>
+	      <placeTerm type="text">New York, N.Y., United States</placeTerm>
 	    </place>
 	    <publisher>"291"</publisher>
 	    <dateIssued>1915-1916</dateIssued>
@@ -163,7 +163,80 @@
 	      </copyInformation>
 	    </holdingSimple>
 	  </location>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>291</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>1</number>
+		<caption>No. 1</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>March 1915</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1915-03</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>291</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>9</number>
+		<caption>No. 9</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>November 1915</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>291</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>10</number>
+		<caption>No. 10</caption>
+	      </detail>
+	    </part>
+	    <part type="issue">
+	      <detail type="number">
+		<number>11</number>
+		<caption>No. 11</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>December 1915</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1915-12</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>291</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>12</number>
+		<caption>No. 12</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>February 1916</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1916-02</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
 	</mods>
+
+
       </xmlData>
     </mdWrap>
     <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
