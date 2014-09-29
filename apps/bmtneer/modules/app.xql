@@ -185,14 +185,26 @@ as element()
             let $issueURN := $issueByVolume/mods:identifier[@type='bmtn']/string()
         let $titleURN := $issueByVolume/mods:relatedItem[@type='host']/@xlink:href
 
-    let $volnum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
-    let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
+    let $vollabel := 
+            if ($issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:caption) then
+                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:caption
+             else   
+                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
+    let $issuelabel := 
+            if ($issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:caption) then
+                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:caption
+            else
+                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
+                
+     let $volnum   := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
+     let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
+     
     let $date := $issueByVolume/mods:originInfo/mods:dateIssued[@keyDate='yes']
     order by xs:integer($volnum[1]),xs:integer($issuenum)
     return
         <tr>
-            <td>{$volnum[1]/text()}</td>
-            <td>{$issuenum/text()}</td>
+            <td>{string($vollabel)}</td>
+            <td>{string($issuelabel)}</td>
             <td>{$date/text()}</td>
             <td><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">detail</a></td>
         </tr>
