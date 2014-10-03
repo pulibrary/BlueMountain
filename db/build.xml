@@ -2,7 +2,8 @@
 <project basedir="." xmlns:xdb="http://exist-db.org/ant">
   <description>PUDL ant tasks</description>
   
-  <property name="eXist_home" value="/opt/local/exist" />
+<!--  <property name="eXist_home" value="/opt/local/exist" /> -->
+  <property name="eXist_home" value="/Applications/eXist-db/Contents/Resources/eXist-db" />
   
   <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
     <classpath>
@@ -698,5 +699,18 @@
       </fileset>
     </xdb:store>
   </target>
+
+  <target name="load-transcriptions" description="load TEI transcriptions">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/transcriptions" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/transcriptions">
+	<include name="**/*.tei.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
 </project>
 
