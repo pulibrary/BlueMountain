@@ -1,37 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabc</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabc</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabc">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabc">
 
-                        <dc:title></dc:title>
+            <dc:title></dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+
+	<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
+	      xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
+	  
+	  <recordInfo>
+            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc</recordIdentifier>
+            <recordContentSource authority="marcorg">NjP</recordContentSource>
+            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=1929000</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+	  </recordInfo>
+	  <genre>Periodicals-Title</genre>
+	  <titleInfo>
+            <nonSort>La</nonSort>
+            <title>Chronique musicale</title>
+	  </titleInfo>
+	  <name type="personal" authority="viaf" authorityURI="http://viaf.org/viaf/32125185">
+            <namePart type="family">Heulhard</namePart>
+            <namePart type="given">Arthur</namePart>
+            <namePart type="date">1849-1920</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo>
+            <place>
+              <placeTerm type="text">Paris</placeTerm>
+            </place>
+            <publisher>s.n.</publisher>
+            <dateIssued>1873-1876]</dateIssued>
+            <dateIssued encoding="marc" point="start">1873</dateIssued>
+            <dateIssued encoding="marc" point="end">1876</dateIssued>
+	  </originInfo>
+	  <language>
+            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+            <extent>11 v. : ill., music, ports. ; 29 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
+	  <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
+	  <note>Title from caption.</note>
+	  <note>Editor: Arthur Heulhard.</note>
+	  <subject authority="lcsh">
+            <topic>Music</topic>
+            <topic>Periodicals</topic>
+	  </subject>
+
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>

@@ -1,37 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabg">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabg</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabg">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabg</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabg">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabg">
 
-                        <dc:title>Der Sturm</dc:title>
+            <dc:title>Der Sturm</dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnabg"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabg</identifier>
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabg</recordIdentifier>       
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>
+	      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2980652
+	    </recordOrigin>
+	    <languageOfCataloging>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+	  <genre>Periodicals-Title</genre>
+	  <titleInfo>
+	    <nonSort>Der</nonSort>
+	    <title>Sturm</title>
+	  </titleInfo>
+	  <name type="personal">
+	    <namePart>Walden, Herwarth</namePart>
+	    <namePart type="date">1878-1941</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo>
+	    <place>
+	      <placeTerm type="text">Berlin-Hallensee, Germany</placeTerm>
+	    </place>
+	    <publisher>Der Sturm</publisher>
+	    <dateIssued>1910-1932</dateIssued>
+	    <dateIssued encoding="marc" point="start">1910</dateIssued>
+	    <dateIssued encoding="marc" point="end">1932</dateIssued>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <extent>21 v. : ill. ; 25-42 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">1. Jahrg., Nr. 1 (März 3, 1910)-3, 1932.</note>
+	  <note>Editor: Herwarth Walden.</note>
+	  <note>Title from caption.</note>
+	  <note>
+	    12. Jarhg., Heft 2 not bound with volume, and accompanied by reprint. Index for 7.Jahrg. laid in bound volume after issues.
+	  </note>
+	  <note>Imperfect: Some illustrations lacking.</note>
+	  <note>Microfilm. 3 reels.</note>
+	  <note type="additional physical form">
+	    Issued also in microfilm by the New York Public Library and the Association pour la conservation et la reproduction photographique de la presse.
+	  </note>
+	  <subject authority="lcsh">
+	    <topic>Arts, European</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <!--
+	      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
+	  -->
+	  <location>
+	    <physicalLocation type="text">
+	      <!-- FILL ME IN. Princeton University. Library. ... -->
+	    </physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>flm</subLocation>
+		<!-- DELETE COPY NUMBER BELOW -->
+		<shelfLocator>1 MICROFILM S00060</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	  <location>
+	    <physicalLocation type="text">
+	      <!-- FILL ME IN. Princeton University. Library. ... -->
+	    </physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>sax</subLocation>
+		<!-- DELETE COPY NUMBER BELOW -->
+		<shelfLocator>AP30 .S768</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	  <location>
+	    <physicalLocation type="text">
+	      <!-- FILL ME IN. Princeton University. Library. ... -->
+	    </physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>sax</subLocation>
+		<!-- DELETE COPY NUMBER BELOW -->
+		<shelfLocator>AP30 .S768f</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnabg"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>

@@ -1,37 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaba">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaba</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaba">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaba</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaba">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaba">
 
-                        <dc:title>The Signature</dc:title>
+            <dc:title>The Signature</dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnaba"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaba</identifier>
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaba</recordIdentifier>       
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2612861</recordOrigin>
+	    <languageOfCataloging>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+	  <genre>Periodicals-Title</genre>
+	  <titleInfo>
+	    <nonSort>The</nonSort>
+	    <title>Signature</title>
+	  </titleInfo>
+	  <name type="personal">
+	    <namePart>Lawrence, D. H. (David Herbert)</namePart>
+	    <namePart type="date">1885-1930</namePart>
+	    <role>
+	      <roleTerm type="text">ed</roleTerm>
+	    </role>
+	  </name>
+	  <name type="personal">
+	    <namePart>Mansfield, Katherine</namePart>
+	    <namePart type="date">1888-1923</namePart>
+	    <role>
+	      <roleTerm type="text">ed</roleTerm>
+	    </role>
+	  </name>
+	  <name type="personal">
+	    <namePart>Murry, John Middleton</namePart>
+	    <namePart type="date">1889-1957</namePart>
+	    <role>
+	      <roleTerm type="text">ed</roleTerm>
+	    </role>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo>
+	    <place>
+	      <placeTerm type="text">London</placeTerm>
+	    </place>
+	    <publisher>[The Signature</publisher>
+	    <dateIssued>1915]</dateIssued>
+	    <dateIssued encoding="marc" point="start">1915</dateIssued>
+	    <dateIssued encoding="marc" point="end">1915</dateIssued>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <extent>3 v. ; 22 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">No. 1 (4 Oct. 1915)-no. 3 (1 Nov. 1915).</note>
+	  <note>Edited by D.H. Lawrence, Katherine Mansfield and John Middleton Murry.</note>
+	  <note>"Published by subscription only."</note>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <nonSort>The</nonSort>
+	      <title>Signature</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>1</number>
+		<caption>Number 1</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>4 October 1915</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-04</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <nonSort>The</nonSort>
+	      <title>Signature</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>2</number>
+		<caption>Number 2</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>18 October 1915</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1915-10-18</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <nonSort>The</nonSort>
+	      <title>Signature</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="number">
+		<number>3</number>
+		<caption>Number 3</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>1 November 1915</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1915-11-01</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnaba"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>

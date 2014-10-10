@@ -1,37 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaav">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaav</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaav">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaav</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaav">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaav">
 
-                        <dc:title>New Numbers</dc:title>
+            <dc:title>New Numbers</dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnaav"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaav</identifier>
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaav</recordIdentifier>       
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2612686</recordOrigin>
+	    <languageOfCataloging>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+	  <genre>Periodicals-Title</genre>
+	  <titleInfo>
+	    <title>New numbers</title>
+	  </titleInfo>
+	  <name type="personal">
+	    <namePart>Brooke, Rupert</namePart>
+	    <namePart type="date">1887-1915</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Drinkwater, John</namePart>
+	    <namePart type="date">1882-1937</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Gibson, Wilfrid Wilson</namePart>
+	    <namePart type="date">1878-1962</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Abercrombie, Lascelles</namePart>
+	    <namePart type="date">1881-1938</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo>
+	    <place>
+	      <placeTerm type="text">Ryton, Dymock, Gloucester</placeTerm>
+	    </place>
+	    <publisher>[Crypt House Press]</publisher>
+	    <dateIssued encoding="marc" point="start">1914</dateIssued>
+	    <dateIssued encoding="marc" point="end">1914</dateIssued>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <extent>4 no. 25 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">v. 1, no. 1-4; Feb.-Dec. 1914.</note>
+	  <note>"A quarterly publication of the poems of Rupert Brooke, John Drinkwater, Wilfrid Wilson Gibson, Lascelles Abercrombie."</note>
+	  <subject authority="lcsh">
+	    <topic>English poetry</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>New Numbers</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+		<caption>Volume 1</caption>
+	      </detail>
+	      <detail type="number">
+		<number>1</number>
+		<caption>Number 1</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>February, 1914</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-02</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>New Numbers</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+		<caption>Volume 1</caption>
+	      </detail>
+	      <detail type="number">
+		<number>2</number>
+		<caption>Number 2</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>April, 1914</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-04</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>New Numbers</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+		<caption>Volume 1</caption>
+	      </detail>
+	      <detail type="number">
+		<number>3</number>
+		<caption>Number 3</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>August, 1914</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-08</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+	  <relatedItem type="constituent">
+	    <titleInfo>
+	      <title>New Numbers</title>
+	    </titleInfo>
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+		<caption>Volume 1</caption>
+	      </detail>
+	      <detail type="number">
+		<number>4</number>
+		<caption>Number 4</caption>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>December, 1914</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-12</dateIssued>
+	    </originInfo>
+	  </relatedItem>
+
+
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnaav"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>

@@ -25,6 +25,71 @@
     </mdWrap>
   </dmdSec>
   <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaf</identifier>
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaf</recordIdentifier>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4608240</recordOrigin>
+	    <languageOfCataloging>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+          <genre>Periodicals-Title</genre>
+	  <titleInfo>
+	    <nonSort>L'</nonSort>
+	    <title>élan</title>
+	  </titleInfo>
+	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/44307485">
+	    <namePart type="family">Ozenfant</namePart>
+	    <namePart type="given">Amédée</namePart>
+	    <namePart type="date">1886-1966</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo script="Latn">
+	    <place>
+	      <placeTerm type="text">Paris</placeTerm>
+	    </place>
+	    <publisher>L'élan</publisher>
+	    <dateIssued>1915-1916</dateIssued>
+	    <dateIssued encoding="marc" point="start">1915</dateIssued>
+	    <dateIssued encoding="marc" point="end">1916</dateIssued>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <extent>10 v. : ill. ; 32 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">No 1 (15 avril 1915)-no 10 (1 déc. 1916)</note>
+	  <note>Edited by Amédée Ozenfant.</note>
+	  <note>No 10 is folded in 4 to measure 32 cm.</note>
+	  <subject authority="lcsh">
+	    <topic>Art</topic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	  <location>
+	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>sax</subLocation>
+		<!--DELETE COPY NUMBER BELOW-->
+		<shelfLocator>N2 .E4q</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  <dmdSec ID="dmd2">
     <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
            xlink:href="urn:PUL:bluemountain:dmd:bmtnaaf"/>
   </dmdSec>

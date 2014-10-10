@@ -1,37 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaaj">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaaj</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaaj">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaaj</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaaj">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaaj">
 
-                        <dc:title>Surréalisme</dc:title>
+            <dc:title>Surréalisme</dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnaaj"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaj</identifier>
+	  <recordInfo>
+            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaj</recordIdentifier>
+            <recordContentSource authority="marcorg">NjP</recordContentSource>
+            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=5850790</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+	  </recordInfo>
+	  <genre>Periodicals-Title</genre>
+	  <titleInfo >
+            <title>Surréalisme</title>
+	  </titleInfo>
+	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/39390718">
+            <namePart type="family">Goll</namePart>
+            <namePart type="given">Yvan</namePart>
+            <namePart type="date">1891-1950</namePart>
+	  </name>
+	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/68979341">
+            <namePart type="family">Delaunay</namePart>
+            <namePart type="given">Robert</namePart>
+            <namePart type="date">1885-1941</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo script="Latn">
+            <place>
+              <placeTerm type="text">Paris, France</placeTerm>
+              
+              <placeTerm type="code" authorityURI="http://www.getty.edu/research/tools/vocabularies/tgn">7008038</placeTerm>
+            </place>
+            <publisher>I. Goll</publisher>
+            <dateIssued>[1924]</dateIssued>
+            <dateIssued encoding="iso8601" point="start">1924</dateIssued>
+            <dateIssued encoding="iso8601" point="end">1924</dateIssued>
+	  </originInfo>
+	  <language>
+            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+            <extent>1 v. [16 ] p. ; 26 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">1 (oct. 1924)</note>
+	  <note>"Directeur: Ivan Goll.  Collaborateurs: Guillaume APollinaire, Marcel Arland, P. Albert-Birot, René Crevel, Joseph Delteil, Robert Delaunay, Paul Dermée, Jean Painlevé, Pierre Reverdy"</note>
+	  <note>Drawing by Robert Delaunay on cover.</note>
+	  <note>No more published.</note>
+	  <subject authority="lcsh">
+            <topic>Surrealism</topic>
+            <genre>Periodicals</genre>
+	  </subject>
+	  <location>
+            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+              <copyInformation>
+                <subLocation>sax</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>NX600.S9 S884</shelfLocator>
+              </copyInformation>
+            </holdingSimple>
+	  </location>
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnaaj"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>

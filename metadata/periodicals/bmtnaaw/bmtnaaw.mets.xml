@@ -1,37 +1,474 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-    TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaaw">
-    <metsHdr>
-        <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-            <name>Princeton University Library, Digital Initiatives</name>
-        </agent>
-        <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaaw</metsDocumentID>
-    </metsHdr>
-    <dmdSec ID="dmd0">
-        <mdWrap MDTYPE="DC">
-            <xmlData>
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaaw">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaaw</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-                    <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaaw">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaaw">
 
-                        <dc:title>Nord-Sud</dc:title>
+            <dc:title>Nord-Sud</dc:title>
 
-                    </rdf:Description>
-                </rdf:RDF>
-            </xmlData>
-        </mdWrap>
-    </dmdSec>
-    <dmdSec ID="dmd1">
-        <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-            xlink:href="urn:PUL:bluemountain:dmd:bmtnaaw"/>
-    </dmdSec>
-    <fileSec>
-        <fileGrp/>
-    </fileSec>
-    <structMap>
-        <div/>
-    </structMap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaw</identifier>
+	  <recordInfo>
+	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaw</recordIdentifier>       
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2051199</recordOrigin>
+	    <languageOfCataloging>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+	  <genre>Periodicals-Title</genre>
+	  <titleInfo>
+	    <title>Nord-Sud</title>
+	  </titleInfo>
+	  <name type="personal">
+	    <namePart>Reverdy, Pierre</namePart>
+	    <namePart type="date">1889-1960</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo>
+	    <place>
+	      <placeTerm type="text">Paris</placeTerm>
+	    </place>
+	    <dateIssued>1917-1918</dateIssued>
+	    <dateIssued encoding="marc" point="start">1917</dateIssued>
+	    <dateIssued encoding="marc" point="end">1918</dateIssued>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <extent>16 no. ; 33 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">No. 1 (15 mars 1917)-no. 16 (oct. 1918).</note>
+	  <note>"Revue littéraire."</note>
+	  <note>"Collection complète."</note>
+	  <note>Edited by Pierre Reverdy.</note>
+	  <note type="numbering">No issues published for June-Sept. 1918.</note>
+	  <subject authority="lcsh">
+	    <topic>French literature</topic>
+	    <temporal>20th century</temporal>
+	    <topic>Periodicals</topic>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>French literature</topic>
+	    <temporal>20th century</temporal>
+	  </subject>
+	  <location>
+	    <physicalLocation type="text">Princeton University. Department of Rare Books and Specials Collections</physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>beac</subLocation>
+		<shelfLocator>1 0904.682q</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	  <location>
+	    <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<shelfLocator>PQ2 .N828</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No. 1</caption>
+		<number>1</number> 
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>15 Mars 1917</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-03-15</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <subLocation>beac</subLocation>
+		  <shelfLocator>1 0904.682q</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No. 2</caption>
+		<number>2</number> 
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>15 Avril 1917</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-04-15</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <subLocation>beac</subLocation>
+		  <shelfLocator>1 0904.682q</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No. 3</caption>
+		<number>3</number> 
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>15 Mai 1917</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-05-15</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <subLocation>beac</subLocation>
+		  <shelfLocator>1 0904.682q</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>Nos. 4-5 </caption>
+		<number>4</number>
+		<number>5</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Juin-Juillet 1917</dateIssued>
+	      <dateIssued encoding="marc" keyDate="yes" point="start">1917-06</dateIssued>
+	      <dateIssued encoding="marc" point="end">1917-07</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>Nos. 6-7 </caption>
+		<number>6</number>
+		<number>7</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Août-Septembre 1917</dateIssued>
+	      <dateIssued encoding="marc" keyDate="yes" point="start">1917-08</dateIssued>
+	      <dateIssued encoding="marc" point="end">1917-09</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 8</caption>
+		<number>8</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Octobre 1917</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-10</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 9</caption>
+		<number>9</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Novembre 1917</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-11</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>1</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 10</caption>
+		<number>10</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Decembre 1917</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-12</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>2</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 11</caption>
+		<number>11</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Janvier 1918</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-01</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>2</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 12</caption>
+		<number>12</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Février 1918</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-02</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>2</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 13</caption>
+		<number>13</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Mars 1918</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-03</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>2</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 14</caption>
+		<number>14</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Avril 1918</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-04</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>2</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 15</caption>
+		<number>15</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Mai 1918</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-05</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	  
+	  <relatedItem type="constituent">
+	    <part type="issue">
+	      <detail type="volume">
+		<number>2</number>
+	      </detail>
+	      <detail type="number">
+		<caption>No 16</caption>
+		<number>16</number>
+	      </detail>
+	    </part>
+	    <originInfo>
+	      <dateIssued>Octobre 1918</dateIssued>
+	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-10</dateIssued>
+	    </originInfo>
+	    <location>
+	      <physicalLocation type="text">Indiana University Lilly Rare Books</physicalLocation>
+	      <physicalLocation authority="marcorg" type="code">InU-Li</physicalLocation>
+	      <holdingSimple>
+		<copyInformation>
+		  <shelfLocator>PQ2 .N828</shelfLocator>
+		</copyInformation>
+	      </holdingSimple>
+	    </location>
+	  </relatedItem>
+	</mods>
+
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnaaw"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
 </mets>
