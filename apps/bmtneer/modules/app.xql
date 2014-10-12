@@ -15,9 +15,6 @@ declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace alto="http://www.loc.gov/standards/alto/ns-v2#";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-
-
-
 (: 
  TITLE TEMPLATES
  :)
@@ -35,7 +32,7 @@ declare %templates:wrap function app:selected-titles($node as node(), $model as 
 as map(*) 
 {
     let $titleSequence :=
-        for $rec in collection('/db/bluemtn/metadata/periodicals')//mods:mods[empty(mods:relatedItem[@type='host'])]
+        for $rec in collection('/db/bluemtn/metadata/periodicals')//mods:genre[.='Periodicals-Title']/ancestor::mods:mods
         order by upper-case($rec/mods:titleInfo[empty(@type)]/mods:title/string())
         return $rec
     return map { "titles" := $titleSequence }
