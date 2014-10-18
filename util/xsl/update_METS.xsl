@@ -45,10 +45,15 @@
                     <xsl:apply-templates select="mods:name" mode="label" />
                 </xsl:when>
                 <xsl:when test="count(mods:name) = 2">
+		  <xsl:variable name="name1">
+		    <xsl:apply-templates select="mods:name[1]" mode="label" />
+		  </xsl:variable>
+		  <xsl:variable name="name2">
+		    <xsl:apply-templates select="mods:name[2]" mode="label" />
+		  </xsl:variable>
+		  
                     <xsl:text> by </xsl:text>
-                    concat(<xsl:apply-templates select="mods:name[1]" mode="label" />
-                            ' and '
-                    <xsl:apply-templates select="mods:name[2]" mode="label" /> 
+		    <xsl:value-of select="concat($name1, ' and ', $name2)"/>
                 </xsl:when>
                 <xsl:when test="count(mods:name) &gt; 2">
                     <xsl:text> by </xsl:text>
