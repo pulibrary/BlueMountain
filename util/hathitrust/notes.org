@@ -1,0 +1,17 @@
+* Notes for creating Hathi SIP
+  I need to write a tree-walker that can wander over the astore.
+  The SIP should contain the following:
+
+  - .jp2 files
+  - .txt files
+  - .alto.xml files
+  - .mets file
+  - metadata.yml
+  - checksum
+** Algorithm
+   - create emtpy directory D on tmp
+   - copy mets.xml to D (FileUtils.cp 'srcfile', D)
+   - copy astore/../delivery/jp2 files to D
+   - generate .txt files
+   - generate metadata.yml file
+   - generate checksum.md5
