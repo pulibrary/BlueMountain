@@ -15,6 +15,7 @@ import module namespace config="http://bluemountain.princeton.edu/config" at "co
 import module namespace app="http://bluemountain.princeton.edu/modules/app" at "app.xql";
 import module namespace titles="http://bluemountain.princeton.edu/modules/titles" at "titles.xql" ;
 import module namespace title="http://bluemountain.princeton.edu/modules/title" at "title.xqm" ;
+import module namespace issue="http://bluemountain.princeton.edu/modules/issue" at "issue.xqm" ;
 
 declare option exist:serialize "method=html5 media-type=text/html enforce-xhtml=yes";
 

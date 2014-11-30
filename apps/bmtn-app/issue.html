@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="row" data-template="issue:selected-issue">
+        <div class="col-md-8">
+            <h1>
+                <span data-template="issue:label">Broom</span>
+            </h1>
+            <dl class="dl-horizontal">
+                <dt>Volume</dt>
+                <dd>
+                    <span data-template="issue:volume">Volume 1</span>
+                </dd>
+                <dt>Issue</dt>
+                <dd>
+                    <span data-template="issue:number">Number 1</span>
+                </dd>
+                <dt>Publication Date</dt>
+                <dd>
+                    <span data-template="issue:pubDate">November 1921</span>
+                </dd>
+                <dt>Editor(s)</dt>
+                <dd>Harold Loeb, Alfred Kreymborg, and Giuseppe Prezzolini</dd>
+                <dt>Place of Publication</dt>
+                <dd>18, Trinità dei Monti, Rome (6), Italy and Three East 9th Street, New York New York</dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <span class="issue:icon">
+                <img src="http://localhost:8080/exist/rest/db/bluemtn/astore/periodicals/bmtnaap/issues/1921/11_01/delivery/bmtnaap_1921-11_01_0001.jpg" height="270" alt="icon"/>
+            </span>
+            <br/>
+            <a href="http://localhost:8080/exist/rest/db/bluemtn/astore/periodicals/bmtnaap/issues/1921/11_01/bmtnaap_1921-11_01.pdf">
+                <span class="glyphicon glyphicon-eye-open"/>  Read PDF (66.5 MB)</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8" data-template="issue:selected-issue">
+            <h2>Contents</h2>
+            <h3 data-template="issue:label"/>
+            <div data-template="issue:constituents">
+                <table class="table" data-template="issue:constituents-table"/>
+            </div>
+        </div>
+    </div>
+</article>
