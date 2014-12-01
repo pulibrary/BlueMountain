@@ -102,7 +102,9 @@ declare function config:app-info($node as node(), $model as map(*)) {
 
 (: Blue Mountain additions :)
 
-declare variable $config:icon-root := "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/" ;
+declare variable $config:icon-root-old := "http://localhost:8080/exist/rest/db/bluemtn/resources/icons/periodicals/" ;
+
+declare variable $config:icon-root := "/exist/admirest/db/bluemtn/resources/icons/periodicals/" ;
 
 declare variable $config:format-stylesheet-path := "/db/apps/bmtneer/resources/xsl/entry.xsl";
 
