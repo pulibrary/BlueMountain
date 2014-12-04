@@ -68,23 +68,23 @@ as element()
 
     let $vollabel := 
             if ($issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:caption) then
-                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:caption
+                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:caption[1]
              else   
                 $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
     let $issuelabel := 
             if ($issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:caption) then
-                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:caption
+                $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:caption[1]
             else
                 $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
                 
-     let $volnum   := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]
-     let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]
+     let $volnum   := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1] or 0 (: 0 if no volume is specified :)
+     let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1] or 0 (: 0 if no issue is specified :)
      
     let $date := $issueByVolume/mods:originInfo/mods:dateIssued[@keyDate='yes']
     order by xs:integer($volnum[1]),xs:integer($issuenum)
     return
         <tr>
-            <td>{string($vollabel)}</td>
+            <td>{string($vollabel[1])}</td>
             <td>{string($issuelabel)}</td>
             <td>{$date/text()}</td>
             <td><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">detail</a></td>

@@ -40,7 +40,7 @@ declare function issue:volume($node as node(), $model as map(*))
 as xs:string*
 {
     let $issue := $model("selected-issue")
-    let $label := string($issue//mods:part[@type='issue']/mods:detail[@type='volume']/mods:number)
+    let $label := string($issue//mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1])
     return $label
 };
 
