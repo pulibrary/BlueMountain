@@ -15,7 +15,7 @@ declare %templates:wrap function issue:selected-issue($node as node(), $model as
 as map(*)? 
 {
     if ($issueURN) then
-        let $issueRec := collection($config:data-root)//mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mods:mods
+        let $issueRec := collection($config:data-root)//mods:mods/mods:identifier[@type='bmtn' and . = $issueURN]/ancestor::mods:mods
         return map { "selected-issue" := $issueRec }    
      else ()
 };
@@ -40,7 +40,7 @@ declare function issue:volume($node as node(), $model as map(*))
 as xs:string*
 {
     let $issue := $model("selected-issue")
-    let $label := string($issue//mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1])
+    let $label := string($issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1])
     return $label
 };
 
