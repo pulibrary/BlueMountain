@@ -43,6 +43,17 @@ as element()
     return transform:transform($selected-title, $xsl, $xslt-parameters)
 };
 
+declare %templates:wrap function title:abstract($node as node(), $model as map(*))
+as xs:string
+{
+    let $abstract := $model("selected-title")/mods:abstract
+    return
+        if ($abstract) then
+            xs:string($abstract)
+        else
+            "No abstract available"
+};
+
 declare function title:issues($node as node(), $model as map(*))
 as map(*)
 {
@@ -81,7 +92,9 @@ as element()
      let $issuenum := $issueByVolume/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1] or 0 (: 0 if no issue is specified :)
      
     let $date := $issueByVolume/mods:originInfo/mods:dateIssued[@keyDate='yes']
-    order by xs:integer($volnum[1]),xs:integer($issuenum)
+    (: order by xs:integer($volnum[1]),xs:integer($issuenum) :)
+    order by xs:dateTime(app:w3cdtf-to-xsdate($date))
+
     return
         <tr>
             <td>{string($vollabel[1])}</td>
