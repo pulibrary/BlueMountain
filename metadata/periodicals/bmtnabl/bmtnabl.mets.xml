@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabl">
+  <metsHdr>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabl</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd0">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabl">
+
+            <dc:title>Proverbe</dc:title>
+
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <dmdSec ID="dmd1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3">
+	  <titleInfo>
+            <title>Proverbe</title>
+	  </titleInfo>
+	  <titleInfo type="uniform">
+            <title>Invention et proverbe</title>
+	  </titleInfo>
+	  <typeOfResource>text</typeOfResource>
+	  <genre>Periodicals-Title</genre>
+	  <originInfo script="Latn">
+            <place>
+              <placeTerm type="text">Paris</placeTerm>
+            </place>
+            <publisher>Paul Eluard</publisher>
+            <dateIssued>1920-1921</dateIssued>
+            <dateIssued encoding="marc" point="start">1920</dateIssued>
+            <dateIssued encoding="marc" point="end">1921</dateIssued>
+	  </originInfo>
+	  <language>
+            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+            <extent>6 no. : ill. ; 23 cm.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">No 1 (1 fév, 1920)-no 6 (juil. 1921)</note>
+	  <note>"Feuille mensuelle."</note>
+	  <note>No. 6 also has title: L'Invention et proverbe.</note>
+	  <note>"Numero speciale" matted and framed.</note>
+	  <note>Includes: signed letter from Eluard to Eduard Dujardin; poster for Excursions et visites Dada; two original photographs depicting Breton, Charchoune, Rigaud, Soupault, and Tzara; original drawing by Louis Favre of Celine Arnauld; original prospectus and subscription bulletin for Proverbe; Max Ernst exhibition invitation; and press clippings. Bound with collector's manuscript describing the importance of Proverbe, and original dealer's description for this copy.</note>
+	  <note type="numbering">Includes an undated and unnumbered "numero special d'art et de poesie."</note>
+	  <note type="ownership">GAX copy: Bookplate of Y.S. Bourgoin. NjP</note>
+	  <subject authority="lcsh">
+            <topic>Dadaism</topic>
+            <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+            <topic>Arts, Modern</topic>
+            <temporal>20th century</temporal>
+            <geographic>France</geographic>
+            <genre>Periodicals</genre>
+	  </subject>
+	  <location>
+            <url displayLabel="electronic resource" usage="primary display">http://arks.princeton.edu/ark:/88435/mp48sf15b</url>
+	  </location>
+	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	  <location>
+            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+              <copyInformation>
+                <subLocation>sax</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>NX600.D3 P76</shelfLocator>
+              </copyInformation>
+            </holdingSimple>
+	  </location>
+	  <location>
+            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+              <copyInformation>
+                <subLocation>gax</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>2009-0178N</shelfLocator>
+              </copyInformation>
+            </holdingSimple>
+	  </location>
+	  <recordInfo xmlns="">
+            <recordContentSource authority="marcorg">NjP</recordContentSource>
+            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4818266</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+	  </recordInfo>
+	</mods>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+
+  <dmdSec ID="dmd2">
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+           xlink:href="urn:PUL:bluemountain:dmd:bmtnabl"/>
+  </dmdSec>
+  <fileSec>
+    <fileGrp/>
+  </fileSec>
+  <structMap>
+    <div/>
+  </structMap>
+</mets>
