@@ -14,7 +14,14 @@
     </xd:doc>
     <xsl:template match="mods:mods">
         <span class="titleInfo">
-            <xsl:apply-templates select="mods:titleInfo[empty(@type)]"/>
+            <xsl:choose>
+                <xsl:when test="mods:titleInfo[empty(@type)]">
+                    <xsl:apply-templates select="mods:titleInfo[empty(@type)]"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>[No Title]</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
         </span>
     </xsl:template>
 </xsl:stylesheet>

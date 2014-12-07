@@ -72,6 +72,29 @@ as element()
 {
     <table class="table">
         <tr><th>Volume</th><th>Number</th><th>Date Issued</th><th>Access</th></tr>
+    {
+    for $issue in $model("selected-title-issues")
+        let $issueURN   := xs:string($issue/mods:identifier[@type='bmtn'])
+        let $titleURN   := $issue/mods:relatedItem[@type='host']/@xlink:href
+        let $vollabel   := $issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number
+        let $issuelabel := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
+        let $date       := $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
+    order by xs:dateTime(app:w3cdtf-to-xsdate($date))
+    return
+        <tr>
+            <td>{$vollabel}</td>
+            <td>{$issuelabel}</td>
+            <td>{$date/text()}</td>
+            <td><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">detail</a></td>
+        </tr>
+    }</table>
+};
+
+declare function title:issue-listing-with-captions($node as node(), $model as map(*))
+as element()
+{
+    <table class="table">
+        <tr><th>Volume</th><th>Number</th><th>Date Issued</th><th>Access</th></tr>
         {
     for $issueByVolume in $model("selected-title-issues")
             let $issueURN := $issueByVolume/mods:identifier[@type='bmtn']/string()
@@ -98,7 +121,7 @@ as element()
     return
         <tr>
             <td>{string($vollabel[1])}</td>
-            <td>{string($issuelabel)}</td>
+            <td>{string($issuelabel[1])}</td>
             <td>{$date/text()}</td>
             <td><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">detail</a></td>
         </tr>
