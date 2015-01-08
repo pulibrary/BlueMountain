@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/" xmlns:local="http://diglib.princeton.edu" xmlns:mix="http://www.loc.gov/mix/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaap_1922-02_01">
+<mets xmlns="http://www.loc.gov/METS/" xmlns:local="http://diglib.princeton.edu" xmlns:mix="http://www.loc.gov/mix/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaap_1922-02_01">
     <metsHdr>
         <agent ROLE="CREATOR" TYPE="ORGANIZATION">
             <name>Princeton University Library, Digital Initiatives</name>
@@ -51,7 +51,7 @@
                     </relatedItem>
                     <relatedItem type="constituent" ID="c001">
                         <titleInfo lang="eng">
-                            <title>Cover Design</title>
+                            <title>Cover design</title>
                         </titleInfo>
                         <typeOfResource>still image</typeOfResource>
                         <part>
@@ -78,9 +78,9 @@
                     </relatedItem>
                     <relatedItem type="constituent" ID="c003">
                         <titleInfo lang="eng">
-                            <title>Suburban Landscape</title>
+                            <title>Suburban landscape</title>
                         </titleInfo>
-                        <name type="personal">
+                    	<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/10624494">
                             <displayForm>P. Selver</displayForm>
                             <role>
                                 <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -97,18 +97,19 @@
                         </part>
                         <genre type="CCS">TextContent</genre>
                     </relatedItem>
+                	<!-- Missing "Czecho-Slovak painting." -->
                     <relatedItem type="constituent" ID="c004">
                         <titleInfo lang="eng">
                             <nonSort>A</nonSort>
-                            <title>Roman Night</title>
+                            <title>Roman night</title>
                         </titleInfo>
-                        <name type="personal">
+                    	<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/32000675">
                             <displayForm>Paul Morand</displayForm>
                             <role>
                                 <roleTerm type="code" authority="marcrelator">cre</roleTerm>
                             </role>
                         </name>
-                        <name type="personal">
+                    	<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/278935970">
                             <displayForm>H. A. L.</displayForm>
                             <role>
                                 <roleTerm type="code" authority="marcrelator">trl</roleTerm>
@@ -118,17 +119,21 @@
                         <language>
                             <languageTerm authority="iso639-2b">eng</languageTerm>
                         </language>
+                    	<language objectPart="translation">
+                    		<languageTerm authority="iso639-2b">fre</languageTerm>
+                    	</language>
                         <part>
                             <extent unit="page">
                                 <list>4-13</list>
                             </extent>
                         </part>
                         <genre type="CCS">TextContent</genre>
+                    	<!-- Out of sequence. -->
                         <relatedItem type="constituent" ID="c005">
                             <titleInfo lang="eng">
-                                <title>Czecho-Slovak Painting</title>
+                                <title>Czecho-Slovak painting</title>
                             </titleInfo>
-                            <name type="personal">
+                        	<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/12432757">
                                 <displayForm>Jan Zrzavy</displayForm>
                                 <role>
                                     <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -145,9 +150,10 @@
                     </relatedItem>
                     <relatedItem type="constituent" ID="c006">
                         <titleInfo lang="eng">
-                            <title>New York, A Farewell</title>
+                            <title>New York, a farewell</title>
                         </titleInfo>
-                        <name type="personal">
+                    	<!-- Provisional VIAF (NAR created 2015-01-08.) -->
+                    	<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/199492416">
                             <displayForm>Emmy Veronica Sanders</displayForm>
                             <role>
                                 <roleTerm type="code" authority="marcrelator">cre</roleTerm>
