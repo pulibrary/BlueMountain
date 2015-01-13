@@ -40,10 +40,10 @@
                         </dd>
                         <dt>Access</dt>
                         <dd>
-                            <a href="{$veridianLink}">archive</a>
+                            <a href="{$linkpath}">catalog</a>
                         </dd>
                         <dd>
-                            <a href="{$linkpath}">catalog</a>
+                            <a href="{$veridianLink}">archive</a>
                         </dd>
                     </dl>
                 </div>
