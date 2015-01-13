@@ -21,7 +21,7 @@
     <xsl:template match="mods:mods">
         <xsl:variable name="iconpath" select="local:title-icon(current()/mods:identifier)"/>
         <xsl:variable name="linkpath" select="concat( 'title.html?titleURN=', current()/mods:identifier)"/>
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <img class="thumbnail" src="{$iconpath}" alt="icon"/>
                 <div class="caption">
@@ -38,15 +38,14 @@
                         <dd>
                             <xsl:apply-templates select="mods:originInfo/mods:place"/>
                         </dd>
-                    </dl>
-                    <ul>
-                        <li>
+                        <dt>Access</dt>
+                        <dd>
                             <a href="{$veridianLink}">archive</a>
-                        </li>
-                        <li>
+                        </dd>
+                        <dd>
                             <a href="{$linkpath}">catalog</a>
-                        </li>
-                    </ul>
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </div>
