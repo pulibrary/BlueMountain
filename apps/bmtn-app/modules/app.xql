@@ -5,6 +5,8 @@ module namespace app="http://bluemountain.princeton.edu/modules/app";
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://bluemountain.princeton.edu/config" at "config.xqm";
 
+declare namespace mods="http://www.loc.gov/mods/v3";
+
 (:~
  : This is a sample templating function. It will be called by the templating module if
  : it encounters an HTML element with an attribute data-template="app:test" 
@@ -70,3 +72,10 @@ as xs:string
     return $protocol || $host || '/' || $servicePath || '/' || $scriptPath || $args
 }; 
 
+declare function app:use-title($modsrec as element())
+as element()
+{
+    if ($modsrec/mods:titleInfo[@usage='primary'])
+    then $modsrec/mods:titleInfo[@usage='primary']
+    else $modsrec/mods:titleInfo[1]
+};

@@ -12,8 +12,9 @@ declare %templates:wrap function titles:all($node as node(), $model as map(*))
 as map(*) 
 {
     let $titleSequence :=
-        for $rec in collection($config:data-root)//mods:genre[.='Periodicals-Title']/ancestor::mods:mods
-        order by upper-case($rec/mods:titleInfo[empty(@type)]/mods:title/string())
+        for $rec in collection($config:data-root)//mods:genre[@authority='bmtn' and .='Periodicals-Title']/ancestor::mods:mods
+        order by lower-case(app:use-title($rec)/mods:title)
+         
         return $rec
     return map { "titles" := $titleSequence }
 };
@@ -33,7 +34,7 @@ as element()*
 		let $xslt-parameters := 
         <parameters>
         <param name="app-root" value="{$config:app-root}"/>
-        <param name="veridianLink" value="{app:veridian-title-url-from-bmtnid($title//mods:identifier[@type='bmtn'])}"/>
+        <param name="veridianLink" value="{app:veridian-title-url-from-bmtnid($title/mods:identifier[@type='bmtn'])}"/>
         </parameters>
 
 		return

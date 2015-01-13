@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bluemountain.princeton.edu/mods" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" version="2.0" exclude-result-prefixes="xs xd mods">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:bmtn-mods="http://bluemountain.princeton.edu/mods" version="2.0" exclude-result-prefixes="xs xd mods">
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p>
@@ -9,6 +9,17 @@
             <xd:p/>
         </xd:desc>
     </xd:doc>
+    <xsl:function name="bmtn-mods:use-title">
+        <xsl:param name="modsrec"/>
+        <xsl:choose>
+            <xsl:when test="$modsrec/mods:titleInfo[@usage='primary']">
+                <xsl:apply-templates select="$modsrec/mods:titleInfo[@usage='primary']"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="$modsrec/mods:titleInfo[1]"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
     <xsl:template match="mods:detail">
         <xsl:choose>
             <xsl:when test="mods:caption">
