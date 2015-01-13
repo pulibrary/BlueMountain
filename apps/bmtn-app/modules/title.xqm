@@ -138,9 +138,13 @@ as element()*
     order by xs:dateTime(app:w3cdtf-to-xsdate($date))
     return
     <li>
-        <img class="thumbnail" src="{$icon}" alt="icon" />
-        <div class="caption">
-        <dl>
+        <div class="row">
+        <div class="col-md-1">
+        <img class="thumbnail" src="{$icon}" alt="icon"  />
+        </div>
+        
+        <div class="col-md-1 caption">
+        <dl class="dl-horizontal">
         <dt>Date</dt>
         <dd>{$date/text()}</dd>
         
@@ -155,6 +159,7 @@ as element()*
         <dd><a href="{$veridianlink}">archive</a></dd>
         </dl>
         </div>
+        </div> <!-- row -->
     </li>
  }</ol>
 };
