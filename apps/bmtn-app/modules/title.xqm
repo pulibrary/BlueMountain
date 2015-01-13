@@ -5,6 +5,7 @@ module namespace title="http://bluemountain.princeton.edu/modules/title";
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://bluemountain.princeton.edu/config" at "config.xqm";
 import module namespace app="http://bluemountain.princeton.edu/modules/app" at "app.xql";
+import module namespace issue="http://bluemountain.princeton.edu/modules/issue" at "issue.xqm";
 
 declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace xlink="http://www.w3.org/1999/xlink";
@@ -90,7 +91,7 @@ as element()
     }</table>
 };
 
-declare function title:issue-listing($node as node(), $model as map(*))
+declare function title:issue-listing-dlist($node as node(), $model as map(*))
 as element()
 {
     <div class="issue-list">
@@ -120,6 +121,42 @@ as element()
         </dl>
     }
     </div>
+};
+
+declare function title:issue-listing($node as node(), $model as map(*))
+as element()*
+{
+    <ol> {
+      for $issue in $model("selected-title-issues")
+        let $issueURN   := xs:string($issue/mods:identifier[@type='bmtn'])
+        let $titleURN   := $issue/mods:relatedItem[@type='host']/@xlink:href
+        let $vollabel   := $issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number
+        let $issuelabel := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
+        let $date       := $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
+        let $veridianlink := app:veridian-url-from-bmtnid($issueURN)
+        let $icon       := issue:icon2($issueURN)
+    order by xs:dateTime(app:w3cdtf-to-xsdate($date))
+    return
+    <li>
+        <img class="thumbnail" src="{$icon}" alt="icon" />
+        <div class="caption">
+        <dl>
+        <dt>Date</dt>
+        <dd>{$date/text()}</dd>
+        
+        <dt>Volume</dt>
+        <dd>{$vollabel}</dd>
+        
+        <dt>Issue</dt>
+        <dd>{$issuelabel}</dd>
+        
+        <dt>Access</dt>
+        <dd><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">catalog</a></dd>
+        <dd><a href="{$veridianlink}">archive</a></dd>
+        </dl>
+        </div>
+    </li>
+ }</ol>
 };
 
 declare function title:issue-listing-with-captions($node as node(), $model as map(*))

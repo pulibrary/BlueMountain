@@ -66,6 +66,12 @@ declare %templates:wrap function issue:icon($node as node(), $model as map(*))
     return <img src="{$iconpath}/large.jpg" />
 };
 
+declare function issue:icon2($issueURN as xs:string)
+{
+    let $iconpath := issue:icon-path($issueURN)
+    return $iconpath || "/large.jpg"
+};
+
 
 declare function issue:icon-path($bmtnURN as xs:string)
 as xs:string
