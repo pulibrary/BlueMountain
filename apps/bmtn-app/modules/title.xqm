@@ -67,7 +67,7 @@ as map(*)
     return map { "selected-title-issues" := $issues }
 };
 
-declare function title:issue-listing($node as node(), $model as map(*))
+declare function title:issue-listing-table($node as node(), $model as map(*))
 as element()
 {
     <table class="table">
@@ -88,6 +88,38 @@ as element()
             <td><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">detail</a></td>
         </tr>
     }</table>
+};
+
+declare function title:issue-listing($node as node(), $model as map(*))
+as element()
+{
+    <div class="issue-list">
+    {
+    for $issue in $model("selected-title-issues")
+        let $issueURN   := xs:string($issue/mods:identifier[@type='bmtn'])
+        let $titleURN   := $issue/mods:relatedItem[@type='host']/@xlink:href
+        let $vollabel   := $issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number
+        let $issuelabel := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
+        let $date       := $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
+        let $veridianlink := app:veridian-url-from-bmtnid($issueURN)
+    order by xs:dateTime(app:w3cdtf-to-xsdate($date))
+    return
+        <dl class="dl-horizontal">
+        <dt>Date</dt>
+        <dd>{$date/text()}</dd>
+        
+        <dt>Volume</dt>
+        <dd>{$vollabel}</dd>
+        
+        <dt>Issue</dt>
+        <dd>{$issuelabel}</dd>
+        
+        <dt>Access</dt>
+        <dd><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">catalog</a></dd>
+        <dd><a href="{$veridianlink}">archive</a></dd>
+        </dl>
+    }
+    </div>
 };
 
 declare function title:issue-listing-with-captions($node as node(), $model as map(*))
