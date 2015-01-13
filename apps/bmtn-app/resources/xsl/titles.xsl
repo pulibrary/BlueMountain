@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bluemountain.princeton.edu/xsl/titles" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" version="2.0" exclude-result-prefixes="xs xd mods">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:local="http://bluemountain.princeton.edu/xsl/titles" version="2.0" exclude-result-prefixes="xs xd mods">
     <xsl:import href="mods.xsl"/>
     <xsl:output method="html"/>
     <xsl:param name="app-root"/>
+    <xsl:param name="veridianLink"/>
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p>
@@ -24,14 +25,28 @@
             <div class="thumbnail">
                 <img class="thumbnail" src="{$iconpath}" alt="icon"/>
                 <div class="caption">
-                    <p>
-                        <a href="{$linkpath}">
-                            <span class="titleInfo">
-                                <xsl:apply-templates select="mods:titleInfo[empty(@type)]"/>
-                            </span>
-                        </a>
-                    </p>
-                    <p>Lorem ipsum</p>
+                    <dl class="dl-horizontal">
+                        <dt>Title</dt>
+                        <dd>
+                            <xsl:apply-templates select="mods:titleInfo[empty(@type)]"/>
+                        </dd>
+                        <dt>Dates</dt>
+                        <dd>
+                            <xsl:apply-templates select="mods:originInfo/mods:dateIssued[empty(@point)]"/>
+                        </dd>
+                        <dt>Place Published</dt>
+                        <dd>
+                            <xsl:apply-templates select="mods:originInfo/mods:place"/>
+                        </dd>
+                    </dl>
+                    <ul>
+                        <li>
+                            <a href="{$veridianLink}">archive</a>
+                        </li>
+                        <li>
+                            <a href="{$linkpath}">catalog</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

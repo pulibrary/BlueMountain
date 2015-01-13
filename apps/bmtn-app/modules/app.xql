@@ -50,3 +50,23 @@ as xs:string
     return $protocol || $host || '/' || $servicePath || '/' || $scriptPath || $args
 }; 
 
+
+(: http://bluemountain.princeton.edu/bluemtn/cgi-bin/bluemtn?a=cl&cl=CL1&sp=bmtnaap&e=-------en-20--1--txt-txIN------- :)
+declare function app:veridian-title-url-from-bmtnid($bmtnid as xs:string)
+as xs:string
+{
+    let $protocol    := "http://",
+        $host        := "bluemountain.princeton.edu",
+        $servicePath := "bluemtn",
+        $scriptPath  := "cgi-bin/bluemtn",
+        $a           := "cl",
+        $cl          := "CL1",
+        $e           := "-------en-20--1--txt-txIN-------"
+    
+     let $idtok       := tokenize($bmtnid, ':')[last()]
+    
+     let $args        := '?a=' || $a || '&amp;cl=' || $cl || '&amp;sp=' || $idtok || '&amp;e=' || $e
+
+    return $protocol || $host || '/' || $servicePath || '/' || $scriptPath || $args
+}; 
+

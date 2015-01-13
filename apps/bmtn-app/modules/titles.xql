@@ -4,6 +4,7 @@ module namespace titles="http://bluemountain.princeton.edu/modules/titles";
 
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://bluemountain.princeton.edu/config" at "config.xqm";
+import module namespace app="http://bluemountain.princeton.edu/modules/app" at "app.xql";
 
 declare namespace mods="http://www.loc.gov/mods/v3";
 
@@ -25,14 +26,16 @@ declare function titles:listing($node as node(), $model as map(*))
 as element()*
 {
     let $xsl := doc($config:app-root || "/resources/xsl/titles.xsl")
-    let $xslt-parameters := 
-        <parameters>
-        <param name="app-root" value="{$config:app-root}"/>
-        </parameters>
 	return
 	<div class="row">
 	{ 
 		for $title in $model("titles")
+		let $xslt-parameters := 
+        <parameters>
+        <param name="app-root" value="{$config:app-root}"/>
+        <param name="veridianLink" value="{app:veridian-title-url-from-bmtnid($title//mods:identifier[@type='bmtn'])}"/>
+        </parameters>
+
 		return
 		transform:transform($title, $xsl, $xslt-parameters)
 	}
