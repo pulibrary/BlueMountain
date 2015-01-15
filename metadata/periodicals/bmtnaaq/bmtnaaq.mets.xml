@@ -28,56 +28,109 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaq</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaq</recordIdentifier>       
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=202730</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>  
+	  <titleInfo usage="primary">
+	    <title>Bruno's Weekly</title>
+	  </titleInfo>
 	  <titleInfo>
 	    <title>Bruno's weekly</title>
 	  </titleInfo>
-	  <abstract>Bruno infused his magazine with what he called the
-	  &quot;Bohemian atmosphere.&quot; He covered art shows,
-	  poet-ry readings, drama, and other literary events, both in
-	  his Garret and in Greenwich Village. He excerpted from
-	  London avant-garde magazines, such as The Egoist, and
-	  translated from German avant-garde works, such as Der
-	  Sturm. Illustrated with black-and-white linecuts; small
-	  format. Contributors included Djuna Barnes, Alfred
-	  Kreymborg, Marianne Moore, Vincent Starrett, and Ford Madox
-	  Hueffer.</abstract>
+	  <name type="personal">
+	    <namePart>Bruno, Guido</namePart>
+	    <namePart type="date">1884-1942</namePart>
+	  </name>
 	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">New York</placeTerm>
+              <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">New York, N.Y</placeTerm>
 	    </place>
 	    <publisher>Guido Bruno</publisher>
-	    <dateIssued>1915-1916]</dateIssued>
+	    <dateIssued>1915-1916</dateIssued>
 	    <dateIssued encoding="marc" point="start">1915</dateIssued>
 	    <dateIssued encoding="marc" point="end">1916</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Weekly</frequency>
+	    <frequency>Weekly</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>3 v. ; 20-28 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (3 v.) : ill.</extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">Vol. 1, no. 1 (July 12, 1915)-v. 3 (Dec. 30, 1916).</note>
-	  <note>No more published.</note>
-	  <note type="reproduction">Microfilm. Princeton, N.J. : Princeton University Library, 19--. 1 microfilm reel ; 35 mm.</note>
+	  <note type="date/sequential designation">Vol. 1 (July 3, 1915)-v. 3 (Dec. 30 1916).</note>
+	  <subject>
+	    <geographicCode authority="marcgac">n-us-ny</geographicCode>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>American periodicals</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>American periodicals</topic>
+	  </subject>
+	  <subject authority="lcsh">
+	    <geographic>New York (N.Y.)</geographic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <geographic>Greenwich Village (New York, N.Y.)</geographic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>New York (State)</geographic>
+	    <geographic>New York</geographic>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>New York (State)</geographic>
+	    <geographic>New York</geographic>
+	    <geographic>Greenwich Village</geographic>
+	  </subject>
+	  <classification authority="lcc">AP2 .B87</classification>
+	  <classification authority="ddc">051 B898</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/v979v445n</url>
+	  </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(DLC)ca 19000195</identifier>
+	    <identifier type="local">(OCoLC)1537507</identifier>
+	  </relatedItem>
 	  <relatedItem type="preceding">
 	    <titleInfo>
-	      <title>Bruno's</title>
+              <title>Greenwich Village</title>
 	    </titleInfo>
 	  </relatedItem>
+	  <relatedItem type="succeeding">
+	    <titleInfo>
+              <title>Bruno's</title>
+	    </titleInfo>
+	  </relatedItem>
+	  <identifier type="oclc">894095279</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">141030</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022132.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn894095279</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaaq</recordIdentifier>       
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+
+
 
 	  <relatedItem type="constituent">
 	    <titleInfo>

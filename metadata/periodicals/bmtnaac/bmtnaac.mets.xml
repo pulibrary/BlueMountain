@@ -16,60 +16,65 @@
 	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd"
 	      xmlns="http://www.loc.gov/mods/v3">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaac</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6425485</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-          <genre>Periodicals-Title</genre>
+	  <titleInfo usage="primary">
+	    <nonSort>La</nonSort>
+	    <title>cité</title>
+	    <subTitle>urbanisme, architecture, art public : revue mensuelle</subTitle>
+	  </titleInfo>
 	  <titleInfo>
 	    <nonSort>La </nonSort>
-	    <title>Cité</title>
+	    <title>Cité</title>
 	    <subTitle>urbanisme, architecture, art public : revue mensuelle</subTitle>
 	  </titleInfo>
 	  <titleInfo type="alternative">
-	    <title>Tekhné</title>
+	    <title>Tekhné</title>
 	  </titleInfo>
 	  <titleInfo type="alternative">
-	    <title>Cité et Tekhné juillet 1929-juin 1930</title>
+	    <title>Cité et Tekhné juillet 1929-juin 1930</title>
 	  </titleInfo>
 	  <titleInfo type="alternative">
-	    <title>Cité &amp;Tekhné août 1930-</title>
+	    <title>Cité &amp;Tekhné août 1930-</title>
 	  </titleInfo>
-	  <abstract>Leading Belgian architectural and urban design
-	  journal of the period, covering avant-garde theory and
-	  practice in Europe and America, especially the De Stijl
-	  movement. Organ of the Société belge des urbanistes et
-	  architectes modernists. Numerous photo illustrations and
-	  drawings. Artist/architect contributors included Theo van
-	  Doesburg, J.J.P. Oud, Piet Mondrian, and Henry van de
-	  Velde.</abstract>
 	  <name type="corporate">
-	    <namePart>Société belge des urbanistes et architectes modernistes</namePart>
+	    <namePart>Société belge des urbanistes et architectes modernistes</namePart>
 	  </name>
 	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Brussels, Belgium</placeTerm>
+              <placeTerm type="code" authority="marccountry">be</placeTerm>
 	    </place>
-	    <publisher>Tekhné</publisher>
+	    <place>
+              <placeTerm type="text">Bruxelles</placeTerm>
+	    </place>
+	    <publisher>Tekhné</publisher>
 	    <dateIssued>1919-</dateIssued>
 	    <dateIssued encoding="marc" point="start">1919</dateIssued>
 	    <dateIssued encoding="marc" point="end">1935</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Monthly</frequency>
+	    <frequency>Monthly</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>v. : ill. ; 26 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
 	  </physicalDescription>
-	  <note type="date/sequential designation">1er anneé, no 1 (juillet 1919)-</note>
-	  <note>Ceased in 1935?</note>
-	  <note>Organ of the Société belge des urbanistes et architectes modernistes.</note>
-	  <note>Tekhné forms a separately numbered and paged supplement beginning with v. 6, no 1 (juillet 1926).</note>
+	  <note type="date/sequential designation">1er anneé, no. 1 (juillet 1919)-</note>
+	  <note type="date/sequential designation">Ceased in 1935?</note>
+	  <note>Title varies slightly.</note>
+	  <note>Organ of the Société belge des urbanistes et architectes modernistes.</note>
+	  <note>Tekhné forms a separately numbered and paged supplement beginning with v. 6, no 1 (juillet 1926).</note>
+	  <subject>
+	    <geographicCode authority="marcgac">e-be---</geographicCode>
+	    <geographicCode authority="marcgac">e------</geographicCode>
+	  </subject>
 	  <subject authority="lcsh">
 	    <topic>City planning</topic>
 	    <geographic>Belgium</geographic>
@@ -77,18 +82,49 @@
 	  </subject>
 	  <subject authority="lcsh">
 	    <topic>Architecture</topic>
-	    <geographic>Belgium</geographic>
+	    <geographic>Europe</geographic>
 	    <genre>Periodicals</genre>
 	  </subject>
+	  <subject authority="fast">
+	    <topic>Architecture</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>City planning</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>Belgium</geographic>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>Europe</geographic>
+	  </subject>
+	  <classification authority="lcc">NA1 .C57</classification>
 	  <location>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>sax</subLocation>
-		<shelfLocator>NA1 .C57</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/4t64gp562</url>
 	  </location>
+	  <relatedItem type="constituent">
+	    <titleInfo>
+              <title>Tekhné</title>
+	    </titleInfo>
+	  </relatedItem>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(OCoLC)47704434</identifier>
+	  </relatedItem>
+	  <identifier type="issn">1781-698X</identifier>
+	  <identifier type="oclc">608499592</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">100422</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022132.0</recordChangeDate>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaac</recordIdentifier>
+	    <recordIdentifier source="OCoLC">ocn608499592</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+
 
 	  <!-- Issues -->
 	  

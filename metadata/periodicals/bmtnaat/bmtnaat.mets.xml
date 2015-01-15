@@ -28,387 +28,99 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaat</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaat</recordIdentifier>       
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=560596</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
 	  <titleInfo>
-	    <nonSort>The</nonSort>
+	    <nonSort>The </nonSort>
 	    <title>Glebe</title>
 	  </titleInfo>
-	  <abstract>Financed by book publishers Albert and Charles
-	  Boni, The Glebe led as a locus for experimental
-	  writing. William Carlos Williams was first published in The
-	  Glebe. The editor was part of an artists’ colony called
-	  Grantwood, located near Ridgefield, NJ, which included Man
-	  Ray, Marianne Moore, and Mina Loy. Contributors included
-	  Ezra Pound, James Joyce, Richard Aldington, as well as
-	  Russian author Leonid Andreyev, and the German writer Frank
-	  Wedekind.</abstract>
 	  <name type="personal">
 	    <namePart>Kreymborg, Alfred</namePart>
 	    <namePart type="date">1883-1966</namePart>
 	  </name>
 	  <typeOfResource>text</typeOfResource>
-	  <genre authority="rbgenr">Little magazines</genre>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Ridgefield, N.J</placeTerm>
+              <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">Ridgefield, N.J</placeTerm>
 	    </place>
 	    <publisher>The Glebe</publisher>
 	    <dateIssued encoding="marc" point="start">1913</dateIssued>
 	    <dateIssued encoding="marc" point="end">1914</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency>Monthly</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>2 v. 19 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (2 v.)</extent>
 	  </physicalDescription>
+	  <tableOfContents>1:1. Wolff, Adolf. Songs, sighs and curses. 1913.--1:3. Demuth, Charles, 1883- The azure adder. New York, 1913.--1:5. Des imagistes: an anthology.--2:1. Traubel, Horace. Collects. New York, 1914.--2:2 Cronyn, G.W. Poems. New York, 1914.</tableOfContents>
 	  <note type="date/sequential designation">v. 1-2, no. 4; 1913-1914.</note>
-	  <note>Description based on: Vol. 1, no. 1 (Sept. 1913).</note>
 	  <note>Each issue devoted to separate work.</note>
 	  <note>Editor: Alfred Kreymborg.</note>
-	  <note>1:1. Wolff, Adolf. Songs, sighs and curses. 1913.--1:3. Demuth, Charles, 1883- The azure adder. New York, 1913.--1:5. Des imagistes: an anthology.--2:1. Traubel, Horace. Collects. New York, 1914.--2:2 Cronyn, G.W. Poems. New York, 1914.</note>
-	  <note>Imprint varies. Sept. 1913-     Ridgefield, N.J. : The Glebe -- Nov. 1913-Oct. 1914, New York : A. and C. Boni.</note>
+	  <note>mprint varies. Sept. 1913- Ridgefield, N.J. : The Glebe -- Nov. 1913-Oct. 1914, New York : A. and C. Boni.</note>
 	  <subject authority="lcsh">
 	    <topic>American literature</topic>
-	    <topic>Periodicals</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
 	  </subject>
-	  <relatedItem type="isReferencedBy">
-	    <note>Hoffman, F.J. Little magazine</note>
-	  </relatedItem>
-	  <relatedItem type="isReferencedBy">
-	    <note>Index to American little magazines</note>
-	  </relatedItem>
-	  <relatedItem type="isReferencedBy">
-	    <note>Complete index to English language little magazines</note>
-	  </relatedItem>
-	  
+	  <subject authority="fast">
+	    <topic>American literature</topic>
+	  </subject>
+	  <classification authority="lcc">PS1 .G542</classification>
 	  <location>
-	    <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>ex</subLocation>
-		<shelfLocator>1 LM (Little Magazine)</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/g445cf52q</url>
 	  </location>
-	  <location>
-	    <physicalLocation type="text">New York Public Library</physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NYP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>NGE (Wedekind, F. Pandora's box. 1914)*CA G554 v. 2, no. 4 </subLocation>
-		<shelfLocator/>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	  
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume One</caption>
-		<number>1</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 1</caption>
-		<number>1</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>September 1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913-09</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
+	  <relatedItem type="isReferencedBy">
+	    <note>
+              <name>
+		<namePart>Hoffman, F.J. Little magazine,</namePart>
+              </name>
+	    </note>
 	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume One</caption>
-		<number>1</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 2</caption>
-		<number>2</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>November 1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913-11</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
+	  <relatedItem type="isReferencedBy">
+	    <note>
+              <name>
+		<namePart>Index to American little magazine</namePart>
+              </name>
+	    </note>
 	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume One</caption>
-		<number>1</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 3</caption>
-		<number>3</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Decmber 1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913-12</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
+	  <relatedItem type="isReferencedBy">
+	    <note>
+              <name>
+		<namePart>Complete index to English language little magazines</namePart>
+              </name>
+	    </note>
 	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume One</caption>
-		<number>1</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 4</caption>
-		<number>4</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>January 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-01</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(OCoLC)6549705</identifier>
 	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume One</caption>
-		<number>1</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 5</caption>
-		<number>5</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>February 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-02</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:dmd:bmtnaat_1914-02_02</identifier>
-	    <titleInfo>
-	      <title>Glebe</title>
-	      <subTitle>Imagiste Anthology</subTitle>
-	    </titleInfo>
-	    <originInfo>
-	      <dateIssued>February 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-02</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem> 
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume One</caption>
-		<number>1</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 6</caption>
-		<number>6</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>March 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-03</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume Two</caption>
-		<number>2</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 1</caption>
-		<number>1</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>April 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-04</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume Two</caption>
-		<number>2</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 2</caption>
-		<number>2</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>September 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-09</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume Two</caption>
-		<number>2</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 3</caption>
-		<number>3</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>October 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-10</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">Princeton University. Library.</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>Rare Books (Ex)</subLocation>
-		  <shelfLocator>LM (Little Magazine)</shelfLocator>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem>
-	  
-	  <relatedItem type="constituent">
-	    <part type="issue">
-	      <detail type="volume">
-		<caption>Volume Two</caption>
-		<number>2</number>
-	      </detail>
-	      <detail type="number">
-		<caption>Number 4</caption>
-		<number>4</number> 
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-11</dateIssued>
-	    </originInfo>
-	    <location>
-	      <physicalLocation type="text">New York Public Library</physicalLocation>
-	      <physicalLocation authority="marcorg" type="code">NYP</physicalLocation>
-	      <holdingSimple>
-		<copyInformation>
-		  <subLocation>NGE (Wedekind, F. Pandora's box. 1914)*CA G554 v. 2, no. 4 </subLocation>
-		  <shelfLocator/>
-		</copyInformation>
-	      </holdingSimple>
-	    </location>
-	  </relatedItem>
-	  
+	  <identifier type="oclc">551374617</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">100311</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022133.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn551374617</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaat</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
-
       </xmlData>
     </mdWrap>
   </dmdSec>

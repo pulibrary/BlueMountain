@@ -27,50 +27,38 @@
   <dmdSec ID="dmd0">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaag</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaag</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=5332913</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>  
 	  <titleInfo>
 	    <title>Klingen</title>
 	  </titleInfo>
-	  <abstract>Important avant-garde Danish art, literary, and
-	  musical review. Contributions on aspects of the European
-	  avant-garde and modernist developments in Scandinavia, as
-	  well as African and Peruvian art. Profusely illustrated,
-	  including numerous original prints, many in color. Literary
-	  contributors included Poul Uttenreiter, Tom Kristensen, and
-	  Emil Bønnelycke. Artists included Axel Salto, Gabriele
-	  Münter, Harald Giersing, Albert Naur, Per Krohg, and Vilhelm
-	  Lundstrøm.</abstract>
 	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
 	    <place>
-	      <placeTerm type="text">København, Danmark</placeTerm>
+              <placeTerm type="code" authority="marccountry">dk</placeTerm>
 	    </place>
-	    <publisher>Klingens redaktion</publisher>
-	    <dateIssued>1917-1942</dateIssued>
 	    <dateIssued encoding="marc" point="start">1917</dateIssued>
 	    <dateIssued encoding="marc" point="end">1942</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Irregular</frequency>
+	    <frequency/>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">dan</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>4 v. : ill. 27-41 cm.</extent>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (3 volumes) : illustrations</extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">1. aarg. 1 (1917)-3. aarg. (1920).</note>
-	  <note>Imprint varies for [Aarg. 4]: Fischers.</note>
-	  <note type="numbering">An unnumbered vol. was published in 1942.</note>
+	  <note type="date/sequential designation">Print began in 1917.</note>
+	  <note type="numbering">Suspended 1921-1941; last volume called Klingen 1942.</note>
+	  <subject>
+	    <geographicCode authority="marcgac">ev-----</geographicCode>
+	  </subject>
 	  <subject authority="lcsh">
 	    <topic>Art</topic>
 	    <genre>Periodicals</genre>
@@ -80,588 +68,30 @@
 	    <geographic>Scandinavia</geographic>
 	    <genre>Periodicals</genre>
 	  </subject>
+	  <subject authority="fast">
+	    <topic>Art</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Scandinavia</topic>
+	  </subject>
+	  <classification authority="lcc">N6.5 .K65</classification>
 	  <location>
-	    <physicalLocation type="text">Princeton University. Library</physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>sax</subLocation>
-		<shelfLocator>N6.5 .K546q</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/ms35tb01k</url>
 	  </location>
-	  <relatedItem type="constituent">
+	  <relatedItem type="otherFormat" displayLabel="Print version:">
 	    <titleInfo>
-	      <title>Klingen</title>
+              <title>Klingen</title>
 	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>No. 1</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Okt. 1917</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-10</dateIssued>
-	    </originInfo>
+	    <identifier type="issn">1395-2706</identifier>
+	    <identifier type="local">(OCoLC)1639845</identifier>
 	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>No. 2</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Nov. 1917</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-11</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>3</number>
-		<caption>No. 3</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Dec. 1917</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1917-12</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>4</number>
-		<caption>No. 4</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Jan. 1918</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-01</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>5</number>
-		<caption>No. 5</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Feb. 1918</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-02</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>6</number>
-		<caption>No. 6</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Marts 1918</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-03</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>7</number>
-		<caption>No. 7</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Apr. 1918</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-04</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	      <subTitle>Krigsnummer</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>8</number>
-		<caption>No. 8</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[May 1918]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-05</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>9</number>
-		<number>10</number>
-		<caption>No. 9-10</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>Juni-Juli 1918</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-06</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>1. Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>11</number>
-		<number>12</number>
-		<caption>No. 11-12</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>August Sept. 1918</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-08</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>II Aarg.</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>No. 1</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[October 1918]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-10</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>No. 2</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[November 1918]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-11</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>3</number>
-		<caption>No. 3</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[December 1918]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1918-12</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>4</number>
-		<caption>No. 4</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[January 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-01</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>5</number>
-		<caption>No. 5</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[February 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-02</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>6</number>
-		<caption>No. 6</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[March 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-03</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>7</number>
-		<caption>No. 7</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[April 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-04</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>8</number>
-		<caption>No. 8</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[May 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-05</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>9</number>
-		<caption>No. 9</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[June 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-06</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Aargang II</caption>
-	      </detail>
-	      <detail type="number">
-		<number>10</number>
-		<number>11</number>
-		<number>12</number>
-		<caption>No. 10-12</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[July-August-September 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-07</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>No. 1</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>[October-November 1919]</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-10</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>No. 2</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>21 Dec. 1919</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1919-12-21</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>3</number>
-		<number>4</number>
-		<caption>No. 3</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>6 Feb. 1920</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1920-02-06</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>5</number>
-		<caption>No. 5</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>2 Mar. 1920</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1920-03-02</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>6</number>
-		<number>7</number>
-		<caption>No. 6-7</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>30 Mar. 1920</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1920-03-30</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>8</number>
-		<caption>No. 8</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>15 May 1920</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1920-05-15</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>9</number>
-		<caption>No. 9</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>5 Aug. 1920</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1920-08-05</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Aargang III</caption>
-	      </detail>
-	      <detail type="number">
-		<number>10</number>
-		<number>11</number>
-		<number>12</number>
-		<caption>No. 10-12</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>9 Nov. 1920</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1920-11-09</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Klingen</title>
-	    </titleInfo>
-	    <originInfo>
-	      <dateIssued>1942</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1942</dateIssued>
-	    </originInfo>
-	  </relatedItem>
+	  <recordInfo>
+	    <recordCreationDate encoding="marc">750920</recordCreationDate>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaag</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	  </recordInfo>
 	</mods>
-
       </xmlData>
     </mdWrap>
   </dmdSec>

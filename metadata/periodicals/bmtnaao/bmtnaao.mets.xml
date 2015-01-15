@@ -27,26 +27,45 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaao</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaao</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4826219</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>	  
-	  <titleInfo>
-	    <title>291</title>
+	  <genre authority="bmtn">Periodicals-Title</genre>	  
+	  <titleInfo usage="primary">
+            <title>291</title>
 	  </titleInfo>
 	  <titleInfo type="alternative">
-	    <title>Two hundred ninety one</title>
+            <title>Two hundred ninety one</title>
 	  </titleInfo>
 	  <titleInfo type="alternative">
-	    <title>Two hundred and ninety one</title>
+            <title>Two hundred and ninety one</title>
 	  </titleInfo>
+	  <name type="personal">
+            <namePart>Stieglitz, Alfred</namePart>
+            <namePart type="date">1864-1946</namePart>
+	  </name>
+	  <name type="personal">
+            <namePart>Haviland, Paul Burty</namePart>
+            <namePart type="date">1880-1950</namePart>
+	  </name>
+	  <name type="personal">
+            <namePart>Meyer, Agnes Elizabeth Ernst</namePart>
+            <namePart type="date">1887-1970</namePart>
+	  </name>
+	  <name type="personal">
+            <namePart>Picabia, Francis</namePart>
+            <namePart type="date">1879-1953</namePart>
+	  </name>
+	  <name type="personal">
+            <namePart>Rhoades, Katharine N.</namePart>
+            <namePart type="date">1885-1965</namePart>
+	  </name>
+	  <name type="personal">
+            <namePart>Zayas, Marius de.</namePart>
+	  </name>
+	  <name type="corporate">
+            <namePart>"291" (Gallery)</namePart>
+	  </name>
+
 	  <abstract>Promoted European avant-garde art to an American
 	  audience, as did Alfred Stieglitz’s eponymous Fifth Avenue
 	  gallery. Inspired by European efforts at fusing the visual
@@ -58,121 +77,95 @@
 	  Apollinaire. Artists included Francis Picabia, John Marin,
 	  Marius de Zayas, Edward Steichen, and Alfred
 	  Stieglitz.</abstract>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/49231990">
-	    <namePart type="family">Stieglitz</namePart>
-	    <namePart type="given">Alfred</namePart>
-	    <namePart type="date">1864-1946</namePart>
-	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/37033179">
-	    <namePart type="family">Haviland</namePart>
-	    <namePart type="given">Paul</namePart>
-	    <namePart type="given">Burty</namePart>
-	    <namePart type="date">1880-1950</namePart>
-	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/122165988">
-	    <namePart type="family">Meyer, Agnes Elizabeth Ernst</namePart>
-	    <namePart type="given">Agnes</namePart>
-	    <namePart type="given">Elizabeth</namePart>
-	    <namePart type="given">Ernst</namePart>
-	    <namePart type="date">1887-1970</namePart>
-	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/36923084">
-	    <namePart type="family">Picabia</namePart>
-	    <namePart type="given">Francis</namePart>
-	    <namePart type="date">1879-1953</namePart>
-	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/73762839">
-	    <namePart type="family">Rhoades</namePart>
-	    <namePart type="given">Katharine</namePart>
-	    <namePart type="given">N.</namePart>
-	    <namePart type="date">1885-1965</namePart>
-	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/5080960">
-	    <namePart type="family">Zayas</namePart>
-	    <namePart type="given">Marius de</namePart>
-	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/32021794">
-	    <namePart type="family">O'Keeffe</namePart>
-	    <namePart type="given">Georgia</namePart>
-	    <namePart type="date">1887-1986</namePart>
-	    <role>
-	      <roleTerm type="text">donor</roleTerm>
-	    </role>
-	  </name>
+
 	  <typeOfResource>text</typeOfResource>
-	  <genre authority="aat">Photogravures-20th century.</genre>
-	  <originInfo script="Latn">
-	    <place>
-	      <placeTerm type="text">New York, N.Y., United States</placeTerm>
-	    </place>
-	    <publisher>"291"</publisher>
-	    <dateIssued>1915-1916</dateIssued>
-	    <dateIssued encoding="marc" point="start">1915</dateIssued>
-	    <dateIssued encoding="marc" point="end">1916</dateIssued>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
+            <place>
+              <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+            </place>
+            <place>
+              <placeTerm type="text">New York, N.Y</placeTerm>
+            </place>
+            <publisher>"291"</publisher>
+            <dateIssued>1915-1916</dateIssued>
+            <dateIssued encoding="marc" point="start">1915</dateIssued>
+            <dateIssued encoding="marc" point="end">1916</dateIssued>
+            <issuance>serial</issuance>
+            <frequency authority="marcfrequency">Monthly</frequency>
+            <frequency>Monthly</frequency>
 	  </originInfo>
 	  <language>
-	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	  </language>
 	  <language>
-	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>12 v. : ill. (some col.) ; 51 cm.</extent>
+            <form authority="gmd">electronic resource</form>
+            <reformattingQuality>access</reformattingQuality>
+            <form authority="marccategory">electronic resource</form>
+            <form authority="marcsmd">remote</form>
 	  </physicalDescription>
-	  <note type="date/sequential designation">No. 1 (Mar. 1915)-no. 12 (Feb. 1916).</note>
+	  <note type="date/sequential designation">Print began with no. 1 (Mar. 1915); ceased with no. 12 (Feb. 1916).</note>
 	  <note>Published at 291 Fifth Avenue, New York. Edited by Alfred Stieglitz, Marius de Zayas, Paul Haviland, Agnes Ernst Meyer, Francis Picabia, Katharine N. Rhoades.</note>
-	  <note>"Two editions were printed, one of a thousand copies on heavy white paper; the other of one hundred on heavy Japan vellum."--Cf. Arno reprint, p. [4]</note>
 	  <note>Some original illustrations are hand-colored.</note>
-	  <note>No. 7/8 (Sept./Oct. 1915) issued with photogravure of The Steerage by Alfred Stieglitz.</note>
-	  <note type="acquisition">GAX copy: Gift; Georgia O'Keeffe, 1954.</note>
+	  <note>Issued in a "special edition" on special paper, and a "regular edition."</note>
+	  <note type="numbering">Nos. 5/6, nos. 7/8 and nos. 10/11 issued in combined form.</note>
 	  <note type="language">Chiefly in English; some text in French.</note>
 	  <subject authority="lcsh">
-	    <topic>Art criticism</topic>
-	    <genre>Periodicals</genre>
+            <topic>Arts</topic>
+            <genre>Periodicals</genre>
 	  </subject>
 	  <subject authority="lcsh">
-	    <topic>Arts</topic>
-	    <genre>Periodicals</genre>
+            <topic>Art criticism</topic>
+            <genre>Periodicals</genre>
 	  </subject>
-	  <relatedItem type="succeeding">
-	    <titleInfo>
-	      <title>391</title>
-	    </titleInfo>
+	  <subject authority="fast">
+            <topic>Art criticism</topic>
+	  </subject>
+	  <subject authority="fast">
+            <topic>Arts</topic>
+	  </subject>
+	  <classification authority="lcc">ISSN RECORD</classification>
+	  <classification authority="lcc">NX1.A1</classification>
+	  <classification authority="ddc" edition="15">701</classification>
+	  <location>
+            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/3t945s159</url>
+	  </location>
+	  <relatedItem type="otherFormat" displayLabel="Print version:">
+            <titleInfo>
+              <title>291</title>
+            </titleInfo>
+            <identifier type="local">(DLC)   51049301</identifier>
+            <identifier type="local">(OCoLC)45410231</identifier>
 	  </relatedItem>
-	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>sax</subLocation>
-		<!--DELETE COPY NUMBER BELOW-->
-		<shelfLocator>N1 .T8f</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>gax</subLocation>
-		<!--DELETE COPY NUMBER BELOW-->
-		<shelfLocator>1 2007-0018E</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>gax</subLocation>
-		<!--DELETE COPY NUMBER BELOW-->
-		<shelfLocator>2 2007-0018E</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
+	  <relatedItem type="otherFormat" displayLabel="Reprint:">
+            <titleInfo>
+              <title>291</title>
+            </titleInfo>
+            <identifier type="issn">1054-7193</identifier>
+            <identifier type="local">(DLC)   00204566</identifier>
+            <identifier type="local">(OCoLC)8429351</identifier>
+	  </relatedItem>
+	  <identifier type="issn">2330-5983</identifier>
+	  <identifier type="issn" invalid="yes">1054-7193</identifier>
+	  <identifier type="lccn">2009235703</identifier>
+	  <identifier type="oclc">448035264</identifier>
+	  <recordInfo>
+            <descriptionStandard>aacr</descriptionStandard>
+            <recordContentSource authority="marcorg">EYM</recordContentSource>
+            <recordCreationDate encoding="marc">091004</recordCreationDate>
+            <recordChangeDate encoding="iso8601">20141212022123.0</recordChangeDate>
+            <recordIdentifier source="OCoLC">ocn448035264</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaao</recordIdentifier>
+            <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+	  </recordInfo>
 
 	  <relatedItem type="constituent">
 	    <titleInfo>
@@ -244,14 +237,13 @@
 	    </originInfo>
 	  </relatedItem>
 
+
+
 	</mods>
-
-
       </xmlData>
     </mdWrap>
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-           xlink:href="urn:PUL:bluemountain:dmd:bmtnaao"/>
   </dmdSec>
+
   <fileSec>
     <fileGrp/>
   </fileSec>

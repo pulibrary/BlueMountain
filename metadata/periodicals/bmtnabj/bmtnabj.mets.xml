@@ -28,72 +28,75 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabj</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabj</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>
-	      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=1951501
-	    </recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
 	  <titleInfo>
 	    <title>Revue d'histoire et de critique musicales</title>
 	  </titleInfo>
-	  <name type="personal">
-	    <namePart>Welter, H.</namePart>
-	  </name>
 	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Paris</placeTerm>
+              <placeTerm type="code" authority="marccountry">fr</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">Paris</placeTerm>
 	    </place>
 	    <publisher>H. Welter</publisher>
+	    <dateIssued>1901-1902</dateIssued>
 	    <dateIssued encoding="marc" point="start">1901</dateIssued>
 	    <dateIssued encoding="marc" point="end">1902</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Monthly</frequency>
+	    <frequency>Unknown</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>v. ; 27 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource </extent>
 	  </physicalDescription>
 	  <note type="date/sequential designation">Vol. 1, no 1 (janv. 1901)-</note>
 	  <note type="date/sequential designation">Ceased with v. 2, no. 9 (Sept. 1902).</note>
-	  <note>Title from caption.</note>
+	  <note>"Publication mensuelle principalement consacree a la musique francaise ancienne et moderne."</note>
+	  <subject>
+	    <geographicCode authority="marcgac">e-fr---</geographicCode>
+	  </subject>
 	  <subject authority="lcsh">
 	    <topic>Music</topic>
 	    <topic>History and criticism</topic>
-	    <topic>Periodicals</topic>
+	    <genre>Periodicals</genre>
 	  </subject>
+	  <subject authority="fast">
+	    <topic>Music</topic>
+	  </subject>
+	  <classification authority="lcc">ML5 .R3815</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/x633f241p</url>
+	  </location>
 	  <relatedItem type="succeeding">
 	    <titleInfo>
-	      <title>Revue musicale (Paris, France : 1902)</title>
+              <title>Revue musicale (Paris, France : 1902)</title>
 	    </titleInfo>
 	  </relatedItem>
-	  <!--
-	      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
-	  -->
-	  <location>
-	    <physicalLocation type="text">
-	      <!-- FILL ME IN. Princeton University. Library. ... -->
-	    </physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>svl</subLocation>
-		<!-- DELETE COPY NUMBER BELOW -->
-		<shelfLocator>1 ML5 .R35</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	</mods>
+	  <identifier type="oclc">809454751</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">MdBmRIP</recordContentSource>
+	    <recordCreationDate encoding="marc">120301</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn809454751</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabj</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	  </recordInfo>
+	</mods>	
 
       </xmlData>
     </mdWrap>

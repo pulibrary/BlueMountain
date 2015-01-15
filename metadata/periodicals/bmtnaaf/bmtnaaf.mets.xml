@@ -27,71 +27,102 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaf</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaf</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4608240</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-          <genre>Periodicals-Title</genre>
+	  <titleInfo usage="primary">
+	    <nonSort>L'</nonSort>
+	    <title>élan</title>
+	  </titleInfo>
 	  <titleInfo>
 	    <nonSort>L'</nonSort>
-	    <title>élan</title>
+	    <title>Élan</title>
 	  </titleInfo>
-	  <abstract>Artistic and literary journal intended to foster
-	  communication among avant-gardists at home and on the front
-	  during World War I. Commentary, poetry, and original
-	  artwork. Literary contributors included Guillaume
-	  Apollinaire, Max Jacob, André Lhote, and Ricciotto
-	  Canudo. Artists included Amédée Ozenfant, Albert Gleizes,
-	  Sonia Lewitzka, André Favory, and Zina Ozenfant.</abstract>
-
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/44307485">
-	    <namePart type="family">Ozenfant</namePart>
-	    <namePart type="given">Amédée</namePart>
+	  <name type="personal">
+	    <namePart>Ozenfant, Amédée</namePart>
 	    <namePart type="date">1886-1966</namePart>
 	  </name>
 	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Art.</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Paris</placeTerm>
+              <placeTerm type="code" authority="marccountry">fr</placeTerm>
 	    </place>
-	    <publisher>L'élan</publisher>
-	    <dateIssued>1915-1916</dateIssued>
 	    <dateIssued encoding="marc" point="start">1915</dateIssued>
 	    <dateIssued encoding="marc" point="end">1916</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Irregular</frequency>
+	    <frequency/>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>10 v. : ill. ; 32 cm.</extent>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (10 volumes) : illustrations</extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">No 1 (15 avril 1915)-no 10 (1 déc. 1916)</note>
-	  <note>Edited by Amédée Ozenfant.</note>
-	  <note>No 10 is folded in 4 to measure 32 cm.</note>
+	  <note type="date/sequential designation">Print began with: No 1 (15 avril 1915); ceased with: no 10 (déc. 1916).</note>
+	  <note>Amédée Ozenfant's Cubist war journal with articles and illustrations by Apollinaire, Dérain, Matisse, Picasso, de Segonzac, etc.</note>
+	  <note>Published in a limited number of 1,000 copies.</note>
+	  <subject>
+	    <geographicCode authority="marcgac">e-fr---</geographicCode>
+	  </subject>
+	  <subject authority="fast">
+	    <name type="conference">
+              <namePart>World War (1914-1918)</namePart>
+	    </name>
+	    <titleInfo>
+              <title/>
+	    </titleInfo>
+	  </subject>
+	  <subject authority="fast">
+	    <temporal>1914 - 1918</temporal>
+	  </subject>
 	  <subject authority="lcsh">
 	    <topic>Art</topic>
+	    <geographic>France</geographic>
 	    <genre>Periodicals</genre>
 	  </subject>
-	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	  <subject authority="lcsh">
+	    <topic>World War, 1914-1918</topic>
+	    <genre>Art and the war</genre>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Art</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>France</geographic>
+	  </subject>
+	  <classification authority="lcc">N2 .E55</classification>
 	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>sax</subLocation>
-		<!--DELETE COPY NUMBER BELOW-->
-		<shelfLocator>N2 .E4q</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/rj430592k</url>
 	  </location>
+	  <relatedItem type="otherFormat" displayLabel="Print version:">
+	    <titleInfo>
+              <title>Elan</title>
+	    </titleInfo>
+	    <identifier type="issn">1147-6745</identifier>
+	    <identifier type="local">(DLC)  2013252052</identifier>
+	    <identifier type="local">(OCoLC)145381374</identifier>
+	  </relatedItem>
+	  <identifier type="issn" invalid="yes">1147-6745</identifier>
+	  <recordInfo>
+	    <descriptionStandard>rda</descriptionStandard>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordCreationDate encoding="marc">820722</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022133.0</recordChangeDate>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaaf</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
 
       </xmlData>

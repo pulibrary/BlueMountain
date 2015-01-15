@@ -28,73 +28,67 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabi</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabi</recordIdentifier>       
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>
-	      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2510441
-	    </recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  
-	  <genre>Periodicals-Title</genre>
 	  <titleInfo>
-	    <title>Niederrheinische musik-zeitung fur kunstfreunde und kunstler</title>
+	    <title>Niederrheinische Musik-Zeitung für Kunstfreunde und Künstler</title>
 	  </titleInfo>
-	  <abstract>Published from 1859 to
-	  1865. Weekly. Cologne. German language. Edited by Ludwig
-	  Bischoff.  NMZ provides “from a musically conservative
-	  standpoint, a barometer of the public’s shifting musical
-	  taste and reveals how the ‘music of the future’ gradually
-	  gained acceptance with an audience rooted in the tradition
-	  of Ludwig van Beethoven and Felix Mendelssohn.… The NMZ
-	  published essays on historical or philosophical subjects in
-	  the field of music, analyses of musical compositions,
-	  reviews of theoretical treatises, biographies of musicians,
-	  and extensive accounts of the musical life of the period in
-	  the form of reports on the activities of musical groups,
-	  music festivals, concerts, and theater performances. In
-	  addition, there are short stories, poems, advertisements,
-	  and miscellaneous sections” (Lisa Feurzeig, RIPM). Includes
-	  very interesting articles on early Richard Wagner
-	  performances.</abstract>
+	  <name type="personal">
+	    <namePart>Bischoff, Ludwig</namePart>
+	    <namePart type="date">1794-1867</namePart>
+	  </name>
 	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Cologne</placeTerm>
+              <placeTerm type="code" authority="marccountry">gw</placeTerm>
 	    </place>
-	    <dateIssued encoding="marc" point="start">1uuu</dateIssued>
-	    <dateIssued encoding="marc" point="end">uuuu</dateIssued>
+	    <dateIssued encoding="marc" point="start">1853</dateIssued>
+	    <dateIssued encoding="marc" point="end">1867</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Weekly</frequency>
+	    <frequency>Weekly</frequency>
 	  </originInfo>
 	  <language>
-	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>v.</extent>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (15 volumes)</extent>
 	  </physicalDescription>
-	  <note>Editor; Ludwig Bischoff.</note>
-	  <!--
-	      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
-	  -->
+	  <note type="date/sequential designation">Jahrg. 1, no. 1 (Juli 2, 1853) -Jahrg.15, no. 25 (Juni 22, 1867).</note>
+	  <note>Editor: Ludwig Bischoff.</note>
+	  <subject authority="fast">
+	    <temporal>1800 - 1899</temporal>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Music</topic>
+	    <temporal>19th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Music</topic>
+	  </subject>
+	  <classification authority="lcc">ML5 .N55</classification>
 	  <location>
-	    <physicalLocation type="text">
-	      <!-- FILL ME IN. Princeton University. Library. ... -->
-	    </physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>svl</subLocation>
-		<!-- DELETE COPY NUMBER BELOW -->
-		<shelfLocator>1 ML5 .N55</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/1v53jz364</url>
 	  </location>
+	  <recordInfo>
+	    <descriptionStandard>rda</descriptionStandard>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordCreationDate encoding="marc">060303</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022135.0</recordChangeDate>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabi</recordIdentifier>       
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
 
       </xmlData>

@@ -28,74 +28,68 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabk</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6086734</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
 	  <titleInfo>
-	    <title>Umělecký mĕsíčník</title>
-	    <subTitle>časopis Skupiny výtvarných umělců</subTitle>
+	    <title>Umělecký měsíčník</title>
 	  </titleInfo>
-	  <abstract>Published from 1911 to 1913.  Monthly.  Prague.
-	  Czech language.  Edited by Josef Čapek, Pavel Janák, and
-	  František Langer.  Publication of a group of young Czech
-	  cubists who split off from the Mánes Association of Fine
-	  Artists, mounted shows in Prague of such leading European
-	  avant-garde artists as Pablo Picasso and Edvard Munch, and
-	  themselves exhibited at the Galerie Der Sturm in Berlin.
-	  Literary contributors included František Langer.  Artists
-	  included Josef Čapek, Emil Filla, Otto Gutfreund, Vincenc
-	  Beneš, and Antonín Procházka.</abstract>
-	  <name type="corporate">
-	    <namePart>Skupina výtvarných umělců (Prague, Czech Republic)</namePart>
-	  </name>
 	  <name type="personal">
-	    <namePart>Čapek, Josef</namePart>
+	    <namePart> Čapek, Josef</namePart>
 	    <namePart type="date">1887-1945</namePart>
 	    <role>
-	      <roleTerm  type="text">ed</roleTerm>
+              <roleTerm type="text">editor.</roleTerm>
 	    </role>
 	  </name>
 	  <name type="personal">
-	    <namePart>Janák, Pavel</namePart>
+	    <namePart> Janák, Pavel</namePart>
 	    <namePart type="date">1882-1956</namePart>
 	    <role>
-	      <roleTerm  type="text">ed</roleTerm>
+              <roleTerm type="text">editor.</roleTerm>
 	    </role>
 	  </name>
 	  <name type="personal">
-	    <namePart>Langer, František</namePart>
-	    <namePart type="date">1888-1965</namePart>
+	    <namePart> Langer, František</namePart>
+	    <namePart type="date"> 1888-1965</namePart>
 	    <role>
-	      <roleTerm type="text">ed</roleTerm>
+              <roleTerm type="text">editor.</roleTerm>
 	    </role>
 	  </name>
 	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Criticism, interpretation, etc.</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
 	    <place>
-	      <placeTerm type="text">V Praze</placeTerm>
+              <placeTerm type="code" authority="marccountry">xr</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">V Praze</placeTerm>
 	    </place>
 	    <publisher>Nákladem Tiskového družstva skupiny výtvarných umělců</publisher>
-	    <dateIssued>1911-1913</dateIssued>
+	    <dateIssued>1911-1914</dateIssued>
 	    <dateIssued encoding="marc" point="start">1911</dateIssued>
-	    <dateIssued encoding="marc" point="end">1913</dateIssued>
+	    <dateIssued encoding="marc" point="end">1914</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency>Unknown</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">cze</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>3 v. in 2 : ill. (some col.), music ; 24 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource : ill. (some col.), music</extent>
 	  </physicalDescription>
-	  <note>No more published.</note>
+	  <note type="date/sequential designation">Roč̌. 1, č̌í́s. 1 (1911)-roć̌. 3, ć̌í̌s. 2 (1914)</note>
+	  <note>Editors include: Josef Čapek, Pavel Janák, Frant. Langer.</note>
+	  <note>Roč. 3, čís 1 and čís 2 include supplement: Umělecký Průmysl.</note>
+	  <note>"Casopis Skupiny výtvarných umělců."</note>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
+	  </subject>
 	  <subject authority="lcsh">
 	    <topic>Art</topic>
 	    <genre>Periodicals</genre>
@@ -119,496 +113,44 @@
 	    <topic>History and criticism</topic>
 	    <genre>Periodicals</genre>
 	  </subject>
-	  <subject>
-	    <hierarchicalGeographic>
-	      <country>Czech Republic</country>
-	      <city>Prague</city>
-	    </hierarchicalGeographic>
+	  <subject authority="lcsh">
+	    <topic>Skupina výtvarných umělců (Group of artists)</topic>
+	    <genre>Periodicals</genre>
 	  </subject>
+	  <subject authority="fast">
+	    <topic>Art</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Czech literature</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Modernism (Art)</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Skupina výtvarných umělců (Group of artists)</topic>
+	  </subject>
+	  <classification authority="lcc">N6 .U4915</classification>
 	  <location>
-	    <physicalLocation type="text">. Princeton University. Library. Marquand.</physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>sax</subLocation>
-		<shelfLocator>N6 .U4915 1911</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/sf268648h</url>
 	  </location>
-
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>čislo 1</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>October 1911</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1911-10</dateIssued>
-	    </originInfo>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(OCoLC)5218608</identifier>
 	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>čislo 2</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>listopad 1911</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1911-11</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <!-- Princeton bound copy has no issue 3. -->
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>4</number>
-		<caption>čislo 4</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>leden 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-01</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>5</number>
-		<caption>čislo 5</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>únor 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-02</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>6</number>
-		<caption>čislo 6</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>březen 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-03</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>7</number>
-		<caption>čislo 7</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>duben 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-04</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>8</number>
-		<caption>čislo 8</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>květen 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-05</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>9</number>
-		<caption>čislo 9</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>červen 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-06</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>10</number>
-		<caption>čislo 10</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>srpen 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-08</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Ročnik 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>11</number>
-		<number>12</number>
-		<caption>čislo 11-12</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>září 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-09</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>čislo 1</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>listopad 1912</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-11</dateIssued>
-	    </originInfo>
-	    <note>Masthead is confusing; in Czech it says OBSAH CIS
-	    1. (LISTOPAD). ROCNIK I. 1913; in French it says Sommaire No. 1 IIe
-	    ANNEE. November 1913 makes no sense.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>čislo 2</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>prosinec 1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1912-12</dateIssued>
-	    </originInfo>
-	    <note>Masthead is confusing. Obsah cis. 2. (Prosinec.) Rocnik
-	    II. (1913) in Czech; Sommaire No. 2 IIe annee (1913) in
-	    French. Prosinec 1913 (December 1913) is unlikely; probably should
-	    be December 1912. So recorded in the keydate field.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_01</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>3</number>
-		<caption>čislo 3</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>leden 1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913-01</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_02</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>4</number>
-		<number>5</number>
-		<caption>čislo 4.-5.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_03</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>6</number>
-		<number>7</number>
-		<caption>čislo 6.-7.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_04</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>8</number>
-		<caption>čislo 8.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_05</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>9</number>
-		<caption>čislo 9.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_06</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>10</number>
-		<caption>čislo 10.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_07</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>2</number>
-		<caption>Ročnik 2</caption>
-	      </detail>
-	      <detail type="number">
-		<number>11</number>
-		<number>12</number>
-		<caption>čislo 11.-12.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given. French masthead says
-	    Sommaire No. 10. IIe annee.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1913_08</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Ročnik 3</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>čislo 1.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1913</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1913</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <identifier type="bmtn">urn:PUL:bluemountain:bmtnabk_1914_01</identifier>
-	    <titleInfo>
-	      <title>Umělecký mĕsíčník</title>
-	      <subTitle>časopis Skupiny výtvarných umělců</subTitle>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>3</number>
-		<caption>Ročnik 3</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>čislo 2.</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914</dateIssued>
-	    </originInfo>
-	    <note>No month or day of publication given.</note>
-	  </relatedItem>
+	  <identifier type="oclc">798057871</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">120701</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022137.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn798057871</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabk</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
-
       </xmlData>
     </mdWrap>
   </dmdSec>

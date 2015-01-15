@@ -28,26 +28,14 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaav</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaav</recordIdentifier>       
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2612686</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
+	  <titleInfo usage="primary">
+	    <title>New Numbers</title>
+	  </titleInfo>
 	  <titleInfo>
 	    <title>New numbers</title>
 	  </titleInfo>
-	  <abstract>Published the new poetry and verse dramas of
-	  Rupert Brooke, John Drinkwater, Wilfrid Wilson Gibson, and
-	  Lascelles Abercrombie. Included the first publication of
-	  Rupert Brooke’s poem “The Soldier.” </abstract>
 	  <name type="personal">
 	    <namePart>Brooke, Rupert</namePart>
 	    <namePart type="date">1887-1915</namePart>
@@ -65,111 +53,70 @@
 	    <namePart type="date">1881-1938</namePart>
 	  </name>
 	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Ryton, Dymock, Gloucester</placeTerm>
+              <placeTerm type="code" authority="marccountry">enk</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">Ryton, Dymock, Gloucester</placeTerm>
 	    </place>
 	    <publisher>[Crypt House Press]</publisher>
 	    <dateIssued encoding="marc" point="start">1914</dateIssued>
 	    <dateIssued encoding="marc" point="end">1914</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Quarterly</frequency>
+	    <frequency>Quarterly</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>4 no. 25 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (4 no.)</extent>
 	  </physicalDescription>
 	  <note type="date/sequential designation">v. 1, no. 1-4; Feb.-Dec. 1914.</note>
 	  <note>"A quarterly publication of the poems of Rupert Brooke, John Drinkwater, Wilfrid Wilson Gibson, Lascelles Abercrombie."</note>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
+	  </subject>
 	  <subject authority="lcsh">
 	    <topic>English poetry</topic>
 	    <temporal>20th century</temporal>
 	    <genre>Periodicals</genre>
 	  </subject>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>New Numbers</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Volume 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>1</number>
-		<caption>Number 1</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>February, 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-02</dateIssued>
-	    </originInfo>
+	  <subject authority="fast">
+	    <topic>English poetry</topic>
+	  </subject>
+	  <classification authority="lcc">PR500 .N47</classification>
+	  <classification authority="ddc" edition="21">821.91208005</classification>
+	  <classification authority="bcl">18.05</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/6m311q67b</url>
+	  </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(DLC)   46038485</identifier>
+	    <identifier type="local">(OCoLC)3377122</identifier>
 	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>New Numbers</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Volume 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>2</number>
-		<caption>Number 2</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>April, 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-04</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>New Numbers</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Volume 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>3</number>
-		<caption>Number 3</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>August, 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-08</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-	  <relatedItem type="constituent">
-	    <titleInfo>
-	      <title>New Numbers</title>
-	    </titleInfo>
-	    <part type="issue">
-	      <detail type="volume">
-		<number>1</number>
-		<caption>Volume 1</caption>
-	      </detail>
-	      <detail type="number">
-		<number>4</number>
-		<caption>Number 4</caption>
-	      </detail>
-	    </part>
-	    <originInfo>
-	      <dateIssued>December, 1914</dateIssued>
-	      <dateIssued keyDate="yes" encoding="w3cdtf">1914-12</dateIssued>
-	    </originInfo>
-	  </relatedItem>
-
-
+	  <identifier type="oclc">760249358</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">111109</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212061012.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn760249358</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaav</recordIdentifier>       
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
-
       </xmlData>
     </mdWrap>
   </dmdSec>

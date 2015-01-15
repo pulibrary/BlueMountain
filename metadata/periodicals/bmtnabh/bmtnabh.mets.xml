@@ -28,94 +28,96 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabh</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabh</recordIdentifier>       
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>
-	      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=1951502
-	    </recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
 	  <titleInfo>
-	    <nonSort>La</nonSort>
-	    <title>Revue musicale</title>
+	    <nonSort>La </nonSort>
+	    <title>revue musicale</title>
 	  </titleInfo>
-	  <abstract>Published from 1901 to 1911. Monthly;
-	  bi-monthly. Including preceding title Revue d’historie et de
-	  critique musicales (1901-1902). Paris. French
-	  language. Editors included Jules Combarieu, Pierre Aubry,
-	  Maurice Emmanuel, Louis Laloy, and Romain Rolland.
-	  “Considered the ‘first’ journal addressed to music
-	  historians in France, the Revue musicale produced a total of
-	  234 issues. The journal’s high standard of scholarship was
-	  recognized in the Grand Larousse encyclopédique in which it
-	  was referred to as ‘one of the best journals of music
-	  history and criticism.’ Created by Jules Combarieu soon
-	  after the Universal Exhibition of 1900, the journal’s stated
-	  objective was the publication of articles on historical
-	  topics by French and foreign scholars” (Doris Pyee-Cohen,
-	  RIPM). Topics covered include: music of Senegal and
-	  Indonesia (an influence on modern music); reports on the
-	  école nouvelle led by Vincent d’Indy; and frequent reports
-	  on the current music scene and what was then passing as
-	  musical modernism, including reviews of new works by Claude
-	  Debussy, Richard Strauss, and Giacomo Puccini, as well as
-	  Sergei Diaghilev’s productions in Paris, including Igor
-	  Stravinsky’s Firebird.</abstract>
-	  <name type="personal">
-	    <namePart>Welter, H.</namePart>
-	  </name>
 	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">review</genre>
+	  <genre authority="fast">Criticism, interpretation, etc.</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Paris</placeTerm>
+              <placeTerm type="code" authority="marccountry">fr</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">Paris</placeTerm>
 	    </place>
 	    <publisher>H. Welter</publisher>
+	    <dateIssued>1902-1912</dateIssued>
 	    <dateIssued encoding="marc" point="start">1902</dateIssued>
 	    <dateIssued encoding="marc" point="end">1912</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Semimonthly, July 1903-Jan. 1912</frequency>
+	    <frequency authority="marcfrequency">Monthly, Oct. 1902-June 1903</frequency>
+	    <frequency>Unknown</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>11 v. ; 27 cm.</extent>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (11 v.) : ill. </extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">
-	    2. année, no 10 (oct. 1902)-12. année, no 1 (1. janv. 1912).
-	  </note>
+	  <note type="date/sequential designation">2. année, no 10 (oct. 1902)-12. année, no 1 (1. janv. 1912).</note>
+	  <note>Includes musical examples.</note>
+	  <subject>
+	    <geographicCode authority="marcgac">e-fr---</geographicCode>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Music</topic>
+	    <geographic>France</geographic>
+	    <topic>History and criticism</topic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Music</topic>
+	    <topic>History and criticism</topic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Music</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>France</geographic>
+	  </subject>
+	  <classification authority="lcc">ML5 .R3815</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/x633f241p</url>
+	  </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(OCoLC)5742228</identifier>
+	  </relatedItem>
 	  <relatedItem type="preceding">
 	    <titleInfo>
-	      <title>Revue d'histoire et de critique musicales</title>
+              <title>Revue d'histoire et de critique musicales</title>
 	    </titleInfo>
 	  </relatedItem>
 	  <relatedItem type="succeeding">
 	    <titleInfo>
-	      <title>Revue musicale S.I.M. (Paris, France : 1912)</title>
+              <title>Revue musicale S.I.M. (Paris, France : 1912)</title>
 	    </titleInfo>
 	  </relatedItem>
-	  <!--
-	      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
-	  -->
-	  <location>
-	    <physicalLocation type="text">
-	      <!-- FILL ME IN. Princeton University. Library. ... -->
-	    </physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>svl</subLocation>
-		<!-- DELETE COPY NUMBER BELOW -->
-		<shelfLocator>1 ML5 .R35</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
+	  <identifier type="oclc">680033467</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">101108</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn680033467</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabh</recordIdentifier>       
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
 
       </xmlData>

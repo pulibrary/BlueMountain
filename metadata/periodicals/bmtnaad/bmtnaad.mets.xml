@@ -27,77 +27,93 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
-	      xmlns="http://www.loc.gov/mods/v3">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaad</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaad</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4939605</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-          <genre>Periodicals-Title</genre>	  
 	  <titleInfo>
-	    <nonSort>Le</nonSort>
-	    <title>coeur à barbe</title>
+	    <nonSort>Le </nonSort>
+	    <title>cœur à barbe</title>
 	    <subTitle>journal transparent</subTitle>
 	  </titleInfo>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/73848255">
-	    <namePart type="family">Eluard</namePart>
-	    <namePart type="given">Paul</namePart>
+	  <name type="personal"  authority="viaf" valueURI="http://viaf.org/viaf/73848255">
+	    <namePart>Eluard, Paul</namePart>
 	    <namePart type="date">1895-1952</namePart>
 	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/96123513">
-	    <namePart type="family">Ribemont-Dessaignes</namePart>
-	    <namePart type="given">Georges</namePart>
+	  <name type="personal"  authority="viaf" valueURI="http://viaf.org/viaf/96123513">
+	    <namePart>Ribemont-Dessaignes, Georges</namePart>
 	    <namePart type="date">1884-1974</namePart>
 	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/27072443">
-	    <namePart type="family">Tzara</namePart>
-	    <namePart type="given">Tristan</namePart>
+	  <name type="personal"  authority="viaf" valueURI="http://viaf.org/viaf/27072443">
+	    <namePart>Tzara, Tristan</namePart>
 	    <namePart type="date">1896-1963</namePart>
 	  </name>
-	  <abstract>Produced by Tristan Tzara as a response to attacks on him by Francis Picabia and André Breton about the future of the Dada movement. Printed in black on pale pink stock, with typographic and pictorial collage cover. Literary contributors included Paul Éluard, Georges Ribemont-Dessaignes, and Erik Satie. Cover design attributed to Iliazd.</abstract>
 	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Paris</placeTerm>
+              <placeTerm type="code" authority="marccountry">fr</placeTerm>
 	    </place>
-	    <dateIssued>1922</dateIssued>
 	    <dateIssued encoding="marc" point="start">1922</dateIssued>
 	    <dateIssued encoding="marc" point="end">1922</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency>Unknown</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <extent>8 p. ; 23 cm.</extent>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource.</extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">1er no (avril 1922)</note>
-	  <note>Introductory statement signed "Eluard, Ribemont-Dessaignes, Tzara".</note>
-	  <note>Title from cover.</note>
-	  <subject authority="lcsh">
-	    <topic>Dadaism</topic>
-	    <genre>Periodicals</genre>
+	  <note type="date/sequential designation">1er no (avril 1922).</note>
+	  <note>Editor: Tristan Tzara.</note>
+	  <note>Introductory statement signed "Eluard, Ribemont-Dessaignes, Tzara."</note>
+	  <subject>
+	    <geographicCode authority="marcgac">e-fr---</geographicCode>
+	  </subject>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
 	  </subject>
 	  <subject authority="lcsh">
 	    <topic>Dadaism</topic>
 	    <geographic>France</geographic>
 	    <genre>Periodicals</genre>
 	  </subject>
+	  <subject authority="lcsh">
+	    <topic>French literature</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Dadaism</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>French literature</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <geographic>France</geographic>
+	  </subject>
+	  <classification authority="lcc">NX456.D3</classification>
 	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>sax</subLocation>
-		<shelfLocator>NX600.D3 C594</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/12579t647</url>
 	  </location>
+	  <identifier type="oclc">858948452</identifier>
+	  <recordInfo>
+	    <descriptionStandard>rda</descriptionStandard>
+	    <recordContentSource authority="marcorg">ZCU</recordContentSource>
+	    <recordCreationDate encoding="marc">130926</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022132.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn858948452</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaad</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
 
       </xmlData>

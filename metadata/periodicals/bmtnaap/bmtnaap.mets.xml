@@ -28,82 +28,112 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaap</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaap</recordIdentifier>
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=2003805</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
 	  <titleInfo>
 	    <title>Broom</title>
-	    <subTitle>[An international magazine of the arts]</subTitle>
 	  </titleInfo>
-	  <abstract>Important Dada oriented literary and artistic
-	  periodical. Color-printed covers; tipped-in illustrations;
-	  large format. Literary contributors included Conrad
-	  Aiken,Wallace Stephens, e.e. cummings, Gertrude Stein,
-	  Virginia Woolf, Luigi Pirandello, and Louis Aragon. Artists
-	  included Pablo Picasso, Man Ray, Henri Matisse, Paul Klée,
-	  George Grosz, Wassily Kandinsky, and Amedeo
-	  Modigliani.</abstract>
+	  <name type="personal">
+	    <namePart>Loeb, Harold</namePart>
+	    <namePart type="date">1891-1974</namePart>
+	  </name>
 	  <typeOfResource>text</typeOfResource>
-	  <genre authority="rbgenr">Little magazines</genre>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
 	  <originInfo>
 	    <place>
-	      <placeTerm type="text">Rome, Italy</placeTerm>
+              <placeTerm type="code" authority="marccountry">it</placeTerm>
 	    </place>
-	    <publisher supplied="yes">s.l.</publisher>
+	    <place>
+              <placeTerm type="text">Rome, Italy</placeTerm>
+	    </place>
+	    <publisher>Broom</publisher>
 	    <dateIssued>1921-1924</dateIssued>
 	    <dateIssued encoding="marc" point="start">1921</dateIssued>
 	    <dateIssued encoding="marc" point="end">1924</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Monthly (irregular)</frequency>
+	    <frequency>Monthly</frequency>
 	  </originInfo>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	  </language>
-	  <!-- <physicalDescription/> -->
-	  <note type="date/sequential designation">1-6; 1921-24.</note>
-	  <note type="numbering">None published Mar. 1922, Apr.-Jul. 1923.</note>
-	  <note type="numbering">Ceased publication with v. 6 no. 1, Jan. 1924.</note>
+	  <physicalDescription>
+	    <form authority="gmd">electronic resource</form>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (6 v.) : ill.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">Vol. 1, no. 1 (Nov. 1921)-v. 6, no. 1 (Jan. 1924).</note>
+	  <note>Published: Rome, Nov. 1921-Sept. 1922; Berlin, Oct. 1922-Mar. 1923; New York, Aug. 1923-Jan. 1924.</note>
+	  <note>Editor: Harold Loeb.</note>
+	  <note type="numbering">None published Mar. 1922, Apr.-July 1923.</note>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Arts, Modern</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Literature, Modern</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Art, Modern</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Nineteen twenties</topic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Art, Modern</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Arts, Modern</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Literature, Modern</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Nineteen twenties</topic>
+	  </subject>
+	  <classification authority="lcc">AP4 .B93</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/02870x24z</url>
+	  </location>
 	  <relatedItem type="isReferencedBy">
-	    <note>Hoffman, F.J. Little magazine</note>
+	    <note>
+              <name>
+		<namePart>Hoffman, F.J. Little magazine,</namePart>
+              </name>
+	    </note>
 	  </relatedItem>
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>ex</subLocation>
-		<shelfLocator>1 LM (Little Magazine)</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>beac</subLocation>
-		<shelfLocator>1 0901.213q</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>ex</subLocation>
-		<shelfLocator>1 0901.25519q</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(DLC)car24000292</identifier>
+	    <identifier type="local">(OCoLC)1537466</identifier>
+	  </relatedItem>
+	  <identifier type="oclc">891028112</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">140921</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022132.0</recordChangeDate>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaap</recordIdentifier>
+	    <recordIdentifier source="OCoLC">ocn891028112</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 
 	  <relatedItem type="constituent">
 	    <titleInfo>

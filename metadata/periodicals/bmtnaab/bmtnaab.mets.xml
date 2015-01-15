@@ -31,73 +31,101 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-        <mods xmlns="http://www.loc.gov/mods/v3"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
-          
-          <identifier type="bmtn">urn:PUL:bluemountain:bmtnaab</identifier>
-          <recordInfo>
-            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaab</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4545005</recordOrigin>
-            <languageOfCataloging>
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaab</identifier>
+	  <titleInfo>
+	    <title>Action</title>
+	    <subTitle>cahiers individualistes de philosophie et d'art</subTitle>
+	  </titleInfo>
+	  <titleInfo type="alternative">
+	    <title>Action almanach numéro 6</title>
+	  </titleInfo>
+	  <name type="personal">
+	    <namePart>Fels, Florent</namePart>
+	    <namePart type="date">1893-</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Sauvage, Marcel.</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
+	    <place>
+              <placeTerm type="code" authority="marccountry">fr</placeTerm>
+	    </place>
+	    <dateIssued encoding="marc" point="start">1920</dateIssued>
+	    <dateIssued encoding="marc" point="end">1922</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Irregular</frequency>
+	    <frequency/>
+	  </originInfo>
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (3 volumes) : illustrations</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">Print began with premiére année, numéro 1 (février 1920); ceased in 1922.</note>
+	  <note>"Directeurs, Florent Fels et Marcel Sauvage".</note>
+	  <note>Subtitle varies: Année 1, no. 1: "Cahiers individualistes de philosophie et d’art"; année 1, no. 2- : "Cahiers de philosophie et d’art."</note>
+	  <note type="numbering">Année 1-2 also called no. 1-10.</note>
+	  <note>Année 2 has special issue called: "Numéro hors-série."</note>
+	  <subject>
+	    <geographicCode authority="marcgac">e-fr---</geographicCode>
+	  </subject>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>French literature</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Arts, French</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Poetry, Modern</topic>
+	    <temporal>20th century</temporal>
+	    <geographic>France</geographic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Arts, French</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>French literature</topic>
+	  </subject>
+	  <classification authority="lcc">PQ1104 .A285</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/8k71nj484</url>
+	  </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(OCoLC)1781992</identifier>
+	  </relatedItem>
+	  <identifier type="issn" invalid="yes">1150-0867</identifier>
+	  <identifier type="issn-l">1144-9977</identifier>
+	  <recordInfo>
+	    <descriptionStandard>rda</descriptionStandard>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaab</recordIdentifier>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordCreationDate encoding="marc">141201</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212091621.0</recordChangeDate>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
               <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-          </recordInfo>
-          <genre>Periodicals-Title</genre>
-          
-          <titleInfo>
-            <title>Action</title>
-          </titleInfo>
-          <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/114964792">
-            <namePart type="family">Fels</namePart>
-            <namePart type="given">Florent</namePart>
-            <namePart type="date">1891-1977</namePart>
-            <role>
-              <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
-            </role>
-          </name>
-          <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/68935531">
-            <namePart type="family">Sauvage</namePart>
-            <namePart type="given">Marcel</namePart>
-            <namePart type="date">1895-1988</namePart>
-            <role>
-              <roleTerm authorityURI="http://www.loc.gov/marc/relators/">edt</roleTerm>
-            </role>
-          </name>
-	  <abstract>Literary and artistic magazine associated with
-	  Individualist Anarchism, a movement based on personal
-	  freedom, social justice, and pacifism. An ultimately
-	  unsuccessful attempt to oppose André Breton’s
-	  Dada-surrealist aesthetics. Literary contributors included
-	  André Malraux, Antonin Artaud, Paul Éluard, Alfred Jarry,
-	  Erik Satie, and Tristan Tzara. Artists included Maurice de
-	  Vlaminck, Demetrios Galanis, and Robert Mortier. </abstract>
-          <typeOfResource>text</typeOfResource>
-          <originInfo script="Latn">
-            <place>
-              <placeTerm type="text">Paris</placeTerm>
-            </place>
-            <publisher>Action</publisher>
-            <dateIssued>1920-1922</dateIssued>
-            <dateIssued encoding="marc" point="start">1920</dateIssued>
-            <dateIssued encoding="marc" point="end">1922</dateIssued>
-          </originInfo>
-          <language>
-            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-          </language>
-          <physicalDescription>
-            <extent>3 v. : ill. ; 22-24 cm.</extent>
-          </physicalDescription>
-          <note type="date/sequential designation">1. année, no 1 (févr. 1920)-3. année (mars-avril 1922)</note>
-          <note>"Directeurs, Florent Fels et Marcel Sauvage".</note>
-          <note>Title from cover.</note>
-          <note>"Cahiers individualistes de philosophie et d'art."</note>
-          <subject authority="lcsh">
-            <topic>Arts, French</topic>
-            <genre>Periodicals</genre>
-          </subject>
-        </mods>
+	    </languageOfCataloging>
+	  </recordInfo>
+	</mods>
+
       </xmlData>
     </mdWrap>
   </dmdSec>

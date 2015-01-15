@@ -28,78 +28,90 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaj</identifier>
-	  <recordInfo>
-            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaj</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=5850790</recordOrigin>
-            <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
-	  <titleInfo >
-            <title>Surréalisme</title>
+	  <titleInfo>
+	    <title>Surréalisme</title>
 	  </titleInfo>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/39390718">
-            <namePart type="family">Goll</namePart>
-            <namePart type="given">Yvan</namePart>
-            <namePart type="date">1891-1950</namePart>
+	  <name type="personal">
+	    <namePart>Goll, Yvan</namePart>
+	    <namePart type="date">1891-1950</namePart>
 	  </name>
-	  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/68979341">
-            <namePart type="family">Delaunay</namePart>
-            <namePart type="given">Robert</namePart>
-            <namePart type="date">1885-1941</namePart>
+	  <name type="personal">
+	    <namePart>Delaunay, Robert</namePart>
+	    <namePart type="date">1885-1941</namePart>
 	  </name>
-	  <abstract>A foundational surrealist publication in which
-	  Ivan Goll and his associates laid claim to the term
-	  surrealism coined by Guillaume Apollinaire in 1917. With a
-	  manifesto, and articles on various aspects of the arts,
-	  including literature, cinema, and painting. Literary
-	  contributors included Guillaume Apollinaire, Marcel Arland,
-	  Pierre Albert-Birot, René Crevel, Joseph Delteil, Paul
-	  Dermée, Jean Painlevé, and Pierre Reverdy. Cover designed by
-	  Robert Delaunay.</abstract>
 	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
-            <place>
-              <placeTerm type="text">Paris, France</placeTerm>
-              
-              <placeTerm type="code" authorityURI="http://www.getty.edu/research/tools/vocabularies/tgn">7008038</placeTerm>
-            </place>
-            <publisher>I. Goll</publisher>
-            <dateIssued>[1924]</dateIssued>
-            <dateIssued encoding="iso8601" point="start">1924</dateIssued>
-            <dateIssued encoding="iso8601" point="end">1924</dateIssued>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
+	    <place>
+              <placeTerm type="code" authority="marccountry">fr</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">Paris</placeTerm>
+	    </place>
+	    <publisher>Imp. Deshayes</publisher>
+	    <dateIssued>1924</dateIssued>
+	    <dateIssued encoding="marc" point="start">1924</dateIssued>
+	    <dateIssued encoding="marc" point="end">1924</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Monthly</frequency>
+	    <frequency>Monthly</frequency>
 	  </originInfo>
 	  <language>
-            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-            <extent>1 v. [16 ] p. ; 26 cm.</extent>
+	    <reformattingQuality>access</reformattingQuality>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 v. ; 25 cm.</extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">1 (oct. 1924)</note>
-	  <note>"Directeur: Ivan Goll.  Collaborateurs: Guillaume APollinaire, Marcel Arland, P. Albert-Birot, René Crevel, Joseph Delteil, Robert Delaunay, Paul Dermée, Jean Painlevé, Pierre Reverdy"</note>
+	  <note type="date/sequential designation">1 (oct. 1924).</note>
+	  <note>"Directeur: Ivan Goll. Collaborateurs: Guillaume APollinaire, Marcel Arland, P. Albert-Birot, René Crevel, Joseph Delteil, Robert Delaunay, Paul Dermée, Jean Painlevé, Pierre Reverdy."</note>
 	  <note>Drawing by Robert Delaunay on cover.</note>
-	  <note>No more published.</note>
-	  <subject authority="lcsh">
-            <topic>Surrealism</topic>
-            <genre>Periodicals</genre>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
 	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Surrealism</topic>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>Art, Modern</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Art, Modern</topic>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>Surrealism</topic>
+	  </subject>
+	  <classification authority="lcc">NX600.S9 S877</classification>
 	  <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-            <holdingSimple>
-              <copyInformation>
-                <subLocation>sax</subLocation>
-                <!--DELETE COPY NUMBER BELOW-->
-                <shelfLocator>NX600.S9 S884</shelfLocator>
-              </copyInformation>
-            </holdingSimple>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/cc08hh00v</url>
 	  </location>
+	  <relatedItem type="otherFormat" displayLabel="Print version:">
+	    <titleInfo>
+              <title>Surréalisme (Paris, France : 1924)</title>
+	    </titleInfo>
+	    <identifier type="local">(OCoLC)16087001</identifier>
+	  </relatedItem>
+	  <recordInfo>
+	    <descriptionStandard>rda</descriptionStandard>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordCreationDate encoding="marc">751101</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212022137.0</recordChangeDate>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaaj</recordIdentifier>
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	    (Revision 1.70)</recordOrigin>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
 	</mods>
 
       </xmlData>

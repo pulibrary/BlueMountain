@@ -35,21 +35,74 @@
 	      xmlns:xlink="http://www.w3.org/1999/xlink">
 
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
-	  
-	  <recordInfo>
-            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabc</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=1929000</recordOrigin>
-            <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+
 	  <titleInfo>
             <nonSort>La</nonSort>
             <title>Chronique musicale</title>
 	  </titleInfo>
-	  <abstract> Published after the 1871 French defeat in the
+	  <titleInfo usage="primary">
+            <nonSort>La</nonSort>
+            <title>chronique musicale</title>
+	  </titleInfo>
+	  <name type="personal">
+            <namePart>Heulhard, Arthur</namePart>
+            <namePart type="date">1849-1920</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo script="Latn">
+            <place>
+              <placeTerm type="text">Paris</placeTerm>
+            </place>
+            <publisher>s.n.</publisher>
+            <dateIssued>1873-1876]</dateIssued>
+            <dateIssued encoding="marc" point="start">1873</dateIssued>
+            <dateIssued encoding="marc" point="end">1876</dateIssued>
+	  </originInfo>
+	  <language>
+            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	  </language>
+	  <physicalDescription>
+            <reformattingQuality>access</reformattingQuality>
+            <extent>1 online resource (11 v.) : ill., music, ports.</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
+	  <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
+	  <note>Title from caption.</note>
+	  <note>Editor: Arthur Heulhard.</note>
+	  <subject authority="lcsh">
+            <topic>Music</topic>
+            <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+            <topic>Music</topic>
+	  </subject>
+	  <location>
+            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/z316q2966</url>
+	  </location>
+	  <relatedItem type="otherFormat"/>
+	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	  <location>
+            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+              <copyInformation>
+                <subLocation>elf1</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>Electronic Resource</shelfLocator>
+              </copyInformation>
+            </holdingSimple>
+	  </location>
+	  <recordInfo>
+            <recordContentSource authority="marcorg">NjP</recordContentSource>
+            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=8870192</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+	  </recordInfo>
+
+	  <abstract>Published after the 1871 French defeat in the
 	  Franco-Prussian War, this journal reflects new currents in
 	  French thought focusing more on French music and its history
 	  and less on German (particularly prevailing Wagnerism). Such
@@ -65,35 +118,9 @@
 	  librettist Charles Nuitter, composer and archivist Théodore
 	  de Lajarte, and historian and critic Adolphe
 	  Jullien.</abstract>
-	  <name type="personal" authority="viaf" authorityURI="http://viaf.org/viaf/32125185">
-            <namePart type="family">Heulhard</namePart>
-            <namePart type="given">Arthur</namePart>
-            <namePart type="date">1849-1920</namePart>
-	  </name>
-	  <typeOfResource>text</typeOfResource>
-	  <originInfo>
-            <place>
-              <placeTerm type="text">Paris</placeTerm>
-            </place>
-            <publisher>s.n.</publisher>
-            <dateIssued>1873-1876]</dateIssued>
-            <dateIssued encoding="marc" point="start">1873</dateIssued>
-            <dateIssued encoding="marc" point="end">1876</dateIssued>
-	  </originInfo>
-	  <language>
-            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-	  </language>
-	  <physicalDescription>
-            <extent>11 v. : ill., music, ports. ; 29 cm.</extent>
-	  </physicalDescription>
-	  <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
-	  <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
-	  <note>Title from caption.</note>
-	  <note>Editor: Arthur Heulhard.</note>
-	  <subject authority="lcsh">
-            <topic>Music</topic>
-            <topic>Periodicals</topic>
-	  </subject>
+
+
+
 
 	</mods>
 
