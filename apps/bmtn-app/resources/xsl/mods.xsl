@@ -9,14 +9,49 @@
             <xd:p/>
         </xd:desc>
     </xd:doc>
-    <xsl:function name="bmtn-mods:use-title">
+    <xsl:function name="mods:use-title">
         <xsl:param name="modsrec"/>
+        <xsl:param name="mode"/>
         <xsl:choose>
             <xsl:when test="$modsrec/mods:titleInfo[@usage='primary']">
-                <xsl:apply-templates select="$modsrec/mods:titleInfo[@usage='primary']"/>
+                <xsl:choose>
+                    <xsl:when test="$mode = 'full'">
+                        <xsl:apply-templates select="$modsrec/mods:titleInfo[@usage='primary']" mode="full"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="$modsrec/mods:titleInfo[@usage='primary']"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:apply-templates select="$modsrec/mods:titleInfo[1]"/>
+                <xsl:choose>
+                    <xsl:when test="$mode = 'full'">
+                        <xsl:apply-templates select="$modsrec/mods:titleInfo[1]" mode="full"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="$modsrec/mods:titleInfo[1]"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    <xsl:function name="mods:display-date">
+        <xsl:param name="modsRec"/>
+        <xsl:choose>
+            <xsl:when test="$modsRec/mods:originInfo/mods:dateIssued[empty(@point)]">
+                <xsl:apply-templates select="$modsRec/mods:originInfo/mods:dateIssued[empty(@point)]"/>
+            </xsl:when>
+            <xsl:when test="$modsRec/mods:originInfo/mods:dateIssued[@point='start'] and                 $modsRec/mods:originInfo/mods:dateIssued[@point='end']">
+                <xsl:value-of select="string-join(($modsRec/mods:originInfo/mods:dateIssued[@point='start'],                     $modsRec/mods:originInfo/mods:dateIssued[@point='end']                     ), '-')"/>
+            </xsl:when>
+            <xsl:when test="$modsRec/mods:originInfo/mods:dateIssued[@point='start']">
+                <xsl:value-of select="concat($modsRec/mods:originInfo/mods:dateIssued[@point='start'], '-')"/>
+            </xsl:when>
+            <xsl:when test="$modsRec/mods:originInfo/mods:dateIssued[@point='end']">
+                <xsl:value-of select="concat('-', $modsRec/mods:originInfo/mods:dateIssued[@point='end'])"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>unexpected condition</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -37,6 +72,15 @@
         </xsl:if>
         <xsl:if test="mods:detail[@type='number']">
             <xsl:apply-templates select="mods:detail[@type='number']"/>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="mods:titleInfo" mode="full">
+        <xsl:if test="mods:nonSort">
+            <xsl:value-of select="concat(mods:nonSort, ' ')"/>
+        </xsl:if>
+        <xsl:value-of select="mods:title/text()"/>
+        <xsl:if test="mods:subTitle">
+            <xsl:value-of select="concat(': ', mods:subTitle/text())"/>
         </xsl:if>
     </xsl:template>
     <xsl:template match="mods:titleInfo">

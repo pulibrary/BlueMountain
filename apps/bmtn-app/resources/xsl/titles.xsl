@@ -28,15 +28,15 @@
                     <dl class="dl-horizontal">
                         <dt>Title</dt>
                         <dd>
-                            <xsl:apply-templates select="bmtn-mods:use-title(.)"/>
+                            <xsl:apply-templates select="mods:use-title(., '')"/>
                         </dd>
                         <dt>Dates</dt>
                         <dd>
-                            <xsl:apply-templates select="mods:originInfo/mods:dateIssued[empty(@point)]"/>
+                            <xsl:value-of select="mods:display-date(.)"/>
                         </dd>
                         <dt>Place Published</dt>
                         <dd>
-                            <xsl:apply-templates select="mods:originInfo/mods:place"/>
+                            <xsl:apply-templates select="mods:originInfo/mods:place/mods:placeTerm[@type='text']"/>
                         </dd>
                         <dt>Access</dt>
                         <dd>
