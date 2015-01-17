@@ -126,7 +126,7 @@ as element()
 declare function title:issue-listing($node as node(), $model as map(*))
 as element()*
 {
-    <ol> {
+    <ol class="list-inline"> {
       for $issue in $model("selected-title-issues")
         let $issueURN   := xs:string($issue/mods:identifier[@type='bmtn'])
         let $titleURN   := $issue/mods:relatedItem[@type='host']/@xlink:href
@@ -137,7 +137,7 @@ as element()*
         let $icon       := issue:icon2($issueURN)
     order by xs:dateTime(app:w3cdtf-to-xsdate($date))
     return
-    <li>
+    (:<li>
         <div class="row">
         <div class="col-md-1">
         <img class="thumbnail" src="{$icon}" alt="icon"  />
@@ -160,6 +160,27 @@ as element()*
         </dl>
         </div>
         </div> <!-- row -->
+    </li>:)
+    
+    <li>
+
+        <img class="thumbnail" src="{$icon}" alt="icon"  />
+            <br />
+        <dl class="dl-horizontal">
+        <dt>Date</dt>
+        <dd>{$date/text()}</dd>
+        
+        <dt>Volume</dt>
+        <dd>{$vollabel}</dd>
+        
+        <dt>Issue</dt>
+        <dd>{$issuelabel}</dd>
+        
+        <dt>Access</dt>
+        <dd><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">catalog</a></dd>
+        <dd><a href="{$veridianlink}">archive</a></dd>
+        </dl>
+
     </li>
  }</ol>
 };
