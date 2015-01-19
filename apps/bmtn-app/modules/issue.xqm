@@ -122,6 +122,13 @@ as xs:string
     return $icon-root || $iconpath
 };
 
+declare function issue:link($node as node(), $model as map(*))
+as element()
+{
+    let $issueURN := $model("selected-issue")//mods:identifier[@type='bmtn']
+    return <a href="{ app:veridian-url-from-bmtnid($issueURN) }">view issue in the archive</a>
+};
+
 declare function issue:constituents-table($node as node(), $model as map(*))
 as element()
 {

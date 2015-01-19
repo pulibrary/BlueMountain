@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bluemountain.princeton.edu/xsl/titles" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" version="2.0" exclude-result-prefixes="xs xd mods">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:local="http://bluemountain.princeton.edu/xsl/titles" version="2.0" exclude-result-prefixes="xs xd mods">
     <xsl:import href="mods.xsl"/>
     <xsl:output method="html"/>
     <xsl:param name="context"/>
@@ -24,7 +24,7 @@
         <xsl:variable name="title">
             <xsl:choose>
                 <xsl:when test="mods:titleInfo">
-                    <xsl:apply-templates select="mods:titleInfo"/>
+                    <xsl:apply-templates select="mods:titleInfo" mode="full"/>
                 </xsl:when>
                 <xsl:otherwise>[untitled]</xsl:otherwise>
             </xsl:choose>
@@ -41,12 +41,12 @@
                     <td>
                         <xsl:value-of select="$creators"/>
                     </td>
-                    <td>
+<!--                    <td>
                         <a href="{$veridianLink}">view pages</a>
                     </td>
                     <td>
-                        <a href="constituent.html?titleURN={$titleURN}&amp;issueURN={$issueURN}&amp;constituentID={@ID}">view text</a>
-                    </td>
+                        <a href="constituent.html?titleURN={$titleURN}&issueURN={$issueURN}&constituentID={@ID}">view text</a>
+                    </td>-->
                 </tr>
             </xsl:when>
             <xsl:when test="$context = 'selected-constituent-title'">
