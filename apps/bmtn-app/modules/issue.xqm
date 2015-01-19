@@ -20,6 +20,45 @@ as map(*)?
      else ()
 };
 
+declare %templates:wrap function issue:pubInfo($node as node(), $model as map(*), $issueURN as xs:string?)
+as element()
+{
+    let $issue := $model("selected-issue")
+    return
+        <dl class="dl-horizontal">
+        {
+            if ($issue/mods:part[@type='issue']/mods:detail[@type='volume']) then
+              (<dt>Volume</dt>,
+               <dd> { string($issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number[1]) }</dd>
+              )
+             else ()
+        }
+        {
+            if ($issue//mods:part[@type='issue']/mods:detail[@type='number']) then
+            (<dt>Number</dt>,<dd>{ string($issue//mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1]) }</dd>)
+            else ()
+        }
+        {
+            if ($issue/mods:originInfo/mods:dateIssued[@keyDate='yes']) then
+            (<dt>Publication Date</dt>,<dd>{ string($issue//mods:originInfo/mods:dateIssued[@keyDate='yes']) }</dd>)
+            else ()
+        }
+        {
+            if ($issue/mods:originInfo/mods:place) then
+            (<dt>Place(s) of Publication</dt>,
+             <dd>{ string-join($issue/mods:originInfo/mods:place, '; ') }</dd>)
+            else ()
+        }
+        {
+            if ($issue/mods:name[./mods:role/mods:roleTerm = 'edt']) then
+            (<dt>Editor(s)</dt>,
+             <dd>{ string-join($issue/mods:name[./mods:role/mods:roleTerm = 'edt']/mods:displayForm, '; ') }</dd>)
+            else ()
+        }
+        
+    </dl>
+};
+
 declare function issue:constituents($node as node(), $model as map(*))
 as map(*)
 {
