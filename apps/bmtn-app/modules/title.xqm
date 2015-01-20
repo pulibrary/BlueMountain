@@ -19,7 +19,7 @@ as map(*)?
      else ()
 };
 
-declare %templates:wrap function title:icon($node as node(), $model as map(*))
+declare function title:icon($node as node(), $model as map(*))
 as element()*
 {
     let $selected-title := $model("selected-title")
@@ -123,6 +123,14 @@ as element()
     </div>
 };
 
+declare function title:link($node as node(), $model as map(*))
+as element()
+{
+    let $titleURN :=$model("selected-title")/mods:identifier[@type = 'bmtn']
+    return
+        <a href="{app:veridian-title-url-from-bmtnid($titleURN)}">Browse title in the archive</a>
+};
+
 declare function title:issue-listing($node as node(), $model as map(*))
 as element()*
 {
@@ -137,30 +145,7 @@ as element()*
         let $icon       := issue:icon2($issueURN)
     order by xs:dateTime(app:w3cdtf-to-xsdate($date))
     return
-    (:<li>
-        <div class="row">
-        <div class="col-md-1">
-        <img class="thumbnail" src="{$icon}" alt="icon"  />
-        </div>
-        
-        <div class="col-md-1 caption">
-        <dl class="dl-horizontal">
-        <dt>Date</dt>
-        <dd>{$date/text()}</dd>
-        
-        <dt>Volume</dt>
-        <dd>{$vollabel}</dd>
-        
-        <dt>Issue</dt>
-        <dd>{$issuelabel}</dd>
-        
-        <dt>Access</dt>
-        <dd><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">catalog</a></dd>
-        <dd><a href="{$veridianlink}">archive</a></dd>
-        </dl>
-        </div>
-        </div> <!-- row -->
-    </li>:)
+   
     
     <li>
 
@@ -175,11 +160,13 @@ as element()*
         
         <dt>Issue</dt>
         <dd>{$issuelabel}</dd>
-        
-        <dt>Access</dt>
-        <dd><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">catalog</a></dd>
-        <dd><a href="{$veridianlink}">archive</a></dd>
         </dl>
+        <nav>
+            <ul>
+            <li><a href="issue.html?titleURN={$titleURN}&amp;issueURN={ $issueURN }">Description</a></li>
+            <li><a href="{$veridianlink}">Read in archive</a></li>
+            </ul>
+        </nav>
 
     </li>
  }</ol>

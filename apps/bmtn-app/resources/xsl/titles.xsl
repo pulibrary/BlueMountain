@@ -38,14 +38,15 @@
                         <dd>
                             <xsl:apply-templates select="mods:originInfo/mods:place/mods:placeTerm[@type='text']"/>
                         </dd>
-                        <dt>Access</dt>
-                        <dd>
-                            <a href="{$linkpath}">catalog</a>
-                        </dd>
-                        <dd>
-                            <a href="{$veridianLink}">archive</a>
-                        </dd>
                     </dl>
+                    <ul>
+                        <li>
+                            <a href="{$linkpath}">Overview</a>
+                        </li>
+                        <li>
+                            <a href="{$veridianLink}">Read in archive</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
