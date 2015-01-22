@@ -14,13 +14,21 @@ declare variable $exist:root external;
 
 declare function local:parse_path()
 {
-    let $pattern := "^/(.*?)/([^.]+)\.?(.+)?$"
+    let $pattern := "^/(.+?)(/([^.]+))?(\.(.+))?$"
     let $analysis := analyze-string($exist:path, $pattern)
     return
         <request>
             <issueid>{ $analysis/fn:match/fn:group[@nr='1']/text() }</issueid>
-            <constituentid>{ $analysis/fn:match/fn:group[@nr='2']/text() }</constituentid>
-            <format>{ $analysis/fn:match/fn:group[@nr='3']/text() }</format>
+            <constituentid>{ 
+             if ($analysis/fn:match//fn:group[@nr='3']) then
+                $analysis/fn:match//fn:group[@nr='3']/text()
+             else ()
+            }</constituentid>
+            <format>{ 
+             if ($analysis/fn:match//fn:group[@nr='5']) then
+                $analysis/fn:match//fn:group[@nr='5']/text()
+             else ()
+            }</format>
         </request>
 };
 

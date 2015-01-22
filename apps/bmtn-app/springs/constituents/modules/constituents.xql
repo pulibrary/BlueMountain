@@ -31,9 +31,12 @@ let $issueRec := collection($data-root)//mods:identifier[@type='bmtn' and . = $i
 let $constituentItem := $issueRec/mods:relatedItem[@ID = $constituentid]
 
 let $mets := $issueRec/ancestor::mets:mets
-let $logicalDiv := $issueRec/ancestor::mets:mets/mets:structMap[@TYPE='LOGICAL']//mets:div[@DMDID = $constituentid]
-
-let $plaintext :=
+let $logicalDiv := 
+    if ($constituentid) then
+      $issueRec/ancestor::mets:mets/mets:structMap[@TYPE='LOGICAL']//mets:div[@DMDID = $constituentid]
+    else 
+       $issueRec/ancestor::mets:mets/mets:structMap[@TYPE='LOGICAL']/mets:div[1]
+    let $plaintext :=
             for $area in $logicalDiv//mets:area
             let $adoc := local:altodoc($mets, $area/@FILEID) 
             let $uri := concat($adoc, '#', $area/@BEGIN/string())
@@ -53,8 +56,8 @@ return
             <struct>{ $logicalDiv }</struct>
             <text>{ $plaintext }</text>
         </body>
-    </response>
-:)
+    </response>:)
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -63,14 +66,19 @@ return
     <body>
     <nav>
         <ol>
-            <li><a href="../titles">Blue Mountain Titles</a></li>
+            <li><a href="../">Blue Mountain Springs</a></li>
+            <li><a href="{$bmtnid}">the issue</a></li>
         </ol>
     </nav>
         <header>
-        <h1>{$constituentItem/mods:titleInfo}</h1>
-        <p>{$issueRec/mods:titleInfo[1]/mods:title[1]}</p>
-        <p>{$logicalDiv/@LABEL/string()}</p>
-</header>
+            <h1>{$constituentItem/mods:titleInfo}</h1>
+            <p>{$issueRec/mods:titleInfo[1]/mods:title[1]}</p>
+            <p>{$logicalDiv/@LABEL/string()}</p>
+        </header>
+        <section>
+            <h1>Logical Div</h1>
+            { $logicalDiv }
+        </section>
         <section>
         <h1>Alto Elements</h1>
 
