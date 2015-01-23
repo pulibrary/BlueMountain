@@ -122,7 +122,7 @@
 							<nonSort>THE</nonSort>
 							<title>ARTISTS OF THE THEATRE OF THE FUTURE</title>
 						</titleInfo>
-						<name type="personal" authority="viaf" valueURI=" http://viaf.org/viaf/100201551">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/100201551">
 							<displayForm>Gordon Craig</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -168,7 +168,7 @@
 							<nonSort>THE</nonSort>
 							<title>REAL DRAMA IN SPAIN</title>
 						</titleInfo>
-						<name type="personal">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/8630442">
 							<displayForm>Edward Hutton</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -190,7 +190,7 @@
 							<nonSort>THE</nonSort>
 							<title>PHILOSOPHY OF ACTORS.</title>
 						</titleInfo>
-						<name type="personal">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/89798474">
 							<displayForm>Friedrich Nietzsche</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -205,6 +205,7 @@
 								<start>12</start>
 							</extent>
 						</part>
+						<!-- There is another Nietzsche quote, as well as one by Walter Pater, which are not in the record -->
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo lang="eng">
@@ -224,7 +225,7 @@
 							<nonSort>A</nonSort>
 							<title>NOTE ON MASKS</title>
 						</titleInfo>
-						<name type="personal">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/11611408">
 							<displayForm>John Balance</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -293,7 +294,7 @@
 						<titleInfo lang="eng">
 							<title>TO MADAME ELEONORA DUSE</title>
 						</titleInfo>
-						<name type="personal">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/100201551">
 							<displayForm>Gordon Craig</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -314,8 +315,8 @@
 						<titleInfo lang="eng">
 							<title>CHAPTER FROM THE BOOK ON ARCHITECTURE.</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Sebastian Serlio Bologna</displayForm>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/100163642">
+							<displayForm>Sebastian Serlio</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -413,8 +414,14 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c025">
 							<titleInfo lang="eng">
-								<title>IBSEN, THE MAN, HIS ART AND HIS SIGNIFICANCE. By Haldane Macfall. Eondon.</title>
+								<title>IBSEN, THE MAN, HIS ART AND HIS SIGNIFICANCE.</title>
 							</titleInfo>
+							<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/20181">
+								<displayForm>Haldane Macfall</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">eng</languageTerm>
@@ -428,8 +435,14 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c026">
 							<titleInfo lang="eng">
-								<title>PAPERS OP A PARIAH. Robert Hugh Benson. (Eondon. Smith, Eider &amp; Co. igof).</title>
+								<title>PAPERS OP A PARIAH.</title>
 							</titleInfo>
+							<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/67710679">
+								<displayForm>Robert Hugh Benson</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">eng</languageTerm>
@@ -443,8 +456,14 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c027">
 							<titleInfo lang="eng">
-								<title>HENRI EOUIS EE KAIN, HE EA CO ME HIE FRANCAISE Jean Jacques Olivier,</title>
+								<title>HENRI LOUIS LE KAIN, DE LA COMEDIE FRANCAISE</title>
 							</titleInfo>
+							<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/42134454">
+								<displayForm>Jean Jacques Olivier</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">eng</languageTerm>
@@ -460,6 +479,7 @@
 							<titleInfo lang="eng">
 								<title>"ARGUS" is the name of a new fortnightly magazine, which appeared at the beginning of</title>
 							</titleInfo>
+							<!-- WEIRD, NEEDS FIXING -->
 							<name type="personal">
 								<displayForm>D. N. L</displayForm>
 								<role>
@@ -535,12 +555,13 @@
 							<titleInfo lang="eng">
 								<title>" After the Practise the Theory".</title>
 							</titleInfo>
-							<name type="personal">
+							<name type="personal" authority="viaf" valueURI=" http://viaf.org/viaf/46064977">
 								<displayForm>J. S</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
 							</name>
+							<!-- J. S stands for John Semar, a pseudonym of E. Gordon Craig -->
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">eng</languageTerm>
