@@ -20,19 +20,20 @@
 					<titleInfo>
 						<nonSort>The</nonSort>
 						<title>mask</title>
+						<subTitle>a monthly journal of the art of the theatre</subTitle>
 					</titleInfo>
 					<part type="issue">
 						<detail type="volume">
-							<caption>Volume One</caption>
+							<caption>Vol.</caption>
 							<number>1</number>
 						</detail>
 						<detail type="number">
-							<caption>No. Twelve</caption>
+							<caption>No.</caption>
 							<number>12</number>
 						</detail>
 					</part>
 					<originInfo>
-						<dateIssued>February. 1909.</dateIssued>
+						<dateIssued>February 1909</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1909-02</dateIssued>
 					</originInfo>
 					<location>
@@ -52,19 +53,22 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="eng">
-							<title>Untitled</title>
+							<title>Cover</title>
 						</titleInfo>
 						<typeOfResource>still image</typeOfResource>
+						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
+						<genre type="CCS">TextContent</genre>
 					</relatedItem>
+					<!-- Ads? -->
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="eng">
-							<title>CONTENTS.</title>
+							<title>CONTENTS</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -79,14 +83,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="eng">
-							<title>SHAKESPEARE MEMORIAL A National Theatre</title>
+							<title>SHAKESPEARE MEMORIAL</title>
+							<subTitle>A National Theatre</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>A. C</displayForm>
+						<!-- To be established. -->
+						<name type="personal" authority="viaf" valueURI="">
+							<displayForm>A. C.</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
-						</name>
+						</name>						
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">eng</languageTerm>
@@ -97,9 +103,10 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<!-- Not zoned -->
 						<relatedItem type="constituent" ID="c004">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>Untitled image</title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -109,9 +116,10 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
+						<!-- Sequence? -->
 						<relatedItem type="constituent" ID="c005">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>CORTE DEL PALAZZO DVCALE DI VENETIA</title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -131,19 +139,24 @@
 						</titleInfo>
 						<name type="personal">
 							<displayForm>D. Nevile Lees</displayForm>
+							<!-- "trl" -->
 							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								<roleTerm type="code" authority="marcrelator">trl</roleTerm>
 							</role>
 						</name>
+						<!-- ctb -->
 						<name type="personal">
-							<displayForm>with an Introductory Note by Allen Carrie</displayForm>
+							<displayForm>Allen Carric</displayForm>
 							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								<roleTerm type="code" authority="marcrelator">ctb</roleTerm>
 							</role>
 						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">eng</languageTerm>
+						</language>
+						<language objectPart="translation">
+							<languageTerm authority="iso639-2b">ita</languageTerm>
 						</language>
 						<part>
 							<extent unit="page">
