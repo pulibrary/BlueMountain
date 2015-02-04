@@ -65,6 +65,43 @@ as map(*)
     map { "selected-issue-constituents" := $model("selected-issue")//mods:relatedItem[@type='constituent'] }    
 };
 
+declare function issue:thumbnails($node as node(), $model as map(*))
+as element()+
+{
+    let $scheme   := "http://",
+        $server   := "libimages.princeton.edu",
+        $prefix   := "loris2/bluemountain",
+        $region   := "full",
+        $size     := "120,",
+        $rotation := "0",
+        $quality  := "default",
+        $format   := "png"
+        
+    let $mets    := $model("selected-issue")/ancestor::mets:mets
+    for $file in $mets//mets:fileGrp[@USE='Images']/mets:file
+        let $identifier := replace(substring-after(xs:string($file/mets:FLocat/@xlink:href), 'file:///usr/share/BlueMountain/'), '/', '%2F')
+        let $uri := string-join((string-join(($scheme,$server,$prefix,$identifier,$region,$size,$rotation,$quality), '/'), $format), '.')
+    return <img src="{$uri}"/>
+};
+
+declare function issue:thumbnailURL($issue as element())
+as xs:string
+{
+    let $scheme   := "http://",
+        $server   := "libimages.princeton.edu",
+        $prefix   := "loris2/bluemountain",
+        $region   := "full",
+        $size     := "120,",
+        $rotation := "0",
+        $quality  := "default",
+        $format   := "png"
+
+    let $firstPage  := $issue/ancestor::mets:mets//mets:fileGrp[@USE='Images']/mets:file[1]
+    let $identifier := replace(substring-after(xs:string($firstPage/mets:FLocat/@xlink:href), 'file:///usr/share/BlueMountain/'), '/', '%2F')
+    let $uri := string-join((string-join(($scheme,$server,$prefix,$identifier,$region,$size,$rotation,$quality), '/'), $format), '.')
+    return $uri
+};
+
 declare %templates:wrap function issue:label($node as node(), $model as map(*))
 as element()
 {
@@ -104,6 +141,7 @@ declare %templates:wrap function issue:icon($node as node(), $model as map(*))
     let $iconpath := issue:icon-path($issueURN)
     return <img src="{$iconpath}/large.jpg" />
 };
+
 
 declare function issue:icon2($issueURN as xs:string)
 {

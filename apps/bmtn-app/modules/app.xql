@@ -6,6 +6,9 @@ import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://bluemountain.princeton.edu/config" at "config.xqm";
 
 declare namespace mods="http://www.loc.gov/mods/v3";
+declare namespace mets="http://www.loc.gov/METS/";
+declare namespace xlink="http://www.w3.org/1999/xlink";
+
 
 (:~
  : This is a sample templating function. It will be called by the templating module if
@@ -71,6 +74,7 @@ as xs:string
 
     return $protocol || $host || '/' || $servicePath || '/' || $scriptPath || $args
 }; 
+
 
 declare function app:use-title($modsrec as element())
 as element()
