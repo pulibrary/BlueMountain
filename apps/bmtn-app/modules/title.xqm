@@ -32,6 +32,7 @@ as element()*
     
 };
 
+
 declare %templates:wrap function title:label($node as node(), $model as map(*))
 as element()
 {
@@ -142,14 +143,14 @@ as element()*
         let $issuelabel := $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
         let $date       := $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
         let $veridianlink := app:veridian-url-from-bmtnid($issueURN)
-        let $icon       := issue:icon2($issueURN)
+        let $thumbURL  := issue:thumbnailURL($issue)
     order by xs:dateTime(app:w3cdtf-to-xsdate($date))
     return
    
     
     <li>
 
-        <img class="thumbnail" src="{$icon}" alt="icon"  />
+        <img class="thumbnail" src="{$thumbURL}" alt="thumbnail"  />
             <br />
         <dl class="dl-horizontal">
         <dt>Date</dt>

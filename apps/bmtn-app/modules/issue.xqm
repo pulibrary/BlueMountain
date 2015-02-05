@@ -10,6 +10,26 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
+declare function issue:pages-script($node as node(), $model as map(*), $issueURN as xs:string?)
+as element()
+{
+    let $mets    := $model("selected-issue")/ancestor::mets:mets
+    let $pageuris :=
+        for $file in $mets//mets:fileGrp[@USE='Images']/mets:file
+        return replace(substring-after(xs:string($file/mets:FLocat/@xlink:href), 'file:///usr/share/BlueMountain/'), '/', '%2F')
+
+    let $pageuris-static := ('bluemountain%2Fastore%2Fperiodicals%2Fbmtnaap%2Fissues%2F1921%2F11_01%2Fdelivery%2Fbmtnaap_1921-11_01_0001.jp2',
+                'bluemountain%2Fastore%2Fperiodicals%2Fbmtnaap%2Fissues%2F1921%2F11_01%2Fdelivery%2Fbmtnaap_1921-11_01_0002.jp2'
+                )
+     let $strings := for $s in $pageuris return "&quot;bluemountain%2F"||$s||"&quot;"
+    return
+    <script type="text/javascript">
+        var PAGES = [
+        { string-join($strings, ",")}
+        ]
+    </script>
+
+};
 
 declare %templates:wrap function issue:selected-issue($node as node(), $model as map(*), $issueURN as xs:string?)
 as map(*)? 
