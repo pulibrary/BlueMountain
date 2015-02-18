@@ -1,139 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabg">
-  <metsHdr>
-    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-      <name>Princeton University Library, Digital Initiatives</name>
-    </agent>
-    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabg</metsDocumentID>
-  </metsHdr>
-  <dmdSec ID="dmd0">
-    <mdWrap MDTYPE="DC">
-      <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                 xmlns:dc="http://purl.org/dc/elements/1.1/">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+	TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabg">
+	<metsHdr>
+		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
+			<name>Princeton University Library, Digital Initiatives</name>
+		</agent>
+		<metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabg</metsDocumentID>
+	</metsHdr>
+	<dmdSec ID="dmd0">
+		<mdWrap MDTYPE="DC">
+			<xmlData>
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+					xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabg">
+					<rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabg">
 
-            <dc:title>Der Sturm</dc:title>
+						<dc:title>Der Sturm</dc:title>
 
-          </rdf:Description>
-        </rdf:RDF>
-      </xmlData>
-    </mdWrap>
-  </dmdSec>
+					</rdf:Description>
+				</rdf:RDF>
+			</xmlData>
+		</mdWrap>
+	</dmdSec>
 
-  <dmdSec ID="dmd1">
-    <mdWrap MDTYPE="MODS">
-      <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabg</identifier>
-	  <titleInfo>
-	    <nonSort>Der </nonSort>
-	    <title>Sturm</title>
-	  </titleInfo>
-	  <name type="personal">
+	<dmdSec ID="dmd1">
+		<mdWrap MDTYPE="MODS">
+			<xmlData>
+				<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+					<identifier type="bmtn">urn:PUL:bluemountain:bmtnabg</identifier>
+					<titleInfo>
+						<nonSort>Der </nonSort>
+						<title>Sturm</title>
+					</titleInfo>
+					<name type="personal">
 	    <namePart>Walden, Herwarth</namePart>
 	    <namePart type="date">1878-1941</namePart>
 	  </name>
-	  <typeOfResource>text</typeOfResource>
-	  <genre authority="bmtn">Periodicals-Title</genre>
-	  <genre authority="marcgt">periodical</genre>
-	  <genre authority="fast">Periodicals.</genre>
-	  <originInfo>
-	    <place>
-              <placeTerm type="code" authority="marccountry">gw</placeTerm>
-	    </place>
-	    <place>
-              <placeTerm type="text">Berlin-Hallensee</placeTerm>
-	    </place>
-	    <publisher>Der Sturm</publisher>
-	    <dateIssued>1910-1932</dateIssued>
-	    <dateIssued encoding="marc" point="start">1910</dateIssued>
-	    <dateIssued encoding="marc" point="end">1932</dateIssued>
-	    <issuance>serial</issuance>
-	    <frequency authority="marcfrequency">Monthly, Apr. 1916-1932</frequency>
-	    <frequency authority="marcfrequency">Weekly, März 1910-März 1913</frequency>
-	    <frequency authority="marcfrequency">Semimonthly, März 1913-März 1916</frequency>
-	    <frequency>Monthly</frequency>
-	  </originInfo>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
-	  </language>
-	  <physicalDescription>
-	    <form authority="gmd">electronic resource</form>
-	    <reformattingQuality>access</reformattingQuality>
-	    <form authority="marccategory">electronic resource</form>
-	    <form authority="marcsmd">remote</form>
-	    <extent>1 online resource (21 v.) : ill.</extent>
-	  </physicalDescription>
-	  <note type="date/sequential designation">1. Jahrg., Nr. 1 (März 3, 1910)-3, 1932.</note>
-	  <note>Editor: Herwarth Walden.</note>
-	  <note>Title from caption.</note>
-	  <note>Subtitle varies.</note>
-	  <note>Subtitle: Wochenschrift für Kultur und die Künste, 1910-1914.</note>
-	  <note>Subtitle: Halbmonatsschrift für Kultur und die Künste, 1914-1916.</note>
-	  <note>Subtitle: Monatschrift für Kultur und die Künste, 1916-</note>
-	  <note type="numbering">Issues for 1. Jahrg. (1910/1911)-4. Jahrg (1913/1914) numbered continuously Nr. 1-203.</note>
-	  <note type="numbering">2. Jahrg. called Jahrg. 1911.</note>
-	  <note>Suppl. called Monatsbericht issued &lt;Mar. 1924-Oct.1924&gt;</note>
-	  <note>Unnumbered "Sonderheft" issued without date (1930?) with title: Stempel Lieder / Franz Zorn.</note>
-	  <subject>
-	    <geographicCode authority="marcgac">e------</geographicCode>
-	  </subject>
-	  <subject authority="fast">
-	    <temporal>1900 - 1999</temporal>
-	  </subject>
-	  <subject authority="lcsh">
-	    <topic>Arts, European</topic>
-	    <temporal>20th century</temporal>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="lcsh">
-	    <topic>Expressionism, Art</topic>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="fast">
-	    <topic>Arts, European</topic>
-	  </subject>
-	  <classification authority="lcc">AP30 .S768</classification>
-	  <location>
-	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/9c67wp201</url>
-	  </location>
-	  <relatedItem type="otherFormat">
-	    <identifier type="local">(DLC)   56054412</identifier>
-	    <identifier type="local">(OCoLC)2413205</identifier>
-	  </relatedItem>
-	  <identifier type="oclc">646834781</identifier>
-	  <recordInfo>
-	    <descriptionStandard>aacr</descriptionStandard>
-	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
-	    <recordCreationDate encoding="marc">100712</recordCreationDate>
-	    <recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
-	    <recordIdentifier source="OCoLC">ocn646834781</recordIdentifier>
-	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabg</recordIdentifier>       
-	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
-	    (Revision 1.70)</recordOrigin>
-	    <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	</mods>
-      </xmlData>
-    </mdWrap>
-  </dmdSec>
+					<typeOfResource>text</typeOfResource>
+					<genre authority="bmtn">Periodicals-Title</genre>
+					<genre authority="marcgt">periodical</genre>
+					<genre authority="fast">Periodicals.</genre>
+					<originInfo>
+						<place>
+							<placeTerm type="code" authority="marccountry">gw</placeTerm>
+						</place>
+						<place>
+							<placeTerm type="text">Berlin-Hallensee</placeTerm>
+						</place>
+						<publisher>Der Sturm</publisher>
+						<dateIssued>1910-1932</dateIssued>
+						<dateIssued encoding="marc" point="start">1910</dateIssued>
+						<dateIssued encoding="marc" point="end">1932</dateIssued>
+						<issuance>serial</issuance>
+						<frequency authority="marcfrequency">Monthly, Apr. 1916-1932</frequency>
+						<frequency authority="marcfrequency">Weekly, März 1910-März
+							1913</frequency>
+						<frequency authority="marcfrequency">Semimonthly, März 1913-März
+							1916</frequency>
+						<frequency>Monthly</frequency>
+					</originInfo>
+					<abstract> Published with decreasing frequency from 1910 to 1932, Der
+						Sturm--"the storm"--supported German Expressionism as well as Cubist and
+						Abstract art. It was affiliated with an avant-garde art gallery and
+						published postcards as well as small Sturmbücher for individual artists.
+						Selected Contributors: Herwarth Walden, Karl Kraus, Adolf Loos, Wassily
+						Kandinsky, Oskar Kokoschka, Guillaume Apollinaire, Peter Altenberg, Max
+						Brod, Richard Dehmel, Alfred Döblin, Arno Holz, Heinrich Mann, Paul
+						Scheerbart, René Schickele, Franz Marc, August Macke, Georg Schrimpf, Maria
+						Uhden, Rudolf Bauer. </abstract>
+					<language>
+						<languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+					</language>
+					<physicalDescription>
+						<form authority="gmd">electronic resource</form>
+						<reformattingQuality>access</reformattingQuality>
+						<form authority="marccategory">electronic resource</form>
+						<form authority="marcsmd">remote</form>
+						<extent>1 online resource (21 v.) : ill.</extent>
+					</physicalDescription>
+					<note type="date/sequential designation">1. Jahrg., Nr. 1 (März 3, 1910)-3,
+						1932.</note>
+					<note>Editor: Herwarth Walden.</note>
+					<note>Title from caption.</note>
+					<note>Subtitle varies.</note>
+					<note>Subtitle: Wochenschrift für Kultur und die Künste, 1910-1914.</note>
+					<note>Subtitle: Halbmonatsschrift für Kultur und die Künste, 1914-1916.</note>
+					<note>Subtitle: Monatschrift für Kultur und die Künste, 1916-</note>
+					<note type="numbering">Issues for 1. Jahrg. (1910/1911)-4. Jahrg (1913/1914)
+						numbered continuously Nr. 1-203.</note>
+					<note type="numbering">2. Jahrg. called Jahrg. 1911.</note>
+					<note>Suppl. called Monatsbericht issued &lt;Mar. 1924-Oct.1924&gt;</note>
+					<note>Unnumbered "Sonderheft" issued without date (1930?) with title: Stempel
+						Lieder / Franz Zorn.</note>
+					<subject>
+						<geographicCode authority="marcgac">e------</geographicCode>
+					</subject>
+					<subject authority="fast">
+						<temporal>1900 - 1999</temporal>
+					</subject>
+					<subject authority="lcsh">
+						<topic>Arts, European</topic>
+						<temporal>20th century</temporal>
+						<genre>Periodicals</genre>
+					</subject>
+					<subject authority="lcsh">
+						<topic>Expressionism, Art</topic>
+						<genre>Periodicals</genre>
+					</subject>
+					<subject authority="fast">
+						<topic>Arts, European</topic>
+					</subject>
+					<classification authority="lcc">AP30 .S768</classification>
+					<location>
+						<url displayLabel="electronic resource" usage="primary display"
+							note="Available online via the Blue Mountain Project. Click here to view holdings"
+							>http://arks.princeton.edu/ark:/88435/9c67wp201</url>
+					</location>
+					<relatedItem type="otherFormat">
+						<identifier type="local">(DLC) 56054412</identifier>
+						<identifier type="local">(OCoLC)2413205</identifier>
+					</relatedItem>
+					<identifier type="oclc">646834781</identifier>
+					<recordInfo>
+						<descriptionStandard>aacr</descriptionStandard>
+						<recordContentSource authority="marcorg">OCLCE</recordContentSource>
+						<recordCreationDate encoding="marc">100712</recordCreationDate>
+						<recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
+						<recordIdentifier source="OCoLC">ocn646834781</recordIdentifier>
+						<recordIdentifier source="bmtn"
+							>urn:PUL:bluemountain:dmd:bmtnabg</recordIdentifier>
+						<recordOrigin>Converted from MARCXML to MODS version 3.4 using
+							MARC21slim2MODS3-4.xsl (Revision 1.70)</recordOrigin>
+						<languageOfCataloging>
+							<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+						</languageOfCataloging>
+					</recordInfo>
+				</mods>
+			</xmlData>
+		</mdWrap>
+	</dmdSec>
 
 
-  <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-           xlink:href="urn:PUL:bluemountain:dmd:bmtnabg"/>
-  </dmdSec>
-  <fileSec>
-    <fileGrp/>
-  </fileSec>
-  <structMap>
-    <div/>
-  </structMap>
+	<dmdSec ID="dmd2">
+		<mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
+			xlink:href="urn:PUL:bluemountain:dmd:bmtnabg"/>
+	</dmdSec>
+	<fileSec>
+		<fileGrp/>
+	</fileSec>
+	<structMap>
+		<div/>
+	</structMap>
 </mets>

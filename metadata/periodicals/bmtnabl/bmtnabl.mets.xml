@@ -28,118 +28,102 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaal</identifier>
-	  <titleInfo>
-	    <title>Sturm-Bühne</title>
-	    <subTitle>Jahrbuch des Theaters der Expressionisten</subTitle>
-	  </titleInfo>
-	  <titleInfo type="alternative">
-	    <title>Jahrbuch des Theaters der Expressionisten</title>
-	  </titleInfo>
-	  <titleInfo type="uniform">
-	    <title>Sturm</title>
-	  </titleInfo>
-	  <name type="personal">
-	    <namePart>Schreyer, Lothar</namePart>
-	    <namePart type="date">1886-1966</namePart>
-	  </name>
-	  <name type="personal">
-	    <namePart>Walden, Herwarth</namePart>
-	    <namePart type="date">1878-1941</namePart>
-	  </name>
-	  <typeOfResource>text</typeOfResource>
-	  <genre authority="bmtn">Periodicals-Title</genre>
-	  <genre authority="marcgt">periodical</genre>
-	  <genre authority="fast">Criticism, interpretation, etc.</genre>
-	  <genre authority="fast">Periodicals.</genre>
-	  <originInfo>
-	    <place>
-              <placeTerm type="code" authority="marccountry">gw</placeTerm>
-	    </place>
-	    <place>
-              <placeTerm type="text">Berlin</placeTerm>
-	    </place>
-	    <publisher>Verlag Der Sturm</publisher>
-	    <dateIssued>1918-1919</dateIssued>
-	    <dateIssued encoding="marc" point="start">1918</dateIssued>
-	    <dateIssued encoding="marc" point="end">1919</dateIssued>
-	    <issuance>serial</issuance>
-	    <frequency authority="marcfrequency">Irregular, Sept. 1918-Okt. 1919</frequency>
-	    <frequency authority="marcfrequency">Monthly, Jan.-März 1918</frequency>
-	    <frequency>Unknown</frequency>
-	  </originInfo>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
-	  </language>
-	  <physicalDescription>
-	    <form authority="gmd">electronic resource</form>
-	    <reformattingQuality>access</reformattingQuality>
-	    <form authority="marccategory">electronic resource</form>
-	    <form authority="marcsmd">remote</form>
-	  </physicalDescription>
-	  <abstract>Documents the original Expressionists' attempts to expand their efforts from the figurative into the theatrical arts.</abstract>
-	  <note type="date/sequential designation">Print began with 1. Folge (Jan. 1918); ceased with 8. Folge (Okt. 1919).</note>
-	  <note>Editor: Herwarth Walden; some sources list also: Lothar Schreyer.</note>
-	  <note type="numbering">Sept. 1918 is a combined issue (4./5. Folge).</note>
-	  <subject>
-	    <geographicCode authority="marcgac">e-gx---</geographicCode>
-	  </subject>
-	  <subject authority="fast">
-	    <temporal>1900 - 1999</temporal>
-	  </subject>
-	  <subject authority="lcsh">
-	    <topic>Theater</topic>
-	    <geographic>Germany</geographic>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="lcsh">
-	    <topic>Expressionism</topic>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="lcsh">
-	    <topic>German drama</topic>
-	    <temporal>20th century</temporal>
-	    <topic>History and criticism</topic>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="fast">
-	    <topic>Expressionism</topic>
-	  </subject>
-	  <subject authority="fast">
-	    <topic>German drama</topic>
-	  </subject>
-	  <subject authority="fast">
-	    <topic>Theater</topic>
-	  </subject>
-	  <subject authority="fast">
-	    <geographic>Germany</geographic>
-	  </subject>
-	  <classification authority="lcc">PN2004</classification>
-	  <location>
-	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/7m01bn07j</url>
-	  </location>
-	  <relatedItem type="otherFormat" displayLabel="Print version:">
-	    <titleInfo>
-              <title>Sturm-Bühne</title>
-	    </titleInfo>
-	    <identifier type="local">(OCoLC)38026722</identifier>
-	  </relatedItem>
-	  <identifier type="oclc">760134027</identifier>
-	  <recordInfo>
-	    <descriptionStandard>aacr</descriptionStandard>
-	    <recordContentSource authority="marcorg">Nz</recordContentSource>
-	    <recordCreationDate encoding="marc">111109</recordCreationDate>
-	    <recordChangeDate encoding="iso8601">20141212022137.0</recordChangeDate>
-	    <recordIdentifier source="OCoLC">ocn760134027</recordIdentifier>
-	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabl</recordIdentifier>
-	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
-	    (Revision 1.70)</recordOrigin>
-	    <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	</mods>
+      	<mods xmlns="http://www.loc.gov/mods/v3" xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+      		<identifier type="bmtn">urn:PUL:bluemountain:bmtnabl</identifier>
+      		<titleInfo>
+      			<title>Proverbe</title>
+      		</titleInfo>
+      		<titleInfo usage="primary">
+      			<title>Invention et proverbe</title>
+      		</titleInfo>
+      		<titleInfo type="uniform">
+      			<title>Invention et proverbe</title>
+      		</titleInfo>
+      		<typeOfResource>text</typeOfResource>
+      		<genre authority="">Photographs, Original.</genre>
+      		<originInfo script="Latn">
+      			<place>
+      				<placeTerm type="text">Paris</placeTerm>
+      			</place>
+      			<publisher>Paul Eluard</publisher>
+      			<dateIssued>1920-1921</dateIssued>
+      			<dateIssued encoding="marc" point="start">1920</dateIssued>
+      			<dateIssued encoding="marc" point="end">1921</dateIssued>
+      		</originInfo>
+      		<abstract>
+      			Each issue of Proverbe, a journal co-founded by French Dadaists, was less than 4 pages, publishing experimental poetry with erratic typography in a pamphlet-like form.
+      			Selected Contributors: Paul Éluard, André Breton, Tristan Tzara, Francis Picabia, Jean Paulhan, Philippe Soupault, Louis Aragon, Georges Ribemont-Dessaignes, Paul Dermée, Céline Arnauld.
+      		</abstract>
+      		<language>
+      			<languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+      		</language>
+      		<physicalDescription>
+      			<extent>6 no. : ill. ; 23 cm.</extent>
+      		</physicalDescription>
+      		<note type="date/sequential designation">No 1 (1 fév, 1920)-no 6 (juil. 1921)</note>
+      		<note>"Feuille mensuelle."</note>
+      		<note>No. 6 also has title: L'Invention et proverbe.</note>
+      		<note>"Numero speciale" matted and framed.</note>
+      		<note>
+      			Includes: signed letter from Eluard to Eduard Dujardin; poster for Excursions et visites Dada; two original photographs depicting Breton, Charchoune, Rigaud, Soupault, and Tzara; original drawing by Louis Favre of Celine Arnauld; original prospectus and subscription bulletin for Proverbe; Max Ernst exhibition invitation; and press clippings. Bound with collector's manuscript describing the importance of Proverbe, and original dealer's description for this copy.
+      		</note>
+      		<note type="numbering">
+      			Includes an undated and unnumbered "numero special d'art et de poesie."
+      		</note>
+      		<note type="ownership">GAX copy: Bookplate of Y.S. Bourgoin. NjP</note>
+      		<subject authority="lcsh">
+      			<topic>Dadaism</topic>
+      			<genre>Periodicals</genre>
+      		</subject>
+      		<subject authority="lcsh">
+      			<topic>Arts, Modern</topic>
+      			<temporal>20th century</temporal>
+      			<geographic>France</geographic>
+      			<genre>Periodicals</genre>
+      		</subject>
+      		<location>
+      			<url displayLabel="electronic resource" usage="primary display">http://arks.princeton.edu/ark:/88435/mp48sf15b</url>
+      		</location>
+      		<!--
+IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
+-->
+      		<location>
+      			<physicalLocation type="text">
+      				<!-- FILL ME IN. Princeton University. Library. ...  -->
+      			</physicalLocation>
+      			<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+      			<holdingSimple>
+      				<copyInformation>
+      					<subLocation>sax</subLocation>
+      					<!-- DELETE COPY NUMBER BELOW -->
+      					<shelfLocator>NX600.D3 P76q</shelfLocator>
+      				</copyInformation>
+      			</holdingSimple>
+      		</location>
+      		<location>
+      			<physicalLocation type="text">
+      				<!-- FILL ME IN. Princeton University. Library. ...  -->
+      			</physicalLocation>
+      			<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+      			<holdingSimple>
+      				<copyInformation>
+      					<subLocation>gax</subLocation>
+      					<!-- DELETE COPY NUMBER BELOW -->
+      					<shelfLocator>2009-0178N</shelfLocator>
+      				</copyInformation>
+      			</holdingSimple>
+      		</location>
+      		<recordInfo>
+      			<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabl</recordIdentifier>
+      			<recordContentSource authority="marcorg">NjP</recordContentSource>
+      			<recordOrigin>
+      				http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=4818266
+      			</recordOrigin>
+      			<languageOfCataloging>
+      				<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      			</languageOfCataloging>
+      		</recordInfo>
+      	</mods>
       </xmlData>
     </mdWrap>
   </dmdSec>

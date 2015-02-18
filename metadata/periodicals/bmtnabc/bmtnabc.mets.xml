@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-      TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+  TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
   <metsHdr>
     <agent ROLE="CREATOR" TYPE="ORGANIZATION">
       <name>Princeton University Library, Digital Initiatives</name>
@@ -13,11 +13,11 @@
     <mdWrap MDTYPE="DC">
       <xmlData>
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                 xmlns:dc="http://purl.org/dc/elements/1.1/">
+          xmlns:dc="http://purl.org/dc/elements/1.1/">
 
           <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabc">
 
-            <dc:title></dc:title>
+            <dc:title/>
 
           </rdf:Description>
         </rdf:RDF>
@@ -29,29 +29,29 @@
     <mdWrap MDTYPE="MODS">
       <xmlData>
 
-	<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
-	      xmlns="http://www.loc.gov/mods/v3"
-	      xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
+          xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
-	  <genre authority="bmtn">Periodicals-Title</genre>
+          <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
+          <genre authority="bmtn">Periodicals-Title</genre>
 
-	  <titleInfo>
+          <titleInfo>
             <nonSort>La</nonSort>
             <title>Chronique musicale</title>
-	  </titleInfo>
-	  <titleInfo usage="primary">
+          </titleInfo>
+          <titleInfo usage="primary">
             <nonSort>La</nonSort>
             <title>chronique musicale</title>
-	  </titleInfo>
-	  <name type="personal">
+            <subTitle>revue bi-mensuelle de l'art ancien et moderne</subTitle>
+          </titleInfo>
+          <name type="personal">
             <namePart>Heulhard, Arthur</namePart>
             <namePart type="date">1849-1920</namePart>
 	  </name>
-	  <typeOfResource>text</typeOfResource>
-	  <genre authority="fast">Periodicals.</genre>
-	  <originInfo script="Latn">
+          <typeOfResource>text</typeOfResource>
+          <genre authority="fast">Periodicals.</genre>
+          <originInfo script="Latn">
             <place>
               <placeTerm type="text">Paris</placeTerm>
             </place>
@@ -59,31 +59,39 @@
             <dateIssued>1873-1876]</dateIssued>
             <dateIssued encoding="marc" point="start">1873</dateIssued>
             <dateIssued encoding="marc" point="end">1876</dateIssued>
-	  </originInfo>
-	  <language>
+          </originInfo>
+          <abstract>
+	    La Chronique musicale was a nationalist journal that supported French music and literature in the wake of the Franco-Prussian war.
+	    
+	    Selected Contributors: Arthur Heulhard, Charles Nuitter, Théodore de Lajarte, Adolphe Jullien.
+	    
+	  </abstract>
+          <language>
             <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-	  </language>
-	  <physicalDescription>
+          </language>
+          <physicalDescription>
             <reformattingQuality>access</reformattingQuality>
             <extent>1 online resource (11 v.) : ill., music, ports.</extent>
-	  </physicalDescription>
-	  <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
-	  <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
-	  <note>Title from caption.</note>
-	  <note>Editor: Arthur Heulhard.</note>
-	  <subject authority="lcsh">
+          </physicalDescription>
+          <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
+          <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
+          <note>Title from caption.</note>
+          <note>Editor: Arthur Heulhard.</note>
+          <subject authority="lcsh">
             <topic>Music</topic>
             <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="fast">
+          </subject>
+          <subject authority="fast">
             <topic>Music</topic>
-	  </subject>
-	  <location>
-            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/z316q2966</url>
-	  </location>
-	  <relatedItem type="otherFormat"/>
-	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-	  <location>
+          </subject>
+          <location>
+            <url displayLabel="electronic resource" usage="primary display"
+              note="Available online via the Blue Mountain Project. Click here to view holdings"
+              >http://arks.princeton.edu/ark:/88435/z316q2966</url>
+          </location>
+          <relatedItem type="otherFormat"/>
+          <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+          <location>
             <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
             <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
             <holdingSimple>
@@ -93,16 +101,16 @@
                 <shelfLocator>Electronic Resource</shelfLocator>
               </copyInformation>
             </holdingSimple>
-	  </location>
-	  <recordInfo>
+          </location>
+          <recordInfo>
             <recordContentSource authority="marcorg">NjP</recordContentSource>
             <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=8870192</recordOrigin>
             <languageOfCataloging>
               <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
             </languageOfCataloging>
-	  </recordInfo>
+          </recordInfo>
 
-	  <abstract>Published after the 1871 French defeat in the
+          <abstract>Published after the 1871 French defeat in the
 	  Franco-Prussian War, this journal reflects new currents in
 	  French thought focusing more on French music and its history
 	  and less on German (particularly prevailing Wagnerism). Such
@@ -122,7 +130,7 @@
 
 
 
-	</mods>
+        </mods>
 
       </xmlData>
     </mdWrap>
@@ -131,7 +139,7 @@
 
   <dmdSec ID="dmd2">
     <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-           xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
+      xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
   </dmdSec>
   <fileSec>
     <fileGrp/>

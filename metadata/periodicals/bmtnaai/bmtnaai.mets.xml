@@ -28,11 +28,17 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+      	<mods xmlns="http://www.loc.gov/mods/v3"
+      		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      		xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaai</identifier>
 	  <titleInfo>
 	    <title>Poesia</title>
 	  </titleInfo>
+      		<titleInfo usage="primary">
+      			<title>Poesia</title>
+      			<subTitle>rassegna internazionale</subTitle>
+      		</titleInfo>
 	  <name type="personal">
 	    <namePart>Benelli, Sem</namePart>
 	    <namePart type="date">1877-1949</namePart>
@@ -60,6 +66,10 @@
 	    <issuance>serial</issuance>
 	    <frequency>Monthly</frequency>
 	  </originInfo>
+		<abstract>
+			Poesia, published first by Marinetti and then reprised in 1920 by Mario Dessy, marked the transition from Italy's engagement with an international Symbolist movement to an increasingly nationalistic Futurism.
+			Selected Contributors: F.T. Marinetti, Mario Dessy, Alfred Jarry, James Joyce, Corrado Govoni, Paolo Buzzi, Enrico Cavacchioli, W.B. Yeats, Fortunato Depero, Luigi Russolo, Emilio Notte.
+		</abstract>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">ita</languageTerm>
 	  </language>

@@ -28,7 +28,9 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+      	<mods xmlns="http://www.loc.gov/mods/v3"
+      		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      		xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaau</identifier>
 	  <titleInfo usage="primary">
 	    <nonSort>The </nonSort>
@@ -64,6 +66,10 @@
 	    <frequency authority="marcfrequency">Monthly, 1908-Feb. 1909</frequency>
 	    <frequency>Quarterly</frequency>
 	  </originInfo>
+      		<abstract>
+      			Over its nearly twenty-year run, The Mask published essays on theater and the arts and book reviews. It was heavily managed by the multi-talented Edward Gordon Craig, who used dozens of pseudonyms when writing essays and comments.
+      			Selected Contributors: Edward Gordon Craig, Rupert Brooke, Hugo von Hofmannsthal, Jean-Jacques Olivier, Ellen Terry.
+      		</abstract>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	  </language>

@@ -28,11 +28,17 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+      	<mods xmlns="http://www.loc.gov/mods/v3"
+      		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      		xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaz</identifier>
 	  <titleInfo>
 	    <title>Sic</title>
 	  </titleInfo>
+      		<titleInfo usage="primary">
+      			<title>Sic</title>
+      			<subTitle>sons, idées, couleurs, forms</subTitle>
+      		</titleInfo>
 	  <name type="personal">
 	    <namePart>Albert-Birot, Pierre</namePart>
 	    <role>
@@ -61,6 +67,11 @@
 	    <frequency authority="marcfrequency">Monthly, Jan. 1916-June 1918</frequency>
 	    <frequency>Semimonthly</frequency>
 	  </originInfo>
+      		<abstract>
+      			SIC ("Sons, Idées, Couleurs, Forms") was a vocal advocate of Futurism and Cubism. In the last few years of its run, SIC supported emerging figures of Dada and Surrealism.
+      			Selected Contributors: Pierre Albert-Birot, Guillaume Apollinaire, Giacomo Balla, Jean Cocteau, Fortunato Depero, Enrico Prampolini, Gino Severini, Louis Aragon, Gino Cantarelli, Paul Dermée, Pierre Drieu La Rochelle, Raymond Radiguet, Philippe Soupault, Tristan Tzara, Igor Stravinsky.
+      			
+      		</abstract>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
