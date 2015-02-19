@@ -23,6 +23,7 @@
 						<subTitle>a monthly journal of the art of the theatre</subTitle>
 					</titleInfo>
 					<part type="issue">
+						<!-- Normalized -->
 						<detail type="volume">
 							<caption>Vol.</caption>
 							<number>1</number>
@@ -55,6 +56,7 @@
 						<titleInfo lang="eng">
 							<title>Cover</title>
 						</titleInfo>
+						<!-- Added "text" -->
 						<typeOfResource>still image</typeOfResource>
 						<typeOfResource>text</typeOfResource>
 						<part>
@@ -130,21 +132,28 @@
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 					</relatedItem>
+					<!-- Should this item come first in sequence and contain the preceding relatedItem as a subitem? -->
 					<relatedItem type="constituent" ID="c006">
 						<titleInfo lang="eng">
 							<title>VENETIAN COSTUME</title>
+							<subTitle>TRANSLATED FROM THE BOOK OF CESARE VECELLIO</subTitle>
 						</titleInfo>
-						<titleInfo lang="eng">
-							<title>TRANSLATED FROM THE BOOK OF CESARE VECELLIO</title>
-						</titleInfo>
-						<name type="personal">
+						<!-- Name to be established -->						
+						<name type="personal" authority="viaf" valueURI="">
 							<displayForm>D. Nevile Lees</displayForm>
-							<!-- "trl" -->
+							<!-- trl -->
 							<role>
 								<roleTerm type="code" authority="marcrelator">trl</roleTerm>
 							</role>
 						</name>
-						<!-- ctb -->
+						<!-- Added orginal author -->
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/17378621">
+							<displayForm>CESARE VECELLIO</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<!-- ctb (contributor) -->
 						<name type="personal">
 							<displayForm>Allen Carric</displayForm>
 							<role>
@@ -155,15 +164,18 @@
 						<language>
 							<languageTerm authority="iso639-2b">eng</languageTerm>
 						</language>
+						<!-- original lang -->
 						<language objectPart="translation">
 							<languageTerm authority="iso639-2b">ita</languageTerm>
 						</language>
+						<!-- Stopped, 1/29 -->
 						<part>
 							<extent unit="page">
 								<list>7-12</list>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<!-- Same as #c005 -->
 						<relatedItem type="constituent" ID="c007">
 							<titleInfo lang="eng">
 								<title>It is useless to study costume without regard to the place in which it has been worn, yet how many costume books are there with innumerable examples of costumes without its necessarry architectural background. Costume is the fringe of Architecture. Vecellio seems to have realised this aud has placed several engravings to serve as backgrounds for his costume. The above cut is one of these.</title>
@@ -176,9 +188,12 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
+						<!-- Images not zoned -->
+						<!-- Added titles -->
 						<relatedItem type="constituent" ID="c008">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>GIOVANE NOBILE</title>
+								<subTitle>Young Venetian Noble</subTitle>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -190,7 +205,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>NOBILE PER CASA</title>
+								<subTitle>Noble in Indoor Costume</subTitle>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -202,7 +218,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>NOBILI D'INVERNO</title>
+								<subTitle>Noble in Winter Costume</subTitle>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -214,7 +231,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>CITTADINI, O MERCANTI</title>
+								<subTitle>Venetian Citizens or Merchants</subTitle>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -226,7 +244,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c012">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>DI VENETIA, ET ALTROVE</title>
+								<subTitle>Venetian Woman</subTitle>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -238,7 +257,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c013">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>SENATORI, &amp; CAVALLIERI</title>
+								<subTitle>Modern Senator or Cavalier</subTitle>								
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -250,7 +270,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c014">
 							<titleInfo lang="eng">
-								<title>Design from W. Rolewinck fasciculus temporum, 24 Nov. 1480.</title>
+								<title>Venetiarum ciuitas</title>
+								<subTitle>Design from W. Rolewinck fasciculus temporum, 24 Nov. 1480</subTitle>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -263,9 +284,11 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c015">
 						<titleInfo lang="eng">
-							<title>44 |t is in and through Symbols that man, consciously or unconsciously, lives, works, and</title>
+							<!-- <title>It is in and through Symbols that man, consciously or unconsciously, lives, works, and</title> -->
+							<!-- Devised title -->
+							<title>Thomas Carlyle quotation</title>
 						</titleInfo>
-						<name type="personal">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/39390702">
 							<displayForm>CARLYLE</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -281,9 +304,10 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<!-- Not zoned. Decorative image? -->
 						<relatedItem type="constituent" ID="c016">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>Untitled image</title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -298,25 +322,27 @@
 						<titleInfo lang="eng">
 							<nonSort>THE</nonSort>
 							<title>WHITE FAN</title>
-						</titleInfo>
-						<titleInfo lang="eng">
-							<title>An Interlude:</title>
-						</titleInfo>
-						<name type="personal">
+							<!-- Changed from title to subTitle -->
+							<subTitle>An Interlude</subTitle>
+						</titleInfo>						
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/103209512">
 							<displayForm>Hugo Von Hofmansthal</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Translated by Maurice Magnus</displayForm>
+						<name type="personal" authority="viaf" valueURI=" http://viaf.org/viaf/35214411">
+							<displayForm>Maurice Magnus</displayForm>
 							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								<roleTerm type="code" authority="marcrelator">trl</roleTerm>
 							</role>
 						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">eng</languageTerm>
+						</language>
+						<language objectPart="translation">
+							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>
 						<part>
 							<extent unit="page">
@@ -329,8 +355,8 @@
 						<titleInfo lang="eng">
 							<title>TWO THEATRES</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Leon de Schildenfeld Schiller</displayForm>
+						<name type="personal"  authority="viaf" valueURI="http://viaf.org/viaf/29574443">
+							<displayForm>León de Schildenfeld Schiller</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -351,7 +377,8 @@
 							<nonSort>A</nonSort>
 							<title>NOTE ON AN OLD ENGRAVING.</title>
 						</titleInfo>
-						<name type="personal">
+						<!-- Name to be established -->
+						<name type="personal" authority="viaf" valueURI="">
 							<displayForm>Allen Carric</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -367,9 +394,10 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<!-- Not zoned -->
 						<relatedItem type="constituent" ID="c020">
 							<titleInfo lang="eng">
-								<title>Untitled</title>
+								<title>Untitled image</title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -384,7 +412,7 @@
 						<titleInfo lang="eng">
 							<title>ON TOLERANCE IN DRAMATIC CRITICISM.</title>
 						</titleInfo>
-						<name type="personal">
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/100201551">
 							<displayForm>Gordon Craig</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -404,7 +432,8 @@
 					<relatedItem type="constituent" ID="c022">
 						<titleInfo lang="eng">
 							<nonSort>THE</nonSort>
-							<title>EIGHTH COMMANDMENT. INTERNATIONAL COPYRIGHT.</title>
+							<title>EIGHTH COMMANDMENT</title>
+							<subTitle>INTERNATIONAL COPYRIGHT</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>JOHN BALANCE</displayForm>
