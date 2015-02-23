@@ -90,10 +90,10 @@
                     <number><xsl:value-of select="Issue__integer_" /></number>
                     <caption><xsl:value-of select="Issue__label_" /></caption>
                 </detail>
+                <dateIssued><xsl:value-of select="Date__label_" /></dateIssued>
             </part>
             <originInfo>
-                <dateIssued><xsl:value-of select="Date__label_" /></dateIssued>
-                <dateIssued keyDate="yes" encoding="iso8601"><xsl:value-of select="Date__yyyy-mm-dd_" /></dateIssued>
+	      <dateIssued keyDate="yes" encoding="iso8601"><xsl:value-of select="Date__yyyy-mm-dd_" /></dateIssued>
             </originInfo>
             <location>
                 <physicalLocation type="text">
