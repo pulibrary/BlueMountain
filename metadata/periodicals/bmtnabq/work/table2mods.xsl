@@ -35,6 +35,20 @@
             '/issues/',
             replace($keyDate, '-', '/'),
             '_',
+            format-number(xs:integer($issueString), '00')
+            )"/>
+    </xsl:function>
+    
+    <xsl:function name="local:issueID">
+        <xsl:param name="bmtnID" as="xs:string"/>
+        <xsl:param name="keyDate" as="xs:string" />
+        <xsl:param name="issueString" as="xs:string"/>
+        
+        <xsl:value-of select="concat(
+            $bmtnID,
+            '_',
+            $keyDate,
+            '_',
             format-number(xs:integer($issueString), '00'),
             '.mods.xml'
             )"/>
@@ -42,7 +56,8 @@
     
     <xsl:template match="/">
         <xsl:for-each select="root/row">
-            <xsl:result-document href="{local:pathname($bmtnid, ./Date__yyyy-mm-dd_, ./veridian_issue)}">
+            <xsl:variable name="path" select="concat(local:pathname($bmtnid, ./Date__yyyy-mm-dd_, ./veridian_issue), '/', local:issueID($bmtnid, ./Date__yyyy-mm-dd_, ./veridian_issue))"/>
+            <xsl:result-document href="{$path}">
                 <xsl:apply-templates select="."/>
             </xsl:result-document>
         </xsl:for-each>
