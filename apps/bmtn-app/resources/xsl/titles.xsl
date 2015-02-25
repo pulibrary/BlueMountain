@@ -36,7 +36,14 @@
                         </dd>
                         <dt>Place Published</dt>
                         <dd>
-                            <xsl:apply-templates select="mods:originInfo/mods:place/mods:placeTerm[@type='text']"/>
+                            <xsl:choose>
+                                <xsl:when test="mods:originInfo/mods:place/mods:placeTerm[@type='text' and @lang='en']">
+                                    <xsl:apply-templates select="mods:originInfo/mods:place/mods:placeTerm[@type='text'  and @lang='en']"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates select="mods:originInfo/mods:place/mods:placeTerm[@type='text'][1]"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </dd>
                     </dl>
                     <ul>
