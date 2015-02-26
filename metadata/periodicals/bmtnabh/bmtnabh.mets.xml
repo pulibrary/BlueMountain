@@ -28,98 +28,108 @@
   <dmdSec ID="dmd1">
     <mdWrap MDTYPE="MODS">
       <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+	<mods xmlns="http://www.loc.gov/mods/v3" xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
 	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnabh</identifier>
 	  <titleInfo>
-	    <nonSort>La </nonSort>
-	    <title>revue musicale</title>
+	    <title>S.I.M. revue musicale mensuelle</title>
 	  </titleInfo>
+	  <titleInfo type="alternative">
+	    <title>SIM revue musicale mensuelle</title>
+	  </titleInfo>
+	  <titleInfo type="alternative">
+	    <title>Revue musicale mensuelle</title>
+	  </titleInfo>
+	  <name type="corporate">
+	    <namePart>International Musical Society</namePart>
+	  </name>
+	  <name type="corporate">
+	    <namePart>Société française des amis de la musique</namePart>
+	  </name>
 	  <typeOfResource>text</typeOfResource>
-	  <genre authority="bmtn">Periodicals-Title</genre>
-	  <genre authority="marcgt">review</genre>
-	  <genre authority="fast">Criticism, interpretation, etc.</genre>
 	  <genre authority="fast">Periodicals.</genre>
-	  <originInfo>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <originInfo script="Latn">
 	    <place>
-              <placeTerm type="code" authority="marccountry">fr</placeTerm>
+	      <placeTerm type="text">Paris</placeTerm>
 	    </place>
-	    <place>
-              <placeTerm type="text">Paris</placeTerm>
-	    </place>
-	    <publisher>H. Welter</publisher>
-	    <dateIssued>1902-1912</dateIssued>
-	    <dateIssued encoding="marc" point="start">1902</dateIssued>
-	    <dateIssued encoding="marc" point="end">1912</dateIssued>
-	    <issuance>serial</issuance>
-	    <frequency authority="marcfrequency">Semimonthly, July 1903-Jan. 1912</frequency>
-	    <frequency authority="marcfrequency">Monthly, Oct. 1902-June 1903</frequency>
-	    <frequency>Unknown</frequency>
+	    <publisher>S.I.M.</publisher>
+	    <dateIssued>1910-1911</dateIssued>
+	    <dateIssued encoding="marc" point="start">1905</dateIssued>
+	    <dateIssued encoding="marc" point="end">1914</dateIssued>
 	  </originInfo>
-		<abstract>
-			The representative journal of the Société international de musique (S.I.M.), Le Mercure musicale published articles on experimental contemporary music, from Stravinsky to Schoenberg.
-			Selected Contributors: Louis Laloy, Jean Marnold, Claude Debussy, Vincent d'Indy, Pierre Aubry, Gaston Carraud, Jean Chantavoine, M Daubresse, Jules Echorcheville, Henry Expert, Henry Gauthier-Villars, Fr. De Lacerda, Lionel de la Laurencie, Gustave Lyon, Octave Maus, André Pirro, Armande de Polignac, Romain Rolland, Gustave Samazeuilh, Martial Teneo, and Colette Willy.
-		</abstract>
+	  <abstract>
+	    The representative journal of the Société international de musique
+	    (S.I.M.), Le Mercure musicale published articles on experimental
+	    contemporary music, from Stravinsky to Schoenberg.  Selected
+	    Contributors: Louis Laloy, Jean Marnold, Claude Debussy, Vincent
+	    d'Indy, Pierre Aubry, Gaston Carraud, Jean Chantavoine, M
+	    Daubresse, Jules Echorcheville, Henry Expert, Henry
+	    Gauthier-Villars, Fr. De Lacerda, Lionel de la Laurencie, Gustave
+	    Lyon, Octave Maus, André Pirro, Armande de Polignac, Romain
+	    Rolland, Gustave Samazeuilh, Martial Teneo, and Colette Willy.
+	  </abstract>
 	  <language>
 	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
 	  </language>
 	  <physicalDescription>
-	    <form authority="gmd">electronic resource</form>
 	    <reformattingQuality>access</reformattingQuality>
-	    <form authority="marccategory">electronic resource</form>
-	    <form authority="marcsmd">remote</form>
-	    <extent>1 online resource (11 v.) : ill. </extent>
+	    <extent>1 online resource (2 v.) : ill.</extent>
 	  </physicalDescription>
-	  <note type="date/sequential designation">2. année, no 10 (oct. 1902)-12. année, no 1 (1. janv. 1912).</note>
-	  <note>Includes musical examples.</note>
-	  <subject>
-	    <geographicCode authority="marcgac">e-fr---</geographicCode>
-	  </subject>
+	  <note type="date/sequential designation">
+	    6e année, no. 1 (15 jan. 1910)-7e année, no. 12 (15 déc. 1911).
+	  </note>
+	  <note type="numbering">
+	    Also called 6e année, sem. 1-2; 7e année, sem. 1-2.
+	  </note>
+	  <note>
+	    Issued by: International Musical Society. Section de Paris, and, in 1910: Société française des amis de la musique.
+	  </note>
 	  <subject authority="lcsh">
 	    <topic>Music</topic>
-	    <geographic>France</geographic>
-	    <topic>History and criticism</topic>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="lcsh">
-	    <topic>Music</topic>
-	    <topic>History and criticism</topic>
 	    <genre>Periodicals</genre>
 	  </subject>
 	  <subject authority="fast">
 	    <topic>Music</topic>
 	  </subject>
-	  <subject authority="fast">
-	    <geographic>France</geographic>
-	  </subject>
-	  <classification authority="lcc">ML5 .R3815</classification>
 	  <location>
-	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/x633f241p</url>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/5m60qt286</url>
 	  </location>
-	  <relatedItem type="otherFormat">
-	    <identifier type="local">(OCoLC)5742228</identifier>
-	  </relatedItem>
+	  <relatedItem type="otherFormat"/>
 	  <relatedItem type="preceding">
 	    <titleInfo>
-              <title>Revue d'histoire et de critique musicales</title>
+	      <title>Revue musicale S.I.M. (Paris, France : 1909)</title>
 	    </titleInfo>
 	  </relatedItem>
 	  <relatedItem type="succeeding">
 	    <titleInfo>
-              <title>Revue musicale S.I.M. (Paris, France : 1912)</title>
+	      <title>Revue musicale S.I.M. (Paris, France : 1912)</title>
 	    </titleInfo>
 	  </relatedItem>
-	  <identifier type="oclc">680033467</identifier>
+	  <!--
+	      IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED
+	  -->
+	  <location>
+	    <physicalLocation type="text">
+	      <!-- FILL ME IN. Princeton University. Library. ...  -->
+	    </physicalLocation>
+	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	    <holdingSimple>
+	      <copyInformation>
+		<subLocation>elf1</subLocation>
+		<!-- DELETE COPY NUMBER BELOW -->
+		<shelfLocator>Electronic Resource</shelfLocator>
+	      </copyInformation>
+	    </holdingSimple>
+	  </location>
 	  <recordInfo>
-	    <descriptionStandard>aacr</descriptionStandard>
-	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
-	    <recordCreationDate encoding="marc">101108</recordCreationDate>
-	    <recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
-	    <recordIdentifier source="OCoLC">ocn680033467</recordIdentifier>
-	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabh</recordIdentifier>       
-	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
-	    (Revision 1.70)</recordOrigin>
+	    <recordIdentifier
+		source="bmtn">urn:PUL:bluemountain:dmd:bmtnabh</recordIdentifier>
+	    <recordContentSource authority="marcorg">NjP</recordContentSource>
+	    <recordOrigin>
+	      http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=8870821
+	    </recordOrigin>
 	    <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
 	    </languageOfCataloging>
 	  </recordInfo>
 	</mods>
