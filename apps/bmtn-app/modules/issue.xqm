@@ -10,6 +10,9 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
+(:~
+ : Generate a javascript variable, PAGES, to be used in conjunction with Open Seadragon.
+ :)
 declare function issue:pages-script($node as node(), $model as map(*), $issueURN as xs:string?)
 as element()
 {
