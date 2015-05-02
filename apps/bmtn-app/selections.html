@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-2">
             <h1>
                 <span>Selection Form</span>
             </h1>
             <form action="">
-                <label for="byline">Byline to search for: </label>
+                <label for="byline">Byline contains: </label>
                 <input name="byline" id="byline"/>
+                <br/>
+                <label for="title">Title contains: </label>
+                <input name="title" id="title"/>
+                <br/>
+                <input type="submit" value="submit"/>
             </form>
         </div>
-        <div class="col-md-6" data-template="selections:selected-items">
+        <div class="col-md-10" data-template="selections:selected-items">
             <h1>
                 <span>Results</span>
             </h1>
-            <ol data-template="selections:selected-items-listing">
+            <ol class="selection-list" data-template="selections:selected-items-listing">
                 <li>
                     <span class="itemTitle">
                         <a href="">Item Title</a>

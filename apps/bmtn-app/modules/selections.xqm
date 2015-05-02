@@ -10,7 +10,9 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
-declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), $byline as xs:string?)
+declare %templates:wrap function selections:selected-items-old($node as node(), $model as map(*), 
+$byline as xs:string?
+)
 as map(*)? 
 {
     if ($byline) then
@@ -20,12 +22,29 @@ as map(*)?
      else ()
 };
 
+declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+$byline as xs:string?,
+$title as xs:string?
+)
+as map(*)? 
+{
+    let $items :=
+           if ($byline and $title) then
+      collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $byline) and ft:query(.//mods:titleInfo, $title)]
+    else if ($byline) then
+        collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $byline)]
+    else if ($title) then
+        collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $title)]
+    else ()
+    return map { "selected-items" := $items }
+};
+
 declare  %templates:wrap function selections:selected-items-listing($node as node(), $model as map(*))
 as element()
 {
     let $items := $model("selected-items")
     return
-        <ol>
+        <ol class="selection-list">
             {
                 for $item in $items return
                 <li>{ selections:formatted-item($item) }</li>
@@ -64,6 +83,7 @@ declare function selections:formatted-item($item as element())
         then concat("No. ", $journal/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1])
         else ()
     let $date := $journal/mods:originInfo/mods:dateIssued[@keyDate = 'yes']
+    let $issueLink := app:veridian-url-from-bmtnid($journal/mods:identifier[@type='bmtn'])
         
     return
     (<span class="itemTitle">
@@ -77,7 +97,9 @@ declare function selections:formatted-item($item as element())
         }
     </span>, <br/>,
     <span class="imprint">
+        <a href="{$issueLink}">
         { string-join(($journalTitle,$volume,$number), ', ') } ({ $date })
+        </a>
     </span>
     )
 };

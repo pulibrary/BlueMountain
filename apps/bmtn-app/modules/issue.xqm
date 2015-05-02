@@ -128,7 +128,10 @@ as xs:string
 declare %templates:wrap function issue:label($node as node(), $model as map(*))
 as element()
 {
-    let $selected-issue := $model("selected-issue")
+    let $selected-issue := 
+        if (empty($model("selected-issue")))
+        then ()
+        else $model("selected-issue")
     let $xsl := doc($config:app-root || "/resources/xsl/issue.xsl")
 
     return transform:transform($selected-issue, $xsl, ())
@@ -188,6 +191,13 @@ as element()
 {
     let $issueURN := $model("selected-issue")//mods:identifier[@type='bmtn']
     return <a href="{ app:veridian-url-from-bmtnid($issueURN) }">Read issue in the archive</a>
+};
+
+declare function issue:reader-link($node as node(), $model as map(*))
+as element()
+{
+    let $issueURN := $model("selected-issue")//mods:identifier[@type='bmtn']
+    return <a href="issue-viewer.html?issueURN={ $issueURN }">Read issue in the viewer</a>
 };
 
 declare function issue:constituents-table($node as node(), $model as map(*))
