@@ -6,7 +6,7 @@ namespace s = "http://www.ascc.net/xml/schematron"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2015-04-22T18:46:42Z. .
+# Schema generated from ODD source 2015-04-30T20:34:18Z. .
 # TEI Edition: Version 2.8.0. Last updated on
 #	6th April 2015, revision 13197
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -1314,6 +1314,9 @@ tei_model.global.meta =
   | tei_altGrp
   | tei_substJoin
   | tei_listTranspose
+  | tei_fs
+  | tei_fLib
+  | tei_fvLib
 tei_model.milestoneLike =
   tei_milestone
   | tei_gb
@@ -1422,6 +1425,16 @@ tei_model.stageLike_sequence = tei_stage
 tei_model.stageLike_sequenceOptional = tei_stage?
 tei_model.stageLike_sequenceOptionalRepeatable = tei_stage*
 tei_model.stageLike_sequenceRepeatable = tei_stage+
+tei_model.featureVal.complex =
+  tei_fs | tei_vColl | tei_vNot | tei_vMerge
+tei_model.featureVal.single =
+  tei_binary
+  | tei_symbol
+  | tei_numeric
+  | tei_string
+  | tei_vLabel
+  | tei_default
+  | tei_vAlt
 tei_model.entryPart = notAllowed
 tei_model.global.edit =
   tei_gap | tei_addSpan | tei_damageSpan | tei_delSpan | tei_space
@@ -1732,6 +1745,8 @@ tei_model.global =
   | tei_notatedMusic
   | tei_figure
   | tei_metamark
+tei_model.featureVal =
+  tei_model.featureVal.complex | tei_model.featureVal.single
 tei_model.biblPart =
   tei_model.respLike
   | tei_model.imprintPart
@@ -1809,6 +1824,7 @@ tei_model.encodingDescPart =
   | tei_classDecl
   | tei_geoDecl
   | tei_appInfo
+  | tei_fsdDecl
 tei_model.editorialDeclPart =
   tei_correction
   | tei_normalization
@@ -1843,7 +1859,7 @@ tei_att.source.attribute.source =
   attribute source {
     list { tei_data.pointer+ }
   }?
-tei_model.resourceLike = tei_facsimile | tei_sourceDoc
+tei_model.resourceLike = tei_facsimile | tei_sourceDoc | tei_fsdDecl
 tei_att.personal.attributes =
   tei_att.naming.attributes,
   tei_att.personal.attribute.full,
@@ -7438,5 +7454,323 @@ tei_msPart =
        ],
     tei_att.global.attributes,
     empty
+  }
+tei_fsdDecl =
+  
+  ## (feature system declaration) provides a feature system declaration comprising one or more feature structure declarations or feature structure declaration links. [18.11. Feature System Declaration]
+  element fsdDecl {
+    (tei_fsDecl | tei_fsdLink)+, tei_att.global.attributes, empty
+  }
+tei_fsDecl =
+  
+  ## (feature structure declaration) declares one type of feature structure. [18.11. Feature System Declaration]
+  element fsDecl {
+    (tei_fsDescr?, tei_fDecl+, tei_fsConstraints?),
+    tei_att.global.attributes,
+    
+    ## gives a name for the type of feature structure being declared.
+    attribute type { tei_data.enumerated },
+    
+    ## gives the name of one or more typed feature structures from which this type inherits feature specifications and constraints; if this type includes a feature specification with the same name as that of any of those specified by this attribute, or if more than one specification of the same name is inherited, then the set of possible values is defined by unification. Similarly, the set of constraints applicable is derived by combining those specified explicitly within this element with those implied by the baseTypes attribute. When no baseTypes attribute is specified, no feature specification or constraint is inherited.
+    attribute baseTypes {
+      list { tei_data.name+ }
+    }?,
+    empty
+  }
+tei_fsDescr =
+  
+  ## (feature system description (in FSD)) describes in prose what is represented by the type of feature structure declared in the enclosing fsDecl. [18.11. Feature System Declaration]
+  element fsDescr {
+    tei_macro.limitedContent, tei_att.global.attributes, empty
+  }
+tei_fsdLink =
+  
+  ## (feature structure declaration link) associates the name of a typed feature structure with a feature structure declaration for it. [18.11. Feature System Declaration]
+  element fsdLink {
+    empty,
+    tei_att.global.attributes,
+    
+    ## identifies the type of feature structure to be documented; this will be the value of the type attribute on at least one feature structure.
+    attribute type { tei_data.enumerated },
+    
+    ## supplies a pointer to a feature structure declaration (fsDecl) element within the current document or elsewhere.
+    attribute target { tei_data.pointer },
+    empty
+  }
+tei_fDecl =
+  
+  ## (feature declaration) declares a single feature, specifying its name, organization, range of allowed values, and optionally its default value. [18.11. Feature System Declaration]
+  element fDecl {
+    (tei_fDescr?, tei_vRange, tei_vDefault?),
+    tei_att.global.attributes,
+    
+    ## a single word which follows the rules defining a legal XML name (see ), indicating the name of the feature being declared; matches the name attribute of f elements in the text.
+    attribute name { tei_data.name },
+    
+    ## indicates whether or not the value of this feature may be present.
+    [ a:defaultValue = "true" ]
+    attribute optional { tei_data.truthValue }?,
+    empty
+  }
+tei_fDescr =
+  
+  ## (feature description (in FSD)) describes in prose what is represented by the feature being declared and its values. [18.11. Feature System Declaration]
+  element fDescr {
+    tei_macro.limitedContent, tei_att.global.attributes, empty
+  }
+tei_vRange =
+  
+  ## (value range) defines the range of allowed values for a feature, in the form of an fs, vAlt, or primitive value; for the value of an f to be valid, it must be subsumed by the specified range; if the f contains multiple values (as sanctioned by the org attribute), then each value must be subsumed by the vRange. [18.11. Feature System Declaration]
+  element vRange {
+    tei_model.featureVal, tei_att.global.attributes, empty
+  }
+tei_vDefault =
+  
+  ## (value default) declares the default value to be supplied when a feature structure does not contain an instance of f for this name; if unconditional, it is specified as one (or, depending on the value of the org attribute of the enclosing fDecl) more fs elements or primitive values; if conditional, it is specified as one or more if elements; if no default is specified, or no condition matches, the value none is assumed. [18.11. Feature System Declaration]
+  element vDefault {
+    (tei_model.featureVal+ | tei_if+), tei_att.global.attributes, empty
+  }
+tei_if =
+  
+  ## defines a conditional default value for a feature; the condition is specified as a feature structure, and is met if it subsumes the feature structure in the text for which a default value is sought. [18.11. Feature System Declaration]
+  element if {
+    ((tei_fs | tei_f), tei_then, tei_model.featureVal),
+    tei_att.global.attributes,
+    empty
+  }
+tei_then =
+  
+  ## separates the condition from the default in an if, or the antecedent and the consequent in a cond element. [18.11. Feature System Declaration]
+  element then { empty, tei_att.global.attributes, empty }
+tei_fsConstraints =
+  
+  ## (feature-structure constraints) specifies constraints on the content of valid feature structures. [18.11. Feature System Declaration]
+  element fsConstraints {
+    (tei_cond | tei_bicond)*, tei_att.global.attributes, empty
+  }
+tei_cond =
+  
+  ## (conditional feature-structure constraint) defines a conditional feature-structure constraint; the consequent and the antecedent are specified as feature structures or feature-structure collections; the constraint is satisfied if both the antecedent and the consequent subsume a given feature structure, or if the antecedent does not. [18.11. Feature System Declaration]
+  element cond {
+    ((tei_fs | tei_f), tei_then, (tei_fs | tei_f)),
+    tei_att.global.attributes,
+    empty
+  }
+tei_bicond =
+  
+  ## (bi-conditional feature-structure constraint) defines a biconditional feature-structure constraint; both consequent and antecedent are specified as feature structures or groups of feature structures; the constraint is satisfied if both subsume a given feature structure, or if both do not. [18.11. Feature System Declaration]
+  element bicond {
+    ((tei_fs | tei_f), tei_iff, (tei_fs | tei_f)),
+    tei_att.global.attributes,
+    empty
+  }
+tei_iff =
+  
+  ## (if and only if) separates the condition from the consequence in a bicond element. [18.11. Feature System Declaration]
+  element iff { empty, tei_att.global.attributes, empty }
+tei_fs =
+  
+  ## (feature structure) represents a feature structure, that is, a collection of feature-value pairs organized as a structural unit. [18.2. Elementary Feature Structures and the Binary
+  ## Feature Value]
+  element fs {
+    tei_f*,
+    tei_att.global.attributes,
+    tei_att.datcat.attributes,
+    
+    ## specifies the type of the feature structure.
+    attribute type { tei_data.enumerated }?,
+    
+    ## (features) references the feature-value specifications making up this feature structure.
+    attribute feats {
+      list { tei_data.pointer+ }
+    }?,
+    empty
+  }
+tei_f =
+  
+  ## (feature) represents a feature value specification, that is, the association of a name with a value of any of several different types. [18.2. Elementary Feature Structures and the Binary
+  ## Feature Value]
+  element f {
+    ((text | tei_model.gLike | tei_model.featureVal)*)
+    >> sch:pattern [
+         id = "magazine-f-fValConstraints-constraint-7"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:fVal"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "not(tei:* and text)"
+             " A feature value cannot\x{a}" ~
+             "    contain both text and element content"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "magazine-f-fValConstraints-constraint-8"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:fVal"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "count(tei:*)>1"
+             " A feature value can contain\x{a}" ~
+             "    only one child element"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    tei_att.global.attributes,
+    tei_att.datcat.attributes,
+    
+    ## a single word which follows the rules defining a legal XML name (see ), providing a name for the feature.
+    attribute name { tei_data.name },
+    
+    ## (feature value) references any element which can be used to represent the value of a feature.
+    attribute fVal { tei_data.pointer }?,
+    empty
+  }
+tei_binary =
+  
+  ## (binary value) represents the value part of a feature-value specification which can contain either of exactly two possible values. [18.2. Elementary Feature Structures and the Binary
+  ## Feature Value]
+  element binary {
+    empty,
+    tei_att.global.attributes,
+    tei_att.datcat.attributes,
+    
+    ## supplies a binary value.
+    attribute value { tei_data.truthValue },
+    empty
+  }
+tei_symbol =
+  
+  ## (symbolic value) represents the value part of a feature-value specification which contains one of a finite list of symbols. [18.3. Other Atomic Feature Values]
+  element symbol {
+    empty,
+    tei_att.global.attributes,
+    tei_att.datcat.attributes,
+    
+    ## supplies a symbolic value for the feature, one of a finite list that may be specified in a feature declaration.
+    attribute value { tei_data.word },
+    empty
+  }
+tei_numeric =
+  
+  ## (numeric value) represents the value part of a feature-value specification which contains a numeric value or range. [18.3. Other Atomic Feature Values]
+  element numeric {
+    empty,
+    tei_att.global.attributes,
+    tei_att.datcat.attributes,
+    
+    ## supplies a lower bound for the numeric value represented, and also (if max is not supplied) its upper bound.
+    attribute value { tei_data.numeric },
+    
+    ## supplies an upper bound for the numeric value represented.
+    attribute max { tei_data.numeric }?,
+    
+    ## specifies whether the value represented should be truncated to give an integer value.
+    attribute trunc { tei_data.truthValue }?,
+    empty
+  }
+tei_string =
+  
+  ## (string value) represents the value part of a feature-value specification which contains a string. [18.3. Other Atomic Feature Values]
+  element string {
+    tei_macro.xtext,
+    tei_att.global.attributes,
+    tei_att.datcat.attributes,
+    empty
+  }
+tei_vLabel =
+  
+  ## (value label) represents the value part of a feature-value specification which appears at more than one point in a feature structure. [18.6. Re-entrant Feature Structures]
+  element vLabel {
+    tei_model.featureVal?,
+    tei_att.global.attributes,
+    
+    ## supplies a name identifying the sharing point.
+    attribute name { tei_data.word },
+    empty
+  }
+tei_vColl =
+  
+  ## (collection of values) represents the value part of a feature-value specification which contains multiple values organized as a set, bag, or list. [18.7. Collections as Complex Feature Values]
+  element vColl {
+    (tei_fs | tei_model.featureVal.single)*,
+    tei_att.global.attributes,
+    
+    ## (organization) indicates organization of given value or values as set, bag or list.
+    attribute org {
+      
+      ## indicates that the given values are organized as a set.
+      "set"
+      | 
+        ## indicates that the given values are organized as a bag (multiset).
+        "bag"
+      | 
+        ## indicates that the given values are organized as a list.
+        "list"
+    }?,
+    empty
+  }
+tei_default =
+  
+  ## (default feature value) represents the value part of a feature-value specification which contains a defaulted value. [18.9. Default Values]
+  element default { empty, tei_att.global.attributes, empty }
+tei_vAlt =
+  
+  ## (value alternation) represents the value part of a feature-value specification which contains a set of values, only one of which can be valid. [18.8.1. Alternation]
+  element vAlt {
+    (tei_model.featureVal, tei_model.featureVal+),
+    tei_att.global.attributes,
+    empty
+  }
+tei_vNot =
+  
+  ## (value negation) represents a feature value which is the negation of its content. [18.8.2. Negation]
+  element vNot {
+    tei_model.featureVal, tei_att.global.attributes, empty
+  }
+tei_vMerge =
+  
+  ## (merged collection of values) represents a feature value which is the result of merging together the feature values contained by its children, using the organization specified by the org attribute. [18.8.3. Collection of Values]
+  element vMerge {
+    tei_model.featureVal+,
+    tei_att.global.attributes,
+    
+    ## indicates the organization of the resulting merged values as set, bag or list.
+    attribute org {
+      
+      ## indicates that the resulting values are organized as a set.
+      "set"
+      | 
+        ## indicates that the resulting values are organized as a bag (multiset).
+        "bag"
+      | 
+        ## indicates that the resulting values are organized as a list.
+        "list"
+    }?,
+    empty
+  }
+tei_fLib =
+  
+  ## (feature library) assembles a library of feature elements. [18.4. Feature Libraries and Feature-Value Libraries]
+  element fLib { tei_f+, tei_att.global.attributes, empty }
+tei_fvLib =
+  
+  ## (feature-value library) assembles a library of reusable feature value elements (including complete feature structures). [18.4. Feature Libraries and Feature-Value Libraries]
+  element fvLib {
+    tei_model.featureVal*, tei_att.global.attributes, empty
   }
 start = tei_TEI | tei_teiCorpus
