@@ -36,9 +36,9 @@
                                         <width><!-- the width --></width>
                                     </dimensions>
                                 </extent>
-                                <collation>
-                                    <!-- Describe general arrangement of pages -->
-                                </collation>
+                                <foliation>
+                                    <!-- Describe pagination: new pagination; continuous with previous issue; different schemes for ads and content, etc. -->
+                                </foliation>
                             </supportDesc>
 
                             <layoutDesc>
@@ -46,6 +46,7 @@
                                 distinctive ornaments (save description of ornaments for the <decoDesc> section), etc.  
                                 If there are several distinct types of pages, use separate <layout> elements
                                 to describe them.-->
+                                <layout n="advertisements"></layout>
                                 <layout/>
                             </layoutDesc>
                         </objectDesc>
@@ -73,7 +74,17 @@
 
                     <history>
                         <summary>
-                            <!-- Anything that didn't fit in the elements above. -->
+                            <!-- Anything that didn't fit in the elements above.  In particular,
+                            if there is price information, uncomment the <p> element below and 
+                            capture the price following the model, adjusting units and quantities as 
+                            necessary. -->
+                            <!--<p>Sold for
+                                <measureGrp type="salesprice">
+                                    <measure unit="dollars" quantity=".5">50 cents</measure>
+                                    <measure unit="lire" quantity="10">10 lire</measure>
+                                    <measure unit="francs" quantity="6">6 francs</measure>
+                                    <measure unit="shillings" quantity="3/6">3/6</measure>
+                                </measureGrp>.</p>-->
                         </summary>
                         <provenance>
                             <!--contains any descriptive or other information concerning a single
