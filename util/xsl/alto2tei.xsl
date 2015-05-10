@@ -72,17 +72,17 @@
  
  <!-- <alto:Page> corresponds with <tei:surface> -->
  <xsl:template match="alto:Page" mode="facsimile">
-  <tei:surface>
-   <xsl:attribute name="xml:id" select="@ID"/>
-   <xsl:attribute name="ulx">0</xsl:attribute>
+  <tei:surface type="page" xml:id="{@ID}" ulx="0" uly="0" lrx="{local:to-millimeter(@WIDTH)}" lry="{local:to-millimeter(@HEIGHT)}">
+   <!--<xsl:attribute name="xml:id" select="@ID"/>-->
+   <!--<xsl:attribute name="ulx">0</xsl:attribute>
    <xsl:attribute name="uly">0</xsl:attribute>
    <xsl:attribute name="lrx" select="local:to-millimeter(@WIDTH)"/>
-   <xsl:attribute name="lry" select="local:to-millimeter(@HEIGHT)"/>
+   <xsl:attribute name="lry" select="local:to-millimeter(@HEIGHT)"/>-->
    
    <tei:graphic>
     <xsl:attribute name="url">
      <xsl:value-of
-      select="ancestor::alto:alto/alto:Description/alto:sourceImageInformation/alto:fileName"/>
+      select="replace(tokenize(ancestor::alto:alto/alto:Description/alto:sourceImageInformation/alto:fileName, '/')[last()], 'tif', 'jp2')"/>
     </xsl:attribute>
    </tei:graphic>
    <xsl:apply-templates mode="#current"/>
@@ -92,7 +92,7 @@
  <xsl:template
   match="alto:TopMargin | alto:LeftMargin | alto:RightMargin | alto:BottomMargin | alto:PrintSpace"
   mode="facsimile">
-  <tei:zone>
+  <tei:zone type="margin">
    <xsl:attribute name="xml:id" select="@ID"/>
    <xsl:attribute name="ulx" select="local:to-millimeter(xs:integer(@HPOS))"/>
    <xsl:attribute name="uly" select="local:to-millimeter(xs:integer(@VPOS))"/>

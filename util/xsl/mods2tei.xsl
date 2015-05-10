@@ -7,7 +7,7 @@
  xmlns:tei="http://www.tei-c.org/ns/1.0"
  xmlns:mods="http://www.loc.gov/mods/v3"
  xmlns:local="http://library.princeton.edu/cew" 
- exclude-result-prefixes="xs  local xlink" 
+ exclude-result-prefixes="xs local xlink tei mods" 
  version="2.0">
  
  <xsl:strip-space elements="*"/>
@@ -26,12 +26,12 @@
        </title>
        <imprint>
 	 <xsl:if test="mods:part/mods:detail[@type='volume']">
-	   <biblScope type="vol">
+	   <biblScope unit="vol">
 	     <xsl:value-of select="mods:part/mods:detail[@type='volume']/mods:number"/>
 	   </biblScope>
 	 </xsl:if>
 	 <xsl:if test="mods:part/mods:detail[@type='number']">
-	   <biblScope type="issue">
+	   <biblScope unit="issue">
 	     <xsl:value-of select="mods:part/mods:detail[@type='number']/mods:number"/>
 	   </biblScope>
 	 </xsl:if>
@@ -57,7 +57,11 @@
        </analytic>
        <monogr>
 	 <imprint>
-	   <biblScope type="pp" corresp="{mods:part/mods:extent[@unit='page']/mods:start}"/>
+	   <classCode scheme="CCS">
+	     <xsl:value-of select="mods:genre[@type='CCS']"/>
+	   </classCode>
+	   <xsl:apply-templates select="mods:part/mods:extent" />
+	   <!--<biblScope type="pp" corresp="{mods:part/mods:extent[@unit='page']/mods:start}"/>-->
 	 </imprint>
        </monogr>
        <xsl:apply-templates select="mods:note"/>
@@ -65,6 +69,15 @@
      </biblStruct>
    </relatedItem>
  </xsl:template>
+  
+  <xsl:template match="mods:relatedItem[@type='constituent']/mods:part/mods:extent[@unit='page' and mods:list]">
+    <xsl:variable name="pnums" select="tokenize(mods:list, '-')" />
+    <biblScope unit="page" from="{$pnums[1]}" to="{$pnums[2]}"><xsl:value-of select="mods:list" /></biblScope>
+  </xsl:template>
+  
+  <xsl:template match="mods:relatedItem[@type='constituent']/mods:part/mods:extent[@unit='page' and mods:start]">
+    <biblScope unit="page"><xsl:value-of select="mods:start" /></biblScope>
+  </xsl:template>
 
  <xsl:template match="mods:titleInfo">
    <title level="a">

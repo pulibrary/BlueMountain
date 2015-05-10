@@ -31,8 +31,16 @@
 
  <xsl:function name="local:altopath">
   <xsl:param name="rawpath"/>
+  <!-- rawpath looks like file://./alto/xxx.alto.xml  -->
+  <!-- We want file:///path/to/bmtn/... in the global variable $path -->
+  <xsl:variable name="basepath">
+    <xsl:value-of select="substring-after($rawpath, 'file://.') "/>
+  </xsl:variable>
+<!-- These produce a relative URI for the document() function -->
+
 <!--  <xsl:value-of select="replace($rawpath, 'file://./', $path)"/> -->
-  <xsl:value-of select="replace($rawpath, 'file://.', $path)"/>
+<!--  <xsl:value-of select="replace($rawpath, 'file://.', $path)"/> -->
+<xsl:value-of select="concat('file://', $path, $basepath)" />
  </xsl:function>
  
 
@@ -57,9 +65,9 @@
     </fileDesc>
    </teiHeader>
 
-<!--   <facsimile>
+   <facsimile>
     <xsl:apply-templates select="mets:structMap[@TYPE='PHYSICAL']" mode="facsimile"/>
-   </facsimile>-->
+   </facsimile>
 
    <text>
 
