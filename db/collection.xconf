@@ -4,10 +4,11 @@
       xmlns:mets="http://www.loc.gov/METS/"
       xmlns:mods="http://www.loc.gov/mods/v3"
       xmlns:alto="http://www.loc.gov/standards/alto/ns-v2#"
+      xmlns:tei="http://www.tei-c.org/ns/1.0"
       >
 
     <!-- Not using the Legacy Fulltext Index -->
-    <fulltext default="none" attributes="no"/>
+    <fulltext default="none" attributes="false"/>
 
     <!-- Lucene-Based Full-Text Indexes -->
     <lucene>
@@ -20,6 +21,8 @@
       <text qname="mods:originInfo"/>
       <text qname="mods:subject"/>
       <text qname="mods:genre"/>
+      <text qname="mods:displayForm"/>
+      <text qname="tei:body"/>
 
       <!-- Try using named fields now -->
 
