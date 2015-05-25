@@ -13,7 +13,7 @@ var INFO = '/info.json'
 // $('.toolbar').width( width / 4);
 
 // Assume container is in a <div class="col-md-6"> div
-var height = jQuery(window).height() / 2
+var height = jQuery(window).height() * .8
 var width  = $('#thing').width()
 
 $('#viewer').width(width)
