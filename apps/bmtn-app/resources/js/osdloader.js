@@ -3,14 +3,24 @@ var SERVER = 'http://libimages.princeton.edu/loris2/'
 var INFO = '/info.json'
 
 
-var height = jQuery(window).height();
-var width = jQuery(window).width();
+// var height = jQuery(window).height();
+// var width = jQuery(window).width();
 
-$('#viewer').width( width );
-$('#viewer').height( height );
-$('#container').width( width );
-$('#container').height( height );
-$('.toolbar').width( width );
+// $('#viewer').width( width / 2 );
+// $('#viewer').height( height / 2 );
+// $('#container').width( width / 2);
+// $('#container').height( height / 2);
+// $('.toolbar').width( width / 4);
+
+// Assume container is in a <div class="col-md-6"> div
+var height = jQuery(window).height() / 2
+var width  = $('#thing').width()
+
+$('#viewer').width(width)
+$('#viewer').height(height)
+$('#container').width(width)
+$('#container').height(height)
+$('.toolbar').width(width)
 
 // Read a page's GET URL variables and return them as an associative array.
 function getUrlVars() {
@@ -26,9 +36,10 @@ function getUrlVars() {
 
 var osd_config = {
   id: "viewer",
+  toolbar: "toolbarDiv",
   prefixUrl: "resources/js/openseadragon/images/",
   preserveViewport: true,
-  showNavigator:  false,
+  showNavigator:  true,
   visibilityRatio: 1,
   minZoomLevel: 3,
   minLevel: 3,
