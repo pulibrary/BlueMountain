@@ -91,9 +91,9 @@ return
         }
         </ol>
     </section>
-    <section id="txt">
+    <section>
     <h1>Plain Text</h1>
-    <div class="content">
+    <div id="txt" class="content">
     {
             for $area in $logicalDiv//mets:area
             let $adoc := local:altodoc($mets, $area/@FILEID) 

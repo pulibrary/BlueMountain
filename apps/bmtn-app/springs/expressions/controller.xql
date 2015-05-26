@@ -35,35 +35,6 @@ else if ($exist:path eq "/") then
         <redirect url="index.html"/>
     </dispatch>
 
-
-else if ($exist:resource) then
-    let $parse := local:parse_path()
-    let $issueid := $parse/issueid
-    let $constituentid := $parse/constituentid
-    let $format := $parse/format
-    return
-    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <forward url="{$exist:controller}/modules/constituents.xql">
-            <add-parameter name="data-root" value="{$config:data-root}" />
-            <add-parameter name="issueid" value="{$issueid}" />
-            <add-parameter name="constituentid" value="{$constituentid}" />
-        </forward>
-        {
-        if ($format eq 'txt') then
-        <view>
-            <forward servlet="XSLTServlet">
-                <set-attribute name="xslt.stylesheet"
-                    value="{$exist:root}/{$exist:controller}/resources/xsl/text.xsl"/>
-            </forward>
-        </view>
-        else ()
-        }
-        
-        <error-handler>
-            <forward url="{$exist:controller}/../../error-page.html" method="get"/>
-            <forward url="{$exist:controller}/../../modules/view.xql"/>
-        </error-handler>
-    </dispatch>
     
  
     
