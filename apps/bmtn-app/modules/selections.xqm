@@ -10,19 +10,19 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
-declare %templates:wrap function selections:selected-items-old($node as node(), $model as map(*), 
-$byline as xs:string?
+declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+$anywhere as xs:string?
 )
 as map(*)? 
 {
-    if ($byline) then
-        let $hits := collection($config:data-root)//mods:displayForm[ft:query(., $byline)]
-        let $items := for $hit in $hits return $hit/ancestor::mods:relatedItem[1]
-        return map { "selected-items" := $items }    
+    if ($anywhere) then
+        let $hits := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $anywhere)
+                                                                   or ft:query(.//mods:titleInfo, $anywhere)]
+        return map { "selected-items" := $hits }    
      else ()
 };
 
-declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+declare %templates:wrap function selections:selected-items-old($node as node(), $model as map(*), 
 $byline as xs:string?,
 $title as xs:string?
 )
@@ -83,7 +83,8 @@ declare function selections:formatted-item($item as element())
         then concat("No. ", $journal/mods:part[@type='issue']/mods:detail[@type='number']/mods:number[1])
         else ()
     let $date := $journal/mods:originInfo/mods:dateIssued[@keyDate = 'yes']
-    let $issueLink := app:veridian-url-from-bmtnid($journal/mods:identifier[@type='bmtn'])
+    (: let $issueLink := app:veridian-url-from-bmtnid($journal/mods:identifier[@type='bmtn']) :)
+    let $issueLink := concat('issue.html?issueURN=',$journal/mods:identifier[@type='bmtn'])
         
     return
     (<span class="itemTitle">
