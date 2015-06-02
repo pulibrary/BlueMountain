@@ -7,6 +7,7 @@ import module namespace config="http://bluemountain.princeton.edu/config" at "co
 import module namespace app="http://bluemountain.princeton.edu/modules/app" at "app.xql";
 import module namespace issue="http://bluemountain.princeton.edu/modules/issue" at "issue.xqm";
 
+declare namespace mets="http://www.loc.gov/METS/";
 declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
@@ -214,3 +215,26 @@ as element()
 declare function title:issue-count($node as node(), $model as map(*)) 
 as xs:integer 
 { count($model("selected-title-issues")) };
+
+declare function title:size-chart-script($node as node(), $model as map(*))
+{
+    let $issues := $model("selected-title-issues")
+    let $issuedata :=
+        for $issue in $issues
+            let $date := $issue/mods:originInfo/mods:dateIssued[@keyDate='yes']
+            let $pagecount := count($issue/ancestor::mets:mets/mets:structMap[@TYPE='PHYSICAL']/mets:div[@TYPE='Magazine']/mets:div)
+            return
+                <issue>
+                    <date>{ xs:string($date) }</date>
+                    <pagecount>{ $pagecount }</pagecount>
+                </issue>
+     
+    let $xsl := doc("../springs/serial_works/resources/xsl/toJSON.xsl")
+    return 
+        <script type = "text/javascript">
+        var data = google.visualization.arrayToDataTable(
+            { transform:transform($issuedata, $xsl, ()) }
+            );
+            
+    </script>
+};

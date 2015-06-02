@@ -11,32 +11,38 @@ declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
 declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
-$anywhere as xs:string?
+$anywhere as xs:string?, $byline as xs:string?
 )
 as map(*)? 
 {
-    if ($anywhere) then
-        let $hits := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $anywhere)
+    let $hits :=
+    
+    if ($byline) 
+    then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $byline)]
+    else if ($anywhere) then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $anywhere)
                                                                    or ft:query(.//mods:titleInfo, $anywhere)]
+    else ()
         return map { "selected-items" := $hits }    
-     else ()
 };
 
-declare %templates:wrap function selections:selected-items-old($node as node(), $model as map(*), 
-$byline as xs:string?,
-$title as xs:string?
-)
-as map(*)? 
+declare function local:name-link($name as xs:string) as element()
 {
-    let $items :=
-           if ($byline and $title) then
-      collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $byline) and ft:query(.//mods:titleInfo, $title)]
-    else if ($byline) then
-        collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $byline)]
-    else if ($title) then
-        collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $title)]
-    else ()
-    return map { "selected-items" := $items }
+    <a href="selections.html?byline=&quot;{replace($name, ' ', '+')}&quot;">{ $name }</a>
+};
+
+declare %templates:wrap function selections:name-facet($node as node(), $model as map(*))
+{
+    let $names := $model("selected-items")//mods:displayForm
+    let $normalized-names := for $name in $names return normalize-space(lower-case($name))
+    return
+        <ol>
+            {
+                for $name in distinct-values($normalized-names) 
+                let $count := count($normalized-names[.= $name])
+                order by $name
+                return <li>{ local:name-link($name) } ({$count})</li>
+            }
+        </ol>
 };
 
 declare  %templates:wrap function selections:selected-items-listing($node as node(), $model as map(*))

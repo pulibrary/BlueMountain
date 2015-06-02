@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-4">
             <div>
                 <h2>
                     <span>Quick Search</span>
@@ -14,7 +14,13 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-10" data-template="selections:selected-items">
+    </div>
+    <div class="row" data-template="selections:selected-items">
+        <div class="col-md-6">
+            <h2>Facets</h2>
+            <div data-template="selections:name-facet"/>
+        </div>
+        <div class="col-md-6">
             <h2>
                 <span>Results</span>
             </h2>
