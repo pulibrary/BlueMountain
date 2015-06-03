@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabn_1922-12-20_01">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabn_1922-12-20_01">
 	<metsHdr>
 		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
 			<name>Princeton University Library, Digital Initiatives</name>
@@ -17,11 +16,11 @@
 					<identifier type="bmtn">urn:PUL:bluemountain:bmtnabn_1922-12-20_01</identifier>
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
-					<titleInfo xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<titleInfo>
 						<title>Ultra</title>
 						<subTitle>kirjallistaiteellinen aikakauslehti = tidskrift för ny konst och litteratur</subTitle>
 					</titleInfo>
-					<part xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="issue">
+					<part type="issue">
 						<detail type="number">
 							<caption>N:o 7-8</caption>
 							<number>7</number>
@@ -31,11 +30,11 @@
 							<number>1</number>
 						</detail>
 					</part>
-					<originInfo xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<originInfo>
 						<dateIssued>1922 Joulukuu December</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1922-12-20</dateIssued>
 					</originInfo>
-					<location xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
 						<holdingSimple>
@@ -45,14 +44,14 @@
 							</copyInformation>
 						</holdingSimple>
 					</location>
-					<relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabn">
+					<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabn">
 						<recordInfo>
 							<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabn</recordIdentifier>
 						</recordInfo>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="fin">
-							<title>Untitled</title>
+							<mods:title>Untitled Image</mods:title>
 						</titleInfo>
 						<typeOfResource>still image</typeOfResource>
 						<part>
@@ -156,7 +155,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c007">
 							<titleInfo lang="fin">
-								<title>Untitled</title>
+								<mods:title>Untitled Image</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -4074,7 +4073,7 @@
 							</fptr>
 						</div>
 					</div>
-					<div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL='KAKSI RUNOA sikermästä „Sielujen sota" Kirj. L. ONERVA'>
+					<div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="KAKSI RUNOA sikermästä „Sielujen sota&#34; Kirj. L. ONERVA">
 						<div ID="L.1.1.2.2.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00010"/>
@@ -4302,7 +4301,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c010" LABEL='„RIIKINKUKONSULKA"'>
+					<div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c010" LABEL="„RIIKINKUKONSULKA&#34;">
 						<div ID="L.1.1.2.9.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00005"/>
@@ -5031,7 +5030,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.31" TYPE="TextContent" ORDER="31" DMDID="c036" LABEL='VERTAILUA "SEITSEMÄN VELJEKSEN" NÄYTTÄMÖSOVITTELUISTA'>
+					<div ID="L.1.1.2.31" TYPE="TextContent" ORDER="31" DMDID="c036" LABEL="VERTAILUA &#34;SEITSEMÄN VELJEKSEN&#34; NÄYTTÄMÖSOVITTELUISTA">
 						<div ID="L.1.1.2.31.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00007"/>

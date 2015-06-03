@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-  TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
   <metsHdr>
     <agent ROLE="CREATOR" TYPE="ORGANIZATION">
       <name>Princeton University Library, Digital Initiatives</name>
@@ -12,8 +8,7 @@
   <dmdSec ID="dmd0">
     <mdWrap MDTYPE="DC">
       <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-          xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
           <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabc">
 
@@ -29,9 +24,7 @@
     <mdWrap MDTYPE="MODS">
       <xmlData>
 
-        <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd"
-          xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mods xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd">
 
           <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
           <genre authority="bmtn">Periodicals-Title</genre>
@@ -85,9 +78,7 @@
             <topic>Music</topic>
           </subject>
           <location>
-            <url displayLabel="electronic resource" usage="primary display"
-              note="Available online via the Blue Mountain Project. Click here to view holdings"
-              >http://arks.princeton.edu/ark:/88435/z316q2966</url>
+            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/z316q2966</url>
           </location>
           <relatedItem type="otherFormat"/>
           <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
@@ -116,8 +107,7 @@
 
 
   <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml"
-      xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
   </dmdSec>
   <fileSec>
     <fileGrp/>
