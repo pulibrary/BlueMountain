@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bmtnfoo" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" version="2.0" exclude-result-prefixes="xs mods mets">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/mets" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="http://bmtnfoo" version="2.0" exclude-result-prefixes="xs mods mets">
     <xsl:output method="html"/>
     <xsl:param name="app-root"/>
     <xsl:param name="context"/>
