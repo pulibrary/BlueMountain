@@ -24,16 +24,26 @@
                 <dd>18, Trinità dei Monti, Rome (6), Italy and Three East 9th Street, New York New
                     York</dd>
             </dl>
-            <div data-template="issue:constituents">
-                <table class="table" data-template="issue:constituents-table"/>
-            </div>
-            <div data-template="issue:selected-issue-transcription">
-                <div data-template="issue:ms-description">
-                    <div class="col-md-8">
-                        <h2>Physical Description</h2>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>History of the Object</h2>
+            <div id="tabs">
+                <ul>
+                    <li>
+                        <a href="#toc">Constituents</a>
+                    </li>
+                    <li>
+                        <a href="msDesc">Copy Description</a>
+                    </li>
+                </ul>
+                <div id="toc" data-template="issue:constituents">
+                    <table class="table" data-template="issue:constituents-table"/>
+                </div>
+                <div data-template="issue:selected-issue-transcription">
+                    <div id="msDesc" data-template="issue:ms-description">
+                        <div class="col-md-8">
+                            <h2>Physical Description</h2>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>History of the Object</h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,4 +68,9 @@
             </div>
         </div>
     </div>
+    <script src="resources/js/jquery-ui/external/jquery/jquery.js"/>
+    <script src="resources/js/jquery-ui/jquery-ui.js"/>
+    <script>
+        $("#tabs").tabs ();
+    </script>
 </article>

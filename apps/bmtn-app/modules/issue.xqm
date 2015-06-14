@@ -139,7 +139,7 @@ as element()
 };
 
 
-declare function issue:constituents($node as node(), $model as map(*))
+declare %templates:wrap function issue:constituents($node as node(), $model as map(*))
 as map(*)
 {
     map { "selected-issue-constituents" := $model("selected-issue")//mods:relatedItem[@type='constituent'] }    
