@@ -33,6 +33,16 @@
     attribute of the <relatedItem> element, replace bmtnTTT with the Blue Mountain id of the TITLE of which
     this record denotes an issue: e.g., bmtnaap; (2) do the same thing with the bmtnTTT string in the <recordIdentifier>
     element.-->
+    <location xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <physicalLocation type="text">Princeton University. <!-- Branch Library --></physicalLocation>
+        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+        <holdingSimple>
+            <copyInformation>
+                <subLocation><!-- if applicable --></subLocation>
+                <shelfLocator><!-- call number --></shelfLocator>
+            </copyInformation>
+        </holdingSimple>
+    </location>
     <relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple"
         xlink:href="urn:PUL:bluemountain:bmtnTTT">
         <recordInfo>
