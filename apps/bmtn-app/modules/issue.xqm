@@ -278,20 +278,10 @@ as element()
             $row
     }</table>
 };
-
-declare %templates:wrap function issue:ms-description-old($node as node(), $model as map(*))
-as element()
-{
-    let $msDesc := $model("selected-issue-transcription")/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc
-    let $xsl    := doc($config:app-root || "/resources/xsl/msdesc.xsl")
-    let $div    := transform:transform($msDesc, $xsl, ())
-    return $div
-};
-
  
 declare %templates:wrap function issue:ms-description($node as node(), $model as map(*))
-as element()
-{
+as element()?
+{ 
     let $msDesc := $model("selected-issue-transcription")/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc
     let $xsl    := doc($config:app-root || "/resources/xsl/msdesc.xsl")
     let $div    := transform:transform($msDesc, $xsl, ())
