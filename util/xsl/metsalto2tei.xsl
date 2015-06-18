@@ -42,15 +42,50 @@
 <!--  <xsl:value-of select="replace($rawpath, 'file://.', $path)"/> -->
 <xsl:value-of select="concat('file://', $path, $basepath)" />
  </xsl:function>
+
+ 
  
 
  <xsl:template match="mets:mets">
+   <xsl:variable name="modsrec" select="./mets:dmdSec//mods:mods" />
+   
   <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
     <fileDesc>
+
      <titleStmt>
-      <title>Later</title>
-     </titleStmt>
+      <title>
+        Transcription of
+        <biblStruct>
+          <monogr>
+            <title level="j">
+              <xsl:if test="$modsrec/mods:titleInfo/mods:nonSort">
+                <seg type="nonSort"><xsl:apply-templates select="$modsrec/mods:titleInfo/mods:nonSort"/></seg>
+              </xsl:if>
+              <seg type="main"><xsl:apply-templates select="$modsrec/mods:titleInfo/mods:title"/></seg>
+            </title>
+            <imprint>
+              <xsl:if test="$modsrec/mods:part/mods:detail[@type='volume']">
+                <biblScope unit="vol">
+                  <xsl:value-of select="$modsrec/mods:part/mods:detail[@type='volume']/mods:number"/>
+                </biblScope>
+              </xsl:if>
+              <xsl:if test="$modsrec/mods:part/mods:detail[@type='number']">
+                <biblScope unit="issue">
+                  <xsl:value-of select="$modsrec/mods:part/mods:detail[@type='number']/mods:number"/>
+                </biblScope>
+              </xsl:if>
+              <date>
+                <xsl:attribute name="when">
+                  <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[@encoding='w3cdtf']"/>
+                </xsl:attribute>
+                <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[1]"/>
+              </date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </title>
+      </titleStmt>
      <publicationStmt>
       <publisher>Princeton University</publisher>
       <!--      <idno type="bmtnid"><xsl:value-of select="@OBJID" /></idno> -->
