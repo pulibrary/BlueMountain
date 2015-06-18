@@ -88,7 +88,6 @@
       </titleStmt>
      <publicationStmt>
       <publisher>Princeton University</publisher>
-      <!--      <idno type="bmtnid"><xsl:value-of select="@OBJID" /></idno> -->
       <idno type="bmtnid"><xsl:value-of select="./mets:dmdSec//mods:identifier[@type='bmtn']" /></idno>
      </publicationStmt>
      <seriesStmt>
@@ -100,20 +99,18 @@
     </fileDesc>
    </teiHeader>
 
+   <!--
    <facsimile>
     <xsl:apply-templates select="mets:structMap[@TYPE='PHYSICAL']" mode="facsimile"/>
    </facsimile>
+   -->
 
    <text>
-
     <body>
-      <!--      <xsl:apply-templates select="mets:structMap[@TYPE='PHYSICAL']"/> -->
       <xsl:apply-templates select="mets:structMap[@TYPE='LOGICAL']"/> 
     </body>
    </text>
-  
   </TEI>
-
  </xsl:template>
 
  <xsl:template match="mets:structMap[@TYPE='PHYSICAL']" mode="facsimile">
