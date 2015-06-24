@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd"
- xmlns="http://www.loc.gov/mods/v3"
- xmlns:xlink="http://www.w3.org/1999/xlink">
+  xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd"
+  xmlns="http://www.loc.gov/mods/v3"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
   <recordInfo>
     <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaam_1922-05-00-01</recordIdentifier>
   </recordInfo>
-
-    <identifier type="bmtn">urn:PUL:bluemountain:bmtnaam_1922-05-00-01</identifier>
-
-  <titleInfo>
-    <title>Veshch</title>
+  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaam_1922-05-00-01</identifier>
+  <typeOfResource>text</typeOfResource>
+  <genre>Periodicals-Issue</genre>
+  <titleInfo xlink:role="scriptToggle" xlink:title="3468" script="Cyrl" lang="rus">
+    <title>Вещь</title>
   </titleInfo>
-  <titleInfo type="alternative">
+  <titleInfo xlink:role="scriptToggle" xlink:title="3468" script="Latn" lang="rus">
+    <title>Veshch'</title>
+  </titleInfo>
+  </titleInfo>
+  <titleInfo type="alternative" lang="ger">
     <title>Gegenstand</title>
   </titleInfo>
-  <titleInfo type="alternative">
+  <titleInfo type="alternative" lang="fre">
     <title>Objet</title>
   </titleInfo>
-    <part type="issue">
-        <text>3</text>
-        <detail type="number">
-            <caption>3</caption>
-        </detail>
-    </part>
-    <originInfo>
-        <dateIssued>maĭ 1922</dateIssued>
-        <dateIssued keyDate="yes" encoding="iso8601">1922-05</dateIssued>
-    </originInfo>
-    
-    <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaam">
-        <recordInfo>
-            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaam</recordIdentifier>
-        </recordInfo>
-    </relatedItem>
-    
+  <part type="issue">
+    <detail type="number">
+      <caption>3</caption>
+      <number>3</number>
+    </detail>
+  </part>
+  <originInfo>
+    <dateIssued>Май 1922</dateIssued>
+    <dateIssued keyDate="yes" encoding="iso8601">1922-05</dateIssued>
+  </originInfo>
+  <location xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <physicalLocation type="text">Princeton University. Marquand Library (SAX): Rare Books</physicalLocation>
+    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <shelfLocator>Oversize N6480 .V473q</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+  <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaam">
+    <recordInfo>
+      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaam</recordIdentifier>
+    </recordInfo>
+  </relatedItem>
 </mods>

@@ -9,6 +9,7 @@ import module namespace app="http://bluemountain.princeton.edu/modules/app" at "
 declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 (:~
  : Generate a javascript variable, PAGES, to be used in conjunction with Open Seadragon.
@@ -32,6 +33,14 @@ as element()
         ]
     </script>
 
+};
+
+declare function issue:selected-issue-transcription($node as node(), $model as map(*))
+as map(*)?
+{
+    let $issue-id := $model("selected-issue")/mods:identifier[@type='bmtn']
+    let $transcription := collection($config:transcript-root)/tei:TEI[tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type='bmtnid'] = $issue-id]
+    return map { "selected-issue-transcription" := $transcription }
 };
 
 declare %templates:wrap function issue:selected-issue($node as node(), $model as map(*), $issueURN as xs:string?)
@@ -130,7 +139,7 @@ as element()
 };
 
 
-declare function issue:constituents($node as node(), $model as map(*))
+declare %templates:wrap function issue:constituents($node as node(), $model as map(*))
 as map(*)
 {
     map { "selected-issue-constituents" := $model("selected-issue")//mods:relatedItem[@type='constituent'] }    
@@ -269,8 +278,12 @@ as element()
             $row
     }</table>
 };
-
-
  
- 
- 
+declare %templates:wrap function issue:ms-description($node as node(), $model as map(*))
+as element()?
+{ 
+    let $msDesc := $model("selected-issue-transcription")/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc
+    let $xsl    := doc($config:app-root || "/resources/xsl/msdesc.xsl")
+    let $div    := transform:transform($msDesc, $xsl, ())
+    return $div
+};

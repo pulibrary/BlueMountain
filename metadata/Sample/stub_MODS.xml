@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mods xmlns="http://www.loc.gov/mods/v3">
     <recordInfo>
-        <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn</recordIdentifier>
+        <!-- Complete the <recordIdentifier> by replacing TTT_YYYY-MM-DD_II with the issuance
+        signature of the issue, for example, 1921-11-01_01 -->
+        <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnTTT_YYYY-MM-DD_II</recordIdentifier>
     </recordInfo>
-    <identifier type="bmtn">urn:PUL:bluemountain:bmtn</identifier>
+    <!-- Complete the <identifier type='bmtn'> id by replacing TTT_YYYY-MM-DD_II with the issuance
+        signature of the issue, for example, 1921-11-01_01 -->
+    
+    <identifier type="bmtn">urn:PUL:bluemountain:bmtnTTT_YYYY-MM-DD_II</identifier>
     <typeOfResource>text</typeOfResource>
     <genre>Periodicals-Issue</genre>
     <titleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -24,10 +29,24 @@
         <dateIssued></dateIssued>
         <dateIssued keyDate="yes" encoding="w3cdtf"></dateIssued>
     </originInfo>
+    <!-- Complete the host <relatedItem> by replacing TWO things: (1) in the xlink:href
+    attribute of the <relatedItem> element, replace bmtnTTT with the Blue Mountain id of the TITLE of which
+    this record denotes an issue: e.g., bmtnaap; (2) do the same thing with the bmtnTTT string in the <recordIdentifier>
+    element.-->
+    <location xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <physicalLocation type="text">Princeton University. <!-- Branch Library --></physicalLocation>
+        <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+        <holdingSimple>
+            <copyInformation>
+                <subLocation><!-- if applicable --></subLocation>
+                <shelfLocator><!-- call number --></shelfLocator>
+            </copyInformation>
+        </holdingSimple>
+    </location>
     <relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple"
-        xlink:href="urn:PUL:bluemountain:bmtnabk">
+        xlink:href="urn:PUL:bluemountain:bmtnTTT">
         <recordInfo>
-            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtn</recordIdentifier>
+            <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnTTT</recordIdentifier>
         </recordInfo>
     </relatedItem>
 </mods>

@@ -33,6 +33,8 @@ declare variable $config:app-root :=
 
 declare variable $config:data-root := "/db/bluemtn/metadata/periodicals" ; 
 
+declare variable $config:transcript-root := "/db/bluemtn/transcriptions/periodicals" ; 
+
 declare variable $config:icon-root := "/exist/rest/db/bluemtn/resources/icons/periodicals/" ;
 
 
