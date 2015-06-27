@@ -98,7 +98,13 @@
 							<titleInfo lang="ita">
 								<title>Disegno di G. Grandi</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>G. Grandi</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>3</start>
@@ -109,7 +115,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="ita">
-							<title>EDIZIONI DI "POESIA,,</title>
+							<title>{}EDIZIONI DI "POESIA,,</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -139,8 +145,9 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c007">
 						<titleInfo lang="ita">
-							<title>INVIO A F.T. MARINETTI</title>
-						</titleInfo>
+                     <title>INVIO A F.T. MARINETTI</title>
+                     <subTitle>(PREFAZIONE ALLO STUDIO CRITICO“IL VERSO LIBERO„ DI G. P. LUCINI) </subTitle>
+                  </titleInfo>
 						<name type="personal">
 							<displayForm>Gian Pietro Lucini</displayForm>
 							<role>
@@ -160,7 +167,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="ita">
-							<title>FRATELLI TREVES, EDITORI - MILANO</title>
+							<title>{}FRATELLI TREVES, EDITORI - MILANO</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -210,7 +217,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo lang="ita">
-								<mods:title>Untitled Image</mods:title>
+								<mods:title>Poesia Logo</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -382,12 +389,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Decio Cinti trad</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Decio Cinti trad</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -422,8 +429,9 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c021">
 						<titleInfo lang="ita">
-							<title>SINFONIA D'ARGENTO</title>
-						</titleInfo>
+                     <title>SINFONIA D'ARGENTO</title>
+                     <subTitle>(DALLE OPERE POSTUMÉ INEDITE)</subTitle>
+                  </titleInfo>
 						<name type="personal">
 							<displayForm>Aurelio Ugolini</displayForm>
 							<role>
@@ -508,8 +516,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c025">
 						<titleInfo lang="ita">
-							<title>Cançâo do nauta seduzido</title>
-						</titleInfo>
+                     <title>Cançâo do nauta seduzido</title>
+                     <subTitle>POÈME BRÉSILIEN</subTitle>
+                  </titleInfo>
+					   <name type="personal">
+					      <displayForm>Carlos Magalhaes de Azeredo</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -532,6 +547,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
+					   <name type="personal">
+					      <displayForm>Carlos Magalhaes de Azeredo</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -632,8 +653,9 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c031">
 						<titleInfo lang="ita">
-							<title>MENTON</title>
-						</titleInfo>
+                     <title>MENTON</title>
+                     <subTitle>à Tonny Lerys</subTitle>
+                  </titleInfo>
 						<name type="personal">
 							<displayForm>George Gaudion</displayForm>
 							<role>
@@ -653,15 +675,17 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c032">
 						<titleInfo lang="ita">
-							<nonSort>LE</nonSort>
-							<title>DÉPART</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Trad, par Ary René d'Yvermont</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+                     <nonSort>LE</nonSort>
+                     <title>DÉPART</title>
+                     <subTitle>(CHANSON ALBANAISE INEDITE)</subTitle>
+						   <subTitle>à Gustave Kahn</subTitle>
+                  </titleInfo>
+						<name>
+                     <displayForm>Ary René d'Yvermont</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -810,6 +834,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
+					   <name type="personal">
+					      <displayForm>Gilberto Beccari</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -832,6 +862,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
+					   <name type="personal">
+					      <displayForm>Gilberto Beccari</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -853,6 +889,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
+					   <name type="personal">
+					      <displayForm>Gilberto Beccari</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -875,6 +917,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
+					   <name type="personal">
+					      <displayForm>Gilberto Beccari</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -896,6 +944,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
+					   <name type="personal">
+					      <displayForm>Gilberto Beccari</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -930,9 +984,10 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c045">
 						<titleInfo lang="ita">
-							<nonSort>La</nonSort>
-							<title>ninna-nanna dell'Etèra</title>
-						</titleInfo>
+                     <nonSort>La</nonSort>
+                     <title>ninna-nanna dell'Etèra</title>
+                     <subTitle>Al poeta F. T. MARINETTI, vertiginoso agitatore d'imagini e di ritmi.</subTitle>
+                  </titleInfo>
 						<name type="personal">
 							<displayForm>Enrico Fondi</displayForm>
 							<role>
@@ -952,14 +1007,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c046">
 						<titleInfo lang="ita">
-							<title>BÊARN</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Hein</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+                     <title>BÊARN</title>
+                     <subTitle>(POÉME EN PROSE)</subTitle>
+                  </titleInfo>
+						<name>
+                     <displayForm>Hein?</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -975,12 +1031,12 @@
 						<titleInfo lang="ita">
 							<title>DÉCLARATION</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Marguerite Henry=Rosier</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Marguerite Henry-Rosier</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -1015,7 +1071,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c049">
 						<titleInfo lang="ita">
-							<title>EDsHÌO — Prima Parte: VERSO IL BALENO romanzo di Paolo Buzzi,</title>
+							<title>{} EDsHÌO — Prima Parte: VERSO IL BALENO romanzo di Paolo Buzzi,</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
