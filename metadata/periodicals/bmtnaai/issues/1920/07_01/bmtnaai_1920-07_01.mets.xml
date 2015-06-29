@@ -52,7 +52,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ita">
-							<title>m "POESIA,, si riserva la proprietà letteraria di tutto ciò che pubblica.</title>
+							<title>{}"POESIA,, si riserva la proprietà letteraria di tutto ciò che pubblica.</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -104,7 +104,13 @@
 							<titleInfo lang="ita">
 								<mods:title>Untitled Image</mods:title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Ginna</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>4</start>
@@ -115,7 +121,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c006">
 						<titleInfo lang="ita">
-							<title>Nel prossimo numero</title>
+							<title>{}Nel prossimo numero</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -130,7 +136,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c007">
 						<titleInfo lang="ita">
-							<title>MR POESIA pubblica solamente scritti inediti.</title>
+							<title>{}NB POESIA pubblica solamente scritti inediti.</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -145,7 +151,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="ita">
-							<title>" POESIA „ pubblicherà nei prossimi numeri i profili di : Mario Carli - Corrado Govoni</title>
+							<title>{}"POESIA „ pubblicherà nei prossimi numeri i profili di : Mario Carli - Corrado Govoni</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -161,10 +167,7 @@
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="ita">
 							<title>Ritratto di Luisa Bàccara</title>
-						</titleInfo>
-						<titleInfo lang="ita">
-							<nonSort>LA</nonSort>
-							<title>MAESTRIA</title>
+						   <subTitle>LA MAESTRIA</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Gabriele d'Annunzio</displayForm>
@@ -206,7 +209,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c011">
 						<titleInfo lang="ita">
-							<title>MON DIEU,. VOUS ETES</title>
+							<title>MON DIEU, VOUS ETES</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Alexandre Mercereau</displayForm>
@@ -235,12 +238,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Traduction par F. T. MARINETTI</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>F. T. MARINETTI</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -255,9 +258,15 @@
 					<relatedItem type="constituent" ID="c013">
 						<titleInfo lang="ita">
 							<nonSort>LA</nonSort>
-							<title>MADRE PAZZA DI ARNALDO GINNA</title>
+							<title>MADRE PAZZA</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>ARNALDO GINNA</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>27</start>
@@ -267,8 +276,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c014">
 						<titleInfo lang="ita">
-							<title>L'ASSASSINO DI ARNALDO GINNA</title>
+							<title>L'ASSASSINO</title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>ARNALDO GINNA</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -279,8 +294,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c015">
 						<titleInfo lang="ita">
-							<title>L'IMPOSTORE DI ARNALDO GINNA</title>
+							<title>L'IMPOSTORE</title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>ARNALDO GINNA</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -343,10 +364,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c019">
 						<titleInfo lang="ita">
-							<title>Notes sur les danses nouvelles</title>
-						</titleInfo>
-						<titleInfo lang="ita">
-							<title>D'ISADORA DUNCAN</title>
+						   <title>Notes sur les danses nouvelles D'ISADORA DUNCAN</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Fernand Divoire</displayForm>
@@ -388,23 +406,21 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c021">
 						<titleInfo lang="ita">
-							<title>Deuxième travesti</title>
-						</titleInfo>
-						<titleInfo lang="ita">
-							<title>Tremblement</title>
-						</titleInfo>
+                     <title>Deuxième travesti</title>
+                     <subTitle>Tremblement</subTitle>
+                  </titleInfo>
 						<name type="personal">
 							<displayForm>Emilio Settimelli</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Traduction par F. T. MARINETTI</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>F. T. MARINETTI</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -419,9 +435,7 @@
 					<relatedItem type="constituent" ID="c022">
 						<titleInfo lang="ita">
 							<title>ARABESCHI FIUMANI</title>
-						</titleInfo>
-						<titleInfo lang="ita">
-							<title>I capelli della Primavera</title>
+							<subTitle>I capelli della Primavera</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Mario Carli</displayForm>
@@ -451,12 +465,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Traduction par F. T. MARINETTI</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>F. T. MARINETTI</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -577,6 +591,12 @@
 						<titleInfo lang="ita">
 							<title>MEMORY'S HARBOUR</title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>Fred G. Bowles</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -636,6 +656,12 @@
 							<nonSort>La</nonSort>
 							<title>joie</title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>Pierre Reverdy</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -672,6 +698,7 @@
 					<relatedItem type="constituent" ID="c036">
 						<titleInfo lang="ita">
 							<title>Andante danzabile</title>
+						   <subTitle>A POESIA ed al fedele suo comito</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Rodolfo Jacuzio-Ristori</displayForm>
@@ -691,7 +718,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c037">
 							<titleInfo lang="ita">
-								<title>s</title>
+								<title>Untitled Text</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -752,7 +779,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c041">
 						<titleInfo lang="ita">
-							<title>I ROSΤERI</title>
+							<title>I POSΤERI</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Armando Curcio</displayForm>
@@ -773,9 +800,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c042">
 						<titleInfo lang="ita">
-							<title>PAPPAGALLI MOTIVO ORNAMENTALE DI FORTUNATO DEPERO</title>
+							<title>PAPPAGALLI</title>
+						   <subTitle>MOTIVO ORNAMENTALE</subTitle>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>FORTUNATO DEPERO</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>45</start>
