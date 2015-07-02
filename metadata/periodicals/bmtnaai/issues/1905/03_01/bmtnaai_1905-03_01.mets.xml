@@ -66,7 +66,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="ita">
-							<title>PUBBLICHEREMO NEI PROSSIMI FASCICOLI</title>
+							<title>{}PUBBLICHEREMO NEI PROSSIMI FASCICOLI</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -81,7 +81,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c004">
 						<titleInfo lang="ita">
-							<title>POESIA. pubblica</title>
+							<title>{}POESIA. pubblica</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -104,12 +104,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Traduzione di Vitaliano Ponti</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Vitaliano Ponti</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ita</languageTerm>
@@ -122,7 +122,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c006">
 							<titleInfo lang="ita">
-								<mods:title>Untitled Image</mods:title>
+								<mods:title>Poesia Logo</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -244,9 +244,10 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="ita">
-							<nonSort>LE</nonSort>
-							<title>MATIN PASTORAL</title>
-						</titleInfo>
+                     <nonSort>LE</nonSort>
+                     <title>MATIN PASTORAL</title>
+                     <subTitle>EXTRAIT INÉDIT DE « VISIONS DE BERGER» </subTitle>
+                  </titleInfo>
 						<name type="personal">
 							<displayForm>Paul Fort</displayForm>
 							<role>
@@ -289,7 +290,6 @@
 						<titleInfo lang="ita">
 							<nonSort>LE</nonSort>
 							<title>PRINCE ÉTÉ</title>
-						   <subTitle>á F. T. Marinetti</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Gustave Kahn</displayForm>
@@ -311,8 +311,7 @@
 					<relatedItem type="constituent" ID="c015">
 						<titleInfo lang="ita">
 							<title>DEUXIÈME PARTIE DE LA CHANSON DE JEHANNE D'ARC</title>
-						</titleInfo>
-						<titleInfo lang="ita">
+						   <subTitle>(Extrait inédit)</subTitle>
 							<title>OU JEHANNE PRISONNIÉRE EST CONDUITE A MARGNI</title>
 						</titleInfo>
 						<name type="personal">
@@ -337,7 +336,6 @@
 							<nonSort>La</nonSort>
 							<title>Folie des Maisonnettes</title>
 						   <subTitle>Petit drame de lumière</subTitle>
-						   <subTitle>pour Paul Adam</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>F. T. Marinetti</displayForm>
@@ -564,7 +562,13 @@
 							<titleInfo lang="ita">
 								<mods:title>Untitled Image</mods:title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>ES.</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>23</start>
@@ -575,7 +579,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c030">
 						<titleInfo lang="ita">
-							<title>Nei prossimi fascicoli pubblicheremo i medaglioni di O-. Marradi, Gustave ICahn, Henry</title>
+							<title>{}Nei prossimi fascicoli pubblicheremo i medaglioni di O-. Marradi, Gustave ICahn, Henry</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
