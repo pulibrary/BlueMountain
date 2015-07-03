@@ -10,7 +10,7 @@ declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
-declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+declare %templates:wrap function selections:selected-items-old($node as node(), $model as map(*), 
 $anywhere as xs:string?, $byline as xs:string?
 )
 as map(*)? 
@@ -25,6 +25,61 @@ as map(*)?
         return map { "selected-items" := $hits }    
 };
 
+declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), $query as xs:string?, $byline as xs:string*)
+as map(*)? 
+{
+    let $name-hits  := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $query)]
+    let $title-hits := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $query)]
+    let $restrictions :=
+        if ($byline != '')
+        then 
+            for $line in $byline return 
+        collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $line)]
+        else ()
+    
+    let $query-hits := $name-hits union $title-hits
+    let $hits :=
+        if ($restrictions)
+        then $query-hits intersect $restrictions
+        else $query-hits
+
+    return map { "selected-items" : $hits, "query" : $query }    
+};
+
+declare %templates:wrap function selections:foo($node as node(), $model as map(*))
+{
+    <form action="">
+        <label for="thequery">Query Terms: </label>
+        <input name="query" id="query" value="{$model('query')}"/>
+        <br/>
+       <fieldset>
+        <legend>with byline</legend>
+        <ol>
+        {
+           let $names := $model("selected-items")//mods:displayForm
+           let $normalized-names := for $name in $names return normalize-space(lower-case($name))
+           for $name in distinct-values($normalized-names, "?strength=primary") 
+                let $count := count($normalized-names[.= $name])
+                order by $count descending
+                return <li><input type="checkbox" name="byline" value="{$name}">{$name} ({$count})</input></li>  
+        }
+        </ol>
+       </fieldset>
+       <fieldset>
+        <legend>in magazine</legend>
+        <ol>
+            {
+            let $mags := $model("selected-items")/ancestor::mods:mods/mods:relatedItem[@type='host']/@xlink:href
+            for $mag in distinct-values($mags)
+            return
+                <li>{$mag}</li>
+            }
+        </ol>
+       </fieldset>
+        <input type="submit" value="Search"/>
+    </form>
+};
+
 declare function local:name-link($name as xs:string) as element()
 {
     <a href="selections.html?byline=&quot;{replace($name, ' ', '+')}&quot;">{ $name }</a>
@@ -37,9 +92,9 @@ declare %templates:wrap function selections:name-facet($node as node(), $model a
     return
         <ol>
             {
-                for $name in distinct-values($normalized-names) 
+                for $name in distinct-values($normalized-names, "?strength=primary") 
                 let $count := count($normalized-names[.= $name])
-                order by $name
+                order by $count descending
                 return <li>{ local:name-link($name) } ({$count})</li>
             }
         </ol>

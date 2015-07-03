@@ -15,18 +15,22 @@
       <!-- MODS indexes -->
       <text qname="mods:identifier"/>
       <text qname="mods:recordIdentifier"/>
-
       <text qname="mods:titleInfo"/>
       <text qname="mods:name"/>
       <text qname="mods:originInfo"/>
       <text qname="mods:subject"/>
       <text qname="mods:genre"/>
       <text qname="mods:displayForm"/>
+
+
+      <!-- TEI indexes -->
       <text qname="tei:body"/>
+      <text qname="tei:ab"/>
 
       <!-- Try using named fields now -->
 
       <text field="creator" qname="mods:name" />
+      <text field="byline" qname="mods:displayForm" />      
       <text field="title" qname="mods:titleInfo" />
       <text field="language" qname="mods:languageTerm" />
 
