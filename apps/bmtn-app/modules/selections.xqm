@@ -25,7 +25,9 @@ as map(*)?
         return map { "selected-items" := $hits }    
 };
 
-declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), $query as xs:string?, $byline as xs:string*)
+declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+                                                           $query as xs:string?, $byline as xs:string*,
+                                                           $magazine as xs:string*)
 as map(*)? 
 {
     let $name-hits  := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $query)]
@@ -37,11 +39,16 @@ as map(*)?
         collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $line)]
         else ()
     
+    
     let $query-hits := $name-hits union $title-hits
     let $hits :=
         if ($restrictions)
         then $query-hits intersect $restrictions
         else $query-hits
+    let $hits :=
+        if ($magazine)
+        then $hits[./ancestor::mods:mods/mods:relatedItem[@type='host']/@xlink:href = $magazine]
+        else $hits
 
     return map { "selected-items" : $hits, "query" : $query }    
 };
@@ -59,9 +66,9 @@ declare %templates:wrap function selections:foo($node as node(), $model as map(*
            let $names := $model("selected-items")//mods:displayForm
            let $normalized-names := for $name in $names return normalize-space(lower-case($name))
            for $name in distinct-values($normalized-names, "?strength=primary") 
-                let $count := count($normalized-names[.= $name])
-                order by $count descending
-                return <li><input type="checkbox" name="byline" value="{$name}">{$name} ({$count})</input></li>  
+            let $count := count($normalized-names[.= $name])
+            order by $count descending
+            return <li><input type="checkbox" name="byline" value="{$name}">{$name} ({$count})</input></li>  
         }
         </ol>
        </fieldset>
@@ -71,8 +78,11 @@ declare %templates:wrap function selections:foo($node as node(), $model as map(*
             {
             let $mags := $model("selected-items")/ancestor::mods:mods/mods:relatedItem[@type='host']/@xlink:href
             for $mag in distinct-values($mags)
-            return
-                <li>{$mag}</li>
+             let $title := collection($config:data-root)//mods:mods[./mods:identifier = $mag]/mods:titleInfo[1]/mods:title[1]/text()
+             let $count := count($mags[.= $mag])
+             order by $count descending
+             return
+                <li><input type="checkbox" name="magazine" value="{$mag}">{$title} ({$count})</input></li>
             }
         </ol>
        </fieldset>
