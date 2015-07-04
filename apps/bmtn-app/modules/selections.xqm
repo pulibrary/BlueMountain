@@ -9,29 +9,22 @@ import module namespace app="http://bluemountain.princeton.edu/modules/app" at "
 declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace xlink="http://www.w3.org/1999/xlink";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
 
-declare %templates:wrap function selections:selected-items-old($node as node(), $model as map(*), 
-$anywhere as xs:string?, $byline as xs:string?
-)
-as map(*)? 
-{
-    let $hits :=
-    
-    if ($byline) 
-    then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $byline)]
-    else if ($anywhere) then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $anywhere)
-                                                                   or ft:query(.//mods:titleInfo, $anywhere)]
-    else ()
-        return map { "selected-items" := $hits }    
-};
 
-declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+declare %templates:wrap function selections:selected-items-mods($node as node(), $model as map(*), 
                                                            $query as xs:string?, $byline as xs:string*,
                                                            $magazine as xs:string*)
 as map(*)? 
 {
-    let $name-hits  := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $query)]
-    let $title-hits := collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $query)]
+    let $name-hits  := 
+        if ($query !='')
+            then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $query)]
+         else ()
+    let $title-hits := 
+        if ($query != '')
+            then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $query)]
+         else ()
     let $restrictions :=
         if ($byline != '')
         then 
@@ -48,6 +41,41 @@ as map(*)?
     let $hits :=
         if ($magazine)
         then $hits[./ancestor::mods:mods/mods:relatedItem[@type='host']/@xlink:href = $magazine]
+        else $hits
+
+    return map { "selected-items" : $hits, "query" : $query }    
+};
+
+declare %templates:wrap function selections:selected-items($node as node(), $model as map(*), 
+                                                           $query as xs:string?, $byline as xs:string*,
+                                                           $magazine as xs:string*)
+as map(*)? 
+{
+    let $transcription-db := "/db/bluemtn/transcriptions"
+    let $name-hits  := 
+        if ($query !='')
+            then collection($transcription-db)//tei:relatedItem[ft:query(.//tei:persName, $query)]
+         else ()
+    let $title-hits := 
+        if ($query != '')
+            then collection($transcription-db)//tei:relatedItem[ft:query(.//tei:title, $query)]
+         else ()
+    let $restrictions :=
+        if ($byline != '')
+        then 
+            for $line in $byline return 
+        collection($transcription-db)//tei:relatedItem[ft:query(.//tei:persName, $line)]
+        else ()
+    
+    
+    let $query-hits := $name-hits union $title-hits
+    let $hits :=
+        if ($restrictions)
+        then $query-hits intersect $restrictions
+        else $query-hits
+    let $hits :=
+        if ($magazine)
+        then $hits[./ancestor::tei:TEI//tei:relatedItem[@type='host']/@target = $magazine]
         else $hits
 
     return map { "selected-items" : $hits, "query" : $query }    
@@ -123,7 +151,7 @@ as element()
         </ol>
 };
 
-declare function selections:formatted-item($item as element())
+declare function selections:formatted-item-mods($item as element())
 {
     let $nonSort :=
         if ($item/mods:titleInfo/mods:nonSort)
@@ -156,6 +184,59 @@ declare function selections:formatted-item($item as element())
     let $date := $journal/mods:originInfo/mods:dateIssued[@keyDate = 'yes']
     (: let $issueLink := app:veridian-url-from-bmtnid($journal/mods:identifier[@type='bmtn']) :)
     let $issueLink := concat('issue.html?issueURN=',$journal/mods:identifier[@type='bmtn'])
+        
+    return
+    (<span class="itemTitle">
+        {
+            string-join(($nonSort,$title,$subtitle), ' ')
+        }
+    </span>, <br/>,
+    <span class="names">
+        {
+            string-join($names, ', ')
+        }
+    </span>, <br/>,
+    <span class="imprint">
+        <a href="{$issueLink}">
+        { string-join(($journalTitle,$volume,$number), ', ') } ({ $date })
+        </a>
+    </span>
+    )
+};
+
+declare function selections:formatted-item($item as element())
+{
+    let $nonSort :=
+        if ($item/tei:biblStruct/tei:analytic/tei:title/tei:seg[@type='nonSort'])
+        then $item/tei:biblStruct/tei:analytic/tei:title/tei:seg[@type='nonSort']/text()
+        else ()
+    let $title :=
+        if ($item/tei:biblStruct/tei:analytic/tei:title/tei:seg[@type='main'])
+        then $item/tei:biblStruct/tei:analytic/tei:title/tei:seg[@type='main']/text()
+        else ()
+    let $subtitle :=
+        if ($item/tei:biblStruct/tei:analytic/tei:title/tei:seg[@type='sub'])
+        then string-join((':', $item/tei:biblStruct/tei:analytic/tei:title/tei:seg[@type='sub']/text()), ' ')
+        else ()
+    let $names :=
+        if ($item//tei:persName)
+        then
+            for $name in $item//tei:persName return $name/text()
+        else ()
+    let $journal := $item/ancestor::tei:sourceDesc/tei:biblStruct/tei:monogr
+    let $journalTitle :=
+        $journal/tei:title/tei:seg[@type='main']/text()
+    let $volume :=
+        if ($journal/tei:imprint/tei:biblScope[@unit='vol'])
+        then concat("Vol. ", $journal/tei:imprint/tei:biblScope[@unit='vol'])
+        else ()
+    let $number :=
+        if ($journal/tei:imprint/tei:biblScope[@unit='issue'])
+        then concat("No. ", $journal/tei:imprint/tei:biblScope[@unit='issue']/text())
+        else ()
+    let $date := xs:string($journal/tei:imprint/tei:date/@when)
+    (: let $issueLink := app:veridian-url-from-bmtnid($journal/mods:identifier[@type='bmtn']) :)
+    let $issueLink := concat('issue.html?issueURN=',$journal/ancestor::tei:teiHeader/tei:publicationStmt/tei:idno[@type='bmtnid'])
         
     return
     (<span class="itemTitle">
