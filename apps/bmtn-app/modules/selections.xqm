@@ -5,6 +5,7 @@ module namespace selections="http://bluemountain.princeton.edu/modules/selection
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://bluemountain.princeton.edu/config" at "config.xqm";
 import module namespace app="http://bluemountain.princeton.edu/modules/app" at "app.xql";
+import module namespace kwic="http://exist-db.org/xquery/kwic";
 
 declare namespace mods="http://www.loc.gov/mods/v3";
 declare namespace mets="http://www.loc.gov/METS/";
@@ -60,6 +61,10 @@ as map(*)?
         if ($query != '')
             then collection($transcription-db)//tei:relatedItem[ft:query(.//tei:title, $query)]
          else ()
+    let $ft-hits :=
+        if ($query != '')
+            then collection($transcription-db)//tei:ab[ft:query(., $query)]
+        else ()
     let $restrictions :=
         if ($byline != '')
         then 
@@ -78,7 +83,7 @@ as map(*)?
         then $hits[./ancestor::tei:TEI//tei:relatedItem[@type='host']/@target = $magazine]
         else $hits
 
-    return map { "selected-items" : $hits, "query" : $query }    
+    return map { "selected-items" : $hits, "query" : $query, "ft-hits" : $ft-hits }    
 };
 
 declare %templates:wrap function selections:foo($node as node(), $model as map(*))
@@ -255,4 +260,22 @@ declare function selections:formatted-item($item as element())
         </a>
     </span>
     )
+};
+
+declare  %templates:wrap function selections:full-text-KWIC($node as node(), $model as map(*))
+as element()*
+{
+ let $hits := $model("ft-hits")
+ for $hit in $hits
+     let $summary := kwic:summarize($hit, <config width="40" />)
+     let $corresp := $hit/ancestor::tei:div/@corresp[1]
+     let $constituent := $hit/ancestor::tei:TEI//tei:relatedItem[@xml:id = $corresp][1]
+     let $ref :=
+        if ($constituent)
+        then selections:formatted-item($constituent)
+        else "unknown"
+    order by ft:score($hit) descending
+    return
+    (<dt>{$ref}</dt>,
+    <dd>{$summary}</dd>)
 };
