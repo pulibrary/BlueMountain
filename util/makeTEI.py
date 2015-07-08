@@ -8,9 +8,6 @@ import os
 import re
 import argparse
 
-cmd = 'convert'
-profile = '/'.join((os.getcwd(), 'lib', 'sRGB.icc'))
-cmd_opts = ' '.join(('-density 400', '-compress lzw', '-profile', profile))
 xslpath = '/Users/cwulfman/BlueMountain/util/xsl/metsalto2tei.xsl'
 targetroot = '/tmp'
 
@@ -24,7 +21,9 @@ def gen_commands(sourcedir, targetdir):
                 inpath  = '/'.join((root, fname))
                 outpath = '/'.join((target_subdir, fname.replace("mets.xml", "tei.xml")))
                 expr    = "saxon -s:%s -xsl:%s path=%s -o:%s" % (inpath, xslpath, root, outpath)
+                print "echo 'transforming %s'" % inpath
                 print expr
+                print "echo 'wrote %s'" % outpath
             if 'alto' in dirs: dirs.remove('alto')
 
 if __name__ == '__main__':

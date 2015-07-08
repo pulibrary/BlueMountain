@@ -9,7 +9,7 @@
  xmlns:mets="http://www.loc.gov/METS/" 
  xmlns:mods="http://www.loc.gov/mods/v3"
  xmlns:local="http://library.princeton.edu/cew" 
- exclude-result-prefixes="xs alto mets local xlink" 
+ exclude-result-prefixes="xs alto mets mods local tei xlink" 
  version="2.0">
  
  <xsl:import href="alto2tei.xsl"/> 
