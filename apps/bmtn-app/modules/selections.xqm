@@ -61,10 +61,11 @@ as map(*)?
         if ($query != '')
             then collection($transcription-db)//tei:relatedItem[ft:query(.//tei:title, $query)]
          else ()
-    let $ft-hits :=
+(:    let $ft-hits :=
         if ($query != '')
             then collection($transcription-db)//tei:ab[ft:query(., $query)]
         else ()
+:)
     let $restrictions :=
         if ($byline != '')
         then 
@@ -78,12 +79,29 @@ as map(*)?
         if ($restrictions)
         then $query-hits intersect $restrictions
         else $query-hits
+    let $hist :=
+        for $hit in $hits order by ft:score($hit) descending return $hit
     let $hits :=
         if ($magazine)
         then $hits[./ancestor::tei:TEI//tei:relatedItem[@type='host']/@target = $magazine]
         else $hits
 
-    return map { "selected-items" : $hits, "query" : $query, "ft-hits" : $ft-hits }    
+    let $ft-hits :=
+        if ($query != '')
+            then
+                for $hit in collection($transcription-db)//tei:div[ft:query(.//tei:ab, $query)]
+                order by ft:score($hit) descending
+                return $hit
+        else ()
+    let $ft-hits :=
+        if ($magazine)
+        then $ft-hits[./ancestor::tei:TEI//tei:relatedItem[@type='host']/@target = $magazine]
+        else $ft-hits
+
+
+    return map { "query" : $query , 
+                 "selected-items" : $hits , 
+                 "ft-hits" : $ft-hits }    
 };
 
 declare function selections:foo-mods($node as node(), $model as map(*))
@@ -297,7 +315,7 @@ declare function selections:formatted-item($item as element())
     )
 };
 
-declare  %templates:wrap function selections:full-text-KWIC($node as node(), $model as map(*))
+declare  %templates:wrap function selections:full-text-KWIC-old($node as node(), $model as map(*))
 as element()*
 {
  let $hits := $model("ft-hits")
@@ -312,5 +330,22 @@ as element()*
     order by ft:score($hit) descending
     return
     (<dt>{$ref}</dt>,
-    <dd>{$summary}</dd>)
+    <dd>{ $summary }</dd>)
+};
+
+declare  %templates:wrap function selections:full-text-KWIC($node as node(), $model as map(*))
+as element()*
+{
+ let $hits := $model("ft-hits")
+ for $hit in $hits
+     let $corresp := $hit/ancestor-or-self::tei:div/@corresp[1]
+     let $constituent := $hit/ancestor::tei:TEI//tei:relatedItem[@xml:id = $corresp][1]
+     let $ref :=
+        if ($constituent)
+        then selections:formatted-item($constituent)
+        else "unknown"
+    order by ft:score($hit) descending
+    return
+    (<dt>{$ref}</dt>,
+    <dd>{ kwic:summarize($hit, <config width="40" />) }</dd>)
 };
