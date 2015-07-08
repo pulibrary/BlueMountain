@@ -24,13 +24,13 @@ as map(*)?
          else ()
     let $title-hits := 
         if ($query != '')
-            then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $query)]
-         else ()
+        then collection($config:data-root)//mods:relatedItem[ft:query(.//mods:titleInfo, $query)]
+        else ()
     let $restrictions :=
         if ($byline != '')
         then 
-            for $line in $byline return 
-        collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $line)]
+         for $line in $byline return 
+             collection($config:data-root)//mods:relatedItem[ft:query(.//mods:displayForm, $line)]
         else ()
     
     
@@ -86,7 +86,7 @@ as map(*)?
     return map { "selected-items" : $hits, "query" : $query, "ft-hits" : $ft-hits }    
 };
 
-declare %templates:wrap function selections:foo($node as node(), $model as map(*))
+declare function selections:foo-mods($node as node(), $model as map(*))
 {
     <form action="">
         <label for="thequery">Query Terms: </label>
@@ -123,6 +123,46 @@ declare %templates:wrap function selections:foo($node as node(), $model as map(*
     </form>
 };
 
+declare %templates:wrap function selections:foo($node as node(), $model as map(*))
+{
+    <form action="">
+        <label for="thequery">Query Terms: </label>
+        <input name="query" id="query" value="{$model('query')}"/>
+        <br/>
+       <fieldset>
+        <legend>with byline</legend>
+        <ol>
+        {
+           let $names := $model("selected-items")//tei:persName
+           let $normalized-names := for $name in $names return normalize-space(lower-case($name))
+           for $name in distinct-values($normalized-names, "?strength=primary") 
+            let $count := count($normalized-names[.= $name])
+            order by $count descending
+            return <li><input type="checkbox" name="byline" value="{$name}">{$name} ({$count})</input></li>  
+        }
+        </ol>
+       </fieldset>
+       <fieldset>
+        <legend>in magazine</legend>
+        <ol>
+            {
+            let $mags := $model("selected-items")/ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:relatedItem[@type='host']/@target
+                         union
+                         $model("ft-hits")/ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblStruct/tei:relatedItem[@type='host']/@target
+            for $mag in distinct-values($mags)
+             let $title := collection($config:data-root)//mods:mods[./mods:identifier = $mag]/mods:titleInfo[1]/mods:title[1]/text()
+             let $count := count($mags[.= $mag])
+             order by $count descending
+             return
+                <li><input type="checkbox" name="magazine" value="{$mag}">{$title} ({$count})</input></li>
+            }
+        </ol>
+       </fieldset>
+        <input type="submit" value="Search"/>
+    </form>
+};
+
+
 declare function local:name-link($name as xs:string) as element()
 {
     <a href="selections.html?byline=&quot;{replace($name, ' ', '+')}&quot;">{ $name }</a>
@@ -144,16 +184,11 @@ declare %templates:wrap function selections:name-facet($node as node(), $model a
 };
 
 declare  %templates:wrap function selections:selected-items-listing($node as node(), $model as map(*))
-as element()
+as element()*
 {
     let $items := $model("selected-items")
-    return
-        <ol class="selection-list">
-            {
-                for $item in $items return
+   for $item in $items return
                 <li>{ selections:formatted-item($item) }</li>
-            }
-        </ol>
 };
 
 declare function selections:formatted-item-mods($item as element())
