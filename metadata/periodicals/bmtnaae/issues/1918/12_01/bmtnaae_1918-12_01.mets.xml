@@ -45,7 +45,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="fre">
-							<title>Bois de M. Janco.</title>
+							<title>Untitled Text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -150,12 +150,8 @@
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c007">
-						<titleInfo lang="fre">
+						<titleInfo lang="ita">
 							<title>SOPRA UN QUADRO CUBISTA</title>
-						</titleInfo>
-						<titleInfo lang="fre">
-							<nonSort>a</nonSort>
-							<title>Tristan Tzara</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>1916 GIUSEPPE RAIMONDI</displayForm>
@@ -165,7 +161,7 @@
 						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
-							<languageTerm authority="iso639-2b">fre</languageTerm>
+							<languageTerm authority="iso639-2b">ita</languageTerm>
 						</language>
 						<part>
 							<extent unit="page">
@@ -276,7 +272,13 @@
 							<titleInfo lang="fre">
 								<title>Bois de E. PRAMPOLINI</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>E. PRAMPOLINI</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>6</start>
@@ -289,6 +291,7 @@
 						<titleInfo lang="fre">
 							<nonSort>LA</nonSort>
 							<title>JOIE DES SEPT COULEURS</title>
+                     <subTitle>(Fragment)</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>PIERRE ALBERT-BIROT</displayForm>
@@ -307,57 +310,63 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c016">
-						<titleInfo lang="fre">
-							<title>REGIE</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Ferdinand HARDEKOPF</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">fre</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<start>7</start>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c017">
-							<titleInfo lang="fre">
-								<mods:title>Untitled Image</mods:title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>7</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c018">
-							<titleInfo lang="fre">
-								<title>Gesicht 1 u. 2.</title>
-							</titleInfo>
-						   <name type="personal">
-						      <displayForm>H. RICHTER</displayForm>
-						      <role>
-						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-						      </role>
-						   </name>
-						   <typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>7</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-					</relatedItem>
+					<relatedItem ID="c016">
+                  <titleInfo lang="ger">
+                     <title>REGIE</title>
+                  </titleInfo>
+                  <name>
+                     <displayForm>Ferdinand HARDEKOPF</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <start>7</start>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+                  <relatedItem ID="c017">
+                     <titleInfo lang="fre">
+                        <mods:title>Untitled Image</mods:title>
+                     </titleInfo>
+                     <name>
+                        <displayForm>H. RICHTER</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>7</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+                  <relatedItem ID="c018">
+                     <titleInfo lang="fre">
+                        <title>Untitled Image</title>
+                     </titleInfo>
+                     <name>
+                        <displayForm>H. RICHTER</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>7</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+               </relatedItem>
 					<relatedItem type="constituent" ID="c019">
 						<titleInfo lang="fre">
 							<title>CRAYON BLEU</title>
@@ -458,54 +467,60 @@
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c024">
-						<titleInfo lang="fre">
-							<nonSort>DER</nonSort>
-							<title>IDEALIST.</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Jakob van Hoddis</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">fre</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<start>10</start>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c025">
-						<titleInfo lang="fre">
-							<nonSort>DIE</nonSort>
-							<title>ARBEITEN VON HANS ARP.</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>1916) RICHARD HUELSENBECK</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">fre</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<start>10</start>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-					</relatedItem>
+					<relatedItem ID="c024">
+                  <titleInfo lang="ger">
+                     <nonSort>DER</nonSort>
+                     <title>IDEALIST.</title>
+                  </titleInfo>
+                  <name>
+                     <displayForm>Jakob van Hoddis</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <start>10</start>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+               </relatedItem>
+					<relatedItem ID="c025">
+                  <titleInfo lang="ger">
+                     <nonSort>DIE</nonSort>
+                     <title>ARBEITEN VON HANS ARP.</title>
+                  </titleInfo>
+                  <name>
+                     <displayForm>RICHARD HUELSENBECK</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <start>10</start>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+               </relatedItem>
 					<relatedItem type="constituent" ID="c026">
 						<titleInfo lang="fre">
 							<mods:title>Untitled Image</mods:title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>H. ARP</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -518,6 +533,12 @@
 						<titleInfo lang="fre">
 							<mods:title>Untitled Image</mods:title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>H. ARP</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -528,8 +549,9 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c028">
 						<titleInfo lang="fre">
-							<title>3 gravures sur bois par H. ARP pour le "Cinéma synthétique du cœur abstrait" de Tzara.</title>
+							<title>3 gravures sur bois par H. ARP</title>
 						</titleInfo>
+					   <note type="caption">pour le "Cinéma synthétique du cœur abstrait" de Tzara.</note>
 					   <name type="personal">
 					      <displayForm>H. ARP</displayForm>
 					      <role>
@@ -585,7 +607,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c031">
 						<titleInfo lang="fre">
-							<title>circuit total par la lune et par la couleur à marcel janco</title>
+							<title>circuit total par la lune et par la couleur</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Tristan tzara</displayForm>
@@ -644,9 +666,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c034">
 							<titleInfo lang="fre">
-								<title>M. Janco</title>
+								<title>Untitled Image</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>M. Janco</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>14</start>
@@ -656,9 +684,15 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c035">
 							<titleInfo lang="fre">
-								<title>H. Arp</title>
+								<title>Untitled Image</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>H. Arp</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>14</start>
@@ -672,12 +706,6 @@
 							<nonSort>LE</nonSort>
 							<title>MARIN</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>1915</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
 						<name type="personal">
 							<displayForm>TRISTAN TZARA</displayForm>
 							<role>
@@ -717,12 +745,12 @@
 						<titleInfo lang="fre">
 							<title>CALENDRIER</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>TRISTAN TZARA 1918</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>TRISTAN TZARA</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -737,7 +765,6 @@
 					<relatedItem type="constituent" ID="c039">
 						<titleInfo lang="fre">
 							<title>COW-BOY</title>
-							<subTitle>à Jacques Lipschitz</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Vincente HUIDOBRO</displayForm>
@@ -757,9 +784,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c040">
 							<titleInfo lang="fre">
-								<title>M. JANCO</title>
+								<title>Untitled Image</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>M. JANCO</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>16</start>
@@ -769,9 +802,15 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c041">
 							<titleInfo lang="fre">
-								<title>H. ARP</title>
+								<title>Untitled Image</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>H. ARP</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>16</start>
