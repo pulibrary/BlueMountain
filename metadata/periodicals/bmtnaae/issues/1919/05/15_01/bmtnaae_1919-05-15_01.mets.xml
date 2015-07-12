@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/"
-   xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3"
-   xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd"
-   TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaae_1919-05-15_01">
+<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaae_1919-05-15_01">
    <metsHdr>
       <agent ROLE="CREATOR" TYPE="ORGANIZATION">
          <name>Princeton University Library, Digital Initiatives</name>
@@ -45,16 +41,21 @@
                   <dateIssued>le 15 Mai 1919</dateIssued>
                   <dateIssued keyDate="yes" encoding="w3cdtf">1919-05-15</dateIssued>
                </originInfo>
-               <relatedItem type="host" xlink:type="simple"
-                  xlink:href="urn:PUL:bluemountain:bmtnaae">
+               <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaae">
                   <recordInfo>
                      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaae</recordIdentifier>
                   </recordInfo>
                </relatedItem>
                <relatedItem type="constituent" ID="c001">
                   <titleInfo lang="fre">
-                     <title>ARP</title>
+                     <title>Untitled Image</title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>ARP</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -65,8 +66,14 @@
                </relatedItem>
                <relatedItem type="constituent" ID="c002">
                   <titleInfo lang="fre">
-                     <title>Cover Illustration</title>
+                     <title>REVAIL MATIN</title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>Francis Picadia</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -219,7 +226,7 @@
                      <languageTerm authority="iso639-2b">fre</languageTerm>
                   </language>
                   <titleInfo lang="fre">
-                     <title>"319"</title>
+                     <title>"391" No 8</title>
                   </titleInfo>
                   <part>
                      <extent unit="page">
@@ -246,19 +253,19 @@
                   </part>
                   <genre type="CCS">Illustration</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c012">
-                  <titleInfo lang="fre">
+               <relatedItem ID="c012">
+                  <titleInfo lang="ger">
                      <title>BESTES PFLASTER AUCH ROTIB SEGEN</title>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>WALTER SERNER</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>WALTER SERNER</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -266,10 +273,16 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c013">
+                  <relatedItem ID="c013">
                      <titleInfo lang="fre">
                         <title>Augusto Giacometti</title>
                      </titleInfo>
+                     <name type="personal">
+                        <displayForm>Augusto Giacometti</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
                      <typeOfResource>still image</typeOfResource>
                      <part>
                         <extent unit="page">
@@ -283,6 +296,12 @@
                   <titleInfo lang="fre">
                      <title>Lithographie de Viking Eggeling Basse générale de la peinture Orchestration de la ligne.</title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>Viking Eggeling Basse</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -291,19 +310,19 @@
                   </part>
                   <genre type="CCS">Illustration</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c015">
+               <relatedItem ID="c015">
                   <titleInfo lang="fre">
                      <title>Splendeurs et misères des débrouillards</title>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>Ferdinand Hardekopf</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>Ferdinand Hardekopf</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -331,6 +350,12 @@
                   <titleInfo lang="fre">
                      <title>H. RICHTER</title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>H. RICHTER</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -404,7 +429,7 @@
                   <genre type="CCS">TextContent</genre>
                   <relatedItem type="constituent" ID="c021">
                      <titleInfo lang="fre">
-                        <title>A. van REES — Broderie en soie.</title>
+                        <title>Broderie en soie.</title>
                      </titleInfo>
                      <name type="personal">
 	          <displayForm>A. van REES</displayForm>
@@ -464,7 +489,7 @@
                   <titleInfo lang="fre">
                      <nonSort>Le</nonSort>
                      <title>délire du fantassin</title>
-                     <subTitle>à G. de Chirico</subTitle>
+                    
                   </titleInfo>
                   <name type="personal">
 	      <displayForm>Louis ARAGON</displayForm>
@@ -505,8 +530,9 @@
                   <genre type="CCS">TextContent</genre>
                   <relatedItem type="constituent" ID="c026">
                      <titleInfo lang="fre">
-                        <title>La Tache rouge repr. avec perm. du "Sturm"</title>
+                        <title>La Tache rouge</title>
                      </titleInfo>
+                     <note type="caption">repr. avec perm. du "Sturm"</note>
                      <name type="personal">
                         <displayForm>W. Kandinsky</displayForm>
                         <role>
@@ -549,6 +575,12 @@
                   <titleInfo lang="fre">
                      <title>H. Arp</title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>H. Arp</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -557,20 +589,20 @@
                   </part>
                   <genre type="CCS">Illustration</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c029">
-                  <titleInfo lang="fre">
+               <relatedItem ID="c029">
+                  <titleInfo lang="ger">
                      <title>Letzte Lockerung</title>
                      <subTitle>manifest</subTitle>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>WALTER SERNER</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>WALTER SERNER</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -579,19 +611,19 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c030">
-                  <titleInfo lang="fre">
+               <relatedItem ID="c030">
+                  <titleInfo lang="ger">
                      <title>RIESENPROGRAMM SCHLAGER AUF SCHLAOER EINZIG IN SEINER ART.</title>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>serner</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>serner</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -644,8 +676,14 @@
                   <genre type="CCS">TextContent</genre>
                   <relatedItem type="constituent" ID="c033">
                      <titleInfo lang="fre">
-                        <title>H. ARP</title>
+                        <title>Untitled Image</title>
                      </titleInfo>
+                     <name type="personal">
+                        <displayForm>H. ARP</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
                      <typeOfResource>still image</typeOfResource>
                      <part>
                         <extent unit="page">
@@ -703,7 +741,7 @@
                         <languageTerm authority="iso639-2b">fre</languageTerm>
                      </language>
                      <titleInfo lang="fre">
-                        <title>[sankt ziegenzack]</title>
+                        <title>Untitled Text</title>
                      </titleInfo>
                      <name type="personal">
 		<displayForm>arp</displayForm>
@@ -773,20 +811,20 @@
                   </part>
                   <genre type="CCS">Illustration</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c040">
-                  <titleInfo lang="fre">
+               <relatedItem ID="c040">
+                  <titleInfo lang="ger">
                      <nonSort>Ein</nonSort>
                      <title>Beburtstagsgesang für Bijo Berry z. Z. interniert</title>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>RICHARD HUELSENBECK</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>RICHARD HUELSENBECK</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -794,17 +832,17 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c041">
-                     <titleInfo lang="fre">
+                  <relatedItem ID="c041">
+                     <titleInfo lang="ger">
                         <title>Ausblick aus einem Wald</title>
                      </titleInfo>
-                     <name type="personal">
+                     <name>
                         <displayForm>Paul Klee</displayForm>
                         <role>
                            <roleTerm type="code" authority="marcrelator">cre</roleTerm>
                         </role>
                      </name>
-                     <note type="caption">(mit Erlaubnis der Kunsthandlung H. Goltz, München)</note>
+                     <note>(mit Erlaubnis der Kunsthandlung H. Goltz, München)</note>
                      <typeOfResource>still image</typeOfResource>
                      <part>
                         <extent unit="page">
@@ -814,19 +852,19 @@
                      <genre type="CCS">Illustration</genre>
                   </relatedItem>
                </relatedItem>
-               <relatedItem type="constituent" ID="c042">
-                  <titleInfo lang="fre">
+               <relatedItem ID="c042">
+                  <titleInfo lang="ger">
                      <title>LETZTE NACHRICHTEN AUS DEUTSCHLAND</title>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>r. hausmann</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>r. hausmann</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -835,19 +873,19 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c043">
-                  <titleInfo lang="fre">
+               <relatedItem ID="c043">
+                  <titleInfo lang="ger">
                      <title>Gegen Oh ne Fur Dada</title>
                   </titleInfo>
-                  <name type="personal">
-	      <displayForm>HANS RICHTER</displayForm>
-	      <role>
-		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	      </role>
-	    </name>
+                  <name>
+                     <displayForm>HANS RICHTER</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                     <languageTerm authority="iso639-2b">ger</languageTerm>
                   </language>
                   <part>
                      <extent unit="page">
@@ -877,7 +915,11 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                   <relatedItem type="constituent" ID="c045">
+                     <titleInfo lang="fre">
+                        <title>Francis Picabia</title>
+                     </titleInfo>
                      <typeOfResource>text</typeOfResource>
+                     
                      <language>
                         <languageTerm authority="iso639-2b">fre</languageTerm>
                      </language>
@@ -889,6 +931,9 @@
                      <genre type="CCS">TextContent</genre>
                   </relatedItem>
                   <relatedItem type="constituent" ID="c046">
+                     <titleInfo lang="fre">
+                        <title>H. Arp</title>
+                     </titleInfo>
                      <typeOfResource>text</typeOfResource>
                      <language>
                         <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -901,6 +946,9 @@
                      <genre type="CCS">TextContent</genre>
                   </relatedItem>
                   <relatedItem type="constituent" ID="c047">
+                     <titleInfo lang="fre">
+                        <title>R. Huelsenbeck</title>
+                     </titleInfo>
                      <typeOfResource>text</typeOfResource>
                      <language>
                         <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -913,6 +961,9 @@
                      <genre type="CCS">TextContent</genre>
                   </relatedItem>
                   <relatedItem type="constituent" ID="c048">
+                     <titleInfo lang="fre">
+                        <title>H. Richter</title>
+                     </titleInfo>
                      <typeOfResource>text</typeOfResource>
                      <language>
                         <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -959,6 +1010,9 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                   <relatedItem type="constituent" ID="c051">
+                     <titleInfo lang="fre">
+                        <title>Untitled Text</title>
+                     </titleInfo>
                      <typeOfResource>text</typeOfResource>
                      <language>
                         <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -995,7 +1049,7 @@
                <relatedItem type="constituent" ID="c053">
                   <titleInfo lang="fre">
                      <title>Pierre ALBERT – BIROT</title>
-                     <subTitle>Extrait de „ Poèmes à la Chair " (à paraître).</subTitle>
+                     <subTitle>Extrait de "Poèmes à la Chair " (à paraître).</subTitle>
                   </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
@@ -1011,6 +1065,12 @@
                      <titleInfo lang="fre">
                         <title>raoul hausmann</title>
                      </titleInfo>
+                     <name type="personal">
+                        <displayForm>raoul hausmann</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
                      <typeOfResource>still image</typeOfResource>
                      <part>
                         <extent unit="page">
@@ -1024,6 +1084,12 @@
                   <titleInfo lang="fre">
                      <mods:title>Untitled Image</mods:title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>ARP</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -1036,6 +1102,12 @@
                   <titleInfo lang="fre">
                      <title>ARP</title>
                   </titleInfo>
+                  <name type="personal">
+                     <displayForm>ARP</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
@@ -1130,7 +1202,7 @@
                </relatedItem>
                <relatedItem type="constituent" ID="c062">
                   <titleInfo lang="fre">
-                     <title>Bois de M. Janco</title>
+                     <title>Untitled Text</title>
                   </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
@@ -3518,367 +3590,204 @@
    </amdSec>
    <fileSec>
       <fileGrp ID="IMGGRP" USE="Images">
-         <file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2013-01-30T13:59:09"
-            MIMETYPE="image/jp2" SEQ="1" CHECKSUM="3d3be0e7ff949d5ae8a2cecd9d8a691f32dd488a"
-            CHECKSUMTYPE="SHA-1" SIZE="19039066">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0001.jp2"
-            />
+         <file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2013-01-30T13:59:09" MIMETYPE="image/jp2" SEQ="1" CHECKSUM="3d3be0e7ff949d5ae8a2cecd9d8a691f32dd488a" CHECKSUMTYPE="SHA-1" SIZE="19039066">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0001.jp2"/>
          </file>
-         <file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2013-01-30T13:59:33"
-            MIMETYPE="image/jp2" SEQ="2" CHECKSUM="ec020f668657783946ab4ab334003956a3593579"
-            CHECKSUMTYPE="SHA-1" SIZE="16446741">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0002.jp2"
-            />
+         <file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2013-01-30T13:59:33" MIMETYPE="image/jp2" SEQ="2" CHECKSUM="ec020f668657783946ab4ab334003956a3593579" CHECKSUMTYPE="SHA-1" SIZE="16446741">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0002.jp2"/>
          </file>
-         <file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2013-01-30T13:59:55"
-            MIMETYPE="image/jp2" SEQ="3" CHECKSUM="417368d3a5792f264ef76e394e289ab8c17cb2b2"
-            CHECKSUMTYPE="SHA-1" SIZE="17140051">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0003.jp2"
-            />
+         <file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2013-01-30T13:59:55" MIMETYPE="image/jp2" SEQ="3" CHECKSUM="417368d3a5792f264ef76e394e289ab8c17cb2b2" CHECKSUMTYPE="SHA-1" SIZE="17140051">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0003.jp2"/>
          </file>
-         <file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2013-01-30T14:00:18"
-            MIMETYPE="image/jp2" SEQ="4" CHECKSUM="ec5fc71df2b011fb5ec0bfb7067c8268122df484"
-            CHECKSUMTYPE="SHA-1" SIZE="17904276">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0004.jp2"
-            />
+         <file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2013-01-30T14:00:18" MIMETYPE="image/jp2" SEQ="4" CHECKSUM="ec5fc71df2b011fb5ec0bfb7067c8268122df484" CHECKSUMTYPE="SHA-1" SIZE="17904276">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0004.jp2"/>
          </file>
-         <file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2013-01-30T14:00:39"
-            MIMETYPE="image/jp2" SEQ="5" CHECKSUM="589c2abde6aab07b4872a540df3aa3dba9e6e0c6"
-            CHECKSUMTYPE="SHA-1" SIZE="18369253">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0005.jp2"
-            />
+         <file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2013-01-30T14:00:39" MIMETYPE="image/jp2" SEQ="5" CHECKSUM="589c2abde6aab07b4872a540df3aa3dba9e6e0c6" CHECKSUMTYPE="SHA-1" SIZE="18369253">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0005.jp2"/>
          </file>
-         <file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2013-01-30T14:01:02"
-            MIMETYPE="image/jp2" SEQ="6" CHECKSUM="dcf53ed8d7175f95193bdba8fc241d3112670087"
-            CHECKSUMTYPE="SHA-1" SIZE="20085947">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0006.jp2"
-            />
+         <file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2013-01-30T14:01:02" MIMETYPE="image/jp2" SEQ="6" CHECKSUM="dcf53ed8d7175f95193bdba8fc241d3112670087" CHECKSUMTYPE="SHA-1" SIZE="20085947">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0006.jp2"/>
          </file>
-         <file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2013-01-30T14:01:26"
-            MIMETYPE="image/jp2" SEQ="7" CHECKSUM="8603c42fa14712b07c6e648a42ba86ca9e2ee832"
-            CHECKSUMTYPE="SHA-1" SIZE="16049551">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0007.jp2"
-            />
+         <file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2013-01-30T14:01:26" MIMETYPE="image/jp2" SEQ="7" CHECKSUM="8603c42fa14712b07c6e648a42ba86ca9e2ee832" CHECKSUMTYPE="SHA-1" SIZE="16049551">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0007.jp2"/>
          </file>
-         <file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2013-01-30T14:01:47"
-            MIMETYPE="image/jp2" SEQ="8" CHECKSUM="f5332631a8d593151e7ad0d6b0db11d584da3eda"
-            CHECKSUMTYPE="SHA-1" SIZE="18710724">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0008.jp2"
-            />
+         <file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2013-01-30T14:01:47" MIMETYPE="image/jp2" SEQ="8" CHECKSUM="f5332631a8d593151e7ad0d6b0db11d584da3eda" CHECKSUMTYPE="SHA-1" SIZE="18710724">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0008.jp2"/>
          </file>
-         <file ID="IMG00009" ADMID="techmd9" GROUPID="page9" CREATED="2013-01-30T14:02:10"
-            MIMETYPE="image/jp2" SEQ="9" CHECKSUM="2f3c39d6aca7236d6cf8a3e9347f3ebd28d4fb96"
-            CHECKSUMTYPE="SHA-1" SIZE="25848874">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0009.jp2"
-            />
+         <file ID="IMG00009" ADMID="techmd9" GROUPID="page9" CREATED="2013-01-30T14:02:10" MIMETYPE="image/jp2" SEQ="9" CHECKSUM="2f3c39d6aca7236d6cf8a3e9347f3ebd28d4fb96" CHECKSUMTYPE="SHA-1" SIZE="25848874">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0009.jp2"/>
          </file>
-         <file ID="IMG00010" ADMID="techmd10" GROUPID="page10" CREATED="2013-01-30T14:02:33"
-            MIMETYPE="image/jp2" SEQ="10" CHECKSUM="5939a36891236532754ae47e4193b78c847b2c70"
-            CHECKSUMTYPE="SHA-1" SIZE="16036443">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0010.jp2"
-            />
+         <file ID="IMG00010" ADMID="techmd10" GROUPID="page10" CREATED="2013-01-30T14:02:33" MIMETYPE="image/jp2" SEQ="10" CHECKSUM="5939a36891236532754ae47e4193b78c847b2c70" CHECKSUMTYPE="SHA-1" SIZE="16036443">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0010.jp2"/>
          </file>
-         <file ID="IMG00011" ADMID="techmd11" GROUPID="page11" CREATED="2013-01-30T14:02:54"
-            MIMETYPE="image/jp2" SEQ="11" CHECKSUM="b921158aa070407a84c6ed2d77d0ea1430dd9317"
-            CHECKSUMTYPE="SHA-1" SIZE="20122129">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0011.jp2"
-            />
+         <file ID="IMG00011" ADMID="techmd11" GROUPID="page11" CREATED="2013-01-30T14:02:54" MIMETYPE="image/jp2" SEQ="11" CHECKSUM="b921158aa070407a84c6ed2d77d0ea1430dd9317" CHECKSUMTYPE="SHA-1" SIZE="20122129">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0011.jp2"/>
          </file>
-         <file ID="IMG00012" ADMID="techmd12" GROUPID="page12" CREATED="2013-01-30T14:03:16"
-            MIMETYPE="image/jp2" SEQ="12" CHECKSUM="68b661ef3271b205d80e10721ea76b2141c27c93"
-            CHECKSUMTYPE="SHA-1" SIZE="22020597">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0012.jp2"
-            />
+         <file ID="IMG00012" ADMID="techmd12" GROUPID="page12" CREATED="2013-01-30T14:03:16" MIMETYPE="image/jp2" SEQ="12" CHECKSUM="68b661ef3271b205d80e10721ea76b2141c27c93" CHECKSUMTYPE="SHA-1" SIZE="22020597">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0012.jp2"/>
          </file>
-         <file ID="IMG00013" ADMID="techmd13" GROUPID="page13" CREATED="2013-01-30T14:03:38"
-            MIMETYPE="image/jp2" SEQ="13" CHECKSUM="f70adb8ffdf6a6490a2ea836dd9ef0a3ad0c7fcc"
-            CHECKSUMTYPE="SHA-1" SIZE="19889045">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0013.jp2"
-            />
+         <file ID="IMG00013" ADMID="techmd13" GROUPID="page13" CREATED="2013-01-30T14:03:38" MIMETYPE="image/jp2" SEQ="13" CHECKSUM="f70adb8ffdf6a6490a2ea836dd9ef0a3ad0c7fcc" CHECKSUMTYPE="SHA-1" SIZE="19889045">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0013.jp2"/>
          </file>
-         <file ID="IMG00014" ADMID="techmd14" GROUPID="page14" CREATED="2013-01-30T14:04:02"
-            MIMETYPE="image/jp2" SEQ="14" CHECKSUM="300bb82e08b5238565233db1d399f2028e20f6be"
-            CHECKSUMTYPE="SHA-1" SIZE="21583160">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0014.jp2"
-            />
+         <file ID="IMG00014" ADMID="techmd14" GROUPID="page14" CREATED="2013-01-30T14:04:02" MIMETYPE="image/jp2" SEQ="14" CHECKSUM="300bb82e08b5238565233db1d399f2028e20f6be" CHECKSUMTYPE="SHA-1" SIZE="21583160">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0014.jp2"/>
          </file>
-         <file ID="IMG00015" ADMID="techmd15" GROUPID="page15" CREATED="2013-01-30T14:04:30"
-            MIMETYPE="image/jp2" SEQ="15" CHECKSUM="0957a11d0734450cefd4d9e6c7f69466b10a5b45"
-            CHECKSUMTYPE="SHA-1" SIZE="17697851">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0015.jp2"
-            />
+         <file ID="IMG00015" ADMID="techmd15" GROUPID="page15" CREATED="2013-01-30T14:04:30" MIMETYPE="image/jp2" SEQ="15" CHECKSUM="0957a11d0734450cefd4d9e6c7f69466b10a5b45" CHECKSUMTYPE="SHA-1" SIZE="17697851">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0015.jp2"/>
          </file>
-         <file ID="IMG00016" ADMID="techmd16" GROUPID="page16" CREATED="2013-01-30T14:05:03"
-            MIMETYPE="image/jp2" SEQ="16" CHECKSUM="7777daf2c970972d3fc87e0f2b83475064b2d99a"
-            CHECKSUMTYPE="SHA-1" SIZE="21801194">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0016.jp2"
-            />
+         <file ID="IMG00016" ADMID="techmd16" GROUPID="page16" CREATED="2013-01-30T14:05:03" MIMETYPE="image/jp2" SEQ="16" CHECKSUM="7777daf2c970972d3fc87e0f2b83475064b2d99a" CHECKSUMTYPE="SHA-1" SIZE="21801194">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0016.jp2"/>
          </file>
-         <file ID="IMG00017" ADMID="techmd17" GROUPID="page17" CREATED="2013-01-30T14:05:42"
-            MIMETYPE="image/jp2" SEQ="17" CHECKSUM="8525f885941d12bf1bdd61e26bb1271042b3286a"
-            CHECKSUMTYPE="SHA-1" SIZE="22430526">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0017.jp2"
-            />
+         <file ID="IMG00017" ADMID="techmd17" GROUPID="page17" CREATED="2013-01-30T14:05:42" MIMETYPE="image/jp2" SEQ="17" CHECKSUM="8525f885941d12bf1bdd61e26bb1271042b3286a" CHECKSUMTYPE="SHA-1" SIZE="22430526">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0017.jp2"/>
          </file>
-         <file ID="IMG00018" ADMID="techmd18" GROUPID="page18" CREATED="2013-01-30T14:06:09"
-            MIMETYPE="image/jp2" SEQ="18" CHECKSUM="b7a8718a38f392fed5b4e20fabe4e85e7be40c21"
-            CHECKSUMTYPE="SHA-1" SIZE="20605178">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0018.jp2"
-            />
+         <file ID="IMG00018" ADMID="techmd18" GROUPID="page18" CREATED="2013-01-30T14:06:09" MIMETYPE="image/jp2" SEQ="18" CHECKSUM="b7a8718a38f392fed5b4e20fabe4e85e7be40c21" CHECKSUMTYPE="SHA-1" SIZE="20605178">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0018.jp2"/>
          </file>
-         <file ID="IMG00019" ADMID="techmd19" GROUPID="page19" CREATED="2013-01-30T14:06:35"
-            MIMETYPE="image/jp2" SEQ="19" CHECKSUM="22acdddd2fedba124f1272c581382b208256cf1a"
-            CHECKSUMTYPE="SHA-1" SIZE="16807770">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0019.jp2"
-            />
+         <file ID="IMG00019" ADMID="techmd19" GROUPID="page19" CREATED="2013-01-30T14:06:35" MIMETYPE="image/jp2" SEQ="19" CHECKSUM="22acdddd2fedba124f1272c581382b208256cf1a" CHECKSUMTYPE="SHA-1" SIZE="16807770">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0019.jp2"/>
          </file>
-         <file ID="IMG00020" ADMID="techmd20" GROUPID="page20" CREATED="2013-01-30T14:07:05"
-            MIMETYPE="image/jp2" SEQ="20" CHECKSUM="41df38af39a4ac203504841648870f45ab7dc7af"
-            CHECKSUMTYPE="SHA-1" SIZE="18375317">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0020.jp2"
-            />
+         <file ID="IMG00020" ADMID="techmd20" GROUPID="page20" CREATED="2013-01-30T14:07:05" MIMETYPE="image/jp2" SEQ="20" CHECKSUM="41df38af39a4ac203504841648870f45ab7dc7af" CHECKSUMTYPE="SHA-1" SIZE="18375317">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0020.jp2"/>
          </file>
-         <file ID="IMG00021" ADMID="techmd21" GROUPID="page21" CREATED="2013-01-30T14:07:32"
-            MIMETYPE="image/jp2" SEQ="21" CHECKSUM="23552fb9a1960a9f22d1c3ab2e69b800dcf831fe"
-            CHECKSUMTYPE="SHA-1" SIZE="21513207">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0021.jp2"
-            />
+         <file ID="IMG00021" ADMID="techmd21" GROUPID="page21" CREATED="2013-01-30T14:07:32" MIMETYPE="image/jp2" SEQ="21" CHECKSUM="23552fb9a1960a9f22d1c3ab2e69b800dcf831fe" CHECKSUMTYPE="SHA-1" SIZE="21513207">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0021.jp2"/>
          </file>
-         <file ID="IMG00022" ADMID="techmd22" GROUPID="page22" CREATED="2013-01-30T14:08:05"
-            MIMETYPE="image/jp2" SEQ="22" CHECKSUM="93a5935e62e8c32247f2cf02d108efa792639b89"
-            CHECKSUMTYPE="SHA-1" SIZE="20892766">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0022.jp2"
-            />
+         <file ID="IMG00022" ADMID="techmd22" GROUPID="page22" CREATED="2013-01-30T14:08:05" MIMETYPE="image/jp2" SEQ="22" CHECKSUM="93a5935e62e8c32247f2cf02d108efa792639b89" CHECKSUMTYPE="SHA-1" SIZE="20892766">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0022.jp2"/>
          </file>
-         <file ID="IMG00023" ADMID="techmd23" GROUPID="page23" CREATED="2013-01-30T14:08:33"
-            MIMETYPE="image/jp2" SEQ="23" CHECKSUM="a4abd3ad917426b13d354fc84d1ad26c3ff37871"
-            CHECKSUMTYPE="SHA-1" SIZE="16035965">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0023.jp2"
-            />
+         <file ID="IMG00023" ADMID="techmd23" GROUPID="page23" CREATED="2013-01-30T14:08:33" MIMETYPE="image/jp2" SEQ="23" CHECKSUM="a4abd3ad917426b13d354fc84d1ad26c3ff37871" CHECKSUMTYPE="SHA-1" SIZE="16035965">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0023.jp2"/>
          </file>
-         <file ID="IMG00024" ADMID="techmd24" GROUPID="page24" CREATED="2013-01-30T14:08:56"
-            MIMETYPE="image/jp2" SEQ="24" CHECKSUM="19d73f68d963999c8543d2885e8ec4fe7e37a45e"
-            CHECKSUMTYPE="SHA-1" SIZE="25201178">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0024.jp2"
-            />
+         <file ID="IMG00024" ADMID="techmd24" GROUPID="page24" CREATED="2013-01-30T14:08:56" MIMETYPE="image/jp2" SEQ="24" CHECKSUM="19d73f68d963999c8543d2885e8ec4fe7e37a45e" CHECKSUMTYPE="SHA-1" SIZE="25201178">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0024.jp2"/>
          </file>
-         <file ID="IMG00025" ADMID="techmd25" GROUPID="page25" CREATED="2013-01-30T14:09:23"
-            MIMETYPE="image/jp2" SEQ="25" CHECKSUM="42a440764a8a811fd257ecc741989716a65c1d2e"
-            CHECKSUMTYPE="SHA-1" SIZE="20931492">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0025.jp2"
-            />
+         <file ID="IMG00025" ADMID="techmd25" GROUPID="page25" CREATED="2013-01-30T14:09:23" MIMETYPE="image/jp2" SEQ="25" CHECKSUM="42a440764a8a811fd257ecc741989716a65c1d2e" CHECKSUMTYPE="SHA-1" SIZE="20931492">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0025.jp2"/>
          </file>
-         <file ID="IMG00026" ADMID="techmd26" GROUPID="page26" CREATED="2013-01-30T14:09:49"
-            MIMETYPE="image/jp2" SEQ="26" CHECKSUM="3acfaeff13c952ebaf50e7055649a22cd676dd73"
-            CHECKSUMTYPE="SHA-1" SIZE="18957586">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0026.jp2"
-            />
+         <file ID="IMG00026" ADMID="techmd26" GROUPID="page26" CREATED="2013-01-30T14:09:49" MIMETYPE="image/jp2" SEQ="26" CHECKSUM="3acfaeff13c952ebaf50e7055649a22cd676dd73" CHECKSUMTYPE="SHA-1" SIZE="18957586">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0026.jp2"/>
          </file>
-         <file ID="IMG00027" ADMID="techmd27" GROUPID="page27" CREATED="2013-01-30T14:10:12"
-            MIMETYPE="image/jp2" SEQ="27" CHECKSUM="39e73ae84a748ae329164c90e44091575ab15832"
-            CHECKSUMTYPE="SHA-1" SIZE="19558373">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0027.jp2"
-            />
+         <file ID="IMG00027" ADMID="techmd27" GROUPID="page27" CREATED="2013-01-30T14:10:12" MIMETYPE="image/jp2" SEQ="27" CHECKSUM="39e73ae84a748ae329164c90e44091575ab15832" CHECKSUMTYPE="SHA-1" SIZE="19558373">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0027.jp2"/>
          </file>
-         <file ID="IMG00028" ADMID="techmd28" GROUPID="page28" CREATED="2013-01-30T14:10:38"
-            MIMETYPE="image/jp2" SEQ="28" CHECKSUM="5cf68aff4ebf38d16d15d107fa1d0f1072aaacd8"
-            CHECKSUMTYPE="SHA-1" SIZE="18378301">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0028.jp2"
-            />
+         <file ID="IMG00028" ADMID="techmd28" GROUPID="page28" CREATED="2013-01-30T14:10:38" MIMETYPE="image/jp2" SEQ="28" CHECKSUM="5cf68aff4ebf38d16d15d107fa1d0f1072aaacd8" CHECKSUMTYPE="SHA-1" SIZE="18378301">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0028.jp2"/>
          </file>
-         <file ID="IMG00029" ADMID="techmd29" GROUPID="page29" CREATED="2013-01-30T14:11:02"
-            MIMETYPE="image/jp2" SEQ="29" CHECKSUM="9b34f651be24d8f1d27e8aed24412d9bee5857a9"
-            CHECKSUMTYPE="SHA-1" SIZE="18979251">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0029.jp2"
-            />
+         <file ID="IMG00029" ADMID="techmd29" GROUPID="page29" CREATED="2013-01-30T14:11:02" MIMETYPE="image/jp2" SEQ="29" CHECKSUM="9b34f651be24d8f1d27e8aed24412d9bee5857a9" CHECKSUMTYPE="SHA-1" SIZE="18979251">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0029.jp2"/>
          </file>
-         <file ID="IMG00030" ADMID="techmd30" GROUPID="page30" CREATED="2013-01-30T14:11:25"
-            MIMETYPE="image/jp2" SEQ="30" CHECKSUM="43111c381432d2041446b320cfe2cae5873e3eb4"
-            CHECKSUMTYPE="SHA-1" SIZE="16356636">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0030.jp2"
-            />
+         <file ID="IMG00030" ADMID="techmd30" GROUPID="page30" CREATED="2013-01-30T14:11:25" MIMETYPE="image/jp2" SEQ="30" CHECKSUM="43111c381432d2041446b320cfe2cae5873e3eb4" CHECKSUMTYPE="SHA-1" SIZE="16356636">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0030.jp2"/>
          </file>
-         <file ID="IMG00031" ADMID="techmd31" GROUPID="page31" CREATED="2013-01-30T14:11:47"
-            MIMETYPE="image/jp2" SEQ="31" CHECKSUM="d4cd59c2af3aa06851c07a5ee9279a4d09a36ab5"
-            CHECKSUMTYPE="SHA-1" SIZE="16801616">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0031.jp2"
-            />
+         <file ID="IMG00031" ADMID="techmd31" GROUPID="page31" CREATED="2013-01-30T14:11:47" MIMETYPE="image/jp2" SEQ="31" CHECKSUM="d4cd59c2af3aa06851c07a5ee9279a4d09a36ab5" CHECKSUMTYPE="SHA-1" SIZE="16801616">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0031.jp2"/>
          </file>
-         <file ID="IMG00032" ADMID="techmd32" GROUPID="page32" CREATED="2013-01-30T14:12:09"
-            MIMETYPE="image/jp2" SEQ="32" CHECKSUM="a04be34e9d66b00ae7df74ad04c033e6c951c13c"
-            CHECKSUMTYPE="SHA-1" SIZE="18854547">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0032.jp2"
-            />
+         <file ID="IMG00032" ADMID="techmd32" GROUPID="page32" CREATED="2013-01-30T14:12:09" MIMETYPE="image/jp2" SEQ="32" CHECKSUM="a04be34e9d66b00ae7df74ad04c033e6c951c13c" CHECKSUMTYPE="SHA-1" SIZE="18854547">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/delivery/bmtnaae_1919-05-15_01_0032.jp2"/>
          </file>
       </fileGrp>
       <fileGrp ID="ALTOGRP" USE="OCR">
-         <file ID="ALTO00001" GROUPID="page1" CREATED="2013-01-30T14:12:35" MIMETYPE="text/xml"
-            CHECKSUM="347f92777622da0aed3416a9bf690dbf848a0c1f" CHECKSUMTYPE="SHA-1" SIZE="6516">
+         <file ID="ALTO00001" GROUPID="page1" CREATED="2013-01-30T14:12:35" MIMETYPE="text/xml" CHECKSUM="347f92777622da0aed3416a9bf690dbf848a0c1f" CHECKSUMTYPE="SHA-1" SIZE="6516">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0001.alto.xml"/>
          </file>
-         <file ID="ALTO00002" GROUPID="page2" CREATED="2013-01-30T14:12:36" MIMETYPE="text/xml"
-            CHECKSUM="82f5b3011aa522f1c59bc9a52bb5a0dc4012d562" CHECKSUMTYPE="SHA-1" SIZE="2735">
+         <file ID="ALTO00002" GROUPID="page2" CREATED="2013-01-30T14:12:36" MIMETYPE="text/xml" CHECKSUM="82f5b3011aa522f1c59bc9a52bb5a0dc4012d562" CHECKSUMTYPE="SHA-1" SIZE="2735">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0002.alto.xml"/>
          </file>
-         <file ID="ALTO00003" GROUPID="page3" CREATED="2013-01-30T14:12:36" MIMETYPE="text/xml"
-            CHECKSUM="0e3c8116cde6295656170719dbbfdc77b97a929c" CHECKSUMTYPE="SHA-1" SIZE="77665">
+         <file ID="ALTO00003" GROUPID="page3" CREATED="2013-01-30T14:12:36" MIMETYPE="text/xml" CHECKSUM="0e3c8116cde6295656170719dbbfdc77b97a929c" CHECKSUMTYPE="SHA-1" SIZE="77665">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0003.alto.xml"/>
          </file>
-         <file ID="ALTO00004" GROUPID="page4" CREATED="2013-01-30T14:12:37" MIMETYPE="text/xml"
-            CHECKSUM="95dffefda6ea26ea6b9888f4ae20c23b67d00b89" CHECKSUMTYPE="SHA-1" SIZE="2591">
+         <file ID="ALTO00004" GROUPID="page4" CREATED="2013-01-30T14:12:37" MIMETYPE="text/xml" CHECKSUM="95dffefda6ea26ea6b9888f4ae20c23b67d00b89" CHECKSUMTYPE="SHA-1" SIZE="2591">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0004.alto.xml"/>
          </file>
-         <file ID="ALTO00005" GROUPID="page5" CREATED="2013-01-30T14:12:37" MIMETYPE="text/xml"
-            CHECKSUM="77d8219a64647b946a325de05f0caab9a7a630a0" CHECKSUMTYPE="SHA-1" SIZE="32516">
+         <file ID="ALTO00005" GROUPID="page5" CREATED="2013-01-30T14:12:37" MIMETYPE="text/xml" CHECKSUM="77d8219a64647b946a325de05f0caab9a7a630a0" CHECKSUMTYPE="SHA-1" SIZE="32516">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0005.alto.xml"/>
          </file>
-         <file ID="ALTO00006" GROUPID="page6" CREATED="2013-01-30T14:12:38" MIMETYPE="text/xml"
-            CHECKSUM="031943e824fda9b75dc2fe716fce90b64a799bde" CHECKSUMTYPE="SHA-1" SIZE="161273">
+         <file ID="ALTO00006" GROUPID="page6" CREATED="2013-01-30T14:12:38" MIMETYPE="text/xml" CHECKSUM="031943e824fda9b75dc2fe716fce90b64a799bde" CHECKSUMTYPE="SHA-1" SIZE="161273">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0006.alto.xml"/>
          </file>
-         <file ID="ALTO00007" GROUPID="page7" CREATED="2013-01-30T14:12:38" MIMETYPE="text/xml"
-            CHECKSUM="1154d02cc786aba472c6839cac6851219fe41810" CHECKSUMTYPE="SHA-1" SIZE="38930">
+         <file ID="ALTO00007" GROUPID="page7" CREATED="2013-01-30T14:12:38" MIMETYPE="text/xml" CHECKSUM="1154d02cc786aba472c6839cac6851219fe41810" CHECKSUMTYPE="SHA-1" SIZE="38930">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0007.alto.xml"/>
          </file>
-         <file ID="ALTO00008" GROUPID="page8" CREATED="2013-01-30T14:12:38" MIMETYPE="text/xml"
-            CHECKSUM="a041ba6a1d23e6edf8e343bc5af1d8829812d0d3" CHECKSUMTYPE="SHA-1" SIZE="2589">
+         <file ID="ALTO00008" GROUPID="page8" CREATED="2013-01-30T14:12:38" MIMETYPE="text/xml" CHECKSUM="a041ba6a1d23e6edf8e343bc5af1d8829812d0d3" CHECKSUMTYPE="SHA-1" SIZE="2589">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0008.alto.xml"/>
          </file>
-         <file ID="ALTO00009" GROUPID="page9" CREATED="2013-01-30T14:12:39" MIMETYPE="text/xml"
-            CHECKSUM="27a1065f80ceaa1b764c57b8f841cae3f6583741" CHECKSUMTYPE="SHA-1" SIZE="40092">
+         <file ID="ALTO00009" GROUPID="page9" CREATED="2013-01-30T14:12:39" MIMETYPE="text/xml" CHECKSUM="27a1065f80ceaa1b764c57b8f841cae3f6583741" CHECKSUMTYPE="SHA-1" SIZE="40092">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0009.alto.xml"/>
          </file>
-         <file ID="ALTO00010" GROUPID="page10" CREATED="2013-01-30T14:12:39" MIMETYPE="text/xml"
-            CHECKSUM="1d0d9de111fa35597f7c62dad3f5a311742e74b0" CHECKSUMTYPE="SHA-1" SIZE="2013">
+         <file ID="ALTO00010" GROUPID="page10" CREATED="2013-01-30T14:12:39" MIMETYPE="text/xml" CHECKSUM="1d0d9de111fa35597f7c62dad3f5a311742e74b0" CHECKSUMTYPE="SHA-1" SIZE="2013">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0010.alto.xml"/>
          </file>
-         <file ID="ALTO00011" GROUPID="page11" CREATED="2013-01-30T14:12:39" MIMETYPE="text/xml"
-            CHECKSUM="89928518bc9de65f607d3af578c372e44b0d34c3" CHECKSUMTYPE="SHA-1" SIZE="48602">
+         <file ID="ALTO00011" GROUPID="page11" CREATED="2013-01-30T14:12:39" MIMETYPE="text/xml" CHECKSUM="89928518bc9de65f607d3af578c372e44b0d34c3" CHECKSUMTYPE="SHA-1" SIZE="48602">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0011.alto.xml"/>
          </file>
-         <file ID="ALTO00012" GROUPID="page12" CREATED="2013-01-30T14:12:40" MIMETYPE="text/xml"
-            CHECKSUM="08a202a96de8e1930bda7054de3fa36df662e11a" CHECKSUMTYPE="SHA-1" SIZE="32453">
+         <file ID="ALTO00012" GROUPID="page12" CREATED="2013-01-30T14:12:40" MIMETYPE="text/xml" CHECKSUM="08a202a96de8e1930bda7054de3fa36df662e11a" CHECKSUMTYPE="SHA-1" SIZE="32453">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0012.alto.xml"/>
          </file>
-         <file ID="ALTO00013" GROUPID="page13" CREATED="2013-01-30T14:12:40" MIMETYPE="text/xml"
-            CHECKSUM="26531dffaa2cae6d39a40a795bb70aaf3fafbeb9" CHECKSUMTYPE="SHA-1" SIZE="33790">
+         <file ID="ALTO00013" GROUPID="page13" CREATED="2013-01-30T14:12:40" MIMETYPE="text/xml" CHECKSUM="26531dffaa2cae6d39a40a795bb70aaf3fafbeb9" CHECKSUMTYPE="SHA-1" SIZE="33790">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0013.alto.xml"/>
          </file>
-         <file ID="ALTO00014" GROUPID="page14" CREATED="2013-01-30T14:12:40" MIMETYPE="text/xml"
-            CHECKSUM="f64fa709ab59ffa167e1f75582a7c830bc441e72" CHECKSUMTYPE="SHA-1" SIZE="51146">
+         <file ID="ALTO00014" GROUPID="page14" CREATED="2013-01-30T14:12:40" MIMETYPE="text/xml" CHECKSUM="f64fa709ab59ffa167e1f75582a7c830bc441e72" CHECKSUMTYPE="SHA-1" SIZE="51146">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0014.alto.xml"/>
          </file>
-         <file ID="ALTO00015" GROUPID="page15" CREATED="2013-01-30T14:12:41" MIMETYPE="text/xml"
-            CHECKSUM="28ccee2934e50b5eb95ddbcba211fe6a80d10731" CHECKSUMTYPE="SHA-1" SIZE="2642">
+         <file ID="ALTO00015" GROUPID="page15" CREATED="2013-01-30T14:12:41" MIMETYPE="text/xml" CHECKSUM="28ccee2934e50b5eb95ddbcba211fe6a80d10731" CHECKSUMTYPE="SHA-1" SIZE="2642">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0015.alto.xml"/>
          </file>
-         <file ID="ALTO00016" GROUPID="page16" CREATED="2013-01-30T14:12:41" MIMETYPE="text/xml"
-            CHECKSUM="0aff292384c28db0235c1beb0abb36bce01dcee8" CHECKSUMTYPE="SHA-1" SIZE="118083">
+         <file ID="ALTO00016" GROUPID="page16" CREATED="2013-01-30T14:12:41" MIMETYPE="text/xml" CHECKSUM="0aff292384c28db0235c1beb0abb36bce01dcee8" CHECKSUMTYPE="SHA-1" SIZE="118083">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0016.alto.xml"/>
          </file>
-         <file ID="ALTO00017" GROUPID="page17" CREATED="2013-01-30T14:12:41" MIMETYPE="text/xml"
-            CHECKSUM="a79190c229beb5e00c99631c8330708e3653743e" CHECKSUMTYPE="SHA-1" SIZE="145603">
+         <file ID="ALTO00017" GROUPID="page17" CREATED="2013-01-30T14:12:41" MIMETYPE="text/xml" CHECKSUM="a79190c229beb5e00c99631c8330708e3653743e" CHECKSUMTYPE="SHA-1" SIZE="145603">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0017.alto.xml"/>
          </file>
-         <file ID="ALTO00018" GROUPID="page18" CREATED="2013-01-30T14:12:42" MIMETYPE="text/xml"
-            CHECKSUM="e5125a03686e4264f956ba4fad48992b436a90b8" CHECKSUMTYPE="SHA-1" SIZE="110773">
+         <file ID="ALTO00018" GROUPID="page18" CREATED="2013-01-30T14:12:42" MIMETYPE="text/xml" CHECKSUM="e5125a03686e4264f956ba4fad48992b436a90b8" CHECKSUMTYPE="SHA-1" SIZE="110773">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0018.alto.xml"/>
          </file>
-         <file ID="ALTO00019" GROUPID="page19" CREATED="2013-01-30T14:12:42" MIMETYPE="text/xml"
-            CHECKSUM="f0a75ceb9a55fcf46751bb5d89dffcb33c83a445" CHECKSUMTYPE="SHA-1" SIZE="30469">
+         <file ID="ALTO00019" GROUPID="page19" CREATED="2013-01-30T14:12:42" MIMETYPE="text/xml" CHECKSUM="f0a75ceb9a55fcf46751bb5d89dffcb33c83a445" CHECKSUMTYPE="SHA-1" SIZE="30469">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0019.alto.xml"/>
          </file>
-         <file ID="ALTO00020" GROUPID="page20" CREATED="2013-01-30T14:12:43" MIMETYPE="text/xml"
-            CHECKSUM="6e66c8c241ece655e88d77f2f976271c2fcd2050" CHECKSUMTYPE="SHA-1" SIZE="36967">
+         <file ID="ALTO00020" GROUPID="page20" CREATED="2013-01-30T14:12:43" MIMETYPE="text/xml" CHECKSUM="6e66c8c241ece655e88d77f2f976271c2fcd2050" CHECKSUMTYPE="SHA-1" SIZE="36967">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0020.alto.xml"/>
          </file>
-         <file ID="ALTO00021" GROUPID="page21" CREATED="2013-01-30T14:12:43" MIMETYPE="text/xml"
-            CHECKSUM="a0387713274fb68fe475ddf4f3e8d7b9c5b1d88c" CHECKSUMTYPE="SHA-1" SIZE="107916">
+         <file ID="ALTO00021" GROUPID="page21" CREATED="2013-01-30T14:12:43" MIMETYPE="text/xml" CHECKSUM="a0387713274fb68fe475ddf4f3e8d7b9c5b1d88c" CHECKSUMTYPE="SHA-1" SIZE="107916">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0021.alto.xml"/>
          </file>
-         <file ID="ALTO00022" GROUPID="page22" CREATED="2013-01-30T14:12:43" MIMETYPE="text/xml"
-            CHECKSUM="5e41423ed3304b4bc6a89dba203f70a2c04ce37b" CHECKSUMTYPE="SHA-1" SIZE="133626">
+         <file ID="ALTO00022" GROUPID="page22" CREATED="2013-01-30T14:12:43" MIMETYPE="text/xml" CHECKSUM="5e41423ed3304b4bc6a89dba203f70a2c04ce37b" CHECKSUMTYPE="SHA-1" SIZE="133626">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0022.alto.xml"/>
          </file>
-         <file ID="ALTO00023" GROUPID="page23" CREATED="2013-01-30T14:12:44" MIMETYPE="text/xml"
-            CHECKSUM="598b3ee4d0c21af09832ca723682dbfc1d650ae0" CHECKSUMTYPE="SHA-1" SIZE="2013">
+         <file ID="ALTO00023" GROUPID="page23" CREATED="2013-01-30T14:12:44" MIMETYPE="text/xml" CHECKSUM="598b3ee4d0c21af09832ca723682dbfc1d650ae0" CHECKSUMTYPE="SHA-1" SIZE="2013">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0023.alto.xml"/>
          </file>
-         <file ID="ALTO00024" GROUPID="page24" CREATED="2013-01-30T14:12:44" MIMETYPE="text/xml"
-            CHECKSUM="ac2e7966c07725215f38b2c90b1276bf582cde1a" CHECKSUMTYPE="SHA-1" SIZE="105060">
+         <file ID="ALTO00024" GROUPID="page24" CREATED="2013-01-30T14:12:44" MIMETYPE="text/xml" CHECKSUM="ac2e7966c07725215f38b2c90b1276bf582cde1a" CHECKSUMTYPE="SHA-1" SIZE="105060">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0024.alto.xml"/>
          </file>
-         <file ID="ALTO00025" GROUPID="page25" CREATED="2013-01-30T14:12:44" MIMETYPE="text/xml"
-            CHECKSUM="839157ea1a1d8c6ca8d2d403c3247fe147da7b88" CHECKSUMTYPE="SHA-1" SIZE="111969">
+         <file ID="ALTO00025" GROUPID="page25" CREATED="2013-01-30T14:12:44" MIMETYPE="text/xml" CHECKSUM="839157ea1a1d8c6ca8d2d403c3247fe147da7b88" CHECKSUMTYPE="SHA-1" SIZE="111969">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0025.alto.xml"/>
          </file>
-         <file ID="ALTO00026" GROUPID="page26" CREATED="2013-01-30T14:12:45" MIMETYPE="text/xml"
-            CHECKSUM="0503ce099265839b917d4bc14d90ba27b965eb1c" CHECKSUMTYPE="SHA-1" SIZE="205094">
+         <file ID="ALTO00026" GROUPID="page26" CREATED="2013-01-30T14:12:45" MIMETYPE="text/xml" CHECKSUM="0503ce099265839b917d4bc14d90ba27b965eb1c" CHECKSUMTYPE="SHA-1" SIZE="205094">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0026.alto.xml"/>
          </file>
-         <file ID="ALTO00027" GROUPID="page27" CREATED="2013-01-30T14:12:45" MIMETYPE="text/xml"
-            CHECKSUM="030f8a1a5aba2498e8452cf06d2b0a2e0cac5bce" CHECKSUMTYPE="SHA-1" SIZE="144771">
+         <file ID="ALTO00027" GROUPID="page27" CREATED="2013-01-30T14:12:45" MIMETYPE="text/xml" CHECKSUM="030f8a1a5aba2498e8452cf06d2b0a2e0cac5bce" CHECKSUMTYPE="SHA-1" SIZE="144771">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0027.alto.xml"/>
          </file>
-         <file ID="ALTO00028" GROUPID="page28" CREATED="2013-01-30T14:12:46" MIMETYPE="text/xml"
-            CHECKSUM="f8f813c24cbc863b51704b844785671c24c687c6" CHECKSUMTYPE="SHA-1" SIZE="22467">
+         <file ID="ALTO00028" GROUPID="page28" CREATED="2013-01-30T14:12:46" MIMETYPE="text/xml" CHECKSUM="f8f813c24cbc863b51704b844785671c24c687c6" CHECKSUMTYPE="SHA-1" SIZE="22467">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0028.alto.xml"/>
          </file>
-         <file ID="ALTO00029" GROUPID="page29" CREATED="2013-01-30T14:12:46" MIMETYPE="text/xml"
-            CHECKSUM="dba18a312e833fd9d7c722e330b9d10e69ee8252" CHECKSUMTYPE="SHA-1" SIZE="2666">
+         <file ID="ALTO00029" GROUPID="page29" CREATED="2013-01-30T14:12:46" MIMETYPE="text/xml" CHECKSUM="dba18a312e833fd9d7c722e330b9d10e69ee8252" CHECKSUMTYPE="SHA-1" SIZE="2666">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0029.alto.xml"/>
          </file>
-         <file ID="ALTO00030" GROUPID="page30" CREATED="2013-01-30T14:12:46" MIMETYPE="text/xml"
-            CHECKSUM="cbc8bead173a742e6dc3332b28a1d1fa7f9da250" CHECKSUMTYPE="SHA-1" SIZE="48022">
+         <file ID="ALTO00030" GROUPID="page30" CREATED="2013-01-30T14:12:46" MIMETYPE="text/xml" CHECKSUM="cbc8bead173a742e6dc3332b28a1d1fa7f9da250" CHECKSUMTYPE="SHA-1" SIZE="48022">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0030.alto.xml"/>
          </file>
-         <file ID="ALTO00031" GROUPID="page31" CREATED="2013-01-30T14:12:47" MIMETYPE="text/xml"
-            CHECKSUM="171743b6eafaa0e774dfe76843c7dc6f9f968892" CHECKSUMTYPE="SHA-1" SIZE="31951">
+         <file ID="ALTO00031" GROUPID="page31" CREATED="2013-01-30T14:12:47" MIMETYPE="text/xml" CHECKSUM="171743b6eafaa0e774dfe76843c7dc6f9f968892" CHECKSUMTYPE="SHA-1" SIZE="31951">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0031.alto.xml"/>
          </file>
-         <file ID="ALTO00032" GROUPID="page32" CREATED="2013-01-30T14:12:47" MIMETYPE="text/xml"
-            CHECKSUM="fdbdea7649a9f1dc0a0b4e036506a1019e6ed6f4" CHECKSUMTYPE="SHA-1" SIZE="24059">
+         <file ID="ALTO00032" GROUPID="page32" CREATED="2013-01-30T14:12:47" MIMETYPE="text/xml" CHECKSUM="fdbdea7649a9f1dc0a0b4e036506a1019e6ed6f4" CHECKSUMTYPE="SHA-1" SIZE="24059">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaae_1919-05-15_01_0032.alto.xml"/>
          </file>
       </fileGrp>
       <fileGrp ID="PDFGRP" USE="PDF">
-         <file ID="PDF_ISSUELEVEL" CREATED="2013-10-24T06:21:38" MIMETYPE="application/pdf"
-            CHECKSUM="3095e06881299e6616930d1e984d56af9a6b5e6a" CHECKSUMTYPE="SHA-1" SIZE="14986382">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/bmtnaae_1919-05-15_01.pdf"
-            />
+         <file ID="PDF_ISSUELEVEL" CREATED="2013-10-24T06:21:38" MIMETYPE="application/pdf" CHECKSUM="3095e06881299e6616930d1e984d56af9a6b5e6a" CHECKSUMTYPE="SHA-1" SIZE="14986382">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaae/issues/1919/05/15_01/bmtnaae_1919-05-15_01.pdf"/>
          </file>
       </fileGrp>
    </fileSec>
@@ -4180,8 +4089,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.2" TYPE="Illustration" ORDER="1" DMDID="c002"
-                  LABEL="Cover Illustration">
+               <div ID="L.1.1.2.2" TYPE="Illustration" ORDER="1" DMDID="c002" LABEL="Cover Illustration">
                   <div ID="L.1.1.2.2.1" TYPE="Image">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_CB00001"/>
@@ -4219,8 +4127,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005"
-                  LABEL="CHRONIQUE ZURICH">
+               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="CHRONIQUE ZURICH">
                   <div ID="L.1.1.2.5.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00006"/>
@@ -4255,8 +4162,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c007"
-                  LABEL="3 PIÉCES FACILES POUR PETITES MAINS">
+               <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c007" LABEL="3 PIÉCES FACILES POUR PETITES MAINS">
                   <div ID="L.1.1.2.7.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
@@ -4293,8 +4199,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c008"
-                  LABEL="NOTE 14 SUR LA POÉSIE">
+               <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c008" LABEL="NOTE 14 SUR LA POÉSIE">
                   <div ID="L.1.1.2.8.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
@@ -4317,8 +4222,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c009"
-                  LABEL="SOLEIL SAGE-FEMME">
+               <div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c009" LABEL="SOLEIL SAGE-FEMME">
                   <div ID="L.1.1.2.9.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00005"/>
@@ -4354,8 +4258,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.11" TYPE="Illustration" ORDER="1" DMDID="c011"
-                  LABEL="ROTATION DE NAÏVETÉ">
+               <div ID="L.1.1.2.11" TYPE="Illustration" ORDER="1" DMDID="c011" LABEL="ROTATION DE NAÏVETÉ">
                   <div ID="L.1.1.2.11.1" TYPE="Image">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_CB00001"/>
@@ -4367,8 +4270,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c012"
-                  LABEL="BESTES PFLASTER AUCH ROTIB SEGEN">
+               <div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c012" LABEL="BESTES PFLASTER AUCH ROTIB SEGEN">
                   <div ID="L.1.1.2.12.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00004"/>
@@ -4379,8 +4281,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00003"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.12.3" TYPE="Illustration" ORDER="1" DMDID="c013"
-                     LABEL="Augusto Giacometti">
+                  <div ID="L.1.1.2.12.3" TYPE="Illustration" ORDER="1" DMDID="c013" LABEL="Augusto Giacometti">
                      <div ID="L.1.1.2.12.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00001"/>
@@ -4411,8 +4312,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.13" TYPE="Illustration" ORDER="1" DMDID="c014"
-                  LABEL="Lithographie de Viking Eggeling Basse générale de la peinture Orchestration de la ligne.">
+               <div ID="L.1.1.2.13" TYPE="Illustration" ORDER="1" DMDID="c014" LABEL="Lithographie de Viking Eggeling Basse générale de la peinture Orchestration de la ligne.">
                   <div ID="L.1.1.2.13.1" TYPE="Image">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_CB00001"/>
@@ -4424,8 +4324,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.14" TYPE="TextContent" ORDER="14" DMDID="c015"
-                  LABEL="Splendeurs et misères des débrouillards">
+               <div ID="L.1.1.2.14" TYPE="TextContent" ORDER="14" DMDID="c015" LABEL="Splendeurs et misères des débrouillards">
                   <div ID="L.1.1.2.14.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00007"/>
@@ -4473,8 +4372,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.17" TYPE="TextContent" ORDER="17" DMDID="c018"
-                  LABEL="Richard Huelsenbeck: Verwandlungen">
+               <div ID="L.1.1.2.17" TYPE="TextContent" ORDER="17" DMDID="c018" LABEL="Richard Huelsenbeck: Verwandlungen">
                   <div ID="L.1.1.2.17.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00008"/>
@@ -4543,8 +4441,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00004"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.19.3" TYPE="Illustration" ORDER="1" DMDID="c021"
-                     LABEL="A. van REES — Broderie en soie.">
+                  <div ID="L.1.1.2.19.3" TYPE="Illustration" ORDER="1" DMDID="c021" LABEL="A. van REES — Broderie en soie.">
                      <div ID="L.1.1.2.19.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_CB00001"/>
@@ -4579,8 +4476,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00003"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.20.3" TYPE="Illustration" ORDER="1" DMDID="c023"
-                     LABEL="H. RICHTER: Portait macabre">
+                  <div ID="L.1.1.2.20.3" TYPE="Illustration" ORDER="1" DMDID="c023" LABEL="H. RICHTER: Portait macabre">
                      <div ID="L.1.1.2.20.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_CB00001"/>
@@ -4604,8 +4500,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.21" TYPE="TextContent" ORDER="21" DMDID="c024"
-                  LABEL="Le délire du fantassin">
+               <div ID="L.1.1.2.21" TYPE="TextContent" ORDER="21" DMDID="c024" LABEL="Le délire du fantassin">
                   <div ID="L.1.1.2.21.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00006"/>
@@ -4644,8 +4539,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00003"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.22.3" TYPE="Illustration" ORDER="1" DMDID="c026"
-                     LABEL="W. Kandinsky: La Tache rouge repr. avec perm. du „Sturm&#34;">
+                  <div ID="L.1.1.2.22.3" TYPE="Illustration" ORDER="1" DMDID="c026" LABEL="W. Kandinsky: La Tache rouge repr. avec perm. du „Sturm&#34;">
                      <div ID="L.1.1.2.22.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00001"/>
@@ -4669,8 +4563,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.23" TYPE="TextContent" ORDER="23" DMDID="c027"
-                  LABEL="A plusieures voix">
+               <div ID="L.1.1.2.23" TYPE="TextContent" ORDER="23" DMDID="c027" LABEL="A plusieures voix">
                   <div ID="L.1.1.2.23.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00006"/>
@@ -4710,8 +4603,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.25" TYPE="TextContent" ORDER="25" DMDID="c029"
-                  LABEL="Letzte Lockerung">
+               <div ID="L.1.1.2.25" TYPE="TextContent" ORDER="25" DMDID="c029" LABEL="Letzte Lockerung">
                   <div ID="L.1.1.2.25.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00002"/>
@@ -4753,8 +4645,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.26" TYPE="TextContent" ORDER="26" DMDID="c030"
-                  LABEL="RIESENPROGRAMM SCHLAGER AUF SCHLAOER EINZIG IN SEINER ART.">
+               <div ID="L.1.1.2.26" TYPE="TextContent" ORDER="26" DMDID="c030" LABEL="RIESENPROGRAMM SCHLAGER AUF SCHLAOER EINZIG IN SEINER ART.">
                   <div ID="L.1.1.2.26.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00005"/>
@@ -4800,8 +4691,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.28" TYPE="TextContent" ORDER="28" DMDID="c032"
-                  LABEL="GAMBIT DE LA REINE">
+               <div ID="L.1.1.2.28" TYPE="TextContent" ORDER="28" DMDID="c032" LABEL="GAMBIT DE LA REINE">
                   <div ID="L.1.1.2.28.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00006"/>
@@ -4857,8 +4747,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.29" TYPE="TextContent" ORDER="29" DMDID="c034"
-                  LABEL="les poésis de arp">
+               <div ID="L.1.1.2.29" TYPE="TextContent" ORDER="29" DMDID="c034" LABEL="les poésis de arp">
                   <div ID="L.1.1.2.29.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00008"/>
@@ -4888,8 +4777,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.30" TYPE="TextContent" ORDER="30" DMDID="c035"
-                  LABEL="aus die wolkenpumpe">
+               <div ID="L.1.1.2.30" TYPE="TextContent" ORDER="30" DMDID="c035" LABEL="aus die wolkenpumpe">
                   <div ID="L.1.1.2.30.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00009"/>
@@ -4965,8 +4853,7 @@
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.32" TYPE="TextContent" ORDER="32" DMDID="c040"
-                  LABEL="Ein Beburtstagsgesang für Bijo Berry z. Z. interniert">
+               <div ID="L.1.1.2.32" TYPE="TextContent" ORDER="32" DMDID="c040" LABEL="Ein Beburtstagsgesang für Bijo Berry z. Z. interniert">
                   <div ID="L.1.1.2.32.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00007"/>
@@ -4977,8 +4864,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00006"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.32.3" TYPE="Illustration" ORDER="1" DMDID="c041"
-                     LABEL="Paul Klee — Ausblick aus einem Wald (mit Erlaubnis der Kunsthandlung H. Goltz, München)">
+                  <div ID="L.1.1.2.32.3" TYPE="Illustration" ORDER="1" DMDID="c041" LABEL="Paul Klee — Ausblick aus einem Wald (mit Erlaubnis der Kunsthandlung H. Goltz, München)">
                      <div ID="L.1.1.2.32.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00001"/>
@@ -5009,8 +4895,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.33" TYPE="TextContent" ORDER="33" DMDID="c042"
-                  LABEL="LETZTE NACHRICHTEN AUS DEUTSCHLAND">
+               <div ID="L.1.1.2.33" TYPE="TextContent" ORDER="33" DMDID="c042" LABEL="LETZTE NACHRICHTEN AUS DEUTSCHLAND">
                   <div ID="L.1.1.2.33.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00008"/>
@@ -5036,8 +4921,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.34" TYPE="TextContent" ORDER="34" DMDID="c043"
-                  LABEL="Gegen Oh ne Fur Dada">
+               <div ID="L.1.1.2.34" TYPE="TextContent" ORDER="34" DMDID="c043" LABEL="Gegen Oh ne Fur Dada">
                   <div ID="L.1.1.2.34.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_TB00005"/>
@@ -5074,8 +4958,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.35" TYPE="TextContent" ORDER="35" DMDID="c044"
-                  LABEL="livres notes revues diversités divertissantes">
+               <div ID="L.1.1.2.35" TYPE="TextContent" ORDER="35" DMDID="c044" LABEL="livres notes revues diversités divertissantes">
                   <div ID="L.1.1.2.35.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00009"/>
@@ -5240,8 +5123,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.38" TYPE="TextContent" ORDER="38" DMDID="c053"
-                  LABEL="Pierre ALBERT – BIROT">
+               <div ID="L.1.1.2.38" TYPE="TextContent" ORDER="38" DMDID="c053" LABEL="Pierre ALBERT – BIROT">
                   <div ID="L.1.1.2.38.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00002"/>
@@ -5252,8 +5134,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00003"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.38.3" TYPE="Illustration" ORDER="1" DMDID="c054"
-                     LABEL="raoul hausmann">
+                  <div ID="L.1.1.2.38.3" TYPE="Illustration" ORDER="1" DMDID="c054" LABEL="raoul hausmann">
                      <div ID="L.1.1.2.38.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_CB00001"/>
@@ -5314,8 +5195,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.42" TYPE="TextContent" ORDER="41" DMDID="c058"
-                  LABEL="Francis Picabia:">
+               <div ID="L.1.1.2.42" TYPE="TextContent" ORDER="41" DMDID="c058" LABEL="Francis Picabia:">
                   <div ID="L.1.1.2.42.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00008"/>
@@ -5347,15 +5227,13 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.43" TYPE="TextContent" ORDER="42" DMDID="c059"
-                  LABEL="Lisez le Manifeste DADA 1918">
+               <div ID="L.1.1.2.43" TYPE="TextContent" ORDER="42" DMDID="c059" LABEL="Lisez le Manifeste DADA 1918">
                   <div ID="L.1.1.2.43.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00010"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.43.2" TYPE="Illustration" ORDER="1" DMDID="c060"
-                     LABEL="BOIS DE R. HAUSMANN">
+                  <div ID="L.1.1.2.43.2" TYPE="Illustration" ORDER="1" DMDID="c060" LABEL="BOIS DE R. HAUSMANN">
                      <div ID="L.1.1.2.43.2.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_CB00001"/>
@@ -5423,10 +5301,8 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.45" TYPE="TextContent" ORDER="44" DMDID="c062"
-                  LABEL="Bois de M. Janco">
-                  <div ID="L.1.1.2.45.1" TYPE="Illustration" ORDER="1" DMDID="c063"
-                     LABEL="Bois de M. Janco">
+               <div ID="L.1.1.2.45" TYPE="TextContent" ORDER="44" DMDID="c062" LABEL="Bois de M. Janco">
+                  <div ID="L.1.1.2.45.1" TYPE="Illustration" ORDER="1" DMDID="c063" LABEL="Bois de M. Janco">
                      <div ID="L.1.1.2.45.1.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00001"/>
