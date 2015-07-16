@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>INHALT:</title>
+							<title>INHALT</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Oskar Kokoschka: Schlangenzeichnung</title>
+							<title>Schlangenzeichnung</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Oskar Kokoschka</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -92,13 +98,14 @@
 						<titleInfo lang="ger">
 							<nonSort>Das</nonSort>
 							<title>Rätsel des Schönen</title>
+						   <subTitle>Kritischer Streifzug</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Kritischer Streifzug von Richard Dehmel</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Richard Dehmel</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -211,7 +218,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="ger">
-								<mods:title>Untitled Image</mods:title>
+								<mods:title>Lessing Theater</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
