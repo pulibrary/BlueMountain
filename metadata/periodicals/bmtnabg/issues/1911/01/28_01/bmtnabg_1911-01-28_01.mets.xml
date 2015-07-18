@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>INHALT:</title>
+							<title>INHALT</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Streit / Zeichnung von Max Pechstein</title>
+							<title>Streit</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Max Pechstein</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -92,12 +98,12 @@
 						<titleInfo lang="ger">
 							<title>Gedichte nach dem Chinesischen</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Heinrich Horvát</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Heinrich Horvát</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -154,9 +160,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c007">
 							<titleInfo lang="ger">
-								<title>Menschenköpfe / Zeichnung von Oskar Kokoschka VII / Karin Michaelis</title>
+								<title>Menschenköpfe </title>
+							   <subTitle>VII / Karin Michaelis</subTitle>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Oskar Kokoschka</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -204,6 +217,7 @@
 					<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="ger">
 							<title>Lokales</title>
+                     <subTitle>Ballbericht</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>J. A</displayForm>
