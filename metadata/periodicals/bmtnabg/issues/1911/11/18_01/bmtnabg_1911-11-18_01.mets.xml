@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -211,12 +211,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Einzige autorisierte Uebersetzung aus dem Dänischen von HERMANN KIY</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>HERMANN KIY</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl </roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -251,9 +251,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="ger">
-							<title>Ferdinand Hodler: Männerfigur Bleistiftzeichnung</title>
+							<title>Männerfigur Bleistiftzeichnung</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Ferdinand Hodler</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>5</start>
@@ -265,7 +271,13 @@
 						<titleInfo lang="ger">
 							<title>Malerei</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Trust</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>
