@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Franz Marc: Löwenschlacht nach Delacroix / Originalholzschnitt</title>
+							<title>Löwenschlacht nach Delacroix</title>
+						   <subTitle>Originalholzschnitt</subTitle>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Franz Marc</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -318,9 +325,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c018">
 							<titleInfo lang="ger">
-								<title>Fritz baumann: Originalholzschnitt</title>
+								<title>Originalholzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name>
+                        <displayForm>Fritz Baumann</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>6</start>
@@ -340,12 +353,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Deutsch von Nell Walden</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Nell Walden</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
