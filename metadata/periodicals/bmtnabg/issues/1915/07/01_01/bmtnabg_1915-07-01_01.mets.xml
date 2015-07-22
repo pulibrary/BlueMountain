@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Sigrid Hjertén – Grünewald: Zeichnung</title>
+							<title>Zeichnung</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Sigrid Hjertén–Grünewald</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -221,9 +227,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c012">
 							<titleInfo lang="ger">
-								<title>Fritz Baumann: Holzschnitt / Vom Stock gedruckt</title>
+								<title>Holzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <name type="personal">
+						      <displayForm>Fritz Baumann</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>6</start>
@@ -352,7 +365,7 @@
 					<relatedItem type="constituent" ID="c020">
 						<titleInfo lang="ger">
 							<nonSort>Das</nonSort>
-							<title>grobe Schieben</title>
+							<title>große Schieben</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>H. W</displayForm>
@@ -1516,7 +1529,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00010"/>
