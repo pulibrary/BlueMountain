@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Jacoba van Heemskerck: Holzschnitt / Vom Stock gedruckt</title>
+							<title>Holzschnitt</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <note type="caption">Vom Stock gedruckt</note>
+					   <name type="personal">
+					      <displayForm>Jacoba van Heemskerck</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -191,9 +198,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="ger">
-								<title>Fernand Léger: Akt / Zeichnung</title>
+								<title>Akt</title>
+							   <subTitle>Zeichnung</subTitle>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Fernand Léger</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -202,10 +216,16 @@
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c011">
-							<titleInfo lang="ger">
-								<title>Arnold Topp: Linoleumschnitt</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <titleInfo lang="ger">
+						      <title>Linoleumschnitt</title>
+						   </titleInfo>
+						   <name type="personal">
+						      <displayForm>Arnold Topp</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>7</start>
@@ -218,14 +238,14 @@
 						<titleInfo lang="ger">
 							<nonSort>Die</nonSort>
 							<title>Frühe der Städte I</title>
-							<subTitle>Walter Mehring</subTitle>
+							<subTitle>Die Brücke</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Die Brücke</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Walter Mehring</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -237,10 +257,16 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c013">
-							<titleInfo lang="ger">
-								<title>Arnold Topp: Linoleumschnitt</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <titleInfo lang="ger">
+						      <title>Linoleumschnitt</title>
+						   </titleInfo>
+						   <name type="personal">
+						      <displayForm>Arnold Topp</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>12</start>
@@ -2006,7 +2032,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00010"/>
