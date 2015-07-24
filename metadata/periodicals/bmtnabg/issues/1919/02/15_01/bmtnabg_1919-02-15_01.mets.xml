@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Hilla von Rebay: Zeichnung</title>
+							<title>Zeichnung</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Hilla von Rebay</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -294,7 +300,13 @@
 								<titleInfo lang="ger">
 									<mods:title>Untitled Image</mods:title>
 								</titleInfo>
-								<typeOfResource>still image</typeOfResource>
+							   <name type="personal">
+							      <displayForm>W. W.</displayForm>
+							      <role>
+							         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							      </role>
+							   </name>
+							   <typeOfResource>still image</typeOfResource>
 								<part>
 									<extent unit="page">
 										<start>5</start>
@@ -475,9 +487,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c028">
 							<titleInfo lang="ger">
-								<title>William Wauer: Zeichnung</title>
+								<title>Zeichnung</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>William Wauer</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>7</start>
@@ -491,12 +509,12 @@
 							<title>Kant und die Freiheit</title>
 							<subTitle>nach Ernst Marcus</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>S. Friedlaender</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Dr. S. Friedlaender</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -1902,7 +1920,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00006"/>
