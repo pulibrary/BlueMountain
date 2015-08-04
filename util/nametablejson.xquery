@@ -13,12 +13,14 @@ for $rec in $recs
     let $recid := xs:string($rec/mods:recordInfo/mods:recordIdentifier)
     for $name in $rec//mods:name
     let $viafid :=
+
     if ($name/@valueURI)
     then xs:string($name/@valueURI)
     else ()
     return
         <tr json:array="true">
             <name>{ xs:string($name/mods:displayForm) }</name>
+
             <viafid>{ $viafid }</viafid>
             <title>{ xs:string($name/parent::mods:relatedItem/mods:titleInfo[1]/mods:title[1]) }</title>
             <bmtnid>{ xs:string($name/parent::mods:relatedItem/@ID) }</bmtnid>
