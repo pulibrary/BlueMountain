@@ -99,11 +99,11 @@
     </fileDesc>
    </teiHeader>
 
-   <!--
+   
    <facsimile>
     <xsl:apply-templates select="mets:structMap[@TYPE='PHYSICAL']" mode="facsimile"/>
    </facsimile>
-   -->
+   
 
    <text>
     <body>

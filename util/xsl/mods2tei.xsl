@@ -108,6 +108,11 @@
   <xsl:template match="mods:name">
     <respStmt>
       <persName>
+      	<xsl:if test="@valueURI">
+      		<xsl:attribute name="ref">
+      			<xsl:value-of select="@valueURI" />
+      		</xsl:attribute>
+      	</xsl:if>
         <xsl:value-of select="mods:displayForm"/>
       </persName>
       <resp>
