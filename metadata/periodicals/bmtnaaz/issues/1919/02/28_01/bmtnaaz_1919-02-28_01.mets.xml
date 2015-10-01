@@ -530,8 +530,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c024">
 						<titleInfo lang="fre">
-							<title>Poème</title>
+							<title>De la fenêtre du cinquième</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Yves Krier</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -542,27 +548,6 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c025">
-							<titleInfo lang="fre">
-								<title>De la fenêtre du cinquième</title>
-							</titleInfo>
-							<name type="personal">
-								<displayForm>Yves Krier</displayForm>
-								<role>
-									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								</role>
-							</name>
-							<typeOfResource>text</typeOfResource>
-							<language>
-								<languageTerm authority="iso639-2b">fre</languageTerm>
-							</language>
-							<part>
-								<extent unit="page">
-									<start>324</start>
-								</extent>
-							</part>
-							<genre type="CCS">TextContent</genre>
-						</relatedItem>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c026">
 						<titleInfo lang="fre">
@@ -2893,18 +2878,7 @@
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00003"/>
 								</fptr>
 							</div>
-							<div ID="L.1.1.2.19.2.2" TYPE="Music" ORDER="1" DMDID="c022" LABEL="DADA 3">
-								<div ID="L.1.1.2.19.2.2.1" TYPE="Image">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_CB00001"/>
-									</fptr>
-								</div>
-								<div ID="L.1.1.2.19.2.2.2" TYPE="Caption">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00007"/>
-									</fptr>
-								</div>
-							</div>
+							
 							<div ID="L.1.1.2.19.2.3" TYPE="Copy">
 								<div ID="L.1.1.2.19.2.3.1" TYPE="BodyContent">
 									<div ID="L.1.1.2.19.2.3.1.1" TYPE="Paragraph" ORDER="1">
@@ -2922,6 +2896,18 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div ID="L.1.1.2.19.2.2" TYPE="Music" ORDER="1" DMDID="c022" LABEL="DADA 3">
+							<div ID="L.1.1.2.19.2.2.1" TYPE="Image">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_CB00001"/>
+								</fptr>
+							</div>
+							<div ID="L.1.1.2.19.2.2.2" TYPE="Caption">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00007"/>
+								</fptr>
 							</div>
 						</div>
 					</div>
@@ -2948,13 +2934,13 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.21" TYPE="TextContent" ORDER="21" DMDID="c024" LABEL="Poème">
+					<div ID="L.1.1.2.21" TYPE="TextContent" ORDER="21" DMDID="c024" LABEL="De la fenêtre du cinquième">
 						<div ID="L.1.1.2.21.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00007"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.21.2" TYPE="TextContent" ORDER="1" DMDID="c025" LABEL="De la fenêtre du cinquième">
+						
 							<div ID="L.1.1.2.21.2.1" TYPE="Byline">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00009"/>
@@ -2971,7 +2957,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						
 					</div>
 					<div ID="L.1.1.2.22" TYPE="Illustration" ORDER="1" DMDID="c026" LABEL="Untitled">
 						<div ID="L.1.1.2.22.1" TYPE="Image">
