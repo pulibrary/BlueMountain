@@ -172,7 +172,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c007">
+						<!--<relatedItem type="constituent" ID="c007">
 							<titleInfo lang="fre">
 								<title>GUILLAUME APOLLINAIRE</title>
 							</titleInfo>
@@ -183,7 +183,7 @@
 								</extent>
 							</part>
 							<genre type="CCS">Illustration</genre>
-						</relatedItem>
+						</relatedItem>-->
 					</relatedItem>
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="fre">
@@ -248,6 +248,36 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
+					<relatedItem type="constituent" ID="c011a">
+						<titleInfo lang="fre">
+							<title>CE QU'IL FAUT SAVOIR</title>
+						</titleInfo>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<start>6</start>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c011b">
+						<titleInfo lang="fre">
+							<title>[Réflexions]</title>
+						</titleInfo>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<start>7</start>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="fre">
 							<title>EXPOSITION DE JOUETS ARTISTIQUES MODERNES</title>
@@ -279,7 +309,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c014">
+						<!--<relatedItem type="constituent" ID="c014">
 							<titleInfo lang="fre">
 								<title>Untitled text</title>
 							</titleInfo>
@@ -293,7 +323,7 @@
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
-						</relatedItem>
+						</relatedItem>-->
 					</relatedItem>
 				</mods>
 			</xmlData>
@@ -1147,18 +1177,17 @@
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.6.2" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="GUILLAUME APOLLINAIRE">
-							<div ID="L.1.1.2.6.2.1" TYPE="Image">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
-								</fptr>
-							</div>
-							<div ID="L.1.1.2.6.2.2" TYPE="Caption">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
-								</fptr>
-							</div>
+						<div ID="L.1.1.2.6.2.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
+							</fptr>
 						</div>
+						<div ID="L.1.1.2.6.2.2" TYPE="Caption">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
+							</fptr>
+						</div>
+						
 					</div>
 					<div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c008" LABEL="Étude au fusain.">
 						<div ID="L.1.1.2.7.1" TYPE="Head">
@@ -1220,6 +1249,34 @@
 										</fptr>
 									</div>
 								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div ID="cew1" TYPE="TextContent" DMDID="c011a" LABEL="CE QU'IL FAUT SAVOIR">
+						<div ID="cew1.1" TYPE="HEAD">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TL00024"/>
+							</fptr>
+						</div>
+						<div TYPE="Copy">
+							<div TYPE="BodyContent">
+								<div TYPE="Paragraph">
+									<div TYPE="Text">
+										<fptr>
+											<area FILEID="ALTO00006" BETYPE="IDREF" BEGIN="cew1"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div ID="cew12" TYPE="TextContent" DMDID="c011b" LABEL="[Réflexions]">
+						
+						<div TYPE="Copy">
+							<div TYPE="BodyContent">
 								<div ID="L.1.1.2.9.2.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.9.2.1.2.1" TYPE="Text">
 										<fptr>
@@ -1230,6 +1287,7 @@
 							</div>
 						</div>
 					</div>
+					
 					<div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c012" LABEL="EXPOSITION DE JOUETS ARTISTIQUES MODERNES">
 						<div ID="L.1.1.2.10.1" TYPE="Head">
 							<fptr>
@@ -1254,7 +1312,7 @@
 								<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00004"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.11.2" TYPE="TextContent" ORDER="1" DMDID="c014" LABEL="LETTRES. Le « Poète assassiné » de Guillaume APOLLINAIRE. En tournant les pages de ce livre,">
+						
 							<div ID="L.1.1.2.11.2.1" TYPE="Copy">
 								<div ID="L.1.1.2.11.2.1.1" TYPE="BodyContent">
 									<div ID="L.1.1.2.11.2.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -1294,7 +1352,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
