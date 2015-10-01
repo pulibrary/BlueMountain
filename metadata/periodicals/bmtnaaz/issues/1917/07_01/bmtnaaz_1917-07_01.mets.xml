@@ -158,10 +158,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c006">
 						<titleInfo lang="fre">
-							<nonSort>UNE</nonSort>
-							<title>OEUVRE NOUVELLE de IGOR STRAWINSKY</title>
-							<subTitle>(reproduction d'un manuscrit)</subTitle>
+							<mods:title>Renard</mods:title>
+							<subTitle>Histoire burlesque chantée et jouée</subTitle>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Igor Strawinsky</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -172,25 +178,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c007">
-							<titleInfo lang="fre">
-								<mods:title>Renard</mods:title>
-								<subTitle>Histoire burlesque chantée et jouée</subTitle>
-							</titleInfo>
-							<name type="personal">
-								<displayForm>Igor Strawinsky</displayForm>
-								<role>
-									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								</role>
-							</name>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>9</start>
-								</extent>
-							</part>
-							<genre type="CCS">Music</genre>
-						</relatedItem>
+						
 					</relatedItem>
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="fre">
@@ -1529,31 +1517,33 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006" LABEL="UNE OEUVRE NOUVELLE de IGOR STRAWINSKY">
-						<div ID="L.1.1.2.5.1" TYPE="Head">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00001"/>
-							</fptr>
-						</div>
-						<div ID="L.1.1.2.5.2" TYPE="Music" ORDER="1" DMDID="c007" LABEL="Untitled">
+					
+						
+						<div ID="L.1.1.2.5.2" TYPE="Music" ORDER="1" DMDID="c006" LABEL="UNE OEUVRE NOUVELLE de IGOR STRAWINSKY">
+							<div ID="L.1.1.2.5.1" TYPE="Head">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00001"/>
+								</fptr>
+							</div>
 							<div ID="L.1.1.2.5.2.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00001"/>
 								</fptr>
 							</div>
-						</div>
-						<div ID="L.1.1.2.5.3" TYPE="Copy">
-							<div ID="L.1.1.2.5.3.1" TYPE="BodyContent">
-								<div ID="L.1.1.2.5.3.1.1" TYPE="Paragraph" ORDER="1">
-									<div ID="L.1.1.2.5.3.1.1.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00002"/>
-										</fptr>
+							<div ID="L.1.1.2.5.3" TYPE="Copy">
+								<div ID="L.1.1.2.5.3.1" TYPE="BodyContent">
+									<div ID="L.1.1.2.5.3.1.1" TYPE="Paragraph" ORDER="1">
+										<div ID="L.1.1.2.5.3.1.1.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00002"/>
+											</fptr>
+										</div>
 									</div>
 								</div>
-							</div>
+							</div>				
 						</div>
-					</div>
+						
+					
 					<div ID="L.1.1.2.6" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="JUDITH (Gravure sur bois de Ghana Orloff">
 						<div ID="L.1.1.2.6.1" TYPE="Image">
 							<fptr>
