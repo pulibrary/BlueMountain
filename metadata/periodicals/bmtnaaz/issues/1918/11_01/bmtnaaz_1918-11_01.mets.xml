@@ -207,7 +207,14 @@
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="fre">
 							<title>ACCIDIT</title>
+							<subTitle>POÈME</subTitle>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Pierre ALBERT-BIROT</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -218,27 +225,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c010">
-							<titleInfo lang="fre">
-								<title>POÈME</title>
-							</titleInfo>
-							<name type="personal">
-								<displayForm>Pierre ALBERT-BIROT</displayForm>
-								<role>
-									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								</role>
-							</name>
-							<typeOfResource>text</typeOfResource>
-							<language>
-								<languageTerm authority="iso639-2b">fre</languageTerm>
-							</language>
-							<part>
-								<extent unit="page">
-									<start>3</start>
-								</extent>
-							</part>
-							<genre type="CCS">TextContent</genre>
-						</relatedItem>
+						
 					</relatedItem>
 					<relatedItem type="constituent" ID="c011">
 						<titleInfo lang="fre">
@@ -1194,28 +1181,22 @@
 					<div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c009" LABEL="ACCIDIT">
 						<div ID="L.1.1.2.7.1" TYPE="Head">
 							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
+								<seq><area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
+								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/></seq>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.7.2" TYPE="TextContent" ORDER="1" DMDID="c010" LABEL="POÈME">
-							<div ID="L.1.1.2.7.2.1" TYPE="Head">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
-								</fptr>
-							</div>
-							<div ID="L.1.1.2.7.2.2" TYPE="Byline">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
-								</fptr>
-							</div>
-							<div ID="L.1.1.2.7.2.3" TYPE="Copy">
-								<div ID="L.1.1.2.7.2.3.1" TYPE="BodyContent">
-									<div ID="L.1.1.2.7.2.3.1.1" TYPE="Paragraph" ORDER="1">
-										<div ID="L.1.1.2.7.2.3.1.1.1" TYPE="Text">
-											<fptr>
-												<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00006"/>
-											</fptr>
-										</div>
+						<div ID="L.1.1.2.7.2.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.7.2.3" TYPE="Copy">
+							<div ID="L.1.1.2.7.2.3.1" TYPE="BodyContent">
+								<div ID="L.1.1.2.7.2.3.1.1" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.2.7.2.3.1.1.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00006"/>
+										</fptr>
 									</div>
 								</div>
 							</div>
