@@ -106,7 +106,13 @@
 							<nonSort>LE</nonSort>
 							<title>1er CHANT DE MATOUM ET TEVIBAR</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+						<name type="personal">
+							<displayForm>Germaine Albert-Birot</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>still image</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
 						</language>
@@ -115,25 +121,8 @@
 								<start>1</start>
 							</extent>
 						</part>
-						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c004">
-							<titleInfo lang="fre">
-								<mods:title>1er CHANT DE MATOUM ET TEVIBAR</mods:title>
-							</titleInfo>
-							<name type="personal">
-								<displayForm>Germaine Albert-Birot</displayForm>
-								<role>
-									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								</role>
-							</name>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>1</start>
-								</extent>
-							</part>
-							<genre type="CCS">Music</genre>
-						</relatedItem>
+						<genre type="CCS">Music</genre>
+						
 					</relatedItem>
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="fre">
@@ -1105,7 +1094,7 @@
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00006"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.3.2" TYPE="Music" ORDER="1" DMDID="c004" LABEL="Untitled">
+						<div ID="L.1.1.2.3.2" TYPE="Music" ORDER="1">
 							<div ID="L.1.1.2.3.2.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00002"/>
