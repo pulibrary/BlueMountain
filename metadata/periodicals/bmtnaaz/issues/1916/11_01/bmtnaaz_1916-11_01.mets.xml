@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<number>1</number>
 						</detail>
@@ -31,7 +49,16 @@
 					<originInfo>
 						<dateIssued>Novembre 1916</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1916-11</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -71,6 +98,7 @@
 						<part>
 							<extent unit="page">
 								<start>2</start>
+								<end>2</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -86,6 +114,7 @@
 						<part>
 							<extent unit="page">
 								<start>3</start>
+								<end>3</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -97,6 +126,7 @@
 							<part>
 								<extent unit="page">
 									<start>3</start>
+									<end>3</end>
 								</extent>
 							</part>
 							<genre type="CCS">Illustration</genre>
@@ -105,14 +135,19 @@
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="fre">
 							<title>Dessin pour une sculpture sur bois.</title>
+							<subTitle>L'AMAZONE</subTitle>
 						</titleInfo>
-						<titleInfo lang="fre">
-							<title>CHANA ORLOFF.— L'AMAZONE</title>
-						</titleInfo>
+						<name type="personal">
+							<displayForm>Chana Orloff</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+							</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>4</start>
+								<end>4</end>
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
@@ -129,6 +164,7 @@
 						<part>
 							<extent unit="page">
 								<start>5</start>
+								<end>5</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -143,6 +179,7 @@
 							<part>
 								<extent unit="page">
 									<start>5</start>
+									<end>5</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -159,6 +196,7 @@
 						<part>
 							<extent unit="page">
 								<start>6</start>
+								<end>6</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -173,7 +211,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-7</list>
+								<start>6</start>
+								<end>7</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -187,7 +226,8 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>6-7</list>
+									<start>6</start>
+									<end>7</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -204,6 +244,7 @@
 						<part>
 							<extent unit="page">
 								<start>7</start>
+								<end>8</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -218,13 +259,14 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>7-8</list>
+								<start>7</start>
+								<end>8</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c013">
 							<titleInfo lang="fre">
-								<title>LETTRES.  Sous le bélier de Murs (campagne 1916), Louis de Gonzague-Frick.  Lisant ces</title>
+								<title>Untitled Text</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -232,7 +274,8 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>7-8</list>
+									<start>7</start>
+									<end>8</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>

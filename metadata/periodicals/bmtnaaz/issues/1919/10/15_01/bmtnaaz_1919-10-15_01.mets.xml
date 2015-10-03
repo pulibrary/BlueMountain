@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>4e ANNEE</caption>
 							<number>4</number>
@@ -34,7 +52,16 @@
 						<dateIssued>15 et 30 Octobre 1919 </dateIssued>
 						<dateIssued encoding="marc" point="start" keyDate="yes">1919-10-15</dateIssued>
 						<dateIssued encoding="marc" point="end">1919-10-30</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -52,7 +79,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="fre">
-							<title>DANS CE NUMÉRO :</title>
+							<title>DANS CE NUMÉRO</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -94,7 +121,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>3</start>
+								<start>381</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -109,7 +136,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>4</start>
+								<start>382</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -129,7 +156,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>4</start>
+									<start>382</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -145,7 +172,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>5</start>
+								<start>383</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -165,7 +192,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>5</start>
+									<start>383</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -181,18 +208,24 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>6</start>
+								<start>384</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>No 3 Ombres</mods:title>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Samson</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>6</start>
+									<start>384</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
@@ -214,7 +247,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>7</start>
+								<start>385</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -225,7 +258,7 @@
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>7</start>
+									<start>385</start>
 								</extent>
 							</part>
 							<genre type="CCS">Illustration</genre>
@@ -247,19 +280,26 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>8</start>
+								<start>386</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c013">
 						<titleInfo lang="fre">
-							<title>ARY JUSTMAN BOIS DE CHANA ORLOFF</title>
+							<title>ARY JUSTMAN</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>CHANA ORLOFF</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<note type="caption">ARY JUSTMAN BOIS DE CHANA ORLOFF</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>9</start>
+								<start>387</start>
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
@@ -267,24 +307,6 @@
 					<relatedItem type="constituent" ID="c014">
 						<titleInfo lang="fre">
 							<title>Du Cinéma</title>
-						</titleInfo>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">fre</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<list>10-11</list>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c015">
-						<titleInfo lang="fre">
-							<title>2+1=2</title>
-						</titleInfo>
-						<titleInfo lang="fre">
-							<title>Première étude de drame cinématographique.</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Pierre ALBERT-BIROT</displayForm>
@@ -298,7 +320,31 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>11-14</list>
+								<start>388</start>
+								<end>389</end>
+							</extent>
+						</part>
+						<genre type="CCS">TextContent</genre>
+					</relatedItem>
+					<relatedItem type="constituent" ID="c015">
+						<titleInfo lang="fre">
+							<title>2+1=2</title>
+							<subTitle>Première étude de drame cinématographique</subTitle>
+						</titleInfo>
+						<name type="personal">
+							<displayForm>Pierre ALBERT-BIROT</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>text</typeOfResource>
+						<language>
+							<languageTerm authority="iso639-2b">fre</languageTerm>
+						</language>
+						<part>
+							<extent unit="page">
+								<start>389</start>
+								<end>392</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -319,7 +365,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>14</start>
+								<start>392</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -334,16 +380,17 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>15-18</list>
+								<start>393</start>
+								<end>396</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c018">
 							<titleInfo lang="fre">
-								<title>Le chemin des pieds-nus.  KER BRANK-HOUX. EX lihris Arisle• —Mr Ker Frank-Houx</title>
+								<title>Untitled Text</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>P.A – B</displayForm>
+								<displayForm>P. A–B.</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -354,7 +401,8 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>15-18</list>
+									<start>393</start>
+									<end>396</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -367,7 +415,7 @@
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>20</start>
+								<start>398</start>
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
@@ -393,7 +441,7 @@
 						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>4</start>
+								<start>382</start>
 							</extent>
 						</part>
 						<genre type="CCS">SponsoredAdvertisement</genre>
@@ -406,7 +454,7 @@
 						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>5</start>
+								<start>383</start>
 							</extent>
 						</part>
 						<genre type="CCS">SponsoredAdvertisement</genre>
@@ -419,7 +467,7 @@
 						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>19</start>
+								<start>397</start>
 							</extent>
 						</part>
 						<genre type="CCS">SponsoredAdvertisement</genre>

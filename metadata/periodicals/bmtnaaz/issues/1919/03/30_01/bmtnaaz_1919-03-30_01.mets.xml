@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>4me ANNEE</caption>
 							<number>4</number>
@@ -34,7 +52,16 @@
 						<dateIssued>30 Mars et 15 Avril 1919</dateIssued>
 						<dateIssued encoding="marc" point="start" keyDate="yes">1919-03-30</dateIssued>
 						<dateIssued encoding="marc" point="end">1919-04-15</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Museum of Modern Art</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NNМoMA</physicalLocation>
@@ -51,7 +78,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="fre">
-							<title>DANS CE NUMÉRO :</title>
+							<title>DANS CE NUMÉRO</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -92,7 +119,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>3</start>
+								<start>325</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -113,29 +140,29 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>4</start>
+								<start>326</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c005">
-						<titleInfo lang="fre">
-							<title>VIENT IDE PARAITRE ;</title>
+						<titleInfo>
+							<title>[Advertisement]</title>
 						</titleInfo>
+						<genre>advertisement</genre>
 						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">fre</languageTerm>
-						</language>
 						<part>
 							<extent unit="page">
-								<start>4</start>
+								<start>2</start>
 							</extent>
 						</part>
-						<genre type="CCS">TextContent</genre>
+						<genre type="CCS">SponsoredAdvertisement</genre>
 					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c006">
 						<titleInfo lang="fre">
-							<title>L'lmperméable</title>
+							<title>L'Imperméable</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Pierre REVERDY</displayForm>
@@ -149,18 +176,16 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>5-7</list>
+								<start>327</start>
+								<end>329</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c007">
 						<titleInfo lang="fre">
-							<nonSort>Le</nonSort>
-							<title>dernier poème composé par Ary Justman.</title>
-						</titleInfo>
-						<titleInfo lang="fre">
 							<title>Jeu d'Enfant</title>
+							<subTitle>Le dernier poème composé par Ary Justman</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Ary JUSTMAN</displayForm>
@@ -174,7 +199,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>8</start>
+								<start>330</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -195,7 +220,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>8</start>
+								<start>330</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -205,7 +230,7 @@
 							<title>Guillaume Apollinaire au Caire</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>P. A -B</displayForm>
+							<displayForm>P. A.-B.</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -216,21 +241,22 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>9</start>
+								<start>331</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="fre">
-								<mods:title>Untitled Image</mods:title>
+								<mods:title>Untitled Letter</mods:title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+							<typeOfResource>text</typeOfResource>
+							
 							<part>
 								<extent unit="page">
-									<start>9</start>
+									<start>331</start>
 								</extent>
 							</part>
-							<genre type="CCS">Illustration</genre>
+							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c011">
@@ -243,54 +269,54 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>10</start>
+								<start>332</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c012">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>I</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>10</start>
+									<start>332</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c013">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>II</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>10</start>
+									<start>332</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c014">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>III</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>10</start>
+									<start>332</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c015">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>IV</mods:title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>10</start>
+									<start>332</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
@@ -298,7 +324,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c016">
 						<titleInfo lang="fre">
-							<title>Cris – Rythmes – Bruits. de Germaine ALBERT-BIROT</title>
+							<title>Cris – Rythmes – Bruits</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -306,42 +332,60 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>11</start>
+								<start>333</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c017">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>X</mods:title>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Germaine ALBERT-BIROT</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>11</start>
+									<start>333</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c018">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>XI</mods:title>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Germaine ALBERT-BIROT</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>11</start>
+									<start>333</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c019">
 							<titleInfo lang="fre">
-								<mods:title>Untitled</mods:title>
+								<mods:title>XII</mods:title>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Germaine ALBERT-BIROT</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
-									<start>11</start>
+									<start>333</start>
 								</extent>
 							</part>
 							<genre type="CCS">Music</genre>
@@ -349,11 +393,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c020">
 						<titleInfo lang="fre">
-							<nonSort>Une</nonSort>
-							<title>Esthétique</title>
-						</titleInfo>
-						<titleInfo lang="fre">
 							<title>ORIENTATION</title>
+							<subTitle>Une Esthétique</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Paul DERMÉE</displayForm>
@@ -367,7 +408,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>12-13</list>
+								<start>334</start>
+								<end>335</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -382,18 +424,15 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>13</start>
+								<start>335</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c022">
 						<titleInfo lang="fre">
-							<nonSort>Une</nonSort>
-							<title>Esthétique.</title>
-						</titleInfo>
-						<titleInfo lang="fre">
 							<title>Jean METZINGER</title>
+							<subTitle>Une Esthétique</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Paul DERMÉE</displayForm>
@@ -407,7 +446,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>14</start>
+								<start>336</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -428,7 +467,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>15</start>
+								<start>337</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -449,7 +488,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>16</start>
+								<start>338</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -464,14 +503,14 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>16</start>
+								<start>338</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c026">
 						<titleInfo lang="fre">
-							<title>Thermomètre Littéraire de " SIC "</title>
+							<title>Thermomètre Littéraire de "SIC"</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -479,7 +518,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>17</start>
+								<start>339</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -500,14 +539,14 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>18</start>
+								<start>340</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c028">
 						<titleInfo lang="fre">
-							<title>NOTE.  M. Léonce Rosenberg. nous annonce la création des Editions artistiques et</title>
+							<title>NOTE</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -515,7 +554,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>18</start>
+								<start>340</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -2249,7 +2288,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="VIENT IDE PARAITRE ;">
+					<div ID="L.1.1.2.5" TYPE="SponsoredAdvertisement" ORDER="5" DMDID="c005" LABEL="VIENT IDE PARAIVIENTTRE ;">
 						<div ID="L.1.1.2.5.1" TYPE="Copy">
 							<div ID="L.1.1.2.5.1.1" TYPE="BodyContent">
 								<div ID="L.1.1.2.5.1.1.1" TYPE="Paragraph" ORDER="1">

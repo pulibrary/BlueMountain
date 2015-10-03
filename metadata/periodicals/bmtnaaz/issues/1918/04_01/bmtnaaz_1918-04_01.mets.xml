@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>3me Année</caption>
 							<number>3</number>
@@ -32,7 +50,16 @@
 					<originInfo>
 						<dateIssued>AVRIL 1918</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1918-04</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Museum of Modern Art</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NNМoMA</physicalLocation>
@@ -76,8 +103,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="fre">
-							<mods:title>Untitled Image</mods:title>
+							<mods:title>Les Éclats</mods:title>
+							<subTitle>Poème Idéogrammatique</subTitle>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Pierre Albert-Birot</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<note type="caption"> Tirage sur chine: 6 exemplaires, exemplaire N' </note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -88,7 +123,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c004">
 						<titleInfo lang="fre">
-							<title>Chronique quelquefois rimée.</title>
+							<title>Chronique quelquefois rimée</title>
 						</titleInfo>
 						<titleInfo lang="fre">
 							<title>Vernissages</title>
@@ -105,7 +140,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>2-3</list>
+								<start>2</start> <end>3</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -200,7 +235,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="fre">
-							<title>Vient de paraître: Les ardoises du toit. Poèmes inédits de Pierre Reverdy.</title>
+							<title>Vient de paraître</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -283,7 +318,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c014">
 							<titleInfo lang="fre">
-								<title>Un son</title>
+								<title>II</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Pierre ALBERT-BIROT</displayForm>
@@ -319,7 +354,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c016">
 							<titleInfo lang="fre">
-								<title>Carlo Carra —Raimondi. Bologne 1918. Nous ne pouvons aujourdh ni étudier celte</title>
+								<title>Untitled text</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>P. A. B</displayForm>

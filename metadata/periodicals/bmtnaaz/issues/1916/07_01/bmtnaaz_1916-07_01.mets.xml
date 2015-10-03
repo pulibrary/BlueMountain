@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<number>1</number>
 						</detail>
@@ -31,7 +49,16 @@
 					<originInfo>
 						<dateIssued>Juillet 1916</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1916-07</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -76,7 +103,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="fre">
-							<title>La pochade en couleur, que nous insérons dans ce numéro représe11*®</title>
+							<title>Untitled text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -154,7 +181,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="fre">
-							<title>XXIII.</title>
+							<title>[RÉFLEXIONS]</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -177,7 +204,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-7</list>
+								<start>6</start> <end>7</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -191,7 +218,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>6-7</list>
+									<start>6</start> <end>7</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -213,7 +240,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c012">
 							<titleInfo lang="fre">
-								<title>PEINTURE. Exposition 5, rue de Penthièvre.  Encore une belle offensive d'avant-garde qui témoigne</title>
+								<title>Untitled text</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -257,7 +284,7 @@
 							<genre type="CCS">TextContent</genre>
 							<relatedItem type="constituent" ID="c015">
 								<titleInfo lang="fre">
-									<title>Aux Armé»», I» 85 Février 1916</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<name type="personal">
 									<displayForm>F. Berthet</displayForm>
@@ -278,10 +305,10 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c016">
 								<titleInfo lang="fre">
-									<title>' Quoique la guerre ait fait et quoi qu'elle- ait laissé,</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<name type="personal">
-									<displayForm>Emile Geney. 347-e Inf. S. P. 99</displayForm>
+									<displayForm>Emile Geney</displayForm>
 									<role>
 										<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 									</role>
@@ -299,10 +326,10 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c017">
 								<titleInfo lang="fre">
-									<title>Bon nombr» de faiblards timides reviendront de</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<name type="personal">
-									<displayForm>Tranchées de 1-re ligne L-t R. S</displayForm>
+									<displayForm>Tranchées de 1-re ligne</displayForm>
 									<role>
 										<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 									</role>
@@ -320,10 +347,10 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c018">
 								<titleInfo lang="fre">
-									<title>La guerre aura occasionné des examen» de</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<name type="personal">
-									<displayForm>Marcel Mil. Poête</displayForm>
+									<displayForm>Marcel Mil</displayForm>
 									<role>
 										<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 									</role>
@@ -341,10 +368,10 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c019">
 								<titleInfo lang="fre">
-									<title>L'influence morale, je ne sais. Mais d'une</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<name type="personal">
-									<displayForm>J. B. croix de guerre</displayForm>
+									<displayForm>J. B.</displayForm>
 									<role>
 										<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 									</role>
@@ -362,10 +389,10 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c020">
 								<titleInfo lang="fre">
-									<title>L'art d'après guerre? mais il sera nettement</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<name type="personal">
-									<displayForm>E. Dupuis caporal au 136e</displayForm>
+									<displayForm>E. Dupuis</displayForm>
 									<role>
 										<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 									</role>
@@ -383,7 +410,7 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c021">
 								<titleInfo lang="fre">
-									<title>NOUS CROYONS DEVOIR PRÉVENIR nos abonnés ainsi que toutes les personnes qui nou9 écrivent</title>
+									<title>Untitled text</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -1307,7 +1334,7 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c008" LABEL="XXIII.">
+					<div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c008" LABEL="[RÉFLEXIONS.]">
 						<div ID="L.1.1.2.7.1" TYPE="Copy">
 							<div ID="L.1.1.2.7.1.1" TYPE="BodyContent">
 								<div ID="L.1.1.2.7.1.1.1" TYPE="Paragraph" ORDER="1">

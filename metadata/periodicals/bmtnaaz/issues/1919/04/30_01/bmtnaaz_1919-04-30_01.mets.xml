@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>4me ANNEE</caption>
 							<number>4</number>
@@ -32,7 +50,16 @@
 					<originInfo>
 						<dateIssued>30 Avril 1919</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1919-04-30</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Museum of Modern Art</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NNМoMA</physicalLocation>
@@ -78,6 +105,12 @@
 						<titleInfo lang="fre">
 							<title>"Casa d'Arte Italiana" Vic. S. Nicola da Tolentino, 23. — ROMA.</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>E. Prampolini</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -89,9 +122,7 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c004">
-							<titleInfo lang="fre">
-								<title>Lampadaire électrique en bois, laqué et sole dessin de E. PRAMPOLINI.</title>
-							</titleInfo>
+							<note type="caption"> Lampadaire électrique en bois, laqué et soie dessin de E. Prampolini </note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -117,7 +148,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>3; 5</list>
+								<start>341</start>
+								<end>342</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -128,7 +160,7 @@
 							<title>propos du thermomètre littéraire de Sic</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>p. A-B</displayForm>
+							<displayForm>P. A-B</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -139,7 +171,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>5</start>
+								<start>342</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -160,7 +192,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-7</list>
+								<start>343</start> 
+								<end>344</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -175,16 +208,16 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>7</start>
+								<start>344</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo lang="fre">
-								<title>La Sirène prépare un très beau livre à la mémoire de Guillaume</title>
+								<title>Untitled text</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>P. A. B</displayForm>
+								<displayForm>P. A.-B.</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -195,7 +228,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>7</start>
+									<start>344</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -217,13 +250,13 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>8</start>
+								<start>345</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo lang="fre">
-								<title>VIEIL AIR.</title>
+								<title>VIEIL AIR</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -231,7 +264,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>8</start>
+									<start>345</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -246,7 +279,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>8</start>
+									<start>345</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -268,7 +301,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>9</start>
+								<start>346</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -278,7 +311,7 @@
 							<title>Villégiature</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>R.H. L</displayForm>
+							<displayForm>R.H.L</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -289,7 +322,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>9</start>
+								<start>346</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -310,7 +343,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>10</start>
+								<start>347</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -331,7 +364,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>12</start>
+								<start>348</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -352,7 +385,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>12</start>
+								<start>348</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -366,7 +399,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>12</start>
+									<start>348</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -381,7 +414,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<start>12</start>
+									<start>348</start>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -408,7 +441,7 @@
 						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>10</start>
+								<start>347</start>
 							</extent>
 						</part>
 						<genre type="CCS">SponsoredAdvertisement</genre>
@@ -421,7 +454,7 @@
 						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>11</start>
+								<start>348</start>
 							</extent>
 						</part>
 						<genre type="CCS">SponsoredAdvertisement</genre>

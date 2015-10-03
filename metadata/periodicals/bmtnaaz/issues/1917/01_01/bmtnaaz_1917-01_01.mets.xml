@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>Deuxième Année</caption>
 							<number>2</number>
@@ -32,7 +50,16 @@
 					<originInfo>
 						<dateIssued>Janvier 1917</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1917-01</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -62,7 +89,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="fre">
-							<title>DANS CE NUMÉRO :</title>
+							<title>DANS CE NUMÉRO:</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -95,7 +122,7 @@
 							<title>VIBRISME</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Dessin de J. Rij ROUSSEAU</displayForm>
+							<displayForm>J. Rij ROUSSEAU</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -143,7 +170,7 @@
 								<title>QUAI AUX FLEURS</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>PIERRE REYERDY</displayForm>
+								<displayForm>PIERRE REVERDY</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -177,7 +204,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="fre">
-							<title>J'ai reçu un pli contenant quelques billets de banque avec cette seule mention : Pour SIC. Ce n'est pas c ela évidemment qui pourra permettre à notre revue de faire tout ce que ses lecteurs volontiers attendraient d'elle, mais il nous est agréable de constater qu'il y a parfaitement en France des</title>
+							<title>Untitled Text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -267,13 +294,13 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-7</list>
+								<start>6</start> <end>7</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c015">
 							<titleInfo lang="fre">
-								<title>LETTRES. — Autres poèmes durant la guerre. PAUL CLAUDEL. — Dormir, tel est l'idéal du</title>
+								<title>Untitled Text</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -281,7 +308,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>6-7</list>
+									<start>6</start> <end>7</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>

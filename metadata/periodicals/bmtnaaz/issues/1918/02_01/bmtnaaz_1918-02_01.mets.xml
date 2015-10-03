@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>3e Année</caption>
 							<number>3</number>
@@ -32,7 +50,16 @@
 					<originInfo>
 						<dateIssued>FÉVRIER 1918</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1918-02</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -77,8 +104,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="fre">
-							<mods:title>Untitled Image</mods:title>
+							<title>Les Mamelles de Tirèsias. (Couverture).</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Serge Férat</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -92,7 +125,7 @@
 							<title>ÉPÎTRE A MES DÉVOUÉS DÉTRACTEURS</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>P.A. B</displayForm>
+							<displayForm>P.A. B.</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -146,7 +179,9 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c007">
 						<titleInfo lang="fre">
-							<title>RÉFLEXIONS SDR LA DANSE</title>
+							<title>RÉFLEXIONS SUR LA DANSE</title>
+							<subTitle>II</subTitle>
+							<subTitle>Interpretation</subTitle>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -160,10 +195,10 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c008">
 							<titleInfo lang="fre">
-								<title>Les danseurs ne rendent généralement pas l'œuvre qu'ils dansent, .mais uniquement l'impression</title>
+								<title>"Les danseurs ne rendent généralement pas l'œuvre qu'ils dansent, .mais uniquement l'impression"</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>G. A. B</displayForm>
+								<displayForm>G. A. B.</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -182,10 +217,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="fre">
-							<title>LACOUF</title>
-						</titleInfo>
-						<titleInfo lang="fre">
 							<title>Deux dessins de Serge Férat extraits du Livre «LES MAMELLES DE TIRÊSIAS»</title>
+						</titleInfo>
+						<name type="personal">
+							<displayForm>Serge Férat</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<titleInfo lang="fre">
+							<title>LACOUF</title>
 						</titleInfo>
 						<typeOfResource>still image</typeOfResource>
 						<part>
@@ -194,8 +235,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c010">
+						<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="fre">
 							<title>THÉRÈSE-TIRÉSIAS</title>
 						</titleInfo>
@@ -207,6 +247,8 @@
 						</part>
 						<genre type="CCS">Illustration</genre>
 					</relatedItem>
+					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c011">
 						<titleInfo lang="fre">
 							<title>POEME</title>
@@ -313,7 +355,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c017">
 						<titleInfo lang="fre">
-							<title>E T G...</title>
+							<title>E T C...</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -321,13 +363,16 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>7-8</list>
+								<start>7</start>
+								<end>8</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c018">
 							<titleInfo lang="fre">
 								<title>Vitam Impendere Amori,</title>
+								<subTitle>poèmes de M. Guillaume Apollinaire</subTitle>
+								<subTitle>Dessins de M. André Rouveyre</subTitle>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>LOUIS DE GONZAGUE-FRICK</displayForm>
@@ -348,10 +393,10 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c019">
 							<titleInfo lang="fre">
-								<title>Ariste (Nantes) Des nouveaux et des Anciens syw.boles par Ker-Frank-Houx.</title>
+								<title>"Ariste (Nantes) Des nouveaux et des Anciens syw.boles par Ker-Frank-Houx."</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>P. A. B</displayForm>
+								<displayForm>P. A. B.</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -362,7 +407,8 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>7-8</list>
+									<start>7</start>
+									<end>8</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>

@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<number>1</number>
 						</detail>
@@ -34,7 +52,16 @@
 						<dateIssued>Août-Septembre-Octobre 1916</dateIssued>
 						<dateIssued encoding="marc" point="start" keyDate="yes">1916-08</dateIssued>
 						<dateIssued encoding="marc" point="end">1916-10</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -65,7 +92,8 @@
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="fre">
 							<nonSort>LES</nonSort>
-							<title>TENDANCES NOUVELLES Interview avec Guillaume Apollinaire</title>
+							<title>TENDANCES NOUVELLES</title>
+							<subTitle>Interview avec Guillaume Apollinaire</subTitle>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -73,14 +101,21 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>2-3</list>
+								<start>2</start>
+								<end>3</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c003">
 							<titleInfo lang="fre">
-								<mods:title>Untitled Image</mods:title>
+								<mods:title>A mon ami Albert Birot</mods:title>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Guillaume Apollinaire</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -92,13 +127,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c004">
 						<titleInfo lang="fre">
-							<nonSort>Le</nonSort>
-							<title>premier bois de GINO SEVERINI (Septembre 1916)</title>
-						</titleInfo>
-						<titleInfo lang="fre">
-							<nonSort>LA</nonSort>
+							<nonSort>La</nonSort>
 							<title>MODISTE</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>GINO SEVERINI</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<note type="caption">Le premier bois de GINO SEVERINI (Septembre 1916)</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -133,7 +171,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-7</list>
+								<start>6</start>
+								<end>7</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -147,7 +186,8 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>6-7</list>
+									<start>6</start>
+									<end>7</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -156,7 +196,7 @@
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="fre">
 							<nonSort>A</nonSort>
-							<title>PROPOS D'UN THÉÂTRE NUHIQUE</title>
+							<title>PROPOS D'UN THÉÂTRE NUNIQUE</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -186,20 +226,26 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="fre">
-							<nonSort>Un</nonSort>
-							<title>manuscrit du compositeur futuriste PRATELLA</title>
+							<title>Deformazione lirica</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>F. Balilla Pratella</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<note type="caption">Un manuscrit du compositeur futuriste PRATELLA</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>9</start>
 							</extent>
 						</part>
-						<genre type="CCS">Illustration</genre>
+						<genre type="CCS">Music</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c011">
 						<titleInfo lang="fre">
-							<title>L'anonymat de presque toutes les pages de SIC a surpris quelques lecteurs,</title>
+							<title>Untitled Text</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Pierre ALBERT-BIROT</displayForm>
@@ -223,7 +269,7 @@
 							<title>ESPOIR EN GUILLAUME APOLLINAIRE</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>René Berthier Maréchal des logis d'artillerie sur le front</displayForm>
+							<displayForm>René Berthier</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -242,7 +288,7 @@
 					<relatedItem type="constituent" ID="c013">
 						<titleInfo lang="fre">
 							<nonSort>UN</nonSort>
-							<title>POÈME PAYSAGE DANS UNE ASSIETTE</title>
+							<title>POÈME </title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -256,10 +302,10 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c014">
 							<titleInfo lang="fre">
-								<title>Assiette en porcelaine très blanche avec un paysage de</title>
+								<title>PAYSAGE DANS UNE ASSIETTE</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>LUCIANO FOLGORE FUTURISTE</displayForm>
+								<displayForm>LUCIANO FOLGORE</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -322,18 +368,22 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>13; 15</list>
+								<start>13</start>
+								<end>15</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c018">
+						<relatedItem type="constituent" ID="c018">
 						<titleInfo lang="fre">
 							<title>BOCCIONI</title>
 						</titleInfo>
-						<titleInfo lang="fre">
-							<title>Dessin de G. Sevcrini</title>
-						</titleInfo>
+						<note type="caption">Dessin de G. Severini</note>
+							<name type="personal">
+							<displayForm>G. Severini</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -341,6 +391,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
+					</relatedItem>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c019">
 						<titleInfo lang="fre">
@@ -359,7 +410,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c020">
 							<titleInfo lang="fre">
-								<title>Comme les courroies de transmission dans l'usine familière,</title>
+								<title>Usine=Usine</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Pierre DRIEU LA ROCHELLE</displayForm>
@@ -381,11 +432,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c021">
 						<titleInfo lang="fre">
-							<title>gravure sur bois</title>
-						</titleInfo>
-						<titleInfo lang="fre">
 							<title>Femme nue dans une salle de bain</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>PAB</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<note type="caption">gravure sur bois</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -411,7 +466,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c023">
 						<titleInfo lang="fre">
-							<title>Du 15 au 21 Octobre chez Paul Guillaume, 16 Avenue de Villiers</title>
+							<title>Untitled Text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -434,7 +489,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>19-22</list>
+								<start>19</start>
+								<end>22</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -448,7 +504,8 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>19-22</list>
+									<start>19</start>
+									<end>22</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -485,7 +542,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c028">
 							<titleInfo lang="fre">
-								<title>PEINTURE.  SIC ne peut faire autrement que de s'élever contre le primitivisme-image que plusieurs</title>
+								<title>PEINTURE</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -500,7 +557,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c029">
 							<titleInfo lang="fre">
-								<title>SCULPTURE.  Et que devient la sculpture? Elle ne devient pas, elle reste. 11 est indiscutable qu'elle</title>
+								<title>SCULPTURE</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>

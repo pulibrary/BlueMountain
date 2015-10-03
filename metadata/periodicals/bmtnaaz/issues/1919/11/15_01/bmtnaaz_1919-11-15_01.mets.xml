@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>4me ANNEE</caption>
 							<number>4</number>
@@ -34,7 +52,16 @@
 						<dateIssued>15 et 30 Novembre 1919</dateIssued>
 						<dateIssued encoding="marc" point="start" keyDate="yes">1919-11-15</dateIssued>
 						<dateIssued encoding="marc" point="end">1919-11-30</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Museum of Modern Art</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NNМoMA</physicalLocation>
@@ -78,7 +105,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="fre">
-							<title>J'ai vu les maisons nouées comme les anneaux</title>
+							<title>Untitled text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -86,7 +113,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>3</start>
+								<start>397</start>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -107,19 +134,28 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>5-10; 13-18</list>
+								<list>399-404; 407-412</list>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="fre">
-							<title>Gravure sur bois de Léoplod SURVAGE.</title>
+							<title>Untitled Image</title>
 						</titleInfo>
+						<note type="caption">Gravure sur bois de Léoplod SURVAGE</note>
+						<name type="personal">
+							<displayForm>Léoplod SURVAGE</displayForm>
+						   <!--Typo for Leopold in the original-->
+				
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>11</start>
+								<start>405</start>
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>

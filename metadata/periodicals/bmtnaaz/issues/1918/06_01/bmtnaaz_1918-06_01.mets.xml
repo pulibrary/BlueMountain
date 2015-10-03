@@ -17,9 +17,27 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
 							<caption>3e Année</caption>
 							<number>3</number>
@@ -32,7 +50,16 @@
 					<originInfo>
 						<dateIssued>JUIN 1918</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1918-06</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -91,7 +118,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>1-2</list>
+								<start>1</start> <end>2</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -100,6 +127,12 @@
 						<titleInfo lang="fre">
 							<title>Garni pour Garçon</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Louis Aragon</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -134,7 +167,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c006">
 						<titleInfo lang="fre">
-							<title>ERRATA: dans la page "Treize études" de M.M. André Breton et Louis Aragon parue dans notne n 9 de</title>
+							<title>Untitled text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -206,7 +239,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="fre">
-							<title>Comme je nui pas à faire œuvre de</title>
+							<title>Untitled text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -222,7 +255,9 @@
 					<relatedItem type="constituent" ID="c011">
 						<titleInfo lang="fre">
 							<title>Grabinoulor</title>
-						</titleInfo>
+							<subTitle>(Fragment)</subTitle>
+		
+				   </titleInfo>
 						<name type="personal">
 							<displayForm>PIERRE ALBERT-BIROT</displayForm>
 							<role>
@@ -257,7 +292,14 @@
 						<relatedItem type="constituent" ID="c013">
 							<titleInfo lang="fre">
 								<title>PROMÉTHÉE</title>
+								<subTitle>Les mots qui courent où vont-ils</subTitle>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Pierre Albert-Birot</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -286,7 +328,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c015">
 							<titleInfo lang="fre">
-								<title>J'ai engagé cet homme à partir</title>
+								<title>Untitled text</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Roger Lefébure</displayForm>
@@ -322,7 +364,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c017">
 							<titleInfo lang="fre">
-								<title>un édredon rouge à la fenêtre</title>
+								<title>untitled text</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Raimon Rajky</displayForm>

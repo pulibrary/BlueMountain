@@ -17,11 +17,29 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
-						<title>Sic</title>
-					</titleInfo>
-					<part type="issue">
+						<title>SIC</title>
+</titleInfo>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">edt</roleTerm>
+ </role> 
+ </name>
+ <name type="personal">
+ <displayForm>Pierre Albert-Birot</displayForm> 
+ <role>
+ <roleTerm type="code" authority="marcelator">pbl</roleTerm>
+ </role> 
+ </name>
+ <name type="corporate">
+ <displayForm>Imprimerie Rirachovsky</displayForm>
+ <role>
+ <roleTerm type="code" authority="marcelator">prt</roleTerm>
+ </role>
+ </name> 
+ <part type="issue">
 						<detail type="volume">
-							<caption>3e Année</caption>
+							<caption>3me Année</caption>
 							<number>3</number>
 						</detail>
 						<detail type="number">
@@ -32,7 +50,16 @@
 					<originInfo>
 						<dateIssued>MARS 1918</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1918-03</dateIssued>
-					</originInfo>
+ <place>
+ <placeTerm>37, Rue de la Tombe-Issoire – Paris</placeTerm>
+ <placeTerm>11, Rue de Maubeuge – Paris</placeTerm>
+ <!-- Place of Editor/Publisher -->
+ </place>
+ <place> <placeTerm>50, Bd St-Jacques, Paris</placeTerm>
+ <!-- Place of Printer -->
+ </place>
+
+ </originInfo>
 					<location>
 						<physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
@@ -79,6 +106,13 @@
 						<titleInfo lang="fre">
 							<mods:title>Untitled Image</mods:title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>X</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<note type="caption">Dessin de X...</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -89,8 +123,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c004">
 						<titleInfo lang="fre">
-							<title>Poème Aneedotique</title>
+							<title>Poème Anecdotique</title>
+							<subTitle>pour servir à l'hisfoire littéraire de notre temps.</subTitle>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>P. A. B.</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -101,31 +142,11 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c005">
-							<titleInfo lang="fre">
-								<title>pour servir à l'hisfoire littéraire de notre temps.</title>
-							</titleInfo>
-							<name type="personal">
-								<displayForm>p. A. B</displayForm>
-								<role>
-									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								</role>
-							</name>
-							<typeOfResource>text</typeOfResource>
-							<language>
-								<languageTerm authority="iso639-2b">fre</languageTerm>
-							</language>
-							<part>
-								<extent unit="page">
-									<start>2</start>
-								</extent>
-							</part>
-							<genre type="CCS">TextContent</genre>
-						</relatedItem>
+						
 					</relatedItem>
 					<relatedItem type="constituent" ID="c006">
 						<titleInfo lang="fre">
-							<title>Epftre Familière à Guillaume Apollinaire</title>
+							<title>Epître Familière à Guillaume Apollinaire</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Gaston PICARD</displayForm>
@@ -188,7 +209,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="fre">
-							<title>DEUX, POÈMES</title>
+							<title>DEUX POÈMES</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -203,7 +224,14 @@
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="fre">
 								<title>Poème à crier et à danser</title>
+								<subTitle>CHANT 3.</subTitle>
 							</titleInfo>
+							<name type="personal">
+								<displayForm>Pierre ALBERT-BIROT</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>text</typeOfResource>
 							<language>
 								<languageTerm authority="iso639-2b">fre</languageTerm>
@@ -215,8 +243,7 @@
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c011">
+						<relatedItem type="constituent" ID="c011">
 						<titleInfo lang="fre">
 							<title>PETITS POÈMES QUOTIDIENS</title>
 						</titleInfo>
@@ -232,7 +259,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c012">
 							<titleInfo lang="fre">
-								<title>Le chemin de fer traverse la rue</title>
+								<title>I</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Pierre ALBERT-BIROT</displayForm>
@@ -252,6 +279,7 @@
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 					</relatedItem>
+					</relatedItem>
 					<relatedItem type="constituent" ID="c013">
 						<titleInfo lang="fre">
 							<nonSort>Le</nonSort>
@@ -269,7 +297,8 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-7</list>
+								<start>6</start>
+								<end>7</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -279,7 +308,7 @@
 							<title>Théâtre futuriste</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>P. A. -B</displayForm>
+							<displayForm>P. A.-B.</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -311,10 +340,10 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c016">
 							<titleInfo lang="fre">
-								<title>..</title>
+								<title>Untitled Text</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>P. A. B</displayForm>
+								<displayForm>P. A. B.</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -1141,45 +1170,41 @@
 					<div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004" LABEL="Poème Aneedotique">
 						<div ID="L.1.1.2.4.1" TYPE="Head">
 							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
+								<seq>
+									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
+									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00002"/>
+								</seq>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.4.2" TYPE="TextContent" ORDER="1" DMDID="c005" LABEL="pour servir à l'hisfoire littéraire de notre temps.">
-							<div ID="L.1.1.2.4.2.1" TYPE="Head">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00002"/>
-								</fptr>
-							</div>
-							<div ID="L.1.1.2.4.2.2" TYPE="Byline">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
-								</fptr>
-							</div>
-							<div ID="L.1.1.2.4.2.3" TYPE="Copy">
-								<div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
-									<div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
-										<div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
-											<fptr>
-												<seq>
-													<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
-													<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
-												</seq>
-											</fptr>
-										</div>
+						<div ID="L.1.1.2.4.2.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.2.4.2.3" TYPE="Copy">
+							<div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
+								<div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
+												<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
+											</seq>
+										</fptr>
 									</div>
-									<div ID="L.1.1.2.4.2.3.1.2" TYPE="Paragraph" ORDER="2">
-										<div ID="L.1.1.2.4.2.3.1.2.1" TYPE="Text">
-											<fptr>
-												<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00005"/>
-											</fptr>
-										</div>
+								</div>
+								<div ID="L.1.1.2.4.2.3.1.2" TYPE="Paragraph" ORDER="2">
+									<div ID="L.1.1.2.4.2.3.1.2.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00005"/>
+										</fptr>
 									</div>
-									<div ID="L.1.1.2.4.2.3.1.3" TYPE="Paragraph" ORDER="3">
-										<div ID="L.1.1.2.4.2.3.1.3.1" TYPE="Text">
-											<fptr>
-												<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00006"/>
-											</fptr>
-										</div>
+								</div>
+								<div ID="L.1.1.2.4.2.3.1.3" TYPE="Paragraph" ORDER="3">
+									<div ID="L.1.1.2.4.2.3.1.3.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00006"/>
+										</fptr>
 									</div>
 								</div>
 							</div>
