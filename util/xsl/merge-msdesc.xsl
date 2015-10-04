@@ -11,26 +11,24 @@
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Oct 3, 2015</xd:p>
 			<xd:p><xd:b>Author:</xd:b> cwulfman</xd:p>
-			<xd:p/>
+			<xd:p>Use this stylesheet to merge the &lt;msDesc&gt; elements
+			written by our editors into the TEI documents generated from our
+			METS/ALTO.</xd:p>
 		</xd:desc>
 	</xd:doc>
 
-
+	<xd:doc>
+		<xd:desc>This is the hard-wired path to the msdesc-bearing documents. Edit this for your own environment.</xd:desc>
+	</xd:doc>
 	<xsl:variable name="msdesc-base" select="'/Users/cwulfman/Projects/bluemountain-transcriptions'"/>
+	
+	<xd:doc>
+		<xd:desc>Get the base uri when the stylesheet is first invoked.</xd:desc>
+	</xd:doc>
 	<xsl:variable name="source-base" select="base-uri()"/>
-
-	<xsl:function name="local:the-msDesc">
-		<xsl:variable name="path">
-			<xsl:value-of
-				select="concat($msdesc-base, substring-after(base-uri(current()), 'BlueMountain/metadata'))"
-			/>
-		</xsl:variable>
-		<xsl:sequence select="document($path)//tei:msDesc" />
-	</xsl:function>
-
-
 	
 	
+
 	<xsl:template match="tei:sourceDesc">
 		<sourceDesc>
 			<xsl:variable name="path">
