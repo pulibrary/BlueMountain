@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Jacoba van Heemskerck: Originalholzschnitt – Vom Stoelc gedruckt</title>
+							<title>Originalholzschnitt</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <note type="caption">Vom Stoelc gedruckt</note>
+					   <name type="personal">
+					      <displayForm>Jacoba van Heemskerck</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -110,9 +117,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c005">
 							<titleInfo lang="ger">
-								<title>Fritz Baumann: Originalholzsehnitt/ Vom Stockgedruekt</title>
+								<title>Originalholzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <note type="caption">Vom Stockgedruekt</note>
+						   <name type="personal">
+						      <displayForm>Fritz Baumann</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>6</start>
@@ -176,6 +190,7 @@
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="ger">
 							<title>Zwei Briefe</title>
+						   <subTitle>Saargemünd (Lothringen)</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Alfred Döblin</displayForm>
@@ -183,12 +198,12 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Ihr Adolf Knoblauch</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Adolf Knoblauch</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -225,7 +240,13 @@
 						<titleInfo lang="ger">
 							<title>Notiz</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+					   <name type="corporate">
+					      <displayForm>Verlag Der Sturm</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>
@@ -1361,7 +1382,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00010"/>
@@ -1432,7 +1453,7 @@
 								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.4.3" TYPE="Illustration" ORDER="1" DMDID="c005" LABEL="Fritz Baumann: Originalholzsehnitt/ Vom Stockgedruekt">
+						<div ID="L.1.1.2.4.3" TYPE="Illustration" ORDER="1" DMDID="c005" LABEL="Fritz Baumann: Originalholzschnitt/ Vom Stockgedruekt">
 							<div ID="L.1.1.2.4.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_CB00001"/>

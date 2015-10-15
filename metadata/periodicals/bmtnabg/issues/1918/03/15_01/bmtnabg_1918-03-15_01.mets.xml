@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Oskar Fischer: Auchentsag / Zeichnung</title>
+							<title>Auchentsag</title>
+						   <subTitle>Zeichnung</subTitle>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Oskar Fischer</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -252,9 +259,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c014">
 							<titleInfo lang="ger">
-								<title>Oskar Fischer: Am Tage zuvor / Zeichnung</title>
+								<title>Am Tage zuvor</title>
+							   <subTitle>Zeichnung</subTitle>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Oskar Fischer</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -285,9 +299,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c016">
 							<titleInfo lang="ger">
-								<title>Hans Brass: Zeichnung</title>
+								<title>Zeichnung</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Hans Brass</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>7</start>
@@ -296,10 +316,17 @@
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c017">
-							<titleInfo lang="ger">
-								<title>Georg Schrimpf: Holzschnitt / Vom Stock gedruckt</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <titleInfo lang="ger">
+						      <title>Holzschnitt</title>
+						   </titleInfo>
+						   <name type="personal">
+						      <displayForm>Georg Schrimpf</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>11</start>
@@ -401,13 +428,9 @@
 					<relatedItem type="constituent" ID="c024">
 						<titleInfo lang="ger">
 							<title>Herausgeber: Herwarth Walden</title>
+						   <subTitle>Achter Jahrgang 1917/18</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Achter Jahrgang 1917/18</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -489,9 +512,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c029">
 							<titleInfo lang="ger">
-								<title>W. Dexel: Holzschnitt / Vom Stock gedruckt</title>
+								<title>Holzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <name type="personal">
+						      <displayForm>W. Dexel</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>13</start>
@@ -2508,7 +2538,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00007"/>

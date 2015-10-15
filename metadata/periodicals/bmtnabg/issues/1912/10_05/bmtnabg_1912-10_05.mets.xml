@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -121,9 +121,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c005">
 							<titleInfo lang="ger">
-								<title>Emil Nolde: Originalzeichnung</title>
+								<title>Originalzeichnung</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Emil Nolde</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>4</start>
@@ -157,17 +163,18 @@
 						<titleInfo lang="ger">
 							<nonSort>Die</nonSort>
 							<title>futuristische Literatur</title>
+						   <subTitle>Technisches Manifest von F. T. Marinetti</subTitle>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Technisches Manifest von F. T. Marinetti</displayForm>
+						   <displayForm>F. T. Marinetti</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
 						<name type="personal">
-							<displayForm>Autorisierte Übersetzung von Jean-Jacques</displayForm>
+							<displayForm>Jean-Jacques</displayForm>
 							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								<roleTerm type="code" authority="marcrelator">trl</roleTerm>
 							</role>
 						</name>
 						<typeOfResource>text</typeOfResource>

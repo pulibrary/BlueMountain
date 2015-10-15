@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,8 +57,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Paul Klee: Akrobaten</title>
+							<title>Akrobaten</title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>Paul Klee</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -90,9 +96,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c004">
 							<titleInfo lang="ger">
-								<title>Campendonk: Holzschnitt / Vom Stock gedruckt</title>
+								<title>Holzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <name type="personal">
+						      <displayForm>Campendonk</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -102,9 +115,16 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c005">
 							<titleInfo lang="ger">
-								<title>Jacoba van Heemskerck: Holzschnitt / vom Stock gedruckt</title>
+								<title>Holzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <name type="personal">
+						      <displayForm>Jacoba van Heemskerck</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>7</start>
@@ -117,7 +137,6 @@
 						<titleInfo lang="ger">
 							<nonSort>Die</nonSort>
 							<title>Kirche</title>
-							<subTitle>Für Lyonel Feininger</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Adolf Knoblauch</displayForm>
@@ -1466,7 +1485,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00009"/>

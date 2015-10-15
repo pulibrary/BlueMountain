@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>INHALT:</title>
+							<title>INHALT</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -79,7 +79,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="ger">
-							<title>Utinam delectet! Wunsch und Zeichnung von Oskar Kokoschka</title>
+							<title>Utinam delectet! </title>
+						   <subTitle>Wunsch und Zeichnung von Oskar Kokoschka</subTitle>
 						</titleInfo>
 						<typeOfResource>still image</typeOfResource>
 						<part>
@@ -93,7 +94,6 @@
 						<titleInfo lang="ger">
 							<nonSort>Das</nonSort>
 							<title>Mysterium Jesu</title>
-							<subTitle>Aus dem Nachlass</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Peter Hille</displayForm>
@@ -114,9 +114,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="ger">
-							<title>Menschenköpfe / Zeichnungen von Oskar Kokoschka VI / Richard Dehmel</title>
+							<title>Menschenköpfe /  VI / Richard Dehmel</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Oskar Kokoschka</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>3</start>
@@ -151,7 +157,7 @@
 							<title>Fieber</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Friedrieh Mellinger</displayForm>
+							<displayForm>Friedrich Mellinger</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -264,7 +270,13 @@
 						<titleInfo lang="ger">
 							<title>Notizen</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+					   <name type="corporate">
+					      <displayForm>Trust</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>

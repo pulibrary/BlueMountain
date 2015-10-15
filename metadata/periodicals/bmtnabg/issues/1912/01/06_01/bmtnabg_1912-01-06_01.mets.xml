@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,16 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Artur Segai: Die Lesende / Originalholzschnitt</title>
+							<title>Die Lesende</title>
+						   <subTitle>Originalholzschnitt</subTitle>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Artur Segai</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -110,12 +117,12 @@
 						<titleInfo lang="ger">
 							<title>Briefe nach Norwegen</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Else Laskor-Schüler</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Else Lasker-Schüler</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -150,9 +157,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c007">
 							<titleInfo lang="ger">
-								<title>Ludwig Kainer Studie zu einem dekorativen Gemälde</title>
+								<title>Studie zu einem dekorativen Gemälde</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Ludwig Kainer</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -165,7 +178,13 @@
 						<titleInfo lang="ger">
 							<title>Kritik</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+					   <name type="corporate">
+<displayForm>Trust</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>

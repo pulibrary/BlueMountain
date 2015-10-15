@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>August Macke: Linoleumsehniti</title>
+							<title>Linoleumschniti</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>August Macke</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -153,27 +159,27 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c007">
-						<titleInfo lang="ger">
-							<title>Realité, peinture pure</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Guillaume Apollinaire</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<list>4-5</list>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-					</relatedItem>
+					<relatedItem ID="c007">
+                  <titleInfo lang="fre">
+                     <title>Realité, peinture pure</title>
+                  </titleInfo>
+                  <name>
+                     <displayForm>Guillaume Apollinaire</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <list>4-5</list>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+               </relatedItem>
 					<relatedItem type="constituent" ID="c008">
 						<titleInfo lang="ger">
 							<nonSort>Die</nonSort>
@@ -197,9 +203,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo lang="ger">
-								<title>Wilhelm Morgner: Tierdressur / Originalholzsehnitt</title>
+								<title>Tierdressur</title>
+							   <subTitle>Originalholzschnitt</subTitle>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Wilhelm Morgner</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>6</start>
@@ -209,9 +222,16 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="ger">
-								<title>Franz Marc: Pferde / Originalholzschnitt</title>
+								<title>Pferde</title>
+							   <subTitle>Originalholzschnitt</subTitle>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Franz Marc</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>8</start>
@@ -225,7 +245,7 @@
 							<title>Antwort</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Albert Ehrenste</displayForm>
+							<displayForm>Albert Ehrenstein</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -249,9 +269,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="ger">
-							<title>G. Münter: Originalholzschnitt</title>
+							<title>Originalholzschnitt</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>G. Münter</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>10</start>
@@ -1666,7 +1692,7 @@
 								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.8.3" TYPE="Illustration" ORDER="1" DMDID="c009" LABEL="Wilhelm Morgner: Tierdressur / Originalholzsehnitt">
+						<div ID="L.1.1.2.8.3" TYPE="Illustration" ORDER="1" DMDID="c009" LABEL="Wilhelm Morgner: Tierdressur / Originalholzschnitt">
 							<div ID="L.1.1.2.8.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_CB00001"/>

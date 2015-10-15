@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,7 +57,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>Aron fra Kangek: Zeichnungen</title>
+							<title>Aron fra Kangek</title>
+						   <subTitle>Zeichnungen</subTitle>
 						</titleInfo>
 						<typeOfResource>still image</typeOfResource>
 						<part>
@@ -70,9 +71,10 @@
 					<relatedItem type="constituent" ID="c003">
 						<titleInfo lang="ger">
 							<title>Gedichte</title>
+						   <subTitle>Gefallen September 1915</subTitle>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Isidor Quartner Gefallen September 1915</displayForm>
+							<displayForm>Isidor Quartner</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
@@ -643,13 +645,14 @@
 					<relatedItem type="constituent" ID="c040">
 						<titleInfo lang="ger">
 							<title>Gedichte</title>
+						   <subTitle>Aus dem Tschechischen</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Marja Enid Aus dem Tschechischen</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name>
+                     <displayForm>Marja Enid</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -802,9 +805,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c048">
 							<titleInfo lang="ger">
-								<title>Campendonk: Holzschnitt / Vom Stock gedruckt</title>
+								<title>Holzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <name type="personal">
+						      <displayForm>Campendonk</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>9</start>
@@ -2015,7 +2025,7 @@
 					</div>
 				</div>
 				<div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt:">
+					<div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="Inhalt">
 						<div ID="L.1.1.2.1.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00008"/>

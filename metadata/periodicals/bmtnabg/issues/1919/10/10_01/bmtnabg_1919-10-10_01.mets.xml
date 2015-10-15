@@ -42,9 +42,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Hugo Händel: Zeichnung</title>
+							<title>Zeichnung</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Hugo Händel</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -118,9 +124,16 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c005">
 							<titleInfo lang="ger">
-								<title>Johannes Molzahn: Holzschnitt / Vom Stock gedruckt</title>
+								<title>Holzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Johannes Molzahn</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <note type="caption">Vom Stock gedruckt</note>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -152,9 +165,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c007">
 							<titleInfo lang="ger">
-								<title>Kandinsky: Aquarell 6</title>
+								<title>Aquarell 6</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Kandinsky</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>9</start>
@@ -163,88 +182,100 @@
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c008">
-						<titleInfo lang="ger">
-							<title>J’ai tué</title>
-							<subTitle>Blaise Cendrars</subTitle>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Zeichnungen von Fernand Léger</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<list>10-13</list>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c009">
-							<titleInfo lang="ger">
-								<title>Fernand Léger</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>10</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c010">
-							<titleInfo lang="ger">
-								<title>Ils viennent de tous les horizons Fernand Léger</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>11</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c011">
-							<titleInfo lang="ger">
-								<title>Fernand Léger</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>12</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c012">
-							<titleInfo lang="ger">
-								<title>Fernand Léger</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>13</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c013">
-							<titleInfo lang="ger">
-								<title>Fernand Léger</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>13</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-					</relatedItem>
+					<relatedItem ID="c008">
+                  <titleInfo lang="fre">
+                     <title>J’ai tué</title>
+                     <subTitle>Zeichnungen von Fernand Léger</subTitle>
+                  </titleInfo>
+                  <name>
+                     <displayForm>Blaise Cendrars</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <list>10-13</list>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+                  <relatedItem ID="c009">
+                     <titleInfo lang="ger">
+                        <title>Untitled Image</title>
+                     </titleInfo>
+                     <name type="personal">
+                        <displayForm>Fernand Léger</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>10</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+                  <relatedItem ID="c010">
+                     <titleInfo lang="ger">
+                        <title>Ils viennent de tous les horizons </title>
+                     </titleInfo>
+                     <name type="personal">
+                        <displayForm>Fernand Léger</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>11</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+                  <relatedItem ID="c011">
+                     <titleInfo lang="ger">
+                        <title>Fernand Léger</title>
+                     </titleInfo>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>12</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+                  <relatedItem ID="c012">
+                     <titleInfo lang="ger">
+                        <title>Fernand Léger</title>
+                     </titleInfo>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>13</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+                  <relatedItem ID="c013">
+                     <titleInfo lang="ger">
+                        <title>Fernand Léger</title>
+                     </titleInfo>
+                     <typeOfResource>still image</typeOfResource>
+                     <part>
+                        <extent unit="page">
+                           <start>13</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+                  </relatedItem>
+               </relatedItem>
 					<relatedItem type="constituent" ID="c014">
 						<titleInfo lang="ger">
 							<title>Inhalt</title>

@@ -42,7 +42,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -57,9 +57,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>W. Kandinsky: Zeichnung</title>
+							<title>Zeichnung</title>
 						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
+					   <name type="personal">
+					      <displayForm>W. Kandinsky</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
 								<start>1</start>
@@ -120,7 +126,13 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<typeOfResource>text</typeOfResource>
+					   <name type="personal">
+					      <displayForm>Jean-Jacques</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>
@@ -132,9 +144,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c006">
 							<titleInfo lang="ger">
-								<title>Richter-Berlin: Originalholzsehnitt</title>
+								<title>Originalholzschnitt</title>
 							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
+						   <name type="personal">
+						      <displayForm>Richter-Berlin</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+						   <typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
 									<start>5</start>
@@ -1311,7 +1329,7 @@
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.5.3" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="Richter-Berlin: Originalholzsehnitt">
+						<div ID="L.1.1.2.5.3" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="Richter-Berlin: Originalholzschnitt">
 							<div ID="L.1.1.2.5.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>

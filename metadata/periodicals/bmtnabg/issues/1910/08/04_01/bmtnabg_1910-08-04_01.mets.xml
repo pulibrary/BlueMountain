@@ -42,8 +42,15 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Zeichnung von Samuel Fridolin</title>
+							<title>Untitled Image</title>
 						</titleInfo>
+					   <name type="personal">
+					      <displayForm>Samuel Fridolin</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <note type="caption">Zeichnung von Samuel Fridolin</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -54,7 +61,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>INHALT:</title>
+							<title>INHALT</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -67,27 +74,27 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c003">
-						<titleInfo lang="ger">
-							<title>L'amour à l'allemande</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Rudolf Blümner</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<list>1-2</list>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-					</relatedItem>
+					<relatedItem ID="c003">
+                  <titleInfo lang="fre">
+                     <title>L'amour à l'allemande</title>
+                  </titleInfo>
+                  <name>
+                     <displayForm>Rudolf Blümner</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">fre</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <list>1-2</list>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+               </relatedItem>
 					<relatedItem type="constituent" ID="c004">
 						<titleInfo lang="ger">
 							<nonSort>Der</nonSort>
@@ -200,6 +207,7 @@
 						<titleInfo lang="ger">
 							<title>Gespräche mit Kalypso</title>
 							<subTitle>Ueber die Musik</subTitle>
+						   <subTitle>Zehntes Gespräch: Aufatmen der Verzauberten</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Alfred Döblin</displayForm>
@@ -221,7 +229,6 @@
 					<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="ger">
 							<title>Neben der Brüsseler Ausstellung</title>
-							<subTitle>I</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>R. Laudon</displayForm>
@@ -241,10 +248,12 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo lang="ger">
-								<title>Schlechte Dichter / III / Gustav Frenssen Samuel Fridolin Verfasser</title>
+								<title>Schlechte Dichter / III / Gustav Frenssen </title>
+							   <subTitle>Verfasser von Jörn Uhl / Hilligenlei</subTitle>
 							</titleInfo>
+						   
 							<name type="personal">
-								<displayForm>Jörn Uhl</displayForm>
+							   <displayForm>Samuel Fridolin</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -284,7 +293,13 @@
 							<nonSort>Der</nonSort>
 							<title>Schwindel mit der Kunst</title>
 						</titleInfo>
-						<typeOfResource>text</typeOfResource>
+					   <name type="corporate">
+					      <displayForm>Trust</displayForm>
+					      <role>
+					         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					      </role>
+					   </name>
+					   <typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
 						</language>
