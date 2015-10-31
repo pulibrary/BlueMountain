@@ -1223,6 +1223,21 @@
                      </part>
                      <genre type="CCS">TextContent</genre>
                   </relatedItem>
+                  <relatedItem type="constituent" ID="c068a">
+                     <titleInfo lang="eng">
+                        <title>THE RUSSIAN PEOPLE by Maurice Baring</title>
+                     </titleInfo>
+                     <typeOfResource>text</typeOfResource>
+                     <language>
+                        <languageTerm authority="iso639-2b">eng</languageTerm>
+                     </language>
+                     <part>
+                        <extent unit="page">
+                           <start>94</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">TextContent</genre>
+                  </relatedItem>
                   <relatedItem type="constituent" ID="c069">
                      <titleInfo lang="eng">
                         <title>MAURICE MAETERLINCK by Edward Thomas</title>
@@ -14029,24 +14044,55 @@
                      </div>
                   </div>
                   <!-- MET-27 end of edits -->
-                  <div ID="L.1.1.2.28.5" TYPE="TextContent" ORDER="5" DMDID="c068"
-                     LABEL="DE PROFUNDIS by Oscar Wilde.">
-                     <div ID="L.1.1.2.28.5.1" TYPE="Copy">
-                        <div ID="L.1.1.2.28.5.1.1" TYPE="BodyContent">
+                  <!-- MET-28 start ticket edits-->
+                  <div ID="c068.1" TYPE="TextContent" ORDER="6" DMDID="c068"
+                     LABEL="DE PROFUNDIS by Oscar Wilde">
+                     <!-- Head if exists-->
+                     <div ID="c068.1.1" TYPE="Head">
+                        <fptr>
+                           <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_c068_HEAD"/>
+                        </fptr>
+                     </div>
+                     <div TYPE="Copy">      
+                        <div TYPE="BodyContent"> 
+                           <!-- Cut Paste Paragraph and Text divs here, maintaining their ids from before -->
                            <div ID="L.1.1.2.28.5.1.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.28.5.1.1.1.1" TYPE="Text">
                                  <fptr>
-                                    <seq>
-                                       <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_TB00004"/>
-                                       <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_TB00005"/>
-                                    </seq>
+                                    <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_c068_BODY"/>                                    
                                  </fptr>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div ID="L.1.1.2.28.6" TYPE="TextContent" ORDER="6" DMDID="c069"
+                  <div ID="c068a.1" TYPE="TextContent" ORDER="7" DMDID="c068a"
+                     LABEL="THE RUSSIAN PEOPLE by Maurice Baring">
+                     <!-- Head if exists-->
+                     <div ID="c068a.1.1" TYPE="Head">
+                        <fptr>
+                           <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_c068a_HEAD"/>
+                        </fptr>
+                     </div>
+                     <div TYPE="Copy">      
+                        <div TYPE="BodyContent"> 
+                           <!-- Cut Paste Paragraph and Text divs here, maintaining their ids from before -->
+                           <div ID="c068a.1.1.1" TYPE="Paragraph" ORDER="1">
+                              <div ID="c068a.1.1.1.1" TYPE="Text">
+                                 <fptr>
+                                    <seq>
+                                       <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_TB00004"/>
+                                       <area BETYPE="IDREF" FILEID="ALTO00094" BEGIN="P94_TB00005"/>
+                                    </seq>                       
+                                 </fptr>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <!-- MET-28 end ticket edits-->
+                  <div ID="L.1.1.2.28.6" TYPE="TextContent" ORDER="8" DMDID="c069"
                      LABEL="MA URICE MAETERLINCK">
                      <div ID="L.1.1.2.28.6.1" TYPE="Copy">
                         <div ID="L.1.1.2.28.6.1.1" TYPE="BodyContent">
@@ -14064,7 +14110,7 @@
                         </div>
                      </div>
                   </div>
-                  <div ID="L.1.1.2.28.7" TYPE="TextContent" ORDER="7" DMDID="c070"
+                  <div ID="L.1.1.2.28.7" TYPE="TextContent" ORDER="9" DMDID="c070"
                      LABEL="WILLIAM MORRIS TO">
                      <div ID="L.1.1.2.28.7.1" TYPE="Copy">
                         <div ID="L.1.1.2.28.7.1.1" TYPE="BodyContent">
