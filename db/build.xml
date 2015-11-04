@@ -659,11 +659,23 @@
 
   <target name="load-transcriptions" description="load TEI transcriptions">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}/transcriptions" createcollection="true"
+	       uri="${xmldb.approot}/transcriptions/periodicals" createcollection="true"
 	       createsubcollections="true"
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/transcriptions/periodicals">
+	<include name="**/*.tei.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+    <target name="load-bmtnaaz-transc" description="load TEI transcriptions of SIC">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/transcriptions/periodicals" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/transcriptions/periodicals/bmtnaaz">
 	<include name="**/*.tei.xml" />
       </fileset>
     </xdb:store>
