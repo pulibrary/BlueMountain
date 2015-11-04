@@ -274,21 +274,22 @@
                      </part>
                      <genre type="CCS">Illustration</genre>
                   </relatedItem>
-               </relatedItem>
-               <relatedItem type="constituent" ID="c014">
-                  <titleInfo lang="eng">
-                     <title>Untitled Text</title>
-                  </titleInfo>
-                  <typeOfResource>text</typeOfResource>
-                  <language>
-                     <languageTerm authority="iso639-2b">eng</languageTerm>
-                  </language>
-                  <part>
-                     <extent unit="page">
-                        <start>23</start>
-                     </extent>
-                  </part>
-                  <genre type="CCS">TextContent</genre>
+                  <relatedItem type="constituent" ID="c014">
+                     <titleInfo lang="eng">
+                        <title>Untitled Text</title>
+                     </titleInfo>
+                     <typeOfResource>text</typeOfResource>
+                     <language>
+                        <languageTerm authority="iso639-2b">eng</languageTerm>
+                     </language>
+                     <part>
+                        <extent unit="page">
+                           <start>23</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">TextContent</genre>
+                     
+                  </relatedItem>
                   <relatedItem type="constituent" ID="c015">
                      <titleInfo lang="eng">
                         <title>VIEW OF THE EXTERIOR OF THE MADDERMARKET THEATRE</title>
@@ -301,7 +302,10 @@
                      </part>
                      <genre type="CCS">Illustration</genre>
                   </relatedItem>
+                  
                </relatedItem>
+               
+               
                <relatedItem type="constituent" ID="c016">
                   <titleInfo lang="eng">
                      <title>THREE BOOKS ON THE THEATRE OF EUROPE</title>
@@ -6946,10 +6950,21 @@
                         </div>
                      </div>
                   </div>
-               </div>
-               <div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c014"
-                  LABEL="THE chances against good theatres in the">
-                  <div ID="L.1.1.2.11.1" TYPE="Illustration" ORDER="1" DMDID="c015"
+                  <div ID="L.1.1.2.11" TYPE="TextContent" ORDER="2" DMDID="c014"
+                     LABEL="THE chances against good theatres in the">                     
+                     <div ID="L.1.1.2.11.2" TYPE="Copy">
+                        <div ID="L.1.1.2.11.2.1" TYPE="BodyContent">
+                           <div ID="L.1.1.2.11.2.1.1" TYPE="Paragraph" ORDER="1">
+                              <div ID="L.1.1.2.11.2.1.1.1" TYPE="Text">
+                                 <fptr>
+                                    <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00008"/>
+                                 </fptr>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div ID="L.1.1.2.11.1" TYPE="Illustration" ORDER="3" DMDID="c015"
                      LABEL="VIEW OF THE EXTERIOR OF THE MADDERMARKET THEATRE.">
                      <div ID="L.1.1.2.11.1.1" TYPE="Image">
                         <fptr>
@@ -6962,18 +6977,9 @@
                         </fptr>
                      </div>
                   </div>
-                  <div ID="L.1.1.2.11.2" TYPE="Copy">
-                     <div ID="L.1.1.2.11.2.1" TYPE="BodyContent">
-                        <div ID="L.1.1.2.11.2.1.1" TYPE="Paragraph" ORDER="1">
-                           <div ID="L.1.1.2.11.2.1.1.1" TYPE="Text">
-                              <fptr>
-                                 <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00008"/>
-                              </fptr>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+                  
                </div>
+
                <div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c016"
                   LABEL="THREE BOOKS ON THE THEATRE OF EUROPE. FRENCH, ITALIAN AND ENGLISH.">
                   <div ID="L.1.1.2.12.1" TYPE="Head">
