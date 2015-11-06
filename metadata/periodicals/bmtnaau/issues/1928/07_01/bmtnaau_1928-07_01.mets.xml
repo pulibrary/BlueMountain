@@ -170,21 +170,22 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+					   <relatedItem type="constituent" ID="c009">
+					      <titleInfo lang="eng">
+					         <nonSort>THE</nonSort>
+					         <title>SILVER CASKET</title>
+					      </titleInfo>
+					      <note type="caption">Plate 14</note>
+					      <typeOfResource>still image</typeOfResource>
+					      <part>
+					         <extent unit="page">
+					            <start>7</start>
+					         </extent>
+					      </part>
+					      <genre type="CCS">Illustration</genre>
+					   </relatedItem>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c009">
-						<titleInfo lang="eng">
-							<nonSort>THE</nonSort>
-							<title>SILVER CASKET</title>
-						</titleInfo>
-						<note type="caption">Plate 14</note>
-						<typeOfResource>still image</typeOfResource>
-						<part>
-							<extent unit="page">
-								<start>7</start>
-							</extent>
-						</part>
-						<genre type="CCS">Illustration</genre>
-					</relatedItem>
+					
 					<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="eng">
 							<title>FREDERICK ROBSON</title>
@@ -1140,32 +1141,48 @@
 						</part>
 						<genre type="CCS">Illustration</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c066">
-						<titleInfo lang="eng">
-							<title>IN BOOTS AT THE INN</title>
-						</titleInfo>
-						<typeOfResource>still image</typeOfResource>
-						<part>
-							<extent unit="page">
-								<start>43</start>
-							</extent>
-						</part>
-						<genre type="CCS">Illustration</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c067">
-						<titleInfo lang="eng">
-							<title>AS DADDY HARDACRE</title>
-						</titleInfo>
-					   <note type="caption">ROBSON IN TWO OF HIS ROLES. Plate 17</note>
-						<typeOfResource>still image</typeOfResource>
-						<part>
-							<extent unit="page">
-								<start>43</start>
-							</extent>
-						</part>
-						<genre type="CCS">Illustration</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c068">
+				   <!-- MET-82 -->
+				   <relatedItem type="constituent" ID="c065a">
+				      <titleInfo lang="eng">
+				         <title>ROBSON IN TWO OF HIS ROLES</title>
+				      </titleInfo>
+				      <note type="caption">Plate 17</note>
+				      <typeOfResource>still image</typeOfResource>
+				      <part>
+				         <extent unit="page">
+				            <start>41</start>
+				         </extent>
+				      </part>
+				      <genre type="CCS">Illustration</genre>
+				      <relatedItem type="constituent" ID="c066">
+				         <titleInfo lang="eng">
+				            <title>IN BOOTS AT THE INN</title>
+				         </titleInfo>
+				         <typeOfResource>still image</typeOfResource>
+				         <part>
+				            <extent unit="page">
+				               <start>43</start>
+				            </extent>
+				         </part>
+				         <genre type="CCS">Illustration</genre>
+				      </relatedItem>
+				      <relatedItem type="constituent" ID="c067">
+				         <titleInfo lang="eng">
+				            <title>AS DADDY HARDACRE</title>
+				         </titleInfo>
+				         <typeOfResource>still image</typeOfResource>
+				         <part>
+				            <extent unit="page">
+				               <start>43</start>
+				            </extent>
+				         </part>
+				         <genre type="CCS">Illustration</genre>
+				      </relatedItem>
+				      
+				   </relatedItem>
+				   
+					
+				   <relatedItem type="constituent" ID="c068">
 						<titleInfo lang="eng">
 							<title>ELLEN TERRY WITH MARION TERRY HER SISTER</title>
 						</titleInfo>
@@ -7600,22 +7617,23 @@
 								</div>
 							</div>
 						</div>
+					   <div ID="L.1.1.2.9" TYPE="Illustration" ORDER="1" DMDID="c009" LABEL="THE SILVER CASKET. Plate 14.">
+					      <div ID="L.1.1.2.9.1" TYPE="Image">
+					         <fptr>
+					            <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
+					         </fptr>
+					      </div>
+					      <div ID="L.1.1.2.9.2" TYPE="Caption">
+					         <fptr>
+					            <seq>
+					               <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
+					               <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
+					            </seq>
+					         </fptr>
+					      </div>
+					   </div>
 					</div>
-					<div ID="L.1.1.2.9" TYPE="Illustration" ORDER="1" DMDID="c009" LABEL="THE SILVER CASKET. Plate 14.">
-						<div ID="L.1.1.2.9.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
-							</fptr>
-						</div>
-						<div ID="L.1.1.2.9.2" TYPE="Caption">
-							<fptr>
-								<seq>
-									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
-									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
-								</seq>
-							</fptr>
-						</div>
-					</div>
+
 					<div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c010" LABEL="FREDERICK ROBSON A SKETCH BY GEORGE AUGUSTUS SALA WITH A PREFACE BY H. C. HOTTEN AND ADDITIONAL NOTES GATHERED FROM VARIOUS SOURCES.">
 						<div ID="L.1.1.2.10.1" TYPE="Head">
 							<fptr>
@@ -9258,34 +9276,49 @@
 							</fptr>
 						</div>
 					</div>
-					<div ID="L.1.1.2.14" TYPE="Illustration" ORDER="1" DMDID="c066" LABEL="IN BOOTS AT THE INN.">
-						<div ID="L.1.1.2.14.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_CB00001"/>
-							</fptr>
-						</div>
-						<div ID="L.1.1.2.14.2" TYPE="Caption">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_TB00001"/>
-							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.2.15" TYPE="Illustration" ORDER="2" DMDID="c067" LABEL="AS DADDY HARDACRE. ROBSON IN TWO OF HIS ROLES. Plate 17.">
-						<div ID="L.1.1.2.15.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_CB00002"/>
-							</fptr>
-						</div>
-						<div ID="L.1.1.2.15.2" TYPE="Caption">
-							<fptr>
-								<seq>
-									<area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_TB00002"/>
-									<area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_TB00004"/>
-								</seq>
-							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.2.16" TYPE="Illustration" ORDER="1" DMDID="c068" LABEL="ELLEN TERRY WITH MARION TERRY HER SISTER, in 1911, seated in the old school desk (a little wooden affair with wooden seat and with two flap-lids for sloping writing places) made for her children Edith and Edward. A Note on the back of the picture in Ellen Terry's handwriting reads: &#34;For my book but it never appeared in her book. The print is excessively rare, not reproduced befor e and by no means a clear print; but very pretty of both sisters. Plate 18.">
+				   
+				   <!-- Structure edits for Ticket MET-82 -->
+				   <div ID="c065a.1" TYPE="TextContent" ORDER="1" DMDID="c065a"
+				      LABEL=" ">
+				      <!-- Head if exists-->
+				      
+				      <div TYPE="Copy">      
+				         <div TYPE="BodyContent"> 
+				            <!-- Cut Paste Paragraph and Text divs here, maintaining their ids from before -->
+				            
+				         </div>
+				      </div>
+				      <div ID="L.1.1.2.14" TYPE="Illustration" ORDER="1" DMDID="c066" LABEL="IN BOOTS AT THE INN.">
+				         <div ID="L.1.1.2.14.1" TYPE="Image">
+				            <fptr>
+				               <area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_CB00001"/>
+				            </fptr>
+				         </div>
+				         <div ID="L.1.1.2.14.2" TYPE="Caption">
+				            <fptr>
+				               <area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_TB00001"/>
+				            </fptr>
+				         </div>
+				      </div>
+				      <div ID="L.1.1.2.15" TYPE="Illustration" ORDER="2" DMDID="c067" LABEL="AS DADDY HARDACRE. ROBSON IN TWO OF HIS ROLES. Plate 17.">
+				         <div ID="L.1.1.2.15.1" TYPE="Image">
+				            <fptr>
+				               <area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_CB00002"/>
+				            </fptr>
+				         </div>
+				         <div ID="L.1.1.2.15.2" TYPE="Caption">
+				            <fptr>
+				               <seq>
+				                  <area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_TB00002"/>
+				                  <area BETYPE="IDREF" FILEID="ALTO00043" BEGIN="P43_TB00004"/>
+				               </seq>
+				            </fptr>
+				         </div>
+				      </div>
+				      
+				   </div>
+				   
+				   <div ID="L.1.1.2.16" TYPE="Illustration" ORDER="2" DMDID="c068" LABEL="ELLEN TERRY WITH MARION TERRY HER SISTER, in 1911, seated in the old school desk (a little wooden affair with wooden seat and with two flap-lids for sloping writing places) made for her children Edith and Edward. A Note on the back of the picture in Ellen Terry's handwriting reads: &#34;For my book but it never appeared in her book. The print is excessively rare, not reproduced befor e and by no means a clear print; but very pretty of both sisters. Plate 18.">
 						<div ID="L.1.1.2.16.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_CB00001"/>
