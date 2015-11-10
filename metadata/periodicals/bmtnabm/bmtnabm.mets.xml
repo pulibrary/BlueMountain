@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabm">
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabm">
   <metsHdr>
     <agent ROLE="CREATOR" TYPE="ORGANIZATION">
       <name>Princeton University Library, Digital Initiatives</name>
@@ -9,11 +13,11 @@
     <mdWrap MDTYPE="DC">
       <xmlData>
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-
+	  
           <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabm">
-
+	    
             <dc:title>Nowa sztuka</dc:title>
-
+	    
           </rdf:Description>
         </rdf:RDF>
       </xmlData>
@@ -27,19 +31,14 @@
       <xmlData>
         <mods xmlns="http://www.loc.gov/mods/v3">
           <identifier type="bmtn">urn:PUL:bluemountain:bmtnabm</identifier>
-          <recordInfo>
-            <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabm</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=7292591</recordOrigin>
-            <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-          </recordInfo>
-          <genre>Periodicals-Title</genre>
-          <titleInfo>
+          <genre authority="bmtn">Periodicals-Title</genre>
+	  <titleInfo>
             <title>Nowa sztuka</title>
-            <subTitle>miesięcznik artystyczny</subTitle>
-          </titleInfo>
+	    <subTitle>miesięcznik artystyczny</subTitle>
+	  </titleInfo>
+	  <titleInfo type="alternative">
+            <title>Nowej sztuki</title>
+	  </titleInfo>
           <name type="personal">
             <namePart>Stern, Anatol</namePart>
             <namePart type="date">1899-1968</namePart>
@@ -68,39 +67,50 @@
               <roleTerm type="text">editor</roleTerm>
             </role>
           </name>
-          <typeOfResource>text</typeOfResource>
-          <genre authority="bmtn">Periodicals-Title</genre>
-          <originInfo script="Latn">
+
+	  <typeOfResource>text</typeOfResource>
+	  <originInfo script="Latn">
             <dateIssued encoding="marc" point="start">1921</dateIssued>
             <dateIssued encoding="marc" point="end">1922</dateIssued>
-          </originInfo>
-          <abstract> Nowa Sztuka, or "New Art," was a Polish avant-garde poetry magazine that ran
-            for only a few issues in 1921 and 1922. Selected Contributors: Anatol Stern, Jaroslaw
-            Iwaszkiewicz. </abstract>
-          <language>
+	  </originInfo>
+	  <language>
             <languageTerm authority="iso639-2b" type="code">pol</languageTerm>
-          </language>
-          <physicalDescription>
-            <extent>2 volumes ; 27 cm</extent>
-          </physicalDescription>
-          <note type="date/sequential designation">Rok 1., zeszyt 1. (listopad 1921 rok)-Rok 2.,
-            zeszyt 2. (luty 1922 rok).</note>
-          <note>Editorial committee, listopad 1921 rok: Jarosław Iwaszkiewicz, Anatol Stern; luty
-            1922 rok: Leon Chwistek, Tadeusz Peiper, Anatol Stern.</note>
-          <note>Some pencilled markings on p. 3-4 of first issue.</note>
-          <note type="numbering">Also called No 1-no 2 on cover.</note>
-          <subject authority="lcsh">
-            <topic>Art, Modern</topic>
-            <temporal>20th century</temporal>
+	  </language>
+	  <physicalDescription>
+            <extent>1 online resource (2 volumes)</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">Began with Rok 1., zeszyt 1. (listopad 1921); ceased with rok 2., zeszyt 2. (luty 1922).</note>
+	  <note>"Miesięcznik artystyczny."</note>
+	  <note type="numbering">Issues for Rok 1., zeszyt 1. (listopad 1921)-rok 2., zeszyt 2. (luty 1922) also called: No. 1-no. 2.</note>
+	  <note type="additional physical form">Also issued in print.</note>
+	  <subject authority="lcsh">
+            <topic>Experimental poetry, Polish</topic>
             <genre>Periodicals</genre>
-          </subject>
-          <subject authority="lcsh">
-            <topic>Art, Polish</topic>
-            <temporal>20th century</temporal>
-            <genre>Periodicals</genre>
-          </subject>
-
-        </mods>
+	  </subject>
+	  <location>
+            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project">http://arks.princeton.edu/ark:/88435/2227ms295</url>
+	  </location>
+	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	  <location>
+            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+              <copyInformation>
+                <subLocation>elf1</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>Electronic Resource</shelfLocator>
+              </copyInformation>
+            </holdingSimple>
+	  </location>
+	  <recordInfo>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabm</recordIdentifier>
+            <recordContentSource authority="marcorg">NjP</recordContentSource>
+            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=9032520</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+	  </recordInfo>
+	</mods>
       </xmlData>
     </mdWrap>
   </dmdSec>
