@@ -478,7 +478,7 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem ID="c023">
+               <relatedItem ID="c023" type="constituent" >
                   <titleInfo lang="spa">
                      <nonSort>LA</nonSort>
                      <title>SOLEDAD SONORA</title>
@@ -564,7 +564,7 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem ID="c025">
+               <relatedItem type="constituent" ID="c025">
                   <titleInfo lang="por">
                      <title>Canção do nauta seduzido</title>
                      <subTitle>POÈME BRÉSILIEN</subTitle>
@@ -585,35 +585,37 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
+                  <relatedItem ID="c026" type="otherVersion">
+                     <titleInfo lang="fre">
+                        <nonSort>La</nonSort>
+                        <title>chanson du nautonier séduit</title>
+                     </titleInfo>
+                     <name authority="viaf" valueURI="http://viaf.org/viaf/89007204">
+                        <displayForm>Carlos Magalhaes de Azeredo</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <name authority="viaf" valueURI="http://viaf.org/viaf/89007204">
+                        <displayForm>Carlos Magalhaes de Azeredo</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">trl</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>text</typeOfResource>
+                     <language>
+                        <languageTerm authority="iso639-2b">fre</languageTerm>
+                     </language>
+                     <part>
+                        <extent unit="page">
+                           <list>30-31</list>
+                        </extent>
+                     </part>
+                     <genre type="CCS">TextContent</genre>
+                  </relatedItem>
+                  
                </relatedItem>
-               <relatedItem ID="c026">
-                  <titleInfo lang="fre">
-                     <nonSort>La</nonSort>
-                     <title>chanson du nautonier séduit</title>
-                  </titleInfo>
-                  <name authority="viaf" valueURI="http://viaf.org/viaf/89007204">
-                     <displayForm>Carlos Magalhaes de Azeredo</displayForm>
-                     <role>
-                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-                     </role>
-                  </name>
-                  <name authority="viaf" valueURI="http://viaf.org/viaf/89007204">
-                     <displayForm>Carlos Magalhaes de Azeredo</displayForm>
-                     <role>
-                        <roleTerm type="code" authority="marcrelator">trl</roleTerm>
-                     </role>
-                  </name>
-                  <typeOfResource>text</typeOfResource>
-                  <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
-                  </language>
-                  <part>
-                     <extent unit="page">
-                        <list>30-31</list>
-                     </extent>
-                  </part>
-                  <genre type="CCS">TextContent</genre>
-               </relatedItem>
+               
                <relatedItem type="constituent" ID="c027">
                   <titleInfo lang="ita">
                      <nonSort>LA</nonSort>
