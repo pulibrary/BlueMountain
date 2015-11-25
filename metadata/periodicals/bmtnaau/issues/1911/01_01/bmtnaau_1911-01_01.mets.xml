@@ -475,12 +475,7 @@
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 							</role>
 						</name>
-						<name type="personal">
-							<displayForm>Vernon Lee</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">eng</languageTerm>
@@ -515,6 +510,51 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
+					   <!-- MET-105 begin edits-->
+					   <relatedItem type="constituent" ID="c029a">
+					      <titleInfo lang="eng">
+					         <title>CARLO GOZZI ON IMPROVISED COMEDY</title>
+					      </titleInfo>
+					      <name type="personal">
+					         <displayForm>Carlo Gozzi</displayForm>
+					         <role>
+					            <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					         </role>
+					      </name>
+					      <typeOfResource>text</typeOfResource>
+					      <language>
+					         <languageTerm authority="iso639-2b">eng</languageTerm>
+					      </language>
+					      <part>
+					         <extent unit="page">
+					            <start>47</start>
+					         </extent>
+					      </part>
+					      <genre type="CCS">TextContent</genre>
+					   </relatedItem>
+					   <relatedItem type="constituent" ID="c029b">
+					      <titleInfo lang="eng">
+					         <title>A SURVIVAL OF THE COMMEDIA.</title>
+					      </titleInfo>
+					      <name type="personal">
+					         <displayForm>Vernon Lee</displayForm>
+					         <role>
+					            <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					         </role>
+					      </name>
+					      <typeOfResource>text</typeOfResource>
+					      <language>
+					         <languageTerm authority="iso639-2b">eng</languageTerm>
+					      </language>
+					      <part>
+					         <extent unit="page">
+					            <start>47</start>
+					         </extent>
+					      </part>
+					      <genre type="CCS">TextContent</genre>
+					   </relatedItem>
+					   
+					   <!-- MET-105 end edits -->
 						<relatedItem type="constituent" ID="c032">
 							<titleInfo lang="eng">
 								<mods:title>Untitled Image</mods:title>
@@ -528,7 +568,8 @@
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c033">
+					
+				   <relatedItem type="constituent" ID="c033">
 						<titleInfo lang="eng">
 							<title>SYMBOLISM</title>
 							<subTitle>Symbolism. A Systematic use of symbols. A Symbol. A visible sign of an idea. (Webster.)</subTitle>
@@ -9054,30 +9095,6 @@
 										</fptr>
 									</div>
 								</div>
-								<div ID="L.1.1.2.8.7.1.4" TYPE="MinorHead" ORDER="4">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00004"/>
-									</fptr>
-								</div>
-								<div ID="L.1.1.2.8.7.1.5" TYPE="Paragraph" ORDER="5">
-									<div ID="L.1.1.2.8.7.1.5.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00005"/>
-										</fptr>
-									</div>
-								</div>
-								<div ID="L.1.1.2.8.7.1.6" TYPE="MinorHead" ORDER="6">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00006"/>
-									</fptr>
-								</div>
-								<div ID="L.1.1.2.8.7.1.7" TYPE="Paragraph" ORDER="7">
-									<div ID="L.1.1.2.8.7.1.7.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00007"/>
-										</fptr>
-									</div>
-								</div>
 								<div ID="L.1.1.2.8.7.1.8" TYPE="Paragraph" ORDER="8">
 									<div ID="L.1.1.2.8.7.1.8.1" TYPE="Text">
 										<fptr>
@@ -9108,8 +9125,52 @@
 								</div>
 							</div>
 						</div>
+					    <!-- Structure edits for Ticket MET-105 -->
+					   <div ID="c029a.1" TYPE="TextContent" ORDER="1" DMDID="c029a"
+					      LABEL="CARLO GOZZI ON IMPROVISED COMEDY">
+					      <!-- Head if exists-->
+					      <div ID="L.1.1.2.8.7.1.4" TYPE="Head" ORDER="4">
+					         <fptr>
+					            <area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00004"/>
+					         </fptr>
+					      </div>
+					      <div TYPE="Copy">      
+					         <div TYPE="BodyContent"> 
+					            <!-- Cut Paste Paragraph and Text divs here, maintaining their ids from before -->
+					            <div ID="L.1.1.2.8.7.1.5" TYPE="Paragraph" ORDER="5">
+					               <div ID="L.1.1.2.8.7.1.5.1" TYPE="Text">
+					                  <fptr>
+					                     <area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00005"/>
+					                  </fptr>
+					               </div>
+					            </div>
+					         </div>
+					      </div>
+					   </div>
+					   <div ID="c029b.1" TYPE="TextContent" ORDER="2" DMDID="c029b"
+					      LABEL="CARLO GOZZI ON IMPROVISED COMEDY">
+					      <!-- Head if exists-->
+					      <div ID="L.1.1.2.8.7.1.6" TYPE="Head" ORDER="6">
+					         <fptr>
+					            <area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00006"/>
+					         </fptr>
+					      </div>
+					      <div TYPE="Copy">      
+					         <div TYPE="BodyContent"> 
+					            <!-- Cut Paste Paragraph and Text divs here, maintaining their ids from before -->
+					            <div ID="L.1.1.2.8.7.1.7" TYPE="Paragraph" ORDER="7">
+					               <div ID="L.1.1.2.8.7.1.7.1" TYPE="Text">
+					                  <fptr>
+					                     <area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00007"/>
+					                  </fptr>
+					               </div>
+					            </div>
+					         </div>
+					      </div>
+					   </div>
 					</div>
-					<div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c033" LABEL="SYMBOLISM. Symbolism. A Systematic use of symbols. A Symbol. A visible sign of an idea. (Webster.)">
+					
+				   <div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c033" LABEL="SYMBOLISM. Symbolism. A Systematic use of symbols. A Symbol. A visible sign of an idea. (Webster.)">
 						<div ID="L.1.1.2.9.1" TYPE="Head">
 							<fptr>
 								<seq>
