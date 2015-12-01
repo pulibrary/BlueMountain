@@ -18,7 +18,7 @@
 					<genre>Periodicals-Issue</genre>
 					<titleInfo>
 						<nonSort>The</nonSort>
-						<title>mask</title>
+						<title>Mask</title>
 					</titleInfo>
 					<part type="issue">
 						<detail type="volume">
@@ -64,7 +64,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="eng">
-							<title>HENRY IRVING: HIS VOICE by Gordon</title>
+							<title>Untitled Text</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -94,7 +94,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c004">
 						<titleInfo lang="eng">
-							<title>LITERARY CONTENTS.</title>
+							<title>LITERARY CONTENTS</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -122,10 +122,7 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c006">
-						<titleInfo lang="eng">
-							<title>Plate 10.</title>
-						</titleInfo>
+					<relatedItem type="constituent" ID="c006"><note type="caption">Plate 10</note>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -163,7 +160,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="eng">
-							<title>HENRY IRVING HIS VOICE</title>
+							<title>HENRY IRVING</title>
+						   <subTitle>HIS VOICE</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>GORDON CRAIG</displayForm>
@@ -177,7 +175,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>6-8</list>
+								<start>6</start> <end>8</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -208,7 +206,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="eng">
-							<title>GIOVANNANTONIO SELVA VISITS ENGLAND. LEAVES FROM AN ARCHITECT'S ITINERARY</title>
+							<title>GIOVANNANTONIO SELVA VISITS ENGLAND</title>
+						   <subTitle>LEAVES FROM AN ARCHITECT'S ITINERARY</subTitle>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -225,7 +224,7 @@
 								<title>BIOGRAPHICAL NOTE</title>
 							</titleInfo>
 							<name type="personal">
-								<displayForm>P. B</displayForm>
+								<displayForm>P.B.</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
 								</role>
@@ -264,22 +263,12 @@
 								</part>
 								<genre type="CCS">Illustration</genre>
 							</relatedItem>
-							<relatedItem type="constituent" ID="c016">
-								<titleInfo lang="eng">
-									<title>SPACCATO OF SELVA'S “TEATRO LA FENICE”</title>
-								</titleInfo>
-								<typeOfResource>still image</typeOfResource>
-								<part>
-									<extent unit="page">
-										<start>17</start>
-									</extent>
-								</part>
-								<genre type="CCS">Illustration</genre>
-							</relatedItem>
+
 						</relatedItem>
 						<relatedItem type="constituent" ID="c017">
 							<titleInfo lang="eng">
-								<title>SELVA AT TRIESTE SOME NOTES ON THE TEATRO NUOVO, TRIESTE.</title>
+								<title>SELVA AT TRIESTE</title>
+							   <subTitle>SOME NOTES ON THE TEATRO NUOVO, TRIESTE</subTitle>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -294,7 +283,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c018">
 							<titleInfo lang="eng">
-								<title>SELVA'S PLAN FOR TEATRO LA FENICE, 1790.</title>
+								<title>SELVA'S PLAN FOR TEATRO LA FENICE, 1790</title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -307,7 +296,7 @@
 						<relatedItem type="constituent" ID="c019">
 							<titleInfo lang="eng">
 								<nonSort>THE</nonSort>
-								<title>MED UNA BROTHERS' PLAN FOR TEATRO LA FENICE, 1837.</title>
+								<title>MEDUNA BROTHERS' PLAN FOR TEATRO LA FENICE, 1837</title>
 							</titleInfo>
 							<typeOfResource>still image</typeOfResource>
 							<part>
@@ -319,11 +308,9 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c020">
 							<titleInfo lang="eng">
-								<title>GIANNANTONIO ARCHITECT.</title>
+								<title>GIANNANTONIO SELVA</title>
 							</titleInfo>
-							<titleInfo lang="eng">
-								<title>Plate II.</title>
-							</titleInfo>
+							<note type="caption">ARCHITECT. Plate II</note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -334,11 +321,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c021">
 							<titleInfo lang="eng">
-								<title>PLAN OF ASTLEY'S THEATRE FROM THE MS. OF GINNANTONIO SELVA.</title>
-							</titleInfo>
-							<titleInfo lang="eng">
-								<title>Plate 12.</title>
-							</titleInfo>
+								<title>PLAN OF ASTLEY'S THEATRE FROM THE MS. OF GINNANTONIO SELVA</title>
+							</titleInfo><note type="caption">Plate 12</note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -347,9 +331,22 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
+					   <relatedItem type="constituent" ID="c016">
+					      <titleInfo lang="eng">
+					         <title>SPACCATO OF SELVA'S “TEATRO LA FENICE”</title>
+					      </titleInfo>
+					      <typeOfResource>still image</typeOfResource>
+					      <part>
+					         <extent unit="page">
+					            <start>17</start>
+					         </extent>
+					      </part>
+					      <genre type="CCS">Illustration</genre>
+					   </relatedItem>
 						<relatedItem type="constituent" ID="c022">
 							<titleInfo lang="eng">
-								<title>SELVA IN ENGLAND. EXTRACTS TRANSLATED FROM THE MANUSCRIPT ACCOUNT OF HIS TRAVELS</title>
+								<title>SELVA IN ENGLAND</title>
+							   <subTitle>EXTRACTS TRANSLATED FROM THE MANUSCRIPT ACCOUNT OF HIS TRAVELS</subTitle>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -357,7 +354,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>18-22</list>
+									<start>18</start> <end>22</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -366,9 +363,7 @@
 					<relatedItem type="constituent" ID="c023">
 						<titleInfo lang="eng">
 							<title>CATALOGUE OF THE SALE OF MLLE. RACHEL'S POSSESSIONS</title>
-						</titleInfo>
-						<titleInfo lang="eng">
-							<title>HELD IN PARIS FROM THE 12TH TO THE 19TH OF APRIL 1858 AT PLACE ROYALE No. 9 BY THE ADMINISTRATOR OF ME. HAYAUX DU TILLY, RUE DU BAC, 26. AND RUE DE L'UNIVERSITÈ, 46, PARIS CONTINUED FROM THE LAST NUMBER.</title>
+							<subTitle>HELD IN PARIS FROM THE 12TH TO THE 19TH OF APRIL 1858 AT PLACE ROYALE No. 9 BY THE ADMINISTRATOR OF ME. HAYAUX DU TILLY, RUE DU BAC, 26. AND RUE DE L'UNIVERSITÈ, 46, PARIS CONTINUED FROM THE LAST NUMBER</subTitle>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -376,7 +371,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>23-28</list>
+								<start>23</start> <end>28</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -396,7 +391,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>23-24</list>
+									<start>23</start> <end>24</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -411,7 +406,7 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>24-28</list>
+									<start>24</start> <end>28</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
@@ -432,7 +427,7 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c027">
 								<titleInfo lang="eng">
-									<title>MODERN FRENCH AND FOREIGN POETS.</title>
+									<title>MODERN FRENCH AND FOREIGN POETS</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -440,14 +435,14 @@
 								</language>
 								<part>
 									<extent unit="page">
-										<list>24-25</list>
+										<start>24</start> <end>25</end>
 									</extent>
 								</part>
 								<genre type="CCS">TextContent</genre>
 							</relatedItem>
 							<relatedItem type="constituent" ID="c028">
 								<titleInfo lang="eng">
-									<title>THEATRE.</title>
+									<title>THEATRE</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -455,14 +450,14 @@
 								</language>
 								<part>
 									<extent unit="page">
-										<list>25-26</list>
+										<start>25</start> <end>26</end>
 									</extent>
 								</part>
 								<genre type="CCS">TextContent</genre>
 							</relatedItem>
 							<relatedItem type="constituent" ID="c029">
 								<titleInfo lang="eng">
-									<title>PLAYS USED BY MLLE, RACHEL</title>
+									<title>PLAYS USED BY MLLE. RACHEL</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -477,7 +472,7 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c030">
 								<titleInfo lang="eng">
-									<title>PLAYS FOR STUDY AS USED BY TALMA.</title>
+									<title>PLAYS FOR STUDY AS USED BY TALMA</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -492,7 +487,7 @@
 							</relatedItem>
 							<relatedItem type="constituent" ID="c031">
 								<titleInfo lang="eng">
-									<title>DESIGNS.</title>
+									<title>DESIGNS</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -500,14 +495,14 @@
 								</language>
 								<part>
 									<extent unit="page">
-										<list>27-28</list>
+										<start>27</start> <end>28</end>
 									</extent>
 								</part>
 								<genre type="CCS">TextContent</genre>
 							</relatedItem>
 							<relatedItem type="constituent" ID="c032">
 								<titleInfo lang="eng">
-									<title>LETTERS.</title>
+									<title>LETTERS</title>
 								</titleInfo>
 								<typeOfResource>text</typeOfResource>
 								<language>
@@ -567,7 +562,7 @@
 					<relatedItem type="constituent" ID="c036">
 						<titleInfo lang="eng">
 							<nonSort>THE</nonSort>
-							<title>THEATRE IN BUDRIO.</title>
+							<title>THEATRE IN BUDRIO</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -575,17 +570,14 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>28-29</list>
+								<start>28</start> <end>29</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c037">
 							<titleInfo lang="eng">
-								<title>BIRD'S EYE VIEW OF THE TOWN OF BUDRIO.</title>
-							</titleInfo>
-							<titleInfo lang="eng">
-								<title>Plate 13.</title>
-							</titleInfo>
+								<title>BIRD'S EYE VIEW OF THE TOWN OF BUDRIO</title>
+							</titleInfo><note type="caption">Plate 13</note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -611,7 +603,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>31-36</list>
+								<start>31</start> <end>36</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -655,9 +647,7 @@
 					<relatedItem type="constituent" ID="c042">
 						<titleInfo lang="eng">
 							<title>DRURY LANE</title>
-						</titleInfo>
-						<titleInfo lang="eng">
-							<title>MEDITATIONS UPON WHY THE WEAZEL DOES NOT ALWAYS GO POP.</title>
+							<subTitle>MEDITATIONS UPON WHY THE WEAZEL DOES NOT ALWAYS GO POP</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Scotson Umbridge</displayForm>
@@ -671,7 +661,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>36-38</list>
+								<start>36</start> <end>38</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -690,7 +680,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c044">
 						<titleInfo lang="eng">
-							<title>In the right lower corner we see the first Opera House</title>
+							<title>Untitled Text</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>C</displayForm>
@@ -710,11 +700,8 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c045">
 							<titleInfo lang="eng">
-								<title>BIRD'S EYE VIEW OF THE PALAIS ROYAL, PARIS.</title>
-							</titleInfo>
-							<titleInfo lang="eng">
-								<title>Plate 14.</title>
-							</titleInfo>
+								<title>BIRD'S EYE VIEW OF THE PALAIS ROYAL, PARIS</title>
+							</titleInfo><note type="caption">Plate 14</note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -727,7 +714,7 @@
 					<relatedItem type="constituent" ID="c046">
 						<titleInfo lang="eng">
 							<nonSort>THE</nonSort>
-							<title>MYTH.</title>
+							<title>MYTH</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>William Addicote</displayForm>
@@ -741,7 +728,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>41-42</list>
+								<start>41</start><end>42</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -786,7 +773,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>42-44</list>
+								<start>42</start><end>44</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -806,7 +793,7 @@
 					<relatedItem type="constituent" ID="c051">
 						<titleInfo lang="eng">
 							<nonSort>LA</nonSort>
-							<title>FOIRE STGERMAIN</title>
+							<title>FOIRE ST GERMAIN</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -832,7 +819,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c053">
 							<titleInfo lang="eng">
-								<title>TWO NOBODIES.</title>
+								<title>TWO NOBODIES</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>X. Y. Z</displayForm>
@@ -884,10 +871,7 @@
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
-							<relatedItem type="constituent" ID="c056">
-								<titleInfo lang="eng">
-									<title>Plate 15.</title>
-								</titleInfo>
+							<relatedItem type="constituent" ID="c056"><note type="caption">Plate 15</note>
 								<typeOfResource>still image</typeOfResource>
 								<part>
 									<extent unit="page">
@@ -900,11 +884,8 @@
 						<relatedItem type="constituent" ID="c057">
 							<titleInfo lang="eng">
 								<nonSort>THE</nonSort>
-								<title>“FOIRE DE ST. GERMAIN”. An Enlargement of the Miniature.</title>
-							</titleInfo>
-							<titleInfo lang="eng">
-								<title>Plate 16.</title>
-							</titleInfo>
+								<title>“FOIRE DE ST. GERMAIN”</title>
+							</titleInfo><note type="caption">An Enlargement of the Miniature. Plate 16</note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -961,7 +942,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c061">
 						<titleInfo lang="eng">
-							<title>WANTED – A PRODUCER. STAGING THE GILBERT-SULLIVAN COMIC OPERAS</title>
+							<title>WANTED – A PRODUCER</title>
+						   <subTitle>STAGING THE GILBERT-SULLIVAN COMIC OPERAS</subTitle>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>JOHN FURSE</displayForm>
@@ -975,7 +957,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>50-51</list>
+								<start>50</start><end>51</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -994,7 +976,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c063">
 						<titleInfo lang="eng">
-							<title>GETTING ON WITH IT.</title>
+							<title>GETTING ON WITH IT</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>J. S</displayForm>
@@ -1028,7 +1010,7 @@
 					<relatedItem type="constituent" ID="c065">
 						<titleInfo lang="eng">
 							<nonSort>THE</nonSort>
-							<title>GRAND CONVERSATIONS ON NAPOLEON.</title>
+							<title>GRAND CONVERSATIONS ON NAPOLEON</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -1043,7 +1025,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c066">
 						<titleInfo lang="eng">
-							<title>COOKEY, DARLING.</title>
+							<title>COOKEY, DARLING</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>J. S</displayForm>
@@ -1088,7 +1070,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c069">
 						<titleInfo lang="eng">
-							<title>BOOK REVIEWS.</title>
+							<title>BOOK REVIEWS</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -1096,7 +1078,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>54-60</list>
+								<start>54</start><end>60</end>
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
@@ -1114,7 +1096,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c071">
 							<titleInfo lang="eng">
-								<title>ALEXANDRE DUMAS FILS</title>
+								<title>ALEXANDRE DUMAS FILS DRAMATIST by H. Stanley Schwarz</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1129,7 +1111,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c072">
 							<titleInfo lang="eng">
-								<title>THE STORY OF MY LIFE —</title>
+								<title>THE STORY OF MY LIFE — MY MEOIRS by Yvette Guilbert</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1137,14 +1119,14 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>54-55</list>
+									<start>54</start><end>55</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c073">
 							<titleInfo lang="eng">
-								<title>FIRST PLAYS hy Ivor Brown.</title>
+								<title>FIRST PLAYS hy Ivor Brown</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1159,7 +1141,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c074">
 							<titleInfo lang="eng">
-								<title>GILBERT AND SULLIVAN. A</title>
+								<title>GILBERT AND SULLIVAN by Lillian Bradstock</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1174,7 +1156,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c075">
 							<titleInfo lang="eng">
-								<title>MEMOIRS OF LORENZO DA</title>
+								<title>MEMOIRS OF LORENZO DA PONTE</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1189,7 +1171,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c076">
 							<titleInfo lang="eng">
-								<title>DRAMA IN</title>
+								<title>DRAMA IN GLOUCESTERSHIRE by Theodore Hannam-Clark</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1204,7 +1186,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c077">
 							<titleInfo lang="eng">
-								<title>EASTER AND OTHER PLAYS,</title>
+								<title>EASTER AND OTHER PLAYS by August Strindberg</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1212,14 +1194,15 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>56-57</list>
+									<start>56</start><end>57</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c078">
 							<titleInfo lang="eng">
-								<title>THE BIBLE IN SPAIN. George</title>
+								<title>THE BIBLE IN SPAIN. George Barrow</title>
+                        <title>THE AUTOBIOGRAPHY OF LEIGH HUNT</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1234,7 +1217,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c079">
 							<titleInfo lang="eng">
-								<title>CONTEMPORARY</title>
+								<title>CONTEMPORARY MOVEMENTS IN EUROPEAN LITERATURE. Edited by William Rose</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1249,7 +1232,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c080">
 							<titleInfo lang="eng">
-								<title>pnrr^n~TiT~—rrmnri mrr IMTTNWWN TIWIII TTI D-gnTiiwr-rr-nrr- TTT—&lt;n it —rriw</title>
+								<title>THE SKULL OF SWIFT. Shane Leslie</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1257,14 +1240,16 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>57-58</list>
+									<start>57</start><end>58</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c081">
 							<titleInfo lang="eng">
-								<title>THE GENIUS OF BERNARD</title>
+								<title>THE GENIUS OF BERNARD SHAW by Patrick Braybrooke</title>
+                        <title>THE GREAT BETRAYAL by Julian Benda</title>
+                        <title>GEORGE HENRY BOCKER. by E. S. Bradley</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1279,7 +1264,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c082">
 							<titleInfo lang="eng">
-								<title>THE OXFORD BOOK OF</title>
+								<title>THE OXFORD BOOK OF CAROLS by Percy Dearmer</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1302,14 +1287,14 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>58-59</list>
+									<start>58</start><end>59</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c084">
 							<titleInfo lang="eng">
-								<title>SHAKESPEARE AND</title>
+								<title>SHAKESPEARE AND CHAPMAN AS TOPICAL DRAMATISTS, by Percy Allen</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1324,7 +1309,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c085">
 							<titleInfo lang="eng">
-								<title>THE LONE HOUSE MYSTERY,</title>
+								<title>THE LONE HOUSE MYSTERY by Edgar Wallace</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1332,14 +1317,15 @@
 							</language>
 							<part>
 								<extent unit="page">
-									<list>59-60</list>
+									<start>59</start><end>60</end>
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c086">
 							<titleInfo lang="eng">
-								<title>EIGHTEENTH</title>
+								<title>EIGHTEENTH CENTURY COMEDY</title>
+                        <title>LESSER ENGLISH COMEDIES OF THE 18th CENTURY</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1354,7 +1340,8 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c087">
 							<titleInfo lang="eng">
-								<title>MODES AND MANNERS:</title>
+								<title>MODES AND MANNERS: ORNAMENTS. Translated from the German of Max oon Boehn</title>
+                        <title>ENGLISH COSTUME OF THE NINETEENTH CENTURY drawn by Iris Brooke. Described by James Laver</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1369,7 +1356,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c088">
 							<titleInfo lang="eng">
-								<title>THE COMMEDIA DELL ARTE</title>
+								<title>THE COMMEDIA DELL'ARTE by Pierre Louis Duchartre</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1384,7 +1371,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c089">
 							<titleInfo lang="eng">
-								<title>THE STUDIO. OCTOBER 1929.</title>
+								<title>THE STUDIO. OCTOBER 1929</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1399,7 +1386,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c090">
 							<titleInfo lang="eng">
-								<title>Among 44 Special Numbers "</title>
+								<title>Untitled Text</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1415,7 +1402,8 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c091">
 						<titleInfo lang="eng">
-							<title>EDITORIAL NOTES OCTOBER: NOVEMBER: DECEMBER</title>
+							<title>EDITORIAL NOTES</title>
+						   <subTitle>OCTOBER: NOVEMBER: DECEMBER</subTitle>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -1429,7 +1417,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c092">
 							<titleInfo lang="eng">
-								<title>THE PLAYS OF TCHEKOV.</title>
+								<title>THE PLAYS OF TCHEKOV</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1456,7 +1444,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c094">
 							<titleInfo lang="eng">
-								<title>A NATIONAL THEATRE.</title>
+								<title>A NATIONAL THEATRE</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1471,7 +1459,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c095">
 							<titleInfo lang="eng">
-								<title>SMOKING IN THE THE A TRE.</title>
+								<title>SMOKING IN THE THE A TRE</title>
 							</titleInfo>
 							<typeOfResource>text</typeOfResource>
 							<language>
@@ -1487,7 +1475,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c096">
 						<titleInfo lang="eng">
-							<title>LAST WORDS.</title>
+							<title>LAST WORDS</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -1567,7 +1555,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c101">
 							<titleInfo lang="eng">
-								<title>REVIEW COPIES OF BOOKS.</title>
+								<title>REVIEW COPIES OF BOOKS</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>J. S</displayForm>
@@ -7481,18 +7469,7 @@
 									</fptr>
 								</div>
 							</div>
-							<div ID="L.1.1.2.9.2.5" TYPE="Illustration" ORDER="3" DMDID="c016" LABEL="SPACCATO OF SELVA'S “TEATRO LA FENICE”">
-								<div ID="L.1.1.2.9.2.5.1" TYPE="Image">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_CB00001"/>
-									</fptr>
-								</div>
-								<div ID="L.1.1.2.9.2.5.2" TYPE="Caption">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00002"/>
-									</fptr>
-								</div>
-							</div>
+
 							<div ID="L.1.1.2.9.2.6" TYPE="Copy">
 								<div ID="L.1.1.2.9.2.6.1" TYPE="BodyContent">
 									<div ID="L.1.1.2.9.2.6.1.1" TYPE="Paragraph" ORDER="1">
@@ -7556,7 +7533,7 @@
 								</div>
 							</div>
 						</div>
-						<div ID="L.1.1.2.9.4" TYPE="Illustration" ORDER="1" DMDID="c018" LABEL="SELVA'S PLAN FOR TEATRO LA FENICE, 1790.">
+						<div ID="L.1.1.2.9.4" TYPE="Illustration" ORDER="3" DMDID="c018" LABEL="SELVA'S PLAN FOR TEATRO LA FENICE, 1790.">
 							<div ID="L.1.1.2.9.4.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_CB00001"/>
@@ -7568,7 +7545,7 @@
 								</fptr>
 							</div>
 						</div>
-						<div ID="L.1.1.2.9.5" TYPE="Illustration" ORDER="2" DMDID="c019" LABEL="THE MED UNA BROTHERS' PLAN FOR TEATRO LA FENICE, 1837.">
+						<div ID="L.1.1.2.9.5" TYPE="Illustration" ORDER="4" DMDID="c019" LABEL="THE MED UNA BROTHERS' PLAN FOR TEATRO LA FENICE, 1837.">
 							<div ID="L.1.1.2.9.5.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_CB00002"/>
@@ -7580,7 +7557,7 @@
 								</fptr>
 							</div>
 						</div>
-						<div ID="L.1.1.2.9.6" TYPE="Illustration" ORDER="1" DMDID="c020" LABEL="GIANNANTONIO ARCHITECT. Plate II.">
+						<div ID="L.1.1.2.9.6" TYPE="Illustration" ORDER="5" DMDID="c020" LABEL="GIANNANTONIO ARCHITECT. Plate II.">
 							<div ID="L.1.1.2.9.6.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_CB00001"/>
@@ -7595,7 +7572,7 @@
 								</fptr>
 							</div>
 						</div>
-						<div ID="L.1.1.2.9.7" TYPE="Illustration" ORDER="1" DMDID="c021" LABEL="PLAN OF ASTLEY'S THEATRE FROM THE MS. OF GINNANTONIO SELVA. Plate 12.">
+						<div ID="L.1.1.2.9.7" TYPE="Illustration" ORDER="6" DMDID="c021" LABEL="PLAN OF ASTLEY'S THEATRE FROM THE MS. OF GINNANTONIO SELVA. Plate 12.">
 							<div ID="L.1.1.2.9.7.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00001"/>
@@ -7610,7 +7587,19 @@
 								</fptr>
 							</div>
 						</div>
-						<div ID="L.1.1.2.9.8" TYPE="TextContent" ORDER="6" DMDID="c022" LABEL="SELVA IN ENGLAND. EXTRACTS TRANSLATED FROM THE MANUSCRIPT ACCOUNT OF HIS TRAVELS">
+					   <div ID="L.1.1.2.9.2.5" TYPE="Illustration" ORDER="7" DMDID="c016" LABEL="SPACCATO OF SELVA'S “TEATRO LA FENICE”">
+					      <div ID="L.1.1.2.9.2.5.1" TYPE="Image">
+					         <fptr>
+					            <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_CB00001"/>
+					         </fptr>
+					      </div>
+					      <div ID="L.1.1.2.9.2.5.2" TYPE="Caption">
+					         <fptr>
+					            <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00002"/>
+					         </fptr>
+					      </div>
+					   </div>
+					   <div ID="L.1.1.2.9.8" TYPE="TextContent" ORDER="8" DMDID="c022" LABEL="SELVA IN ENGLAND. EXTRACTS TRANSLATED FROM THE MANUSCRIPT ACCOUNT OF HIS TRAVELS">
 							<div ID="L.1.1.2.9.8.1" TYPE="Head">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00005"/>
