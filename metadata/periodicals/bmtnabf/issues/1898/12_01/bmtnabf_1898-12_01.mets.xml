@@ -53,7 +53,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Untitled text</title>
+							<title>[Cover Image]</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>FERNAND KHNOPFF</displayForm>
@@ -130,7 +130,7 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c006">
 							<titleInfo lang="ger">
-								<title>PRAETEREUNT ET IMPUTANTUR</title>
+								<title>PRÆTEREUNT ET IMPUTANTUR</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Fernand Khnopff</displayForm>
@@ -175,12 +175,7 @@
 						<titleInfo lang="ger">
 							<title>FERNAND KHNOPFF</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Fernand Khnopff</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+
 						<name type="personal">
 							<displayForm>HERMANN BAHR</displayForm>
 							<role>
@@ -199,9 +194,15 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo>
-								<title>Untitled Image</title>
+							   <title>Initial für V. S. gez. Fernand Khnopff</title>
 							</titleInfo>
-							<note type="caption">Initial für V. S. gez.</note>
+							<note type="caption"></note>
+						   <name type="personal">
+						      <displayForm>Fernand Khnopff</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -343,7 +344,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c016">
 						<titleInfo lang="ger">
-							<title>SCHLUSSFRAGMENT EINES VORTRAGES ÜBER WALTER GRANE IM „CERCLE ARTISTIQUE“ ZU BRUSSEL GEHALTEN VON</title>
+							<title>SCHLUSSFRAGMENT EINES VORTRAGES ÜBER WALTER GRANE IM „CERCLE ARTISTIQUE“ ZU BRUSSEL GEHALTEN VON FERNAND KHNOPFF</title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>FERNAND KHNOPFF</displayForm>
@@ -397,7 +398,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c019">
 							<titleInfo lang="ger">
-								<title>Titelblatt für Mon coeur pleure d’autrefois von M. G Leroy</title>
+								<title>Titelblatt für "Mon coeur pleure d’autrefois" von M. G Leroy</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Fern. Khnopff</displayForm>
@@ -3297,19 +3298,17 @@
 	<structMap LABEL="Logical Structure" TYPE="LOGICAL">
 		<div ID="L.1" TYPE="Magazine" LABEL="VER SACRUM">
 			<div ID="L.1.1" TYPE="Issue" LABEL="VER SACRUM no. 10 12.1898">
-				<div ID="L.1.1.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled text">
+				<div ID="L.1.1.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="[Cover Art]">
 					<div ID="L.1.1.1.1" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00001"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.1.2" TYPE="Illustration" ORDER="1" LABEL="Untitled">
 						<div ID="L.1.1.1.2.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
 							</fptr>
-						</div>
-					</div>
+						</div>					
 				</div>
 				<div ID="L.1.1.2" TYPE="SponsoredAdvertisement" LABEL="Sponsored Advertisements">
 					<div ID="L.1.1.2.1" TYPE="SponsoredAd" DMDID="c002">
