@@ -23,7 +23,7 @@
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
   <property name="xmldb.approot" value="${xmldb.url}/bluemtn" />
 
-  <property name="approot" value="/Users/cwulfman/BlueMountain" />
+  <property name="approot" value="/Users/cwulfman/repos/github/cwulfman/BlueMountain" />
   
   <target name="load-conf" description="load the Blue Mountain collection.xconf record">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
