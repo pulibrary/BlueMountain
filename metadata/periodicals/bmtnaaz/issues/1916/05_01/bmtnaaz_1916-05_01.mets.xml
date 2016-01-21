@@ -137,6 +137,10 @@
                      <nonSort>UN</nonSort>
                      <title>POÈME</title>
                   </titleInfo>
+                  <titleInfo lang="fre">
+                     <nonSort>LE</nonSort>
+                     <title>PRINTEMPS EN CAROUSEL</title>
+                  </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -147,28 +151,6 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c005">
-                     <titleInfo lang="fre">
-                        <nonSort>LE</nonSort>
-                        <title>PRINTEMPS EN CAROUSEL</title>
-                     </titleInfo>
-                     <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/73872493">
-								                <displayForm>LUCIANO FOLGORE</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>4</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
                <relatedItem type="constituent" ID="c006">
                   <titleInfo lang="fre">
@@ -202,6 +184,9 @@
                      <nonSort>UN</nonSort>
                      <title>POÈME</title>
                   </titleInfo>
+                  <titleInfo lang="fre">
+                     <title>JEUNESSE</title>
+                  </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -212,25 +197,11 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c009">
-                     <titleInfo lang="fre">
-                        <title>JEUNESSE</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>6</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
                <relatedItem type="constituent" ID="c010">
                   <titleInfo lang="fre">
                      <title>DIALOGUE NUNIQUE Z et A</title>
+                     <subTitle>DEVANT DES PEINTURES MODERNES</subTitle>
                   </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
@@ -242,22 +213,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c011">
-                     <titleInfo lang="fre">
-                        <title>DEVANT DES PEINTURES MODERNES</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>6</start>
-                           <end>7</end>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
                <relatedItem type="constituent" ID="c012">
                   <titleInfo lang="fre">
@@ -273,21 +229,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c013">
-                     <titleInfo lang="fre">
-                        <title>Untitled Text</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>8</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
             </mods>
          </xmlData>
@@ -1145,26 +1087,23 @@
                         <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.4.2" TYPE="TextContent" ORDER="1" DMDID="c005"
-                     LABEL="LE PRINTEMPS EN CAROUSEL.">
-                     <div ID="L.1.1.2.4.2.1" TYPE="Head">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.2.2" TYPE="Byline">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.2.3" TYPE="Copy">
-                        <div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
-                           <div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
-                              <div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
-                                 <fptr>
-                                    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
-                                 </fptr>
-                              </div>
+                  <div ID="L.1.1.2.4.2.1" TYPE="MinorHead">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.4.2.2" TYPE="Byline">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.4.2.3" TYPE="Copy">
+                     <div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
+                        <div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
+                           <div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
+                              <fptr>
+                                 <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
+                              </fptr>
                            </div>
                         </div>
                      </div>
@@ -1190,13 +1129,13 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c008" LABEL="UN POÈME">
+               <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c008" LABEL="UN POÈME - JEUNESSE">
                   <div ID="L.1.1.2.6.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.6.2" TYPE="TextContent" ORDER="1" DMDID="c009" LABEL="JEUNESSE">
+                  
                      <div ID="L.1.1.2.6.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00002"/>
@@ -1213,7 +1152,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c010"
                   LABEL="DIALOGUE NUNIQUE Z et A">
@@ -1222,9 +1161,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00004"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.7.2" TYPE="TextContent" ORDER="1" DMDID="c011"
-                     LABEL="DEVANT DES PEINTURES MODERNES">
-                     <div ID="L.1.1.2.7.2.1" TYPE="Head">
+                     <div ID="L.1.1.2.7.2.1" TYPE="MinorHead">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00005"/>
                         </fptr>
@@ -1247,7 +1184,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c012" LABEL="ETC...">
                   <div ID="L.1.1.2.8.1" TYPE="Head">
@@ -1255,8 +1192,6 @@
                         <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.8.2" TYPE="TextContent" ORDER="1" DMDID="c013"
-                     LABEL="LETTRES. Enseignement psychologique de la Guerre Européenne, Dr Gustave le Bon (Notes en">
                      <div ID="L.1.1.2.8.2.1" TYPE="Copy">
                         <div ID="L.1.1.2.8.2.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.8.2.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -1282,7 +1217,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
             </div>
          </div>
