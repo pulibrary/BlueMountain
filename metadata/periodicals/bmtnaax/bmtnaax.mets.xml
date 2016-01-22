@@ -1,85 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaax">
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical"
+      OBJID="urn:PUL:bluemountain:bmtnaax">
   <metsHdr>
-    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-      <name>Princeton University Library, Digital Initiatives</name>
-    </agent>
-    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaax</metsDocumentID>
+      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
+                        TYPE="ark"
+                        ID="ark:/88435/4x51hm671"/>
+      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+         <name>Princeton University Library, Digital Initiatives</name>
+      </agent>
+      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaax</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-    <mdWrap MDTYPE="DC">
-      <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <mdWrap MDTYPE="DC">
+         <xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaax">
+               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaax">
 
-            <dc:title>The Plowshare</dc:title>
+                  <dc:title>The Plowshare</dc:title>
 
-          </rdf:Description>
-        </rdf:RDF>
-      </xmlData>
-    </mdWrap>
+               </rdf:Description>
+            </rdf:RDF>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
   <dmdSec ID="dmd1">
-    <mdWrap MDTYPE="MODS">
-      <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaax</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaax</recordIdentifier>       
-	    <recordContentSource authority="marcorg">NjP</recordContentSource>
-	    <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=567637</recordOrigin>
-	    <languageOfCataloging>
-	      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
-	  <titleInfo>
-	    <nonSort>The </nonSort>
-	    <title>Plowshare</title>
-	  </titleInfo>
-	  <typeOfResource>text</typeOfResource>
-	  <genre authority="rbgenr">Little magazines</genre>
-	  <originInfo>
-	    <place>
-	      <placeTerm type="text">Woodstock, New York</placeTerm>
-	    </place>
-	    <publisher>Maverick Press</publisher>
-	    <dateIssued encoding="marc" point="start">19uu</dateIssued>
-	    <dateIssued encoding="marc" point="end">9999</dateIssued>
-	  </originInfo>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	  </language>
-	  <relatedItem type="isReferencedBy">
-	    <note>Hoffman, F.J. Little Magazine</note>
-	  </relatedItem>
-	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-	      <copyInformation>
-		<subLocation>ex</subLocation>
-		<!--DELETE COPY NUMBER BELOW-->
-		<shelfLocator>1 LM (Little Magazine)</shelfLocator>
-	      </copyInformation>
-	    </holdingSimple>
-	  </location>
-	</mods>
+      <mdWrap MDTYPE="MODS">
+         <xmlData>
+	           <mods xmlns="http://www.loc.gov/mods/v3"
+                  xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/4x51hm671</mods:identifier>
+	              <identifier type="bmtn">urn:PUL:bluemountain:bmtnaax</identifier>
+	              <recordInfo>
+	                 <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaax</recordIdentifier>       
+	                 <recordContentSource authority="marcorg">NjP</recordContentSource>
+	                 <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=567637</recordOrigin>
+	                 <languageOfCataloging>
+	                    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	                 </languageOfCataloging>
+	              </recordInfo>
+	              <genre>Periodicals-Title</genre>
+	              <titleInfo>
+	                 <nonSort>The </nonSort>
+	                 <title>Plowshare</title>
+	              </titleInfo>
+	              <typeOfResource>text</typeOfResource>
+	              <genre authority="rbgenr">Little magazines</genre>
+	              <originInfo>
+	                 <place>
+	                    <placeTerm type="text">Woodstock, New York</placeTerm>
+	                 </place>
+	                 <publisher>Maverick Press</publisher>
+	                 <dateIssued encoding="marc" point="start">19uu</dateIssued>
+	                 <dateIssued encoding="marc" point="end">9999</dateIssued>
+	              </originInfo>
+	              <language>
+	                 <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	              </language>
+	              <relatedItem type="isReferencedBy">
+	                 <note>Hoffman, F.J. Little Magazine</note>
+	              </relatedItem>
+	              <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	              <location>
+	                 <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+	                 <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	                 <holdingSimple>
+	                    <copyInformation>
+		                      <subLocation>ex</subLocation>
+		                      <!--DELETE COPY NUMBER BELOW-->
+		                      <shelfLocator>1 LM (Little Magazine)</shelfLocator>
+	                    </copyInformation>
+	                 </holdingSimple>
+	              </location>
+	           </mods>
 
-      </xmlData>
-    </mdWrap>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
 
   <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnaax"/>
+      <mdRef LOCTYPE="URN"
+             MDTYPE="MODS"
+             MIMETYPE="application/xml"
+             xlink:href="urn:PUL:bluemountain:dmd:bmtnaax"/>
   </dmdSec>
   <fileSec>
-    <fileGrp/>
+      <fileGrp/>
   </fileSec>
   <structMap>
-    <div/>
+      <div/>
   </structMap>
 </mets>

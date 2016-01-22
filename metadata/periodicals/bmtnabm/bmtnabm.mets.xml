@@ -2,122 +2,134 @@
 <mets xmlns="http://www.loc.gov/METS/"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabm">
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical"
+      OBJID="urn:PUL:bluemountain:bmtnabm">
   <metsHdr>
-    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-      <name>Princeton University Library, Digital Initiatives</name>
-    </agent>
-    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabm</metsDocumentID>
+      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
+                        TYPE="ark"
+                        ID="ark:/88435/ng451m24k"/>
+      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+         <name>Princeton University Library, Digital Initiatives</name>
+      </agent>
+      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabm</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-    <mdWrap MDTYPE="DC">
-      <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <mdWrap MDTYPE="DC">
+         <xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:dc="http://purl.org/dc/elements/1.1/">
 	  
-          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabm">
+               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabm">
 	    
-            <dc:title>Nowa sztuka</dc:title>
+                  <dc:title>Nowa sztuka</dc:title>
 	    
-          </rdf:Description>
-        </rdf:RDF>
-      </xmlData>
-    </mdWrap>
+               </rdf:Description>
+            </rdf:RDF>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
   <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnabm"/>
+      <mdRef LOCTYPE="URN"
+             MDTYPE="MODS"
+             MIMETYPE="application/xml"
+             xlink:href="urn:PUL:bluemountain:dmd:bmtnabm"/>
   </dmdSec>
   <dmdSec ID="dmd1">
-    <mdWrap MDTYPE="MODS">
-      <xmlData>
-        <mods xmlns="http://www.loc.gov/mods/v3">
-          <identifier type="bmtn">urn:PUL:bluemountain:bmtnabm</identifier>
-          <genre authority="bmtn">Periodicals-Title</genre>
-	  <titleInfo>
-            <title>Nowa sztuka</title>
-	    <subTitle>miesięcznik artystyczny</subTitle>
-	  </titleInfo>
-	  <titleInfo type="alternative">
-            <title>Nowej sztuki</title>
-	  </titleInfo>
-          <name type="personal">
-            <namePart>Stern, Anatol</namePart>
-            <namePart type="date">1899-1968</namePart>
-            <role>
-              <roleTerm type="text">editor</roleTerm>
-            </role>
-          </name>
-          <name type="personal">
-            <namePart>Iwaszkiewicz, Jarosław</namePart>
-            <namePart type="date">1894-1980</namePart>
-            <role>
-              <roleTerm type="text">editor</roleTerm>
-            </role>
-          </name>
-          <name type="personal">
-            <namePart>Peiper, Tadeusz</namePart>
-            <namePart type="date">1891-1969</namePart>
-            <role>
-              <roleTerm type="text">editor</roleTerm>
-            </role>
-          </name>
-          <name type="personal">
-            <namePart>Chwistek, Leon</namePart>
-            <namePart type="date">1884-1944</namePart>
-            <role>
-              <roleTerm type="text">editor</roleTerm>
-            </role>
-          </name>
+      <mdWrap MDTYPE="MODS">
+         <xmlData>
+            <mods xmlns="http://www.loc.gov/mods/v3">
+               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/ng451m24k</mods:identifier>
+               <identifier type="bmtn">urn:PUL:bluemountain:bmtnabm</identifier>
+               <genre authority="bmtn">Periodicals-Title</genre>
+	              <titleInfo>
+                  <title>Nowa sztuka</title>
+	                 <subTitle>miesięcznik artystyczny</subTitle>
+	              </titleInfo>
+	              <titleInfo type="alternative">
+                  <title>Nowej sztuki</title>
+	              </titleInfo>
+               <name type="personal">
+                  <namePart>Stern, Anatol</namePart>
+                  <namePart type="date">1899-1968</namePart>
+                  <role>
+                     <roleTerm type="text">editor</roleTerm>
+                  </role>
+               </name>
+               <name type="personal">
+                  <namePart>Iwaszkiewicz, Jarosław</namePart>
+                  <namePart type="date">1894-1980</namePart>
+                  <role>
+                     <roleTerm type="text">editor</roleTerm>
+                  </role>
+               </name>
+               <name type="personal">
+                  <namePart>Peiper, Tadeusz</namePart>
+                  <namePart type="date">1891-1969</namePart>
+                  <role>
+                     <roleTerm type="text">editor</roleTerm>
+                  </role>
+               </name>
+               <name type="personal">
+                  <namePart>Chwistek, Leon</namePart>
+                  <namePart type="date">1884-1944</namePart>
+                  <role>
+                     <roleTerm type="text">editor</roleTerm>
+                  </role>
+               </name>
 
-	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
-            <dateIssued encoding="marc" point="start">1921</dateIssued>
-            <dateIssued encoding="marc" point="end">1922</dateIssued>
-	  </originInfo>
-	  <language>
-            <languageTerm authority="iso639-2b" type="code">pol</languageTerm>
-	  </language>
-	  <physicalDescription>
-            <extent>1 online resource (2 volumes)</extent>
-	  </physicalDescription>
-	  <note type="date/sequential designation">Began with Rok 1., zeszyt 1. (listopad 1921); ceased with rok 2., zeszyt 2. (luty 1922).</note>
-	  <note>"Miesięcznik artystyczny."</note>
-	  <note type="numbering">Issues for Rok 1., zeszyt 1. (listopad 1921)-rok 2., zeszyt 2. (luty 1922) also called: No. 1-no. 2.</note>
-	  <note type="additional physical form">Also issued in print.</note>
-	  <subject authority="lcsh">
-            <topic>Experimental poetry, Polish</topic>
-            <genre>Periodicals</genre>
-	  </subject>
-	  <location>
-            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project">http://arks.princeton.edu/ark:/88435/2227ms295</url>
-	  </location>
-	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-	  <location>
-            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-            <holdingSimple>
-              <copyInformation>
-                <subLocation>elf1</subLocation>
-                <!--DELETE COPY NUMBER BELOW-->
-                <shelfLocator>Electronic Resource</shelfLocator>
-              </copyInformation>
-            </holdingSimple>
-	  </location>
-	  <recordInfo>
-	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabm</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=9032520</recordOrigin>
-            <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-	  </recordInfo>
-	</mods>
-      </xmlData>
-    </mdWrap>
+	              <typeOfResource>text</typeOfResource>
+	              <originInfo script="Latn">
+                  <dateIssued encoding="marc" point="start">1921</dateIssued>
+                  <dateIssued encoding="marc" point="end">1922</dateIssued>
+	              </originInfo>
+	              <language>
+                  <languageTerm authority="iso639-2b" type="code">pol</languageTerm>
+	              </language>
+	              <physicalDescription>
+                  <extent>1 online resource (2 volumes)</extent>
+	              </physicalDescription>
+	              <note type="date/sequential designation">Began with Rok 1., zeszyt 1. (listopad 1921); ceased with rok 2., zeszyt 2. (luty 1922).</note>
+	              <note>"Miesięcznik artystyczny."</note>
+	              <note type="numbering">Issues for Rok 1., zeszyt 1. (listopad 1921)-rok 2., zeszyt 2. (luty 1922) also called: No. 1-no. 2.</note>
+	              <note type="additional physical form">Also issued in print.</note>
+	              <subject authority="lcsh">
+                  <topic>Experimental poetry, Polish</topic>
+                  <genre>Periodicals</genre>
+	              </subject>
+	              <location>
+                  <url displayLabel="electronic resource"
+                       usage="primary display"
+                       note="Available online via the Blue Mountain Project">http://arks.princeton.edu/ark:/88435/2227ms295</url>
+	              </location>
+	              <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	              <location>
+                  <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+                  <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+                  <holdingSimple>
+                     <copyInformation>
+                        <subLocation>elf1</subLocation>
+                        <!--DELETE COPY NUMBER BELOW-->
+                        <shelfLocator>Electronic Resource</shelfLocator>
+                     </copyInformation>
+                  </holdingSimple>
+	              </location>
+	              <recordInfo>
+	                 <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabm</recordIdentifier>
+                  <recordContentSource authority="marcorg">NjP</recordContentSource>
+                  <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=9032520</recordOrigin>
+                  <languageOfCataloging>
+                     <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+                  </languageOfCataloging>
+	              </recordInfo>
+	           </mods>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
   <fileSec>
-    <fileGrp/>
+      <fileGrp/>
   </fileSec>
   <structMap>
-    <div/>
+      <div/>
   </structMap>
 </mets>

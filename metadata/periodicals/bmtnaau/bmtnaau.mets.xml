@@ -1,65 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaau">
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical"
+      OBJID="urn:PUL:bluemountain:bmtnaau">
   <metsHdr>
-    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-      <name>Princeton University Library, Digital Initiatives</name>
-    </agent>
-    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaau</metsDocumentID>
+      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
+                        TYPE="ark"
+                        ID="ark:/88435/ww72bf17t"/>
+      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+         <name>Princeton University Library, Digital Initiatives</name>
+      </agent>
+      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaau</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-    <mdWrap MDTYPE="DC">
-      <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <mdWrap MDTYPE="DC">
+         <xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaau">
+               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaau">
 
-            <dc:title>The Mask</dc:title>
+                  <dc:title>The Mask</dc:title>
 
-          </rdf:Description>
-        </rdf:RDF>
-      </xmlData>
-    </mdWrap>
+               </rdf:Description>
+            </rdf:RDF>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
   <dmdSec ID="dmd1">
-    <mdWrap MDTYPE="MODS">
-      <xmlData>
-      	<mods xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaau</identifier>
-	  <titleInfo usage="primary">
-	    <nonSort>The </nonSort>
-	    <title>Mask</title>
-	    <subTitle>A Quarterly Illustrated Journal of the Art of the Theatre</subTitle>
-	  </titleInfo>
-	  <titleInfo>
-	    <nonSort>The </nonSort>
-	    <title>mask</title>
-	    <subTitle>a quarterly illustrated journal of the art of the theatre</subTitle>
-	  </titleInfo>
-	  <name type="personal">
-	    <namePart>Craig, Edward Gordon</namePart>
-	    <namePart type="date">1872-1966</namePart>
-	  </name>
-	  <typeOfResource>text</typeOfResource>
-	  <genre authority="bmtn">Periodicals-Title</genre>
-	  <genre authority="marcgt">periodical</genre>
-	  <genre authority="fast">Periodicals.</genre>
-	  <originInfo>
-	    <place>
-              <placeTerm type="code" authority="marccountry">it</placeTerm>
-	    </place>
-	    <place>
-              <placeTerm type="text">Florence, Italy</placeTerm>
-	    </place>
-	    <publisher>The Mask</publisher>
-	    <dateIssued>1908-1929</dateIssued>
-	    <dateIssued encoding="marc" point="start">1908</dateIssued>
-	    <dateIssued encoding="marc" point="end">1929</dateIssued>
-	    <issuance>serial</issuance>
-	    <frequency authority="marcfrequency">Quarterly (irregular), July 1909-1929</frequency>
-	    <frequency authority="marcfrequency">Monthly, 1908-Feb. 1909</frequency>
-	    <frequency>Quarterly</frequency>
-	  </originInfo>
-      		<abstract>
+      <mdWrap MDTYPE="MODS">
+         <xmlData>
+      	     <mods xmlns="http://www.loc.gov/mods/v3"
+                  xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/ww72bf17t</mods:identifier>
+	              <identifier type="bmtn">urn:PUL:bluemountain:bmtnaau</identifier>
+	              <titleInfo usage="primary">
+	                 <nonSort>The </nonSort>
+	                 <title>Mask</title>
+	                 <subTitle>A Quarterly Illustrated Journal of the Art of the Theatre</subTitle>
+	              </titleInfo>
+	              <titleInfo>
+	                 <nonSort>The </nonSort>
+	                 <title>mask</title>
+	                 <subTitle>a quarterly illustrated journal of the art of the theatre</subTitle>
+	              </titleInfo>
+	              <name type="personal">
+	                 <namePart>Craig, Edward Gordon</namePart>
+	                 <namePart type="date">1872-1966</namePart>
+	              </name>
+	              <typeOfResource>text</typeOfResource>
+	              <genre authority="bmtn">Periodicals-Title</genre>
+	              <genre authority="marcgt">periodical</genre>
+	              <genre authority="fast">Periodicals.</genre>
+	              <originInfo>
+	                 <place>
+                     <placeTerm type="code" authority="marccountry">it</placeTerm>
+	                 </place>
+	                 <place>
+                     <placeTerm type="text">Florence, Italy</placeTerm>
+	                 </place>
+	                 <publisher>The Mask</publisher>
+	                 <dateIssued>1908-1929</dateIssued>
+	                 <dateIssued encoding="marc" point="start">1908</dateIssued>
+	                 <dateIssued encoding="marc" point="end">1929</dateIssued>
+	                 <issuance>serial</issuance>
+	                 <frequency authority="marcfrequency">Quarterly (irregular), July 1909-1929</frequency>
+	                 <frequency authority="marcfrequency">Monthly, 1908-Feb. 1909</frequency>
+	                 <frequency>Quarterly</frequency>
+	              </originInfo>
+      		       <abstract>
       			Over its nearly twenty-year run, the Mask
       			published essays on theater and the arts and
       			book reviews. It was heavily managed by the
@@ -70,66 +82,71 @@
       			Hofmannsthal, Jean-Jacques Olivier, Ellen
       			Terry.
       		</abstract>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	  </language>
-	  <physicalDescription>
-	    <form authority="gmd">electronic resource</form>
-	    <reformattingQuality>access</reformattingQuality>
-	    <form authority="marccategory">electronic resource</form>
-	    <form authority="marcsmd">remote</form>
-	    <extent>1 online resource (15 v.) : ill., maps</extent>
-	  </physicalDescription>
-	  <note type="date/sequential designation">Vol. 1, no. 1 (Mar. 1908)-v. 15, no. 4 (Oct.-Nov.-Dec. 1929).</note>
-	  <note>Title from caption.</note>
-	  <note>Subtitle varies.</note>
-	  <note>Editor: Edward Gordon Craig.</note>
-	  <note type="numbering">Publication suspended, Aug. 1914-Apr. 1915; May 1915-Mar. 25, 1918; May 1919-Aug. 1923.</note>
-	  <note type="numbering">Issues for 1927 (v. 13) called v. 12 bis on cover.</note>
-	  <note>Vol. 1 (1908)-15 (1929).  1 v.</note>
-	  <subject authority="lcsh">
-	    <topic>Theater</topic>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <subject authority="fast">
-	    <topic>Theater</topic>
-	  </subject>
-	  <classification authority="lcc">PN2001 .M3</classification>
-	  <classification authority="ddc">792 M397</classification>
-	  <location>
-	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/bc386k59j</url>
-	  </location>
-	  <relatedItem type="otherFormat">
-	    <identifier type="local">(DLC)a  11002108</identifier>
-	    <identifier type="local">(OCoLC)1642473</identifier>
-	  </relatedItem>
-	  <identifier type="oclc">768303324</identifier>
-	  <recordInfo>
-	    <descriptionStandard>aacr</descriptionStandard>
-	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
-	    <recordCreationDate encoding="marc">111213</recordCreationDate>
-	    <recordChangeDate encoding="iso8601">20141212022134.0</recordChangeDate>
-	    <recordIdentifier source="OCoLC">ocn768303324</recordIdentifier>
-	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaau</recordIdentifier>
-	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	              <language>
+	                 <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	              </language>
+	              <physicalDescription>
+	                 <form authority="gmd">electronic resource</form>
+	                 <reformattingQuality>access</reformattingQuality>
+	                 <form authority="marccategory">electronic resource</form>
+	                 <form authority="marcsmd">remote</form>
+	                 <extent>1 online resource (15 v.) : ill., maps</extent>
+	              </physicalDescription>
+	              <note type="date/sequential designation">Vol. 1, no. 1 (Mar. 1908)-v. 15, no. 4 (Oct.-Nov.-Dec. 1929).</note>
+	              <note>Title from caption.</note>
+	              <note>Subtitle varies.</note>
+	              <note>Editor: Edward Gordon Craig.</note>
+	              <note type="numbering">Publication suspended, Aug. 1914-Apr. 1915; May 1915-Mar. 25, 1918; May 1919-Aug. 1923.</note>
+	              <note type="numbering">Issues for 1927 (v. 13) called v. 12 bis on cover.</note>
+	              <note>Vol. 1 (1908)-15 (1929).  1 v.</note>
+	              <subject authority="lcsh">
+	                 <topic>Theater</topic>
+	                 <genre>Periodicals</genre>
+	              </subject>
+	              <subject authority="fast">
+	                 <topic>Theater</topic>
+	              </subject>
+	              <classification authority="lcc">PN2001 .M3</classification>
+	              <classification authority="ddc">792 M397</classification>
+	              <location>
+	                 <url displayLabel="electronic resource"
+                       usage="primary display"
+                       note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/bc386k59j</url>
+	              </location>
+	              <relatedItem type="otherFormat">
+	                 <identifier type="local">(DLC)a  11002108</identifier>
+	                 <identifier type="local">(OCoLC)1642473</identifier>
+	              </relatedItem>
+	              <identifier type="oclc">768303324</identifier>
+	              <recordInfo>
+	                 <descriptionStandard>aacr</descriptionStandard>
+	                 <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	                 <recordCreationDate encoding="marc">111213</recordCreationDate>
+	                 <recordChangeDate encoding="iso8601">20141212022134.0</recordChangeDate>
+	                 <recordIdentifier source="OCoLC">ocn768303324</recordIdentifier>
+	                 <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaau</recordIdentifier>
+	                 <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
 	    (Revision 1.70)</recordOrigin>
-	    <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	</mods>
-      </xmlData>
-    </mdWrap>
+	                 <languageOfCataloging>
+                     <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	                 </languageOfCataloging>
+	              </recordInfo>
+	           </mods>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
 
   <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnaau"/>
+      <mdRef LOCTYPE="URN"
+             MDTYPE="MODS"
+             MIMETYPE="application/xml"
+             xlink:href="urn:PUL:bluemountain:dmd:bmtnaau"/>
   </dmdSec>
   <fileSec>
-    <fileGrp/>
+      <fileGrp/>
   </fileSec>
   <structMap>
-    <div/>
+      <div/>
   </structMap>
 </mets>
