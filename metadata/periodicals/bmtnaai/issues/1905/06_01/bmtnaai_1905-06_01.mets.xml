@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3"
-   xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
-   TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaai_1905-06_01">
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:mix="http://www.loc.gov/mix/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:local="http://diglib.princeton.edu"
+      xmlns:mods="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
+      TYPE="Magazine"
+      OBJID="urn:PUL:periodicals:bluemountain:bmtnaai_1905-06_01">
    <metsHdr>
+      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
+                        TYPE="ark"
+                        ID="ark:/88435/j38609605"/>
       <agent ROLE="CREATOR" TYPE="ORGANIZATION">
          <name>Princeton University Library, Digital Initiatives</name>
          <note>docWORKS-ID: 340961</note>
@@ -15,6 +22,7 @@
       <mdWrap MDTYPE="MODS">
          <xmlData>
             <mods xmlns="http://www.loc.gov/mods/v3">
+               <mods:identifier type="ark">ark:/88435/j38609605</mods:identifier>
                <recordInfo>
                   <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaai_1905-06_01</recordIdentifier>
                </recordInfo>
@@ -38,8 +46,9 @@
                   <dateIssued>Giugno-Luglio 1905</dateIssued>
                   <dateIssued keyDate="yes" encoding="w3cdtf">1905-06</dateIssued>
                </originInfo>
-               <relatedItem type="host" xlink:type="simple"
-                  xlink:href="urn:PUL:bluemountain:bmtnaai">
+               <relatedItem type="host"
+                            xlink:type="simple"
+                            xlink:href="urn:PUL:bluemountain:bmtnaai">
                   <recordInfo>
                      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaai</recordIdentifier>
                   </recordInfo>
@@ -140,7 +149,9 @@
                   <titleInfo lang="ita">
                      <title>ROSE ROSSE</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/73891042">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/73891042">
 							              <displayForm>Ada Negri</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -218,7 +229,9 @@
                   <titleInfo lang="fre">
                      <title>PALAIS DE SONGE</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14831609">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/14831609">
 							              <displayForm>Gustave Kahn</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -290,7 +303,9 @@
                   <titleInfo lang="ita">
                      <title>SERA</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/313285901">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/313285901">
 					                <displayForm>S. Benelli</displayForm>
 					                <role>
 					                   <roleTerm type="code" authority="marcrelator">trl</roleTerm>
@@ -311,7 +326,9 @@
                   <titleInfo lang="fre">
                      <title>FILEUSE</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/112391997">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/112391997">
 							              <displayForm>René Arcos</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -333,7 +350,9 @@
                      <title>APPARIZIONE DELL'IDEA</title>
                      <subTitle>ai russi che s'uccisero dopo avere ucciso</subTitle>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/59397266">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/59397266">
 							              <displayForm>Sem Benelli</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -390,7 +409,9 @@
                   <titleInfo lang="eng">
                      <title>SEVERED</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/61154284">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/61154284">
 							              <displayForm>Fred. G. Bowles</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -432,7 +453,9 @@
                   <titleInfo lang="ita">
                      <title>EL TITOL</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/307416378">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/307416378">
 							              <displayForm>Gaetano Crespi</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -453,7 +476,9 @@
                   <titleInfo lang="fre">
                      <title>PARFUMS</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/66529274">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/66529274">
 							              <displayForm>Marie Dauguet</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -474,7 +499,9 @@
                   <titleInfo lang="eng">
                      <title>HAIL PYTHO</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/24709904">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/24709904">
 							              <displayForm>I. Sturge Moore</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -510,7 +537,9 @@
                   <titleInfo lang="ita">
                      <title>IL MORTO GIORNO</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/80420183">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/80420183">
 							              <displayForm>Riccardo Forster</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -532,7 +561,9 @@
                      <nonSort>LE</nonSort>
                      <title>BOHÉMIEN</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/25396500">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/25396500">
 							              <displayForm>Paul Fort</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -553,7 +584,9 @@
                   <titleInfo lang="fre">
                      <title>GLI APUANI</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/32126330">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/32126330">
 							              <displayForm>Ceccardo Roccatagliata-Ceccardi</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -576,7 +609,9 @@
                      <title>FOUZI-YAMA</title>
                      <subTitle>(POÈME EN PROSE)</subTitle>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/66469054">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/66469054">
 							              <displayForm>Alfred Jarry</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -598,7 +633,9 @@
                      <nonSort>LA</nonSort>
                      <title>PETITE FILLE</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/98495973">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/98495973">
 					                <displayForm>Valentin Mandelstamm</displayForm>
 					                <role>
 					                   <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -619,7 +656,9 @@
                   <titleInfo lang="fre">
                      <title>AIR</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/98495973">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/98495973">
 							              <displayForm>Valentin Mandelstamm</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -643,7 +682,9 @@
                      <subTitle>(SUITE)</subTitle>
                      <subTitle>petites drames de lumières</subTitle>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/4933263">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/4933263">
 							              <displayForm>F. T. Marinetti</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -665,7 +706,9 @@
                      <title>TU ES L'ÉTOILE</title>
                      <subTitle>(CHANSON ALBANAISE INÉDITE)</subTitle>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/120735527">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/120735527">
 							              <displayForm>Ary Rene d'Yvermont</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">trl</roleTerm>
@@ -690,7 +733,9 @@
                      <title>SOIS LE BIENVENU</title>
                      <subTitle>(CHANSON ALBANAISE INÉDITE)</subTitle>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/120735527">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/120735527">
 					                <displayForm>Ary Rene d'Yvermont</displayForm>
 					                <role>
 					                   <roleTerm type="code" authority="marcrelator">trl</roleTerm>
@@ -714,7 +759,9 @@
                   <titleInfo lang="fre">
                      <title>DEUX CHANSONS DU RIRE ET DES PLEVRS</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/49229100">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/49229100">
 							              <displayForm>Albert Mockel</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -735,7 +782,9 @@
                   <titleInfo lang="fre">
                      <title>ELLE PASSE...</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/122002241">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/122002241">
 							              <displayForm>Renée Vivien</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -758,7 +807,9 @@
                      <title>PÖETE AU VITRAIL</title>
                      <subTitle>(POÉME EN PROSE)</subTitle>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/24596597">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/24596597">
 							              <displayForm>Saint-Pol-Roux</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -779,7 +830,9 @@
                   <titleInfo lang="ita">
                      <title>IL CIECO</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/121721235">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/121721235">
 							              <displayForm>Térésah</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -800,7 +853,9 @@
                   <titleInfo lang="fre">
                      <title>AH! QUE FAIS-TU...</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/89520833">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/89520833">
 							              <displayForm>Hélène Vacaresco</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -840,7 +895,9 @@
                      <nonSort>LA</nonSort>
                      <title>MUSA DI FRANCESCO PASTONCHI</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/59397266">
+                  <name type="personal"
+                        authority="viaf"
+                        valueURI="http://viaf.org/viaf/59397266">
 							              <displayForm>Sem Benelli</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -3888,455 +3945,898 @@
    </amdSec>
    <fileSec>
       <fileGrp ID="IMGGRP" USE="Images">
-         <file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2013-06-27T18:01:50"
-            MIMETYPE="image/jp2" SEQ="1" CHECKSUM="19a0ffe240c30b2b982f795e8fb902889ed79195"
-            CHECKSUMTYPE="SHA-1" SIZE="5374660">
+         <file ID="IMG00001"
+               ADMID="techmd1"
+               GROUPID="page1"
+               CREATED="2013-06-27T18:01:50"
+               MIMETYPE="image/jp2"
+               SEQ="1"
+               CHECKSUM="19a0ffe240c30b2b982f795e8fb902889ed79195"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="5374660">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0001.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0001.jp2"/>
          </file>
-         <file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2013-06-27T18:02:03"
-            MIMETYPE="image/jp2" SEQ="2" CHECKSUM="81950cba9aad989842026479d43cfa813cf069ac"
-            CHECKSUMTYPE="SHA-1" SIZE="4847055">
+         <file ID="IMG00002"
+               ADMID="techmd2"
+               GROUPID="page2"
+               CREATED="2013-06-27T18:02:03"
+               MIMETYPE="image/jp2"
+               SEQ="2"
+               CHECKSUM="81950cba9aad989842026479d43cfa813cf069ac"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847055">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0002.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0002.jp2"/>
          </file>
-         <file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2013-06-27T18:02:15"
-            MIMETYPE="image/jp2" SEQ="3" CHECKSUM="346bfeca45fd262dfe7c25938e130570363b25f2"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00003"
+               ADMID="techmd3"
+               GROUPID="page3"
+               CREATED="2013-06-27T18:02:15"
+               MIMETYPE="image/jp2"
+               SEQ="3"
+               CHECKSUM="346bfeca45fd262dfe7c25938e130570363b25f2"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0003.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0003.jp2"/>
          </file>
-         <file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2013-06-27T18:02:26"
-            MIMETYPE="image/jp2" SEQ="4" CHECKSUM="3331c03f07078dd1ed2bdb39dfaa029550a24064"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00004"
+               ADMID="techmd4"
+               GROUPID="page4"
+               CREATED="2013-06-27T18:02:26"
+               MIMETYPE="image/jp2"
+               SEQ="4"
+               CHECKSUM="3331c03f07078dd1ed2bdb39dfaa029550a24064"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0004.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0004.jp2"/>
          </file>
-         <file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2013-06-27T18:02:37"
-            MIMETYPE="image/jp2" SEQ="5" CHECKSUM="ff9aedf98071793eb99e1bceec4e6a0c293bb874"
-            CHECKSUMTYPE="SHA-1" SIZE="4846871">
+         <file ID="IMG00005"
+               ADMID="techmd5"
+               GROUPID="page5"
+               CREATED="2013-06-27T18:02:37"
+               MIMETYPE="image/jp2"
+               SEQ="5"
+               CHECKSUM="ff9aedf98071793eb99e1bceec4e6a0c293bb874"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4846871">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0005.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0005.jp2"/>
          </file>
-         <file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2013-06-27T18:02:48"
-            MIMETYPE="image/jp2" SEQ="6" CHECKSUM="f0967512f88c32ffa202b006482ca94411459c91"
-            CHECKSUMTYPE="SHA-1" SIZE="4846866">
+         <file ID="IMG00006"
+               ADMID="techmd6"
+               GROUPID="page6"
+               CREATED="2013-06-27T18:02:48"
+               MIMETYPE="image/jp2"
+               SEQ="6"
+               CHECKSUM="f0967512f88c32ffa202b006482ca94411459c91"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4846866">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0006.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0006.jp2"/>
          </file>
-         <file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2013-06-27T18:02:58"
-            MIMETYPE="image/jp2" SEQ="7" CHECKSUM="5c5f95bcc030aad47606e1a20c40ca640b14f61a"
-            CHECKSUMTYPE="SHA-1" SIZE="4847056">
+         <file ID="IMG00007"
+               ADMID="techmd7"
+               GROUPID="page7"
+               CREATED="2013-06-27T18:02:58"
+               MIMETYPE="image/jp2"
+               SEQ="7"
+               CHECKSUM="5c5f95bcc030aad47606e1a20c40ca640b14f61a"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847056">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0007.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0007.jp2"/>
          </file>
-         <file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2013-06-27T18:03:09"
-            MIMETYPE="image/jp2" SEQ="8" CHECKSUM="7feb79898c286733936c647c9ff03aaee5d06ffe"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00008"
+               ADMID="techmd8"
+               GROUPID="page8"
+               CREATED="2013-06-27T18:03:09"
+               MIMETYPE="image/jp2"
+               SEQ="8"
+               CHECKSUM="7feb79898c286733936c647c9ff03aaee5d06ffe"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0008.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0008.jp2"/>
          </file>
-         <file ID="IMG00009" ADMID="techmd9" GROUPID="page9" CREATED="2013-06-27T18:03:19"
-            MIMETYPE="image/jp2" SEQ="9" CHECKSUM="6c90094ddbf916963754c6856235cd6179e4ed31"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00009"
+               ADMID="techmd9"
+               GROUPID="page9"
+               CREATED="2013-06-27T18:03:19"
+               MIMETYPE="image/jp2"
+               SEQ="9"
+               CHECKSUM="6c90094ddbf916963754c6856235cd6179e4ed31"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0009.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0009.jp2"/>
          </file>
-         <file ID="IMG00010" ADMID="techmd10" GROUPID="page10" CREATED="2013-06-27T18:03:30"
-            MIMETYPE="image/jp2" SEQ="10" CHECKSUM="859e8532ee09a1200be713d5c74ebfb61228b899"
-            CHECKSUMTYPE="SHA-1" SIZE="4846991">
+         <file ID="IMG00010"
+               ADMID="techmd10"
+               GROUPID="page10"
+               CREATED="2013-06-27T18:03:30"
+               MIMETYPE="image/jp2"
+               SEQ="10"
+               CHECKSUM="859e8532ee09a1200be713d5c74ebfb61228b899"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4846991">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0010.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0010.jp2"/>
          </file>
-         <file ID="IMG00011" ADMID="techmd11" GROUPID="page11" CREATED="2013-06-27T18:03:41"
-            MIMETYPE="image/jp2" SEQ="11" CHECKSUM="11858357d0c9b71b428c4be4d7845f5d1c960263"
-            CHECKSUMTYPE="SHA-1" SIZE="4847045">
+         <file ID="IMG00011"
+               ADMID="techmd11"
+               GROUPID="page11"
+               CREATED="2013-06-27T18:03:41"
+               MIMETYPE="image/jp2"
+               SEQ="11"
+               CHECKSUM="11858357d0c9b71b428c4be4d7845f5d1c960263"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847045">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0011.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0011.jp2"/>
          </file>
-         <file ID="IMG00012" ADMID="techmd12" GROUPID="page12" CREATED="2013-06-27T18:03:50"
-            MIMETYPE="image/jp2" SEQ="12" CHECKSUM="cb350aa8bbdc3c2fc29f5c233c0dc32ea5dd00d1"
-            CHECKSUMTYPE="SHA-1" SIZE="4847055">
+         <file ID="IMG00012"
+               ADMID="techmd12"
+               GROUPID="page12"
+               CREATED="2013-06-27T18:03:50"
+               MIMETYPE="image/jp2"
+               SEQ="12"
+               CHECKSUM="cb350aa8bbdc3c2fc29f5c233c0dc32ea5dd00d1"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847055">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0012.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0012.jp2"/>
          </file>
-         <file ID="IMG00013" ADMID="techmd13" GROUPID="page13" CREATED="2013-06-27T18:04:00"
-            MIMETYPE="image/jp2" SEQ="13" CHECKSUM="07612fcc824ad277180eec48b24a70ced05eab11"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00013"
+               ADMID="techmd13"
+               GROUPID="page13"
+               CREATED="2013-06-27T18:04:00"
+               MIMETYPE="image/jp2"
+               SEQ="13"
+               CHECKSUM="07612fcc824ad277180eec48b24a70ced05eab11"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0013.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0013.jp2"/>
          </file>
-         <file ID="IMG00014" ADMID="techmd14" GROUPID="page14" CREATED="2013-06-27T18:04:11"
-            MIMETYPE="image/jp2" SEQ="14" CHECKSUM="27f16f5a27f205198bc1e66f60f4bc22aafa125e"
-            CHECKSUMTYPE="SHA-1" SIZE="4847056">
+         <file ID="IMG00014"
+               ADMID="techmd14"
+               GROUPID="page14"
+               CREATED="2013-06-27T18:04:11"
+               MIMETYPE="image/jp2"
+               SEQ="14"
+               CHECKSUM="27f16f5a27f205198bc1e66f60f4bc22aafa125e"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847056">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0014.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0014.jp2"/>
          </file>
-         <file ID="IMG00015" ADMID="techmd15" GROUPID="page15" CREATED="2013-06-27T18:04:20"
-            MIMETYPE="image/jp2" SEQ="15" CHECKSUM="6d586f74a4480089022663158bede0145f5aa283"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00015"
+               ADMID="techmd15"
+               GROUPID="page15"
+               CREATED="2013-06-27T18:04:20"
+               MIMETYPE="image/jp2"
+               SEQ="15"
+               CHECKSUM="6d586f74a4480089022663158bede0145f5aa283"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0015.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0015.jp2"/>
          </file>
-         <file ID="IMG00016" ADMID="techmd16" GROUPID="page16" CREATED="2013-06-27T18:04:31"
-            MIMETYPE="image/jp2" SEQ="16" CHECKSUM="100d83cf64ad9ea2c63fc1fe5790bacd1a0abc97"
-            CHECKSUMTYPE="SHA-1" SIZE="4847052">
+         <file ID="IMG00016"
+               ADMID="techmd16"
+               GROUPID="page16"
+               CREATED="2013-06-27T18:04:31"
+               MIMETYPE="image/jp2"
+               SEQ="16"
+               CHECKSUM="100d83cf64ad9ea2c63fc1fe5790bacd1a0abc97"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847052">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0016.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0016.jp2"/>
          </file>
-         <file ID="IMG00017" ADMID="techmd17" GROUPID="page17" CREATED="2013-06-27T18:04:43"
-            MIMETYPE="image/jp2" SEQ="17" CHECKSUM="a224dbfa20900eaa4c4ebd10935cc57530f5d732"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00017"
+               ADMID="techmd17"
+               GROUPID="page17"
+               CREATED="2013-06-27T18:04:43"
+               MIMETYPE="image/jp2"
+               SEQ="17"
+               CHECKSUM="a224dbfa20900eaa4c4ebd10935cc57530f5d732"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0017.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0017.jp2"/>
          </file>
-         <file ID="IMG00018" ADMID="techmd18" GROUPID="page18" CREATED="2013-06-27T18:04:53"
-            MIMETYPE="image/jp2" SEQ="18" CHECKSUM="52b759e38f7dcd3ca85f6ee2407adc5107df7597"
-            CHECKSUMTYPE="SHA-1" SIZE="4847040">
+         <file ID="IMG00018"
+               ADMID="techmd18"
+               GROUPID="page18"
+               CREATED="2013-06-27T18:04:53"
+               MIMETYPE="image/jp2"
+               SEQ="18"
+               CHECKSUM="52b759e38f7dcd3ca85f6ee2407adc5107df7597"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847040">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0018.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0018.jp2"/>
          </file>
-         <file ID="IMG00019" ADMID="techmd19" GROUPID="page19" CREATED="2013-06-27T18:05:03"
-            MIMETYPE="image/jp2" SEQ="19" CHECKSUM="43784c6e65c0d317fef7868bb9068497524515b3"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00019"
+               ADMID="techmd19"
+               GROUPID="page19"
+               CREATED="2013-06-27T18:05:03"
+               MIMETYPE="image/jp2"
+               SEQ="19"
+               CHECKSUM="43784c6e65c0d317fef7868bb9068497524515b3"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0019.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0019.jp2"/>
          </file>
-         <file ID="IMG00020" ADMID="techmd20" GROUPID="page20" CREATED="2013-06-27T18:05:14"
-            MIMETYPE="image/jp2" SEQ="20" CHECKSUM="7a3af62ebf38e64a2086714a3973014410b0cabb"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00020"
+               ADMID="techmd20"
+               GROUPID="page20"
+               CREATED="2013-06-27T18:05:14"
+               MIMETYPE="image/jp2"
+               SEQ="20"
+               CHECKSUM="7a3af62ebf38e64a2086714a3973014410b0cabb"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0020.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0020.jp2"/>
          </file>
-         <file ID="IMG00021" ADMID="techmd21" GROUPID="page21" CREATED="2013-06-27T18:05:25"
-            MIMETYPE="image/jp2" SEQ="21" CHECKSUM="0a07e96611c60a0105420100bd6a03fdad129bd2"
-            CHECKSUMTYPE="SHA-1" SIZE="4847032">
+         <file ID="IMG00021"
+               ADMID="techmd21"
+               GROUPID="page21"
+               CREATED="2013-06-27T18:05:25"
+               MIMETYPE="image/jp2"
+               SEQ="21"
+               CHECKSUM="0a07e96611c60a0105420100bd6a03fdad129bd2"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847032">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0021.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0021.jp2"/>
          </file>
-         <file ID="IMG00022" ADMID="techmd22" GROUPID="page22" CREATED="2013-06-27T18:05:36"
-            MIMETYPE="image/jp2" SEQ="22" CHECKSUM="85322fb68f61eafec56cc49d2febe8ddc3773ffa"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00022"
+               ADMID="techmd22"
+               GROUPID="page22"
+               CREATED="2013-06-27T18:05:36"
+               MIMETYPE="image/jp2"
+               SEQ="22"
+               CHECKSUM="85322fb68f61eafec56cc49d2febe8ddc3773ffa"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0022.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0022.jp2"/>
          </file>
-         <file ID="IMG00023" ADMID="techmd23" GROUPID="page23" CREATED="2013-06-27T18:05:46"
-            MIMETYPE="image/jp2" SEQ="23" CHECKSUM="7bc3a4cf7370cbbb44b6f2d8c635efd69b3dece5"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00023"
+               ADMID="techmd23"
+               GROUPID="page23"
+               CREATED="2013-06-27T18:05:46"
+               MIMETYPE="image/jp2"
+               SEQ="23"
+               CHECKSUM="7bc3a4cf7370cbbb44b6f2d8c635efd69b3dece5"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0023.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0023.jp2"/>
          </file>
-         <file ID="IMG00024" ADMID="techmd24" GROUPID="page24" CREATED="2013-06-27T18:05:59"
-            MIMETYPE="image/jp2" SEQ="24" CHECKSUM="1c29e063a68678b89cde206004203479df3325fa"
-            CHECKSUMTYPE="SHA-1" SIZE="4847033">
+         <file ID="IMG00024"
+               ADMID="techmd24"
+               GROUPID="page24"
+               CREATED="2013-06-27T18:05:59"
+               MIMETYPE="image/jp2"
+               SEQ="24"
+               CHECKSUM="1c29e063a68678b89cde206004203479df3325fa"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847033">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0024.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0024.jp2"/>
          </file>
-         <file ID="IMG00025" ADMID="techmd25" GROUPID="page25" CREATED="2013-06-27T18:06:09"
-            MIMETYPE="image/jp2" SEQ="25" CHECKSUM="be7709b34a532885ef058211a4efc5e7cc55206d"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00025"
+               ADMID="techmd25"
+               GROUPID="page25"
+               CREATED="2013-06-27T18:06:09"
+               MIMETYPE="image/jp2"
+               SEQ="25"
+               CHECKSUM="be7709b34a532885ef058211a4efc5e7cc55206d"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0025.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0025.jp2"/>
          </file>
-         <file ID="IMG00026" ADMID="techmd26" GROUPID="page26" CREATED="2013-06-27T18:06:20"
-            MIMETYPE="image/jp2" SEQ="26" CHECKSUM="75e33408454d44f6465d61587199578d2d4bac37"
-            CHECKSUMTYPE="SHA-1" SIZE="4847052">
+         <file ID="IMG00026"
+               ADMID="techmd26"
+               GROUPID="page26"
+               CREATED="2013-06-27T18:06:20"
+               MIMETYPE="image/jp2"
+               SEQ="26"
+               CHECKSUM="75e33408454d44f6465d61587199578d2d4bac37"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847052">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0026.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0026.jp2"/>
          </file>
-         <file ID="IMG00027" ADMID="techmd27" GROUPID="page27" CREATED="2013-06-27T18:06:31"
-            MIMETYPE="image/jp2" SEQ="27" CHECKSUM="6fc006c2b4e35391d24bac6deb34e6378eb17108"
-            CHECKSUMTYPE="SHA-1" SIZE="4847056">
+         <file ID="IMG00027"
+               ADMID="techmd27"
+               GROUPID="page27"
+               CREATED="2013-06-27T18:06:31"
+               MIMETYPE="image/jp2"
+               SEQ="27"
+               CHECKSUM="6fc006c2b4e35391d24bac6deb34e6378eb17108"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847056">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0027.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0027.jp2"/>
          </file>
-         <file ID="IMG00028" ADMID="techmd28" GROUPID="page28" CREATED="2013-06-27T18:06:41"
-            MIMETYPE="image/jp2" SEQ="28" CHECKSUM="72b14db50f9533b26910491c2419c6d5e6ff16b4"
-            CHECKSUMTYPE="SHA-1" SIZE="4847057">
+         <file ID="IMG00028"
+               ADMID="techmd28"
+               GROUPID="page28"
+               CREATED="2013-06-27T18:06:41"
+               MIMETYPE="image/jp2"
+               SEQ="28"
+               CHECKSUM="72b14db50f9533b26910491c2419c6d5e6ff16b4"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847057">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0028.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0028.jp2"/>
          </file>
-         <file ID="IMG00029" ADMID="techmd29" GROUPID="page29" CREATED="2013-06-27T18:06:53"
-            MIMETYPE="image/jp2" SEQ="29" CHECKSUM="af3c90fa83aba88e1cdb39863c42136fb8028047"
-            CHECKSUMTYPE="SHA-1" SIZE="4847049">
+         <file ID="IMG00029"
+               ADMID="techmd29"
+               GROUPID="page29"
+               CREATED="2013-06-27T18:06:53"
+               MIMETYPE="image/jp2"
+               SEQ="29"
+               CHECKSUM="af3c90fa83aba88e1cdb39863c42136fb8028047"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847049">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0029.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0029.jp2"/>
          </file>
-         <file ID="IMG00030" ADMID="techmd30" GROUPID="page30" CREATED="2013-06-27T18:07:05"
-            MIMETYPE="image/jp2" SEQ="30" CHECKSUM="454493c2ddc570c1a0da20f8fa4c5d2618d6f858"
-            CHECKSUMTYPE="SHA-1" SIZE="4847051">
+         <file ID="IMG00030"
+               ADMID="techmd30"
+               GROUPID="page30"
+               CREATED="2013-06-27T18:07:05"
+               MIMETYPE="image/jp2"
+               SEQ="30"
+               CHECKSUM="454493c2ddc570c1a0da20f8fa4c5d2618d6f858"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847051">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0030.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0030.jp2"/>
          </file>
-         <file ID="IMG00031" ADMID="techmd31" GROUPID="page31" CREATED="2013-06-27T18:07:18"
-            MIMETYPE="image/jp2" SEQ="31" CHECKSUM="9275d8785a3b6a5f7b992478fdc997e521761d78"
-            CHECKSUMTYPE="SHA-1" SIZE="4847048">
+         <file ID="IMG00031"
+               ADMID="techmd31"
+               GROUPID="page31"
+               CREATED="2013-06-27T18:07:18"
+               MIMETYPE="image/jp2"
+               SEQ="31"
+               CHECKSUM="9275d8785a3b6a5f7b992478fdc997e521761d78"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847048">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0031.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0031.jp2"/>
          </file>
-         <file ID="IMG00032" ADMID="techmd32" GROUPID="page32" CREATED="2013-06-27T18:07:30"
-            MIMETYPE="image/jp2" SEQ="32" CHECKSUM="44cacbdf57cf6edd8bf339ed4a4556b7eb825c51"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00032"
+               ADMID="techmd32"
+               GROUPID="page32"
+               CREATED="2013-06-27T18:07:30"
+               MIMETYPE="image/jp2"
+               SEQ="32"
+               CHECKSUM="44cacbdf57cf6edd8bf339ed4a4556b7eb825c51"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0032.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0032.jp2"/>
          </file>
-         <file ID="IMG00033" ADMID="techmd33" GROUPID="page33" CREATED="2013-06-27T18:07:41"
-            MIMETYPE="image/jp2" SEQ="33" CHECKSUM="f92aba1cae337f7cb4c1001e285cf76b4b5d0505"
-            CHECKSUMTYPE="SHA-1" SIZE="4847052">
+         <file ID="IMG00033"
+               ADMID="techmd33"
+               GROUPID="page33"
+               CREATED="2013-06-27T18:07:41"
+               MIMETYPE="image/jp2"
+               SEQ="33"
+               CHECKSUM="f92aba1cae337f7cb4c1001e285cf76b4b5d0505"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847052">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0033.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0033.jp2"/>
          </file>
-         <file ID="IMG00034" ADMID="techmd34" GROUPID="page34" CREATED="2013-06-27T18:07:51"
-            MIMETYPE="image/jp2" SEQ="34" CHECKSUM="e25ab7d5fbb8e957b219bea4cc081b5b3b1a3e4b"
-            CHECKSUMTYPE="SHA-1" SIZE="4847018">
+         <file ID="IMG00034"
+               ADMID="techmd34"
+               GROUPID="page34"
+               CREATED="2013-06-27T18:07:51"
+               MIMETYPE="image/jp2"
+               SEQ="34"
+               CHECKSUM="e25ab7d5fbb8e957b219bea4cc081b5b3b1a3e4b"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847018">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0034.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0034.jp2"/>
          </file>
-         <file ID="IMG00035" ADMID="techmd35" GROUPID="page35" CREATED="2013-06-27T18:08:02"
-            MIMETYPE="image/jp2" SEQ="35" CHECKSUM="142a7aa188a4f8664e649d2a436ce58e40e7c74c"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00035"
+               ADMID="techmd35"
+               GROUPID="page35"
+               CREATED="2013-06-27T18:08:02"
+               MIMETYPE="image/jp2"
+               SEQ="35"
+               CHECKSUM="142a7aa188a4f8664e649d2a436ce58e40e7c74c"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0035.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0035.jp2"/>
          </file>
-         <file ID="IMG00036" ADMID="techmd36" GROUPID="page36" CREATED="2013-06-27T18:08:12"
-            MIMETYPE="image/jp2" SEQ="36" CHECKSUM="c712a4f7071b21af01227bc7d40f071b2dc1c605"
-            CHECKSUMTYPE="SHA-1" SIZE="4847044">
+         <file ID="IMG00036"
+               ADMID="techmd36"
+               GROUPID="page36"
+               CREATED="2013-06-27T18:08:12"
+               MIMETYPE="image/jp2"
+               SEQ="36"
+               CHECKSUM="c712a4f7071b21af01227bc7d40f071b2dc1c605"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847044">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0036.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0036.jp2"/>
          </file>
-         <file ID="IMG00037" ADMID="techmd37" GROUPID="page37" CREATED="2013-06-27T18:08:23"
-            MIMETYPE="image/jp2" SEQ="37" CHECKSUM="f982161a759b8bc6377560f41a52a3eff63ed457"
-            CHECKSUMTYPE="SHA-1" SIZE="4847054">
+         <file ID="IMG00037"
+               ADMID="techmd37"
+               GROUPID="page37"
+               CREATED="2013-06-27T18:08:23"
+               MIMETYPE="image/jp2"
+               SEQ="37"
+               CHECKSUM="f982161a759b8bc6377560f41a52a3eff63ed457"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847054">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0037.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0037.jp2"/>
          </file>
-         <file ID="IMG00038" ADMID="techmd38" GROUPID="page38" CREATED="2013-06-27T18:08:38"
-            MIMETYPE="image/jp2" SEQ="38" CHECKSUM="9142c5502506c66ca8db529c389ea927b165ede8"
-            CHECKSUMTYPE="SHA-1" SIZE="4847056">
+         <file ID="IMG00038"
+               ADMID="techmd38"
+               GROUPID="page38"
+               CREATED="2013-06-27T18:08:38"
+               MIMETYPE="image/jp2"
+               SEQ="38"
+               CHECKSUM="9142c5502506c66ca8db529c389ea927b165ede8"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847056">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0038.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0038.jp2"/>
          </file>
-         <file ID="IMG00039" ADMID="techmd39" GROUPID="page39" CREATED="2013-06-27T18:08:50"
-            MIMETYPE="image/jp2" SEQ="39" CHECKSUM="2354729b8a1924f8e54255166df5699317e33506"
-            CHECKSUMTYPE="SHA-1" SIZE="4847056">
+         <file ID="IMG00039"
+               ADMID="techmd39"
+               GROUPID="page39"
+               CREATED="2013-06-27T18:08:50"
+               MIMETYPE="image/jp2"
+               SEQ="39"
+               CHECKSUM="2354729b8a1924f8e54255166df5699317e33506"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847056">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0039.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0039.jp2"/>
          </file>
-         <file ID="IMG00040" ADMID="techmd40" GROUPID="page40" CREATED="2013-06-27T18:09:03"
-            MIMETYPE="image/jp2" SEQ="40" CHECKSUM="2990ccdd5ded607df3468909d7014ddf2d746f87"
-            CHECKSUMTYPE="SHA-1" SIZE="4847058">
+         <file ID="IMG00040"
+               ADMID="techmd40"
+               GROUPID="page40"
+               CREATED="2013-06-27T18:09:03"
+               MIMETYPE="image/jp2"
+               SEQ="40"
+               CHECKSUM="2990ccdd5ded607df3468909d7014ddf2d746f87"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="4847058">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0040.jp2"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/delivery/bmtnaai_1905-06_01_0040.jp2"/>
          </file>
       </fileGrp>
       <fileGrp ID="ALTOGRP" USE="OCR">
-         <file ID="ALTO00001" GROUPID="page1" CREATED="2013-06-27T18:09:12" MIMETYPE="text/xml"
-            CHECKSUM="76eec2f922cfb3536e3f367805ad6fac608f52a5" CHECKSUMTYPE="SHA-1" SIZE="3491">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0001.alto.xml"/>
+         <file ID="ALTO00001"
+               GROUPID="page1"
+               CREATED="2013-06-27T18:09:12"
+               MIMETYPE="text/xml"
+               CHECKSUM="76eec2f922cfb3536e3f367805ad6fac608f52a5"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="3491">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0001.alto.xml"/>
          </file>
-         <file ID="ALTO00002" GROUPID="page2" CREATED="2013-06-27T18:09:12" MIMETYPE="text/xml"
-            CHECKSUM="8adeee4bd19fa2f0f894049aa92c7f52b4a28c18" CHECKSUMTYPE="SHA-1" SIZE="69856">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0002.alto.xml"/>
+         <file ID="ALTO00002"
+               GROUPID="page2"
+               CREATED="2013-06-27T18:09:12"
+               MIMETYPE="text/xml"
+               CHECKSUM="8adeee4bd19fa2f0f894049aa92c7f52b4a28c18"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="69856">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0002.alto.xml"/>
          </file>
-         <file ID="ALTO00003" GROUPID="page3" CREATED="2013-06-27T18:09:12" MIMETYPE="text/xml"
-            CHECKSUM="66fc366e6b346925b2cf68a591ab74d99f4eef4c" CHECKSUMTYPE="SHA-1" SIZE="120249">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0003.alto.xml"/>
+         <file ID="ALTO00003"
+               GROUPID="page3"
+               CREATED="2013-06-27T18:09:12"
+               MIMETYPE="text/xml"
+               CHECKSUM="66fc366e6b346925b2cf68a591ab74d99f4eef4c"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="120249">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0003.alto.xml"/>
          </file>
-         <file ID="ALTO00004" GROUPID="page4" CREATED="2013-06-27T18:09:13" MIMETYPE="text/xml"
-            CHECKSUM="90bd7a43e44304248ff3aa7c8d0aacf1d2da9554" CHECKSUMTYPE="SHA-1" SIZE="107100">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0004.alto.xml"/>
+         <file ID="ALTO00004"
+               GROUPID="page4"
+               CREATED="2013-06-27T18:09:13"
+               MIMETYPE="text/xml"
+               CHECKSUM="90bd7a43e44304248ff3aa7c8d0aacf1d2da9554"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="107100">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0004.alto.xml"/>
          </file>
-         <file ID="ALTO00005" GROUPID="page5" CREATED="2013-06-27T18:09:13" MIMETYPE="text/xml"
-            CHECKSUM="b1c9485ced19f6b2cf480ea65f8954376d629ba9" CHECKSUMTYPE="SHA-1" SIZE="21514">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0005.alto.xml"/>
+         <file ID="ALTO00005"
+               GROUPID="page5"
+               CREATED="2013-06-27T18:09:13"
+               MIMETYPE="text/xml"
+               CHECKSUM="b1c9485ced19f6b2cf480ea65f8954376d629ba9"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="21514">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0005.alto.xml"/>
          </file>
-         <file ID="ALTO00006" GROUPID="page6" CREATED="2013-06-27T18:09:13" MIMETYPE="text/xml"
-            CHECKSUM="31a4189899ae1cd319ae85f95475e9b9a6dc76bd" CHECKSUMTYPE="SHA-1" SIZE="25739">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0006.alto.xml"/>
+         <file ID="ALTO00006"
+               GROUPID="page6"
+               CREATED="2013-06-27T18:09:13"
+               MIMETYPE="text/xml"
+               CHECKSUM="31a4189899ae1cd319ae85f95475e9b9a6dc76bd"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="25739">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0006.alto.xml"/>
          </file>
-         <file ID="ALTO00007" GROUPID="page7" CREATED="2013-06-27T18:09:13" MIMETYPE="text/xml"
-            CHECKSUM="fa9afe8b724628e0f038d2d7132b2ef1f2174baf" CHECKSUMTYPE="SHA-1" SIZE="44048">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0007.alto.xml"/>
+         <file ID="ALTO00007"
+               GROUPID="page7"
+               CREATED="2013-06-27T18:09:13"
+               MIMETYPE="text/xml"
+               CHECKSUM="fa9afe8b724628e0f038d2d7132b2ef1f2174baf"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="44048">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0007.alto.xml"/>
          </file>
-         <file ID="ALTO00008" GROUPID="page8" CREATED="2013-06-27T18:09:14" MIMETYPE="text/xml"
-            CHECKSUM="008a809b041cf4771448327d3e9a6630fe59e7b6" CHECKSUMTYPE="SHA-1" SIZE="48027">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0008.alto.xml"/>
+         <file ID="ALTO00008"
+               GROUPID="page8"
+               CREATED="2013-06-27T18:09:14"
+               MIMETYPE="text/xml"
+               CHECKSUM="008a809b041cf4771448327d3e9a6630fe59e7b6"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="48027">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0008.alto.xml"/>
          </file>
-         <file ID="ALTO00009" GROUPID="page9" CREATED="2013-06-27T18:09:14" MIMETYPE="text/xml"
-            CHECKSUM="9b13e4e89adb35fafc5414fccd90850e652b8a6f" CHECKSUMTYPE="SHA-1" SIZE="50949">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0009.alto.xml"/>
+         <file ID="ALTO00009"
+               GROUPID="page9"
+               CREATED="2013-06-27T18:09:14"
+               MIMETYPE="text/xml"
+               CHECKSUM="9b13e4e89adb35fafc5414fccd90850e652b8a6f"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="50949">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0009.alto.xml"/>
          </file>
-         <file ID="ALTO00010" GROUPID="page10" CREATED="2013-06-27T18:09:14" MIMETYPE="text/xml"
-            CHECKSUM="69a2a135b1fa55ef7ab6a8eb3f3b3b88e6ddd426" CHECKSUMTYPE="SHA-1" SIZE="20475">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0010.alto.xml"/>
+         <file ID="ALTO00010"
+               GROUPID="page10"
+               CREATED="2013-06-27T18:09:14"
+               MIMETYPE="text/xml"
+               CHECKSUM="69a2a135b1fa55ef7ab6a8eb3f3b3b88e6ddd426"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="20475">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0010.alto.xml"/>
          </file>
-         <file ID="ALTO00011" GROUPID="page11" CREATED="2013-06-27T18:09:15" MIMETYPE="text/xml"
-            CHECKSUM="83a313a6ad962e078b9fac47f3a51be247c3e8ac" CHECKSUMTYPE="SHA-1" SIZE="25108">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0011.alto.xml"/>
+         <file ID="ALTO00011"
+               GROUPID="page11"
+               CREATED="2013-06-27T18:09:15"
+               MIMETYPE="text/xml"
+               CHECKSUM="83a313a6ad962e078b9fac47f3a51be247c3e8ac"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="25108">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0011.alto.xml"/>
          </file>
-         <file ID="ALTO00012" GROUPID="page12" CREATED="2013-06-27T18:09:15" MIMETYPE="text/xml"
-            CHECKSUM="242d4d44b57953bebf3ea7273cdc753416be1a58" CHECKSUMTYPE="SHA-1" SIZE="56727">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0012.alto.xml"/>
+         <file ID="ALTO00012"
+               GROUPID="page12"
+               CREATED="2013-06-27T18:09:15"
+               MIMETYPE="text/xml"
+               CHECKSUM="242d4d44b57953bebf3ea7273cdc753416be1a58"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="56727">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0012.alto.xml"/>
          </file>
-         <file ID="ALTO00013" GROUPID="page13" CREATED="2013-06-27T18:09:15" MIMETYPE="text/xml"
-            CHECKSUM="678ac4f93fed7c50becc36a16be51315b6817fb4" CHECKSUMTYPE="SHA-1" SIZE="41226">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0013.alto.xml"/>
+         <file ID="ALTO00013"
+               GROUPID="page13"
+               CREATED="2013-06-27T18:09:15"
+               MIMETYPE="text/xml"
+               CHECKSUM="678ac4f93fed7c50becc36a16be51315b6817fb4"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="41226">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0013.alto.xml"/>
          </file>
-         <file ID="ALTO00014" GROUPID="page14" CREATED="2013-06-27T18:09:15" MIMETYPE="text/xml"
-            CHECKSUM="901a5ac0943e2e32a3f650c0e0f74411ccf4eba4" CHECKSUMTYPE="SHA-1" SIZE="39756">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0014.alto.xml"/>
+         <file ID="ALTO00014"
+               GROUPID="page14"
+               CREATED="2013-06-27T18:09:15"
+               MIMETYPE="text/xml"
+               CHECKSUM="901a5ac0943e2e32a3f650c0e0f74411ccf4eba4"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="39756">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0014.alto.xml"/>
          </file>
-         <file ID="ALTO00015" GROUPID="page15" CREATED="2013-06-27T18:09:17" MIMETYPE="text/xml"
-            CHECKSUM="ee46f9c302c525c0e4e489231a16c15d43cc1cac" CHECKSUMTYPE="SHA-1" SIZE="47443">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0015.alto.xml"/>
+         <file ID="ALTO00015"
+               GROUPID="page15"
+               CREATED="2013-06-27T18:09:17"
+               MIMETYPE="text/xml"
+               CHECKSUM="ee46f9c302c525c0e4e489231a16c15d43cc1cac"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="47443">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0015.alto.xml"/>
          </file>
-         <file ID="ALTO00016" GROUPID="page16" CREATED="2013-06-27T18:09:17" MIMETYPE="text/xml"
-            CHECKSUM="4a466e70294dd888e15bd859dc1c16b2676211f5" CHECKSUMTYPE="SHA-1" SIZE="87117">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0016.alto.xml"/>
+         <file ID="ALTO00016"
+               GROUPID="page16"
+               CREATED="2013-06-27T18:09:17"
+               MIMETYPE="text/xml"
+               CHECKSUM="4a466e70294dd888e15bd859dc1c16b2676211f5"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="87117">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0016.alto.xml"/>
          </file>
-         <file ID="ALTO00017" GROUPID="page17" CREATED="2013-06-27T18:09:17" MIMETYPE="text/xml"
-            CHECKSUM="b9fa0cbb3c645825b466c0c7d37ab99c39ee2a77" CHECKSUMTYPE="SHA-1" SIZE="78112">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0017.alto.xml"/>
+         <file ID="ALTO00017"
+               GROUPID="page17"
+               CREATED="2013-06-27T18:09:17"
+               MIMETYPE="text/xml"
+               CHECKSUM="b9fa0cbb3c645825b466c0c7d37ab99c39ee2a77"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="78112">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0017.alto.xml"/>
          </file>
-         <file ID="ALTO00018" GROUPID="page18" CREATED="2013-06-27T18:09:18" MIMETYPE="text/xml"
-            CHECKSUM="b1dad9c7ea476258e2e18257a1f99f9af6b60573" CHECKSUMTYPE="SHA-1" SIZE="43946">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0018.alto.xml"/>
+         <file ID="ALTO00018"
+               GROUPID="page18"
+               CREATED="2013-06-27T18:09:18"
+               MIMETYPE="text/xml"
+               CHECKSUM="b1dad9c7ea476258e2e18257a1f99f9af6b60573"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="43946">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0018.alto.xml"/>
          </file>
-         <file ID="ALTO00019" GROUPID="page19" CREATED="2013-06-27T18:09:19" MIMETYPE="text/xml"
-            CHECKSUM="ec17a12b3fd9dc9734cfc820829c6c1d1fd91a31" CHECKSUMTYPE="SHA-1" SIZE="95625">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0019.alto.xml"/>
+         <file ID="ALTO00019"
+               GROUPID="page19"
+               CREATED="2013-06-27T18:09:19"
+               MIMETYPE="text/xml"
+               CHECKSUM="ec17a12b3fd9dc9734cfc820829c6c1d1fd91a31"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="95625">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0019.alto.xml"/>
          </file>
-         <file ID="ALTO00020" GROUPID="page20" CREATED="2013-06-27T18:09:19" MIMETYPE="text/xml"
-            CHECKSUM="07d942c08ec414ebcb5f2fdf5377d226c17ba961" CHECKSUMTYPE="SHA-1" SIZE="69860">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0020.alto.xml"/>
+         <file ID="ALTO00020"
+               GROUPID="page20"
+               CREATED="2013-06-27T18:09:19"
+               MIMETYPE="text/xml"
+               CHECKSUM="07d942c08ec414ebcb5f2fdf5377d226c17ba961"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="69860">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0020.alto.xml"/>
          </file>
-         <file ID="ALTO00021" GROUPID="page21" CREATED="2013-06-27T18:09:19" MIMETYPE="text/xml"
-            CHECKSUM="6426f23dff2b42d515a233b826abddc3d9f41e69" CHECKSUMTYPE="SHA-1" SIZE="43126">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0021.alto.xml"/>
+         <file ID="ALTO00021"
+               GROUPID="page21"
+               CREATED="2013-06-27T18:09:19"
+               MIMETYPE="text/xml"
+               CHECKSUM="6426f23dff2b42d515a233b826abddc3d9f41e69"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="43126">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0021.alto.xml"/>
          </file>
-         <file ID="ALTO00022" GROUPID="page22" CREATED="2013-06-27T18:09:19" MIMETYPE="text/xml"
-            CHECKSUM="0212b4e4ed25669a5d1d775910570d4bc9ddd999" CHECKSUMTYPE="SHA-1" SIZE="56193">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0022.alto.xml"/>
+         <file ID="ALTO00022"
+               GROUPID="page22"
+               CREATED="2013-06-27T18:09:19"
+               MIMETYPE="text/xml"
+               CHECKSUM="0212b4e4ed25669a5d1d775910570d4bc9ddd999"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="56193">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0022.alto.xml"/>
          </file>
-         <file ID="ALTO00023" GROUPID="page23" CREATED="2013-06-27T18:09:20" MIMETYPE="text/xml"
-            CHECKSUM="69a5ae568ae739ffa3198b785aee238a6e07fd86" CHECKSUMTYPE="SHA-1" SIZE="37927">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0023.alto.xml"/>
+         <file ID="ALTO00023"
+               GROUPID="page23"
+               CREATED="2013-06-27T18:09:20"
+               MIMETYPE="text/xml"
+               CHECKSUM="69a5ae568ae739ffa3198b785aee238a6e07fd86"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="37927">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0023.alto.xml"/>
          </file>
-         <file ID="ALTO00024" GROUPID="page24" CREATED="2013-06-27T18:09:20" MIMETYPE="text/xml"
-            CHECKSUM="ecbe54f0daf00e1848cab8700db1474e0009840a" CHECKSUMTYPE="SHA-1" SIZE="50325">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0024.alto.xml"/>
+         <file ID="ALTO00024"
+               GROUPID="page24"
+               CREATED="2013-06-27T18:09:20"
+               MIMETYPE="text/xml"
+               CHECKSUM="ecbe54f0daf00e1848cab8700db1474e0009840a"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="50325">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0024.alto.xml"/>
          </file>
-         <file ID="ALTO00025" GROUPID="page25" CREATED="2013-06-27T18:09:20" MIMETYPE="text/xml"
-            CHECKSUM="59afb2f60b80261b196a3ca30da25c53bb63dc8e" CHECKSUMTYPE="SHA-1" SIZE="61527">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0025.alto.xml"/>
+         <file ID="ALTO00025"
+               GROUPID="page25"
+               CREATED="2013-06-27T18:09:20"
+               MIMETYPE="text/xml"
+               CHECKSUM="59afb2f60b80261b196a3ca30da25c53bb63dc8e"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="61527">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0025.alto.xml"/>
          </file>
-         <file ID="ALTO00026" GROUPID="page26" CREATED="2013-06-27T18:09:20" MIMETYPE="text/xml"
-            CHECKSUM="391e9d35124cd7b84149adaf00dd207c4f99ef28" CHECKSUMTYPE="SHA-1" SIZE="56546">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0026.alto.xml"/>
+         <file ID="ALTO00026"
+               GROUPID="page26"
+               CREATED="2013-06-27T18:09:20"
+               MIMETYPE="text/xml"
+               CHECKSUM="391e9d35124cd7b84149adaf00dd207c4f99ef28"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="56546">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0026.alto.xml"/>
          </file>
-         <file ID="ALTO00027" GROUPID="page27" CREATED="2013-06-27T18:09:21" MIMETYPE="text/xml"
-            CHECKSUM="3149ea4c5dd95da7d47f966a4f0b2b513c22a2f0" CHECKSUMTYPE="SHA-1" SIZE="53370">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0027.alto.xml"/>
+         <file ID="ALTO00027"
+               GROUPID="page27"
+               CREATED="2013-06-27T18:09:21"
+               MIMETYPE="text/xml"
+               CHECKSUM="3149ea4c5dd95da7d47f966a4f0b2b513c22a2f0"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="53370">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0027.alto.xml"/>
          </file>
-         <file ID="ALTO00028" GROUPID="page28" CREATED="2013-06-27T18:09:21" MIMETYPE="text/xml"
-            CHECKSUM="99e81f62bbbd29d8b850a969dc5e2a5f79930c8a" CHECKSUMTYPE="SHA-1" SIZE="57565">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0028.alto.xml"/>
+         <file ID="ALTO00028"
+               GROUPID="page28"
+               CREATED="2013-06-27T18:09:21"
+               MIMETYPE="text/xml"
+               CHECKSUM="99e81f62bbbd29d8b850a969dc5e2a5f79930c8a"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="57565">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0028.alto.xml"/>
          </file>
-         <file ID="ALTO00029" GROUPID="page29" CREATED="2013-06-27T18:09:21" MIMETYPE="text/xml"
-            CHECKSUM="da5f8d692dbca314cf0822920b136d5bae4cf3cc" CHECKSUMTYPE="SHA-1" SIZE="48917">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0029.alto.xml"/>
+         <file ID="ALTO00029"
+               GROUPID="page29"
+               CREATED="2013-06-27T18:09:21"
+               MIMETYPE="text/xml"
+               CHECKSUM="da5f8d692dbca314cf0822920b136d5bae4cf3cc"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="48917">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0029.alto.xml"/>
          </file>
-         <file ID="ALTO00030" GROUPID="page30" CREATED="2013-06-27T18:09:22" MIMETYPE="text/xml"
-            CHECKSUM="dba5568ac31aa81d3e988b339687e8ff4475c4cb" CHECKSUMTYPE="SHA-1" SIZE="64203">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0030.alto.xml"/>
+         <file ID="ALTO00030"
+               GROUPID="page30"
+               CREATED="2013-06-27T18:09:22"
+               MIMETYPE="text/xml"
+               CHECKSUM="dba5568ac31aa81d3e988b339687e8ff4475c4cb"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="64203">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0030.alto.xml"/>
          </file>
-         <file ID="ALTO00031" GROUPID="page31" CREATED="2013-06-27T18:09:22" MIMETYPE="text/xml"
-            CHECKSUM="2b19bfb791327c5668611b3e1cdaf7ec057a1046" CHECKSUMTYPE="SHA-1" SIZE="131828">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0031.alto.xml"/>
+         <file ID="ALTO00031"
+               GROUPID="page31"
+               CREATED="2013-06-27T18:09:22"
+               MIMETYPE="text/xml"
+               CHECKSUM="2b19bfb791327c5668611b3e1cdaf7ec057a1046"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="131828">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0031.alto.xml"/>
          </file>
-         <file ID="ALTO00032" GROUPID="page32" CREATED="2013-06-27T18:09:22" MIMETYPE="text/xml"
-            CHECKSUM="27759fd66909a289e89d29bee9bf9babdae68c76" CHECKSUMTYPE="SHA-1" SIZE="111148">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0032.alto.xml"/>
+         <file ID="ALTO00032"
+               GROUPID="page32"
+               CREATED="2013-06-27T18:09:22"
+               MIMETYPE="text/xml"
+               CHECKSUM="27759fd66909a289e89d29bee9bf9babdae68c76"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="111148">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0032.alto.xml"/>
          </file>
-         <file ID="ALTO00033" GROUPID="page33" CREATED="2013-06-27T18:09:23" MIMETYPE="text/xml"
-            CHECKSUM="327eecc0f93518320c7df36b017e354cd64a64d2" CHECKSUMTYPE="SHA-1" SIZE="109922">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0033.alto.xml"/>
+         <file ID="ALTO00033"
+               GROUPID="page33"
+               CREATED="2013-06-27T18:09:23"
+               MIMETYPE="text/xml"
+               CHECKSUM="327eecc0f93518320c7df36b017e354cd64a64d2"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="109922">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0033.alto.xml"/>
          </file>
-         <file ID="ALTO00034" GROUPID="page34" CREATED="2013-06-27T18:09:23" MIMETYPE="text/xml"
-            CHECKSUM="8636ba69f3ea2a68e8d1c2a1c6973680510742ea" CHECKSUMTYPE="SHA-1" SIZE="61132">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0034.alto.xml"/>
+         <file ID="ALTO00034"
+               GROUPID="page34"
+               CREATED="2013-06-27T18:09:23"
+               MIMETYPE="text/xml"
+               CHECKSUM="8636ba69f3ea2a68e8d1c2a1c6973680510742ea"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="61132">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0034.alto.xml"/>
          </file>
-         <file ID="ALTO00035" GROUPID="page35" CREATED="2013-06-27T18:09:23" MIMETYPE="text/xml"
-            CHECKSUM="5519b230431e6ce1439c3a357b111ffc8d8f0d4d" CHECKSUMTYPE="SHA-1" SIZE="70834">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0035.alto.xml"/>
+         <file ID="ALTO00035"
+               GROUPID="page35"
+               CREATED="2013-06-27T18:09:23"
+               MIMETYPE="text/xml"
+               CHECKSUM="5519b230431e6ce1439c3a357b111ffc8d8f0d4d"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="70834">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0035.alto.xml"/>
          </file>
-         <file ID="ALTO00036" GROUPID="page36" CREATED="2013-06-27T18:09:23" MIMETYPE="text/xml"
-            CHECKSUM="a17bc836b3e251d55ae815ae0b839d19f0816ef4" CHECKSUMTYPE="SHA-1" SIZE="56653">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0036.alto.xml"/>
+         <file ID="ALTO00036"
+               GROUPID="page36"
+               CREATED="2013-06-27T18:09:23"
+               MIMETYPE="text/xml"
+               CHECKSUM="a17bc836b3e251d55ae815ae0b839d19f0816ef4"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="56653">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0036.alto.xml"/>
          </file>
-         <file ID="ALTO00037" GROUPID="page37" CREATED="2013-06-27T18:09:24" MIMETYPE="text/xml"
-            CHECKSUM="731f3b954b7c5ec6da16da44b02cea386a6f407c" CHECKSUMTYPE="SHA-1" SIZE="214292">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0037.alto.xml"/>
+         <file ID="ALTO00037"
+               GROUPID="page37"
+               CREATED="2013-06-27T18:09:24"
+               MIMETYPE="text/xml"
+               CHECKSUM="731f3b954b7c5ec6da16da44b02cea386a6f407c"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="214292">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0037.alto.xml"/>
          </file>
-         <file ID="ALTO00038" GROUPID="page38" CREATED="2013-06-27T18:09:24" MIMETYPE="text/xml"
-            CHECKSUM="20780f40443f42fe560d92b581e75e14bd3df253" CHECKSUMTYPE="SHA-1" SIZE="298882">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0038.alto.xml"/>
+         <file ID="ALTO00038"
+               GROUPID="page38"
+               CREATED="2013-06-27T18:09:24"
+               MIMETYPE="text/xml"
+               CHECKSUM="20780f40443f42fe560d92b581e75e14bd3df253"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="298882">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0038.alto.xml"/>
          </file>
-         <file ID="ALTO00039" GROUPID="page39" CREATED="2013-06-27T18:09:25" MIMETYPE="text/xml"
-            CHECKSUM="e27b88b5f177cd4066eb06484e2aaa6ced469897" CHECKSUMTYPE="SHA-1" SIZE="42403">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0039.alto.xml"/>
+         <file ID="ALTO00039"
+               GROUPID="page39"
+               CREATED="2013-06-27T18:09:25"
+               MIMETYPE="text/xml"
+               CHECKSUM="e27b88b5f177cd4066eb06484e2aaa6ced469897"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="42403">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0039.alto.xml"/>
          </file>
-         <file ID="ALTO00040" GROUPID="page40" CREATED="2013-06-27T18:09:25" MIMETYPE="text/xml"
-            CHECKSUM="46a31d5e6bada1f66d27eaa380009f1078d15958" CHECKSUMTYPE="SHA-1" SIZE="93168">
-            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaai_1905-06_01_0040.alto.xml"/>
+         <file ID="ALTO00040"
+               GROUPID="page40"
+               CREATED="2013-06-27T18:09:25"
+               MIMETYPE="text/xml"
+               CHECKSUM="46a31d5e6bada1f66d27eaa380009f1078d15958"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="93168">
+            <FLocat LOCTYPE="URL"
+                    xlink:href="file://./alto/bmtnaai_1905-06_01_0040.alto.xml"/>
          </file>
       </fileGrp>
       <fileGrp ID="PDFGRP" USE="PDF">
-         <file ID="PDF_ISSUELEVEL" CREATED="2014-01-18T15:57:23" MIMETYPE="application/pdf"
-            CHECKSUM="38fab9430dcacdf7e90cfe5769f96102ee72c338" CHECKSUMTYPE="SHA-1" SIZE="15276329">
+         <file ID="PDF_ISSUELEVEL"
+               CREATED="2014-01-18T15:57:23"
+               MIMETYPE="application/pdf"
+               CHECKSUM="38fab9430dcacdf7e90cfe5769f96102ee72c338"
+               CHECKSUMTYPE="SHA-1"
+               SIZE="15276329">
             <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/bmtnaai_1905-06_01.pdf"
-            />
+                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaai/issues/1905/06_01/bmtnaai_1905-06_01.pdf"/>
          </file>
       </fileGrp>
    </fileSec>
@@ -4406,7 +4906,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP10" ORDER="9" ORDERLABEL="5" LABEL="5" TYPE="INSIDE">
+         <div ID="DIVP10"
+              ORDER="9"
+              ORDERLABEL="5"
+              LABEL="5"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00009"/>
@@ -4414,7 +4918,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP11" ORDER="10" ORDERLABEL="6" LABEL="6" TYPE="INSIDE">
+         <div ID="DIVP11"
+              ORDER="10"
+              ORDERLABEL="6"
+              LABEL="6"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00010"/>
@@ -4422,7 +4930,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP12" ORDER="11" ORDERLABEL="7" LABEL="7" TYPE="INSIDE">
+         <div ID="DIVP12"
+              ORDER="11"
+              ORDERLABEL="7"
+              LABEL="7"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00011"/>
@@ -4430,7 +4942,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP13" ORDER="12" ORDERLABEL="8" LABEL="8" TYPE="INSIDE">
+         <div ID="DIVP13"
+              ORDER="12"
+              ORDERLABEL="8"
+              LABEL="8"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00012"/>
@@ -4438,7 +4954,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP14" ORDER="13" ORDERLABEL="9" LABEL="9" TYPE="INSIDE">
+         <div ID="DIVP14"
+              ORDER="13"
+              ORDERLABEL="9"
+              LABEL="9"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00013"/>
@@ -4446,7 +4966,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP15" ORDER="14" ORDERLABEL="10" LABEL="10" TYPE="INSIDE">
+         <div ID="DIVP15"
+              ORDER="14"
+              ORDERLABEL="10"
+              LABEL="10"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00014"/>
@@ -4454,7 +4978,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP16" ORDER="15" ORDERLABEL="11" LABEL="11" TYPE="INSIDE">
+         <div ID="DIVP16"
+              ORDER="15"
+              ORDERLABEL="11"
+              LABEL="11"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00015"/>
@@ -4462,7 +4990,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP17" ORDER="16" ORDERLABEL="12" LABEL="12" TYPE="INSIDE">
+         <div ID="DIVP17"
+              ORDER="16"
+              ORDERLABEL="12"
+              LABEL="12"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00016"/>
@@ -4470,7 +5002,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP18" ORDER="17" ORDERLABEL="13" LABEL="13" TYPE="INSIDE">
+         <div ID="DIVP18"
+              ORDER="17"
+              ORDERLABEL="13"
+              LABEL="13"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00017"/>
@@ -4478,7 +5014,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP19" ORDER="18" ORDERLABEL="14" LABEL="14" TYPE="INSIDE">
+         <div ID="DIVP19"
+              ORDER="18"
+              ORDERLABEL="14"
+              LABEL="14"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00018"/>
@@ -4486,7 +5026,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP20" ORDER="19" ORDERLABEL="15" LABEL="15" TYPE="INSIDE">
+         <div ID="DIVP20"
+              ORDER="19"
+              ORDERLABEL="15"
+              LABEL="15"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00019"/>
@@ -4494,7 +5038,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP21" ORDER="20" ORDERLABEL="16" LABEL="16" TYPE="INSIDE">
+         <div ID="DIVP21"
+              ORDER="20"
+              ORDERLABEL="16"
+              LABEL="16"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00020"/>
@@ -4502,7 +5050,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP22" ORDER="21" ORDERLABEL="17" LABEL="17" TYPE="INSIDE">
+         <div ID="DIVP22"
+              ORDER="21"
+              ORDERLABEL="17"
+              LABEL="17"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00021"/>
@@ -4510,7 +5062,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP23" ORDER="22" ORDERLABEL="18" LABEL="18" TYPE="INSIDE">
+         <div ID="DIVP23"
+              ORDER="22"
+              ORDERLABEL="18"
+              LABEL="18"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00022"/>
@@ -4518,7 +5074,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP24" ORDER="23" ORDERLABEL="19" LABEL="19" TYPE="INSIDE">
+         <div ID="DIVP24"
+              ORDER="23"
+              ORDERLABEL="19"
+              LABEL="19"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00023"/>
@@ -4526,7 +5086,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP25" ORDER="24" ORDERLABEL="20" LABEL="20" TYPE="INSIDE">
+         <div ID="DIVP25"
+              ORDER="24"
+              ORDERLABEL="20"
+              LABEL="20"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00024"/>
@@ -4534,7 +5098,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP26" ORDER="25" ORDERLABEL="21" LABEL="21" TYPE="INSIDE">
+         <div ID="DIVP26"
+              ORDER="25"
+              ORDERLABEL="21"
+              LABEL="21"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00025"/>
@@ -4542,7 +5110,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP27" ORDER="26" ORDERLABEL="22" LABEL="22" TYPE="INSIDE">
+         <div ID="DIVP27"
+              ORDER="26"
+              ORDERLABEL="22"
+              LABEL="22"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00026"/>
@@ -4550,7 +5122,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP28" ORDER="27" ORDERLABEL="23" LABEL="23" TYPE="INSIDE">
+         <div ID="DIVP28"
+              ORDER="27"
+              ORDERLABEL="23"
+              LABEL="23"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00027"/>
@@ -4558,7 +5134,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP29" ORDER="28" ORDERLABEL="24" LABEL="24" TYPE="INSIDE">
+         <div ID="DIVP29"
+              ORDER="28"
+              ORDERLABEL="24"
+              LABEL="24"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00028"/>
@@ -4566,7 +5146,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP30" ORDER="29" ORDERLABEL="25" LABEL="25" TYPE="INSIDE">
+         <div ID="DIVP30"
+              ORDER="29"
+              ORDERLABEL="25"
+              LABEL="25"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00029"/>
@@ -4574,7 +5158,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP31" ORDER="30" ORDERLABEL="26" LABEL="26" TYPE="INSIDE">
+         <div ID="DIVP31"
+              ORDER="30"
+              ORDERLABEL="26"
+              LABEL="26"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00030"/>
@@ -4582,7 +5170,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP32" ORDER="31" ORDERLABEL="27" LABEL="27" TYPE="INSIDE">
+         <div ID="DIVP32"
+              ORDER="31"
+              ORDERLABEL="27"
+              LABEL="27"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00031"/>
@@ -4590,7 +5182,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP33" ORDER="32" ORDERLABEL="28" LABEL="28" TYPE="INSIDE">
+         <div ID="DIVP33"
+              ORDER="32"
+              ORDERLABEL="28"
+              LABEL="28"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00032"/>
@@ -4598,7 +5194,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP34" ORDER="33" ORDERLABEL="29" LABEL="29" TYPE="INSIDE">
+         <div ID="DIVP34"
+              ORDER="33"
+              ORDERLABEL="29"
+              LABEL="29"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00033"/>
@@ -4606,7 +5206,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP35" ORDER="34" ORDERLABEL="30" LABEL="30" TYPE="INSIDE">
+         <div ID="DIVP35"
+              ORDER="34"
+              ORDERLABEL="30"
+              LABEL="30"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00034"/>
@@ -4614,7 +5218,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP36" ORDER="35" ORDERLABEL="31" LABEL="31" TYPE="INSIDE">
+         <div ID="DIVP36"
+              ORDER="35"
+              ORDERLABEL="31"
+              LABEL="31"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00035"/>
@@ -4622,7 +5230,11 @@
                </par>
             </fptr>
          </div>
-         <div ID="DIVP37" ORDER="36" ORDERLABEL="32" LABEL="32" TYPE="INSIDE">
+         <div ID="DIVP37"
+              ORDER="36"
+              ORDERLABEL="32"
+              LABEL="32"
+              TYPE="INSIDE">
             <fptr>
                <par>
                   <area FILEID="IMG00036"/>
@@ -4855,14 +5467,22 @@
                </div>
             </div>
             <div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-               <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled">
+               <div ID="L.1.1.2.1"
+                    TYPE="Illustration"
+                    ORDER="1"
+                    DMDID="c001"
+                    LABEL="Untitled">
                   <div ID="L.1.1.2.1.1" TYPE="Image">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="Arturo Colautti">
+               <div ID="L.1.1.2.2"
+                    TYPE="TextContent"
+                    ORDER="2"
+                    DMDID="c002"
+                    LABEL="Arturo Colautti">
                   <div ID="L.1.1.2.2.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
@@ -4873,7 +5493,11 @@
                         <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.2.3" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="Untitled">
+                  <div ID="L.1.1.2.2.3"
+                       TYPE="Illustration"
+                       ORDER="1"
+                       DMDID="c003"
+                       LABEL="Untitled">
                      <div ID="L.1.1.2.2.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_CB00001"/>
@@ -4899,8 +5523,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c004"
-                  LABEL="POESIA. ha pubblicato i medaglioni di Gio">
+               <div ID="L.1.1.2.3"
+                    TYPE="TextContent"
+                    ORDER="3"
+                    DMDID="c004"
+                    LABEL="POESIA. ha pubblicato i medaglioni di Gio">
                   <div ID="L.1.1.2.3.1" TYPE="Copy">
                      <div ID="L.1.1.2.3.1.1" TYPE="BodyContent">
                         <div ID="L.1.1.2.3.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -4913,8 +5540,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c005"
-                  LABEL="LA BELLEZZA DELLA DONNA ITALIANA">
+               <div ID="L.1.1.2.4"
+                    TYPE="TextContent"
+                    ORDER="4"
+                    DMDID="c005"
+                    LABEL="LA BELLEZZA DELLA DONNA ITALIANA">
                   <div ID="L.1.1.2.4.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00001"/>
@@ -4964,8 +5594,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006"
-                  LABEL="CONCORSO DI POESIA">
+               <div ID="L.1.1.2.5"
+                    TYPE="TextContent"
+                    ORDER="5"
+                    DMDID="c006"
+                    LABEL="CONCORSO DI POESIA">
                   <div ID="L.1.1.2.5.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
@@ -5000,7 +5633,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c007" LABEL="ROSE ROSSE">
+               <div ID="L.1.1.2.6"
+                    TYPE="TextContent"
+                    ORDER="6"
+                    DMDID="c007"
+                    LABEL="ROSE ROSSE">
                   <div ID="L.1.1.2.6.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
@@ -5011,7 +5648,11 @@
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.6.3" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="Untitled">
+                  <div ID="L.1.1.2.6.3"
+                       TYPE="Illustration"
+                       ORDER="1"
+                       DMDID="c008"
+                       LABEL="Untitled">
                      <div ID="L.1.1.2.6.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
@@ -5033,7 +5674,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c009" LABEL="LETTRE À ELLE">
+               <div ID="L.1.1.2.7"
+                    TYPE="TextContent"
+                    ORDER="7"
+                    DMDID="c009"
+                    LABEL="LETTRE À ELLE">
                   <div ID="L.1.1.2.7.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00002"/>
@@ -5051,7 +5696,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c010" LABEL="ANNIVERSAIRE">
+               <div ID="L.1.1.2.8"
+                    TYPE="TextContent"
+                    ORDER="8"
+                    DMDID="c010"
+                    LABEL="ANNIVERSAIRE">
                   <div ID="L.1.1.2.8.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00002"/>
@@ -5072,7 +5721,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c011" LABEL="ANNIVERSAIRE">
+               <div ID="L.1.1.2.9"
+                    TYPE="TextContent"
+                    ORDER="9"
+                    DMDID="c011"
+                    LABEL="ANNIVERSAIRE">
                   <div ID="L.1.1.2.9.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00002"/>
@@ -5090,8 +5743,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c012"
-                  LABEL="PALAIS DE SONGE">
+               <div ID="L.1.1.2.10"
+                    TYPE="TextContent"
+                    ORDER="10"
+                    DMDID="c012"
+                    LABEL="PALAIS DE SONGE">
                   <div ID="L.1.1.2.10.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00004"/>
@@ -5114,7 +5770,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c013" LABEL="HEIMWÄRTS">
+               <div ID="L.1.1.2.11"
+                    TYPE="TextContent"
+                    ORDER="11"
+                    DMDID="c013"
+                    LABEL="HEIMWÄRTS">
                   <div ID="L.1.1.2.11.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00002"/>
@@ -5132,7 +5792,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c014" LABEL="VERSO CASA">
+               <div ID="L.1.1.2.12"
+                    TYPE="TextContent"
+                    ORDER="12"
+                    DMDID="c014"
+                    LABEL="VERSO CASA">
                   <div ID="L.1.1.2.12.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00003"/>
@@ -5150,7 +5814,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.13" TYPE="TextContent" ORDER="13" DMDID="c015" LABEL="ABEND">
+               <div ID="L.1.1.2.13"
+                    TYPE="TextContent"
+                    ORDER="13"
+                    DMDID="c015"
+                    LABEL="ABEND">
                   <div ID="L.1.1.2.13.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00002"/>
@@ -5173,7 +5841,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.14" TYPE="TextContent" ORDER="14" DMDID="c016" LABEL="SERA">
+               <div ID="L.1.1.2.14"
+                    TYPE="TextContent"
+                    ORDER="14"
+                    DMDID="c016"
+                    LABEL="SERA">
                   <div ID="L.1.1.2.14.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00005"/>
@@ -5194,7 +5866,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.15" TYPE="TextContent" ORDER="15" DMDID="c017" LABEL="FILEUSE">
+               <div ID="L.1.1.2.15"
+                    TYPE="TextContent"
+                    ORDER="15"
+                    DMDID="c017"
+                    LABEL="FILEUSE">
                   <div ID="L.1.1.2.15.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00002"/>
@@ -5227,8 +5903,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.16" TYPE="TextContent" ORDER="16" DMDID="c018"
-                  LABEL="APPARIZIONE DELL'IDEA">
+               <div ID="L.1.1.2.16"
+                    TYPE="TextContent"
+                    ORDER="16"
+                    DMDID="c018"
+                    LABEL="APPARIZIONE DELL'IDEA">
                   <div ID="L.1.1.2.16.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00002"/>
@@ -5254,7 +5933,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.17" TYPE="TextContent" ORDER="17" DMDID="c019" LABEL="I DONI">
+               <div ID="L.1.1.2.17"
+                    TYPE="TextContent"
+                    ORDER="17"
+                    DMDID="c019"
+                    LABEL="I DONI">
                   <div ID="L.1.1.2.17.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00002"/>
@@ -5272,7 +5955,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.18" TYPE="TextContent" ORDER="18" DMDID="c020" LABEL="MATTINATA">
+               <div ID="L.1.1.2.18"
+                    TYPE="TextContent"
+                    ORDER="18"
+                    DMDID="c020"
+                    LABEL="MATTINATA">
                   <div ID="L.1.1.2.18.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00004"/>
@@ -5298,7 +5985,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.19" TYPE="TextContent" ORDER="19" DMDID="c021" LABEL="SEVERED">
+               <div ID="L.1.1.2.19"
+                    TYPE="TextContent"
+                    ORDER="19"
+                    DMDID="c021"
+                    LABEL="SEVERED">
                   <div ID="L.1.1.2.19.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00002"/>
@@ -5321,8 +6012,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.20" TYPE="TextContent" ORDER="20" DMDID="c022"
-                  LABEL="L'INGEGNOSO HIDALGO.">
+               <div ID="L.1.1.2.20"
+                    TYPE="TextContent"
+                    ORDER="20"
+                    DMDID="c022"
+                    LABEL="L'INGEGNOSO HIDALGO.">
                   <div ID="L.1.1.2.20.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00002"/>
@@ -5366,7 +6060,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.21" TYPE="TextContent" ORDER="21" DMDID="c023" LABEL="EL TITOL">
+               <div ID="L.1.1.2.21"
+                    TYPE="TextContent"
+                    ORDER="21"
+                    DMDID="c023"
+                    LABEL="EL TITOL">
                   <div ID="L.1.1.2.21.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00005"/>
@@ -5393,7 +6091,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.22" TYPE="TextContent" ORDER="22" DMDID="c024" LABEL="PARFUMS">
+               <div ID="L.1.1.2.22"
+                    TYPE="TextContent"
+                    ORDER="22"
+                    DMDID="c024"
+                    LABEL="PARFUMS">
                   <div ID="L.1.1.2.22.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00002"/>
@@ -5416,7 +6118,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.23" TYPE="TextContent" ORDER="23" DMDID="c025" LABEL="HAIL PYTHO">
+               <div ID="L.1.1.2.23"
+                    TYPE="TextContent"
+                    ORDER="23"
+                    DMDID="c025"
+                    LABEL="HAIL PYTHO">
                   <div ID="L.1.1.2.23.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00002"/>
@@ -5453,7 +6159,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.24" TYPE="TextContent" ORDER="24" DMDID="c026" LABEL="ROSE">
+               <div ID="L.1.1.2.24"
+                    TYPE="TextContent"
+                    ORDER="24"
+                    DMDID="c026"
+                    LABEL="ROSE">
                   <div ID="L.1.1.2.24.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00004"/>
@@ -5471,8 +6181,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.25" TYPE="TextContent" ORDER="25" DMDID="c027"
-                  LABEL="IL MORTO GIORNO">
+               <div ID="L.1.1.2.25"
+                    TYPE="TextContent"
+                    ORDER="25"
+                    DMDID="c027"
+                    LABEL="IL MORTO GIORNO">
                   <div ID="L.1.1.2.25.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00006"/>
@@ -5495,7 +6208,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.26" TYPE="TextContent" ORDER="26" DMDID="c028" LABEL="LE BOHÉMIEN">
+               <div ID="L.1.1.2.26"
+                    TYPE="TextContent"
+                    ORDER="26"
+                    DMDID="c028"
+                    LABEL="LE BOHÉMIEN">
                   <div ID="L.1.1.2.26.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00002"/>
@@ -5518,7 +6235,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.27" TYPE="TextContent" ORDER="27" DMDID="c029" LABEL="GLI APUANI">
+               <div ID="L.1.1.2.27"
+                    TYPE="TextContent"
+                    ORDER="27"
+                    DMDID="c029"
+                    LABEL="GLI APUANI">
                   <div ID="L.1.1.2.27.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00005"/>
@@ -5544,7 +6265,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.28" TYPE="TextContent" ORDER="28" DMDID="c030" LABEL="LE FOUZI-YAMA">
+               <div ID="L.1.1.2.28"
+                    TYPE="TextContent"
+                    ORDER="28"
+                    DMDID="c030"
+                    LABEL="LE FOUZI-YAMA">
                   <div ID="L.1.1.2.28.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00002"/>
@@ -5574,8 +6299,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.29" TYPE="TextContent" ORDER="29" DMDID="c031"
-                  LABEL="LA PETITE FILLE">
+               <div ID="L.1.1.2.29"
+                    TYPE="TextContent"
+                    ORDER="29"
+                    DMDID="c031"
+                    LABEL="LA PETITE FILLE">
                   <div ID="L.1.1.2.29.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00002"/>
@@ -5593,7 +6321,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.30" TYPE="TextContent" ORDER="30" DMDID="c032" LABEL="AIR">
+               <div ID="L.1.1.2.30"
+                    TYPE="TextContent"
+                    ORDER="30"
+                    DMDID="c032"
+                    LABEL="AIR">
                   <div ID="L.1.1.2.30.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00004"/>
@@ -5616,8 +6348,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.31" TYPE="TextContent" ORDER="31" DMDID="c033"
-                  LABEL="LA MORT DES FORTEFESSES">
+               <div ID="L.1.1.2.31"
+                    TYPE="TextContent"
+                    ORDER="31"
+                    DMDID="c033"
+                    LABEL="LA MORT DES FORTEFESSES">
                   <div ID="L.1.1.2.31.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00002"/>
@@ -5688,8 +6423,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.32" TYPE="TextContent" ORDER="32" DMDID="c034"
-                  LABEL="TU ES L'ÉTOILE">
+               <div ID="L.1.1.2.32"
+                    TYPE="TextContent"
+                    ORDER="32"
+                    DMDID="c034"
+                    LABEL="TU ES L'ÉTOILE">
                   <div ID="L.1.1.2.32.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00002"/>
@@ -5736,8 +6474,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.33" TYPE="TextContent" ORDER="33" DMDID="c035"
-                  LABEL="SOIS LE BIENVENU">
+               <div ID="L.1.1.2.33"
+                    TYPE="TextContent"
+                    ORDER="33"
+                    DMDID="c035"
+                    LABEL="SOIS LE BIENVENU">
                   <div ID="L.1.1.2.33.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00002"/>
@@ -5777,8 +6518,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.34" TYPE="TextContent" ORDER="34" DMDID="c036"
-                  LABEL="DEUX CHANSONS DU RIRE ET DES PLEVRS">
+               <div ID="L.1.1.2.34"
+                    TYPE="TextContent"
+                    ORDER="34"
+                    DMDID="c036"
+                    LABEL="DEUX CHANSONS DU RIRE ET DES PLEVRS">
                   <div ID="L.1.1.2.34.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00002"/>
@@ -5832,7 +6576,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.35" TYPE="TextContent" ORDER="35" DMDID="c037" LABEL="ELLE PASSE...">
+               <div ID="L.1.1.2.35"
+                    TYPE="TextContent"
+                    ORDER="35"
+                    DMDID="c037"
+                    LABEL="ELLE PASSE...">
                   <div ID="L.1.1.2.35.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00006"/>
@@ -5855,8 +6603,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.36" TYPE="TextContent" ORDER="36" DMDID="c038"
-                  LABEL="LE PÖETE AU VITRAIL">
+               <div ID="L.1.1.2.36"
+                    TYPE="TextContent"
+                    ORDER="36"
+                    DMDID="c038"
+                    LABEL="LE PÖETE AU VITRAIL">
                   <div ID="L.1.1.2.36.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00033" BEGIN="P33_TB00002"/>
@@ -5899,7 +6650,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.37" TYPE="TextContent" ORDER="37" DMDID="c039" LABEL="IL CIECO">
+               <div ID="L.1.1.2.37"
+                    TYPE="TextContent"
+                    ORDER="37"
+                    DMDID="c039"
+                    LABEL="IL CIECO">
                   <div ID="L.1.1.2.37.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_TB00002"/>
@@ -5932,8 +6687,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.38" TYPE="TextContent" ORDER="38" DMDID="c040"
-                  LABEL="AH! QUE FAIS~TU...">
+               <div ID="L.1.1.2.38"
+                    TYPE="TextContent"
+                    ORDER="38"
+                    DMDID="c040"
+                    LABEL="AH! QUE FAIS~TU...">
                   <div ID="L.1.1.2.38.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_TB00002"/>
@@ -5956,8 +6714,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.39" TYPE="TextContent" ORDER="39" DMDID="c041"
-                  LABEL="IL TRIONFO DI “Poesia„">
+               <div ID="L.1.1.2.39"
+                    TYPE="TextContent"
+                    ORDER="39"
+                    DMDID="c041"
+                    LABEL="IL TRIONFO DI “Poesia„">
                   <div ID="L.1.1.2.39.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00001"/>
@@ -5992,8 +6753,11 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.40" TYPE="TextContent" ORDER="40" DMDID="c042"
-                  LABEL="FOCHI MONTANI LA MUSA DI FRANCESCO PASTONCHI">
+               <div ID="L.1.1.2.40"
+                    TYPE="TextContent"
+                    ORDER="40"
+                    DMDID="c042"
+                    LABEL="FOCHI MONTANI LA MUSA DI FRANCESCO PASTONCHI">
                   <div ID="L.1.1.2.40.1" TYPE="Head">
                      <fptr>
                         <seq>
@@ -6007,7 +6771,11 @@
                         <area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00008"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.40.3" TYPE="Illustration" ORDER="1" DMDID="c043" LABEL="Untitled">
+                  <div ID="L.1.1.2.40.3"
+                       TYPE="Illustration"
+                       ORDER="1"
+                       DMDID="c043"
+                       LABEL="Untitled">
                      <div ID="L.1.1.2.40.3.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_CB00001"/>
@@ -6058,7 +6826,9 @@
                   </div>
                </div>
             </div>
-            <div ID="L.1.1.3" TYPE="SponsoredAdvertisement" LABEL="Sponsored Advertisements">
+            <div ID="L.1.1.3"
+                 TYPE="SponsoredAdvertisement"
+                 LABEL="Sponsored Advertisements">
                <div ID="L.1.1.3.1" TYPE="SponsoredAd" DMDID="c044">
                   <fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00039" BEGIN="P39_CB00001"/>
