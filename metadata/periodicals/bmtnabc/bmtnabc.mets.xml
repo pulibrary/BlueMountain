@@ -1,136 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-      TYPE="Periodical"
-      OBJID="urn:PUL:bluemountain:bmtnabc">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnabc">
   <metsHdr>
-      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
-                        TYPE="ark"
-                        ID="ark:/88435/gq67jt84g"/>
-      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-         <name>Princeton University Library, Digital Initiatives</name>
-      </agent>
-      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabc</metsDocumentID>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabc</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-      <mdWrap MDTYPE="DC">
-         <xmlData>
-            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabc">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnabc">
 
-                  <dc:title>La chronique musicale</dc:title>
+            <dc:title>La chronique musicale</dc:title>
 
-               </rdf:Description>
-            </rdf:RDF>
-         </xmlData>
-      </mdWrap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
   </dmdSec>
 
   <dmdSec ID="dmd1">
-      <mdWrap MDTYPE="MODS">
-         <xmlData>
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
 
-            <mods xmlns="http://www.loc.gov/mods/v3"
-                  xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd">
-               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/gq67jt84g</mods:identifier>
+        <mods xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 ../../schemas/mods.xsd">
 
-               <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
-               <genre authority="bmtn">Periodicals-Title</genre>
+          <identifier type="bmtn">urn:PUL:bluemountain:bmtnabc</identifier>
+          <genre authority="bmtn">Periodicals-Title</genre>
 
-               <titleInfo>
-                  <nonSort>La</nonSort>
-                  <title>Chronique musicale</title>
-               </titleInfo>
-               <titleInfo usage="primary">
-                  <nonSort>La</nonSort>
-                  <title>chronique musicale</title>
-                  <subTitle>revue bi-mensuelle de l'art ancien et moderne</subTitle>
-               </titleInfo>
-               <name type="personal">
-                  <namePart>Heulhard, Arthur</namePart>
-                  <namePart type="date">1849-1920</namePart>
-	              </name>
-               <typeOfResource>text</typeOfResource>
-               <genre authority="fast">Periodicals.</genre>
-               <originInfo script="Latn">
-                  <place>
-                     <placeTerm type="text">Paris</placeTerm>
-                  </place>
-                  <publisher>s.n.</publisher>
-                  <dateIssued>1873-1876]</dateIssued>
-                  <dateIssued encoding="marc" point="start">1873</dateIssued>
-                  <dateIssued encoding="marc" point="end">1876</dateIssued>
-               </originInfo>
-               <abstract>
+          <titleInfo>
+            <nonSort>La</nonSort>
+            <title>Chronique musicale</title>
+          </titleInfo>
+          <titleInfo usage="primary">
+            <nonSort>La</nonSort>
+            <title>chronique musicale</title>
+            <subTitle>revue bi-mensuelle de l'art ancien et moderne</subTitle>
+          </titleInfo>
+          <name type="personal">
+            <namePart>Heulhard, Arthur</namePart>
+            <namePart type="date">1849-1920</namePart>
+	  </name>
+          <typeOfResource>text</typeOfResource>
+          <genre authority="fast">Periodicals.</genre>
+          <originInfo script="Latn">
+            <place>
+              <placeTerm type="text">Paris</placeTerm>
+            </place>
+            <publisher>s.n.</publisher>
+            <dateIssued>1873-1876]</dateIssued>
+            <dateIssued encoding="marc" point="start">1873</dateIssued>
+            <dateIssued encoding="marc" point="end">1876</dateIssued>
+          </originInfo>
+          <abstract>
 	    La Chronique musicale was a nationalist journal that supported French music and literature in the wake of the Franco-Prussian war.
 	    
 	    Selected Contributors: Arthur Heulhard, Charles Nuitter, Théodore de Lajarte, Adolphe Jullien.
 	    
 	  </abstract>
-               <language>
-                  <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-               </language>
-               <physicalDescription>
-                  <reformattingQuality>access</reformattingQuality>
-                  <extent>1 online resource (11 v.) : ill., music, ports.</extent>
-               </physicalDescription>
-               <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
-               <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
-               <note>Title from caption.</note>
-               <note>Editor: Arthur Heulhard.</note>
-               <subject authority="lcsh">
-                  <topic>Music</topic>
-                  <genre>Periodicals</genre>
-               </subject>
-               <subject authority="fast">
-                  <topic>Music</topic>
-               </subject>
-               <location>
-                  <url displayLabel="electronic resource"
-                       usage="primary display"
-                       note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/z316q2966</url>
-               </location>
-               <relatedItem type="otherFormat"/>
-               <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-               <location>
-                  <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-                  <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-                  <holdingSimple>
-                     <copyInformation>
-                        <subLocation>elf1</subLocation>
-                        <!--DELETE COPY NUMBER BELOW-->
-                        <shelfLocator>Electronic Resource</shelfLocator>
-                     </copyInformation>
-                  </holdingSimple>
-               </location>
-               <recordInfo>
-	                 <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabc</recordIdentifier>
-                  <recordContentSource authority="marcorg">NjP</recordContentSource>
-                  <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=8870192</recordOrigin>
-                  <languageOfCataloging>
-                     <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-                  </languageOfCataloging>
-               </recordInfo>
-            </mods>
-         </xmlData>
-      </mdWrap>
+          <language>
+            <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+          </language>
+          <physicalDescription>
+            <reformattingQuality>access</reformattingQuality>
+            <extent>1 online resource (11 v.) : ill., music, ports.</extent>
+          </physicalDescription>
+          <note type="date/sequential designation">T. 1, no 1 (1er juil. 1873)-t. 11, no 66 (15 juin 1876).</note>
+          <note>"Revue bi-mensuelle de l'art ancien et moderne."</note>
+          <note>Title from caption.</note>
+          <note>Editor: Arthur Heulhard.</note>
+          <subject authority="lcsh">
+            <topic>Music</topic>
+            <genre>Periodicals</genre>
+          </subject>
+          <subject authority="fast">
+            <topic>Music</topic>
+          </subject>
+          <location>
+            <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/z316q2966</url>
+          </location>
+          <relatedItem type="otherFormat"/>
+          <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+          <location>
+            <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+            <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+            <holdingSimple>
+              <copyInformation>
+                <subLocation>elf1</subLocation>
+                <!--DELETE COPY NUMBER BELOW-->
+                <shelfLocator>Electronic Resource</shelfLocator>
+              </copyInformation>
+            </holdingSimple>
+          </location>
+          <recordInfo>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnabc</recordIdentifier>
+            <recordContentSource authority="marcorg">NjP</recordContentSource>
+            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=8870192</recordOrigin>
+            <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+            </languageOfCataloging>
+          </recordInfo>
+        </mods>
+      </xmlData>
+    </mdWrap>
   </dmdSec>
 
 
   <dmdSec ID="dmd2">
-      <mdRef LOCTYPE="URN"
-             MDTYPE="MODS"
-             MIMETYPE="application/xml"
-             xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnabc"/>
   </dmdSec>
   <fileSec>
-      <fileGrp/>
+    <fileGrp/>
   </fileSec>
   <structMap>
-      <div/>
+    <div/>
   </structMap>
 </mets>

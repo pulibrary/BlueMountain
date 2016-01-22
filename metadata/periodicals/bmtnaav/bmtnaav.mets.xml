@@ -1,150 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-      TYPE="Periodical"
-      OBJID="urn:PUL:bluemountain:bmtnaav">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaav">
   <metsHdr>
-      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
-                        TYPE="ark"
-                        ID="ark:/88435/qv33s030h"/>
-      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-         <name>Princeton University Library, Digital Initiatives</name>
-      </agent>
-      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaav</metsDocumentID>
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>Princeton University Library, Digital Initiatives</name>
+    </agent>
+    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaav</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-      <mdWrap MDTYPE="DC">
-         <xmlData>
-            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <mdWrap MDTYPE="DC">
+      <xmlData>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaav">
+          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaav">
 
-                  <dc:title>New Numbers</dc:title>
+            <dc:title>New Numbers</dc:title>
 
-               </rdf:Description>
-            </rdf:RDF>
-         </xmlData>
-      </mdWrap>
+          </rdf:Description>
+        </rdf:RDF>
+      </xmlData>
+    </mdWrap>
   </dmdSec>
 
   <dmdSec ID="dmd1">
-      <mdWrap MDTYPE="MODS">
-         <xmlData>
-	           <mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
-               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/qv33s030h</mods:identifier>
-	              <identifier type="bmtn">urn:PUL:bluemountain:bmtnaav</identifier>
-	              <titleInfo usage="primary">
-	                 <title>New Numbers</title>
-	              </titleInfo>
-	              <titleInfo>
-	                 <title>New numbers</title>
-	              </titleInfo>
-	              <name type="personal">
-	                 <namePart>Brooke, Rupert</namePart>
-	                 <namePart type="date">1887-1915</namePart>
-	              </name>
-	              <name type="personal">
-	                 <namePart>Drinkwater, John</namePart>
-	                 <namePart type="date">1882-1937</namePart>
-	              </name>
-	              <name type="personal">
-	                 <namePart>Gibson, Wilfrid Wilson</namePart>
-	                 <namePart type="date">1878-1962</namePart>
-	              </name>
-	              <name type="personal">
-	                 <namePart>Abercrombie, Lascelles</namePart>
-	                 <namePart type="date">1881-1938</namePart>
-	              </name>
-	              <typeOfResource>text</typeOfResource>
-	              <genre authority="bmtn">Periodicals-Title</genre>
-	              <genre authority="marcgt">periodical</genre>
-	              <genre authority="fast">Periodicals.</genre>
-	              <originInfo>
-	                 <place>
-                     <placeTerm type="code" authority="marccountry">enk</placeTerm>
-	                 </place>
-	                 <place>
-                     <placeTerm type="text">Ryton, Dymock, Gloucester</placeTerm>
-	                 </place>
-	                 <publisher>[Crypt House Press]</publisher>
-	                 <dateIssued encoding="marc" point="start">1914</dateIssued>
-	                 <dateIssued encoding="marc" point="end">1914</dateIssued>
-	                 <issuance>serial</issuance>
-	                 <frequency authority="marcfrequency">Quarterly</frequency>
-	                 <frequency>Quarterly</frequency>
-	              </originInfo>
-		             <abstract>
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaav</identifier>
+	  <titleInfo usage="primary">
+	    <title>New Numbers</title>
+	  </titleInfo>
+	  <titleInfo>
+	    <title>New numbers</title>
+	  </titleInfo>
+	  <name type="personal">
+	    <namePart>Brooke, Rupert</namePart>
+	    <namePart type="date">1887-1915</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Drinkwater, John</namePart>
+	    <namePart type="date">1882-1937</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Gibson, Wilfrid Wilson</namePart>
+	    <namePart type="date">1878-1962</namePart>
+	  </name>
+	  <name type="personal">
+	    <namePart>Abercrombie, Lascelles</namePart>
+	    <namePart type="date">1881-1938</namePart>
+	  </name>
+	  <typeOfResource>text</typeOfResource>
+	  <genre authority="bmtn">Periodicals-Title</genre>
+	  <genre authority="marcgt">periodical</genre>
+	  <genre authority="fast">Periodicals.</genre>
+	  <originInfo>
+	    <place>
+              <placeTerm type="code" authority="marccountry">enk</placeTerm>
+	    </place>
+	    <place>
+              <placeTerm type="text">Ryton, Dymock, Gloucester</placeTerm>
+	    </place>
+	    <publisher>[Crypt House Press]</publisher>
+	    <dateIssued encoding="marc" point="start">1914</dateIssued>
+	    <dateIssued encoding="marc" point="end">1914</dateIssued>
+	    <issuance>serial</issuance>
+	    <frequency authority="marcfrequency">Quarterly</frequency>
+	    <frequency>Quarterly</frequency>
+	  </originInfo>
+		<abstract>
 			New Numbers, which lasted only one year, published the poetry of the so-called Dymock poets who lived in a small village near Gloucester, England between 1911 and 1914.
 			Selected Contributors: Rupert Brooke, John Drinkwater, Wilfrid Wilson Gibson, Lascelles Abercrombie.
 			
 		</abstract>
-	              <language>
-	                 <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	              </language>
-	              <physicalDescription>
-	                 <form authority="gmd">electronic resource</form>
-	                 <form authority="marccategory">electronic resource</form>
-	                 <form authority="marcsmd">remote</form>
-	                 <extent>1 online resource (4 no.)</extent>
-	              </physicalDescription>
-	              <note type="date/sequential designation">v. 1, no. 1-4; Feb.-Dec. 1914.</note>
-	              <note>"A quarterly publication of the poems of Rupert Brooke, John Drinkwater, Wilfrid Wilson Gibson, Lascelles Abercrombie."</note>
-	              <subject authority="fast">
-	                 <temporal>1900 - 1999</temporal>
-	              </subject>
-	              <subject authority="lcsh">
-	                 <topic>English poetry</topic>
-	                 <temporal>20th century</temporal>
-	                 <genre>Periodicals</genre>
-	              </subject>
-	              <subject authority="fast">
-	                 <topic>English poetry</topic>
-	              </subject>
-	              <classification authority="lcc">PR500 .N47</classification>
-	              <classification authority="ddc" edition="21">821.91208005</classification>
-	              <classification authority="bcl">18.05</classification>
-	              <location>
-	                 <url displayLabel="electronic resource"
-                       usage="primary display"
-                       note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/6m311q67b</url>
-	              </location>
-	              <relatedItem type="otherFormat">
-	                 <identifier type="local">(DLC)   46038485</identifier>
-	                 <identifier type="local">(OCoLC)3377122</identifier>
-	              </relatedItem>
-	              <identifier type="oclc">760249358</identifier>
-	              <recordInfo>
-	                 <descriptionStandard>aacr</descriptionStandard>
-	                 <recordContentSource authority="marcorg">OCLCE</recordContentSource>
-	                 <recordCreationDate encoding="marc">111109</recordCreationDate>
-	                 <recordChangeDate encoding="iso8601">20141212061012.0</recordChangeDate>
-	                 <recordIdentifier source="OCoLC">ocn760249358</recordIdentifier>
-	                 <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaav</recordIdentifier>       
-	                 <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	  <language>
+	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	  </language>
+	  <physicalDescription>
+	    <form authority="gmd">electronic resource</form>
+	    <form authority="marccategory">electronic resource</form>
+	    <form authority="marcsmd">remote</form>
+	    <extent>1 online resource (4 no.)</extent>
+	  </physicalDescription>
+	  <note type="date/sequential designation">v. 1, no. 1-4; Feb.-Dec. 1914.</note>
+	  <note>"A quarterly publication of the poems of Rupert Brooke, John Drinkwater, Wilfrid Wilson Gibson, Lascelles Abercrombie."</note>
+	  <subject authority="fast">
+	    <temporal>1900 - 1999</temporal>
+	  </subject>
+	  <subject authority="lcsh">
+	    <topic>English poetry</topic>
+	    <temporal>20th century</temporal>
+	    <genre>Periodicals</genre>
+	  </subject>
+	  <subject authority="fast">
+	    <topic>English poetry</topic>
+	  </subject>
+	  <classification authority="lcc">PR500 .N47</classification>
+	  <classification authority="ddc" edition="21">821.91208005</classification>
+	  <classification authority="bcl">18.05</classification>
+	  <location>
+	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/6m311q67b</url>
+	  </location>
+	  <relatedItem type="otherFormat">
+	    <identifier type="local">(DLC)   46038485</identifier>
+	    <identifier type="local">(OCoLC)3377122</identifier>
+	  </relatedItem>
+	  <identifier type="oclc">760249358</identifier>
+	  <recordInfo>
+	    <descriptionStandard>aacr</descriptionStandard>
+	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	    <recordCreationDate encoding="marc">111109</recordCreationDate>
+	    <recordChangeDate encoding="iso8601">20141212061012.0</recordChangeDate>
+	    <recordIdentifier source="OCoLC">ocn760249358</recordIdentifier>
+	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaav</recordIdentifier>       
+	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
 	    (Revision 1.70)</recordOrigin>
-	                 <languageOfCataloging>
-                     <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	                 </languageOfCataloging>
-	              </recordInfo>
-	           </mods>
-         </xmlData>
-      </mdWrap>
+	    <languageOfCataloging>
+              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	    </languageOfCataloging>
+	  </recordInfo>
+	</mods>
+      </xmlData>
+    </mdWrap>
   </dmdSec>
 
 
   <dmdSec ID="dmd2">
-      <mdRef LOCTYPE="URN"
-             MDTYPE="MODS"
-             MIMETYPE="application/xml"
-             xlink:href="urn:PUL:bluemountain:dmd:bmtnaav"/>
+    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnaav"/>
   </dmdSec>
   <fileSec>
-      <fileGrp/>
+    <fileGrp/>
   </fileSec>
   <structMap>
-      <div/>
+    <div/>
   </structMap>
 </mets>

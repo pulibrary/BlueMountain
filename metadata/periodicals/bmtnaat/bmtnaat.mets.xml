@@ -1,160 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-      TYPE="Periodical"
-      OBJID="urn:PUL:bluemountain:bmtnaat">
-	  <metsHdr>
-      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
-                        TYPE="ark"
-                        ID="ark:/88435/ft848t27c"/>
-		    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-			      <name>Princeton University Library, Digital Initiatives</name>
-		    </agent>
-		    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaat</metsDocumentID>
-	  </metsHdr>
-	  <dmdSec ID="dmd0">
-		    <mdWrap MDTYPE="DC">
-			      <xmlData>
-				        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                     xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaat">
+	<metsHdr>
+		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
+			<name>Princeton University Library, Digital Initiatives</name>
+		</agent>
+		<metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaat</metsDocumentID>
+	</metsHdr>
+	<dmdSec ID="dmd0">
+		<mdWrap MDTYPE="DC">
+			<xmlData>
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-					          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaat">
+					<rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaat">
 
-						            <dc:title>The Glebe</dc:title>
+						<dc:title>The Glebe</dc:title>
 
-					          </rdf:Description>
-				        </rdf:RDF>
-			      </xmlData>
-		    </mdWrap>
-	  </dmdSec>
+					</rdf:Description>
+				</rdf:RDF>
+			</xmlData>
+		</mdWrap>
+	</dmdSec>
 
-	  <dmdSec ID="dmd1">
-		    <mdWrap MDTYPE="MODS">
-			      <xmlData>
-				        <mods xmlns="http://www.loc.gov/mods/v3"
-                  xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
-               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/ft848t27c</mods:identifier>
-					          <identifier type="bmtn">urn:PUL:bluemountain:bmtnaat</identifier>
-					          <titleInfo>
-						            <nonSort>The </nonSort>
-						            <title>Glebe</title>
-					          </titleInfo>
-					          <name type="personal">
-	                 <namePart>Kreymborg, Alfred</namePart>
-	                 <namePart type="date">1883-1966</namePart>
-	              </name>
-					          <typeOfResource>text</typeOfResource>
-					          <genre authority="bmtn">Periodicals-Title</genre>
-					          <genre authority="marcgt">periodical</genre>
-					          <genre authority="fast">Periodicals.</genre>
-					          <originInfo>
-						            <place>
-							              <placeTerm type="code" authority="marccountry">nyu</placeTerm>
-						            </place>
-						            <place>
-							              <placeTerm type="text">Ridgefield, N.J</placeTerm>
-						            </place>
-						            <publisher>The Glebe</publisher>
-						            <dateIssued encoding="marc" point="start">1913</dateIssued>
-						            <dateIssued encoding="marc" point="end">1914</dateIssued>
-						            <issuance>serial</issuance>
-						            <frequency>Monthly</frequency>
-					          </originInfo>
-					          <abstract>Published at irregular intervals, The Glebe was a leading voice for
+	<dmdSec ID="dmd1">
+		<mdWrap MDTYPE="MODS">
+			<xmlData>
+				<mods xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+					<identifier type="bmtn">urn:PUL:bluemountain:bmtnaat</identifier>
+					<titleInfo>
+						<nonSort>The </nonSort>
+						<title>Glebe</title>
+					</titleInfo>
+					<name type="personal">
+	    <namePart>Kreymborg, Alfred</namePart>
+	    <namePart type="date">1883-1966</namePart>
+	  </name>
+					<typeOfResource>text</typeOfResource>
+					<genre authority="bmtn">Periodicals-Title</genre>
+					<genre authority="marcgt">periodical</genre>
+					<genre authority="fast">Periodicals.</genre>
+					<originInfo>
+						<place>
+							<placeTerm type="code" authority="marccountry">nyu</placeTerm>
+						</place>
+						<place>
+							<placeTerm type="text">Ridgefield, N.J</placeTerm>
+						</place>
+						<publisher>The Glebe</publisher>
+						<dateIssued encoding="marc" point="start">1913</dateIssued>
+						<dateIssued encoding="marc" point="end">1914</dateIssued>
+						<issuance>serial</issuance>
+						<frequency>Monthly</frequency>
+					</originInfo>
+					<abstract>Published at irregular intervals, The Glebe was a leading voice for
 						poetic modernism near New York, affiliated first with Imagism and later with
 						the more successful magazine Others, also edited by Alfred Kreymborg.
 						Selected Contributors: Alfred Kreymborg, William Carlos Williams, Ezra
 						Pound, James Joyce, Marianne Moore, Richard Aldington, Leonid Andreyev,
 						Frank Wedekind </abstract>
-					          <language>
-						            <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-					          </language>
-					          <physicalDescription>
-						            <form authority="gmd">electronic resource</form>
-						            <reformattingQuality>access</reformattingQuality>
-						            <form authority="marccategory">electronic resource</form>
-						            <form authority="marcsmd">remote</form>
-						            <extent>1 online resource (2 v.)</extent>
-					          </physicalDescription>
-					          <tableOfContents>1:1. Wolff, Adolf. Songs, sighs and curses. 1913.--1:3. Demuth,
+					<language>
+						<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+					</language>
+					<physicalDescription>
+						<form authority="gmd">electronic resource</form>
+						<reformattingQuality>access</reformattingQuality>
+						<form authority="marccategory">electronic resource</form>
+						<form authority="marcsmd">remote</form>
+						<extent>1 online resource (2 v.)</extent>
+					</physicalDescription>
+					<tableOfContents>1:1. Wolff, Adolf. Songs, sighs and curses. 1913.--1:3. Demuth,
 						Charles, 1883- The azure adder. New York, 1913.--1:5. Des imagistes: an
 						anthology.--2:1. Traubel, Horace. Collects. New York, 1914.--2:2 Cronyn,
 						G.W. Poems. New York, 1914.</tableOfContents>
-					          <note type="date/sequential designation">v. 1-2, no. 4; 1913-1914.</note>
-					          <note>Each issue devoted to separate work.</note>
-					          <note>Editor: Alfred Kreymborg.</note>
-					          <note>mprint varies. Sept. 1913- Ridgefield, N.J. : The Glebe -- Nov. 1913-Oct.
+					<note type="date/sequential designation">v. 1-2, no. 4; 1913-1914.</note>
+					<note>Each issue devoted to separate work.</note>
+					<note>Editor: Alfred Kreymborg.</note>
+					<note>mprint varies. Sept. 1913- Ridgefield, N.J. : The Glebe -- Nov. 1913-Oct.
 						1914, New York : A. and C. Boni.</note>
-					          <subject authority="lcsh">
-						            <topic>American literature</topic>
-						            <temporal>20th century</temporal>
-						            <genre>Periodicals</genre>
-					          </subject>
-					          <subject authority="fast">
-						            <topic>American literature</topic>
-					          </subject>
-					          <classification authority="lcc">PS1 .G542</classification>
-					          <location>
-						            <url displayLabel="electronic resource"
-                       usage="primary display"
-                       note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/g445cf52q</url>
-					          </location>
-					          <relatedItem type="isReferencedBy">
-						            <note>
-							              <name>
-		                      <namePart>Hoffman, F.J. Little magazine,</namePart>
-                     </name>
-						            </note>
-					          </relatedItem>
-					          <relatedItem type="isReferencedBy">
-						            <note>
-							              <name>
-		                      <namePart>Index to American little magazine</namePart>
-                     </name>
-						            </note>
-					          </relatedItem>
-					          <relatedItem type="isReferencedBy">
-						            <note>
-							              <name>
-		                      <namePart>Complete index to English language little magazines</namePart>
-                     </name>
-						            </note>
-					          </relatedItem>
-					          <relatedItem type="otherFormat">
-						            <identifier type="local">(OCoLC)6549705</identifier>
-					          </relatedItem>
-					          <identifier type="oclc">551374617</identifier>
-					          <recordInfo>
-						            <descriptionStandard>aacr</descriptionStandard>
-						            <recordContentSource authority="marcorg">OCLCE</recordContentSource>
-						            <recordCreationDate encoding="marc">100311</recordCreationDate>
-						            <recordChangeDate encoding="iso8601">20141212022133.0</recordChangeDate>
-						            <recordIdentifier source="OCoLC">ocn551374617</recordIdentifier>
-						            <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaat</recordIdentifier>
-						            <recordOrigin>Converted from MARCXML to MODS version 3.4 using
+					<subject authority="lcsh">
+						<topic>American literature</topic>
+						<temporal>20th century</temporal>
+						<genre>Periodicals</genre>
+					</subject>
+					<subject authority="fast">
+						<topic>American literature</topic>
+					</subject>
+					<classification authority="lcc">PS1 .G542</classification>
+					<location>
+						<url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/g445cf52q</url>
+					</location>
+					<relatedItem type="isReferencedBy">
+						<note>
+							<name>
+		<namePart>Hoffman, F.J. Little magazine,</namePart>
+              </name>
+						</note>
+					</relatedItem>
+					<relatedItem type="isReferencedBy">
+						<note>
+							<name>
+		<namePart>Index to American little magazine</namePart>
+              </name>
+						</note>
+					</relatedItem>
+					<relatedItem type="isReferencedBy">
+						<note>
+							<name>
+		<namePart>Complete index to English language little magazines</namePart>
+              </name>
+						</note>
+					</relatedItem>
+					<relatedItem type="otherFormat">
+						<identifier type="local">(OCoLC)6549705</identifier>
+					</relatedItem>
+					<identifier type="oclc">551374617</identifier>
+					<recordInfo>
+						<descriptionStandard>aacr</descriptionStandard>
+						<recordContentSource authority="marcorg">OCLCE</recordContentSource>
+						<recordCreationDate encoding="marc">100311</recordCreationDate>
+						<recordChangeDate encoding="iso8601">20141212022133.0</recordChangeDate>
+						<recordIdentifier source="OCoLC">ocn551374617</recordIdentifier>
+						<recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaat</recordIdentifier>
+						<recordOrigin>Converted from MARCXML to MODS version 3.4 using
 							MARC21slim2MODS3-4.xsl (Revision 1.70)</recordOrigin>
-						            <languageOfCataloging>
-							              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-						            </languageOfCataloging>
-					          </recordInfo>
-				        </mods>
-			      </xmlData>
-		    </mdWrap>
-	  </dmdSec>
+						<languageOfCataloging>
+							<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+						</languageOfCataloging>
+					</recordInfo>
+				</mods>
+			</xmlData>
+		</mdWrap>
+	</dmdSec>
 
 
-	  <dmdSec ID="dmd2">
-		    <mdRef LOCTYPE="URN"
-             MDTYPE="MODS"
-             MIMETYPE="application/xml"
-             xlink:href="urn:PUL:bluemountain:dmd:bmtnaat"/>
-	  </dmdSec>
-	  <fileSec>
-		    <fileGrp/>
-	  </fileSec>
-	  <structMap>
-		    <div/>
-	  </structMap>
+	<dmdSec ID="dmd2">
+		<mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnaat"/>
+	</dmdSec>
+	<fileSec>
+		<fileGrp/>
+	</fileSec>
+	<structMap>
+		<div/>
+	</structMap>
 </mets>
