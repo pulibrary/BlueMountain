@@ -16,7 +16,7 @@
          <xmlData>
             <mods xmlns="http://www.loc.gov/mods/v3">
                <recordInfo>
-                  <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaz_1916-06_01</recordIdentifier>
+                  <recordIdentifier>urn../04_01/:PUL:bluemountain:dmd:bmtnaaz_1916-06_01</recordIdentifier>
                </recordInfo>
                <identifier type="bmtn">urn:PUL:bluemountain:bmtnaaz_1916-06_01</identifier>
                <typeOfResource>text</typeOfResource>
@@ -24,19 +24,19 @@
                <titleInfo>
                   <title>SIC</title>
                </titleInfo>
-               <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
+               <name authority="viaf" valueURI="http://viaf.org/viaf/14765320">
                   <displayForm>Pierre Albert-Birot</displayForm>
                   <role>
                      <roleTerm type="code" authority="marcelator">edt</roleTerm>
-                  </role> 
+                  </role>
                </name>
-               <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
-                  <displayForm>Pierre Albert-Birot</displayForm> 
+               <name authority="viaf" valueURI="http://viaf.org/viaf/14765320">
+                  <displayForm>Pierre Albert-Birot</displayForm>
                   <role>
                      <roleTerm type="code" authority="marcelator">pbl</roleTerm>
-                  </role> 
+                  </role>
                </name>
-               <name type="corporate">
+               <name>
                   <displayForm>Imprimerie Rirachovsky</displayForm>
                   <role>
                      <roleTerm type="code" authority="marcelator">prt</roleTerm>
@@ -65,8 +65,8 @@
                   </place>
                </originInfo>
                <location>
-                  <physicalLocation type="text">Princeton University. Department of Rare Books and Special Collections</physicalLocation>
-                  <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+                  <physicalLocation>Princeton University. Department of Rare Books and Special Collections</physicalLocation>
+                  <physicalLocation authority="marcorg">NjP</physicalLocation>
                   <holdingSimple>
                      <copyInformation>
                         <subLocation>ex</subLocation>
@@ -80,7 +80,7 @@
                      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaz</recordIdentifier>
                   </recordInfo>
                </relatedItem>
-               <relatedItem type="constituent" ID="c001">
+               <relatedItem ID="c001">
                   <titleInfo lang="fre">
                      <mods:title>Untitled Image</mods:title>
                   </titleInfo>
@@ -92,7 +92,7 @@
                   </part>
                   <genre type="CCS">Illustration</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c002">
+               <relatedItem ID="c002">
                   <titleInfo lang="fre">
                      <nonSort>LA</nonSort>
                      <title>LOI</title>
@@ -108,7 +108,7 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c003">
+               <relatedItem ID="c003">
                   <titleInfo lang="fre">
                      <title>RÉFLEXIONS.</title>
                   </titleInfo>
@@ -138,7 +138,7 @@
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>-->
                </relatedItem>
-               <relatedItem type="constituent" ID="c005">
+               <relatedItem ID="c005">
                   <titleInfo lang="fre">
                      <nonSort>LE</nonSort>
                      <title>NUNISME</title>
@@ -154,9 +154,13 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c006">
+               <relatedItem ID="c006">
                   <titleInfo lang="fre">
                      <title>POÈME</title>
+                  </titleInfo>
+                  <titleInfo lang="fre">
+                     <nonSort>UN</nonSort>
+                     <title>HOMME QUI PENSE</title>
                   </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
@@ -168,33 +172,18 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c007">
-                     <titleInfo lang="fre">
-                        <nonSort>UN</nonSort>
-                        <title>HOMME QUI PENSE</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>4</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
-               <relatedItem type="constituent" ID="c008">
+               <relatedItem ID="c008">
                   <titleInfo lang="fre">
                      <title>EXPRESSION MUSICALE N° 5</title>
                   </titleInfo>
-                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/12450164">
-							              <displayForm>Germaine ALBERT-BIROT</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
+                  <name authority="viaf" valueURI="http://viaf.org/viaf/12450164">
+                     <displayForm>Germaine ALBERT-BIROT</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -205,7 +194,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c009">
+                  <relatedItem ID="c009">
                      <titleInfo lang="fre">
                         <title>Untitled Image</title>
                      </titleInfo>
@@ -218,9 +207,10 @@
                      <genre type="CCS">Music</genre>
                   </relatedItem>
                </relatedItem>
-               <relatedItem type="constituent" ID="c010">
+               <relatedItem ID="c010">
                   <titleInfo lang="fre">
                      <title>DIALOGUE NUNIQUE Z et A</title>
+                     <subTitle>N'IMPORTE où...</subTitle>
                   </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
@@ -233,24 +223,8 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c011">
-                     <titleInfo lang="fre">
-                        <title>N'IMPORTE où...</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>6</start>
-                           <end>7</end>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
-               <relatedItem type="constituent" ID="c012">
+               <relatedItem ID="c012">
                   <titleInfo lang="fre">
                      <title>SOYEZ BONS.</title>
                   </titleInfo>
@@ -266,7 +240,7 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c013">
+               <relatedItem ID="c013">
                   <titleInfo lang="fre">
                      <title>ETC...</title>
                   </titleInfo>
@@ -281,22 +255,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c014">
-                     <titleInfo lang="fre">
-                        <title>Untitled Text</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>7</start>
-                           <end>8</end>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
             </mods>
          </xmlData>
@@ -1175,15 +1134,13 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006" LABEL="POÈME">
+               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006" LABEL="POÈME - UN HOMME QUI PENSE">
                   <div ID="L.1.1.2.5.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.5.2" TYPE="TextContent" ORDER="1" DMDID="c007"
-                     LABEL="UN HOMME QUI PENSE">
-                     <div ID="L.1.1.2.5.2.1" TYPE="Head">
+                  <div ID="L.1.1.2.5.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
                         </fptr>
@@ -1199,7 +1156,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c008"
                   LABEL="EXPRESSION MUSICALE N° 5">
@@ -1239,8 +1196,6 @@
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.7.2" TYPE="TextContent" ORDER="1" DMDID="c011"
-                     LABEL="N'IMPORTE où...">
                      <div ID="L.1.1.2.7.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00002"/>
@@ -1264,7 +1219,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c012" LABEL="SOYEZ BONS.">
                   <div ID="L.1.1.2.8.1" TYPE="Head">
@@ -1293,8 +1248,6 @@
                         <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00005"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.9.2" TYPE="TextContent" ORDER="1" DMDID="c014"
-                     LABEL="MUSIQUE. Considérations brèves. — Sous le prétexte que les Allemands — musicalement— font grand —">
                      <div ID="L.1.1.2.9.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00007"/>
@@ -1353,7 +1306,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
             </div>
          </div>
