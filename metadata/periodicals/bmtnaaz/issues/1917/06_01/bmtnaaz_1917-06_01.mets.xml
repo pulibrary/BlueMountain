@@ -149,21 +149,7 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c004">
-                  <titleInfo lang="fre">
-                     <title>Untitled Text</title>
-                  </titleInfo>
-                  <typeOfResource>text</typeOfResource>
-                  <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
-                  </language>
-                  <part>
-                     <extent unit="page">
-                        <start>4</start>
-                     </extent>
-                  </part>
-                  <genre type="CCS">TextContent</genre>
-               </relatedItem>
+              
                <relatedItem type="constituent" ID="c005">
                   <titleInfo lang="fre">
                      <title>Six Poèmes</title>
@@ -349,7 +335,16 @@
                <relatedItem type="constituent" ID="c013">
                   <titleInfo lang="fre">
                      <title>DIALOGUE NUNIQUE Z et A</title>
+                     <subTitle>LA PÊCHE</subTitle>
                   </titleInfo>
+                  <name type="personal"
+                     authority="viaf"
+                     valueURI="http://viaf.org/viaf/14765320">
+                     <displayForm>P. A. B.</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -360,34 +355,12 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c014">
-                     <titleInfo lang="fre">
-                        <nonSort>A</nonSort>
-                        <title>LA PÊCHE</title>
-                     </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/14765320">
-								                <displayForm>P. A. B.</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>7</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
                <relatedItem type="constituent" ID="c015">
                   <titleInfo lang="fre">
                      <title>E T C...</title>
+                     <subTitle>En Italie</subTitle>
                   </titleInfo>
                   <typeOfResource>text</typeOfResource>
                   <language>
@@ -399,21 +372,6 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c016">
-                     <titleInfo lang="fre">
-                        <title>En Italie</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>8</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
             </mods>
          </xmlData>
@@ -1389,17 +1347,7 @@
                               </fptr>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.4"
-                    TYPE="TextContent"
-                    ORDER="4"
-                    DMDID="c004"
-                    LABEL="AVIS aux personnes qui n'ont pu se procurer de programme lors de notre manifestation du">
-                  <div ID="L.1.1.2.4.1" TYPE="Copy">
-                     <div ID="L.1.1.2.4.1.1" TYPE="BodyContent">
-                        <div ID="L.1.1.2.4.1.1.1" TYPE="Paragraph" ORDER="1">
+                        <div ID="L.1.1.2.4.1.1.1" TYPE="Paragraph" ORDER="2">
                            <div ID="L.1.1.2.4.1.1.1.1" TYPE="Text">
                               <fptr>
                                  <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
@@ -1563,17 +1511,12 @@
                     TYPE="TextContent"
                     ORDER="7"
                     DMDID="c013"
-                    LABEL="DIALOGUE NUNIQUE Z et A">
+                    LABEL="DIALOGUE NUNIQUE Z et A - A LA PÊCHE">
                   <div ID="L.1.1.2.7.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.7.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c014"
-                       LABEL="A LA PÊCHE">
                      <div ID="L.1.1.2.7.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00002"/>
@@ -1595,7 +1538,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.8"
                     TYPE="TextContent"
@@ -1607,11 +1550,6 @@
                         <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.8.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c016"
-                       LABEL="En Italie">
                      <div ID="L.1.1.2.8.2.1" TYPE="Copy">
                         <div ID="L.1.1.2.8.2.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.8.2.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -1630,7 +1568,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
             </div>
          </div>
