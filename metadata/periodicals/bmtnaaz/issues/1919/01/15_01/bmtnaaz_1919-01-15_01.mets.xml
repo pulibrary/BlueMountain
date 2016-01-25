@@ -363,14 +363,12 @@
                   <titleInfo lang="fre">
                      <title>untitled text</title>
                   </titleInfo>
-                  <name type="personal"
-                        authority="viaf"
-                        valueURI="http://viaf.org/viaf/41859525">
-	                    <displayForm>J. V. FOIX</displayForm>
-	                    <role>
-		                      <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-	                    </role>
-	                 </name>
+                  <name authority="viaf" valueURI="http://viaf.org/viaf/41859525">
+                     <displayForm>J. V. FOIX</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -619,6 +617,14 @@
                   <titleInfo lang="fre">
                      <title>POÈME</title>
                   </titleInfo>
+                  <name type="personal"
+                     authority="viaf"
+                     valueURI="http://viaf.org/viaf/36923084">
+                     <displayForm>Francis PICABIA</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -629,29 +635,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c025">
-                     <titleInfo lang="fre">
-                        <title>Guillaume Apollinaire</title>
-                     </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/36923084">
-		                      <displayForm>Francis PICABIA</displayForm>
-		                      <role>
-		                         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-		                      </role>
-	                    </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>299</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
                <relatedItem type="constituent" ID="c026">
                   <titleInfo lang="fre">
@@ -5090,11 +5074,7 @@
                         <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00004"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.23.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c025"
-                       LABEL="Guillaume Apollinaire">
+                 
                      <div ID="L.1.1.2.23.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00006"/>
@@ -5118,7 +5098,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.24"
                     TYPE="TextContent"

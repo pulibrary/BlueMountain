@@ -364,6 +364,15 @@
                   <titleInfo lang="fre">
                      <title>POÈME</title>
                   </titleInfo>
+                  <titleInfo lang="fre">
+                     <title>ENTERREMENT</title>
+                  </titleInfo>
+                  <name type="personal">
+                     <displayForm>LUCIEN MARGOTON</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -374,27 +383,6 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c016">
-                     <titleInfo lang="fre">
-                        <title>ENTERREMENT</title>
-                     </titleInfo>
-                     <name type="personal">
-								                <displayForm>LUCIEN MARGOTON</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>8</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
             </mods>
          </xmlData>
@@ -1592,17 +1580,12 @@
                     TYPE="TextContent"
                     ORDER="15"
                     DMDID="c015"
-                    LABEL="POÈME">
+                    LABEL="POÈME - ENTERREMENT">
                   <div ID="L.1.1.2.15.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.15.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c016"
-                       LABEL="ENTERREMENT">
                      <div ID="L.1.1.2.15.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00002"/>
@@ -1624,7 +1607,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
             </div>
          </div>

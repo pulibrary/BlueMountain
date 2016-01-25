@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS/"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:mix="http://www.loc.gov/mix/"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:local="http://diglib.princeton.edu"
-      xmlns:mods="http://www.loc.gov/mods/v3"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
-      TYPE="Magazine"
-      OBJID="urn:PUL:periodicals:bluemountain:bmtnaaz_1918-01_01">
+<mets xmlns="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3"
+   xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
+   TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaaz_1918-01_01">
    <metsHdr>
-      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/"
-                        TYPE="ark"
-                        ID="ark:/88435/8g84mp93r"/>
+      <mets:altRecordID xmlns:mets="http://www.loc.gov/METS/" TYPE="ark" ID="ark:/88435/8g84mp93r"/>
       <agent ROLE="CREATOR" TYPE="ORGANIZATION">
          <name>Princeton University Library, Digital Initiatives</name>
          <note>docWORKS-ID: 409060</note>
@@ -32,17 +26,13 @@
                <titleInfo>
                   <title>SIC</title>
                </titleInfo>
-               <name type="personal"
-                     authority="viaf"
-                     valueURI="http://viaf.org/viaf/14765320">
+               <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
                   <displayForm>Pierre Albert-Birot</displayForm>
                   <role>
                      <roleTerm type="code" authority="marcelator">edt</roleTerm>
                   </role> 
                </name>
-               <name type="personal"
-                     authority="viaf"
-                     valueURI="http://viaf.org/viaf/14765320">
+               <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
                   <displayForm>Pierre Albert-Birot</displayForm> 
                   <role>
                      <roleTerm type="code" authority="marcelator">pbl</roleTerm>
@@ -87,9 +77,8 @@
                      </copyInformation>
                   </holdingSimple>
                </location>
-               <relatedItem type="host"
-                            xlink:type="simple"
-                            xlink:href="urn:PUL:bluemountain:bmtnaaz">
+               <relatedItem type="host" xlink:type="simple"
+                  xlink:href="urn:PUL:bluemountain:bmtnaaz">
                   <recordInfo>
                      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaaz</recordIdentifier>
                   </recordInfo>
@@ -136,7 +125,14 @@
                <relatedItem type="constituent" ID="c004">
                   <titleInfo lang="fre">
                      <title>AUX JEUNES POÈTES</title>
+                     <subTitle>Poème genre didactique</subTitle>
                   </titleInfo>
+                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
+                     <displayForm>P. A. -B</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -147,34 +143,20 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c005">
-                     <titleInfo lang="fre">
-                        <title>Poème genre didactique</title>
-                     </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/14765320">
-								                <displayForm>P. A. -B</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>2</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
                <relatedItem type="constituent" ID="c006">
                   <titleInfo lang="fre">
                      <title>POÈME</title>
                   </titleInfo>
+                  <titleInfo lang="fre">
+                     <title>CHOCS</title>
+                  </titleInfo>
+                  <name type="personal">
+                     <displayForm>Roger L. DUPRET</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -185,27 +167,6 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c007">
-                     <titleInfo lang="fre">
-                        <title>CHOCS</title>
-                     </titleInfo>
-                     <name type="personal">
-								                <displayForm>Roger L. DUPRET</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>3</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
                <relatedItem type="constituent" ID="c008">
                   <titleInfo lang="fre">
@@ -247,6 +208,15 @@
                   <titleInfo lang="fre">
                      <title>POÈME CINÉMATOGRAPHIQUE</title>
                   </titleInfo>
+                  <titleInfo lang="fre">
+                     <title>INDIFFÉRENCE</title>
+                  </titleInfo>
+                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/109453511">
+                     <displayForm>Philippe SOUPAULT</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -257,29 +227,6 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c011">
-                     <titleInfo lang="fre">
-                        <title>INDIFFÉRENCE</title>
-                     </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/109453511">
-								                <displayForm>Philippe SOUPAULT</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>4</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
                </relatedItem>
                <relatedItem type="constituent" ID="c012">
                   <titleInfo lang="fre">
@@ -311,47 +258,36 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c014">
+               <relatedItem type="constituent" ID="c015">
                   <titleInfo lang="fre">
                      <title>Orchestre de Bois</title>
+                     <subTitle>III</subTitle>
                   </titleInfo>
-                  <name type="personal"
-                        authority="viaf"
-                        valueURI="http://viaf.org/viaf/12450164">
-							              <displayForm>GERMAINE ALBERT-BIROT</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
-                  <typeOfResource>text</typeOfResource>
-                  <language>
-                     <languageTerm authority="iso639-2b">fre</languageTerm>
-                  </language>
+                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/12450164">
+                        <displayForm>GERMAINE ALBERT-BIROT</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                  <note type="caption"> 26 décembre 1917 </note>
+                  <typeOfResource>still image</typeOfResource>
                   <part>
                      <extent unit="page">
                         <start>5</start>
                      </extent>
                   </part>
-                  <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c015">
-                     <titleInfo lang="fre">
-                        <title>Orchestre de Bois</title>
-                        <subTitle>III</subTitle>
-                     </titleInfo>
-                     <note type="caption"> 26 décembre 1917 </note>
-                     <typeOfResource>still image</typeOfResource>
-                     <part>
-                        <extent unit="page">
-                           <start>5</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">Music</genre>
-                  </relatedItem>
+                  <genre type="CCS">Music</genre>
                </relatedItem>
                <relatedItem type="constituent" ID="c016">
                   <titleInfo lang="fre">
                      <title>DEUX POÈMES ET UN CONTE</title>
                   </titleInfo>
+                  <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
+                     <displayForm>Pierre ALBERT-BIROT</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -366,6 +302,33 @@
                      <titleInfo lang="fre">
                         <title>PERSPECTIVE</title>
                      </titleInfo>
+                     <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
+                        <displayForm>Pierre ALBERT-BIROT</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>text</typeOfResource>
+                     <language>
+                        <languageTerm authority="iso639-2b">fre</languageTerm>
+                     </language>
+                     <part>
+                        <extent unit="page">
+                           <start>6</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">TextContent</genre>
+                  </relatedItem>
+                  <relatedItem type="constituent" ID="c017b">
+                     <titleInfo lang="fre">
+                        <title>A L'ENVERS</title>
+                     </titleInfo>
+                     <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
+                        <displayForm>Pierre ALBERT-BIROT</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
                      <typeOfResource>text</typeOfResource>
                      <language>
                         <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -381,9 +344,7 @@
                      <titleInfo lang="fre">
                         <title>CONTE SENTIMENTAL</title>
                      </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/14765320">
+                     <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
 								                <displayForm>Pierre ALBERT-BIROT</displayForm>
 								                <role>
 									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -435,9 +396,7 @@
                      <titleInfo lang="fre">
                         <title>Untitled text</title>
                      </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/14765320">
+                     <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14765320">
 								                <displayForm>P. A. B</displayForm>
 								                <role>
 									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -1063,194 +1022,103 @@
    </amdSec>
    <fileSec>
       <fileGrp ID="IMGGRP" USE="Images">
-         <file ID="IMG00001"
-               ADMID="techmd1"
-               GROUPID="page1"
-               CREATED="2014-05-06T09:23:23"
-               MIMETYPE="image/jp2"
-               SEQ="1"
-               CHECKSUM="053c9371adc3fab92cfe135fbdf656a9b7c32b79"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="4328199">
+         <file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2014-05-06T09:23:23"
+            MIMETYPE="image/jp2" SEQ="1" CHECKSUM="053c9371adc3fab92cfe135fbdf656a9b7c32b79"
+            CHECKSUMTYPE="SHA-1" SIZE="4328199">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0001.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0001.jp2"
+            />
          </file>
-         <file ID="IMG00002"
-               ADMID="techmd2"
-               GROUPID="page2"
-               CREATED="2014-05-06T09:23:41"
-               MIMETYPE="image/jp2"
-               SEQ="2"
-               CHECKSUM="637482dcc325b82a06b64b69e66e8eb97c1b98da"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="2646106">
+         <file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2014-05-06T09:23:41"
+            MIMETYPE="image/jp2" SEQ="2" CHECKSUM="637482dcc325b82a06b64b69e66e8eb97c1b98da"
+            CHECKSUMTYPE="SHA-1" SIZE="2646106">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0002.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0002.jp2"
+            />
          </file>
-         <file ID="IMG00003"
-               ADMID="techmd3"
-               GROUPID="page3"
-               CREATED="2014-05-06T09:23:53"
-               MIMETYPE="image/jp2"
-               SEQ="3"
-               CHECKSUM="df0fa01a6a0dc05d4bd785aa5514b1f1412a0348"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="3533098">
+         <file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2014-05-06T09:23:53"
+            MIMETYPE="image/jp2" SEQ="3" CHECKSUM="df0fa01a6a0dc05d4bd785aa5514b1f1412a0348"
+            CHECKSUMTYPE="SHA-1" SIZE="3533098">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0003.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0003.jp2"
+            />
          </file>
-         <file ID="IMG00004"
-               ADMID="techmd4"
-               GROUPID="page4"
-               CREATED="2014-05-06T09:24:09"
-               MIMETYPE="image/jp2"
-               SEQ="4"
-               CHECKSUM="9b6fad45f5e9bea7c628c2275fd5dec46d0275a6"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="3533076">
+         <file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2014-05-06T09:24:09"
+            MIMETYPE="image/jp2" SEQ="4" CHECKSUM="9b6fad45f5e9bea7c628c2275fd5dec46d0275a6"
+            CHECKSUMTYPE="SHA-1" SIZE="3533076">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0004.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0004.jp2"
+            />
          </file>
-         <file ID="IMG00005"
-               ADMID="techmd5"
-               GROUPID="page5"
-               CREATED="2014-05-06T09:24:26"
-               MIMETYPE="image/jp2"
-               SEQ="5"
-               CHECKSUM="ea91e1484fa7cdabe1f6172c7b83f060d94b2676"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="3533109">
+         <file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2014-05-06T09:24:26"
+            MIMETYPE="image/jp2" SEQ="5" CHECKSUM="ea91e1484fa7cdabe1f6172c7b83f060d94b2676"
+            CHECKSUMTYPE="SHA-1" SIZE="3533109">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0005.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0005.jp2"
+            />
          </file>
-         <file ID="IMG00006"
-               ADMID="techmd6"
-               GROUPID="page6"
-               CREATED="2014-05-06T09:24:44"
-               MIMETYPE="image/jp2"
-               SEQ="6"
-               CHECKSUM="ad640846ca78c99f693322a1cc8cd5732023848b"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="3533099">
+         <file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2014-05-06T09:24:44"
+            MIMETYPE="image/jp2" SEQ="6" CHECKSUM="ad640846ca78c99f693322a1cc8cd5732023848b"
+            CHECKSUMTYPE="SHA-1" SIZE="3533099">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0006.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0006.jp2"
+            />
          </file>
-         <file ID="IMG00007"
-               ADMID="techmd7"
-               GROUPID="page7"
-               CREATED="2014-05-06T09:24:59"
-               MIMETYPE="image/jp2"
-               SEQ="7"
-               CHECKSUM="21f02233a934dcf30e5a8a1156b0921ee33c60cd"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="3533074">
+         <file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2014-05-06T09:24:59"
+            MIMETYPE="image/jp2" SEQ="7" CHECKSUM="21f02233a934dcf30e5a8a1156b0921ee33c60cd"
+            CHECKSUMTYPE="SHA-1" SIZE="3533074">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0007.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0007.jp2"
+            />
          </file>
-         <file ID="IMG00008"
-               ADMID="techmd8"
-               GROUPID="page8"
-               CREATED="2014-05-06T09:25:12"
-               MIMETYPE="image/jp2"
-               SEQ="8"
-               CHECKSUM="ed0e27fa8cbfaa188c51039058379fbe6cab83c5"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="3533051">
+         <file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2014-05-06T09:25:12"
+            MIMETYPE="image/jp2" SEQ="8" CHECKSUM="ed0e27fa8cbfaa188c51039058379fbe6cab83c5"
+            CHECKSUMTYPE="SHA-1" SIZE="3533051">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0008.jp2"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/delivery/bmtnaaz_1918-01_01_0008.jp2"
+            />
          </file>
       </fileGrp>
       <fileGrp ID="ALTOGRP" USE="OCR">
-         <file ID="ALTO00001"
-               GROUPID="page1"
-               CREATED="2014-05-06T09:25:22"
-               MIMETYPE="text/xml"
-               CHECKSUM="469ada08bea6f058cded3ff9ce6f5e19e654d608"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="24448">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0001.alto.xml"/>
+         <file ID="ALTO00001" GROUPID="page1" CREATED="2014-05-06T09:25:22" MIMETYPE="text/xml"
+            CHECKSUM="469ada08bea6f058cded3ff9ce6f5e19e654d608" CHECKSUMTYPE="SHA-1" SIZE="24448">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0001.alto.xml"/>
          </file>
-         <file ID="ALTO00002"
-               GROUPID="page2"
-               CREATED="2014-05-06T09:25:23"
-               MIMETYPE="text/xml"
-               CHECKSUM="40c56c8024363c8eb81f2a7b1fb5497c0427cdda"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="36192">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0002.alto.xml"/>
+         <file ID="ALTO00002" GROUPID="page2" CREATED="2014-05-06T09:25:23" MIMETYPE="text/xml"
+            CHECKSUM="40c56c8024363c8eb81f2a7b1fb5497c0427cdda" CHECKSUMTYPE="SHA-1" SIZE="36192">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0002.alto.xml"/>
          </file>
-         <file ID="ALTO00003"
-               GROUPID="page3"
-               CREATED="2014-05-06T09:25:23"
-               MIMETYPE="text/xml"
-               CHECKSUM="accfb49bbab56fd46a2037f3ce083e51fe26f515"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="67282">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0003.alto.xml"/>
+         <file ID="ALTO00003" GROUPID="page3" CREATED="2014-05-06T09:25:23" MIMETYPE="text/xml"
+            CHECKSUM="accfb49bbab56fd46a2037f3ce083e51fe26f515" CHECKSUMTYPE="SHA-1" SIZE="67282">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0003.alto.xml"/>
          </file>
-         <file ID="ALTO00004"
-               GROUPID="page4"
-               CREATED="2014-05-06T09:25:23"
-               MIMETYPE="text/xml"
-               CHECKSUM="6c54de4bd39331864c95d86e40fedca3b9473ed7"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="62851">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0004.alto.xml"/>
+         <file ID="ALTO00004" GROUPID="page4" CREATED="2014-05-06T09:25:23" MIMETYPE="text/xml"
+            CHECKSUM="6c54de4bd39331864c95d86e40fedca3b9473ed7" CHECKSUMTYPE="SHA-1" SIZE="62851">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0004.alto.xml"/>
          </file>
-         <file ID="ALTO00005"
-               GROUPID="page5"
-               CREATED="2014-05-06T09:25:23"
-               MIMETYPE="text/xml"
-               CHECKSUM="5b1744cfe404557f9907873da21a2ccc1d5e7258"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="25227">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0005.alto.xml"/>
+         <file ID="ALTO00005" GROUPID="page5" CREATED="2014-05-06T09:25:23" MIMETYPE="text/xml"
+            CHECKSUM="5b1744cfe404557f9907873da21a2ccc1d5e7258" CHECKSUMTYPE="SHA-1" SIZE="25227">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0005.alto.xml"/>
          </file>
-         <file ID="ALTO00006"
-               GROUPID="page6"
-               CREATED="2014-05-06T09:25:24"
-               MIMETYPE="text/xml"
-               CHECKSUM="c034ccc36b4c417644407ecd5f3797cffe5460e8"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="23435">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0006.alto.xml"/>
+         <file ID="ALTO00006" GROUPID="page6" CREATED="2014-05-06T09:25:24" MIMETYPE="text/xml"
+            CHECKSUM="c034ccc36b4c417644407ecd5f3797cffe5460e8" CHECKSUMTYPE="SHA-1" SIZE="23435">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0006.alto.xml"/>
          </file>
-         <file ID="ALTO00007"
-               GROUPID="page7"
-               CREATED="2014-05-06T09:25:24"
-               MIMETYPE="text/xml"
-               CHECKSUM="d18707e1779f35a6ccad93f8d9bb6a85ac1607ce"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="94917">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0007.alto.xml"/>
+         <file ID="ALTO00007" GROUPID="page7" CREATED="2014-05-06T09:25:24" MIMETYPE="text/xml"
+            CHECKSUM="d18707e1779f35a6ccad93f8d9bb6a85ac1607ce" CHECKSUMTYPE="SHA-1" SIZE="94917">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0007.alto.xml"/>
          </file>
-         <file ID="ALTO00008"
-               GROUPID="page8"
-               CREATED="2014-05-06T09:25:24"
-               MIMETYPE="text/xml"
-               CHECKSUM="1261b12eecf7e4c7bd16b7b9a6854d2f2e5fff98"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="117439">
-            <FLocat LOCTYPE="URL"
-                    xlink:href="file://./alto/bmtnaaz_1918-01_01_0008.alto.xml"/>
+         <file ID="ALTO00008" GROUPID="page8" CREATED="2014-05-06T09:25:24" MIMETYPE="text/xml"
+            CHECKSUM="1261b12eecf7e4c7bd16b7b9a6854d2f2e5fff98" CHECKSUMTYPE="SHA-1" SIZE="117439">
+            <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaaz_1918-01_01_0008.alto.xml"/>
          </file>
       </fileGrp>
       <fileGrp ID="PDFGRP" USE="PDF">
-         <file ID="PDF_ISSUELEVEL"
-               CREATED="2014-05-06T09:25:39"
-               MIMETYPE="application/pdf"
-               CHECKSUM="4a21f9cdc853538c3bfa9a7b24d5d8ff81371eba"
-               CHECKSUMTYPE="SHA-1"
-               SIZE="4533318">
+         <file ID="PDF_ISSUELEVEL" CREATED="2014-05-06T09:25:39" MIMETYPE="application/pdf"
+            CHECKSUM="4a21f9cdc853538c3bfa9a7b24d5d8ff81371eba" CHECKSUMTYPE="SHA-1" SIZE="4533318">
             <FLocat LOCTYPE="URL"
-                    xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/bmtnaaz_1918-01_01.pdf"/>
+               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaaz/issues/1918/01_01/bmtnaaz_1918-01_01.pdf"
+            />
          </file>
       </fileGrp>
    </fileSec>
@@ -1368,22 +1236,14 @@
                </div>
             </div>
             <div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-               <div ID="L.1.1.2.1"
-                    TYPE="Illustration"
-                    ORDER="1"
-                    DMDID="c001"
-                    LABEL="Untitled">
+               <div ID="L.1.1.2.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled">
                   <div ID="L.1.1.2.1.1" TYPE="Image">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.2"
-                    TYPE="TextContent"
-                    ORDER="2"
-                    DMDID="c002"
-                    LABEL="DANS CE NUMÉRO.">
+               <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="DANS CE NUMÉRO.">
                   <div ID="L.1.1.2.2.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00004"/>
@@ -1408,101 +1268,75 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.3"
-                    TYPE="Illustration"
-                    ORDER="1"
-                    DMDID="c003"
-                    LABEL="Untitled">
+               <div ID="L.1.1.2.3" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="Untitled">
                   <div ID="L.1.1.2.3.1" TYPE="Image">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00002"/>
                      </fptr>
                   </div>
                </div>
-               <div ID="L.1.1.2.4"
-                    TYPE="TextContent"
-                    ORDER="4"
-                    DMDID="c004"
-                    LABEL="AUX JEUNES POÈTES">
+               <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004"
+                  LABEL="AUX JEUNES POÈTES">
                   <div ID="L.1.1.2.4.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00002"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.4.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c005"
-                       LABEL="Poème genre didactique">
-                     <div ID="L.1.1.2.4.2.1" TYPE="Head">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.2.2" TYPE="Byline">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.2.3" TYPE="Copy">
-                        <div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
-                           <div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
-                              <div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
-                                 <fptr>
-                                    <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
-                                 </fptr>
-                              </div>
+                  <div ID="L.1.1.2.4.2.1" TYPE="Head">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.4.2.2" TYPE="Byline">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00001"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.4.2.3" TYPE="Copy">
+                     <div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
+                        <div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
+                           <div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
+                              <fptr>
+                                 <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00004"/>
+                              </fptr>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.5"
-                    TYPE="TextContent"
-                    ORDER="5"
-                    DMDID="c006"
-                    LABEL="POÈME">
+               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c006" LABEL="POÈME - CHOCS">
                   <div ID="L.1.1.2.5.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.5.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c007"
-                       LABEL="CHOCS">
-                     <div ID="L.1.1.2.5.2.1" TYPE="Head">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00002"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.2.2" TYPE="Byline">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.2.3" TYPE="Copy">
-                        <div ID="L.1.1.2.5.2.3.1" TYPE="BodyContent">
-                           <div ID="L.1.1.2.5.2.3.1.1" TYPE="Paragraph" ORDER="1">
-                              <div ID="L.1.1.2.5.2.3.1.1.1" TYPE="Text">
-                                 <fptr>
-                                    <seq>
-                                       <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
-                                       <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
-                                    </seq>
-                                 </fptr>
-                              </div>
+                  <div ID="L.1.1.2.5.2.1" TYPE="Head">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00002"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.5.2.2" TYPE="Byline">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.5.2.3" TYPE="Copy">
+                     <div ID="L.1.1.2.5.2.3.1" TYPE="BodyContent">
+                        <div ID="L.1.1.2.5.2.3.1.1" TYPE="Paragraph" ORDER="1">
+                           <div ID="L.1.1.2.5.2.3.1.1.1" TYPE="Text">
+                              <fptr>
+                                 <seq>
+                                    <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
+                                    <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
+                                 </seq>
+                              </fptr>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.6"
-                    TYPE="TextContent"
-                    ORDER="6"
-                    DMDID="c008"
-                    LABEL="Dans une note sur le théâtre nunique [SIC, octobre 1916) nous avons donné une place au cinéma et nous avions">
+               <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c008"
+                  LABEL="Dans une note sur le théâtre nunique [SIC, octobre 1916) nous avons donné une place au cinéma et nous avions">
                   <div ID="L.1.1.2.6.1" TYPE="Byline">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
@@ -1520,11 +1354,8 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.7"
-                    TYPE="TextContent"
-                    ORDER="7"
-                    DMDID="c009"
-                    LABEL="Note I sur le Cinéma">
+               <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c009"
+                  LABEL="Note I sur le Cinéma">
                   <div ID="L.1.1.2.7.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00008"/>
@@ -1542,56 +1373,44 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.8"
-                    TYPE="TextContent"
-                    ORDER="8"
-                    DMDID="c010"
-                    LABEL="POÈME CINÉMATOGRAPHIQUE">
+               <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c010"
+                  LABEL="POÈME CINÉMATOGRAPHIQUE - INDIFFÉRENCE">
                   <div ID="L.1.1.2.8.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.8.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c011"
-                       LABEL="INDIFFÉRENCE">
-                     <div ID="L.1.1.2.8.2.1" TYPE="Head">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.8.2.2" TYPE="Byline">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.8.2.3" TYPE="Copy">
-                        <div ID="L.1.1.2.8.2.3.1" TYPE="BodyContent">
-                           <div ID="L.1.1.2.8.2.3.1.1" TYPE="Paragraph" ORDER="1">
-                              <div ID="L.1.1.2.8.2.3.1.1.1" TYPE="Text">
-                                 <fptr>
-                                    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
-                                 </fptr>
-                              </div>
+                  <div ID="L.1.1.2.8.2.1" TYPE="Head">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.8.2.2" TYPE="Byline">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.8.2.3" TYPE="Copy">
+                     <div ID="L.1.1.2.8.2.3.1" TYPE="BodyContent">
+                        <div ID="L.1.1.2.8.2.3.1.1" TYPE="Paragraph" ORDER="1">
+                           <div ID="L.1.1.2.8.2.3.1.1.1" TYPE="Text">
+                              <fptr>
+                                 <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
+                              </fptr>
                            </div>
-                           <div ID="L.1.1.2.8.2.3.1.2" TYPE="Paragraph" ORDER="2">
-                              <div ID="L.1.1.2.8.2.3.1.2.1" TYPE="Text">
-                                 <fptr>
-                                    <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00005"/>
-                                 </fptr>
-                              </div>
+                        </div>
+                        <div ID="L.1.1.2.8.2.3.1.2" TYPE="Paragraph" ORDER="2">
+                           <div ID="L.1.1.2.8.2.3.1.2.1" TYPE="Text">
+                              <fptr>
+                                 <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00005"/>
+                              </fptr>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.9"
-                    TYPE="TextContent"
-                    ORDER="9"
-                    DMDID="c012"
-                    LABEL="RÉFLEXIONS SUR LA DANSE">
+               <div ID="L.1.1.2.9" TYPE="TextContent" ORDER="9" DMDID="c012"
+                  LABEL="RÉFLEXIONS SUR LA DANSE">
                   <div ID="L.1.1.2.9.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00006"/>
@@ -1614,11 +1433,8 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.10"
-                    TYPE="TextContent"
-                    ORDER="10"
-                    DMDID="c013"
-                    LABEL="QUELQUES INDICATIONS.">
+               <div ID="L.1.1.2.10" TYPE="TextContent" ORDER="10" DMDID="c013"
+                  LABEL="QUELQUES INDICATIONS.">
                   <div ID="L.1.1.2.10.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00001"/>
@@ -1636,11 +1452,7 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.11"
-                    TYPE="TextContent"
-                    ORDER="11"
-                    DMDID="c014"
-                    LABEL="Orchestre de Bois">
+               <div ID="L.1.1.2.11.3" TYPE="Music" ORDER="11" DMDID="c015" LABEL="Orchestre de Bois">
                   <div ID="L.1.1.2.11.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00003"/>
@@ -1651,21 +1463,15 @@
                         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00006"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.11.3"
-                       TYPE="Music"
-                       ORDER="1"
-                       DMDID="c015"
-                       LABEL="26 décembre 1917.">
-                     <div ID="L.1.1.2.11.3.1" TYPE="Image">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
-                        </fptr>
-                     </div>
-                     <div ID="L.1.1.2.11.3.2" TYPE="Caption">
-                        <fptr>
-                           <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
-                        </fptr>
-                     </div>
+                  <div ID="L.1.1.2.11.3.1" TYPE="Image">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.11.3.2" TYPE="Caption">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
+                     </fptr>
                   </div>
                   <div ID="L.1.1.2.11.4" TYPE="Copy">
                      <div ID="L.1.1.2.11.4.1" TYPE="BodyContent">
@@ -1677,21 +1483,16 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.12"
-                    TYPE="TextContent"
-                    ORDER="12"
-                    DMDID="c016"
-                    LABEL="DEUX POÈMES ET UN CONTE">
+               
+               <div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c016"
+                  LABEL="DEUX POÈMES ET UN CONTE">
                   <div ID="L.1.1.2.12.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.12.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c017"
-                       LABEL="PERSPECTIVE">
+                  <div ID="L.1.1.2.12.2" TYPE="TextContent" ORDER="1" DMDID="c017"
+                     LABEL="PERSPECTIVE">
                      <div ID="L.1.1.2.12.2.1" TYPE="Copy">
                         <div ID="L.1.1.2.12.2.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.12.2.1.1.1" TYPE="Paragraph" ORDER="1">
@@ -1704,39 +1505,47 @@
                         </div>
                      </div>
                   </div>
-               </div>
-               <div ID="L.1.1.2.13"
-                    TYPE="TextContent"
-                    ORDER="13"
-                    DMDID="c018"
-                    LABEL="CONTE SENTIMENTAL">
-                  <div ID="L.1.1.2.13.1" TYPE="Head">
-                     <fptr>
-                        <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
-                     </fptr>
+                  <div ID="L.1.1.2.12.2b" TYPE="TextContent" ORDER="2" DMDID="c017"
+                     LABEL="A L'ENVERS">
+                     <div ID="L.1.1.2.12.2.1b" TYPE="Copy">
+                        <div ID="L.1.1.2.12.2.1.1b" TYPE="BodyContent">
+                           <div ID="L.1.1.2.12.2.1.1.1b" TYPE="Paragraph" ORDER="1">
+                              <div ID="L.1.1.2.12.2.1.1.1.1b" TYPE="Text">
+                                 <fptr>
+                                    <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_NEW_TB3"/>
+                                 </fptr>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div ID="L.1.1.2.13.2" TYPE="Byline">
-                     <fptr>
-                        <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
-                     </fptr>
-                  </div>
-                  <div ID="L.1.1.2.13.3" TYPE="Copy">
-                     <div ID="L.1.1.2.13.3.1" TYPE="BodyContent">
-                        <div ID="L.1.1.2.13.3.1.1" TYPE="Paragraph" ORDER="1">
-                           <div ID="L.1.1.2.13.3.1.1.1" TYPE="Text">
-                              <fptr>
-                                 <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00002"/>
-                              </fptr>
+                  <div ID="L.1.1.2.13" TYPE="TextContent" ORDER="13" DMDID="c018"
+                     LABEL="CONTE SENTIMENTAL">
+                     <div ID="L.1.1.2.13.1" TYPE="Head">
+                        <fptr>
+                           <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
+                        </fptr>
+                     </div>
+                     <div ID="L.1.1.2.13.2" TYPE="Byline">
+                        <fptr>
+                           <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
+                        </fptr>
+                     </div>
+                     <div ID="L.1.1.2.13.3" TYPE="Copy">
+                        <div ID="L.1.1.2.13.3.1" TYPE="BodyContent">
+                           <div ID="L.1.1.2.13.3.1.1" TYPE="Paragraph" ORDER="1">
+                              <div ID="L.1.1.2.13.3.1.1.1" TYPE="Text">
+                                 <fptr>
+                                    <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00002"/>
+                                 </fptr>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.14"
-                    TYPE="TextContent"
-                    ORDER="14"
-                    DMDID="c019"
-                    LABEL="«LES MAMELLES DE TIRÉSIAS».">
+               <div ID="L.1.1.2.14" TYPE="TextContent" ORDER="3" DMDID="c019"
+                  LABEL="«LES MAMELLES DE TIRÉSIAS».">
                   <div ID="L.1.1.2.14.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00004"/>
@@ -1757,21 +1566,14 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.15"
-                    TYPE="TextContent"
-                    ORDER="15"
-                    DMDID="c020"
-                    LABEL="E T C...">
+               <div ID="L.1.1.2.15" TYPE="TextContent" ORDER="15" DMDID="c020" LABEL="E T C...">
                   <div ID="L.1.1.2.15.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00007"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.15.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c021"
-                       LABEL="LA JEUNE POÉSIE FRANÇAISE. Frédéric Lefèvre. Je me méfie toujours de qui me demande « des">
+                  <div ID="L.1.1.2.15.2" TYPE="TextContent" ORDER="1" DMDID="c021"
+                     LABEL="LA JEUNE POÉSIE FRANÇAISE. Frédéric Lefèvre. Je me méfie toujours de qui me demande « des">
                      <div ID="L.1.1.2.15.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00002"/>
@@ -1797,11 +1599,8 @@
                      </div>
                   </div>
                </div>
-               <div ID="L.1.1.2.16"
-                    TYPE="TextContent"
-                    ORDER="16"
-                    DMDID="c022"
-                    LABEL="Nous apprenons que notre confrère Partout se transforme et devient hebdomadaire. Il">
+               <div ID="L.1.1.2.16" TYPE="TextContent" ORDER="16" DMDID="c022"
+                  LABEL="Nous apprenons que notre confrère Partout se transforme et devient hebdomadaire. Il">
                   <div ID="L.1.1.2.16.1" TYPE="Copy">
                      <div ID="L.1.1.2.16.1.1" TYPE="BodyContent">
                         <div ID="L.1.1.2.16.1.1.1" TYPE="Paragraph" ORDER="1">

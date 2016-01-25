@@ -162,23 +162,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c005">
-                     <titleInfo lang="fre">
-                        <title>Untitle text</title>
-                     </titleInfo>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>2</start>
-                           <end>4</end>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
                   </relatedItem>
-               </relatedItem>
                <relatedItem type="constituent" ID="c006">
                   <titleInfo lang="fre">
                      <title>A NOS LECTEURS : A partir de janvier 1918 le prix de chaque numéro de SIC sera porté</title>
@@ -219,6 +203,14 @@
                   <titleInfo lang="fre">
                      <title>POÈME</title>
                   </titleInfo>
+                  <name type="personal"
+                     authority="viaf"
+                     valueURI="http://viaf.org/viaf/36935759">
+                     <displayForm>GEORGES GABORY</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
                   <typeOfResource>text</typeOfResource>
                   <language>
                      <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -229,29 +221,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem type="constituent" ID="c009">
-                     <titleInfo lang="fre">
-                        <title>"Près du réverbère"</title>
-                     </titleInfo>
-                     <name type="personal"
-                           authority="viaf"
-                           valueURI="http://viaf.org/viaf/36935759">
-								                <displayForm>GEORGES GABORY</displayForm>
-								                <role>
-									                  <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								                </role>
-							              </name>
-                     <typeOfResource>text</typeOfResource>
-                     <language>
-                        <languageTerm authority="iso639-2b">fre</languageTerm>
-                     </language>
-                     <part>
-                        <extent unit="page">
-                           <start>6</start>
-                        </extent>
-                     </part>
-                     <genre type="CCS">TextContent</genre>
-                  </relatedItem>
+                  
                </relatedItem>
                <relatedItem type="constituent" ID="c010">
                   <titleInfo lang="fre">
@@ -1270,17 +1240,12 @@
                     TYPE="TextContent"
                     ORDER="4"
                     DMDID="c004"
-                    LABEL="E T G...">
+                    LABEL="E T C...">
                   <div ID="L.1.1.2.4.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00006"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.4.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c005"
-                       LABEL="M. Max JACOB et son Cornet à. Dés.">
                      <div ID="L.1.1.2.4.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
@@ -1311,7 +1276,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.5"
                     TYPE="TextContent"
@@ -1359,11 +1324,6 @@
                         <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00001"/>
                      </fptr>
                   </div>
-                  <div ID="L.1.1.2.7.2"
-                       TYPE="TextContent"
-                       ORDER="1"
-                       DMDID="c009"
-                       LABEL="Près du réverbère">
                      <div ID="L.1.1.2.7.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
@@ -1380,7 +1340,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  
                </div>
                <div ID="L.1.1.2.8"
                     TYPE="TextContent"
