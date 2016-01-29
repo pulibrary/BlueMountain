@@ -29,6 +29,8 @@
  
  <xsl:key name="files" match="mets:file" use="@ID"/>
 
+ <xsl:key name="images" match="mets:fileGrp[@ID='IMGGRP']/mets:file" use="@GROUPID"/>
+
  <xsl:function name="local:altopath">
   <xsl:param name="rawpath"/>
   <!-- rawpath looks like file://./alto/xxx.alto.xml  -->
@@ -42,7 +44,6 @@
 <!--  <xsl:value-of select="replace($rawpath, 'file://.', $path)"/> -->
 <xsl:value-of select="concat('file://', $path, $basepath)" />
  </xsl:function>
-
  
  
 
@@ -161,9 +162,16 @@
      <xsl:value-of select="./@BEGIN" />
    </xsl:variable>
   <xsl:variable name="altopath"
-   select="local:altopath(string(key('files', @FILEID)/mets:FLocat/@xlink:href))"/>
-
-  <xsl:apply-templates select="document($altopath)//node()[@ID=$start]" mode="#current" />
+		select="local:altopath(string(key('files', @FILEID)/mets:FLocat/@xlink:href))"/>
+  <xsl:variable name="groupid" select="string(key('files', @FILEID)/@GROUPID)"/>
+  <xsl:variable name="imagepath"
+    select="string(key('images', $groupid)/mets:FLocat/@xlink:href)"
+  />
+ 
+  <xsl:apply-templates select="document($altopath)//node()[@ID=$start]" mode="#current">
+    <xsl:with-param name="imagepath"
+		    select="$imagepath" tunnel="yes"/>
+  </xsl:apply-templates>
  </xsl:template>
 
 
