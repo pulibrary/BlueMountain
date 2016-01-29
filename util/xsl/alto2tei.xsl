@@ -72,6 +72,7 @@
  
  <!-- <alto:Page> corresponds with <tei:surface> -->
  <xsl:template match="alto:Page" mode="facsimile">
+  <xsl:param name="imagepath" tunnel="yes"></xsl:param>
   <tei:surface type="page" xml:id="{@ID}" ulx="0" uly="0" lrx="{local:to-millimeter(@WIDTH)}" lry="{local:to-millimeter(@HEIGHT)}">
    <!--<xsl:attribute name="xml:id" select="@ID"/>-->
    <!--<xsl:attribute name="ulx">0</xsl:attribute>
@@ -82,7 +83,7 @@
    <tei:graphic>
     <xsl:attribute name="url">
      <xsl:value-of
-      select="replace(tokenize(ancestor::alto:alto/alto:Description/alto:sourceImageInformation/alto:fileName, '/')[last()], 'tif', 'jp2')"/>
+      select="$imagepath"/>
     </xsl:attribute>
    </tei:graphic>
    <xsl:apply-templates mode="#current"/>
