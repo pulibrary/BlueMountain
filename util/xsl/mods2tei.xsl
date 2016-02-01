@@ -124,6 +124,10 @@
   <xsl:template match="mods:language">
     <textLang mainLang="{mods:languageTerm}"/>
   </xsl:template>
+  
+  <xsl:template match="mods:note">
+    <note><xsl:apply-templates/></note>
+  </xsl:template>
 
 
 </xsl:stylesheet>
