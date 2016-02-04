@@ -1,9 +1,11 @@
 xquery version "3.0";
+
 (:
   This update query seems to eat a lot of memory. Increasing Oxygen's java memory (-Xmx1500m) helps; 
   you may still find that it appears to fail with "duplicate attributes" error.  Running the query
   several times seems to do the trick.
 :)
+
 declare namespace mets="http://www.loc.gov/METS/";
 declare namespace mods="http://www.loc.gov/mods/v3";
 
