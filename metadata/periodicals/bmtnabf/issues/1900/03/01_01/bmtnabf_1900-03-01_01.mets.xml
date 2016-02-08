@@ -161,9 +161,15 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo>
-								<title>Untitled Image</title>
+								<title>MÄHRISCHES LANDHAUS</title>
 							</titleInfo>
-							<note type="caption">MÄHRISCHES LANDHAUS</note>
+						   <name type="personal">
+						      <displayForm>JOSEF HOFFMANN OM</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
+							<note type="caption"></note>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -174,9 +180,14 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo>
-								<title>Untitled Image</title>
+							   <title>Schlaf- und Wohnraum</title>
 							</titleInfo>
-							<note type="caption">Schlaf- und Wohnraum</note>
+						   <name type="personal">
+						      <displayForm>JOSEF HOFFMANN OM</displayForm>
+						      <role>
+						         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						      </role>
+						   </name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -187,9 +198,9 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo>
-								<title>Untitled Image</title>
+								<title>Ecke in einem Wohnraum</title>
 							</titleInfo>
-							<note type="caption">Ecke in einem Wohnraum</note>
+							
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -200,9 +211,9 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c012">
 							<titleInfo>
-								<title>Untitled Image</title>
+								<title>KASTEN FÜR NIPPES</title>
 							</titleInfo>
-							<note type="caption">KASTEN FÜR NIPPES</note>
+
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
@@ -244,28 +255,28 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c015">
-							<titleInfo lang="ger">
-								<title>Aus dem Atelier des</title>
-							</titleInfo>
-							<name type="personal">
-								<displayForm>des Malers Kurzweil OM</displayForm>
-								<role>
-									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-								</role>
-							</name>
-							<typeOfResource>still image</typeOfResource>
-							<language>
-								<languageTerm authority="iso639-2b">ger</languageTerm>
-							</language>
-							<part>
-								<extent unit="page">
-									<start>9</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-							<note type="caption">Rothgebeiztes weiches Holz. Ausgeführt von A. Pospischil</note>
-						</relatedItem>
+						<relatedItem ID="c015">
+                     <titleInfo lang="ger">
+                        <title>Rothgebeiztes weiches Holz</title>
+                     </titleInfo>
+                     <name>
+                        <displayForm>A. Pospischil</displayForm>
+                        <role>
+                           <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                        </role>
+                     </name>
+                     <typeOfResource>still image</typeOfResource>
+                     <language>
+                        <languageTerm authority="iso639-2b">ger</languageTerm>
+                     </language>
+                     <part>
+                        <extent unit="page">
+                           <start>9</start>
+                        </extent>
+                     </part>
+                     <genre type="CCS">Illustration</genre>
+						   <note>Aus dem Atelier des Malers Kurzweil OM.</note>
+                  </relatedItem>
 						<relatedItem type="constituent" ID="c016">
 							<titleInfo>
 								<title>Untitled Image</title>
@@ -2962,15 +2973,13 @@
 							<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.5.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.5.3.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
-							</fptr>
-						</div>
-					</div>
 					<div ID="L.1.1.5.4" TYPE="Illustration" ORDER="2" DMDID="c008" LABEL="Untitled">
-						<div ID="L.1.1.5.4.1" TYPE="Image">
+					   <div ID="L.1.1.5.3.1" TYPE="Image">
+					      <fptr>
+					         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
+					      </fptr>
+					   </div>
+					   <div ID="L.1.1.5.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00002"/>
 							</fptr>
