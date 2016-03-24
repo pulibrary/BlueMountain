@@ -21,7 +21,7 @@
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
 					<titleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-						<nonsort>Der</nonsort>
+						<nonSort>Der</nonSort>
 						<title>Gegner</title>
 					</titleInfo>
 					<part xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="issue">
@@ -56,7 +56,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>IN HÄLT</title>
+							<title>INHALT</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -71,8 +71,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c002">
 						<titleInfo lang="ger">
-							<title>KARL MARX ZUM „13. MÄRZ“</title>
+							<title>KARL MARX ZUM "13. MÄRZ"</title>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>KARL MARX</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -209,7 +215,14 @@
 					<relatedItem type="constituent" ID="c009">
 						<titleInfo lang="ger">
 							<title>N. LENIN</title>
+							<subTitle>Sein Leben und seine Tätigkeit</subTitle>
 						</titleInfo>
+						<name type="personal">
+							<displayForm>Georg Sinowiew</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -222,9 +235,8 @@
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo>
-								<title>Untitled Image</title>
-							</titleInfo>
-							<note type="caption">MORALISCHER</note>
+								<title>MORALISCHER</title>
+							</titleInfo>							
 							<name type="personal">
 								<displayForm>George Grosz</displayForm>
 								<role>
@@ -241,9 +253,14 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c011">
 							<titleInfo>
-								<title>Untitled Image</title>
+								<title>AUFSTIEG</title>
 							</titleInfo>
-							<note type="caption">AUFSTIEG</note>
+							<name type="personal">
+								<displayForm>George Grosz</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
 							<typeOfResource>still image</typeOfResource>
 							<part>
 								<extent unit="page">
