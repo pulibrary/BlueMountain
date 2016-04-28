@@ -270,25 +270,6 @@
 								</extent>
 							</part>
 							<genre type="CCS">TextContent</genre>
-							<relatedItem type="constituent" ID="c014">
-								<titleInfo lang="ger">
-									<title>Holzschnitt</title>
-								</titleInfo>
-								<note type="caption">Vom Stock gedruckt</note>
-								<name type="personal">
-							                    <displayForm>Oswald Herzog</displayForm>
-							                    <role>
-							                       <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							                    </role>
-							                 </name>
-								<typeOfResource>still image</typeOfResource>
-								<part>
-									<extent unit="page">
-										<start>7</start>
-									</extent>
-								</part>
-								<genre type="CCS">Illustration</genre>
-							</relatedItem>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c015">
 							<titleInfo lang="ger">
@@ -351,6 +332,25 @@
 							</part>
 							<genre type="CCS">TextContent</genre>
 						</relatedItem>
+					</relatedItem>
+					<relatedItem ID="c014">
+						<titleInfo lang="ger">
+							<title>Holzschnitt</title>
+						</titleInfo>
+						<note>Vom Stock gedruckt</note>
+						<name>
+							<displayForm>Oswald Herzog</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+						<typeOfResource>still image</typeOfResource>
+						<part>
+							<extent unit="page">
+								<start>7</start>
+							</extent>
+						</part>
+						<genre type="CCS">Illustration</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c019">
 						<titleInfo lang="ger">
@@ -2679,19 +2679,6 @@
 									<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00020"/>
 								</fptr>
 							</div>
-							<div ID="L.1.1.2.5.4.2" TYPE="Illustration" ORDER="1" DMDID="c014"
-								LABEL="Oswald Herzog: Holzschnitt / Vom Stock gedruckt">
-								<div ID="L.1.1.2.5.4.2.1" TYPE="Image">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
-									</fptr>
-								</div>
-								<div ID="L.1.1.2.5.4.2.2" TYPE="Caption">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
-									</fptr>
-								</div>
-							</div>
 							<div ID="L.1.1.2.5.4.3" TYPE="Copy">
 								<div ID="L.1.1.2.5.4.3.1" TYPE="BodyContent">
 									<div ID="L.1.1.2.5.4.3.1.1" TYPE="Paragraph" ORDER="1">
@@ -2789,6 +2776,19 @@
 							</div>
 						</div>
 					</div>
+							<div ID="L.1.1.2.5.4.2" TYPE="Illustration" ORDER="1" DMDID="c014"
+								LABEL="Oswald Herzog: Holzschnitt">
+								<div ID="L.1.1.2.5.4.2.1" TYPE="Image">
+									<fptr>
+										<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
+									</fptr>
+								</div>
+								<div ID="L.1.1.2.5.4.2.2" TYPE="Caption">
+									<fptr>
+										<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00001"/>
+									</fptr>
+								</div>
+							</div>
 					<div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c019" LABEL="Gedichte">
 						<div ID="L.1.1.2.6.1" TYPE="Head">
 							<fptr>
