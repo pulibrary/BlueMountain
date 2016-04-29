@@ -433,6 +433,10 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c018a"><titleInfo lang="ger"><title>XXXIX</title></titleInfo><name type="personal"><displayForm>Klabund</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name><typeOfResource>text</typeOfResource><genre type="CCS">TextContent</genre><language>       <languageTerm authority="iso639-2b">ger</languageTerm>      </language><part>       <extent unit="page">        <list>14</list>       </extent>      </part></relatedItem>
+						<relatedItem type="constituent" ID="c018b"><titleInfo lang="ger"><title>XL</title></titleInfo><name type="personal"><displayForm>Klabund</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name><typeOfResource>text</typeOfResource><genre type="CCS">TextContent</genre><language>       <languageTerm authority="iso639-2b">ger</languageTerm>      </language><part>       <extent unit="page">        <list>14</list>       </extent>      </part></relatedItem>
+						<relatedItem type="constituent" ID="c018c"><titleInfo lang="ger"><title>XLIII</title></titleInfo><name type="personal"><displayForm>Klabund</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name><typeOfResource>text</typeOfResource><genre type="CCS">TextContent</genre><language>       <languageTerm authority="iso639-2b">ger</languageTerm>      </language><part>       <extent unit="page">        <list>15</list>       </extent>      </part></relatedItem>
+						
 					</relatedItem>
 					<relatedItem type="constituent" ID="c019">
 						<titleInfo lang="ger">
@@ -2431,13 +2435,14 @@
 							<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00004"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.15.3" TYPE="Copy">
-						<div ID="L.1.1.15.3.1" TYPE="BodyContent">
-							<div ID="L.1.1.15.3.1.1" TYPE="MinorHead" ORDER="1">
+					
+					<!--MET-610-start-->
+					<div ID="MET-610-c018a" TYPE="TextContent" ORDER="1" DMDID="c018a" LABEL="XXXIX">
+							<div ID="L.1.1.15.3.1.1" TYPE="Head" ORDER="1">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00005"/>
 								</fptr>
-							</div>
+							</div><!--XXXIX-Head/Byline --><div ID="MET-610-c018a.c" TYPE="Copy"><div ID="MET-610-c018a.c.b" TYPE="BodyContent">
 							<div ID="L.1.1.15.3.1.2" TYPE="Paragraph" ORDER="2">
 								<div ID="L.1.1.15.3.1.2.1" TYPE="Text">
 									<fptr>
@@ -2449,12 +2454,13 @@
 										</seq>
 									</fptr>
 								</div>
-							</div>
-							<div ID="L.1.1.15.3.1.3" TYPE="MinorHead" ORDER="3">
+							</div> <!-- Paragraphs  --> </div></div></div>
+					<div ID="MET-610-c018b" TYPE="TextContent" ORDER="2" DMDID="c018b" LABEL="XL">
+							<div ID="L.1.1.15.3.1.3" TYPE="Head" ORDER="3">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00008"/>
 								</fptr>
-							</div>
+							</div><!--XL-Head/Byline --><div ID="MET-610-c018b.c" TYPE="Copy"><div ID="MET-610-c018b.c.b" TYPE="BodyContent">
 							<div ID="L.1.1.15.3.1.4" TYPE="Paragraph" ORDER="4">
 								<div ID="L.1.1.15.3.1.4.1" TYPE="Text">
 									<fptr>
@@ -2462,12 +2468,13 @@
 										/>
 									</fptr>
 								</div>
-							</div>
-							<div ID="L.1.1.15.3.1.5" TYPE="MinorHead" ORDER="5">
+							</div> <!-- Paragraphs  --> </div></div></div>
+					<div ID="MET-610-c018c" TYPE="TextContent" ORDER="3" DMDID="c018c" LABEL="XLIII">
+							<div ID="L.1.1.15.3.1.5" TYPE="Head" ORDER="5">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00002"/>
 								</fptr>
-							</div>
+							</div><!--XLIII-Head/Byline --><div ID="MET-610-c018c.c" TYPE="Copy"><div ID="MET-610-c018c.c.b" TYPE="BodyContent">
 							<div ID="L.1.1.15.3.1.6" TYPE="Paragraph" ORDER="6">
 								<div ID="L.1.1.15.3.1.6.1" TYPE="Text">
 									<fptr>
@@ -2475,9 +2482,9 @@
 										/>
 									</fptr>
 								</div>
-							</div>
-						</div>
-					</div>
+							</div> <!-- Paragraphs  --> </div></div></div>
+					<!--MET-610-end-->
+					
 				</div>
 				<div ID="L.1.1.16" TYPE="TextContent" ORDER="16" DMDID="c019"
 					LABEL="Albert Ehrensteins Bücher">

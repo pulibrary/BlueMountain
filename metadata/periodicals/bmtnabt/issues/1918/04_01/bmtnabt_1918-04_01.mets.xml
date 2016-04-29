@@ -478,6 +478,39 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c021a">
+							<titleInfo lang="ger">
+								<title>Schmerz der Straße</title>
+							</titleInfo>
+							<name type="personal"><displayForm>Friedrich Schnack-Rieneck</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>15</list>
+								</extent>
+							</part>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c021b">
+							<titleInfo lang="ger">
+								<title>Gesang an die Seele</title>
+							</titleInfo>
+							<name type="personal"><displayForm>Friedrich Schnack-Rieneck</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>15</list>
+								</extent>
+							</part>
+						</relatedItem>
+
 					</relatedItem>
 					<relatedItem type="constituent" ID="c022">
 						<titleInfo lang="ger">
@@ -2509,20 +2542,51 @@
 					</div>
 					<div ID="L.1.1.17.3" TYPE="Copy">
 						<div ID="L.1.1.17.3.1" TYPE="BodyContent">
-							<div ID="L.1.1.17.3.1.1" TYPE="Paragraph" ORDER="1">
-								<div ID="L.1.1.17.3.1.1.1" TYPE="Text">
-									<fptr>
-										<seq>
-											<area BETYPE="IDREF" FILEID="ALTO00015"
-												BEGIN="P15_TB00004"/>
-											<area BETYPE="IDREF" FILEID="ALTO00015"
-												BEGIN="P15_TB00005"/>
-										</seq>
-									</fptr>
+							
+						</div>
+					</div>
+					<!--MET-609-start-->
+					<div ID="MET-609-c021a" TYPE="TextContent" ORDER="1" DMDID="c021a"
+						LABEL="Schmerz der Straße">
+						<!--Schmerz der Straße-Head/Byline -->
+						<div ID="MET-609-c021a.c" TYPE="Copy">
+							<div ID="MET-609-c021a.c.b" TYPE="BodyContent">
+								<!-- Paragraphs  -->
+								<div ID="L.1.1.17.3.1.1" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.17.3.1.1.1" TYPE="Text">
+										<fptr>											
+												<area BETYPE="IDREF" FILEID="ALTO00015"
+													BEGIN="P15_TB00004"/>							
+											
+										</fptr>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div ID="MET-609-c021b" TYPE="TextContent" ORDER="2" DMDID="c021b"
+						LABEL="Gesang an die Seele">
+						<!--Gesang an die Seele-Head/Byline -->
+						<div ID="MET-609-c021b.c" TYPE="Copy">
+							<div ID="MET-609-c021b.c.b" TYPE="BodyContent">
+								<!-- Paragraphs  -->
+								<div ID="L.1.1.17.3.1.1b" TYPE="Paragraph" ORDER="1">
+									<div ID="L.1.1.17.3.1.1.1b" TYPE="Text">
+										<fptr>
+											<seq>
+												<area BETYPE="IDREF" FILEID="ALTO00015"
+													BEGIN="P15_MET-609-c021b"/>
+												<area BETYPE="IDREF" FILEID="ALTO00015"
+													BEGIN="P15_TB00005"/>
+											</seq>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--MET-609-end-->
+
 				</div>
 				<div ID="L.1.1.18" TYPE="TextContent" ORDER="18" DMDID="c022" LABEL="Buchkritik">
 					<div ID="L.1.1.18.1" TYPE="Head">

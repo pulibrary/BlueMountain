@@ -375,18 +375,7 @@
 						<titleInfo lang="ger">
 							<title>Buchkritik</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Gerhard Ausleger</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<name type="personal">
-							<displayForm>Richard Blunck</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -397,6 +386,9 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c017a"><titleInfo lang="ger"><title>Klabund: Bracke. Ein Eulenspiegel-Roman.</title></titleInfo><name type="personal"><displayForm>Gerhard Ausleger</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name><typeOfResource>text</typeOfResource><genre type="CCS">TextContent</genre><language>       <languageTerm authority="iso639-2b">ger</languageTerm>      </language><part>       <extent unit="page">        <list>15</list>       </extent>      </part></relatedItem>
+						<relatedItem type="constituent" ID="c017b"><titleInfo lang="ger"><title>Das Flugblatt. Herausg. Von O. M. fontana und A. wallis</title></titleInfo><name type="personal"><displayForm>Richard Blunck</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name><typeOfResource>text</typeOfResource><genre type="CCS">TextContent</genre><language>       <languageTerm authority="iso639-2b">ger</languageTerm>      </language><part>       <extent unit="page">        <list>15</list>       </extent>      </part></relatedItem>
+						
 					</relatedItem>
 					<relatedItem type="constituent" ID="c018">
 						<titleInfo lang="ger">
@@ -2371,18 +2363,14 @@
 							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00003"/>
 						</fptr>
 					</div>
+					
+					<!--MET-613-start-->
+					<div ID="MET-613-c017a" TYPE="TextContent" ORDER="1" DMDID="c017a" LABEL="Klabund: Bracke. Ein Eulenspiegel-Roman.">
 					<div ID="L.1.1.10.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00004"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.10.3" TYPE="Byline">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00005"/>
-						</fptr>
-					</div>
-					<div ID="L.1.1.10.4" TYPE="Copy">
-						<div ID="L.1.1.10.4.1" TYPE="BodyContent">
+					</div><!--Klabund: Bracke. Ein Eulenspiegel-Roman.-Head/Byline --><div ID="MET-613-c017a.c" TYPE="Copy"><div ID="MET-613-c017a.c.b" TYPE="BodyContent">
 							<div ID="L.1.1.10.4.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.10.4.1.1.1" TYPE="Text">
 									<fptr>
@@ -2390,7 +2378,13 @@
 										/>
 									</fptr>
 								</div>
-							</div>
+							</div> <!-- Paragraphs  --> </div></div></div>
+					<div ID="MET-613-c017b" TYPE="TextContent" ORDER="2" DMDID="c017b" LABEL="Das Flugblatt. Herausg. Von O. M. fontana und A. wallis">
+					<div ID="L.1.1.10.3" TYPE="Byline">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00005"/>
+						</fptr>
+					</div><!--Das Flugblatt. Herausg. Von O. M. fontana und A. wallis-Head/Byline --><div ID="MET-613-c017b.c" TYPE="Copy"><div ID="MET-613-c017b.c.b" TYPE="BodyContent">
 							<div ID="L.1.1.10.4.1.2" TYPE="Paragraph" ORDER="2">
 								<div ID="L.1.1.10.4.1.2.1" TYPE="Text">
 									<fptr>
@@ -2398,9 +2392,9 @@
 										/>
 									</fptr>
 								</div>
-							</div>
-						</div>
-					</div>
+							</div> <!-- Paragraphs  --> </div></div></div>
+					<!--MET-613-end-->
+					
 				</div>
 				<div ID="L.1.1.11" TYPE="TextContent" ORDER="11" DMDID="c018" LABEL="Bücher">
 					<div ID="L.1.1.11.1" TYPE="Head">
