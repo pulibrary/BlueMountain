@@ -288,6 +288,39 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c012a">
+							<titleInfo lang="ger">
+								<title>Insbesondere "Judith"</title>
+							</titleInfo>
+							<name type="personal"><displayForm>Else Lasker-Schüler</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>5</list>
+								</extent>
+							</part>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c012b">
+							<titleInfo lang="ger">
+								<title>Der Eisenbahnräuber</title>
+							</titleInfo>
+							<name type="personal"><displayForm>Else Lasker-Schüler</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>5-6</list>
+								</extent>
+							</part>
+						</relatedItem>
+
 					</relatedItem>
 					<relatedItem type="constituent" ID="c013">
 						<titleInfo lang="ger">
@@ -1893,13 +1926,18 @@
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.10.3" TYPE="Copy">
-							<div ID="L.1.1.2.10.3.1" TYPE="BodyContent">
-								<div ID="L.1.1.2.10.3.1.1" TYPE="MinorHead" ORDER="1">
+						
+						<!--MET-249-start-->
+						<div ID="MET-249-c012a" TYPE="TextContent" ORDER="1" DMDID="c012a"
+							LABEL="Insbesondere 'Judith'">
+								<div ID="L.1.1.2.10.3.1.1" TYPE="Head" ORDER="1">
 									<fptr>
 										<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
 									</fptr>
 								</div>
+							<!--Insbesondere "Judith"-Head/Byline -->
+							<div ID="MET-249-c012a.c" TYPE="Copy">
+								<div ID="MET-249-c012a.c.b" TYPE="BodyContent">
 								<div ID="L.1.1.2.10.3.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.10.3.1.2.1" TYPE="Text">
 										<fptr>
@@ -1912,11 +1950,20 @@
 										</fptr>
 									</div>
 								</div>
-								<div ID="L.1.1.2.10.3.1.3" TYPE="MinorHead" ORDER="3">
+									<!-- Paragraphs  -->
+								</div>
+							</div>
+						</div>
+						<div ID="MET-249-c012b" TYPE="TextContent" ORDER="2" DMDID="c012b"
+							LABEL="Der Eisenbahnräuber">
+								<div ID="L.1.1.2.10.3.1.3" TYPE="Head" ORDER="3">
 									<fptr>
 										<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00008"/>
 									</fptr>
 								</div>
+							<!--Der Eisenbahnräuber-Head/Byline -->
+							<div ID="MET-249-c012b.c" TYPE="Copy">
+								<div ID="MET-249-c012b.c.b" TYPE="BodyContent">
 								<div ID="L.1.1.2.10.3.1.4" TYPE="Paragraph" ORDER="4">
 									<div ID="L.1.1.2.10.3.1.4.1" TYPE="Text">
 										<fptr>
@@ -1929,8 +1976,12 @@
 										</fptr>
 									</div>
 								</div>
+									<!-- Paragraphs  -->
+								</div>
 							</div>
 						</div>
+						<!--MET-249-end-->
+
 					</div>
 					<div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c013"
 						LABEL="Von der Wolke, welche so gern hätte regnen mögen">
