@@ -5,7 +5,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:local="http://diglib.princeton.edu"
       xmlns:mods="http://www.loc.gov/mods/v3"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3http://www.loc.gov/standards/mods/v3/mods-3-5.xsd-5.xsd"
       TYPE="Magazine"
       OBJID="urn:PUL:periodicals:bluemountain:bmtnaaf_1915-05-15_01">
 	  <metsHdr>
@@ -204,9 +204,13 @@
 						            <titleInfo lang="fre">
 							              <title>INGELMUNSTER</title>
 						            </titleInfo>
-						            <titleInfo lang="fre">
-							              <title>dessin de A. FAVORY</title>
-						            </titleInfo>
+					          	<name> type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/27339242"
+					          		<displayForm>A. FAVORY</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
@@ -274,12 +278,26 @@
 						            <titleInfo lang="fre">
 							              <title>dessin de Amédée Ozenfant</title>
 						            </titleInfo>
+					          	<name> type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/44307485"
+					          		<displayForm>Amedee Ozenfant</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
-								                <start>10</start>
+								                <start>11</start>
 							              </extent>
 						            </part>
+					          	<name> type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/44307485"
+					          		<displayForm>Amedee Ozenfant</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <genre type="CCS">Illustration</genre>
 					          </relatedItem>
 					          <relatedItem type="constituent" ID="c014">
@@ -290,7 +308,7 @@
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
-								                <start>11</start>
+								                <start>12</start>
 							              </extent>
 						            </part>
 						            <genre type="CCS">Illustration</genre>

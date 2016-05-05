@@ -5,7 +5,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:local="http://diglib.princeton.edu"
       xmlns:mods="http://www.loc.gov/mods/v3"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       TYPE="Magazine"
       OBJID="urn:PUL:periodicals:bluemountain:bmtnaaf_1915-06-15_01">
 	  <metsHdr>
@@ -64,6 +64,12 @@
 							              <nonSort>LE</nonSort>
 							              <title>QUADRILLE (1ère figuie) dessin de Z, LÉWITZKA</title>
 						            </titleInfo>
+					          	<name type="personal" >
+					          		<displayForm>Z. Lewitzka</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
@@ -78,7 +84,8 @@
 							              <title>CORNET A BOUQUIN</title>
 							              <subTitle>DE LA VERTU DE LA FRANCE.</subTitle>
 						            </titleInfo>
-						            <name type="personal">
+						            <name type="personal" authority="viaf"
+						            	valueURI="http://viaf.org/viaf/171319">
 							              <displayForm>LUCIEN MAINSSIEUX</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -99,7 +106,8 @@
 						            <titleInfo lang="fre">
 							              <title>N.B.</title>
 						            </titleInfo>
-						            <name type="personal">
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/171319">
 							              <displayForm>L.M.</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -120,7 +128,8 @@
 						            <titleInfo lang="fre">
 							              <title>Monsieur SAINT-SAENS en Représentation musicale</title>
 						            </titleInfo>
-						            <name type="personal">
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/171319">
 							              <displayForm>L. M</displayForm>
 							              <role>
 								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
