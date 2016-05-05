@@ -60,10 +60,10 @@
         <biblStruct>
           <monogr>
             <title level="j">
-              <xsl:if test="$modsrec/mods:titleInfo/mods:nonSort">
-                <seg type="nonSort"><xsl:apply-templates select="$modsrec/mods:titleInfo/mods:nonSort"/></seg>
+              <xsl:if test="$modsrec/mods:titleInfo[1]/mods:nonSort">
+                <seg type="nonSort"><xsl:apply-templates select="$modsrec/mods:titleInfo[1]/mods:nonSort"/></seg>
               </xsl:if>
-              <seg type="main"><xsl:apply-templates select="$modsrec/mods:titleInfo/mods:title"/></seg>
+              <seg type="main"><xsl:apply-templates select="$modsrec/mods:titleInfo[1]/mods:title"/></seg>
             </title>
             <imprint>
               <xsl:if test="$modsrec/mods:part/mods:detail[@type='volume']">
@@ -78,7 +78,7 @@
               </xsl:if>
               <date>
                 <xsl:attribute name="when">
-                  <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[@encoding='w3cdtf']"/>
+                  <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[@encoding='w3cdtf' or @encoding='iso8601']"/>
                 </xsl:attribute>
                 <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[1]"/>
               </date>
