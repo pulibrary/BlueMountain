@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabf_1898-08_01">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabf_1898-08_01">
 	<metsHdr>
 		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
 			<name>Princeton University Library, Digital Initiatives</name>
@@ -20,11 +19,11 @@
 					<identifier type="bmtn">urn:PUL:bluemountain:bmtnabf</identifier>
 					<typeOfResource>text</typeOfResource>
 					<genre>Periodicals-Issue</genre>
-					<titleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<titleInfo>
 						<title>Ver Sacrum</title>
 						<subTitle>Organ der Vereinigung bildender Kuenstler Österreichs</subTitle>
 					</titleInfo>
-					<part xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="issue">
+					<part type="issue">
 						<detail type="number">
 							<number>8</number>
 							<caption/>
@@ -33,11 +32,11 @@
 							<number>1</number>
 						</detail>
 					</part>
-					<originInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<originInfo>
 						<dateIssued>August 1898</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1898-08</dateIssued>
 					</originInfo>
-					<location xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<location>
 						<physicalLocation type="text">Princeton University. Marquand Library</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
 						<holdingSimple>
@@ -46,7 +45,7 @@
 							</copyInformation>
 						</holdingSimple>
 					</location>
-					<relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabf">
+					<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabf">
 						<recordInfo>
 							<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabf</recordIdentifier>
 						</recordInfo>
@@ -510,7 +509,7 @@
 								</extent>
 							</part>
 							<genre type="CCS">Illustration</genre>
-							<note type="caption"></note>
+							<note type="caption"/>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c025">
 							<titleInfo lang="ger">
@@ -5468,18 +5467,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.6.3" TYPE="Illustration" ORDER="1" LABEL="AUS D. SAMMLUNG LANNA. PRAG.">
-						<div ID="L.1.1.6.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.6.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.6.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.6.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.7" TYPE="Illustration" ORDER="5" DMDID="c007" LABEL="STUDIEN">
 					<div ID="L.1.1.7.1" TYPE="Head">
@@ -5492,7 +5489,8 @@
 							<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00002"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.7.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
+					<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.7.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
 						<div ID="L.1.1.7.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
@@ -5522,7 +5520,8 @@
 							<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.8.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
+					<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.8.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
 						<div ID="L.1.1.8.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_CB00001"/>
@@ -5548,13 +5547,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.9.3" TYPE="Illustration" ORDER="1" LABEL="AQUARELLIERTE FEDERZEICHNUNG 1894. IM BESITZE D. KUNSTHANDLUNG H. O. MIETHKE, WIEN.">
-						<div ID="L.1.1.9.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.9.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.9.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.9.3.2" TYPE="Caption">
 							<fptr>
 								<seq>
 									<area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00004"/>
@@ -5562,7 +5560,6 @@
 								</seq>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.10" TYPE="Illustration" ORDER="8" DMDID="c012" LABEL="DER GEISTERBESCHWÖRER.">
 					<div ID="L.1.1.10.1" TYPE="Head">
@@ -5575,18 +5572,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.10.3" TYPE="Illustration" ORDER="1" LABEL="1883. IM BES. V. PROF. ZUCKERKANDL, WIEN.">
-						<div ID="L.1.1.10.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.10.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.10.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.10.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.11" TYPE="Illustration" ORDER="9" DMDID="c013" LABEL="Einer, der das gruseln lernen will.">
 					<div ID="L.1.1.11.1" TYPE="Head">
@@ -5599,13 +5594,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.11.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.11.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.11.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00001"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.12" TYPE="Illustration" ORDER="10" DMDID="c014" LABEL="WASSERMANN.">
 					<div ID="L.1.1.12.1" TYPE="Head">
@@ -5618,18 +5612,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00005"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.12.3" TYPE="Illustration" ORDER="1" LABEL="1894. IM BESITZE VON L. BRUMLIK, PRAG.">
-						<div ID="L.1.1.12.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.12.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.12.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.12.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00006"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.13" TYPE="Illustration" ORDER="11" DMDID="c015" LABEL="EIN MENSCH IST DA!">
 					<div ID="L.1.1.13.1" TYPE="Head">
@@ -5642,18 +5634,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.13.3" TYPE="Illustration" ORDER="1" LABEL="1883. IM BESITZE DER KUNSTHANDLUNG H. O. MIETHKE, WIEN.">
-						<div ID="L.1.1.13.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.13.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.13.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.13.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.14" TYPE="Illustration" ORDER="12" DMDID="c016" LABEL="STUDIE ZU DEM BILDE.">
 					<div ID="L.1.1.14.1" TYPE="Head">
@@ -5661,13 +5651,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00005"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.14.2" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.14.2.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.14.2.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_CB00002"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.15" TYPE="Illustration" ORDER="13" DMDID="c017" LABEL="die höhle von steenfool.">
 					<div ID="L.1.1.15.1" TYPE="Head">
@@ -5680,13 +5669,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00002"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.15.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.15.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.15.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_CB00001"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.16" TYPE="Illustration" ORDER="14" DMDID="c018" LABEL="STUDIE VON">
 					<div ID="L.1.1.16.1" TYPE="Head">
@@ -5699,13 +5687,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00002"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.16.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.16.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.16.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_CB00001"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.17" TYPE="TextContent" ORDER="15" DMDID="c019" LABEL="HANS SCHWAIGER.">
 					<div ID="L.1.1.17.1" TYPE="Head">
@@ -5759,18 +5746,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00006"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.5.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.5.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.5.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.5.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.5.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00007"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.6" TYPE="Illustration" ORDER="2" DMDID="c022" LABEL="Zierleiste">
 						<div ID="L.1.1.17.6.1" TYPE="Head">
@@ -5783,18 +5768,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00005"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.6.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.6.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.6.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.6.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.6.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00006"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.7" TYPE="Illustration" ORDER="3" DMDID="c023" LABEL="Taschenfeitel – Fries.">
 						<div ID="L.1.1.17.7.1" TYPE="Head">
@@ -5807,18 +5790,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00008"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.7.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.7.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.7.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00002"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.7.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.7.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00009"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.8" TYPE="Illustration" ORDER="4" DMDID="c024" LABEL="Das Ideal.">
 						<div ID="L.1.1.17.8.1" TYPE="Head">
@@ -5831,18 +5812,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00005"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.8.3" TYPE="Illustration" ORDER="1" LABEL="Zierleiste. Gez.">
-							<div ID="L.1.1.17.8.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.8.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.8.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.8.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00006"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.9" TYPE="Illustration" ORDER="5" DMDID="c025" LABEL="Fragmente aus dem Rahmen der Illustrationen zu Canterburytales.">
 						<div ID="L.1.1.17.9.1" TYPE="Head">
@@ -5855,7 +5834,8 @@
 								<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00008"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.9.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
+						<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.17.9.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
 							<div ID="L.1.1.17.9.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00002"/>
@@ -5909,18 +5889,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00006"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.10.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.10.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.10.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.10.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.10.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00007"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.11" TYPE="Illustration" ORDER="7" DMDID="c032" LABEL="Wallachisehe St. Nicolaus-Semmel.">
 						<div ID="L.1.1.17.11.1" TYPE="Head">
@@ -5933,18 +5911,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00009"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.11.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.11.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.11.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_CB00002"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.11.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.11.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00010"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.12" TYPE="Illustration" ORDER="8" DMDID="c033" LABEL="Teufelsmaske.">
 						<div ID="L.1.1.17.12.1" TYPE="Head">
@@ -5957,18 +5933,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00007"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.12.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.12.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.12.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.12.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.12.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00008"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.17.13" TYPE="Illustration" ORDER="9" DMDID="c034" LABEL="Zierleiste.">
 						<div ID="L.1.1.17.13.1" TYPE="Head">
@@ -5981,18 +5955,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00010"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.17.13.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.17.13.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.17.13.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_CB00002"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.17.13.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.17.13.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00011"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div ID="L.1.1.18" TYPE="TextContent" ORDER="16" DMDID="c035" LABEL="KINDERGEDICHTE.">
@@ -6072,18 +6044,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00012"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.18.6.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.18.6.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.18.6.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.18.6.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.18.6.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00013"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.18.7" TYPE="Illustration" ORDER="5" DMDID="c040" LABEL="Zwiegespräch.">
 						<div ID="L.1.1.18.7.1" TYPE="Head">
@@ -6096,18 +6066,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00015"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.18.7.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.18.7.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.18.7.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_CB00002"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.18.7.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.18.7.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00016"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div ID="L.1.1.19" TYPE="TextContent" ORDER="17" DMDID="c041" LABEL="BEMERKUNGEN ZU DEN REPRODUCTIONEN NACH HANS SCHWAIGERS BILDERN.">
@@ -6144,7 +6112,8 @@
 								<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00009"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.19.3.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
+						<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.19.3.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
 							<div ID="L.1.1.19.3.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_CB00001"/>
@@ -6175,18 +6144,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00012"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.19.4.3" TYPE="Illustration" ORDER="1" LABEL="1898.">
-							<div ID="L.1.1.19.4.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.19.4.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_CB00003"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.19.4.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.19.4.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00013"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div ID="L.1.1.20" TYPE="Illustration" ORDER="18" DMDID="c045" LABEL="Studie">
@@ -6200,13 +6167,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.20.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.20.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.20.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_CB00001"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.21" TYPE="TextContent" ORDER="19" DMDID="c046" LABEL="WAS IST ZEIT GEMÄSS?">
 					<div ID="L.1.1.21.1" TYPE="Head">
@@ -6268,18 +6234,16 @@
 								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00006"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.21.4.3" TYPE="Illustration" ORDER="1" LABEL="1886.">
-							<div ID="L.1.1.21.4.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.21.4.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_CB00001"/>
 								</fptr>
-							</div>
-							<div ID="L.1.1.21.4.3.2" TYPE="Caption">
+							</div><div ID="L.1.1.21.4.3.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00007"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.21.5" TYPE="Illustration" ORDER="2" DMDID="c048" LABEL="STUDIEN AUS KUTTENBERG IN BÖHMEN.">
 						<div ID="L.1.1.21.5.1" TYPE="Head">
@@ -6292,7 +6256,8 @@
 								<area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00005"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.21.5.3" TYPE="Illustration" ORDER="1" LABEL="1886.">
+						<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.21.5.3" TYPE="Illustration" ORDER="1" LABEL="1886.">
 							<div ID="L.1.1.21.5.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_CB00001"/>
@@ -6323,7 +6288,8 @@
 								<area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00005"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.21.6.3" TYPE="Illustration" ORDER="1" LABEL="1886.">
+						<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.21.6.3" TYPE="Illustration" ORDER="1" LABEL="1886.">
 							<div ID="L.1.1.21.6.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_CB00001"/>
@@ -6349,13 +6315,12 @@
 								<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_TB00009"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.21.7.2" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-							<div ID="L.1.1.21.7.2.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.21.7.2.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00001"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div ID="L.1.1.22" TYPE="Illustration" ORDER="20" DMDID="c053" LABEL="Die Armut.">
@@ -6369,18 +6334,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.22.3" TYPE="Illustration" ORDER="1" LABEL="1887. Im Besitze v. Prof. Masaryk. Prag.">
-						<div ID="L.1.1.22.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.22.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.22.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.22.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.23" TYPE="TextContent" ORDER="21" DMDID="c054" LABEL="Untitled text">
 					<div ID="L.1.1.23.1" TYPE="Byline">
@@ -6427,13 +6390,12 @@
 								<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00006"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.24.3.2" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-							<div ID="L.1.1.24.3.2.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.24.3.2.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_CB00001"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 					<div ID="L.1.1.24.4" TYPE="Illustration" ORDER="2" DMDID="c057" LABEL="Heimkehr von der Kirmess.">
 						<div ID="L.1.1.24.4.1" TYPE="Head">
@@ -6446,13 +6408,12 @@
 								<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00008"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.24.4.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-							<div ID="L.1.1.24.4.3.1" TYPE="Image">
+						<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.24.4.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_CB00002"/>
 								</fptr>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div ID="L.1.1.25" TYPE="Illustration" ORDER="23" DMDID="c058" LABEL="FARBENPROBE.">
@@ -6466,18 +6427,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.25.3" TYPE="Illustration" ORDER="1" LABEL="SAMMLUNGEN D. GESELLSCHAFT PATRIOTISCHER KUNSTFREUNDE IN PRAG.">
-						<div ID="L.1.1.25.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.25.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.25.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.25.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.26" TYPE="Illustration" ORDER="24" DMDID="c059" LABEL="ST. GEORG.">
 					<div ID="L.1.1.26.1" TYPE="Head">
@@ -6490,18 +6449,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.26.3" TYPE="Illustration" ORDER="1" LABEL="BESITZER D. REPRODUCTIONSRECHTES: ARTARIA, WIEN.">
-						<div ID="L.1.1.26.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.26.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.26.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.26.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.27" TYPE="Illustration" ORDER="25" DMDID="c060" LABEL="ST. GEORG.">
 					<div ID="L.1.1.27.1" TYPE="Head">
@@ -6514,18 +6471,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00006"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.27.3" TYPE="Illustration" ORDER="1" LABEL="ENTWURF FÜR EIN FRESCO IM SCHLOSSHOFE VON PRUHONITZ BEI PRAG">
-						<div ID="L.1.1.27.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.27.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.27.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.27.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00007"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.28" TYPE="Illustration" ORDER="26" DMDID="c061" LABEL="DIE SPIELER UND DER TEUFEL.">
 					<div ID="L.1.1.28.1" TYPE="Head">
@@ -6538,18 +6493,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.28.3" TYPE="Illustration" ORDER="1" LABEL="IM BESITZE V. L. BRUMLICK, PRAG.">
-						<div ID="L.1.1.28.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.28.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.28.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.28.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.29" TYPE="Illustration" ORDER="27" DMDID="c062" LABEL="DER STREIT UM DEN RICHTIGEN GLAUBEN.">
 					<div ID="L.1.1.29.1" TYPE="Head">
@@ -6562,18 +6515,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00006"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.29.3" TYPE="Illustration" ORDER="1" LABEL="1895.">
-						<div ID="L.1.1.29.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.29.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.29.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.29.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00007"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.30" TYPE="Illustration" ORDER="28" DMDID="c063" LABEL="KREUZWEG.">
 					<div ID="L.1.1.30.1" TYPE="Head">
@@ -6586,18 +6537,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.30.3" TYPE="Illustration" ORDER="1" LABEL="1884. IM BESITZE VON PROF. ZUCKERKANDL, WIEN.">
-						<div ID="L.1.1.30.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.30.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.30.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.30.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00030" BEGIN="P30_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.31" TYPE="Illustration" ORDER="29" DMDID="c064" LABEL="ILLUSTRATION ZUR LEGENDE V. BETTELMÖNCH GRAMSALBUS.">
 					<div ID="L.1.1.31.1" TYPE="Head">
@@ -6610,13 +6559,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.31.3" TYPE="Illustration" ORDER="1" LABEL="1885. IM BESITZE DER KUNSTHANDLUNG ARTARIA, WIEN.">
-						<div ID="L.1.1.31.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.31.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.31.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.31.3.2" TYPE="Caption">
 							<fptr>
 								<seq>
 									<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00004"/>
@@ -6624,7 +6572,6 @@
 								</seq>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.32" TYPE="Illustration" ORDER="30" DMDID="c065" LABEL="EINLEITUNGSBILD ZU CHAUCERS CANTERBURYTALES.">
 					<div ID="L.1.1.32.1" TYPE="Head">
@@ -6637,18 +6584,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00007"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.32.3" TYPE="Illustration" ORDER="1" LABEL="1882. IM BESITZE DER GRÄFIN SIZZO-NORIS.">
-						<div ID="L.1.1.32.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.32.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.32.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.32.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00008"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.33" TYPE="Illustration" ORDER="31" DMDID="c066" LABEL="ILLUSTRATIONEN ZU CHAUCERS CANTERBURYTALES.">
 					<div ID="L.1.1.33.1" TYPE="Head">
@@ -6661,7 +6606,8 @@
 							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.33.3" TYPE="Illustration" ORDER="1" LABEL="1882. IM BESITZE D. GRÄFIN SIZZO-NORIS, WIEN.">
+					<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.33.3" TYPE="Illustration" ORDER="1" LABEL="1882. IM BESITZE D. GRÄFIN SIZZO-NORIS, WIEN.">
 						<div ID="L.1.1.33.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00001"/>
@@ -6692,7 +6638,8 @@
 							<area BETYPE="IDREF" FILEID="ALTO00033" BEGIN="P33_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.34.3" TYPE="Illustration" ORDER="1" LABEL="1882. IM BESITZE D. GRÄFIN SIZZO-NORIS, WIEN.">
+					<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.34.3" TYPE="Illustration" ORDER="1" LABEL="1882. IM BESITZE D. GRÄFIN SIZZO-NORIS, WIEN.">
 						<div ID="L.1.1.34.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00033" BEGIN="P33_CB00001"/>
@@ -6723,18 +6670,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.35.3" TYPE="Illustration" ORDER="1" LABEL="1882. IM BESITZE VON Dr. LÖW, WIEN.">
-						<div ID="L.1.1.35.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.35.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.35.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.35.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.36" TYPE="Illustration" ORDER="34" DMDID="c071" LABEL="DAS GALGENWURZZIEHEN.">
 					<div ID="L.1.1.36.1" TYPE="Head">
@@ -6747,18 +6692,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_TB00006"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.36.3" TYPE="Illustration" ORDER="1" LABEL="1893. IM BES. D. KUNSTHANDLUNG H. O. MIETHKE, WIEN.">
-						<div ID="L.1.1.36.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.36.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.36.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.36.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00034" BEGIN="P34_TB00007"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.37" TYPE="Illustration" ORDER="35" DMDID="c072" LABEL="AHASVER.">
 					<div ID="L.1.1.37.1" TYPE="Head">
@@ -6771,18 +6714,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.37.3" TYPE="Illustration" ORDER="1" LABEL="IM BESITZE D. KUNSTHANDLUNG H. O. MIETHKE, WIEN.">
-						<div ID="L.1.1.37.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.37.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.37.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.37.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.38" TYPE="Illustration" ORDER="36" DMDID="c073" LABEL="KINDER VOR DER HÖHLE RÜBEZAHL8.">
 					<div ID="L.1.1.38.1" TYPE="Head">
@@ -6795,18 +6736,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_TB00006"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.38.3" TYPE="Illustration" ORDER="1" LABEL="1883. IM BES. D. KUNSTHANDLUNG H. O. MIETHKE, WIEN.">
-						<div ID="L.1.1.38.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.38.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.38.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.38.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_TB00007"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.39" TYPE="Illustration" ORDER="37" DMDID="c074" LABEL="AUS EINEM RATTENFÄNGER-ALBUM.">
 					<div ID="L.1.1.39.1" TYPE="Head">
@@ -6819,7 +6758,8 @@
 							<area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.39.3" TYPE="Illustration" ORDER="1" LABEL="1882. BESITZER: S. EXC. GRAF HANS WILCZEK.">
+					<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.39.3" TYPE="Illustration" ORDER="1" LABEL="1882. BESITZER: S. EXC. GRAF HANS WILCZEK.">
 						<div ID="L.1.1.39.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_CB00001"/>
@@ -6850,13 +6790,12 @@
 							<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.40.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-						<div ID="L.1.1.40.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.40.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_CB00001"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.41" TYPE="Illustration" ORDER="39" DMDID="c077" LABEL="STEINERNES THÜRFUTTER VON EINEM BADERHAUSE A. D. J. 1556 ZU NEUHAUS IN BÖHMEN.">
 					<div ID="L.1.1.41.1" TYPE="Head">
@@ -6869,18 +6808,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00005"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.41.3" TYPE="Illustration" ORDER="1" LABEL="1881.">
-						<div ID="L.1.1.41.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.41.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_CB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.41.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.41.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00006"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.42" TYPE="Illustration" ORDER="40" DMDID="c078" LABEL="AUS E. RATTENFÄNGER-ALBUM.">
 					<div ID="L.1.1.42.1" TYPE="Head">
@@ -6893,18 +6830,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00008"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.42.3" TYPE="Illustration" ORDER="1" LABEL="1882. BESITZER: S. EXC. GRAF H. WILCZEK. WIEN.">
-						<div ID="L.1.1.42.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.42.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_CB00003"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.42.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.42.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00009"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.43" TYPE="Illustration" ORDER="41" DMDID="c079" LABEL="AUS EINEM RATTENFÄNGER-ALBUM.">
 					<div ID="L.1.1.43.1" TYPE="Head">
@@ -6917,18 +6852,16 @@
 							<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00003"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.43.3" TYPE="Illustration" ORDER="1" LABEL="1882. BESITZER: S. EXC. GRAF H. WILCZEK, WIEN.">
-						<div ID="L.1.1.43.3.1" TYPE="Image">
+					<!--Unbound Illustration Div removed-->
+<div ID="L.1.1.43.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.43.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.43.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00004"/>
 							</fptr>
 						</div>
-					</div>
 				</div>
 				<div ID="L.1.1.44" TYPE="Illustration" ORDER="42" DMDID="c080" LABEL="Untitled text">
 					<div ID="L.1.1.44.1" TYPE="Byline">
@@ -6936,7 +6869,8 @@
 							<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00005"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.44.2" TYPE="Illustration" ORDER="1" LABEL="1898.">
+					<!--This constituent has multiple child illustrations, the first is unbound--><!--No changes made by the transformation script-->
+<div ID="L.1.1.44.2" TYPE="Illustration" ORDER="1" LABEL="1898.">
 						<div ID="L.1.1.44.2.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_CB00002"/>
