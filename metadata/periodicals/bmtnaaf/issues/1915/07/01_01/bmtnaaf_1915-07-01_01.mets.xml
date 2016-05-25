@@ -5,7 +5,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:local="http://diglib.princeton.edu"
       xmlns:mods="http://www.loc.gov/mods/v3"
-      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       TYPE="Magazine"
       OBJID="urn:PUL:periodicals:bluemountain:bmtnaaf_1915-07-01_01">
 	  <metsHdr>
@@ -76,12 +76,13 @@
 						            <titleInfo lang="fre">
 							              <title>petits faits &amp; association d'idées plutôt tristes VAGUEMENT PHILOSOPHIQUES</title>
 						            </titleInfo>
-						            <name type="personal">
-							              <displayForm>Amédée OZENFANT</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/44307485">
+					          		<displayForm>AMÉDÉE OZENFANT</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>text</typeOfResource>
 						            <language>
 							              <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -113,12 +114,13 @@
 						            <titleInfo lang="fre">
 							              <title>ALLEMAGNE, NOCTURNE ALLEMAGNE!</title>
 						            </titleInfo>
-						            <name type="personal">
-							              <displayForm>LUCIEN MAINSSIEUX</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/171319">
+					          		<displayForm>LUCIEN MAINSSIEUX</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>text</typeOfResource>
 						            <language>
 							              <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -134,6 +136,13 @@
 						            <titleInfo lang="fre">
 							              <title>DESSIN DE A.-D. DE SEGONZAC, SERGENT</title>
 						            </titleInfo>
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/59081879">
+					          		<displayForm>A.-D. DE SEGONZAC</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
@@ -178,6 +187,13 @@
 							              <titleInfo lang="fre">
 								                <title>dessin de MAXIMILIEN VOLOCHINE</title>
 							              </titleInfo>
+						            	<name type="personal" authority="viaf"
+						            		valueURI="http://viaf.org/viaf/51697196">
+						            		<displayForm>MAXIMILIEN VOLOCHINE</displayForm>
+						            		<role>
+						            			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+						            		</role>
+						            	</name>
 							              <typeOfResource>still image</typeOfResource>
 							              <part>
 								                <extent unit="page">
@@ -192,6 +208,13 @@
 							              <nonSort>un</nonSort>
 							              <title>BOIS de I'ARGONNE de A. OZENFANT</title>
 						            </titleInfo>
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/44307485">
+					          		<displayForm>AMÉDÉE OZENFANT</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
@@ -204,12 +227,13 @@
 						            <titleInfo lang="fre">
 							              <title>LÀ-BAS...</title>
 						            </titleInfo>
-						            <name type="personal">
-							              <displayForm>RENÉ-ADOLPHE DRANCOURT 2 Juin 1915</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
+					          	<name type="personal">
+					          		<displayForm>RENÉ-ADOLPHE DRANCOURT 2 Juin 1915</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
+						        
 						            <typeOfResource>text</typeOfResource>
 						            <language>
 							              <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -226,18 +250,13 @@
 							              <nonSort>LE</nonSort>
 							              <title>MIRACLE DES FLEURS</title>
 						            </titleInfo>
-						            <name type="personal">
-							              <displayForm>LES JOURNAUX</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
-						            <name type="personal">
-							              <displayForm>J.N.Jaurs. Biguer</displayForm>
-							              <role>
-								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							              </role>
-						            </name>
+					          	<name type="personal" authority="viaf"
+					          		valueURI="http://viaf.org/viaf/50830277">
+					          		<displayForm>J. N. Faure-Biguet</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>text</typeOfResource>
 						            <language>
 							              <languageTerm authority="iso639-2b">fre</languageTerm>
@@ -256,6 +275,12 @@
 						            <titleInfo lang="fre">
 							              <title>L'INVASION</title>
 						            </titleInfo>
+					          	<name> type="personal" 
+					          		<displayForm>Abadie</displayForm>
+					          		<role>
+					          			<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					          		</role>
+					          	</name>
 						            <typeOfResource>still image</typeOfResource>
 						            <part>
 							              <extent unit="page">
