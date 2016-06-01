@@ -153,6 +153,22 @@
 								</extent>
 							</part>
 						</relatedItem>
+						<relatedItem type="constituent" ID="c003g">
+							<titleInfo lang="ger">
+								<title>Mein neuer Freund uber einen Kollegen und sich</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>2</start>
+								</extent>
+							</part>
+						</relatedItem>
+
 						<relatedItem type="constituent" ID="c003d">
 							<titleInfo lang="ger">
 								<title>Mein neuer Freund als Politiker</title>
@@ -1406,23 +1422,24 @@
 								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00005"/>
 							</fptr>
 						</div>
-						
+
 						<!--MET-296-start-->
 						<div ID="MET-296-c003a" TYPE="TextContent" ORDER="1" DMDID="c003a"
-							LABEL="'Freie' Hochschule"><div ID="L.1.1.2.3.3.1.1" TYPE="Head" ORDER="1">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
-										</fptr>
-									</div>
+							LABEL="'Freie' Hochschule">
+							<div ID="L.1.1.2.3.3.1.1" TYPE="Head" ORDER="1">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
+								</fptr>
+							</div>
 							<!--'Freie’ Hochschule-Head/Byline -->
 							<div ID="MET-296-c003a.c" TYPE="Copy">
 								<div ID="MET-296-c003a.c.b" TYPE="BodyContent">
-									
+
 									<div ID="L.1.1.2.3.3.1.2" TYPE="Paragraph" ORDER="2">
 										<div ID="L.1.1.2.3.3.1.2.1" TYPE="Text">
 											<fptr>
 												<area BETYPE="IDREF" FILEID="ALTO00002"
-													BEGIN="P2_TB00004"/>
+												BEGIN="P2_TB00004"/>
 											</fptr>
 										</div>
 									</div>
@@ -1431,91 +1448,110 @@
 						</div>
 						<div ID="MET-296-c003b" TYPE="TextContent" ORDER="2" DMDID="c003b"
 							LABEL="Mein neuer Freund">
-								<div ID="L.1.1.2.3.3.1.3" TYPE="Head" ORDER="3">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00005"/>
-									</fptr>
-								</div>
+							<div ID="L.1.1.2.3.3.1.3" TYPE="Head" ORDER="3">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00005"/>
+								</fptr>
+							</div>
 							<!--Mein neuer Freund-Head/Byline -->
 							<div ID="MET-296-c003b.c" TYPE="Copy">
 								<div ID="MET-296-c003b.c.b" TYPE="BodyContent">
-								<div ID="L.1.1.2.3.3.1.4" TYPE="Paragraph" ORDER="4">
-									<div ID="L.1.1.2.3.3.1.4.1" TYPE="Text">
-										<fptr>
-											<seq>
+									<div ID="L.1.1.2.3.3.1.4" TYPE="Paragraph" ORDER="4">
+										<div ID="L.1.1.2.3.3.1.4.1" TYPE="Text">
+											<fptr>
+												<seq>
 												<area BETYPE="IDREF" FILEID="ALTO00002"
 												BEGIN="P2_TB00006"/>
 												<area BETYPE="IDREF" FILEID="ALTO00002"
 												BEGIN="P2_TB00007"/>
-											</seq>
-										</fptr>
+												</seq>
+											</fptr>
+										</div>
 									</div>
-								</div>
 									<!-- Paragraphs  -->
 								</div>
 							</div>
 						</div>
 						<div ID="MET-296-c003c" TYPE="TextContent" ORDER="3" DMDID="c003c"
 							LABEL="Mein neuer Freund über Anton von Werner und sich selbst:">
-								<div ID="L.1.1.2.3.3.1.5" TYPE="Head" ORDER="5">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00008"/>
-									</fptr>
-								</div>
+							<div ID="L.1.1.2.3.3.1.5" TYPE="Head" ORDER="5">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00008"/>
+								</fptr>
+							</div>
 							<!--Mein neuer Freund über Anton von Werner und sich selbst:-Head/Byline -->
 							<div ID="MET-296-c003c.c" TYPE="Copy">
 								<div ID="MET-296-c003c.c.b" TYPE="BodyContent">
-								<div ID="L.1.1.2.3.3.1.6" TYPE="Paragraph" ORDER="6">
-									<div ID="L.1.1.2.3.3.1.6.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002"
+									<div ID="L.1.1.2.3.3.1.6" TYPE="Paragraph" ORDER="6">
+										<div ID="L.1.1.2.3.3.1.6.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00002"
 												BEGIN="P2_TB00009"/>
-										</fptr>
+											</fptr>
+										</div>
 									</div>
-								</div>
 									<!-- Paragraphs  -->
 								</div>
 							</div>
 						</div>
-						<div ID="MET-296-c003d" TYPE="TextContent" ORDER="4" DMDID="c003d"
-							LABEL="Mein neuer Freund als Politiker">
-								<div ID="L.1.1.2.3.3.1.7" TYPE="Head" ORDER="7">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00010"/>
-									</fptr>
+						<!-- GH-99 ticket -->
+						<div ID="MET-GH99-c003g" TYPE="TextContent" ORDER="4" DMDID="c003g"
+							LABEL="Mein neuer Freund uber einen Kollegen und sich">
+							<!--Mein neuer Freund uber einen Kollegen und sich-Head/Byline -->
+							<div ID="MET-GH99-c003g.c" TYPE="Copy">
+								<div ID="MET-GH99-c003g.c.b" TYPE="BodyContent">
+									<!-- Paragraphs  -->
+									<div ID="MET-GH99-c003g.c.b.p" TYPE="Paragraph" ORDER="6">
+										<div ID="MET-GH99-c003g.c.b.p.t" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00002"
+													BEGIN="P2_MET-GH99-c003g"/>
+											</fptr>
+										</div>
+									</div>
 								</div>
+							</div>
+						</div>					
+
+						<div ID="MET-296-c003d" TYPE="TextContent" ORDER="5" DMDID="c003d"
+							LABEL="Mein neuer Freund als Politiker">
+							<div ID="L.1.1.2.3.3.1.7" TYPE="Head" ORDER="7">
+								<fptr>
+									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00010"/>
+								</fptr>
+							</div>
 							<!--Mein neuer Freund als Politiker-Head/Byline -->
 							<div ID="MET-296-c003d.c" TYPE="Copy">
 								<div ID="MET-296-c003d.c.b" TYPE="BodyContent">
-								<div ID="L.1.1.2.3.3.1.8" TYPE="Paragraph" ORDER="8">
-									<div ID="L.1.1.2.3.3.1.8.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002"
+									<div ID="L.1.1.2.3.3.1.8" TYPE="Paragraph" ORDER="8">
+										<div ID="L.1.1.2.3.3.1.8.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00002"
 												BEGIN="P2_TB00011"/>
-										</fptr>
+											</fptr>
+										</div>
 									</div>
-								</div>
 									<!-- Paragraphs  -->
 								</div>
 							</div>
 						</div>
-						<div ID="MET-296-c003e" TYPE="TextContent" ORDER="5" DMDID="c003e"
+						<div ID="MET-296-c003e" TYPE="TextContent" ORDER="6" DMDID="c003e"
 							LABEL="Die um Goethe">
 							<div ID="L.1.1.2.3.3.1.9" TYPE="Head" ORDER="9">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00012"/>
 								</fptr>
 							</div>
-							
+
 							<div ID="MET-296-c003e.c" TYPE="Copy">
 								<div ID="MET-296-c003e.c.b" TYPE="BodyContent">
-									
-									
+
+
 									<div ID="L.1.1.2.3.3.1.10" TYPE="Paragraph" ORDER="10">
 										<div ID="L.1.1.2.3.3.1.10.1" TYPE="Text">
 											<fptr>
 												<area BETYPE="IDREF" FILEID="ALTO00002"
-													BEGIN="P2_TB00013"/>
+												BEGIN="P2_TB00013"/>
 											</fptr>
 										</div>
 									</div>
@@ -1523,23 +1559,24 @@
 										<div ID="L.1.1.2.3.3.1.11.1" TYPE="Text">
 											<fptr>
 												<area BETYPE="IDREF" FILEID="ALTO00002"
-													BEGIN="P2_TB00014"/>
+												BEGIN="P2_TB00014"/>
 											</fptr>
 										</div>
 									</div>
 									<div ID="L.1.1.2.3.3.1.12" TYPE="MinorHead" ORDER="12">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00015"/>
+											<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00015"/>
 										</fptr>
 									</div>
 									<div ID="L.1.1.2.3.3.1.13" TYPE="Paragraph" ORDER="13">
 										<div ID="L.1.1.2.3.3.1.13.1" TYPE="Text">
 											<fptr>
 												<seq>
-													<area BETYPE="IDREF" FILEID="ALTO00002"
-														BEGIN="P2_TB00016"/>
-													<area BETYPE="IDREF" FILEID="ALTO00003"
-														BEGIN="P3_TB00002"/>
+												<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00016"/>
+												<area BETYPE="IDREF" FILEID="ALTO00003"
+												BEGIN="P3_TB00002"/>
 												</seq>
 											</fptr>
 										</div>
@@ -1547,14 +1584,14 @@
 								</div>
 							</div>
 						</div>
-						<div ID="MET-296-c003f" TYPE="TextContent" ORDER="6" DMDID="c003f"
+						<div ID="MET-296-c003f" TYPE="TextContent" ORDER="7" DMDID="c003f"
 							LABEL="Steinfindlinge">
 							<div ID="L.1.1.2.3.3.1.14" TYPE="Head" ORDER="14">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
 								</fptr>
 							</div>
-							
+
 							<div ID="MET-296-c003f.c" TYPE="Copy">
 								<div ID="MET-296-c003f.c.b" TYPE="BodyContent">
 									<div ID="L.1.1.2.3.3.1.15" TYPE="Paragraph" ORDER="15">
@@ -1565,7 +1602,7 @@
 											</fptr>
 										</div>
 									</div>
-									
+
 								</div>
 							</div>
 						</div>

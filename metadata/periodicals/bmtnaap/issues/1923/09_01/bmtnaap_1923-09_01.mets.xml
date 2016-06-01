@@ -297,7 +297,7 @@
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem ID="c014">
+               <relatedItem ID="c014" type="constituent">
                   <titleInfo lang="eng">
                      <title>DO YOU FEAR THE DARK</title>
                   </titleInfo>
@@ -313,12 +313,12 @@
                   </language>
                   <part>
                      <extent unit="page">
-                        <list>35-36</list>
+                        <list>35</list>
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
                </relatedItem>
-               <relatedItem ID="c015">
+               <relatedItem ID="c015" type="constituent">
                   <titleInfo lang="eng">
                      <title>From "Souls for Sale," Goldwyn Studios</title>
                   </titleInfo>
@@ -330,7 +330,29 @@
                   </part>
                   <genre type="CCS">Illustration</genre>
                </relatedItem>
-               <relatedItem type="constituent" ID="c017">
+
+               <relatedItem ID="c016" type="constituent">
+                  <titleInfo lang="eng">
+                     <title>We bring THE GIFT BEAUTIFUL</title>
+                  </titleInfo>
+                  <name>
+                     <displayForm>Matthew Josephson</displayForm>
+                     <role>
+                        <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+                     </role>
+                  </name>
+                  <typeOfResource>text</typeOfResource>
+                  <language>
+                     <languageTerm authority="iso639-2b">eng</languageTerm>
+                  </language>
+                  <part>
+                     <extent unit="page">
+                        <list>37</list>
+                     </extent>
+                  </part>
+                  <genre type="CCS">TextContent</genre>
+               </relatedItem>
+               <relatedItem ID="c017" type="constituent">
                   <titleInfo lang="eng">
                      <title>Frank Mayo and Barbara Castleton in "Souls for Sale"</title>
                   </titleInfo>
@@ -341,28 +363,6 @@
                      </extent>
                   </part>
                   <genre type="CCS">Illustration</genre>
-               </relatedItem>
-
-               <relatedItem type="constituent" ID="c016">
-                  <titleInfo lang="eng">
-                     <title>We bring THE GIFT BEAUTIFUL</title>
-                  </titleInfo>
-                  <name type="personal">
-              	      <displayForm>Matthew Josephson</displayForm>
-              	      <role>
-              		<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-              	      </role>
-              	    </name>
-                  <typeOfResource>text</typeOfResource>
-                  <language>
-                     <languageTerm authority="iso639-2b">eng</languageTerm>
-                  </language>
-                  <part>
-                     <extent unit="page">
-                        <list>37-38</list>
-                     </extent>
-                  </part>
-                  <genre type="CCS">TextContent</genre>
                </relatedItem>
 
                <relatedItem type="constituent" ID="c018">
@@ -478,7 +478,7 @@
                      </extent>
                   </part>
                   <genre type="CCS">TextContent</genre>
-                  <relatedItem ID="c022a">
+                  <relatedItem ID="c022a" type="constituent">
                      <titleInfo lang="eng">
                         <nonSort>The</nonSort>
                         <title>Problem of Space</title>
@@ -566,6 +566,21 @@
                      <part>
                         <extent unit="page">
                            <list>62-63</list>
+                        </extent>
+                     </part>
+                  </relatedItem>
+                  <relatedItem type="constituent" ID="c022f">
+                     <titleInfo lang="eng">
+                        <title>NEW BOOKS RECEIVED</title>
+                     </titleInfo>
+                     <typeOfResource>text</typeOfResource>
+                     <genre type="CCS">TextContent</genre>
+                     <language>
+                        <languageTerm authority="iso639-2b">eng</languageTerm>
+                     </language>
+                     <part>
+                        <extent unit="page">
+                           <list>63</list>
                         </extent>
                      </part>
                   </relatedItem>
@@ -7875,6 +7890,20 @@
                   </div>
                   <!-- End of Copy L.1.1.2.9.2 -->
                </div>
+               <!-- Ticket 194 -->
+               <div ID="L.1.1.2.10.3" TYPE="Illustration" ORDER="1" DMDID="c015"
+                  LABEL="From &#34;Souls for Sale,&#34; Golwyn Studios">
+                  <div ID="L.1.1.2.10.3.1" TYPE="Image">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_CB00001"/>
+                     </fptr>
+                  </div>
+                  <div ID="L.1.1.2.10.3.2" TYPE="Caption">
+                     <fptr>
+                        <area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_TB00001"/>
+                     </fptr>
+                  </div>
+               </div>
                <div ID="L.1.1.2.9.16" TYPE="TextContent" ORDER="9" DMDID="c016"
                   LABEL="THE GIFT BEAUTIFUL">
                   <div ID="L.1.1.2.11.2" TYPE="Byline">
@@ -7898,20 +7927,6 @@
                         </div>
                      </div>
                   </div>                 
-               </div>
-               <!-- Ticket 194 -->
-               <div ID="L.1.1.2.10.3" TYPE="Illustration" ORDER="1" DMDID="c015"
-                  LABEL="From &#34;Souls for Sale,&#34; Golwyn Studios">
-                  <div ID="L.1.1.2.10.3.1" TYPE="Image">
-                     <fptr>
-                        <area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_CB00001"/>
-                     </fptr>
-                  </div>
-                  <div ID="L.1.1.2.10.3.2" TYPE="Caption">
-                     <fptr>
-                        <area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_TB00001"/>
-                     </fptr>
-                  </div>
                </div>
                <div ID="L.1.1.2.11.3" TYPE="Illustration" ORDER="1" DMDID="c017"
                   LABEL="Frank Mayo and Barbara Castleton in &#34;Souls for Sale&#34;">
@@ -8189,18 +8204,7 @@
 
 
 
-                        <div ID="L.1.1.2.15.4.1.10" TYPE="Head" ORDER="10">
-                           <fptr>
-                              <area BETYPE="IDREF" FILEID="ALTO00063" BEGIN="P63_TB00003"/>
-                           </fptr>
-                        </div>
-                        <div ID="L.1.1.2.15.4.1.11" TYPE="Paragraph" ORDER="11">
-                           <div ID="L.1.1.2.15.4.1.11.1" TYPE="Text">
-                              <fptr>
-                                 <area BETYPE="IDREF" FILEID="ALTO00063" BEGIN="P63_TB00004"/>
-                              </fptr>
-                           </div>
-                        </div>
+                        
                      </div>
                   </div>
                   <!--MET-627-start-->
@@ -8337,6 +8341,28 @@
                         </div>
                      </div>
                   </div>
+                  <div ID="MET-627-c022f" TYPE="TextContent" ORDER="1" DMDID="c022f"
+                       LABEL="Label">
+                       <!--Paste head/minor head here -->
+                     <div ID="L.1.1.2.15.4.1.10" TYPE="Head" ORDER="10">
+                        <fptr>
+                           <area BETYPE="IDREF" FILEID="ALTO00063" BEGIN="P63_TB00003"/>
+                        </fptr>
+                     </div>
+                     <div ID="MET-627-c022f.c" TYPE="Copy">
+                        <div ID="MET-627-c022f.c.b" TYPE="BodyContent">
+                             <!--Paste Paragraphs here -->
+                             
+                             <div ID="L.1.1.2.15.4.1.11" TYPE="Paragraph" ORDER="11">
+                                <div ID="L.1.1.2.15.4.1.11.1" TYPE="Text">
+                                   <fptr>
+                                      <area BETYPE="IDREF" FILEID="ALTO00063" BEGIN="P63_TB00004"/>
+                                   </fptr>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
                   <!--MET-627-end-->
 
                </div>
