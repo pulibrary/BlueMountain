@@ -84,21 +84,6 @@
 						</part>
 						<genre type="CCS">TextContent</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c004a">
-						<titleInfo lang="ger">
-							<title>II. AUSSTELLUNG DER VEREINIGUNG BILDENDER KÜNSTLER ÖSTERREICHS</title>
-						</titleInfo>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<start>3</start>
-							</extent>
-						</part>
-						<genre type="CCS">TextContent</genre>
-					</relatedItem>
 					<relatedItem type="constituent" ID="c005">
 						<titleInfo lang="ger">
 							<title>Studie</title>
@@ -161,6 +146,21 @@
 								<list>5; 7; 10-12; 16; 19; 22; 28</list>
 							</extent>
 						</part>
+						<relatedItem ID="c004a">
+							<titleInfo lang="ger">
+								<title>II. AUSSTELLUNG DER VEREINIGUNG BILDENDER KÜNSTLER ÖSTERREICHS</title>
+							</titleInfo>
+							<typeOfResource>text</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>3</start>
+								</extent>
+							</part>
+							<genre type="CCS">TextContent</genre>
+						</relatedItem>
 						<genre type="CCS">TextContent</genre>
 						<relatedItem type="constituent" ID="c008">
 							<titleInfo lang="ger">
@@ -186,7 +186,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c009">
 							<titleInfo lang="ger">
-								<title>Muschelschalem.Hexe</title>
+								<title>Muschelschalem Hexe</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Gustav Gurschner</displayForm>
@@ -208,7 +208,7 @@
 						</relatedItem>
 						<relatedItem type="constituent" ID="c010">
 							<titleInfo lang="ger">
-								<title>Für V. S. gez</title>
+								<title>Untitled Image</title>
 							</titleInfo>
 							<name type="personal">
 								<displayForm>Alois Hänisch</displayForm>
@@ -989,36 +989,14 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c046">
-							<titleInfo>
-								<title>Untitled Image</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>31</start>
-								</extent>
-							</part>
-							<genre type="CCS">Music</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c047">
-							<titleInfo>
-								<title>Untitled Image</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>32</start>
-								</extent>
-							</part>
-							<genre type="CCS">Music</genre>
-						</relatedItem>
+
+
 					</relatedItem>
-					<relatedItem type="constituent" ID="c048">
+					<relatedItem ID="c048">
 						<titleInfo lang="ger">
 							<title>Umrahmung</title>
 						</titleInfo>
-						<name type="personal">
+						<name>
 							<displayForm>Peter Behrens</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -1030,7 +1008,7 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<start>32</start>
+								<start>31-32</start>
 							</extent>
 						</part>
 						<genre type="CCS">Illustration</genre>
@@ -1191,7 +1169,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c056">
 						<titleInfo>
-							<title>Untitled Image</title>
+							<title>Ver Sacrum</title>
 						</titleInfo>
 						<typeOfResource>still image</typeOfResource>
 						<part>
@@ -5233,14 +5211,10 @@
 						</div>
 					</div>
 				</div>
-				<div ID="L.1.1.5" TYPE="Illustration" ORDER="3" DMDID="c005"
-					LABEL="II. AUSSTELLUNG DER VEREINIGUNG BILDENDER KÜNSTLER ÖSTERREICHS. Studie.">
+				<div ID="L.1.1.5" TYPE="Illustration" ORDER="3" DMDID="c005" LABEL="Studie.">
 					<div ID="L.1.1.5.1" TYPE="Head">
 						<fptr>
-							<seq>
-								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
-								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
-							</seq>
+							<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
 						</fptr>
 					</div>
 					<div ID="L.1.1.5.2" TYPE="Byline">
@@ -5332,6 +5306,15 @@
 							</div>
 						</div>
 					</div>
+				<div ID="GH-101-1" TYPE="TextContent" ORDER="1" DMDID="c004a"
+					LABEL="AUSSTELLUNG DER VEREINIGUNG BILDENDER KÜNSTLER ÖSTERREICHS">
+					<!--Paste head/minor head here -->
+					<div ID="L.1.1.5.1a" TYPE="Head">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
+						</fptr>
+					</div>
+				</div>
 					<div ID="L.1.1.7.4" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="ALTSTADT.">
 						<div ID="L.1.1.7.4.1" TYPE="Head">
 							<fptr>
@@ -6145,20 +6128,20 @@
 							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00008"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.33.4" TYPE="Music" ORDER="1" DMDID="c046" LABEL="Untitled">
-						<div ID="L.1.1.33.4.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00002"/>
-							</fptr>
-						</div>
+
+					<div ID="L.1.1.33.4.1" TYPE="Image">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00002"/>
+						</fptr>
 					</div>
-					<div ID="L.1.1.33.5" TYPE="Music" ORDER="2" DMDID="c047" LABEL="Untitled">
-						<div ID="L.1.1.33.5.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00002"/>
-							</fptr>
-						</div>
+
+
+					<div ID="L.1.1.33.5.1" TYPE="Image">
+						<fptr>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00002"/>
+						</fptr>
 					</div>
+
 					<div ID="L.1.1.33.6" TYPE="Copy">
 						<div ID="L.1.1.33.6.1" TYPE="BodyContent">
 							<div ID="L.1.1.33.6.1.1" TYPE="Paragraph" ORDER="1">
@@ -6179,18 +6162,22 @@
 				<div ID="L.1.1.34" TYPE="Illustration" ORDER="32" DMDID="c048" LABEL="Umrahmung v.">
 					<div ID="L.1.1.34.1" TYPE="Head">
 						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00002"/>
+							<seq>
+							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00002"/>
+								<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00002"/></seq>
 						</fptr>
 					</div>
 					<div ID="L.1.1.34.2" TYPE="Byline">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00003"/>
+						<fptr><seq>
+							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB0000"/>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_TB00003"/></seq>
 						</fptr>
 					</div>
 					<!--Unbound Illustration Div removed-->
 					<div ID="L.1.1.34.3.1" TYPE="Image">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00001"/>
+						<fptr><seq>
+							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00001"/>
+							<area BETYPE="IDREF" FILEID="ALTO00032" BEGIN="P32_CB00001"/></seq>
 						</fptr>
 					</div>
 				</div>
