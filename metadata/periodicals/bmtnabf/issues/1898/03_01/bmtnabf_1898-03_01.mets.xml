@@ -430,24 +430,24 @@
 								</extent>
 							</part>
 							<genre type="CCS">Illustration</genre>
-							<relatedItem type="constituent" ID="c020">
-								<titleInfo>
-									<title>Der Neid</title>
-								</titleInfo>
-								<typeOfResource>still image</typeOfResource>
-								<name type="personal">
-									<displayForm>Gust. Klimt</displayForm>
-									<role>
-										<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-									</role>
-								</name>
-								<part>
-									<extent unit="page">
-										<start>14</start>
-									</extent>
-								</part>
-								<genre type="CCS">Illustration</genre>
-							</relatedItem>
+						</relatedItem>
+						<relatedItem ID="c020">
+							<titleInfo>
+								<title>Der Neid</title>
+							</titleInfo>
+							<typeOfResource>still image</typeOfResource>
+							<name>
+								<displayForm>Gust. Klimt</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<part>
+								<extent unit="page">
+									<start>14</start>
+								</extent>
+							</part>
+							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c021">
 							<titleInfo lang="ger">
@@ -469,18 +469,18 @@
 								</extent>
 							</part>
 							<genre type="CCS">Illustration</genre>
-							<relatedItem type="constituent" ID="c022">
-								<titleInfo>
-									<title>Ver Sacrum</title>
-								</titleInfo>
-								<typeOfResource>still image</typeOfResource>
-								<part>
-									<extent unit="page">
-										<start>15</start>
-									</extent>
-								</part>
-								<genre type="CCS">Illustration</genre>
-							</relatedItem>
+						</relatedItem>
+						<relatedItem ID="c022">
+							<titleInfo>
+								<title>Ver Sacrum</title>
+							</titleInfo>
+							<typeOfResource>still image</typeOfResource>
+							<part>
+								<extent unit="page">
+									<start>15</start>
+								</extent>
+							</part>
+							<genre type="CCS">Illustration</genre>
 						</relatedItem>
 						<relatedItem type="constituent" ID="c023">
 							<titleInfo lang="ger">
@@ -633,6 +633,23 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
+						<relatedItem type="constituent" ID="c029a">
+							<titleInfo lang="ger">
+								<title>Lehnen im Abendgarten beide…</title>
+							</titleInfo>
+							<name type="personal"><displayForm>RAINIER MARIA RILKE</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>21</start>
+								</extent>
+							</part>
+						</relatedItem>
+
 						<relatedItem type="constituent" ID="c030">
 							<titleInfo lang="ger">
 								<title>Porträtskizze</title>
@@ -744,30 +761,7 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c036">
-							<titleInfo>
-								<title>Untitled Image</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>25</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
-						<relatedItem type="constituent" ID="c037">
-							<titleInfo>
-								<title>Untitled Image</title>
-							</titleInfo>
-							<typeOfResource>still image</typeOfResource>
-							<part>
-								<extent unit="page">
-									<start>25</start>
-								</extent>
-							</part>
-							<genre type="CCS">Illustration</genre>
-						</relatedItem>
+
 						<relatedItem type="constituent" ID="c038">
 							<titleInfo>
 								<title>Untitled Image</title>
@@ -3817,11 +3811,7 @@
 							<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00002"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.6.2" TYPE="Byline">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00002"/>
-						</fptr>
-					</div>
+
 					<div ID="L.1.1.6.3" TYPE="Copy">
 						<div ID="L.1.1.6.3.1" TYPE="BodyContent">
 							<div ID="L.1.1.6.3.1.1" TYPE="Paragraph" ORDER="1">
@@ -3896,14 +3886,7 @@
 									</fptr>
 								</div>
 							</div>
-							<div ID="L.1.1.6.3.1.4" TYPE="Paragraph" ORDER="4">
-								<div ID="L.1.1.6.3.1.4.1" TYPE="Text">
-									<fptr>
-										<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00001"
-										/>
-									</fptr>
-								</div>
-							</div>
+
 						</div>
 						<div ID="L.1.1.6.3.2" TYPE="Footnote">
 							<div ID="L.1.1.6.3.2.1" TYPE="Text">
@@ -4053,13 +4036,13 @@
 								</fptr>
 							</div>
 						</div>
-						<div ID="L.1.1.6.10.4" TYPE="Illustration" ORDER="2" DMDID="c020"
-							LABEL="Untitled">
-							<div ID="L.1.1.6.10.4.1" TYPE="Image">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00002"/>
-								</fptr>
-							</div>
+					</div>
+					<div ID="L.1.1.6.10.4" TYPE="Illustration" ORDER="2" DMDID="c020"
+						LABEL="Untitled">
+						<div ID="L.1.1.6.10.4.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00002"/>
+							</fptr>
 						</div>
 					</div>
 					<div ID="L.1.1.6.11" TYPE="Illustration" ORDER="8" DMDID="c021"
@@ -4083,13 +4066,13 @@
 								</fptr>
 							</div>
 						</div>
-						<div ID="L.1.1.6.11.4" TYPE="Illustration" ORDER="2" DMDID="c022"
-							LABEL="Untitled">
-							<div ID="L.1.1.6.11.4.1" TYPE="Image">
-								<fptr>
-									<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00002"/>
-								</fptr>
-							</div>
+					</div>
+					<div ID="L.1.1.6.11.4" TYPE="Illustration" ORDER="2" DMDID="c022"
+						LABEL="Untitled">
+						<div ID="L.1.1.6.11.4.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00002"/>
+							</fptr>
 						</div>
 					</div>
 					<div ID="L.1.1.6.12" TYPE="Illustration" ORDER="9" DMDID="c023"
@@ -4225,6 +4208,32 @@
 							</fptr>
 						</div>
 					</div>
+					<!--MET-GH111-start-->
+					<div ID="MET-GH111-c029a" TYPE="TextContent" ORDER="1" DMDID="c029a"
+						LABEL="Lehnen im Abendgarten beide…">
+						<!--Lehnen im Abendgarten beide…-Head/Byline -->
+						<div ID="L.1.1.6.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00002"/>
+							</fptr>
+						</div>
+						<div ID="MET-GH111-c029a.c" TYPE="Copy">
+							<div ID="MET-GH111-c029a.c.b" TYPE="BodyContent">
+								<!-- Paragraphs  -->
+								<div ID="L.1.1.6.3.1.4" TYPE="Paragraph" ORDER="4">
+									<div ID="L.1.1.6.3.1.4.1" TYPE="Text">
+										<fptr>
+											<area BETYPE="IDREF" FILEID="ALTO00021"
+												BEGIN="P21_TB00001"/>
+										</fptr>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--MET-GH111-end-->
+
 					<div ID="L.1.1.6.19" TYPE="Illustration" ORDER="16" DMDID="c030"
 						LABEL="Porträtskizze.">
 						<div ID="L.1.1.6.19.1" TYPE="Head">
@@ -4319,24 +4328,14 @@
 							<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_TB00002"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.7.2" TYPE="Illustration" ORDER="1" DMDID="c036" LABEL="Untitled">
-						<div ID="L.1.1.7.2.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00002"/>
-							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.7.3" TYPE="Illustration" ORDER="2" DMDID="c037" LABEL="Untitled">
-						<div ID="L.1.1.7.3.1" TYPE="Image">
-							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00003"/>
-							</fptr>
-						</div>
-					</div>
+
 					<div ID="L.1.1.7.4" TYPE="Illustration" ORDER="3" DMDID="c038" LABEL="Untitled">
 						<div ID="L.1.1.7.4.1" TYPE="Image">
 							<fptr>
-								<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_CB00003"/>
+								<seq>
+									<area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00002"/>
+									<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_CB00003"/>
+								</seq>
 							</fptr>
 						</div>
 					</div>
