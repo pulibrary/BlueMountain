@@ -96,7 +96,13 @@
 						<titleInfo lang="ger">
 							<title>Untitled text</title>
 						</titleInfo>
-						<note type="caption">Schrift von Rudolf von Larisch</note>
+						<name type="personal">
+							<displayForm>Rudolf von Larisch</displayForm>
+							<role>
+								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							</role>
+						</name>
+
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -129,12 +135,12 @@
 						</part>
 						<genre type="CCS">Illustration</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c006">
+					<relatedItem ID="c009">
 						<titleInfo lang="ger">
 							<title>DANTE</title>
+							<subTitle>EINE SKIZZE</subTitle>
 						</titleInfo>
-
-						<name type="personal">
+						<name>
 							<displayForm>ERNST SCHUR</displayForm>
 							<role>
 								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -146,15 +152,14 @@
 						</language>
 						<part>
 							<extent unit="page">
-								<list>9-10</list>
+								<list>9-11; 13-16; 18-19</list>
 							</extent>
 						</part>
-						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c007">
+						<relatedItem ID="c007">
 							<titleInfo>
 								<title>Untitled Image</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -168,11 +173,11 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c008">
+						<relatedItem ID="c008">
 							<titleInfo lang="ger">
 								<title>Orig. – Holzschnitt</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -189,30 +194,8 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c009">
-						<titleInfo lang="ger">
-							<title>DANTE</title>
-							<subTitle>EINE SKIZZE</subTitle>
-						</titleInfo>
-
-						<name type="personal">
-							<displayForm>ERNST SCHUR</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>text</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<list>11; 13-16; 18-19</list>
-							</extent>
-						</part>
 						<genre type="CCS">TextContent</genre>
-						<relatedItem type="constituent" ID="c010">
+						<relatedItem ID="c010">
 							<titleInfo>
 								<title>[Initial]</title>
 							</titleInfo>
@@ -224,11 +207,11 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c011">
+						<relatedItem ID="c011">
 							<titleInfo lang="ger">
 								<title>Untitled Image</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -245,11 +228,11 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c012">
+						<relatedItem ID="c012">
 							<titleInfo lang="ger">
 								<title>Untitled Image</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -266,11 +249,11 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c013">
+						<relatedItem ID="c013">
 							<titleInfo lang="ger">
 								<title>Untitled Image</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -287,11 +270,11 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c014">
+						<relatedItem ID="c014">
 							<titleInfo lang="ger">
 								<title>Untitled Image</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -308,11 +291,11 @@
 							</part>
 							<genre type="CCS">Illustration</genre>
 						</relatedItem>
-						<relatedItem type="constituent" ID="c015">
+						<relatedItem ID="c015">
 							<titleInfo lang="ger">
 								<title>Untitled Image</title>
 							</titleInfo>
-							<name type="personal">
+							<name>
 								<displayForm>Rudolf Bacher OM</displayForm>
 								<role>
 									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
@@ -2812,22 +2795,36 @@
 						</fptr>
 					</div>
 				</div>
-				<div ID="L.1.1.7" TYPE="TextContent" ORDER="5" DMDID="c006"
-					LABEL="DANTE. EINE SKIZZE">
-					<div ID="L.1.1.7.1" TYPE="Head">
+
+				<div ID="L.1.1.8" TYPE="TextContent" ORDER="6" DMDID="c009"
+					LABEL="DANTE. EINE SKIZZE.">
+					<div ID="L.1.1.8.1" TYPE="Head">
 						<fptr>
 							<seq>
-								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00001"/>
-								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00002"/>
+								<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00002"/>
+								<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00003"/>
 							</seq>
 						</fptr>
 					</div>
-					<div ID="L.1.1.7.2" TYPE="Byline">
+					<div ID="L.1.1.8.2" TYPE="Byline">
 						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00003"/>
+							<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00005"/>
 						</fptr>
 					</div>
 					<div ID="L.1.1.7.3" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="Untitled">
+						<div ID="L.1.1.7.1" TYPE="Head">
+							<fptr>
+								<seq>
+									<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00001"/>
+									<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00002"/>
+								</seq>
+							</fptr>
+						</div>
+						<div ID="L.1.1.7.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00003"/>
+							</fptr>
+						</div>
 						<div ID="L.1.1.7.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00001"/>
@@ -2857,22 +2854,6 @@
 								<area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_CB00001"/>
 							</fptr>
 						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.8" TYPE="TextContent" ORDER="6" DMDID="c009"
-					LABEL="DANTE. EINE SKIZZE.">
-					<div ID="L.1.1.8.1" TYPE="Head">
-						<fptr>
-							<seq>
-								<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00002"/>
-								<area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00003"/>
-							</seq>
-						</fptr>
-					</div>
-					<div ID="L.1.1.8.2" TYPE="Byline">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00005"/>
-						</fptr>
 					</div>
 					<div ID="L.1.1.8.3" TYPE="Illustration" ORDER="1" DMDID="c010" LABEL="Untitled">
 						<div ID="L.1.1.8.3.1" TYPE="Image">
