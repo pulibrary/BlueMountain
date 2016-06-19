@@ -291,47 +291,59 @@
 						</part>
 						<genre type="CCS">Illustration</genre>
 					</relatedItem>
-					<relatedItem type="constituent" ID="c013">
+					<relatedItem type="constituent" ID="c013a">
 						<titleInfo lang="ger">
-							<title>Raumgestaltung aus der XV. Ausstellung</title>
+							<mods:title>XV. Ausstellung</mods:title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Josef Plečnik OM</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>still image</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
+						<typeOfResource>text</typeOfResource>
 						<part>
 							<extent unit="page">
-								<start>14</start>
+								<list>14-15</list>
 							</extent>
 						</part>
-						<genre type="CCS">Illustration</genre>
-					</relatedItem>
-					<relatedItem type="constituent" ID="c014">
-						<titleInfo lang="ger">
-							<title>Kasten aus der XV. Ausstellung</title>
-						</titleInfo>
-						<name type="personal">
-							<displayForm>Leop. Bauer OM</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<typeOfResource>still image</typeOfResource>
-						<language>
-							<languageTerm authority="iso639-2b">ger</languageTerm>
-						</language>
-						<part>
-							<extent unit="page">
-								<start>15</start>
-							</extent>
-						</part>
-						<genre type="CCS">Illustration</genre>
+						<relatedItem ID="c013">
+							<titleInfo lang="ger">
+								<title>Raumgestaltung aus der XV. Ausstellung</title>
+							</titleInfo>
+							<name>
+								<displayForm>Josef Plečnik OM</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<typeOfResource>still image</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>14</start>
+								</extent>
+							</part>
+							<genre type="CCS">Illustration</genre>
+						</relatedItem>
+						<relatedItem ID="c014">
+							<titleInfo lang="ger">
+								<title>Kasten aus der XV. Ausstellung</title>
+							</titleInfo>
+							<name>
+								<displayForm>Leop. Bauer OM</displayForm>
+								<role>
+									<roleTerm type="code" authority="marcrelator">cre</roleTerm>
+								</role>
+							</name>
+							<typeOfResource>still image</typeOfResource>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<start>15</start>
+								</extent>
+							</part>
+							<genre type="CCS">Illustration</genre>
+						</relatedItem>
+						<genre type="CCS">Text</genre>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c015">
 						<titleInfo lang="ger">
@@ -2542,42 +2554,46 @@
 						</fptr>
 					</div>
 				</div>
-				<div ID="L.1.1.14" TYPE="Illustration" ORDER="12" DMDID="c013"
-					LABEL="Raumgestaltung aus der XV. Ausstellung">
+				<div ID="GH-252-1" TYPE="TextContent" ORDER="1" DMDID="c013a" LABEL="XV Ausstellung">
+					<!--Paste head/minor head here -->
 					<div ID="L.1.1.14.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00002"/>
 						</fptr>
 					</div>
-					<div ID="L.1.1.14.2" TYPE="Byline">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00003"/>
-						</fptr>
+					<div ID="L.1.1.14" TYPE="Illustration" ORDER="12" DMDID="c013"
+						LABEL="Raumgestaltung aus der XV. Ausstellung">
+
+						<div ID="L.1.1.14.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00003"/>
+							</fptr>
+						</div>
+						<!--Unbound Illustration Div removed-->
+						<div ID="L.1.1.14.3.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00001"/>
+							</fptr>
+						</div>
 					</div>
-					<!--Unbound Illustration Div removed-->
-					<div ID="L.1.1.14.3.1" TYPE="Image">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00001"/>
-						</fptr>
-					</div>
-				</div>
-				<div ID="L.1.1.15" TYPE="Illustration" ORDER="13" DMDID="c014"
-					LABEL="Kasten aus der XV. Ausstellung">
-					<div ID="L.1.1.15.1" TYPE="Head">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00002"/>
-						</fptr>
-					</div>
-					<div ID="L.1.1.15.2" TYPE="Byline">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00003"/>
-						</fptr>
-					</div>
-					<!--Unbound Illustration Div removed-->
-					<div ID="L.1.1.15.3.1" TYPE="Image">
-						<fptr>
-							<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00001"/>
-						</fptr>
+					<div ID="L.1.1.15" TYPE="Illustration" ORDER="13" DMDID="c014"
+						LABEL="Kasten aus der XV. Ausstellung">
+						<div ID="L.1.1.15.1" TYPE="Head">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00002"/>
+							</fptr>
+						</div>
+						<div ID="L.1.1.15.2" TYPE="Byline">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00003"/>
+							</fptr>
+						</div>
+						<!--Unbound Illustration Div removed-->
+						<div ID="L.1.1.15.3.1" TYPE="Image">
+							<fptr>
+								<area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_CB00001"/>
+							</fptr>
+						</div>
 					</div>
 				</div>
 				<div ID="L.1.1.16" TYPE="Illustration" ORDER="14" DMDID="c015"
