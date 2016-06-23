@@ -1,118 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaba">
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical"
+      OBJID="urn:PUL:bluemountain:bmtnaba">
   <metsHdr>
-    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-      <name>Princeton University Library, Digital Initiatives</name>
-    </agent>
-    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaba</metsDocumentID>
+      
+      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+         <name>Princeton University Library, Digital Initiatives</name>
+      </agent>
+      <altRecordID TYPE="ark">ark:/88435/js956j48s</altRecordID>
+      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaba</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-    <mdWrap MDTYPE="DC">
-      <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <mdWrap MDTYPE="DC">
+         <xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaba">
+               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaba">
 
-            <dc:title>The Signature</dc:title>
+                  <dc:title>The Signature</dc:title>
 
-          </rdf:Description>
-        </rdf:RDF>
-      </xmlData>
-    </mdWrap>
+               </rdf:Description>
+            </rdf:RDF>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
   <dmdSec ID="dmd1">
-    <mdWrap MDTYPE="MODS">
-      <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaba</identifier>
-	  <titleInfo>
-	    <nonSort>The </nonSort>
-	    <title>Signature</title>
-	  </titleInfo>
-	  <name type="personal">
-	    <namePart>Lawrence, D. H. (David Herbert)</namePart>
-	    <namePart type="date">1885-1930</namePart>
-	  </name>
-	  <name type="personal">
-	    <namePart>Mansfield, Katherine</namePart>
-	    <namePart type="date">1888-1923</namePart>
-	  </name>
-	  <name type="personal">
-	    <namePart>Murry, John Middleton</namePart>
-	    <namePart type="date">1889-1957</namePart>
-	  </name>
-	  <typeOfResource>text</typeOfResource>
-	  <genre authority="bmtn">Periodicals-Title</genre>
-	  <genre authority="marcgt">periodical</genre>
-	  <originInfo>
-	    <place>
-              <placeTerm type="code" authority="marccountry">enk</placeTerm>
-	    </place>
-	    <place>
-              <placeTerm type="text">London</placeTerm>
-	    </place>
-	    <publisher>[The Signature</publisher>
-	    <dateIssued>1915]</dateIssued>
-	    <dateIssued encoding="marc" point="start">1915</dateIssued>
-	    <dateIssued encoding="marc" point="end">1915</dateIssued>
-	    <issuance>serial</issuance>
-	    <frequency authority="marcfrequency">Biweekly</frequency>
-	    <frequency>Biweekly</frequency>
-	  </originInfo>
-		<abstract>
+      <mdWrap MDTYPE="MODS">
+         <xmlData>
+	           <mods xmlns="http://www.loc.gov/mods/v3" version="3.4">
+               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/js956j48s</mods:identifier>
+	              <identifier type="bmtn">urn:PUL:bluemountain:bmtnaba</identifier>
+	              <titleInfo>
+	                 <nonSort>The </nonSort>
+	                 <title>Signature</title>
+	              </titleInfo>
+	              <name type="personal">
+	                 <namePart>Lawrence, D. H. (David Herbert)</namePart>
+	                 <namePart type="date">1885-1930</namePart>
+	              </name>
+	              <name type="personal">
+	                 <namePart>Mansfield, Katherine</namePart>
+	                 <namePart type="date">1888-1923</namePart>
+	              </name>
+	              <name type="personal">
+	                 <namePart>Murry, John Middleton</namePart>
+	                 <namePart type="date">1889-1957</namePart>
+	              </name>
+	              <typeOfResource>text</typeOfResource>
+	              <genre authority="bmtn">Periodicals-Title</genre>
+	              <genre authority="marcgt">periodical</genre>
+	              <originInfo>
+	                 <place>
+                     <placeTerm type="code" authority="marccountry">enk</placeTerm>
+	                 </place>
+	                 <place>
+                     <placeTerm type="text">London</placeTerm>
+	                 </place>
+	                 <publisher>[The Signature</publisher>
+	                 <dateIssued>1915]</dateIssued>
+	                 <dateIssued encoding="marc" point="start">1915</dateIssued>
+	                 <dateIssued encoding="marc" point="end">1915</dateIssued>
+	                 <issuance>serial</issuance>
+	                 <frequency authority="marcfrequency">Biweekly</frequency>
+	                 <frequency>Biweekly</frequency>
+	              </originInfo>
+		             <abstract>
 			The three issue, one-year run of Signature
 			exclusively published the prose of its three
 			editors, including Katherine Mansfield, who
 			wrote under the pseudonym Matilda Berry.
 		</abstract>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	  </language>
-	  <physicalDescription>
-	    <form authority="gmd">electronic resource</form>
-	    <reformattingQuality>access</reformattingQuality>
-	    <form authority="marccategory">electronic resource</form>
-	    <form authority="marcsmd">remote</form>
-	    <extent>1 online resource (3 v.)</extent>
-	  </physicalDescription>
-	  <tableOfContents>No. 1. The crown, by D.H. Lawrence. Autumn, by Matilda Berry [pseud.] There was a little man, by J.M. Murry. -- no. 2. The crown (cont.) by D.H. Lawrence. The little governess, by Matilda Berry [pseud.] There was a little man (cont.) by J.M. Murry. -- no. 3. The crown (cont.) by D.H. Lawrence. The little governess (cont.) by Matilda Berry [pseud.] There was a little man (cont.) by J.M. Murry.</tableOfContents>
-	  <note type="date/sequential designation">No. 1 (4 Oct. 1915)-no. 3 (1 Nov. 1915).</note>
-	  <note>Edited by D.H. Lawrence, Katherine Mansfield and John Middleton Murry.</note>
-	  <note>"Published by subscription only."</note>
-	  <classification authority="lcc">AP2 .S54</classification>
-	  <location>
-	    <url displayLabel="electronic resource" usage="primary display" note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/jw827d05r</url>
-	  </location>
-	  <relatedItem type="otherFormat">
-	    <identifier type="local">(OCoLC)3451506</identifier>
-	  </relatedItem>
-	  <identifier type="oclc">891535925</identifier>
-	  <recordInfo>
-	    <descriptionStandard>aacr</descriptionStandard>
-	    <recordContentSource authority="marcorg">OCLCE</recordContentSource>
-	    <recordCreationDate encoding="marc">140928</recordCreationDate>
-	    <recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
-	    <recordIdentifier source="OCoLC">ocn891535925</recordIdentifier>
-	    <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaba</recordIdentifier>       
-	    <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+	              <language>
+	                 <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	              </language>
+	              <physicalDescription>
+	                 <form authority="gmd">electronic resource</form>
+	                 <reformattingQuality>access</reformattingQuality>
+	                 <form authority="marccategory">electronic resource</form>
+	                 <form authority="marcsmd">remote</form>
+	                 <extent>1 online resource (3 v.)</extent>
+	              </physicalDescription>
+	              <tableOfContents>No. 1. The crown, by D.H. Lawrence. Autumn, by Matilda Berry [pseud.] There was a little man, by J.M. Murry. -- no. 2. The crown (cont.) by D.H. Lawrence. The little governess, by Matilda Berry [pseud.] There was a little man (cont.) by J.M. Murry. -- no. 3. The crown (cont.) by D.H. Lawrence. The little governess (cont.) by Matilda Berry [pseud.] There was a little man (cont.) by J.M. Murry.</tableOfContents>
+	              <note type="date/sequential designation">No. 1 (4 Oct. 1915)-no. 3 (1 Nov. 1915).</note>
+	              <note>Edited by D.H. Lawrence, Katherine Mansfield and John Middleton Murry.</note>
+	              <note>"Published by subscription only."</note>
+	              <classification authority="lcc">AP2 .S54</classification>
+	              <location>
+	                 <url displayLabel="electronic resource"
+                       usage="primary display"
+                       note="Available online via the Blue Mountain Project. Click here to view holdings">http://arks.princeton.edu/ark:/88435/jw827d05r</url>
+	              </location>
+	              <relatedItem type="otherFormat">
+	                 <identifier type="local">(OCoLC)3451506</identifier>
+	              </relatedItem>
+	              <identifier type="oclc">891535925</identifier>
+	              <recordInfo>
+	                 <descriptionStandard>aacr</descriptionStandard>
+	                 <recordContentSource authority="marcorg">OCLCE</recordContentSource>
+	                 <recordCreationDate encoding="marc">140928</recordCreationDate>
+	                 <recordChangeDate encoding="iso8601">20141212022136.0</recordChangeDate>
+	                 <recordIdentifier source="OCoLC">ocn891535925</recordIdentifier>
+	                 <recordIdentifier source="bmtn">urn:PUL:bluemountain:dmd:bmtnaba</recordIdentifier>       
+	                 <recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
 	    (Revision 1.70)</recordOrigin>
-	    <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-	    </languageOfCataloging>
-	  </recordInfo>
-	</mods>
-      </xmlData>
-    </mdWrap>
+	                 <languageOfCataloging>
+                     <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+	                 </languageOfCataloging>
+	              </recordInfo>
+	           </mods>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
 
   <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnaba"/>
+      <mdRef LOCTYPE="URN"
+             MDTYPE="MODS"
+             MIMETYPE="application/xml"
+             xlink:href="urn:PUL:bluemountain:dmd:bmtnaba"/>
   </dmdSec>
   <fileSec>
-    <fileGrp/>
+      <fileGrp/>
   </fileSec>
   <structMap>
-    <div/>
+      <div/>
   </structMap>
 </mets>

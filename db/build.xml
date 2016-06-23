@@ -18,12 +18,12 @@
   
   <property name="xmldb.host" value="localhost" />
   <property name="xmldb.port" value="8080" />
-  <property name="xmldb.user" value="bluemtn" />
-  <property name="xmldb.passwd" value="bluemtn" />
+  <property name="xmldb.user" value="admin" />
+  <property name="xmldb.passwd" value="admin" />
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
-  <property name="xmldb.approot" value="${xmldb.url}/bluemtn" />
+  <property name="xmldb.approot" value="${xmldb.url}/bmtn-data" />
 
-  <property name="approot" value="/Users/cwulfman/BlueMountain" />
+  <property name="approot" value="/Users/cwulfman/repos/github/cwulfman/BlueMountain" />
   
   <target name="load-conf" description="load the Blue Mountain collection.xconf record">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
@@ -35,17 +35,10 @@
     </xdb:store>
   </target>
 
-  <target name="load-all-batches" description="load all batches" depends="load-batch1, load-batch2, load-batch3, load-batch4"></target>
+  <target name="load-all" description="load all titles" depends="load-bmtnaab, load-bmtnaac, load-bmtnaad, load-bmtnaae, load-bmtnaaf, load-bmtnaag, load-bmtnaai, load-bmtnaaj, load-bmtnaal, load-bmtnaam, load-bmtnaan, load-bmtnaao, load-bmtnaap, load-bmtnaaq, load-bmtnaar, load-bmtnaas, load-bmtnaat, load-bmtnaau, load-bmtnaav, load-bmtnaaw, load-bmtnaay, load-bmtnaaz, load-bmtnaba, load-bmtnabb, load-bmtnabc, load-bmtnabd, load-bmtnabg, load-bmtnabh, load-bmtnabi, load-bmtnabj, load-bmtnabk, load-bmtnabl, load-bmtnabm, load-bmtnabn"></target>
 
-  <target name="load-all" description="load all titles" depends="load-bmtnaab, load-bmtnaac, load-bmtnaad, load-bmtnaae, load-bmtnaaf, load-bmtnaag, load-bmtnaai, load-bmtnaaj, load-bmtnaal, load-bmtnaam, load-bmtnaao, load-bmtnaap, load-bmtnaaq, load-bmtnaar, load-bmtnaas, load-bmtnaat, load-bmtnaau, load-bmtnaav, load-bmtnaaw, load-bmtnaay, load-bmtnaaz, load-bmtnaba, load-bmtnabb, load-bmtnabc, load-bmtnabd, load-bmtnabg, load-bmtnabh, load-bmtnabi, load-bmtnabj, load-bmtnabk, load-bmtnabl, load-bmtnabm, load-bmtnabn"></target>
-
-  <target name="load-batch1" description="load batch1" depends="load-bmtnaad, load-bmtnaae, load-bmtnaaf, load-bmtnaao, load-bmtnabg"></target>
-
-  <target name="load-batch2" description="load batch2" depends="load-bmtnaab, load-bmtnaal, load-bmtnaap, load-bmtnaaq, load-bmtnaav, load-bmtnaay, load-bmtnaba"></target>
-
-  <target name="load-batch3" description="load batch3" depends="load-bmtnabk, load-bmtnaag, load-bmtnaai"></target>
-  <target name="load-batch4" description="load batch4" depends="load-bmtnaac, load-bmtnabc, load-bmtnabh"></target>
-
+  <target name="load-pilot" description="load pilot METS"
+	  depends="load-bmtnaad, load-bmtnaae, load-bmtnaaj, load-bmtnaao, load-bmtnaap, load-bmtnaau, load-bmtnaaz"/>
 
   <target name="load-bmtnaab" description="load Action">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
@@ -68,7 +61,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaac">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -84,7 +76,6 @@
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaad">
 	<include name="**/*.mets.xml" />
-	<include name="*.mods.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
       </fileset>
@@ -98,7 +89,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaae">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -113,7 +103,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaaf">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -128,7 +117,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaag">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -145,7 +133,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaai">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -160,7 +147,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaaj">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -177,7 +163,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaal">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -192,7 +177,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaam">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -207,7 +191,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaan">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -222,7 +205,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaao">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -237,7 +219,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaap">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
  	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -252,7 +233,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaaq">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -267,7 +247,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaar">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -282,7 +261,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaas">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -297,7 +275,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaat">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -312,7 +289,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaau">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -327,7 +303,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaav">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -342,7 +317,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaaw">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -357,7 +331,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaax">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -372,7 +345,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaay">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -387,7 +359,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaaz">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -402,7 +373,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnaba">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -417,7 +387,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabb">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
  	<exclude name="**/work/**" />
@@ -432,7 +401,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabc">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -447,7 +415,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabd">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -462,7 +429,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabe">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -477,7 +443,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabf">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -492,7 +457,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabg">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -507,7 +471,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabh">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -522,7 +485,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabi">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -537,7 +499,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabj">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -552,7 +513,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabk">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -567,7 +527,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabl">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -582,7 +541,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabm">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -597,7 +555,6 @@
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/metadata/periodicals/bmtnabn">
-	<include name="*.mods.xml" />
 	<include name="**/*.mets.xml" />
 	<!-- <include name="**/*.alto.xml" /> -->
 	<exclude name="**/work/**" />
@@ -702,11 +659,23 @@
 
   <target name="load-transcriptions" description="load TEI transcriptions">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}/transcriptions" createcollection="true"
+	       uri="${xmldb.approot}/transcriptions/periodicals" createcollection="true"
 	       createsubcollections="true"
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/transcriptions/periodicals">
+	<include name="**/*.tei.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+    <target name="load-bmtnaaz-transc" description="load TEI transcriptions of SIC">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/transcriptions/periodicals" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/transcriptions/periodicals/bmtnaaz">
 	<include name="**/*.tei.xml" />
       </fileset>
     </xdb:store>

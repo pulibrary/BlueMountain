@@ -1,15 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabg_1911-12-02_01">
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3"
+	xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
+	TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabg_1911-12-02_01">
 	<metsHdr>
+
 		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
 			<name>Princeton University Library, Digital Initiatives</name>
 			<note>docWORKS-ID: 322354</note>
 		</agent>
+		<altRecordID TYPE="ark">ark:/88435/xs55mf75d</altRecordID>
 		<metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnabg_1911-12-02_01</metsDocumentID>
 	</metsHdr>
 	<dmdSec ID="dmd1">
 		<mdWrap MDTYPE="MODS">
 			<xmlData>
 				<mods xmlns="http://www.loc.gov/mods/v3">
+					<mods:identifier type="ark">ark:/88435/xs55mf75d</mods:identifier>
 					<recordInfo>
 						<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabg_1911-12-02_01</recordIdentifier>
 					</recordInfo>
@@ -35,14 +43,15 @@
 						<dateIssued>2. Dezember 1911</dateIssued>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1911-12-02</dateIssued>
 					</originInfo>
-					<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabg">
+					<relatedItem type="host" xlink:type="simple"
+						xlink:href="urn:PUL:bluemountain:bmtnabg">
 						<recordInfo>
 							<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabg</recordIdentifier>
 						</recordInfo>
 					</relatedItem>
 					<relatedItem type="constituent" ID="c001">
 						<titleInfo lang="ger">
-							<title>Inhalt:</title>
+							<title>Inhalt</title>
 						</titleInfo>
 						<typeOfResource>text</typeOfResource>
 						<language>
@@ -60,17 +69,17 @@
 							<title>Hugo von Tschudi</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Lothar</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<name type="personal">
-							<displayForm>Gertrud von Kunowski</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+							              <displayForm>Lothar</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/269573023">
+							              <displayForm>Gertrud von Kunowski</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -86,12 +95,12 @@
 						<titleInfo lang="ger">
 							<title>Ritter Johann des Todes</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Albert Ehrenstein</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/41868516">
+							              <displayForm>Albert Ehrenstein</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -107,12 +116,12 @@
 						<titleInfo lang="ger">
 							<title>Mariä Empfängnis</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Alfred Döblin</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/51688166">
+							              <displayForm>Alfred Döblin</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -130,11 +139,11 @@
 							<title>Vagabund</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Otto Rurig</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+							              <displayForm>Otto Rurig</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -151,12 +160,12 @@
 							<nonSort>Der</nonSort>
 							<title>reiche Bankier Oppenheimer</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Siegmund Kalischer †</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/206674625">
+							              <displayForm>Siegmund Kalischer</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -172,12 +181,12 @@
 						<titleInfo lang="ger">
 							<title>Briefe nach Norwegen</title>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Else Lasker-Schüler</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/61565628">
+							              <displayForm>Else Lasker-Schüler</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -207,17 +216,17 @@
 							<title>Nachfolger der Impressionisten</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Michel Puy</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
-						<name type="personal">
-							<displayForm>H. W</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+							              <displayForm>Michel Puy</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/24745197">
+							              <displayForm>H. W</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -231,8 +240,14 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c010">
 						<titleInfo lang="ger">
-							<title>E. L. Kirchner: Akte / Holzschnitt</title>
+							<title>Akte</title>
 						</titleInfo>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/9888581">
+					                <displayForm>E. L. Kirchner</displayForm>
+					                <role>
+					                   <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+					                </role>
+					             </name>
 						<typeOfResource>still image</typeOfResource>
 						<part>
 							<extent unit="page">
@@ -246,17 +261,17 @@
 							<title>Sitten</title>
 						</titleInfo>
 						<name type="personal">
-							<displayForm>Der Kaiser</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+							              <displayForm>Der Kaiser</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<name type="personal">
-							<displayForm>Pietsch</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+							              <displayForm>Pietsch</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -267,18 +282,67 @@
 							</extent>
 						</part>
 						<genre type="CCS">TextContent</genre>
+						<relatedItem type="constituent" ID="c011a">
+							<titleInfo lang="ger">
+								<title>Der Kaiser und Pietsch</title>
+							</titleInfo>
+							<name type="personal"><displayForm>Wilhelm</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>6</list>
+								</extent>
+							</part>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c011b">
+							<titleInfo lang="ger">
+								<title>Nordland</title>
+							</titleInfo>
+							<name type="personal"><displayForm/><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>6</list>
+								</extent>
+							</part>
+						</relatedItem>
+						<relatedItem type="constituent" ID="c011c">
+							<titleInfo lang="ger">
+								<title>Der verheiratete Ehebrecher</title>
+							</titleInfo>
+							<name type="personal"><displayForm>Trust</displayForm><role><roleTerm type="code" authority="marcrelator">cre</roleTerm></role></name>
+							<typeOfResource>text</typeOfResource>
+							<genre type="CCS">TextContent</genre>
+							<language>
+								<languageTerm authority="iso639-2b">ger</languageTerm>
+							</language>
+							<part>
+								<extent unit="page">
+									<list>6</list>
+								</extent>
+							</part>
+						</relatedItem>
+
 					</relatedItem>
 					<relatedItem type="constituent" ID="c012">
 						<titleInfo lang="ger">
 							<title>Triumph!</title>
 							<subTitle>Emst Hardt: Gudrun / Lessing-Theater</subTitle>
 						</titleInfo>
-						<name type="personal">
-							<displayForm>Peter Scher</displayForm>
-							<role>
-								<roleTerm type="code" authority="marcrelator">cre</roleTerm>
-							</role>
-						</name>
+						<name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/294344172">
+							              <displayForm>Peter Scher</displayForm>
+							              <role>
+								                <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+							              </role>
+						            </name>
 						<typeOfResource>text</typeOfResource>
 						<language>
 							<languageTerm authority="iso639-2b">ger</languageTerm>
@@ -1274,60 +1338,120 @@
 	</amdSec>
 	<fileSec>
 		<fileGrp ID="IMGGRP" USE="Images">
-			<file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2013-02-21T16:43:36" MIMETYPE="image/jp2" SEQ="1" CHECKSUM="c388fedc1a2f6e39baea9515129558f79a21953e" CHECKSUMTYPE="SHA-1" SIZE="4123225">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0001.jp2"/>
+			<file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2013-02-21T16:43:36"
+				MIMETYPE="image/jp2" SEQ="1" CHECKSUM="c388fedc1a2f6e39baea9515129558f79a21953e"
+				CHECKSUMTYPE="SHA-1" SIZE="4123225">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0001.jp2"
+				/>
 			</file>
-			<file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2013-02-21T16:43:46" MIMETYPE="image/jp2" SEQ="2" CHECKSUM="f4060b09eeff5fad72833dc811d03101fb3996e4" CHECKSUMTYPE="SHA-1" SIZE="4123229">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0002.jp2"/>
+			<file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2013-02-21T16:43:46"
+				MIMETYPE="image/jp2" SEQ="2" CHECKSUM="f4060b09eeff5fad72833dc811d03101fb3996e4"
+				CHECKSUMTYPE="SHA-1" SIZE="4123229">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0002.jp2"
+				/>
 			</file>
-			<file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2013-02-21T16:43:58" MIMETYPE="image/jp2" SEQ="3" CHECKSUM="6e07509a25cd308348c2da08e2481dad42429c41" CHECKSUMTYPE="SHA-1" SIZE="4123184">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0003.jp2"/>
+			<file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2013-02-21T16:43:58"
+				MIMETYPE="image/jp2" SEQ="3" CHECKSUM="6e07509a25cd308348c2da08e2481dad42429c41"
+				CHECKSUMTYPE="SHA-1" SIZE="4123184">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0003.jp2"
+				/>
 			</file>
-			<file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2013-02-21T16:44:09" MIMETYPE="image/jp2" SEQ="4" CHECKSUM="d5ac9cd89be763ae6a13d61069649693681df73b" CHECKSUMTYPE="SHA-1" SIZE="4123227">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0004.jp2"/>
+			<file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2013-02-21T16:44:09"
+				MIMETYPE="image/jp2" SEQ="4" CHECKSUM="d5ac9cd89be763ae6a13d61069649693681df73b"
+				CHECKSUMTYPE="SHA-1" SIZE="4123227">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0004.jp2"
+				/>
 			</file>
-			<file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2013-02-21T16:44:19" MIMETYPE="image/jp2" SEQ="5" CHECKSUM="44e1bf165615fae412e6a139959b0e6e7c1b3b16" CHECKSUMTYPE="SHA-1" SIZE="4123215">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0005.jp2"/>
+			<file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2013-02-21T16:44:19"
+				MIMETYPE="image/jp2" SEQ="5" CHECKSUM="44e1bf165615fae412e6a139959b0e6e7c1b3b16"
+				CHECKSUMTYPE="SHA-1" SIZE="4123215">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0005.jp2"
+				/>
 			</file>
-			<file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2013-02-21T16:44:35" MIMETYPE="image/jp2" SEQ="6" CHECKSUM="762b4a949136e74383a713926c020d43f3fcdf1f" CHECKSUMTYPE="SHA-1" SIZE="4123210">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0006.jp2"/>
+			<file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2013-02-21T16:44:35"
+				MIMETYPE="image/jp2" SEQ="6" CHECKSUM="762b4a949136e74383a713926c020d43f3fcdf1f"
+				CHECKSUMTYPE="SHA-1" SIZE="4123210">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0006.jp2"
+				/>
 			</file>
-			<file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2013-02-21T16:44:49" MIMETYPE="image/jp2" SEQ="7" CHECKSUM="ce6b56a048d12434f536a3e897b728ae7ff9b937" CHECKSUMTYPE="SHA-1" SIZE="4123229">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0007.jp2"/>
+			<file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2013-02-21T16:44:49"
+				MIMETYPE="image/jp2" SEQ="7" CHECKSUM="ce6b56a048d12434f536a3e897b728ae7ff9b937"
+				CHECKSUMTYPE="SHA-1" SIZE="4123229">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0007.jp2"
+				/>
 			</file>
-			<file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2013-02-21T16:45:08" MIMETYPE="image/jp2" SEQ="8" CHECKSUM="36babbd8308e3a14b3b53956e197ed65f292ddf6" CHECKSUMTYPE="SHA-1" SIZE="4123222">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0008.jp2"/>
+			<file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2013-02-21T16:45:08"
+				MIMETYPE="image/jp2" SEQ="8" CHECKSUM="36babbd8308e3a14b3b53956e197ed65f292ddf6"
+				CHECKSUMTYPE="SHA-1" SIZE="4123222">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/delivery/bmtnabg_1911-12-02_01_0008.jp2"
+				/>
 			</file>
 		</fileGrp>
 		<fileGrp ID="ALTOGRP" USE="OCR">
-			<file ID="ALTO00001" GROUPID="page1" CREATED="2013-02-21T16:45:15" MIMETYPE="text/xml" CHECKSUM="4da97058a687bfa88ad9cbcc89b5eab0790ebe61" CHECKSUMTYPE="SHA-1" SIZE="239633">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0001.alto.xml"/>
+			<file ID="ALTO00001" GROUPID="page1" CREATED="2013-02-21T16:45:15" MIMETYPE="text/xml"
+				CHECKSUM="4da97058a687bfa88ad9cbcc89b5eab0790ebe61" CHECKSUMTYPE="SHA-1"
+				SIZE="239633">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0001.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00002" GROUPID="page2" CREATED="2013-02-21T16:45:15" MIMETYPE="text/xml" CHECKSUM="bc5266d836f5e403af33873583a239d3ad97c44c" CHECKSUMTYPE="SHA-1" SIZE="315543">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0002.alto.xml"/>
+			<file ID="ALTO00002" GROUPID="page2" CREATED="2013-02-21T16:45:15" MIMETYPE="text/xml"
+				CHECKSUM="bc5266d836f5e403af33873583a239d3ad97c44c" CHECKSUMTYPE="SHA-1"
+				SIZE="315543">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0002.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00003" GROUPID="page3" CREATED="2013-02-21T16:45:16" MIMETYPE="text/xml" CHECKSUM="38d8a2ac601ef1b2ec5581d6cb2c504d28c73fc3" CHECKSUMTYPE="SHA-1" SIZE="318226">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0003.alto.xml"/>
+			<file ID="ALTO00003" GROUPID="page3" CREATED="2013-02-21T16:45:16" MIMETYPE="text/xml"
+				CHECKSUM="38d8a2ac601ef1b2ec5581d6cb2c504d28c73fc3" CHECKSUMTYPE="SHA-1"
+				SIZE="318226">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0003.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00004" GROUPID="page4" CREATED="2013-02-21T16:45:16" MIMETYPE="text/xml" CHECKSUM="b41465534207dab1a7cc87052a0b52409150e351" CHECKSUMTYPE="SHA-1" SIZE="316135">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0004.alto.xml"/>
+			<file ID="ALTO00004" GROUPID="page4" CREATED="2013-02-21T16:45:16" MIMETYPE="text/xml"
+				CHECKSUM="b41465534207dab1a7cc87052a0b52409150e351" CHECKSUMTYPE="SHA-1"
+				SIZE="316135">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0004.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00005" GROUPID="page5" CREATED="2013-02-21T16:45:18" MIMETYPE="text/xml" CHECKSUM="326ecf607290f675c1133acdee7a39932508dbb9" CHECKSUMTYPE="SHA-1" SIZE="122589">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0005.alto.xml"/>
+			<file ID="ALTO00005" GROUPID="page5" CREATED="2013-02-21T16:45:18" MIMETYPE="text/xml"
+				CHECKSUM="326ecf607290f675c1133acdee7a39932508dbb9" CHECKSUMTYPE="SHA-1"
+				SIZE="122589">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0005.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00006" GROUPID="page6" CREATED="2013-02-21T16:45:18" MIMETYPE="text/xml" CHECKSUM="1eacaa64f7a2f9be6b8881c3a771ede28d3dce6d" CHECKSUMTYPE="SHA-1" SIZE="258612">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0006.alto.xml"/>
+			<file ID="ALTO00006" GROUPID="page6" CREATED="2013-02-21T16:45:18" MIMETYPE="text/xml"
+				CHECKSUM="1eacaa64f7a2f9be6b8881c3a771ede28d3dce6d" CHECKSUMTYPE="SHA-1"
+				SIZE="258612">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0006.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00007" GROUPID="page7" CREATED="2013-02-21T16:45:18" MIMETYPE="text/xml" CHECKSUM="19117ea70ce83604aa0de50cf0b9b8dcd3d6dd5e" CHECKSUMTYPE="SHA-1" SIZE="164771">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0007.alto.xml"/>
+			<file ID="ALTO00007" GROUPID="page7" CREATED="2013-02-21T16:45:18" MIMETYPE="text/xml"
+				CHECKSUM="19117ea70ce83604aa0de50cf0b9b8dcd3d6dd5e" CHECKSUMTYPE="SHA-1"
+				SIZE="164771">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0007.alto.xml"
+				/>
 			</file>
-			<file ID="ALTO00008" GROUPID="page8" CREATED="2013-02-21T16:45:19" MIMETYPE="text/xml" CHECKSUM="bbdf0fda1503b723370704c0be0485d017661ac4" CHECKSUMTYPE="SHA-1" SIZE="63165">
-				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0008.alto.xml"/>
+			<file ID="ALTO00008" GROUPID="page8" CREATED="2013-02-21T16:45:19" MIMETYPE="text/xml"
+				CHECKSUM="bbdf0fda1503b723370704c0be0485d017661ac4" CHECKSUMTYPE="SHA-1"
+				SIZE="63165">
+				<FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnabg_1911-12-02_01_0008.alto.xml"
+				/>
 			</file>
 		</fileGrp>
 		<fileGrp ID="PDFGRP" USE="PDF">
-			<file ID="PDF_ISSUELEVEL" CREATED="2013-02-21T16:46:36" MIMETYPE="application/pdf" CHECKSUM="c12a7ded2b986ce52b59b3163c597d21e9b41f45" CHECKSUMTYPE="SHA-1" SIZE="27391217">
-				<FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/bmtnabg_1911-12-02_01.pdf"/>
+			<file ID="PDF_ISSUELEVEL" CREATED="2013-02-21T16:46:36" MIMETYPE="application/pdf"
+				CHECKSUM="c12a7ded2b986ce52b59b3163c597d21e9b41f45" CHECKSUMTYPE="SHA-1"
+				SIZE="27391217">
+				<FLocat LOCTYPE="URL"
+					xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnabg/issues/1911/12/02_01/bmtnabg_1911-12-02_01.pdf"
+				/>
 			</file>
 		</fileGrp>
 	</fileSec>
@@ -1491,7 +1615,8 @@
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="Hugo von Tschudi">
+					<div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002"
+						LABEL="Hugo von Tschudi">
 						<div ID="L.1.1.2.2.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00013"/>
@@ -1507,21 +1632,24 @@
 								<div ID="L.1.1.2.2.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.2.3.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00015"/>
+											<area BETYPE="IDREF" FILEID="ALTO00001"
+												BEGIN="P1_TB00015"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.2.3.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.2.3.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00016"/>
+											<area BETYPE="IDREF" FILEID="ALTO00001"
+												BEGIN="P1_TB00016"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c003" LABEL="Ritter Johann des Todes">
+					<div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c003"
+						LABEL="Ritter Johann des Todes">
 						<div ID="L.1.1.2.3.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00017"/>
@@ -1537,28 +1665,32 @@
 								<div ID="L.1.1.2.3.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.3.3.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00019"/>
+											<area BETYPE="IDREF" FILEID="ALTO00001"
+												BEGIN="P1_TB00019"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.3.3.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.3.3.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_TB00020"/>
+											<area BETYPE="IDREF" FILEID="ALTO00001"
+												BEGIN="P1_TB00020"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.3.3.1.3" TYPE="Paragraph" ORDER="3">
 									<div ID="L.1.1.2.3.3.1.3.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00002"/>
+											<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00002"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004" LABEL="Mariä Empfängnis">
+					<div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c004"
+						LABEL="Mariä Empfängnis">
 						<div ID="L.1.1.2.4.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00003"/>
@@ -1574,21 +1706,24 @@
 								<div ID="L.1.1.2.4.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.4.3.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00005"/>
+											<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00005"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.4.3.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.4.3.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00006"/>
+											<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00006"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="Der Vagabund">
+					<div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c005"
+						LABEL="Der Vagabund">
 						<div ID="L.1.1.2.5.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00007"/>
@@ -1604,28 +1739,32 @@
 								<div ID="L.1.1.2.5.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.5.3.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00010"/>
+											<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00010"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.5.3.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.5.3.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00002" BEGIN="P2_TB00011"/>
+											<area BETYPE="IDREF" FILEID="ALTO00002"
+												BEGIN="P2_TB00011"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.5.3.1.3" TYPE="Paragraph" ORDER="3">
 									<div ID="L.1.1.2.5.3.1.3.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00002"/>
+											<area BETYPE="IDREF" FILEID="ALTO00003"
+												BEGIN="P3_TB00002"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c006" LABEL="Der reiche Bankier Oppenheimer">
+					<div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c006"
+						LABEL="Der reiche Bankier Oppenheimer">
 						<div ID="L.1.1.2.6.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00004"/>
@@ -1641,21 +1780,24 @@
 								<div ID="L.1.1.2.6.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.6.3.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00006"/>
+											<area BETYPE="IDREF" FILEID="ALTO00003"
+												BEGIN="P3_TB00006"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.6.3.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.6.3.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00007"/>
+											<area BETYPE="IDREF" FILEID="ALTO00003"
+												BEGIN="P3_TB00007"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c007" LABEL="Briefe nach Norwegen">
+					<div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c007"
+						LABEL="Briefe nach Norwegen">
 						<div ID="L.1.1.2.7.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00002"/>
@@ -1666,7 +1808,8 @@
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00003"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.7.3" TYPE="Illustration" ORDER="1" DMDID="c008" LABEL="Untitled">
+						<div ID="L.1.1.2.7.3" TYPE="Illustration" ORDER="1" DMDID="c008"
+							LABEL="Untitled">
 							<div ID="L.1.1.2.7.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
@@ -1678,21 +1821,24 @@
 								<div ID="L.1.1.2.7.4.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.7.4.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00004"/>
+											<area BETYPE="IDREF" FILEID="ALTO00004"
+												BEGIN="P4_TB00004"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.7.4.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.7.4.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00005"/>
+											<area BETYPE="IDREF" FILEID="ALTO00004"
+												BEGIN="P4_TB00005"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c009" LABEL="Die Nachfolger der Impressionisten">
+					<div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c009"
+						LABEL="Die Nachfolger der Impressionisten">
 						<div ID="L.1.1.2.8.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00006"/>
@@ -1713,49 +1859,56 @@
 								<div ID="L.1.1.2.8.4.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.8.4.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00008"/>
+											<area BETYPE="IDREF" FILEID="ALTO00004"
+												BEGIN="P4_TB00008"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.8.4.1.2" TYPE="Paragraph" ORDER="2">
 									<div ID="L.1.1.2.8.4.1.2.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00009"/>
+											<area BETYPE="IDREF" FILEID="ALTO00004"
+												BEGIN="P4_TB00009"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.8.4.1.3" TYPE="Paragraph" ORDER="3">
 									<div ID="L.1.1.2.8.4.1.3.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00003"/>
+											<area BETYPE="IDREF" FILEID="ALTO00005"
+												BEGIN="P5_TB00003"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.8.4.1.4" TYPE="Paragraph" ORDER="4">
 									<div ID="L.1.1.2.8.4.1.4.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00004"/>
+											<area BETYPE="IDREF" FILEID="ALTO00005"
+												BEGIN="P5_TB00004"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.8.4.1.5" TYPE="Paragraph" ORDER="5">
 									<div ID="L.1.1.2.8.4.1.5.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00005"/>
+											<area BETYPE="IDREF" FILEID="ALTO00005"
+												BEGIN="P5_TB00005"/>
 										</fptr>
 									</div>
 								</div>
 								<div ID="L.1.1.2.8.4.1.6" TYPE="Paragraph" ORDER="6">
 									<div ID="L.1.1.2.8.4.1.6.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00002"/>
+											<area BETYPE="IDREF" FILEID="ALTO00006"
+												BEGIN="P6_TB00002"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.9" TYPE="Illustration" ORDER="1" DMDID="c010" LABEL="E. L. Kirchner: Akte / Holzschnitt">
+					<div ID="L.1.1.2.9" TYPE="Illustration" ORDER="1" DMDID="c010"
+						LABEL="E. L. Kirchner: Akte / Holzschnitt">
 						<div ID="L.1.1.2.9.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
@@ -1773,63 +1926,100 @@
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00004"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.10.2" TYPE="Byline">
+						<div ID="L.1.1.2.10.3" TYPE="Copy">
+							<div ID="L.1.1.2.10.3.1" TYPE="BodyContent"><!-- MET - 2XX -->
+								
+							</div>
+						</div>
+						<!--MET-290-start-->
+						<div ID="MET-290-c011a" TYPE="TextContent" ORDER="1" DMDID="c011a"
+							LABEL="Der Kaiser und Pietsch">
+						<div ID="L.1.1.2.10.2" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00005"/>
 							</fptr>
 						</div>
-						<div ID="L.1.1.2.10.3" TYPE="Copy">
-							<div ID="L.1.1.2.10.3.1" TYPE="BodyContent">
+							<!--Der Kaiser und Pietsch-Head/Byline -->
+							<div ID="MET-290-c011a.c" TYPE="Copy">
+								<div ID="MET-290-c011a.c.b" TYPE="BodyContent">
 								<div ID="L.1.1.2.10.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.10.3.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00006"/>
+											<area BETYPE="IDREF" FILEID="ALTO00006"
+												BEGIN="P6_TB00006"/>
 										</fptr>
 									</div>
 								</div>
-								<div ID="L.1.1.2.10.3.1.2" TYPE="MinorHead" ORDER="2">
+									<!-- Paragraphs  -->
+								</div>
+							</div>
+						</div>
+						<div ID="MET-290-c011b" TYPE="TextContent" ORDER="2" DMDID="c011b"
+							LABEL="Nordland">
+								<div ID="L.1.1.2.10.3.1.2" TYPE="Head" ORDER="2">
 									<fptr>
 										<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00007"/>
 									</fptr>
 								</div>
+							<!--Nordland-Head/Byline -->
+							<div ID="MET-290-c011b.c" TYPE="Copy">
+								<div ID="MET-290-c011b.c.b" TYPE="BodyContent">
 								<div ID="L.1.1.2.10.3.1.3" TYPE="Paragraph" ORDER="3">
 									<div ID="L.1.1.2.10.3.1.3.1" TYPE="Text">
 										<fptr>
 											<seq>
-												<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00008"/>
-												<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00009"/>
+												<area BETYPE="IDREF" FILEID="ALTO00006"
+												BEGIN="P6_TB00008"/>
+												<area BETYPE="IDREF" FILEID="ALTO00006"
+												BEGIN="P6_TB00009"/>
 											</seq>
 										</fptr>
 									</div>
 								</div>
-								<div ID="L.1.1.2.10.3.1.4" TYPE="MinorHead" ORDER="4">
+									<!-- Paragraphs  -->
+								</div>
+							</div>
+						</div>
+						<div ID="MET-290-c011c" TYPE="TextContent" ORDER="3" DMDID="c011c"
+							LABEL="Der verheiratete Ehebrecher">
+								<div ID="L.1.1.2.10.3.1.4" TYPE="Head" ORDER="4">
 									<fptr>
 										<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00010"/>
 									</fptr>
 								</div>
-								<div ID="L.1.1.2.10.3.1.5" TYPE="Paragraph" ORDER="5">
-									<div ID="L.1.1.2.10.3.1.5.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00011"/>
-										</fptr>
+							<!--Der verheiratete Ehebrecher-Head/Byline -->
+							<div ID="MET-290-c011c.c" TYPE="Copy">
+								<div ID="MET-290-c011c.c.b" TYPE="BodyContent">
+									<!-- Paragraphs  -->
+									<div ID="L.1.1.2.10.3.1.5" TYPE="Paragraph" ORDER="5">
+										<div ID="L.1.1.2.10.3.1.5.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00006"
+													BEGIN="P6_TB00011"/>
+											</fptr>
+										</div>
 									</div>
-								</div>
-								<div ID="L.1.1.2.10.3.1.6" TYPE="Paragraph" ORDER="6">
-									<div ID="L.1.1.2.10.3.1.6.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00012"/>
-										</fptr>
+									<div ID="L.1.1.2.10.3.1.6" TYPE="Paragraph" ORDER="6">
+										<div ID="L.1.1.2.10.3.1.6.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00006"
+													BEGIN="P6_TB00012"/>
+											</fptr>
+										</div>
 									</div>
-								</div>
-								<div ID="L.1.1.2.10.3.1.7" TYPE="Paragraph" ORDER="7">
-									<div ID="L.1.1.2.10.3.1.7.1" TYPE="Text">
-										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00013"/>
-										</fptr>
+									<div ID="L.1.1.2.10.3.1.7" TYPE="Paragraph" ORDER="7">
+										<div ID="L.1.1.2.10.3.1.7.1" TYPE="Text">
+											<fptr>
+												<area BETYPE="IDREF" FILEID="ALTO00006"
+													BEGIN="P6_TB00013"/>
+											</fptr>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!--MET-290-end-->
+
 					</div>
 					<div ID="L.1.1.2.11" TYPE="TextContent" ORDER="11" DMDID="c012" LABEL="Triumph!">
 						<div ID="L.1.1.2.11.1" TYPE="Head">
@@ -1852,14 +2042,16 @@
 								<div ID="L.1.1.2.11.4.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.11.4.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00016"/>
+											<area BETYPE="IDREF" FILEID="ALTO00006"
+												BEGIN="P6_TB00016"/>
 										</fptr>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c013" LABEL="Beachtenswerte Bücher">
+					<div ID="L.1.1.2.12" TYPE="TextContent" ORDER="12" DMDID="c013"
+						LABEL="Beachtenswerte Bücher">
 						<div ID="L.1.1.2.12.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00018"/>
@@ -1870,7 +2062,8 @@
 								<div ID="L.1.1.2.12.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.2.12.2.1.1.1" TYPE="Text">
 										<fptr>
-											<area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00019"/>
+											<area BETYPE="IDREF" FILEID="ALTO00006"
+												BEGIN="P6_TB00019"/>
 										</fptr>
 									</div>
 								</div>

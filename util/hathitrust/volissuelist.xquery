@@ -17,13 +17,14 @@ let $hostrectitle := xs:string($host/mods:titleInfo[1]/mods:title)
 let $issues := collection('/db/bluemtn/metadata/periodicals')//mods:mods[mods:relatedItem[@type='host']/mods:recordInfo/mods:recordIdentifier = $hostrecid]
 
   	for $issue in $issues
-  	let $id := $issue/mods:identifier[@type='bmtn']
+     	let $id := $issue/mods:identifier[@type='bmtn']
   	let $volume := xs:string($issue/mods:part[@type='issue']/mods:detail[@type='volume']/mods:number)
   	let $number := 
   		for $number in $issue/mods:part[@type='issue']/mods:detail[@type='number']/mods:number
   		return xs:string($number)
   	
-  	let $date   := xs:string($issue/mods:originInfo/mods:dateIssued[@keyDate='yes'])
+  	let $date   := xs:string($issue/mods:originInfo/mods:dateIssued[@keyDate='yes'][1])
+  	order by $id
   	return
   		<tr>
   			<td>{ $hostrectitle }</td>

@@ -21,11 +21,13 @@
       <text qname="mods:subject"/>
       <text qname="mods:genre"/>
       <text qname="mods:displayForm"/>
+      <text qname="mods:roleTerm"/>
 
 
       <!-- TEI indexes -->
       <text qname="tei:body"/>
       <text qname="tei:ab"/>
+      <text qname="tei:idno"/>
       <text qname="tei:persName"/>
       <text qname="tei:title" />
 
@@ -54,6 +56,7 @@
     <create qname="@CONTENT" type="xs:string"/>
     <create qname="mods:identifier" type="xs:string"/>
     <create qname="mods:genre" type="xs:string"/>
+    <create qname="mods:roleTerm" type="xs:string"/>
 
   </index>
 </collection>

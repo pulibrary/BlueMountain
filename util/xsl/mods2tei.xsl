@@ -14,7 +14,9 @@
     <biblStruct>
       <monogr>
         <title level="j">
-          <xsl:apply-templates select="mods:titleInfo"/>
+          <xsl:apply-templates select="mods:titleInfo">
+	    <xsl:with-param name="level">j</xsl:with-param>
+	  </xsl:apply-templates>
         </title>
         <imprint>
           <xsl:if test="mods:part/mods:detail[@type='volume']">
@@ -52,7 +54,9 @@
       <biblStruct>
         <analytic>
           <title level="a">
-            <xsl:apply-templates select="mods:titleInfo"/>
+            <xsl:apply-templates select="mods:titleInfo">
+	      <xsl:with-param name="level">a</xsl:with-param>
+	    </xsl:apply-templates>
           </title>
           <xsl:apply-templates select="mods:name"/>
           <xsl:apply-templates select="mods:language"/>
@@ -88,7 +92,8 @@
   </xsl:template>
 
   <xsl:template match="mods:titleInfo">
-    
+    <xsl:param name="level"/>
+    <title level="{$level}">
       <xsl:if test="mods:nonSort">
         <seg type="nonSort">
           <xsl:apply-templates select="mods:nonSort"/>
@@ -102,12 +107,17 @@
           <xsl:apply-templates select="mods:subTitle"/>
         </seg>
       </xsl:if>
-    
+    </title>
   </xsl:template>
 
   <xsl:template match="mods:name">
     <respStmt>
       <persName>
+      	<xsl:if test="@valueURI">
+      		<xsl:attribute name="ref">
+      			<xsl:value-of select="@valueURI" />
+      		</xsl:attribute>
+      	</xsl:if>
         <xsl:value-of select="mods:displayForm"/>
       </persName>
       <resp>
@@ -118,6 +128,10 @@
 
   <xsl:template match="mods:language">
     <textLang mainLang="{mods:languageTerm}"/>
+  </xsl:template>
+  
+  <xsl:template match="mods:note">
+    <note><xsl:apply-templates/></note>
   </xsl:template>
 
 

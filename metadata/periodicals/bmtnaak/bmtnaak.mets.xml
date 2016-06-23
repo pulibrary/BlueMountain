@@ -1,101 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="Periodical" OBJID="urn:PUL:bluemountain:bmtnaak">
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+      TYPE="Periodical"
+      OBJID="urn:PUL:bluemountain:bmtnaak">
   <metsHdr>
-    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
-      <name>Princeton University Library, Digital Initiatives</name>
-    </agent>
-    <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaak</metsDocumentID>
+      
+      <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+         <name>Princeton University Library, Digital Initiatives</name>
+      </agent>
+      <altRecordID TYPE="ark">ark:/88435/12579v91j</altRecordID>
+      <metsDocumentID TYPE="URN">urn:PUL:bluemountain:td:bmtnaak</metsDocumentID>
   </metsHdr>
   <dmdSec ID="dmd0">
-    <mdWrap MDTYPE="DC">
-      <xmlData>
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <mdWrap MDTYPE="DC">
+         <xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-          <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaak">
+               <rdf:Description rdf:about="urn:PUL:bluemountain:bmtnaak">
 
-            <dc:title>De Stijl</dc:title>
+                  <dc:title>De Stijl</dc:title>
 
-          </rdf:Description>
-        </rdf:RDF>
-      </xmlData>
-    </mdWrap>
+               </rdf:Description>
+            </rdf:RDF>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
   <dmdSec ID="dmd1">
-    <mdWrap MDTYPE="MODS">
-      <xmlData>
-	<mods xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
-	  <identifier type="bmtn">urn:PUL:bluemountain:bmtnaak</identifier>
-	  <recordInfo>
-	    <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaak</recordIdentifier>
-            <recordContentSource authority="marcorg">NjP</recordContentSource>
-            <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6551051</recordOrigin>
-            <languageOfCataloging>
-              <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
-            </languageOfCataloging>
-	  </recordInfo>
-	  <genre>Periodicals-Title</genre>
-	  <titleInfo>
-	    <nonSort>De</nonSort>
-	    <title>Stijl</title>
-	  </titleInfo>
-	  <typeOfResource>text</typeOfResource>
-	  <originInfo script="Latn">
-	    <place>
-              <placeTerm type="text">Delft : [s.n.]</placeTerm>
-	    </place>
-	    <dateIssued>1917-1932</dateIssued>
-	    <dateIssued encoding="marc" point="start">1917</dateIssued>
-	    <dateIssued encoding="marc" point="end">1932</dateIssued>
-	  </originInfo>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">dut</languageTerm>
-	  </language>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
-	  </language>
-	  <language>
-	    <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
-	  </language>
-	  <physicalDescription>
-	    <extent>8 v. : ill. ; 22 x 29 cm.</extent>
-	  </physicalDescription>
-	  <note type="date/sequential designation">1. jaarg. [no. 1] (Oct. 1917)-8 jaarg. [no. 90] (Jan. 1932)</note>
-	  <note>Later issues published in Leyden and then Meudon, France.</note>
-	  <note type="numbering">Not published Nov.-Dec. 1920, Jan.-Feb. 1923, 1929-31. Some numbers issued in combined form.</note>
-	  <note type="numbering">Vols. 1-6, no. 12 lack whole numbering but constitute no. 1-72; last issue called only dernier numéro.</note>
-	  <note type="language">Dutch, French or German.</note>
-	  <subject authority="lcsh">
-	    <topic>Arts, Modern</topic>
-	    <temporal>20th century</temporal>
-	    <genre>Periodicals</genre>
-	  </subject>
-	  <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
-	  <location>
-	    <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
-	    <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
-	    <holdingSimple>
-              <copyInformation>
-		<subLocation>sax</subLocation>
-		<!--DELETE COPY NUMBER BELOW-->
-		<shelfLocator>N1.A1 S7</shelfLocator>
-              </copyInformation>
-	    </holdingSimple>
-	  </location>
-	</mods>
+      <mdWrap MDTYPE="MODS">
+         <xmlData>
+	           <mods xmlns="http://www.loc.gov/mods/v3"
+                  xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-4.xsd">
+               <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3" type="ark">ark:/88435/12579v91j</mods:identifier>
+	              <identifier type="bmtn">urn:PUL:bluemountain:bmtnaak</identifier>
+	              <recordInfo>
+	                 <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaak</recordIdentifier>
+                  <recordContentSource authority="marcorg">NjP</recordContentSource>
+                  <recordOrigin>http://catalog.princeton.edu/cgi-bin/Pwebrecon.cgi?BBID=6551051</recordOrigin>
+                  <languageOfCataloging>
+                     <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+                  </languageOfCataloging>
+	              </recordInfo>
+	              <genre>Periodicals-Title</genre>
+	              <titleInfo>
+	                 <nonSort>De</nonSort>
+	                 <title>Stijl</title>
+	              </titleInfo>
+	              <typeOfResource>text</typeOfResource>
+	              <originInfo script="Latn">
+	                 <place>
+                     <placeTerm type="text">Delft : [s.n.]</placeTerm>
+	                 </place>
+	                 <dateIssued>1917-1932</dateIssued>
+	                 <dateIssued encoding="marc" point="start">1917</dateIssued>
+	                 <dateIssued encoding="marc" point="end">1932</dateIssued>
+	              </originInfo>
+	              <language>
+	                 <languageTerm authority="iso639-2b" type="code">dut</languageTerm>
+	              </language>
+	              <language>
+	                 <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+	              </language>
+	              <language>
+	                 <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+	              </language>
+	              <physicalDescription>
+	                 <extent>8 v. : ill. ; 22 x 29 cm.</extent>
+	              </physicalDescription>
+	              <note type="date/sequential designation">1. jaarg. [no. 1] (Oct. 1917)-8 jaarg. [no. 90] (Jan. 1932)</note>
+	              <note>Later issues published in Leyden and then Meudon, France.</note>
+	              <note type="numbering">Not published Nov.-Dec. 1920, Jan.-Feb. 1923, 1929-31. Some numbers issued in combined form.</note>
+	              <note type="numbering">Vols. 1-6, no. 12 lack whole numbering but constitute no. 1-72; last issue called only dernier numéro.</note>
+	              <note type="language">Dutch, French or German.</note>
+	              <subject authority="lcsh">
+	                 <topic>Arts, Modern</topic>
+	                 <temporal>20th century</temporal>
+	                 <genre>Periodicals</genre>
+	              </subject>
+	              <!--IN CASE OF MULTIPLE LOCATION ELEMENTS, DELETE ANY OTHER THAN THE ITEM DIGITIZED-->
+	              <location>
+	                 <physicalLocation type="text"><!--FILL ME IN. Princeton University. Library. ... --></physicalLocation>
+	                 <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
+	                 <holdingSimple>
+                     <copyInformation>
+		                      <subLocation>sax</subLocation>
+		                      <!--DELETE COPY NUMBER BELOW-->
+		                      <shelfLocator>N1.A1 S7</shelfLocator>
+                     </copyInformation>
+	                 </holdingSimple>
+	              </location>
+	           </mods>
 
 
-      </xmlData>
-    </mdWrap>
+         </xmlData>
+      </mdWrap>
   </dmdSec>
 
 
   <dmdSec ID="dmd2">
-    <mdRef LOCTYPE="URN" MDTYPE="MODS" MIMETYPE="application/xml" xlink:href="urn:PUL:bluemountain:dmd:bmtnaak"/>
+      <mdRef LOCTYPE="URN"
+             MDTYPE="MODS"
+             MIMETYPE="application/xml"
+             xlink:href="urn:PUL:bluemountain:dmd:bmtnaak"/>
   </dmdSec>
   <fileSec>
-    <fileGrp/>
+      <fileGrp/>
   </fileSec>
   <structMap>
-    <div/>
+      <div/>
   </structMap>
 </mets>

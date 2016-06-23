@@ -28,7 +28,7 @@ def gen_commands(sourcedir, targetdir):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--input_dir", help="top-level directory of source tifs.")
+    parser.add_argument("-i", "--input_dir", help="top-level directory of source METS/ALTO.")
     parser.add_argument("-o", "--output_dir", help="target directory.")
     args = parser.parse_args()
 
