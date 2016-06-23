@@ -18,7 +18,7 @@
         <xsl:apply-templates />
     </xsl:template>
     
-    <xsl:template match="mods:title[contains(., 'Untitled') and ./ancestor::mods:relatedItem/mods:name]">
+    <xsl:template match="mods:title[contains(., 'Untitled') and ./ancestor::mods:relatedItem[1]/mods:name]">
         <xsl:variable name="byline">
             <xsl:value-of select="./ancestor::mods:relatedItem[1]/mods:name[1]/mods:displayForm"/>
         </xsl:variable>
