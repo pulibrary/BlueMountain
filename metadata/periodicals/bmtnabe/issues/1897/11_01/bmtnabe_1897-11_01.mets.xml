@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabe_1897-11_01">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnabe_1897-11_01">
 	<metsHdr>
 		<agent ROLE="CREATOR" TYPE="ORGANIZATION">
 			<name>Princeton University Library, Digital Initiatives</name>
@@ -36,7 +35,7 @@
 						<dateIssued/>
 						<dateIssued keyDate="yes" encoding="w3cdtf">1897-11</dateIssued>
 					</originInfo>
-					<location xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<location>
 						<physicalLocation type="text">Princeton University. Marquand Library</physicalLocation>
 						<physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
 						<holdingSimple>
@@ -45,7 +44,7 @@
 							</copyInformation>
 						</holdingSimple>
 					</location>
-					<relatedItem xmlns:xlink="http://www.w3.org/1999/xlink" type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabe">
+					<relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnabe">
 						<recordInfo>
 							<recordIdentifier>urn:PUL:bluemountain:dmd:bmtnabe</recordIdentifier>
 						</recordInfo>
@@ -404,7 +403,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c023">
 						<titleInfo lang="ger">
-							<title>Untitled text</title>
+							<mods:title>Untitled text by Emil Strauss</mods:title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>Emil Strauss</displayForm>
@@ -892,7 +891,7 @@
 					</relatedItem>
 					<relatedItem type="constituent" ID="c055">
 						<titleInfo lang="ger">
-							<title>Untitled text</title>
+							<mods:title>Untitled text by MAURICE DENIS</mods:title>
 						</titleInfo>
 						<name type="personal">
 							<displayForm>MAURICE DENIS</displayForm>
@@ -9029,13 +9028,11 @@
 	<structMap LABEL="Logical Structure" TYPE="LOGICAL">
 		<div ID="L.1" TYPE="Magazine" LABEL="Pan">
 			<div ID="L.1.1" TYPE="Issue" LABEL="Pan no. 2 11.1897">
-				<div ID="L.1.1.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled">
-					<div ID="L.1.1.1.1" TYPE="Image">
+				<div ID="L.1.1.1" TYPE="Illustration" ORDER="1" DMDID="c001" LABEL="Untitled Image"><div ID="L.1.1.1.1" TYPE="Image">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00001" BEGIN="P1_CB00001"/>
 						</fptr>
-					</div>
-				</div>
+					</div></div>
 				<div ID="L.1.1.2" TYPE="PublicationInfo" LABEL="Publication Information">
 					<div ID="L.1.1.2.1" TYPE="GenericPubInfo" ORDER="1">
 						<fptr>
@@ -9083,56 +9080,42 @@
 						</fptr>
 					</div>
 				</div>
-				<div ID="L.1.1.3" TYPE="Illustration" ORDER="1" DMDID="c002" LABEL="Untitled">
-					<div ID="L.1.1.3.1" TYPE="Image">
+				<div ID="L.1.1.3" TYPE="Illustration" ORDER="1" DMDID="c002" LABEL="Untitled Image"><div ID="L.1.1.3.1" TYPE="Image">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_CB00001"/>
 						</fptr>
-					</div>
-				</div>
-				<div ID="L.1.1.4" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="Untitled">
-					<div ID="L.1.1.4.1" TYPE="Image">
+					</div></div>
+				<div ID="L.1.1.4" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="Untitled Image"><div ID="L.1.1.4.1" TYPE="Image">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00001"/>
 						</fptr>
-					</div>
-				</div>
-				<div ID="L.1.1.5" TYPE="Illustration" ORDER="4" DMDID="c004" LABEL="MOTIV AUS HESSEN">
-					<div ID="L.1.1.5.1" TYPE="Head">
+					</div></div>
+				<div ID="L.1.1.5" TYPE="Illustration" ORDER="4" DMDID="c004" LABEL="MOTIV AUS HESSEN"><div ID="L.1.1.5.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.5.2" TYPE="Byline">
+					</div><div ID="L.1.1.5.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.5.3" TYPE="Illustration" ORDER="1" LABEL="ORIGINALRADIERUNG PAN III 3.">
-						<div ID="L.1.1.5.3.1" TYPE="Image">
+					</div><div ID="L.1.1.5.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.5.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.5.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.6" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="MAERZENWELT">
-					<div ID="L.1.1.6.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.6" TYPE="TextContent" ORDER="5" DMDID="c005" LABEL="MAERZENWELT"><div ID="L.1.1.6.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.6.2" TYPE="Byline">
+					</div><div ID="L.1.1.6.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00006"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.6.3" TYPE="Copy">
+					</div><div ID="L.1.1.6.3" TYPE="Copy">
 						<div ID="L.1.1.6.3.1" TYPE="BodyContent">
 							<div ID="L.1.1.6.3.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.6.3.1.1.1" TYPE="Text">
@@ -9318,57 +9301,43 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.6.4" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="Untitled">
-						<div ID="L.1.1.6.4.1" TYPE="Image">
+					</div><div ID="L.1.1.6.4" TYPE="Illustration" ORDER="1" DMDID="c006" LABEL="Untitled Image"><div ID="L.1.1.6.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.7" TYPE="Illustration" ORDER="6" DMDID="c007" LABEL="LANDSCHAFT – AM FELDE">
-					<div ID="L.1.1.7.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.7" TYPE="Illustration" ORDER="6" DMDID="c007" LABEL="LANDSCHAFT – AM FELDE"><div ID="L.1.1.7.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.7.2" TYPE="Byline">
+					</div><div ID="L.1.1.7.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.7.3" TYPE="Illustration" ORDER="1" LABEL="ORIGINALRADIERUNGEN PAN III 3.">
-						<div ID="L.1.1.7.3.1" TYPE="Image">
+					</div><div ID="L.1.1.7.3.1" TYPE="Image">
 							<fptr>
 								<seq>
 									<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_CB00001"/>
 									<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_CB00002"/>
 								</seq>
 							</fptr>
-						</div>
-						<div ID="L.1.1.7.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.7.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.8" TYPE="TextContent" ORDER="7" DMDID="c008" LABEL="NEUES AUS DINGSDA IM LADEN.">
-					<div ID="L.1.1.8.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.8" TYPE="TextContent" ORDER="7" DMDID="c008" LABEL="NEUES AUS DINGSDA"><div ID="L.1.1.8.1" TYPE="Head">
 						<fptr>
 							<seq>
 								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00002"/>
 								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00003"/>
 							</seq>
 						</fptr>
-					</div>
-					<div ID="L.1.1.8.2" TYPE="Byline">
+					</div><div ID="L.1.1.8.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.8.3" TYPE="Copy">
+					</div><div ID="L.1.1.8.3" TYPE="Copy">
 						<div ID="L.1.1.8.3.1" TYPE="BodyContent">
 							<div ID="L.1.1.8.3.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.8.3.1.1.1" TYPE="Text">
@@ -9413,47 +9382,32 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.8.4" TYPE="Illustration" ORDER="1" DMDID="c009" LABEL="Untitled">
-						<div ID="L.1.1.8.4.1" TYPE="Image">
+					</div><div ID="L.1.1.8.4" TYPE="Illustration" ORDER="1" DMDID="c009" LABEL="Untitled Image"><div ID="L.1.1.8.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.8.5" TYPE="Illustration" ORDER="2" DMDID="c010" LABEL="Untitled">
-						<div ID="L.1.1.8.5.1" TYPE="Image">
+						</div></div><div ID="L.1.1.8.5" TYPE="Illustration" ORDER="2" DMDID="c010" LABEL="Untitled Image"><div ID="L.1.1.8.5.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.9" TYPE="TextContent" ORDER="8" DMDID="c011" LABEL='DREI GEDICHTE AUS DER SAMMLUNG "PARADIESE"'>
-					<div ID="L.1.1.9.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.9" TYPE="TextContent" ORDER="8" DMDID="c011" LABEL="DREI GEDICHTE AUS DER SAMMLUNG &#34;PARADIESE&#34;"><div ID="L.1.1.9.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.9.2" TYPE="Byline">
+					</div><div ID="L.1.1.9.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00003"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.9.3" TYPE="Illustration" ORDER="1" DMDID="c012" LABEL="Untitled">
-						<div ID="L.1.1.9.3.1" TYPE="Image">
+					</div><div ID="L.1.1.9.3" TYPE="Illustration" ORDER="1" DMDID="c012" LABEL="Untitled Image"><div ID="L.1.1.9.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.9.4" TYPE="TextContent" ORDER="2" DMDID="c013" LABEL="DER BLINDE JÜNGLING">
-						<div ID="L.1.1.9.4.1" TYPE="Head">
+						</div></div><div ID="L.1.1.9.4" TYPE="TextContent" ORDER="2" DMDID="c013" LABEL="BLINDE JÜNGLING"><div ID="L.1.1.9.4.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.9.4.2" TYPE="Copy">
+						</div><div ID="L.1.1.9.4.2" TYPE="Copy">
 							<div ID="L.1.1.9.4.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.9.4.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.9.4.2.1.1.1" TYPE="Text">
@@ -9463,15 +9417,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.9.5" TYPE="TextContent" ORDER="3" DMDID="c014" LABEL="ERNTE">
-						<div ID="L.1.1.9.5.1" TYPE="Head">
+						</div></div><div ID="L.1.1.9.5" TYPE="TextContent" ORDER="3" DMDID="c014" LABEL="ERNTE"><div ID="L.1.1.9.5.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00006"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.9.5.2" TYPE="Copy">
+						</div><div ID="L.1.1.9.5.2" TYPE="Copy">
 							<div ID="L.1.1.9.5.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.9.5.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.9.5.2.1.1.1" TYPE="Text">
@@ -9481,15 +9431,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.9.6" TYPE="TextContent" ORDER="4" DMDID="c015" LABEL="STAUBBEFREIT">
-						<div ID="L.1.1.9.6.1" TYPE="Head">
+						</div></div><div ID="L.1.1.9.6" TYPE="TextContent" ORDER="4" DMDID="c015" LABEL="STAUBBEFREIT"><div ID="L.1.1.9.6.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_TB00008"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.9.6.2" TYPE="Copy">
+						</div><div ID="L.1.1.9.6.2" TYPE="Copy">
 							<div ID="L.1.1.9.6.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.9.6.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.9.6.2.1.1.1" TYPE="Text">
@@ -9499,21 +9445,16 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.10" TYPE="TextContent" ORDER="9" DMDID="c016" LABEL="WENN DER TAG STIRBT">
-					<div ID="L.1.1.10.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.10" TYPE="TextContent" ORDER="9" DMDID="c016" LABEL="WENN DER TAG STIRBT"><div ID="L.1.1.10.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.10.2" TYPE="Byline">
+					</div><div ID="L.1.1.10.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_TB00004"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.10.3" TYPE="Copy">
+					</div><div ID="L.1.1.10.3" TYPE="Copy">
 						<div ID="L.1.1.10.3.1" TYPE="BodyContent">
 							<div ID="L.1.1.10.3.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.10.3.1.1.1" TYPE="Text">
@@ -9523,51 +9464,37 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.10.4" TYPE="Illustration" ORDER="1" DMDID="c017" LABEL="Untitled">
-						<div ID="L.1.1.10.4.1" TYPE="Image">
+					</div><div ID="L.1.1.10.4" TYPE="Illustration" ORDER="1" DMDID="c017" LABEL="Untitled Image"><div ID="L.1.1.10.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.11" TYPE="Illustration" ORDER="10" DMDID="c018" LABEL="ALTE FRAU">
-					<div ID="L.1.1.11.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.11" TYPE="Illustration" ORDER="10" DMDID="c018" LABEL="ALTE FRAU"><div ID="L.1.1.11.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.11.2" TYPE="Byline">
+					</div><div ID="L.1.1.11.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.11.3" TYPE="Illustration" ORDER="1" LABEL="ORIGINALHOLZSCHNITT PAN III 3.">
-						<div ID="L.1.1.11.3.1" TYPE="Image">
+					</div><div ID="L.1.1.11.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.11.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.11.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00029" BEGIN="P29_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.12" TYPE="TextContent" ORDER="11" DMDID="c019" LABEL="FIGUREN AUS DEM PUPPENSPIEL DAS KLEINE WELTTHEATER">
-					<div ID="L.1.1.12.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.12" TYPE="TextContent" ORDER="11" DMDID="c019" LABEL="FIGUREN AUS DEM PUPPENSPIEL DAS KLEINE WELTTHEATER"><div ID="L.1.1.12.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.12.2" TYPE="Byline">
+					</div><div ID="L.1.1.12.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_TB00004"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.12.3" TYPE="Copy">
+					</div><div ID="L.1.1.12.3" TYPE="Copy">
 						<div ID="L.1.1.12.3.1" TYPE="BodyContent">
 							<div ID="L.1.1.12.3.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.12.3.1.1.1" TYPE="Text">
@@ -9643,42 +9570,29 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.12.4" TYPE="Illustration" ORDER="1" DMDID="c020" LABEL="Untitled">
-						<div ID="L.1.1.12.4.1" TYPE="Image">
+					</div><div ID="L.1.1.12.4" TYPE="Illustration" ORDER="1" DMDID="c020" LABEL="Untitled Image"><div ID="L.1.1.12.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00031" BEGIN="P31_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.12.5" TYPE="Illustration" ORDER="2" DMDID="c021" LABEL="Untitled">
-						<div ID="L.1.1.12.5.1" TYPE="Image">
+						</div></div><div ID="L.1.1.12.5" TYPE="Illustration" ORDER="2" DMDID="c021" LABEL="Untitled Image"><div ID="L.1.1.12.5.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00035" BEGIN="P35_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.13" TYPE="Illustration" ORDER="1" DMDID="c022" LABEL="Untitled">
-					<div ID="L.1.1.13.1" TYPE="Image">
+						</div></div></div>
+				<div ID="L.1.1.13" TYPE="Illustration" ORDER="1" DMDID="c022" LABEL="Untitled Image"><div ID="L.1.1.13.1" TYPE="Image">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_CB00001"/>
 						</fptr>
-					</div>
-				</div>
-				<div ID="L.1.1.14" TYPE="TextContent" ORDER="13" DMDID="c023" LABEL="Untitled text">
-					<div ID="L.1.1.14.1" TYPE="Byline">
+					</div></div>
+				<div ID="L.1.1.14" TYPE="TextContent" ORDER="13" DMDID="c023" LABEL="Untitled text by Emil Strauss"><div ID="L.1.1.14.1" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.14.2" TYPE="TextContent" ORDER="1" DMDID="c024" LABEL="DER FALTER">
-						<div ID="L.1.1.14.2.1" TYPE="Head">
+					</div><div ID="L.1.1.14.2" TYPE="TextContent" ORDER="1" DMDID="c024" LABEL="FALTER"><div ID="L.1.1.14.2.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00036" BEGIN="P36_TB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.14.2.2" TYPE="Copy">
+						</div><div ID="L.1.1.14.2.2" TYPE="Copy">
 							<div ID="L.1.1.14.2.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.14.2.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.14.2.2.1.1.1" TYPE="Text">
@@ -9695,15 +9609,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.14.3" TYPE="TextContent" ORDER="2" DMDID="c025" LABEL="LANGSAM">
-						<div ID="L.1.1.14.3.1" TYPE="Head">
+						</div></div><div ID="L.1.1.14.3" TYPE="TextContent" ORDER="2" DMDID="c025" LABEL="LANGSAM"><div ID="L.1.1.14.3.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.14.3.2" TYPE="Copy">
+						</div><div ID="L.1.1.14.3.2" TYPE="Copy">
 							<div ID="L.1.1.14.3.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.14.3.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.14.3.2.1.1.1" TYPE="Text">
@@ -9713,15 +9623,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.14.4" TYPE="TextContent" ORDER="3" DMDID="c026" LABEL="APRIL">
-						<div ID="L.1.1.14.4.1" TYPE="Head">
+						</div></div><div ID="L.1.1.14.4" TYPE="TextContent" ORDER="3" DMDID="c026" LABEL="APRIL"><div ID="L.1.1.14.4.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00037" BEGIN="P37_TB00006"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.14.4.2" TYPE="Copy">
+						</div><div ID="L.1.1.14.4.2" TYPE="Copy">
 							<div ID="L.1.1.14.4.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.14.4.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.14.4.2.1.1.1" TYPE="Text">
@@ -9731,34 +9637,24 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.15" TYPE="TextContent" ORDER="14" DMDID="c027" LABEL="GEDICHTE">
-					<div ID="L.1.1.15.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.15" TYPE="TextContent" ORDER="14" DMDID="c027" LABEL="GEDICHTE"><div ID="L.1.1.15.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.15.2" TYPE="Byline">
+					</div><div ID="L.1.1.15.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00003"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.15.3" TYPE="Illustration" ORDER="1" DMDID="c028" LABEL="Untitled">
-						<div ID="L.1.1.15.3.1" TYPE="Image">
+					</div><div ID="L.1.1.15.3" TYPE="Illustration" ORDER="1" DMDID="c028" LABEL="Untitled Image"><div ID="L.1.1.15.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.15.4" TYPE="TextContent" ORDER="2" DMDID="c029" LABEL="SCHÖPFUNG.">
-						<div ID="L.1.1.15.4.1" TYPE="Head">
+						</div></div><div ID="L.1.1.15.4" TYPE="TextContent" ORDER="2" DMDID="c029" LABEL="SCHÖPFUNG."><div ID="L.1.1.15.4.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00038" BEGIN="P38_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.15.4.2" TYPE="Copy">
+						</div><div ID="L.1.1.15.4.2" TYPE="Copy">
 							<div ID="L.1.1.15.4.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.15.4.2.1.1" TYPE="Text" ORDER="1">
 									<fptr>
@@ -9766,15 +9662,11 @@
 									</fptr>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.15.5" TYPE="TextContent" ORDER="3" DMDID="c030" LABEL="TRÜBES WETTER.">
-						<div ID="L.1.1.15.5.1" TYPE="Head">
+						</div></div><div ID="L.1.1.15.5" TYPE="TextContent" ORDER="3" DMDID="c030" LABEL="TRÜBES WETTER."><div ID="L.1.1.15.5.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00039" BEGIN="P39_TB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.15.5.2" TYPE="Copy">
+						</div><div ID="L.1.1.15.5.2" TYPE="Copy">
 							<div ID="L.1.1.15.5.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.15.5.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.15.5.2.1.1.1" TYPE="Text">
@@ -9784,15 +9676,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.15.6" TYPE="TextContent" ORDER="4" DMDID="c031" LABEL="HOFFNUNG.">
-						<div ID="L.1.1.15.6.1" TYPE="Head">
+						</div></div><div ID="L.1.1.15.6" TYPE="TextContent" ORDER="4" DMDID="c031" LABEL="HOFFNUNG."><div ID="L.1.1.15.6.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00039" BEGIN="P39_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.15.6.2" TYPE="Copy">
+						</div><div ID="L.1.1.15.6.2" TYPE="Copy">
 							<div ID="L.1.1.15.6.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.15.6.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.15.6.2.1.1.1" TYPE="Text">
@@ -9802,15 +9690,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.15.7" TYPE="TextContent" ORDER="5" DMDID="c032" LABEL="PHANTASUS.">
-						<div ID="L.1.1.15.7.1" TYPE="Head">
+						</div></div><div ID="L.1.1.15.7" TYPE="TextContent" ORDER="5" DMDID="c032" LABEL="PHANTASUS."><div ID="L.1.1.15.7.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00039" BEGIN="P39_TB00006"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.15.7.2" TYPE="Copy">
+						</div><div ID="L.1.1.15.7.2" TYPE="Copy">
 							<div ID="L.1.1.15.7.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.15.7.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.15.7.2.1.1.1" TYPE="Text">
@@ -9820,15 +9704,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.15.8" TYPE="TextContent" ORDER="6" DMDID="c033" LABEL="DIE HOHE MAUER.">
-						<div ID="L.1.1.15.8.1" TYPE="Head">
+						</div></div><div ID="L.1.1.15.8" TYPE="TextContent" ORDER="6" DMDID="c033" LABEL="HOHE MAUER."><div ID="L.1.1.15.8.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00039" BEGIN="P39_TB00008"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.15.8.2" TYPE="Copy">
+						</div><div ID="L.1.1.15.8.2" TYPE="Copy">
 							<div ID="L.1.1.15.8.2.1" TYPE="BodyContent">
 								<div ID="L.1.1.15.8.2.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.15.8.2.1.1.1" TYPE="Text">
@@ -9838,21 +9718,16 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.16" TYPE="TextContent" ORDER="15" DMDID="c034" LABEL="DER FAEHNDRICH DEUTSCHE LANDSKNECHTSJUSTIZ">
-					<div ID="L.1.1.16.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.16" TYPE="TextContent" ORDER="15" DMDID="c034" LABEL="FAEHNDRICH DEUTSCHE LANDSKNECHTSJUSTIZ"><div ID="L.1.1.16.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00040" BEGIN="P40_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.16.2" TYPE="Byline">
+					</div><div ID="L.1.1.16.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00040" BEGIN="P40_TB00003"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.16.3" TYPE="Copy">
+					</div><div ID="L.1.1.16.3" TYPE="Copy">
 						<div ID="L.1.1.16.3.1" TYPE="BodyContent">
 							<div ID="L.1.1.16.3.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.16.3.1.1.1" TYPE="Text">
@@ -9917,67 +9792,48 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.16.4" TYPE="Illustration" ORDER="1" DMDID="c035" LABEL="Untitled">
-						<div ID="L.1.1.16.4.1" TYPE="Image">
+					</div><div ID="L.1.1.16.4" TYPE="Illustration" ORDER="1" DMDID="c035" LABEL="Untitled Image"><div ID="L.1.1.16.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00040" BEGIN="P40_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.17" TYPE="Illustration" ORDER="16" DMDID="c036" LABEL="KURZWEIL – WÜRFLER">
-					<div ID="L.1.1.17.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.17" TYPE="Illustration" ORDER="16" DMDID="c036" LABEL="KURZWEIL – WÜRFLER"><div ID="L.1.1.17.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.17.2" TYPE="Byline">
+					</div><div ID="L.1.1.17.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.17.3" TYPE="Illustration" ORDER="1" LABEL="ORIGINALRADIERUNGEN PAN III 3.">
-						<div ID="L.1.1.17.3.1" TYPE="Image">
+					</div><div ID="L.1.1.17.3.1" TYPE="Image">
 							<fptr>
 								<seq>
 									<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_CB00001"/>
 									<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_CB00002"/>
 								</seq>
 							</fptr>
-						</div>
-						<div ID="L.1.1.17.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.17.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00045" BEGIN="P45_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.18" TYPE="TextContent" ORDER="17" DMDID="c037" LABEL="Rundschau">
-					<div ID="L.1.1.18.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.18" TYPE="TextContent" ORDER="17" DMDID="c037" LABEL="Rundschau"><div ID="L.1.1.18.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.18.2" TYPE="Illustration" ORDER="1" DMDID="c038" LABEL="Untitled">
-						<div ID="L.1.1.18.2.1" TYPE="Image">
+					</div><div ID="L.1.1.18.2" TYPE="Illustration" ORDER="1" DMDID="c038" LABEL="Untitled Image"><div ID="L.1.1.18.2.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.18.3" TYPE="TextContent" ORDER="2" DMDID="c039" LABEL="BUERGERLICHE BAUKUNST">
-						<div ID="L.1.1.18.3.1" TYPE="Head">
+						</div></div><div ID="L.1.1.18.3" TYPE="TextContent" ORDER="2" DMDID="c039" LABEL="BUERGERLICHE BAUKUNST"><div ID="L.1.1.18.3.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00047" BEGIN="P47_TB00003"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.18.3.2" TYPE="Byline">
+						</div><div ID="L.1.1.18.3.2" TYPE="Byline">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00051" BEGIN="P51_TB00003"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.18.3.3" TYPE="Copy">
+						</div><div ID="L.1.1.18.3.3" TYPE="Copy">
 							<div ID="L.1.1.18.3.3.1" TYPE="BodyContent">
 								<div ID="L.1.1.18.3.3.1.1" TYPE="Paragraph" ORDER="1">
 									<div ID="L.1.1.18.3.3.1.1.1" TYPE="Text">
@@ -10030,35 +9886,24 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.18.4" TYPE="Illustration" ORDER="1" DMDID="c040" LABEL="Untitled">
-						<div ID="L.1.1.18.4.1" TYPE="Image">
+						</div></div><div ID="L.1.1.18.4" TYPE="Illustration" ORDER="1" DMDID="c040" LABEL="Untitled Image"><div ID="L.1.1.18.4.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00051" BEGIN="P51_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.19" TYPE="TextContent" ORDER="18" DMDID="c041" LABEL="AUS MUENCHEN LUDWIG DILL UND DIE NEUEREN BESTREBUNGEN DER MUENCHENER LANDSCHAFTERSCHULE">
-					<div ID="L.1.1.19.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.19" TYPE="TextContent" ORDER="18" DMDID="c041" LABEL="AUS MUENCHEN LUDWIG DILL UND DIE NEUEREN BESTREBUNGEN DER MUENCHENER LANDSCHAFTERSCHULE"><div ID="L.1.1.19.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00052" BEGIN="P52_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.19.2" TYPE="Byline">
+					</div><div ID="L.1.1.19.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00054" BEGIN="P54_TB00004"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.19.3" TYPE="Illustration" ORDER="1" DMDID="c042" LABEL="Untitled">
-						<div ID="L.1.1.19.3.1" TYPE="Image">
+					</div><div ID="L.1.1.19.3" TYPE="Illustration" ORDER="1" DMDID="c042" LABEL="Untitled Image"><div ID="L.1.1.19.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00052" BEGIN="P52_CB00002"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.19.4" TYPE="Copy">
+						</div></div><div ID="L.1.1.19.4" TYPE="Copy">
 						<div ID="L.1.1.19.4.1" TYPE="BodyContent">
 							<div ID="L.1.1.19.4.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.19.4.1.1.1" TYPE="Text">
@@ -10114,65 +9959,45 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.19.5" TYPE="Illustration" ORDER="1" DMDID="c043" LABEL="Untitled">
-						<div ID="L.1.1.19.5.1" TYPE="Image">
+					</div><div ID="L.1.1.19.5" TYPE="Illustration" ORDER="1" DMDID="c043" LABEL="Untitled Image"><div ID="L.1.1.19.5.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00052" BEGIN="P52_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.19.6" TYPE="Illustration" ORDER="2" DMDID="c044" LABEL="Untitled">
-						<div ID="L.1.1.19.6.1" TYPE="Image">
+						</div></div><div ID="L.1.1.19.6" TYPE="Illustration" ORDER="2" DMDID="c044" LABEL="Untitled Image"><div ID="L.1.1.19.6.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00054" BEGIN="P54_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.20" TYPE="Illustration" ORDER="19" DMDID="c045" LABEL="SCHNEEWEHEN IM MOOS">
-					<div ID="L.1.1.20.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.20" TYPE="Illustration" ORDER="19" DMDID="c045" LABEL="SCHNEEWEHEN IM MOOS"><div ID="L.1.1.20.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00055" BEGIN="P55_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.20.2" TYPE="Byline">
+					</div><div ID="L.1.1.20.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00055" BEGIN="P55_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.20.3" TYPE="Illustration" ORDER="1" LABEL="LICHTDRUCK PAN III 3.">
-						<div ID="L.1.1.20.3.1" TYPE="Image">
+					</div><div ID="L.1.1.20.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00055" BEGIN="P55_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.20.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.20.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00055" BEGIN="P55_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.21" TYPE="TextContent" ORDER="20" DMDID="c046" LABEL="DUERERS HOLZSCHNITTFOLGEN">
-					<div ID="L.1.1.21.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.21" TYPE="TextContent" ORDER="20" DMDID="c046" LABEL="DUERERS HOLZSCHNITTFOLGEN"><div ID="L.1.1.21.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00057" BEGIN="P57_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.21.2" TYPE="Byline">
+					</div><div ID="L.1.1.21.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00064" BEGIN="P64_TB00004"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.21.3" TYPE="Illustration" ORDER="1" DMDID="c047" LABEL="Untitled">
-						<div ID="L.1.1.21.3.1" TYPE="Image">
+					</div><div ID="L.1.1.21.3" TYPE="Illustration" ORDER="1" DMDID="c047" LABEL="Untitled Image"><div ID="L.1.1.21.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00057" BEGIN="P57_CB00002"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.4" TYPE="Copy">
+						</div></div><div ID="L.1.1.21.4" TYPE="Copy">
 						<div ID="L.1.1.21.4.1" TYPE="BodyContent">
 							<div ID="L.1.1.21.4.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.21.4.1.1.1" TYPE="Text">
@@ -10345,95 +10170,61 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.21.5" TYPE="Illustration" ORDER="1" DMDID="c048" LABEL="Untitled">
-						<div ID="L.1.1.21.5.1" TYPE="Image">
+					</div><div ID="L.1.1.21.5" TYPE="Illustration" ORDER="1" DMDID="c048" LABEL="Untitled Image"><div ID="L.1.1.21.5.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00057" BEGIN="P57_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.6" TYPE="Illustration" ORDER="2" DMDID="c049" LABEL="Untitled">
-						<div ID="L.1.1.21.6.1" TYPE="Image">
+						</div></div><div ID="L.1.1.21.6" TYPE="Illustration" ORDER="2" DMDID="c049" LABEL="Untitled Image"><div ID="L.1.1.21.6.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00058" BEGIN="P58_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.7" TYPE="Illustration" ORDER="3" DMDID="c050" LABEL="Untitled">
-						<div ID="L.1.1.21.7.1" TYPE="Image">
+						</div></div><div ID="L.1.1.21.7" TYPE="Illustration" ORDER="3" DMDID="c050" LABEL="Untitled Image"><div ID="L.1.1.21.7.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00059" BEGIN="P59_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.8" TYPE="Illustration" ORDER="4" DMDID="c051" LABEL="Untitled">
-						<div ID="L.1.1.21.8.1" TYPE="Image">
+						</div></div><div ID="L.1.1.21.8" TYPE="Illustration" ORDER="4" DMDID="c051" LABEL="Untitled Image"><div ID="L.1.1.21.8.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00061" BEGIN="P61_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.9" TYPE="Illustration" ORDER="5" DMDID="c052" LABEL="Untitled">
-						<div ID="L.1.1.21.9.1" TYPE="Image">
+						</div></div><div ID="L.1.1.21.9" TYPE="Illustration" ORDER="5" DMDID="c052" LABEL="Untitled Image"><div ID="L.1.1.21.9.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00062" BEGIN="P62_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.10" TYPE="Illustration" ORDER="6" DMDID="c053" LABEL="Untitled">
-						<div ID="L.1.1.21.10.1" TYPE="Image">
+						</div></div><div ID="L.1.1.21.10" TYPE="Illustration" ORDER="6" DMDID="c053" LABEL="Untitled Image"><div ID="L.1.1.21.10.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00063" BEGIN="P63_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.21.11" TYPE="Illustration" ORDER="7" DMDID="c054" LABEL="Untitled">
-						<div ID="L.1.1.21.11.1" TYPE="Image">
+						</div></div><div ID="L.1.1.21.11" TYPE="Illustration" ORDER="7" DMDID="c054" LABEL="Untitled Image"><div ID="L.1.1.21.11.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00064" BEGIN="P64_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.22" TYPE="Illustration" ORDER="21" DMDID="c055" LABEL="Untitled text">
-					<div ID="L.1.1.22.1" TYPE="Byline">
+						</div></div></div>
+				<div ID="L.1.1.22" TYPE="Illustration" ORDER="21" DMDID="c055" LABEL="Untitled text by MAURICE DENIS"><div ID="L.1.1.22.1" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00065" BEGIN="P65_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.22.2" TYPE="Illustration" ORDER="1" LABEL="ORIGINALLITHOGRAPHIE PAN III 3.">
-						<div ID="L.1.1.22.2.1" TYPE="Image">
+					</div><div ID="L.1.1.22.2.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00065" BEGIN="P65_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.22.2.2" TYPE="Caption">
+						</div><div ID="L.1.1.22.2.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00065" BEGIN="P65_TB00002"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.23" TYPE="TextContent" ORDER="22" DMDID="c056" LABEL="DIE ABENDROETE DER KUNST">
-					<div ID="L.1.1.23.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.23" TYPE="TextContent" ORDER="22" DMDID="c056" LABEL="ABENDROETE DER KUNST"><div ID="L.1.1.23.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00067" BEGIN="P67_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.23.2" TYPE="Byline">
+					</div><div ID="L.1.1.23.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00072" BEGIN="P72_TB00006"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.23.3" TYPE="Illustration" ORDER="1" DMDID="c057" LABEL="Untitled">
-						<div ID="L.1.1.23.3.1" TYPE="Image">
+					</div><div ID="L.1.1.23.3" TYPE="Illustration" ORDER="1" DMDID="c057" LABEL="Untitled Image"><div ID="L.1.1.23.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00067" BEGIN="P67_CB00002"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.23.4" TYPE="Copy">
+						</div></div><div ID="L.1.1.23.4" TYPE="Copy">
 						<div ID="L.1.1.23.4.1" TYPE="BodyContent">
 							<div ID="L.1.1.23.4.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.23.4.1.1.1" TYPE="Text">
@@ -10565,89 +10356,61 @@
 								</fptr>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.23.5" TYPE="Illustration" ORDER="1" DMDID="c058" LABEL="FEDERZEICHNUNG">
-						<div ID="L.1.1.23.5.1" TYPE="Head">
+					</div><div ID="L.1.1.23.5" TYPE="Illustration" ORDER="1" DMDID="c058" LABEL="FEDERZEICHNUNG"><div ID="L.1.1.23.5.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00067" BEGIN="P67_TB00003"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.23.5.2" TYPE="Byline">
+						</div><div ID="L.1.1.23.5.2" TYPE="Byline">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00067" BEGIN="P67_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.23.5.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-							<div ID="L.1.1.23.5.3.1" TYPE="Image">
+						</div><div ID="L.1.1.23.5.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00067" BEGIN="P67_CB00001"/>
 								</fptr>
-							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.23.6" TYPE="Illustration" ORDER="2" DMDID="c059" LABEL="BLEISTIFTSKIZZE">
-						<div ID="L.1.1.23.6.1" TYPE="Head">
+							</div></div><div ID="L.1.1.23.6" TYPE="Illustration" ORDER="2" DMDID="c059" LABEL="BLEISTIFTSKIZZE"><div ID="L.1.1.23.6.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00072" BEGIN="P72_TB00002"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.23.6.2" TYPE="Byline">
+						</div><div ID="L.1.1.23.6.2" TYPE="Byline">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00072" BEGIN="P72_TB00003"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.23.6.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-							<div ID="L.1.1.23.6.3.1" TYPE="Image">
+						</div><div ID="L.1.1.23.6.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00072" BEGIN="P72_CB00001"/>
 								</fptr>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.24" TYPE="Illustration" ORDER="23" DMDID="c060" LABEL="ANTONIN PROUST">
-					<div ID="L.1.1.24.1" TYPE="Head">
+							</div></div></div>
+				<div ID="L.1.1.24" TYPE="Illustration" ORDER="23" DMDID="c060" LABEL="ANTONIN PROUST"><div ID="L.1.1.24.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00073" BEGIN="P73_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.24.2" TYPE="Byline">
+					</div><div ID="L.1.1.24.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00073" BEGIN="P73_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.24.3" TYPE="Illustration" ORDER="1" LABEL="ORIGINALRADIERUNG PAN III 3.">
-						<div ID="L.1.1.24.3.1" TYPE="Image">
+					</div><div ID="L.1.1.24.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00073" BEGIN="P73_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.24.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.24.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00073" BEGIN="P73_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.25" TYPE="TextContent" ORDER="24" DMDID="c061" LABEL="AUGUSTE RODIN">
-					<div ID="L.1.1.25.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.25" TYPE="TextContent" ORDER="24" DMDID="c061" LABEL="AUGUSTE RODIN"><div ID="L.1.1.25.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00075" BEGIN="P75_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.25.2" TYPE="Byline">
+					</div><div ID="L.1.1.25.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00082" BEGIN="P82_TB00004"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.25.3" TYPE="Illustration" ORDER="1" DMDID="c062" LABEL="Untitled">
-						<div ID="L.1.1.25.3.1" TYPE="Image">
+					</div><div ID="L.1.1.25.3" TYPE="Illustration" ORDER="1" DMDID="c062" LABEL="Untitled Image"><div ID="L.1.1.25.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00075" BEGIN="P75_CB00002"/>
 							</fptr>
-						</div>
-					</div>
-					<div ID="L.1.1.25.4" TYPE="Copy">
+						</div></div><div ID="L.1.1.25.4" TYPE="Copy">
 						<div ID="L.1.1.25.4.1" TYPE="BodyContent">
 							<div ID="L.1.1.25.4.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.25.4.1.1.1" TYPE="Text">
@@ -10718,121 +10481,85 @@
 								</fptr>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.25.5" TYPE="Illustration" ORDER="1" DMDID="c063" LABEL="STRAND UND WOGE">
-						<div ID="L.1.1.25.5.1" TYPE="Head">
+					</div><div ID="L.1.1.25.5" TYPE="Illustration" ORDER="1" DMDID="c063" LABEL="STRAND UND WOGE"><div ID="L.1.1.25.5.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00075" BEGIN="P75_TB00005"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.25.5.2" TYPE="Byline">
+						</div><div ID="L.1.1.25.5.2" TYPE="Byline">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00075" BEGIN="P75_TB00006"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.25.5.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-							<div ID="L.1.1.25.5.3.1" TYPE="Image">
+						</div><div ID="L.1.1.25.5.3.1" TYPE="Image">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00075" BEGIN="P75_CB00001"/>
 								</fptr>
-							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.25.6" TYPE="Illustration" ORDER="2" DMDID="c064" LABEL="VICTOR HUGO.">
-						<div ID="L.1.1.25.6.1" TYPE="Head">
+							</div></div><div ID="L.1.1.25.6" TYPE="Illustration" ORDER="2" DMDID="c064" LABEL="VICTOR HUGO."><div ID="L.1.1.25.6.1" TYPE="Head">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00080" BEGIN="P80_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.25.6.2" TYPE="Byline">
+						</div><div ID="L.1.1.25.6.2" TYPE="Byline">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00080" BEGIN="P80_TB00005"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.25.6.3" TYPE="Byline">
+						</div><div ID="L.1.1.25.6.3" TYPE="Byline">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00081" BEGIN="P81_TB00004"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.25.6.4" TYPE="Illustration" ORDER="1" LABEL="NACH EINER RADIERUNG">
-							<div ID="L.1.1.25.6.4.1" TYPE="Image">
+						</div><div ID="L.1.1.25.6.4.1" TYPE="Image">
 								<fptr>
 									<seq>
 										<area BETYPE="IDREF" FILEID="ALTO00080" BEGIN="P80_CB00001"/>
 										<area BETYPE="IDREF" FILEID="ALTO00081" BEGIN="P81_CB00001"/>
 									</seq>
 								</fptr>
-							</div>
-							<div ID="L.1.1.25.6.4.2" TYPE="Caption">
+							</div><div ID="L.1.1.25.6.4.2" TYPE="Caption">
 								<fptr>
 									<area BETYPE="IDREF" FILEID="ALTO00080" BEGIN="P80_TB00006"/>
 								</fptr>
-							</div>
-						</div>
-					</div>
-					<div ID="L.1.1.25.7" TYPE="Illustration" ORDER="1" DMDID="c065" LABEL="Untitled">
-						<div ID="L.1.1.25.7.1" TYPE="Image">
+							</div></div><div ID="L.1.1.25.7" TYPE="Illustration" ORDER="1" DMDID="c065" LABEL="Untitled Image"><div ID="L.1.1.25.7.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00082" BEGIN="P82_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.26" TYPE="Illustration" ORDER="25" DMDID="c066" LABEL="L’ÂGE D’AIRAIN">
-					<div ID="L.1.1.26.1" TYPE="Head">
+						</div></div></div>
+				<div ID="L.1.1.26" TYPE="Illustration" ORDER="25" DMDID="c066" LABEL="L’ÂGE D’AIRAIN"><div ID="L.1.1.26.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00077" BEGIN="P77_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.26.2" TYPE="Byline">
+					</div><div ID="L.1.1.26.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00077" BEGIN="P77_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.26.3" TYPE="Illustration" ORDER="1" LABEL="LICHTDRUCK PAN III 3.">
-						<div ID="L.1.1.26.3.1" TYPE="Image">
+					</div><div ID="L.1.1.26.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00077" BEGIN="P77_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.26.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.26.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00077" BEGIN="P77_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.27" TYPE="Illustration" ORDER="26" DMDID="c067" LABEL="TUSCHZEICHNUNG">
-					<div ID="L.1.1.27.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.27" TYPE="Illustration" ORDER="26" DMDID="c067" LABEL="TUSCHZEICHNUNG"><div ID="L.1.1.27.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00083" BEGIN="P83_TB00001"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.27.2" TYPE="Byline">
+					</div><div ID="L.1.1.27.2" TYPE="Byline">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00083" BEGIN="P83_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.27.3" TYPE="Illustration" ORDER="1" LABEL="ZWEIFARBEN-LICHTDRUCK PAN III 3.">
-						<div ID="L.1.1.27.3.1" TYPE="Image">
+					</div><div ID="L.1.1.27.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00083" BEGIN="P83_CB00001"/>
 							</fptr>
-						</div>
-						<div ID="L.1.1.27.3.2" TYPE="Caption">
+						</div><div ID="L.1.1.27.3.2" TYPE="Caption">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00083" BEGIN="P83_TB00003"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
-				<div ID="L.1.1.28" TYPE="TextContent" ORDER="27" DMDID="c068" LABEL="Inhalts-Verzeichnis">
-					<div ID="L.1.1.28.1" TYPE="Head">
+						</div></div>
+				<div ID="L.1.1.28" TYPE="TextContent" ORDER="27" DMDID="c068" LABEL="Inhalts-Verzeichnis"><div ID="L.1.1.28.1" TYPE="Head">
 						<fptr>
 							<area BETYPE="IDREF" FILEID="ALTO00085" BEGIN="P85_TB00002"/>
 						</fptr>
-					</div>
-					<div ID="L.1.1.28.2" TYPE="Copy">
+					</div><div ID="L.1.1.28.2" TYPE="Copy">
 						<div ID="L.1.1.28.2.1" TYPE="BodyContent">
 							<div ID="L.1.1.28.2.1.1" TYPE="Paragraph" ORDER="1">
 								<div ID="L.1.1.28.2.1.1.1" TYPE="Text">
@@ -10870,15 +10597,11 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div ID="L.1.1.28.3" TYPE="Illustration" ORDER="1" DMDID="c069" LABEL="Untitled">
-						<div ID="L.1.1.28.3.1" TYPE="Image">
+					</div><div ID="L.1.1.28.3" TYPE="Illustration" ORDER="1" DMDID="c069" LABEL="Untitled Image"><div ID="L.1.1.28.3.1" TYPE="Image">
 							<fptr>
 								<area BETYPE="IDREF" FILEID="ALTO00086" BEGIN="P86_CB00001"/>
 							</fptr>
-						</div>
-					</div>
-				</div>
+						</div></div></div>
 			</div>
 		</div>
 	</structMap>
