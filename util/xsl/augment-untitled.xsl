@@ -27,6 +27,9 @@
             <xsl:when test="($genre = 'TextContent')">
                 <mods:title><xsl:text>Untitled Text</xsl:text></mods:title>
             </xsl:when>
+            <xsl:when test="($genre = 'Music')">
+                <mods:title><xsl:text>Untitled Music</xsl:text></mods:title>
+            </xsl:when>
             <xsl:otherwise>
                 <mods:title>Untitled</mods:title>
             </xsl:otherwise>
