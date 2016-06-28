@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/"
-   xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3"
-   xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
-   TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaam_1922-05_01">
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:local="http://diglib.princeton.edu" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/ http://schema.ccs-gmbh.com/docworks/version20/mix_jp2.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd" TYPE="Magazine" OBJID="urn:PUL:periodicals:bluemountain:bmtnaam_1922-05_01">
    <metsHdr>
       <agent ROLE="CREATOR" TYPE="ORGANIZATION">
          <name>Princeton University Library, Digital Initiatives</name>
@@ -48,7 +43,7 @@
                   <dateIssued>Май 1922</dateIssued>
                   <dateIssued keyDate="yes" encoding="iso8601">1922-05</dateIssued>
                </originInfo>
-               <location xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <location>
                   <physicalLocation type="text">Princeton University. Marquand Library (SAX): Rare Books</physicalLocation>
                   <physicalLocation authority="marcorg" type="code">NjP</physicalLocation>
                   <holdingSimple>
@@ -57,8 +52,7 @@
                      </copyInformation>
                   </holdingSimple>
                </location>
-               <relatedItem type="host" xlink:type="simple"
-                  xlink:href="urn:PUL:bluemountain:bmtnaam">
+               <relatedItem type="host" xlink:type="simple" xlink:href="urn:PUL:bluemountain:bmtnaam">
                   <recordInfo>
                      <recordIdentifier>urn:PUL:bluemountain:dmd:bmtnaam</recordIdentifier>
                   </recordInfo>
@@ -128,7 +122,7 @@
                   </relatedItem>
                   <relatedItem type="constituent" ID="c005">
                      <titleInfo lang="fre">
-                        <title>Untitled Image</title>
+                        <mods:title>Untitled Image by К. МАЛЕВИЧ К. MALEVITSCH</mods:title>
                      </titleInfo>
                      <name type="personal" authority="viaf" valueURI="http://viaf.org/viaf/14773228">
                         <displayForm lang="rus" script="cyrl">К. МАЛЕВИЧ</displayForm>
@@ -602,7 +596,7 @@
                   </relatedItem>
                   <relatedItem type="constituent" ID="c033">
                      <titleInfo lang="rus">
-                        <title>Untitled Image</title>
+                        <mods:title>Untitled Image by JEANNERET ЖАННЭРЭ</mods:title>
                      </titleInfo>
                      <name type="personal" authority="viaf" authorityURI="http://viaf.org/viaf/47554080">
 								                <displayForm>JEANNERET</displayForm>
@@ -645,7 +639,7 @@
                   </relatedItem>
                   <relatedItem type="constituent" ID="c035">
                      <titleInfo lang="fre">
-                        <title>Untitled Image</title>
+                        <mods:title>Untitled Image by OZENFANT ОЗАНФАН</mods:title>
                      </titleInfo>
                      <name type="personal" authority="viaf" authorityURI="http://viaf.org/viaf/44307485">
 								                <displayForm>OZENFANT</displayForm>
@@ -764,7 +758,7 @@
                         <genre type="CCS">TextContent</genre>
                         <relatedItem type="constituent" ID="c041">
                            <titleInfo lang="rus">
-                              <title>Untitled Image</title>
+                              <mods:title>Untitled Image by PICASSO ПИКАССО</mods:title>
                            </titleInfo>
                            <name type="personal" authority="viaf" authorityURI="http://viaf.org/viaf/15873">
 										                    <displayForm>PICASSO</displayForm>
@@ -1099,7 +1093,7 @@
                   <genre type="CCS">TextContent</genre>
                   <relatedItem ID="c061">
                      <titleInfo lang="fre">
-                        <title>Untitled Image</title>
+                        <mods:title>Untitled Image by S. PROKOFÎEFF СЕРГЕЙ ПРОКОФЬЕВ</mods:title>
                      </titleInfo>
                      <name authority="viaf" authorityURI="http://viaf.org/viaf/71579098">
                         <displayForm>S. PROKOFÎEFF</displayForm>
@@ -3423,323 +3417,180 @@
    </amdSec>
    <fileSec>
       <fileGrp ID="IMGGRP" USE="Images">
-         <file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2016-01-14T03:43:54"
-            MIMETYPE="image/jp2" SEQ="1" CHECKSUM="aa9c308b2bdfad85eb4507101efcaf9bae5989fa"
-            CHECKSUMTYPE="SHA-1" SIZE="1294777">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0001.jp2"
-            />
+         <file ID="IMG00001" ADMID="techmd1" GROUPID="page1" CREATED="2016-01-14T03:43:54" MIMETYPE="image/jp2" SEQ="1" CHECKSUM="aa9c308b2bdfad85eb4507101efcaf9bae5989fa" CHECKSUMTYPE="SHA-1" SIZE="1294777">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0001.jp2"/>
          </file>
-         <file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2016-01-14T03:44:01"
-            MIMETYPE="image/jp2" SEQ="2" CHECKSUM="e7a7b663ed2c68bcdef166b840adeddcda3d3f03"
-            CHECKSUMTYPE="SHA-1" SIZE="1292922">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0002.jp2"
-            />
+         <file ID="IMG00002" ADMID="techmd2" GROUPID="page2" CREATED="2016-01-14T03:44:01" MIMETYPE="image/jp2" SEQ="2" CHECKSUM="e7a7b663ed2c68bcdef166b840adeddcda3d3f03" CHECKSUMTYPE="SHA-1" SIZE="1292922">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0002.jp2"/>
          </file>
-         <file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2016-01-14T03:44:08"
-            MIMETYPE="image/jp2" SEQ="3" CHECKSUM="9cb9b1186196ea8df34fba7d866a96aea5d9d33f"
-            CHECKSUMTYPE="SHA-1" SIZE="1217375">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0003.jp2"
-            />
+         <file ID="IMG00003" ADMID="techmd3" GROUPID="page3" CREATED="2016-01-14T03:44:08" MIMETYPE="image/jp2" SEQ="3" CHECKSUM="9cb9b1186196ea8df34fba7d866a96aea5d9d33f" CHECKSUMTYPE="SHA-1" SIZE="1217375">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0003.jp2"/>
          </file>
-         <file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2016-01-14T03:44:14"
-            MIMETYPE="image/jp2" SEQ="4" CHECKSUM="dd684065a686c29b6011ffd220d6c8fdd8f4e313"
-            CHECKSUMTYPE="SHA-1" SIZE="1228958">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0004.jp2"
-            />
+         <file ID="IMG00004" ADMID="techmd4" GROUPID="page4" CREATED="2016-01-14T03:44:14" MIMETYPE="image/jp2" SEQ="4" CHECKSUM="dd684065a686c29b6011ffd220d6c8fdd8f4e313" CHECKSUMTYPE="SHA-1" SIZE="1228958">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0004.jp2"/>
          </file>
-         <file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2016-01-14T03:44:21"
-            MIMETYPE="image/jp2" SEQ="5" CHECKSUM="c00824ca7ef33f4d5bf99ffa08113687ccc06e33"
-            CHECKSUMTYPE="SHA-1" SIZE="1220897">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0005.jp2"
-            />
+         <file ID="IMG00005" ADMID="techmd5" GROUPID="page5" CREATED="2016-01-14T03:44:21" MIMETYPE="image/jp2" SEQ="5" CHECKSUM="c00824ca7ef33f4d5bf99ffa08113687ccc06e33" CHECKSUMTYPE="SHA-1" SIZE="1220897">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0005.jp2"/>
          </file>
-         <file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2016-01-14T03:44:28"
-            MIMETYPE="image/jp2" SEQ="6" CHECKSUM="71b9286e48106069c171c542c7457a6347a8a729"
-            CHECKSUMTYPE="SHA-1" SIZE="1220853">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0006.jp2"
-            />
+         <file ID="IMG00006" ADMID="techmd6" GROUPID="page6" CREATED="2016-01-14T03:44:28" MIMETYPE="image/jp2" SEQ="6" CHECKSUM="71b9286e48106069c171c542c7457a6347a8a729" CHECKSUMTYPE="SHA-1" SIZE="1220853">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0006.jp2"/>
          </file>
-         <file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2016-01-14T03:44:34"
-            MIMETYPE="image/jp2" SEQ="7" CHECKSUM="e9c1833701db69a1b2e8516ced2cf3dc0f6b8b99"
-            CHECKSUMTYPE="SHA-1" SIZE="1215126">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0007.jp2"
-            />
+         <file ID="IMG00007" ADMID="techmd7" GROUPID="page7" CREATED="2016-01-14T03:44:34" MIMETYPE="image/jp2" SEQ="7" CHECKSUM="e9c1833701db69a1b2e8516ced2cf3dc0f6b8b99" CHECKSUMTYPE="SHA-1" SIZE="1215126">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0007.jp2"/>
          </file>
-         <file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2016-01-14T03:44:41"
-            MIMETYPE="image/jp2" SEQ="8" CHECKSUM="b70d40f711a3e4b90a011cc03cf0591aebf21387"
-            CHECKSUMTYPE="SHA-1" SIZE="1233848">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0008.jp2"
-            />
+         <file ID="IMG00008" ADMID="techmd8" GROUPID="page8" CREATED="2016-01-14T03:44:41" MIMETYPE="image/jp2" SEQ="8" CHECKSUM="b70d40f711a3e4b90a011cc03cf0591aebf21387" CHECKSUMTYPE="SHA-1" SIZE="1233848">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0008.jp2"/>
          </file>
-         <file ID="IMG00009" ADMID="techmd9" GROUPID="page9" CREATED="2016-01-14T03:44:47"
-            MIMETYPE="image/jp2" SEQ="9" CHECKSUM="9d33e552cc87d0243d596a2aa4e44328877d0b85"
-            CHECKSUMTYPE="SHA-1" SIZE="1216025">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0009.jp2"
-            />
+         <file ID="IMG00009" ADMID="techmd9" GROUPID="page9" CREATED="2016-01-14T03:44:47" MIMETYPE="image/jp2" SEQ="9" CHECKSUM="9d33e552cc87d0243d596a2aa4e44328877d0b85" CHECKSUMTYPE="SHA-1" SIZE="1216025">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0009.jp2"/>
          </file>
-         <file ID="IMG00010" ADMID="techmd10" GROUPID="page10" CREATED="2016-01-14T03:44:54"
-            MIMETYPE="image/jp2" SEQ="10" CHECKSUM="6b65f130ba42560b38acea225db3db4fd541a3b1"
-            CHECKSUMTYPE="SHA-1" SIZE="1241126">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0010.jp2"
-            />
+         <file ID="IMG00010" ADMID="techmd10" GROUPID="page10" CREATED="2016-01-14T03:44:54" MIMETYPE="image/jp2" SEQ="10" CHECKSUM="6b65f130ba42560b38acea225db3db4fd541a3b1" CHECKSUMTYPE="SHA-1" SIZE="1241126">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0010.jp2"/>
          </file>
-         <file ID="IMG00011" ADMID="techmd11" GROUPID="page11" CREATED="2016-01-14T03:45:00"
-            MIMETYPE="image/jp2" SEQ="11" CHECKSUM="1a9f60c905dbf628816b91debb565445a211a937"
-            CHECKSUMTYPE="SHA-1" SIZE="1217359">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0011.jp2"
-            />
+         <file ID="IMG00011" ADMID="techmd11" GROUPID="page11" CREATED="2016-01-14T03:45:00" MIMETYPE="image/jp2" SEQ="11" CHECKSUM="1a9f60c905dbf628816b91debb565445a211a937" CHECKSUMTYPE="SHA-1" SIZE="1217359">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0011.jp2"/>
          </file>
-         <file ID="IMG00012" ADMID="techmd12" GROUPID="page12" CREATED="2016-01-14T03:45:06"
-            MIMETYPE="image/jp2" SEQ="12" CHECKSUM="5c1a698551903315ad52117e1e71e212e52a40eb"
-            CHECKSUMTYPE="SHA-1" SIZE="1240772">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0012.jp2"
-            />
+         <file ID="IMG00012" ADMID="techmd12" GROUPID="page12" CREATED="2016-01-14T03:45:06" MIMETYPE="image/jp2" SEQ="12" CHECKSUM="5c1a698551903315ad52117e1e71e212e52a40eb" CHECKSUMTYPE="SHA-1" SIZE="1240772">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0012.jp2"/>
          </file>
-         <file ID="IMG00013" ADMID="techmd13" GROUPID="page13" CREATED="2016-01-14T03:45:13"
-            MIMETYPE="image/jp2" SEQ="13" CHECKSUM="a161fb0940baf3cedfca27db9689004dec67c10c"
-            CHECKSUMTYPE="SHA-1" SIZE="1211527">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0013.jp2"
-            />
+         <file ID="IMG00013" ADMID="techmd13" GROUPID="page13" CREATED="2016-01-14T03:45:13" MIMETYPE="image/jp2" SEQ="13" CHECKSUM="a161fb0940baf3cedfca27db9689004dec67c10c" CHECKSUMTYPE="SHA-1" SIZE="1211527">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0013.jp2"/>
          </file>
-         <file ID="IMG00014" ADMID="techmd14" GROUPID="page14" CREATED="2016-01-14T03:45:20"
-            MIMETYPE="image/jp2" SEQ="14" CHECKSUM="7fc2c759c8a16256f97efd5f9c38ea5a70443e3a"
-            CHECKSUMTYPE="SHA-1" SIZE="1256486">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0014.jp2"
-            />
+         <file ID="IMG00014" ADMID="techmd14" GROUPID="page14" CREATED="2016-01-14T03:45:20" MIMETYPE="image/jp2" SEQ="14" CHECKSUM="7fc2c759c8a16256f97efd5f9c38ea5a70443e3a" CHECKSUMTYPE="SHA-1" SIZE="1256486">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0014.jp2"/>
          </file>
-         <file ID="IMG00015" ADMID="techmd15" GROUPID="page15" CREATED="2016-01-14T03:45:26"
-            MIMETYPE="image/jp2" SEQ="15" CHECKSUM="b80fc7ea2516080dd524447d21798fc5550f9a54"
-            CHECKSUMTYPE="SHA-1" SIZE="1212699">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0015.jp2"
-            />
+         <file ID="IMG00015" ADMID="techmd15" GROUPID="page15" CREATED="2016-01-14T03:45:26" MIMETYPE="image/jp2" SEQ="15" CHECKSUM="b80fc7ea2516080dd524447d21798fc5550f9a54" CHECKSUMTYPE="SHA-1" SIZE="1212699">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0015.jp2"/>
          </file>
-         <file ID="IMG00016" ADMID="techmd16" GROUPID="page16" CREATED="2016-01-14T03:45:32"
-            MIMETYPE="image/jp2" SEQ="16" CHECKSUM="7f0cf14ebe5d33bcf01346c5997095f00e7a8080"
-            CHECKSUMTYPE="SHA-1" SIZE="1236238">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0016.jp2"
-            />
+         <file ID="IMG00016" ADMID="techmd16" GROUPID="page16" CREATED="2016-01-14T03:45:32" MIMETYPE="image/jp2" SEQ="16" CHECKSUM="7f0cf14ebe5d33bcf01346c5997095f00e7a8080" CHECKSUMTYPE="SHA-1" SIZE="1236238">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0016.jp2"/>
          </file>
-         <file ID="IMG00017" ADMID="techmd17" GROUPID="page17" CREATED="2016-01-14T03:45:39"
-            MIMETYPE="image/jp2" SEQ="17" CHECKSUM="d15e3851d5483581758eb9ff439a0d153ff48b13"
-            CHECKSUMTYPE="SHA-1" SIZE="1211067">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0017.jp2"
-            />
+         <file ID="IMG00017" ADMID="techmd17" GROUPID="page17" CREATED="2016-01-14T03:45:39" MIMETYPE="image/jp2" SEQ="17" CHECKSUM="d15e3851d5483581758eb9ff439a0d153ff48b13" CHECKSUMTYPE="SHA-1" SIZE="1211067">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0017.jp2"/>
          </file>
-         <file ID="IMG00018" ADMID="techmd18" GROUPID="page18" CREATED="2016-01-14T03:45:45"
-            MIMETYPE="image/jp2" SEQ="18" CHECKSUM="2c5723133ce9659b242f168cb79581e716ed5eb8"
-            CHECKSUMTYPE="SHA-1" SIZE="1240776">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0018.jp2"
-            />
+         <file ID="IMG00018" ADMID="techmd18" GROUPID="page18" CREATED="2016-01-14T03:45:45" MIMETYPE="image/jp2" SEQ="18" CHECKSUM="2c5723133ce9659b242f168cb79581e716ed5eb8" CHECKSUMTYPE="SHA-1" SIZE="1240776">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0018.jp2"/>
          </file>
-         <file ID="IMG00019" ADMID="techmd19" GROUPID="page19" CREATED="2016-01-14T03:45:52"
-            MIMETYPE="image/jp2" SEQ="19" CHECKSUM="6fcebc19f75e97f3dbab3836e06d430d9cb1491f"
-            CHECKSUMTYPE="SHA-1" SIZE="1219625">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0019.jp2"
-            />
+         <file ID="IMG00019" ADMID="techmd19" GROUPID="page19" CREATED="2016-01-14T03:45:52" MIMETYPE="image/jp2" SEQ="19" CHECKSUM="6fcebc19f75e97f3dbab3836e06d430d9cb1491f" CHECKSUMTYPE="SHA-1" SIZE="1219625">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0019.jp2"/>
          </file>
-         <file ID="IMG00020" ADMID="techmd20" GROUPID="page20" CREATED="2016-01-14T03:45:58"
-            MIMETYPE="image/jp2" SEQ="20" CHECKSUM="26e4026a24f005bd343b114c9d982a544d0d9184"
-            CHECKSUMTYPE="SHA-1" SIZE="1241834">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0020.jp2"
-            />
+         <file ID="IMG00020" ADMID="techmd20" GROUPID="page20" CREATED="2016-01-14T03:45:58" MIMETYPE="image/jp2" SEQ="20" CHECKSUM="26e4026a24f005bd343b114c9d982a544d0d9184" CHECKSUMTYPE="SHA-1" SIZE="1241834">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0020.jp2"/>
          </file>
-         <file ID="IMG00021" ADMID="techmd21" GROUPID="page21" CREATED="2016-01-14T03:46:05"
-            MIMETYPE="image/jp2" SEQ="21" CHECKSUM="e879338696d97f2aebb225856fc7b05ec6a27a2f"
-            CHECKSUMTYPE="SHA-1" SIZE="1222291">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0021.jp2"
-            />
+         <file ID="IMG00021" ADMID="techmd21" GROUPID="page21" CREATED="2016-01-14T03:46:05" MIMETYPE="image/jp2" SEQ="21" CHECKSUM="e879338696d97f2aebb225856fc7b05ec6a27a2f" CHECKSUMTYPE="SHA-1" SIZE="1222291">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0021.jp2"/>
          </file>
-         <file ID="IMG00022" ADMID="techmd22" GROUPID="page22" CREATED="2016-01-14T03:46:12"
-            MIMETYPE="image/jp2" SEQ="22" CHECKSUM="ab885149b14df632d1422b131965ffc8529eefd6"
-            CHECKSUMTYPE="SHA-1" SIZE="1233570">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0022.jp2"
-            />
+         <file ID="IMG00022" ADMID="techmd22" GROUPID="page22" CREATED="2016-01-14T03:46:12" MIMETYPE="image/jp2" SEQ="22" CHECKSUM="ab885149b14df632d1422b131965ffc8529eefd6" CHECKSUMTYPE="SHA-1" SIZE="1233570">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0022.jp2"/>
          </file>
-         <file ID="IMG00023" ADMID="techmd23" GROUPID="page23" CREATED="2016-01-14T03:46:18"
-            MIMETYPE="image/jp2" SEQ="23" CHECKSUM="cfbd2ff71f79df412c538ba5a5c943f6154c499c"
-            CHECKSUMTYPE="SHA-1" SIZE="1215034">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0023.jp2"
-            />
+         <file ID="IMG00023" ADMID="techmd23" GROUPID="page23" CREATED="2016-01-14T03:46:18" MIMETYPE="image/jp2" SEQ="23" CHECKSUM="cfbd2ff71f79df412c538ba5a5c943f6154c499c" CHECKSUMTYPE="SHA-1" SIZE="1215034">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0023.jp2"/>
          </file>
-         <file ID="IMG00024" ADMID="techmd24" GROUPID="page24" CREATED="2016-01-14T03:46:25"
-            MIMETYPE="image/jp2" SEQ="24" CHECKSUM="78ef078e3704f0fb433bca41c46729de58ee03c5"
-            CHECKSUMTYPE="SHA-1" SIZE="1235341">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0024.jp2"
-            />
+         <file ID="IMG00024" ADMID="techmd24" GROUPID="page24" CREATED="2016-01-14T03:46:25" MIMETYPE="image/jp2" SEQ="24" CHECKSUM="78ef078e3704f0fb433bca41c46729de58ee03c5" CHECKSUMTYPE="SHA-1" SIZE="1235341">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0024.jp2"/>
          </file>
-         <file ID="IMG00025" ADMID="techmd25" GROUPID="page25" CREATED="2016-01-14T03:46:31"
-            MIMETYPE="image/jp2" SEQ="25" CHECKSUM="3ec26e0e63cc47a1c2f277a1d38dfb8ea7f2d68c"
-            CHECKSUMTYPE="SHA-1" SIZE="1213243">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0025.jp2"
-            />
+         <file ID="IMG00025" ADMID="techmd25" GROUPID="page25" CREATED="2016-01-14T03:46:31" MIMETYPE="image/jp2" SEQ="25" CHECKSUM="3ec26e0e63cc47a1c2f277a1d38dfb8ea7f2d68c" CHECKSUMTYPE="SHA-1" SIZE="1213243">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0025.jp2"/>
          </file>
-         <file ID="IMG00026" ADMID="techmd26" GROUPID="page26" CREATED="2016-01-14T03:46:38"
-            MIMETYPE="image/jp2" SEQ="26" CHECKSUM="39f59fe146a486f20ed7be84b2adca123a39f53c"
-            CHECKSUMTYPE="SHA-1" SIZE="1253167">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0026.jp2"
-            />
+         <file ID="IMG00026" ADMID="techmd26" GROUPID="page26" CREATED="2016-01-14T03:46:38" MIMETYPE="image/jp2" SEQ="26" CHECKSUM="39f59fe146a486f20ed7be84b2adca123a39f53c" CHECKSUMTYPE="SHA-1" SIZE="1253167">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0026.jp2"/>
          </file>
-         <file ID="IMG00027" ADMID="techmd27" GROUPID="page27" CREATED="2016-01-14T03:46:45"
-            MIMETYPE="image/jp2" SEQ="27" CHECKSUM="a67d6d204d6be69fb015aab04402e5a17f46f8ea"
-            CHECKSUMTYPE="SHA-1" SIZE="1226354">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0027.jp2"
-            />
+         <file ID="IMG00027" ADMID="techmd27" GROUPID="page27" CREATED="2016-01-14T03:46:45" MIMETYPE="image/jp2" SEQ="27" CHECKSUM="a67d6d204d6be69fb015aab04402e5a17f46f8ea" CHECKSUMTYPE="SHA-1" SIZE="1226354">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0027.jp2"/>
          </file>
-         <file ID="IMG00028" ADMID="techmd28" GROUPID="page28" CREATED="2016-01-14T03:46:52"
-            MIMETYPE="image/jp2" SEQ="28" CHECKSUM="201972440d05fcc997e95446d06f884c9dce15b2"
-            CHECKSUMTYPE="SHA-1" SIZE="1283704">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0028.jp2"
-            />
+         <file ID="IMG00028" ADMID="techmd28" GROUPID="page28" CREATED="2016-01-14T03:46:52" MIMETYPE="image/jp2" SEQ="28" CHECKSUM="201972440d05fcc997e95446d06f884c9dce15b2" CHECKSUMTYPE="SHA-1" SIZE="1283704">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/delivery/bmtnaam_1922-05_01_0028.jp2"/>
          </file>
       </fileGrp>
       <fileGrp ID="ALTOGRP" USE="OCR">
-         <file ID="ALTO00001" GROUPID="page1" CREATED="2016-01-14T03:46:57" MIMETYPE="text/xml"
-            CHECKSUM="1ad40b0ebc163c6269d23ca26fc1ea2f53111e5b" CHECKSUMTYPE="SHA-1" SIZE="2081">
+         <file ID="ALTO00001" GROUPID="page1" CREATED="2016-01-14T03:46:57" MIMETYPE="text/xml" CHECKSUM="1ad40b0ebc163c6269d23ca26fc1ea2f53111e5b" CHECKSUMTYPE="SHA-1" SIZE="2081">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0001.alto.xml"/>
          </file>
-         <file ID="ALTO00002" GROUPID="page2" CREATED="2016-01-14T03:46:57" MIMETYPE="text/xml"
-            CHECKSUM="73056f169d54bbb52644ac30548bdbef24a8a2e0" CHECKSUMTYPE="SHA-1" SIZE="53941">
+         <file ID="ALTO00002" GROUPID="page2" CREATED="2016-01-14T03:46:57" MIMETYPE="text/xml" CHECKSUM="73056f169d54bbb52644ac30548bdbef24a8a2e0" CHECKSUMTYPE="SHA-1" SIZE="53941">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0002.alto.xml"/>
          </file>
-         <file ID="ALTO00003" GROUPID="page3" CREATED="2016-01-14T03:46:58" MIMETYPE="text/xml"
-            CHECKSUM="650f598f0ea635cdbe04d493e0df97c982ad0c7b" CHECKSUMTYPE="SHA-1" SIZE="46120">
+         <file ID="ALTO00003" GROUPID="page3" CREATED="2016-01-14T03:46:58" MIMETYPE="text/xml" CHECKSUM="650f598f0ea635cdbe04d493e0df97c982ad0c7b" CHECKSUMTYPE="SHA-1" SIZE="46120">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0003.alto.xml"/>
          </file>
-         <file ID="ALTO00004" GROUPID="page4" CREATED="2016-01-14T03:46:58" MIMETYPE="text/xml"
-            CHECKSUM="8a03b9e94fe53bfdf10643bd6641ad81160ac029" CHECKSUMTYPE="SHA-1" SIZE="164810">
+         <file ID="ALTO00004" GROUPID="page4" CREATED="2016-01-14T03:46:58" MIMETYPE="text/xml" CHECKSUM="8a03b9e94fe53bfdf10643bd6641ad81160ac029" CHECKSUMTYPE="SHA-1" SIZE="164810">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0004.alto.xml"/>
          </file>
-         <file ID="ALTO00005" GROUPID="page5" CREATED="2016-01-14T03:46:59" MIMETYPE="text/xml"
-            CHECKSUM="7b209c4bba019ff037d47f5fe14e7729386ec092" CHECKSUMTYPE="SHA-1" SIZE="168854">
+         <file ID="ALTO00005" GROUPID="page5" CREATED="2016-01-14T03:46:59" MIMETYPE="text/xml" CHECKSUM="7b209c4bba019ff037d47f5fe14e7729386ec092" CHECKSUMTYPE="SHA-1" SIZE="168854">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0005.alto.xml"/>
          </file>
-         <file ID="ALTO00006" GROUPID="page6" CREATED="2016-01-14T03:46:59" MIMETYPE="text/xml"
-            CHECKSUM="64187d49a7d0697e3a186f38a05aabea7fb7fffa" CHECKSUMTYPE="SHA-1" SIZE="259662">
+         <file ID="ALTO00006" GROUPID="page6" CREATED="2016-01-14T03:46:59" MIMETYPE="text/xml" CHECKSUM="64187d49a7d0697e3a186f38a05aabea7fb7fffa" CHECKSUMTYPE="SHA-1" SIZE="259662">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0006.alto.xml"/>
          </file>
-         <file ID="ALTO00007" GROUPID="page7" CREATED="2016-01-14T03:46:59" MIMETYPE="text/xml"
-            CHECKSUM="969c4eb60f7f3465c2c576effac6dd54df97cebd" CHECKSUMTYPE="SHA-1" SIZE="271467">
+         <file ID="ALTO00007" GROUPID="page7" CREATED="2016-01-14T03:46:59" MIMETYPE="text/xml" CHECKSUM="969c4eb60f7f3465c2c576effac6dd54df97cebd" CHECKSUMTYPE="SHA-1" SIZE="271467">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0007.alto.xml"/>
          </file>
-         <file ID="ALTO00008" GROUPID="page8" CREATED="2016-01-14T03:47:00" MIMETYPE="text/xml"
-            CHECKSUM="a14855f65283aab5df89679ba6935d012f2ec846" CHECKSUMTYPE="SHA-1" SIZE="240466">
+         <file ID="ALTO00008" GROUPID="page8" CREATED="2016-01-14T03:47:00" MIMETYPE="text/xml" CHECKSUM="a14855f65283aab5df89679ba6935d012f2ec846" CHECKSUMTYPE="SHA-1" SIZE="240466">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0008.alto.xml"/>
          </file>
-         <file ID="ALTO00009" GROUPID="page9" CREATED="2016-01-14T03:47:00" MIMETYPE="text/xml"
-            CHECKSUM="7560705a83ebf5b59a64ab80af48e2415e8ed000" CHECKSUMTYPE="SHA-1" SIZE="188092">
+         <file ID="ALTO00009" GROUPID="page9" CREATED="2016-01-14T03:47:00" MIMETYPE="text/xml" CHECKSUM="7560705a83ebf5b59a64ab80af48e2415e8ed000" CHECKSUMTYPE="SHA-1" SIZE="188092">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0009.alto.xml"/>
          </file>
-         <file ID="ALTO00010" GROUPID="page10" CREATED="2016-01-14T03:47:01" MIMETYPE="text/xml"
-            CHECKSUM="6ac4f9cbd7b98b4766e99bc41394c45f3471177c" CHECKSUMTYPE="SHA-1" SIZE="231243">
+         <file ID="ALTO00010" GROUPID="page10" CREATED="2016-01-14T03:47:01" MIMETYPE="text/xml" CHECKSUM="6ac4f9cbd7b98b4766e99bc41394c45f3471177c" CHECKSUMTYPE="SHA-1" SIZE="231243">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0010.alto.xml"/>
          </file>
-         <file ID="ALTO00011" GROUPID="page11" CREATED="2016-01-14T03:47:01" MIMETYPE="text/xml"
-            CHECKSUM="36baae322e4c432d0cafbf2f6d507e51ef829883" CHECKSUMTYPE="SHA-1" SIZE="173722">
+         <file ID="ALTO00011" GROUPID="page11" CREATED="2016-01-14T03:47:01" MIMETYPE="text/xml" CHECKSUM="36baae322e4c432d0cafbf2f6d507e51ef829883" CHECKSUMTYPE="SHA-1" SIZE="173722">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0011.alto.xml"/>
          </file>
-         <file ID="ALTO00012" GROUPID="page12" CREATED="2016-01-14T03:47:02" MIMETYPE="text/xml"
-            CHECKSUM="4b77a6218fb35b526e970a0fa10b30d89924da22" CHECKSUMTYPE="SHA-1" SIZE="186188">
+         <file ID="ALTO00012" GROUPID="page12" CREATED="2016-01-14T03:47:02" MIMETYPE="text/xml" CHECKSUM="4b77a6218fb35b526e970a0fa10b30d89924da22" CHECKSUMTYPE="SHA-1" SIZE="186188">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0012.alto.xml"/>
          </file>
-         <file ID="ALTO00013" GROUPID="page13" CREATED="2016-01-14T03:47:02" MIMETYPE="text/xml"
-            CHECKSUM="695e8442286a95ba658d8aed977698dd7d2cdb82" CHECKSUMTYPE="SHA-1" SIZE="167437">
+         <file ID="ALTO00013" GROUPID="page13" CREATED="2016-01-14T03:47:02" MIMETYPE="text/xml" CHECKSUM="695e8442286a95ba658d8aed977698dd7d2cdb82" CHECKSUMTYPE="SHA-1" SIZE="167437">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0013.alto.xml"/>
          </file>
-         <file ID="ALTO00014" GROUPID="page14" CREATED="2016-01-14T03:47:02" MIMETYPE="text/xml"
-            CHECKSUM="82a54269f9cd381e71303755e0ddde161074f8e6" CHECKSUMTYPE="SHA-1" SIZE="138083">
+         <file ID="ALTO00014" GROUPID="page14" CREATED="2016-01-14T03:47:02" MIMETYPE="text/xml" CHECKSUM="82a54269f9cd381e71303755e0ddde161074f8e6" CHECKSUMTYPE="SHA-1" SIZE="138083">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0014.alto.xml"/>
          </file>
-         <file ID="ALTO00015" GROUPID="page15" CREATED="2016-01-14T03:47:03" MIMETYPE="text/xml"
-            CHECKSUM="884d49e38801c485508d9efce628951172e9aeec" CHECKSUMTYPE="SHA-1" SIZE="287757">
+         <file ID="ALTO00015" GROUPID="page15" CREATED="2016-01-14T03:47:03" MIMETYPE="text/xml" CHECKSUM="884d49e38801c485508d9efce628951172e9aeec" CHECKSUMTYPE="SHA-1" SIZE="287757">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0015.alto.xml"/>
          </file>
-         <file ID="ALTO00016" GROUPID="page16" CREATED="2016-01-14T03:47:03" MIMETYPE="text/xml"
-            CHECKSUM="daac9fd701fb54750d77806fdd231809913a5054" CHECKSUMTYPE="SHA-1" SIZE="241791">
+         <file ID="ALTO00016" GROUPID="page16" CREATED="2016-01-14T03:47:03" MIMETYPE="text/xml" CHECKSUM="daac9fd701fb54750d77806fdd231809913a5054" CHECKSUMTYPE="SHA-1" SIZE="241791">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0016.alto.xml"/>
          </file>
-         <file ID="ALTO00017" GROUPID="page17" CREATED="2016-01-14T03:47:04" MIMETYPE="text/xml"
-            CHECKSUM="39dc0f1601e0a0895817228c0b20fbba7aff816a" CHECKSUMTYPE="SHA-1" SIZE="214008">
+         <file ID="ALTO00017" GROUPID="page17" CREATED="2016-01-14T03:47:04" MIMETYPE="text/xml" CHECKSUM="39dc0f1601e0a0895817228c0b20fbba7aff816a" CHECKSUMTYPE="SHA-1" SIZE="214008">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0017.alto.xml"/>
          </file>
-         <file ID="ALTO00018" GROUPID="page18" CREATED="2016-01-14T03:47:04" MIMETYPE="text/xml"
-            CHECKSUM="699d0d5a66d5a487459fab73474cfe6c8eee8402" CHECKSUMTYPE="SHA-1" SIZE="261673">
+         <file ID="ALTO00018" GROUPID="page18" CREATED="2016-01-14T03:47:04" MIMETYPE="text/xml" CHECKSUM="699d0d5a66d5a487459fab73474cfe6c8eee8402" CHECKSUMTYPE="SHA-1" SIZE="261673">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0018.alto.xml"/>
          </file>
-         <file ID="ALTO00019" GROUPID="page19" CREATED="2016-01-14T03:47:05" MIMETYPE="text/xml"
-            CHECKSUM="329f8e6c0d51d41caf522da3074fbc3db304b1f0" CHECKSUMTYPE="SHA-1" SIZE="193682">
+         <file ID="ALTO00019" GROUPID="page19" CREATED="2016-01-14T03:47:05" MIMETYPE="text/xml" CHECKSUM="329f8e6c0d51d41caf522da3074fbc3db304b1f0" CHECKSUMTYPE="SHA-1" SIZE="193682">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0019.alto.xml"/>
          </file>
-         <file ID="ALTO00020" GROUPID="page20" CREATED="2016-01-14T03:47:05" MIMETYPE="text/xml"
-            CHECKSUM="63631cd061c35f69260e5833246c76909e40eeb5" CHECKSUMTYPE="SHA-1" SIZE="5162">
+         <file ID="ALTO00020" GROUPID="page20" CREATED="2016-01-14T03:47:05" MIMETYPE="text/xml" CHECKSUM="63631cd061c35f69260e5833246c76909e40eeb5" CHECKSUMTYPE="SHA-1" SIZE="5162">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0020.alto.xml"/>
          </file>
-         <file ID="ALTO00021" GROUPID="page21" CREATED="2016-01-14T03:47:06" MIMETYPE="text/xml"
-            CHECKSUM="aa219c520f91d40c4dabc82ff2e2ddb0037d4ea8" CHECKSUMTYPE="SHA-1" SIZE="120757">
+         <file ID="ALTO00021" GROUPID="page21" CREATED="2016-01-14T03:47:06" MIMETYPE="text/xml" CHECKSUM="aa219c520f91d40c4dabc82ff2e2ddb0037d4ea8" CHECKSUMTYPE="SHA-1" SIZE="120757">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0021.alto.xml"/>
          </file>
-         <file ID="ALTO00022" GROUPID="page22" CREATED="2016-01-14T03:47:06" MIMETYPE="text/xml"
-            CHECKSUM="ab241d2304d122b9c1eea384626703713338d374" CHECKSUMTYPE="SHA-1" SIZE="168236">
+         <file ID="ALTO00022" GROUPID="page22" CREATED="2016-01-14T03:47:06" MIMETYPE="text/xml" CHECKSUM="ab241d2304d122b9c1eea384626703713338d374" CHECKSUMTYPE="SHA-1" SIZE="168236">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0022.alto.xml"/>
          </file>
-         <file ID="ALTO00023" GROUPID="page23" CREATED="2016-01-14T03:47:06" MIMETYPE="text/xml"
-            CHECKSUM="dbe5207772f3c628ab4a632ffe8ce4ca3c2a7e17" CHECKSUMTYPE="SHA-1" SIZE="192214">
+         <file ID="ALTO00023" GROUPID="page23" CREATED="2016-01-14T03:47:06" MIMETYPE="text/xml" CHECKSUM="dbe5207772f3c628ab4a632ffe8ce4ca3c2a7e17" CHECKSUMTYPE="SHA-1" SIZE="192214">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0023.alto.xml"/>
          </file>
-         <file ID="ALTO00024" GROUPID="page24" CREATED="2016-01-14T03:47:07" MIMETYPE="text/xml"
-            CHECKSUM="07b236f0c8ad432cf4e05c2677e33c278cc51990" CHECKSUMTYPE="SHA-1" SIZE="80417">
+         <file ID="ALTO00024" GROUPID="page24" CREATED="2016-01-14T03:47:07" MIMETYPE="text/xml" CHECKSUM="07b236f0c8ad432cf4e05c2677e33c278cc51990" CHECKSUMTYPE="SHA-1" SIZE="80417">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0024.alto.xml"/>
          </file>
-         <file ID="ALTO00025" GROUPID="page25" CREATED="2016-01-14T03:47:07" MIMETYPE="text/xml"
-            CHECKSUM="35f046840ab0cfc92a95e14738f6f9445ef61776" CHECKSUMTYPE="SHA-1" SIZE="131245">
+         <file ID="ALTO00025" GROUPID="page25" CREATED="2016-01-14T03:47:07" MIMETYPE="text/xml" CHECKSUM="35f046840ab0cfc92a95e14738f6f9445ef61776" CHECKSUMTYPE="SHA-1" SIZE="131245">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0025.alto.xml"/>
          </file>
-         <file ID="ALTO00026" GROUPID="page26" CREATED="2016-01-14T03:47:07" MIMETYPE="text/xml"
-            CHECKSUM="6cf4915a75ce3de087bf26b2650aa7cea5fba7b8" CHECKSUMTYPE="SHA-1" SIZE="116338">
+         <file ID="ALTO00026" GROUPID="page26" CREATED="2016-01-14T03:47:07" MIMETYPE="text/xml" CHECKSUM="6cf4915a75ce3de087bf26b2650aa7cea5fba7b8" CHECKSUMTYPE="SHA-1" SIZE="116338">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0026.alto.xml"/>
          </file>
-         <file ID="ALTO00027" GROUPID="page27" CREATED="2016-01-14T03:47:08" MIMETYPE="text/xml"
-            CHECKSUM="fff7fc1ffe6dbf0a901da431fc49fb4a3271ed5a" CHECKSUMTYPE="SHA-1" SIZE="101790">
+         <file ID="ALTO00027" GROUPID="page27" CREATED="2016-01-14T03:47:08" MIMETYPE="text/xml" CHECKSUM="fff7fc1ffe6dbf0a901da431fc49fb4a3271ed5a" CHECKSUMTYPE="SHA-1" SIZE="101790">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0027.alto.xml"/>
          </file>
-         <file ID="ALTO00028" GROUPID="page28" CREATED="2016-01-14T03:47:08" MIMETYPE="text/xml"
-            CHECKSUM="a75d1cc500bf2c21f691c67d01fad80e03b0bfac" CHECKSUMTYPE="SHA-1" SIZE="91281">
+         <file ID="ALTO00028" GROUPID="page28" CREATED="2016-01-14T03:47:08" MIMETYPE="text/xml" CHECKSUM="a75d1cc500bf2c21f691c67d01fad80e03b0bfac" CHECKSUMTYPE="SHA-1" SIZE="91281">
             <FLocat LOCTYPE="URL" xlink:href="file://./alto/bmtnaam_1922-05_01_0028.alto.xml"/>
          </file>
       </fileGrp>
       <fileGrp ID="PDFGRP" USE="PDF">
-         <file ID="PDF_ISSUELEVEL" CREATED="2016-01-14T03:48:33" MIMETYPE="application/pdf"
-            CHECKSUM="82ce1506a4ec33965f408ccc4ecef0965c9508e9" CHECKSUMTYPE="SHA-1" SIZE="5704395">
-            <FLocat LOCTYPE="URL"
-               xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/bmtnaam_1922-05_01.pdf"
-            />
+         <file ID="PDF_ISSUELEVEL" CREATED="2016-01-14T03:48:33" MIMETYPE="application/pdf" CHECKSUM="82ce1506a4ec33965f408ccc4ecef0965c9508e9" CHECKSUMTYPE="SHA-1" SIZE="5704395">
+            <FLocat LOCTYPE="URL" xlink:href="file:///usr/share/BlueMountain/astore/periodicals/bmtnaam/issues/1922/05_01/bmtnaam_1922-05_01.pdf"/>
          </file>
       </fileGrp>
    </fileSec>
@@ -3987,13 +3838,11 @@
                </div>
             </div>
             <div ID="L.1.1.2" TYPE="EditorialContent" LABEL="Contents">
-               <div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="СОДЕРЖАНИЕ">
-                  <div ID="L.1.1.2.1.1" TYPE="Head">
+               <div ID="L.1.1.2.1" TYPE="TextContent" ORDER="1" DMDID="c001" LABEL="СОДЕРЖАНИЕ"><div ID="L.1.1.2.1.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00010"/>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.1.2" TYPE="Copy">
+                  </div><div ID="L.1.1.2.1.2" TYPE="Copy">
                      <div ID="L.1.1.2.1.2.1" TYPE="BodyContent">
                         <div ID="L.1.1.2.1.2.1.1" TYPE="Paragraph" ORDER="1">
                            <div ID="L.1.1.2.1.2.1.1.1" TYPE="Text">
@@ -4003,36 +3852,23 @@
                            </div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002"
-                  LABEL="1 ИСКУССТВО и ОБЩЕСТВЕННОСТЬ">
-                  <div ID="L.1.1.2.2.1" TYPE="Head">
+                  </div></div>
+               <div ID="L.1.1.2.2" TYPE="TextContent" ORDER="2" DMDID="c002" LABEL="1. ИСКУССТВО и ОБЩЕСТВЕННОСТЬ"><div ID="L.1.1.2.2.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00011"/>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.2.2" TYPE="Illustration" ORDER="1" DMDID="c003"
-                     LABEL="LOKOMOTIVE CHASSE-NEIGE ПАРОВОЗ-СНЕГООЧИСТИТЕЛЬ">
-                     <div ID="L.1.1.2.2.2.1" TYPE="Head">
+                  </div><div ID="L.1.1.2.2.2" TYPE="Illustration" ORDER="1" DMDID="c003" LABEL="LOKOMOTIVE CHASSE-NEIGE"><div ID="L.1.1.2.2.2.1" TYPE="Head">
                         <fptr>
                            <seq>
                               <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00012"/>
                               <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00013"/>
                            </seq>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.2.2" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-                        <div ID="L.1.1.2.2.2.2.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.2.2.2.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.2.3" TYPE="TextContent" ORDER="2" DMDID="c004"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.2.3.1" TYPE="Copy">
+                        </div></div><div ID="L.1.1.2.2.3" TYPE="TextContent" ORDER="2" DMDID="c004" LABEL="Untitled text"><div ID="L.1.1.2.2.3.1" TYPE="Copy">
                         <div ID="L.1.1.2.2.3.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.2.3.1.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.2.3.1.1.1.1" TYPE="Text">
@@ -4052,68 +3888,42 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.2.4" TYPE="Illustration" ORDER="3" DMDID="c005"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.2.4.1" TYPE="Byline">
+                     </div></div><div ID="L.1.1.2.2.4" TYPE="Illustration" ORDER="3" DMDID="c005" LABEL="Untitled Image by К. МАЛЕВИЧ К. MALEVITSCH"><div ID="L.1.1.2.2.4.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.4.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.2.4.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.4.3" TYPE="Illustration" ORDER="1" LABEL="1914">
-                        <div ID="L.1.1.2.2.4.3.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.2.4.3.1" TYPE="Image">
                            <fptr>
                               <seq>
                                  <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00002"/>
                                  <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_CB00003"/>
                               </seq>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.2.4.3.2" TYPE="Caption">
+                        </div><div ID="L.1.1.2.2.4.3.2" TYPE="Caption">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00003" BEGIN="P3_TB00003"/>
                            </fptr>
-                        </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.2.5" TYPE="TextContent" ORDER="4" DMDID="c006"
-                     LABEL="ТОРЖЕСТВУЮЩИЙ ОБОЗ">
-                     <div ID="L.1.1.2.2.5.1" TYPE="Head">
+                        </div></div><div ID="L.1.1.2.2.5" TYPE="TextContent" ORDER="4" DMDID="c006" LABEL="ТОРЖЕСТВУЮЩИЙ ОБОЗ"><div ID="L.1.1.2.2.5.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_TB00012"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.5.2" TYPE="Illustration" ORDER="1" DMDID="c007"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.2.5.2.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.2.5.2" TYPE="Illustration" ORDER="1" DMDID="c007" LABEL="Untitled Image"><div ID="L.1.1.2.2.5.2.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00002"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.2.5.3" TYPE="Illustration" ORDER="2" DMDID="c008"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.2.5.3.1" TYPE="Image">
+                        </div></div><div ID="L.1.1.2.2.5.3" TYPE="Illustration" ORDER="2" DMDID="c008" LABEL="Untitled Image"><div ID="L.1.1.2.2.5.3.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.2.5.4" TYPE="Illustration" ORDER="3" DMDID="c009"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.2.5.4.1" TYPE="Image">
+                        </div></div><div ID="L.1.1.2.2.5.4" TYPE="Illustration" ORDER="3" DMDID="c009" LABEL="Untitled Image"><div ID="L.1.1.2.2.5.4.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00004" BEGIN="P4_CB00003"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.2.5.5" TYPE="Copy">
+                        </div></div><div ID="L.1.1.2.2.5.5" TYPE="Copy">
                         <div ID="L.1.1.2.2.5.5.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.2.5.5.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.2.5.5.1.1.1" TYPE="Text">
@@ -4189,16 +3999,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.2.6" TYPE="TextContent" ORDER="5" DMDID="c010"
-                     LABEL="ВЕНЕЦИАНСКАЯ ВЫСТАВКА">
-                     <div ID="L.1.1.2.2.6.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.2.6" TYPE="TextContent" ORDER="5" DMDID="c010" LABEL="ВЕНЕЦИАНСКАЯ ВЫСТАВКА"><div ID="L.1.1.2.2.6.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00015"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.6.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.2.6.2" TYPE="Copy">
                         <div ID="L.1.1.2.2.6.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.2.6.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.2.6.2.1.1.1" TYPE="Text">
@@ -4215,16 +4020,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.2.7" TYPE="TextContent" ORDER="6" DMDID="c011"
-                     LABEL="„Парижский Конгресс для об’единения поборников духа современности“.">
-                     <div ID="L.1.1.2.2.7.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.2.7" TYPE="TextContent" ORDER="6" DMDID="c011" LABEL="&#34;Парижский Конгресс для об’единения поборников духа современности&#34;"><div ID="L.1.1.2.2.7.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00014"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.7.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.2.7.2" TYPE="Copy">
                         <div ID="L.1.1.2.2.7.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.2.7.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.2.7.2.1.1.1" TYPE="Text">
@@ -4234,16 +4034,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.2.8" TYPE="TextContent" ORDER="7" DMDID="c012"
-                     LABEL="„Международный Конгресс левых художников“ в Дюссельдорфе.">
-                     <div ID="L.1.1.2.2.8.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.2.8" TYPE="TextContent" ORDER="7" DMDID="c012" LABEL="&#34;Международный Конгресс левых художников&#34; в Дюссельдорфе"><div ID="L.1.1.2.2.8.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00016"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.2.8.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.2.8.2" TYPE="Copy">
                         <div ID="L.1.1.2.2.8.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.2.8.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.2.8.2.1.1.1" TYPE="Text">
@@ -4253,22 +4048,16 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c013" LABEL="2 ЛИТЕРАТУРА">
-                  <div ID="L.1.1.2.3.1" TYPE="Head">
+                     </div></div></div>
+               <div ID="L.1.1.2.3" TYPE="TextContent" ORDER="3" DMDID="c013" LABEL="2. ЛИТЕРАТУРА"><div ID="L.1.1.2.3.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00017"/>
                      </fptr>
-                  </div>
-
-                     <div ID="L.1.1.2.3.2.1" TYPE="Byline">
+                  </div><div ID="L.1.1.2.3.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00012"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.2.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.2.2" TYPE="Copy">
                         <div ID="L.1.1.2.3.2.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.2.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.2.2.1.1.1" TYPE="Text">
@@ -4281,21 +4070,15 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  
-                  <div ID="L.1.1.2.3.3" TYPE="TextContent" ORDER="2" DMDID="c015"
-                     LABEL="PRIKAZ (FRAGMENTS)">
-                     <div ID="L.1.1.2.3.3.1" TYPE="Head">
+                     </div><div ID="L.1.1.2.3.3" TYPE="TextContent" ORDER="2" DMDID="c015" LABEL="PRIKAZ (FRAGMENTS)"><div ID="L.1.1.2.3.3.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00018"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.3.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.3.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00005" BEGIN="P5_TB00013"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.3.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.3.3" TYPE="Copy">
                         <div ID="L.1.1.2.3.3.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.3.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.3.3.1.1.1" TYPE="Text">
@@ -4308,11 +4091,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.4" TYPE="TextContent" ORDER="3" DMDID="c016"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.3.4.1" TYPE="Copy">
+                     </div></div><div ID="L.1.1.2.3.4" TYPE="TextContent" ORDER="3" DMDID="c016" LABEL="Untitled text"><div ID="L.1.1.2.3.4.1" TYPE="Copy">
                         <div ID="L.1.1.2.3.4.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.4.1.1.1" TYPE="Text" ORDER="1">
                               <fptr>
@@ -4320,27 +4099,19 @@
                               </fptr>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.5" TYPE="Illustration" ORDER="4" DMDID="c017" LABEL="! в">
-                     <div ID="L.1.1.2.3.5.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.5" TYPE="Illustration" ORDER="4" DMDID="c017" LABEL="!"><div ID="L.1.1.2.3.5.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00003"/>
                         </fptr>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.6" TYPE="TextContent" ORDER="5" DMDID="c018" LABEL="ОБМЕН">
-                     <div ID="L.1.1.2.3.6.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.6" TYPE="TextContent" ORDER="5" DMDID="c018" LABEL="ОБМЕН"><div ID="L.1.1.2.3.6.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00006" BEGIN="P6_TB00002"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.6.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.6.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.6.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.6.3" TYPE="Copy">
                         <div ID="L.1.1.2.3.6.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.6.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.6.3.1.1.1" TYPE="Text">
@@ -4357,21 +4128,15 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.7" TYPE="TextContent" ORDER="6" DMDID="c019"
-                     LABEL="ECOUTEZ, CANAILLES">
-                     <div ID="L.1.1.2.3.7.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.7" TYPE="TextContent" ORDER="6" DMDID="c019" LABEL="ECOUTEZ, CANAILLES"><div ID="L.1.1.2.3.7.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.7.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.7.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00007" BEGIN="P7_TB00005"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.7.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.7.3" TYPE="Copy">
                         <div ID="L.1.1.2.3.7.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.7.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.7.3.1.1.1" TYPE="Text">
@@ -4381,24 +4146,18 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.8" TYPE="TextContent" ORDER="7" DMDID="c020"
-                     LABEL="О НОВОЙ ПОЭТИЧЕСКОЙ ТЕХНИКЕ (Синхроническая поэма в нескольких планах).">
-                     <div ID="L.1.1.2.3.8.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.8" TYPE="TextContent" ORDER="7" DMDID="c020" LABEL="О НОВОЙ ПОЭТИЧЕСКОЙ ТЕХНИКЕ"><div ID="L.1.1.2.3.8.1" TYPE="Head">
                         <fptr>
                            <seq>
                               <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00007"/>
                               <area BETYPE="IDREF" FILEID="ALTO00008" BEGIN="P8_TB00008"/>
                            </seq>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.8.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.8.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00007"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.8.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.8.3" TYPE="Copy">
                         <div ID="L.1.1.2.3.8.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.8.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.8.3.1.1.1" TYPE="Text">
@@ -4413,21 +4172,15 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.9" TYPE="TextContent" ORDER="8" DMDID="c021"
-                     LABEL="О СОВРЕМЕННОЙ ПОЭЗИИ.">
-                     <div ID="L.1.1.2.3.9.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.9" TYPE="TextContent" ORDER="8" DMDID="c021" LABEL="О СОВРЕМЕННОЙ ПОЭЗИИ"><div ID="L.1.1.2.3.9.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.9.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.9.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00010"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.9.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.9.3" TYPE="Copy">
                         <div ID="L.1.1.2.3.9.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.9.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.9.3.1.1.1" TYPE="Text">
@@ -4444,29 +4197,19 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.10" TYPE="TextContent" ORDER="9" DMDID="c022"
-                     LABEL="СЕВЕРНОЕ СИЯНИЕ. (Бег) Друзьям.">
-                     <div ID="L.1.1.2.3.10.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.10" TYPE="TextContent" ORDER="9" DMDID="c022" LABEL="СЕВЕРНОЕ СИЯНИЕ. (Бег) Друзьям"><div ID="L.1.1.2.3.10.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.10.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.10.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.10.3" TYPE="Illustration" ORDER="1" DMDID="c023"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.3.10.3.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.3.10.3" TYPE="Illustration" ORDER="1" DMDID="c023" LABEL="Untitled Image"><div ID="L.1.1.2.3.10.3.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00009" BEGIN="P9_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.3.10.4" TYPE="Copy">
+                        </div></div><div ID="L.1.1.2.3.10.4" TYPE="Copy">
                         <div ID="L.1.1.2.3.10.4.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.10.4.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.10.4.1.1.1" TYPE="Text">
@@ -4483,11 +4226,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.11" TYPE="TextContent" ORDER="10" DMDID="c024"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.3.11.1" TYPE="Copy">
+                     </div></div><div ID="L.1.1.2.3.11" TYPE="TextContent" ORDER="10" DMDID="c024" LABEL="Untitled text"><div ID="L.1.1.2.3.11.1" TYPE="Copy">
                         <div ID="L.1.1.2.3.11.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.11.1.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.11.1.1.1.1" TYPE="Text">
@@ -4500,29 +4239,19 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.12" TYPE="TextContent" ORDER="11" DMDID="c025"
-                     LABEL="О РОМАНЕ БЕЗ ПЕРСОННАЖЕЙ.">
-                     <div ID="L.1.1.2.3.12.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.12" TYPE="TextContent" ORDER="11" DMDID="c025" LABEL="О РОМАНЕ БЕЗ ПЕРСОННАЖЕЙ"><div ID="L.1.1.2.3.12.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.12.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.12.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_TB00007"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.12.3" TYPE="Illustration" ORDER="1" DMDID="c026"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.3.12.3.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.3.12.3" TYPE="Illustration" ORDER="1" DMDID="c026" LABEL="Untitled Image"><div ID="L.1.1.2.3.12.3.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00010" BEGIN="P10_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.3.12.4" TYPE="Copy">
+                        </div></div><div ID="L.1.1.2.3.12.4" TYPE="Copy">
                         <div ID="L.1.1.2.3.12.4.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.12.4.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.12.4.1.1.1" TYPE="Text">
@@ -4535,21 +4264,15 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.13" TYPE="TextContent" ORDER="12" DMDID="c027"
-                     LABEL="ВОЛЧЬЯ ГИБЕЛЬ.">
-                     <div ID="L.1.1.2.3.13.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.13" TYPE="TextContent" ORDER="12" DMDID="c027" LABEL="ВОЛЧЬЯ ГИБЕЛЬ."><div ID="L.1.1.2.3.13.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.13.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.3.13.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.13.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.13.3" TYPE="Copy">
                         <div ID="L.1.1.2.3.13.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.13.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.13.3.1.1.1" TYPE="Text">
@@ -4559,15 +4282,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.14" TYPE="TextContent" ORDER="13" DMDID="c028" LABEL="поэзия.">
-                     <div ID="L.1.1.2.3.14.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.14" TYPE="TextContent" ORDER="13" DMDID="c028" LABEL="поэзия."><div ID="L.1.1.2.3.14.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00010"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.14.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.14.2" TYPE="Copy">
                         <div ID="L.1.1.2.3.14.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.14.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.14.2.1.1.1" TYPE="Text">
@@ -4577,15 +4296,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.15" TYPE="TextContent" ORDER="14" DMDID="c029" LABEL="ПРОЗА.">
-                     <div ID="L.1.1.2.3.15.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.15" TYPE="TextContent" ORDER="14" DMDID="c029" LABEL="ПРОЗА."><div ID="L.1.1.2.3.15.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00011"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.15.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.15.2" TYPE="Copy">
                         <div ID="L.1.1.2.3.15.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.15.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.15.2.1.1.1" TYPE="Text">
@@ -4595,15 +4310,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.3.16" TYPE="TextContent" ORDER="15" DMDID="c030" LABEL="ЖУРНАЛЫ.">
-                     <div ID="L.1.1.2.3.16.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.3.16" TYPE="TextContent" ORDER="15" DMDID="c030" LABEL="ЖУРНАЛЫ."><div ID="L.1.1.2.3.16.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00012"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.3.16.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.3.16.2" TYPE="Copy">
                         <div ID="L.1.1.2.3.16.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.3.16.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.3.16.2.1.1.1" TYPE="Text">
@@ -4613,29 +4324,20 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c031"
-                  LABEL="3 Живопись Скульптура Архитектура">
-                  <div ID="L.1.1.2.4.1" TYPE="Head">
+                     </div></div></div>
+               <div ID="L.1.1.2.4" TYPE="TextContent" ORDER="4" DMDID="c031" LABEL="3 Живопись Скульптура Архитектура"><div ID="L.1.1.2.4.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00013"/>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.4.2" TYPE="TextContent" ORDER="1" DMDID="c032"
-                     LABEL="ПО ПОВОДУ „ПУРИЗМА“.">
-                     <div ID="L.1.1.2.4.2.1" TYPE="Head">
+                  </div><div ID="L.1.1.2.4.2" TYPE="TextContent" ORDER="1" DMDID="c032" LABEL="ПО ПОВОДУ „ПУРИЗМА“."><div ID="L.1.1.2.4.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00011" BEGIN="P11_TB00014"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.2.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.4.2.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.2.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.4.2.3" TYPE="Copy">
                         <div ID="L.1.1.2.4.2.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.4.2.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.4.2.3.1.1.1" TYPE="Text">
@@ -4697,96 +4399,64 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.3" TYPE="Illustration" ORDER="2" DMDID="c033"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.4.3.1" TYPE="Byline">
+                     </div></div><div ID="L.1.1.2.4.3" TYPE="Illustration" ORDER="2" DMDID="c033" LABEL="Untitled Image by JEANNERET ЖАННЭРЭ"><div ID="L.1.1.2.4.3.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.3.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.4.3.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00010"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.3.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-                        <div ID="L.1.1.2.4.3.3.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.4.3.3.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.4" TYPE="Illustration" ORDER="3" DMDID="c034"
-                     LABEL="J'aime la regle qui corrige l'emotion J'aime la regle qui corrige l'emotion">
-                     <div ID="L.1.1.2.4.4.1" TYPE="Head">
+                        </div></div><div ID="L.1.1.2.4.4" TYPE="Illustration" ORDER="3" DMDID="c034" LABEL="J'aime la regle qui corrige l'emotion J'aime la regle qui corrige l'emotion"><div ID="L.1.1.2.4.4.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00011"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.4.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.4.4.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00012" BEGIN="P12_TB00008"/>
                         </fptr>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.5" TYPE="Illustration" ORDER="4" DMDID="c035"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.4.5.1" TYPE="Byline">
+                     </div></div><div ID="L.1.1.2.4.5" TYPE="Illustration" ORDER="4" DMDID="c035" LABEL="Untitled Image by OZENFANT ОЗАНФАН"><div ID="L.1.1.2.4.5.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.5.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.4.5.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.5.3" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-                        <div ID="L.1.1.2.4.5.3.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.4.5.3.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.6" TYPE="TextContent" ORDER="5" DMDID="c036" LABEL="АНКЕТА">
-                     <div ID="L.1.1.2.4.6.1" TYPE="Head">
+                        </div></div><div ID="L.1.1.2.4.6" TYPE="TextContent" ORDER="5" DMDID="c036" LABEL="АНКЕТА"><div ID="L.1.1.2.4.6.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00004"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.6.2" TYPE="HeadingText">
+                     </div><div ID="L.1.1.2.4.6.2" TYPE="HeadingText">
                         <div ID="L.1.1.2.4.6.2.1" TYPE="Text">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00010"/>
                            </fptr>
                         </div>
-                     </div>
-                     <div ID="L.1.1.2.4.6.3" TYPE="TextContent" ORDER="1" DMDID="c037"
-                        LABEL="ОТВЕТ А. АРХИПЕНКО.">
-                        <div ID="L.1.1.2.4.6.3.1" TYPE="Head">
+                     </div><div ID="L.1.1.2.4.6.3" TYPE="TextContent" ORDER="1" DMDID="c037" LABEL="ОТВЕТ А. АРХИПЕНКО."><div ID="L.1.1.2.4.6.3.1" TYPE="Head">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00007"/>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.4.6.3.2" TYPE="Byline">
+                        </div><div ID="L.1.1.2.4.6.3.2" TYPE="Byline">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00006"/>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.4.6.3.3" TYPE="Copy">
+                        </div><div ID="L.1.1.2.4.6.3.3" TYPE="Copy">
                            <div ID="L.1.1.2.4.6.3.3.1" TYPE="BodyContent">
                               <div ID="L.1.1.2.4.6.3.3.1.1" TYPE="Paragraph" ORDER="1">
                                  <div ID="L.1.1.2.4.6.3.3.1.1.1" TYPE="Text">
                                     <fptr>
                                        <seq>
-                                          <area BETYPE="IDREF" FILEID="ALTO00014"
-                                             BEGIN="P14_TB00004"/>
-                                          <area BETYPE="IDREF" FILEID="ALTO00014"
-                                             BEGIN="P14_TB00002"/>
+                                          <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00004"/>
+                                          <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00002"/>
                                        </seq>
                                     </fptr>
                                  </div>
@@ -4795,10 +4465,8 @@
                                  <div ID="L.1.1.2.4.6.3.3.1.2.1" TYPE="Text">
                                     <fptr>
                                        <seq>
-                                          <area BETYPE="IDREF" FILEID="ALTO00013"
-                                             BEGIN="P13_TB00005"/>
-                                          <area BETYPE="IDREF" FILEID="ALTO00013"
-                                             BEGIN="P13_TB00002"/>
+                                          <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00005"/>
+                                          <area BETYPE="IDREF" FILEID="ALTO00013" BEGIN="P13_TB00002"/>
                                        </seq>
                                     </fptr>
                                  </div>
@@ -4811,47 +4479,31 @@
                                  </fptr>
                               </div>
                            </div>
-                        </div>
-                        <div ID="L.1.1.2.4.6.3.4" TYPE="Illustration" ORDER="1" DMDID="c038"
-                           LABEL="Untitled text">
-                           <div ID="L.1.1.2.4.6.3.4.1" TYPE="Byline">
+                        </div><div ID="L.1.1.2.4.6.3.4" TYPE="Illustration" ORDER="1" DMDID="c038" LABEL="„Сидящая женщина“"><div ID="L.1.1.2.4.6.3.4.1" TYPE="Byline">
                               <fptr>
                                  <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00008"/>
                               </fptr>
-                           </div>
-                           <div ID="L.1.1.2.4.6.3.4.2" TYPE="Byline">
+                           </div><div ID="L.1.1.2.4.6.3.4.2" TYPE="Byline">
                               <fptr>
                                  <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00009"/>
                               </fptr>
-                           </div>
-                           <div ID="L.1.1.2.4.6.3.4.3" TYPE="Illustration" ORDER="1"
-                              LABEL="„Сидящая женщина“">
-                              <div ID="L.1.1.2.4.6.3.4.3.1" TYPE="Image">
+                           </div><div ID="L.1.1.2.4.6.3.4.3.1" TYPE="Image">
                                  <fptr>
                                     <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00001"/>
                                  </fptr>
-                              </div>
-                              <div ID="L.1.1.2.4.6.3.4.3.2" TYPE="Caption">
+                              </div><div ID="L.1.1.2.4.6.3.4.3.2" TYPE="Caption">
                                  <fptr>
                                     <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00011"/>
                                  </fptr>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.4.6.4" TYPE="TextContent" ORDER="2" DMDID="c039"
-                        LABEL="ОТВЕТ ХУАНА ГРИСА.">
-                        <div ID="L.1.1.2.4.6.4.1" TYPE="Head">
+                              </div></div></div><div ID="L.1.1.2.4.6.4" TYPE="TextContent" ORDER="2" DMDID="c039" LABEL="ОТВЕТ ХУАНА ГРИСА."><div ID="L.1.1.2.4.6.4.1" TYPE="Head">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00010"/>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.4.6.4.2" TYPE="Byline">
+                        </div><div ID="L.1.1.2.4.6.4.2" TYPE="Byline">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00007"/>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.4.6.4.3" TYPE="Copy">
+                        </div><div ID="L.1.1.2.4.6.4.3" TYPE="Copy">
                            <div ID="L.1.1.2.4.6.4.3.1" TYPE="BodyContent">
                               <div ID="L.1.1.2.4.6.4.3.1.1" TYPE="Paragraph" ORDER="1">
                                  <div ID="L.1.1.2.4.6.4.3.1.1.1" TYPE="Text">
@@ -4861,16 +4513,11 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.4.6.5" TYPE="TextContent" ORDER="3" DMDID="c040"
-                        LABEL="О ПАБЛО ПИКАССО.">
-                        <div ID="L.1.1.2.4.6.5.1" TYPE="Head">
+                        </div></div><div ID="L.1.1.2.4.6.5" TYPE="TextContent" ORDER="3" DMDID="c040" LABEL="О ПАБЛО ПИКАССО."><div ID="L.1.1.2.4.6.5.1" TYPE="Head">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00012"/>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.4.6.5.2" TYPE="Copy">
+                        </div><div ID="L.1.1.2.4.6.5.2" TYPE="Copy">
                            <div ID="L.1.1.2.4.6.5.2.1" TYPE="BodyContent">
                               <div ID="L.1.1.2.4.6.5.2.1.1" TYPE="Paragraph" ORDER="1">
                                  <div ID="L.1.1.2.4.6.5.2.1.1.1" TYPE="Text">
@@ -4880,47 +4527,31 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
-                        <div ID="L.1.1.2.4.6.5.3" TYPE="Illustration" ORDER="1" DMDID="c041"
-                           LABEL="Untitled text">
-                           <div ID="L.1.1.2.4.6.5.3.1" TYPE="Byline">
+                        </div><div ID="L.1.1.2.4.6.5.3" TYPE="Illustration" ORDER="1" DMDID="c041" LABEL="Untitled Image by PICASSO ПИКАССО"><div ID="L.1.1.2.4.6.5.3.1" TYPE="Byline">
                               <fptr>
                                  <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00013"/>
                               </fptr>
-                           </div>
-                           <div ID="L.1.1.2.4.6.5.3.2" TYPE="Byline">
+                           </div><div ID="L.1.1.2.4.6.5.3.2" TYPE="Byline">
                               <fptr>
                                  <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00015"/>
                               </fptr>
-                           </div>
-                           <div ID="L.1.1.2.4.6.5.3.3" TYPE="Illustration" ORDER="1" LABEL="1920">
-                              <div ID="L.1.1.2.4.6.5.3.3.1" TYPE="Image">
+                           </div><div ID="L.1.1.2.4.6.5.3.3.1" TYPE="Image">
                                  <fptr>
                                     <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_CB00002"/>
                                  </fptr>
-                              </div>
-                              <div ID="L.1.1.2.4.6.5.3.3.2" TYPE="Caption">
+                              </div><div ID="L.1.1.2.4.6.5.3.3.2" TYPE="Caption">
                                  <fptr>
                                     <area BETYPE="IDREF" FILEID="ALTO00014" BEGIN="P14_TB00014"/>
                                  </fptr>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.7" TYPE="TextContent" ORDER="6" DMDID="c042"
-                     LABEL="ОПТОФОНЕТИКА.">
-                     <div ID="L.1.1.2.4.7.1" TYPE="Head">
+                              </div></div></div></div><div ID="L.1.1.2.4.7" TYPE="TextContent" ORDER="6" DMDID="c042" LABEL="ОПТОФОНЕТИКА."><div ID="L.1.1.2.4.7.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00015" BEGIN="P15_TB00004"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.7.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.4.7.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00005"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.7.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.4.7.3" TYPE="Copy">
                         <div ID="L.1.1.2.4.7.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.4.7.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.4.7.3.1.1.1" TYPE="Text">
@@ -4948,16 +4579,11 @@
                            </div>
                         </div>
                         
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.8" TYPE="TextContent" ORDER="7" DMDID="c043"
-                     LABEL="ВЫСТАВКИ В БЕРЛИНЕ.">
-                     <div ID="L.1.1.2.4.8.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.4.8" TYPE="TextContent" ORDER="7" DMDID="c043" LABEL="ВЫСТАВКИ В БЕРЛИНЕ."><div ID="L.1.1.2.4.8.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00007"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.8.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.4.8.2" TYPE="Copy">
                         <div ID="L.1.1.2.4.8.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.4.8.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.4.8.2.1.1.1" TYPE="Text">
@@ -4967,16 +4593,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.4.9" TYPE="TextContent" ORDER="8" DMDID="c044"
-                     LABEL="СЕЗАНН И СЕЗАННИЗМ. «Esprit Nouveau» 11/12.">
-                     <div ID="L.1.1.2.4.9.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.4.9" TYPE="TextContent" ORDER="8" DMDID="c044" LABEL="СЕЗАНН И СЕЗАННИЗМ. «Esprit Nouveau» 11/12."><div ID="L.1.1.2.4.9.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00016" BEGIN="P16_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.4.9.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.4.9.2" TYPE="Copy">
                         <div ID="L.1.1.2.4.9.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.4.9.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.4.9.2.1.1.1" TYPE="Text">
@@ -5000,10 +4621,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                     <div ID="L.1.1.2.4.10" TYPE="TextContent" ORDER="9" DMDID="c045"
-                        LABEL="Untitled text">
-                        <div ID="L.1.1.2.4.10.1" TYPE="Copy">
+                     </div><div ID="L.1.1.2.4.10" TYPE="TextContent" ORDER="9" DMDID="c045" LABEL="Untitled text"><div ID="L.1.1.2.4.10.1" TYPE="Copy">
                            <div ID="L.1.1.2.4.10.1.1" TYPE="BodyContent">
                               <div ID="L.1.1.2.4.10.1.1.1" TYPE="Paragraph" ORDER="1">
                                  <div ID="L.1.1.2.4.10.1.1.1.1" TYPE="Text">
@@ -5013,30 +4631,20 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
-                     </div>
-                  </div>
-                  
-               </div>
-               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c046" LABEL="4 Театр и цирк">
-                  <div ID="L.1.1.2.5.1" TYPE="Head">
+                        </div></div></div></div>
+               <div ID="L.1.1.2.5" TYPE="TextContent" ORDER="5" DMDID="c046" LABEL="4 Театр и цирк"><div ID="L.1.1.2.5.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00007"/>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.5.2" TYPE="TextContent" ORDER="1" DMDID="c047"
-                     LABEL="L’ATMOSPHÈRE SCÉNIQUE.">
-                     <div ID="L.1.1.2.5.2.1" TYPE="Head">
+                  </div><div ID="L.1.1.2.5.2" TYPE="TextContent" ORDER="1" DMDID="c047" LABEL="L’ATMOSPHÈRE SCÉNIQUE."><div ID="L.1.1.2.5.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00017" BEGIN="P17_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.2.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.5.2.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.2.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.5.2.3" TYPE="Copy">
                         <div ID="L.1.1.2.5.2.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.5.2.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.5.2.3.1.1.1" TYPE="Text">
@@ -5067,46 +4675,31 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.5.4" TYPE="Illustration" ORDER="3" DMDID="c049"
-                     LABEL="„ЗОРИ“ ВЕРХАРНА">
-                     <div ID="L.1.1.2.5.3.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.5.4" TYPE="Illustration" ORDER="3" DMDID="c049" LABEL="„ЗОРИ“ ВЕРХАРНА."><div ID="L.1.1.2.5.3.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00007"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.4.1" TYPE="Byline">
+                     </div><div ID="L.1.1.2.5.4.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00005"/>
                         </fptr>
-                     </div>
-
-                        <div ID="L.1.1.2.5.4.2.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.5.4.2.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_CB00001"/>
                            </fptr>
-                        </div>
-                        <div ID="L.1.1.2.5.4.2.2" TYPE="Caption">
+                        </div><div ID="L.1.1.2.5.4.2.2" TYPE="Caption">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00009"/>
                            </fptr>
-                        </div>
-                     
-                  </div>
-                  <div ID="L.1.1.2.5.5" TYPE="TextContent" ORDER="4" DMDID="c050"
-                     LABEL="ТЕАТР ВО ФРАНЦИИ.">
-                     <div ID="L.1.1.2.5.5.1" TYPE="Head">
+                        </div></div><div ID="L.1.1.2.5.5" TYPE="TextContent" ORDER="4" DMDID="c050" LABEL="ТЕАТР ВО ФРАНЦИИ."><div ID="L.1.1.2.5.5.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00018" BEGIN="P18_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.5.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.5.5.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.5.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.5.5.3" TYPE="Copy">
                         <div ID="L.1.1.2.5.5.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.5.5.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.5.5.3.1.1.1" TYPE="Text">
@@ -5123,11 +4716,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.5.6" TYPE="TextContent" ORDER="5" DMDID="c051"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.5.6.1" TYPE="Copy">
+                     </div></div><div ID="L.1.1.2.5.6" TYPE="TextContent" ORDER="5" DMDID="c051" LABEL="Untitled text"><div ID="L.1.1.2.5.6.1" TYPE="Copy">
                         <div ID="L.1.1.2.5.6.1.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.5.6.1.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.5.6.1.1.1.1" TYPE="Text">
@@ -5137,16 +4726,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.5.7" TYPE="TextContent" ORDER="6" DMDID="c052"
-                     LABEL="ТЕАТР В МОСКВЕ:">
-                     <div ID="L.1.1.2.5.7.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.5.7" TYPE="TextContent" ORDER="6" DMDID="c052" LABEL="ТЕАТР В МОСКВЕ:"><div ID="L.1.1.2.5.7.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00010"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.7.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.5.7.2" TYPE="Copy">
                         <div ID="L.1.1.2.5.7.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.5.7.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.5.7.2.1.1.1" TYPE="Text">
@@ -5156,16 +4740,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.5.8" TYPE="TextContent" ORDER="7" DMDID="c053"
-                     LABEL="ДЕТСКИЙ ТЕАТР.">
-                     <div ID="L.1.1.2.5.8.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.5.8" TYPE="TextContent" ORDER="7" DMDID="c053" LABEL="ДЕТСКИЙ ТЕАТР."><div ID="L.1.1.2.5.8.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00011"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.8.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.5.8.2" TYPE="Copy">
                         <div ID="L.1.1.2.5.8.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.5.8.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.5.8.2.1.1.1" TYPE="Text">
@@ -5175,15 +4754,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.5.9" TYPE="TextContent" ORDER="8" DMDID="c054" LABEL="ГАЗЕТЫ.">
-                     <div ID="L.1.1.2.5.9.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.5.9" TYPE="TextContent" ORDER="8" DMDID="c054" LABEL="ГАЗЕТЫ."><div ID="L.1.1.2.5.9.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00012"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.5.9.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.5.9.2" TYPE="Copy">
                         <div ID="L.1.1.2.5.9.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.5.9.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.5.9.2.1.1.1" TYPE="Text">
@@ -5193,20 +4768,15 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c055"
-                  LABEL="5 КИНЕМА-ТО ГРАФ Динамическая живопись. (Беспредметный кинематограф.)">
-                  <div ID="L.1.1.2.6.1" TYPE="Head">
+                     </div></div></div>
+               <div ID="L.1.1.2.6" TYPE="TextContent" ORDER="6" DMDID="c055" LABEL="5 КИНЕМА-ТО ГРАФ"><div ID="L.1.1.2.6.1" TYPE="Head">
                      <fptr>
                         <seq>
                            <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00013"/>
                            <area BETYPE="IDREF" FILEID="ALTO00019" BEGIN="P19_TB00014"/>
                         </seq>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.6.3" TYPE="Copy">
+                  </div><div ID="L.1.1.2.6.3" TYPE="Copy">
                      <div ID="L.1.1.2.6.3.1" TYPE="BodyContent">
                         <div ID="L.1.1.2.6.3.1.1" TYPE="Paragraph" ORDER="1">
                            <div ID="L.1.1.2.6.3.1.1.1" TYPE="Text">
@@ -5241,61 +4811,42 @@
                            </fptr>
                         </div>
                      </div>
-                  </div>
-                  <div ID="L.1.1.2.6.4" TYPE="Illustration" ORDER="1" DMDID="c057"
-                     LABEL="КИНЕМАТОГРАФИЧЕСКАЯ КОМПОЗИЦИЯ.">
-                     <div ID="L.1.1.2.6.4.1" TYPE="Head">
+                  </div><div ID="L.1.1.2.6.4" TYPE="Illustration" ORDER="1" DMDID="c057" LABEL="КИНЕМАТОГРАФИЧЕСКАЯ КОМПОЗИЦИЯ."><div ID="L.1.1.2.6.4.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00004"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.6.4.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.6.4.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_TB00002"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.6.2.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.6.2.1" TYPE="Image">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00020" BEGIN="P20_CB00001"/>
                         </fptr>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.6.5" TYPE="Illustration" ORDER="2" DMDID="c058"
-                     LABEL="MOMENTE AUS DER FILMKOMPOSITION. Отдельные моменты кинематографической композиции.">
-                     <div ID="L.1.1.2.6.5.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.6.5" TYPE="Illustration" ORDER="2" DMDID="c058" LABEL="MOMENTE AUS DER FILMKOMPOSITION."><div ID="L.1.1.2.6.5.1" TYPE="Head">
                         <fptr>
                            <seq>
                               <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00011"/>
                               <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00010"/>
                            </seq>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.6.5.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.6.5.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.6.5.3" TYPE="Byline">
+                     </div><div ID="L.1.1.2.6.5.3" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.6.5.4" TYPE="Illustration" ORDER="1" LABEL="Untitled">
-                        <div ID="L.1.1.2.6.5.4.1" TYPE="Image">
+                     </div><div ID="L.1.1.2.6.5.4.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.6.6" TYPE="TextContent" ORDER="3" DMDID="c059"
-                     LABEL="СУЖДЕНИЯ ЛЮИ ДЕЛЛЮКА О ФОТОГЕНИИ.">
-                     <div ID="L.1.1.2.6.6.1" TYPE="Head">
+                        </div></div><div ID="L.1.1.2.6.6" TYPE="TextContent" ORDER="3" DMDID="c059" LABEL="СУЖДЕНИЯ ЛЮИ ДЕЛЛЮКА О ФОТОГЕНИИ."><div ID="L.1.1.2.6.6.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00021" BEGIN="P21_TB00004"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.6.6.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.6.6.2" TYPE="Copy">
                         <div ID="L.1.1.2.6.6.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.6.6.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.6.6.2.1.1.1" TYPE="Text">
@@ -5319,48 +4870,34 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c060" LABEL="6 MУ3ЫKA">
-                  <div ID="L.1.1.2.7.1" TYPE="Head">
+                     </div></div></div>
+               <div ID="L.1.1.2.7" TYPE="TextContent" ORDER="7" DMDID="c060" LABEL="6 MУ3ЫKA"><div ID="L.1.1.2.7.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00005"/>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.7.2" TYPE="Illustration" ORDER="1" DMDID="c061"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.7.2.1" TYPE="Byline">
+                  </div><div ID="L.1.1.2.7.2" TYPE="Illustration" ORDER="1" DMDID="c061" LABEL="Untitled Image by S. PROKOFÎEFF СЕРГЕЙ ПРОКОФЬЕВ"><div ID="L.1.1.2.7.2.1" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00007"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.7.2.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.7.2.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00008"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.7.2.3" TYPE="Music" ORDER="1" LABEL="Untitled">
+                     </div><div ID="L.1.1.2.7.2.3" TYPE="Music" ORDER="1" LABEL="Untitled">
                         <div ID="L.1.1.2.7.2.3.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_CB00001"/>
                            </fptr>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.7.3" TYPE="TextContent" ORDER="2" DMDID="c062"
-                     LABEL="СЕРГЕЙ ПРОКОФЬЕВ.">
-                     <div ID="L.1.1.2.7.3.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.7.3" TYPE="TextContent" ORDER="2" DMDID="c062" LABEL="СЕРГЕЙ ПРОКОФЬЕВ."><div ID="L.1.1.2.7.3.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00006"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.7.3.2" TYPE="Byline">
+                     </div><div ID="L.1.1.2.7.3.2" TYPE="Byline">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00022" BEGIN="P22_TB00004"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.7.3.3" TYPE="Copy">
+                     </div><div ID="L.1.1.2.7.3.3" TYPE="Copy">
                         <div ID="L.1.1.2.7.3.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.7.3.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.7.3.3.1.1.1" TYPE="Text">
@@ -5373,22 +4910,16 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c063" LABEL="КРЕСТИНЫ „ВЕЩИ“">
-                  <div ID="L.1.1.2.8.1" TYPE="Head">
+                     </div></div></div>
+               <div ID="L.1.1.2.8" TYPE="TextContent" ORDER="8" DMDID="c063" LABEL="КРЕСТИНЫ „ВЕЩИ“"><div ID="L.1.1.2.8.1" TYPE="Head">
                      <fptr>
                         <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00008"/>
                      </fptr>
-                  </div>
-                  <div ID="L.1.1.2.8.2" TYPE="TextContent" ORDER="1" DMDID="c064" LABEL="I РОЖДЕНИЕ">
-                     <div ID="L.1.1.2.8.2.1" TYPE="Head">
+                  </div><div ID="L.1.1.2.8.2" TYPE="TextContent" ORDER="1" DMDID="c064" LABEL="I РОЖДЕНИЕ"><div ID="L.1.1.2.8.2.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00009"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.8.2.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.8.2.2" TYPE="Copy">
                         <div ID="L.1.1.2.8.2.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.8.2.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.8.2.2.1.1.1" TYPE="Text">
@@ -5398,15 +4929,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.8.3" TYPE="TextContent" ORDER="2" DMDID="c065" LABEL="2 имя">
-                     <div ID="L.1.1.2.8.3.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.8.3" TYPE="TextContent" ORDER="2" DMDID="c065" LABEL="2 имя"><div ID="L.1.1.2.8.3.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00010"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.8.3.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.8.3.2" TYPE="Copy">
                         <div ID="L.1.1.2.8.3.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.8.3.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.8.3.2.1.1.1" TYPE="Text">
@@ -5416,15 +4943,11 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.8.4" TYPE="TextContent" ORDER="3" DMDID="c066" LABEL="3 ГОРОСКОП">
-                     <div ID="L.1.1.2.8.4.1" TYPE="Head">
+                     </div></div><div ID="L.1.1.2.8.4" TYPE="TextContent" ORDER="3" DMDID="c066" LABEL="3 ГОРОСКОП"><div ID="L.1.1.2.8.4.1" TYPE="Head">
                         <fptr>
                            <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_TB00011"/>
                         </fptr>
-                     </div>
-                     <div ID="L.1.1.2.8.4.2" TYPE="Copy">
+                     </div><div ID="L.1.1.2.8.4.2" TYPE="Copy">
                         <div ID="L.1.1.2.8.4.2.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.8.4.2.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.8.4.2.1.1.1" TYPE="Text">
@@ -5437,27 +4960,15 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div ID="L.1.1.2.8.5" TYPE="TextContent" ORDER="4" DMDID="c067"
-                     LABEL="Untitled text">
-                     <div ID="L.1.1.2.8.5.1" TYPE="Illustration" ORDER="1" DMDID="c068"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.8.5.1.1" TYPE="Image">
+                     </div></div><div ID="L.1.1.2.8.5" TYPE="TextContent" ORDER="4" DMDID="c067" LABEL="Untitled text"><div ID="L.1.1.2.8.5.1" TYPE="Illustration" ORDER="1" DMDID="c068" LABEL="Untitled Image"><div ID="L.1.1.2.8.5.1.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_CB00002"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.8.5.2" TYPE="Illustration" ORDER="2" DMDID="c069"
-                        LABEL="Untitled">
-                        <div ID="L.1.1.2.8.5.2.1" TYPE="Image">
+                        </div></div><div ID="L.1.1.2.8.5.2" TYPE="Illustration" ORDER="2" DMDID="c069" LABEL="Untitled Image"><div ID="L.1.1.2.8.5.2.1" TYPE="Image">
                            <fptr>
                               <area BETYPE="IDREF" FILEID="ALTO00023" BEGIN="P23_CB00001"/>
                            </fptr>
-                        </div>
-                     </div>
-                     <div ID="L.1.1.2.8.5.3" TYPE="Copy">
+                        </div></div><div ID="L.1.1.2.8.5.3" TYPE="Copy">
                         <div ID="L.1.1.2.8.5.3.1" TYPE="BodyContent">
                            <div ID="L.1.1.2.8.5.3.1.1" TYPE="Paragraph" ORDER="1">
                               <div ID="L.1.1.2.8.5.3.1.1.1" TYPE="Text">
@@ -5474,9 +4985,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                     </div></div></div>
             </div>
             <div ID="L.1.1.3" TYPE="PublicationInfo" LABEL="Publication Information">
                <div ID="L.1.1.3.1" TYPE="GenericPubInfo" ORDER="1">
@@ -5486,56 +4995,36 @@
                </div>
             </div>
             <div ID="L.1.1.4" TYPE="SponsoredAdvertisement" LABEL="Sponsored Advertisements">
-               <div ID="L.1.1.4.1" TYPE="SponsoredAd" DMDID="c070">
-                  <fptr>
+               <div ID="L.1.1.4.1" TYPE="SponsoredAd" DMDID="c070" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00001"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.2" TYPE="SponsoredAd" DMDID="c071">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.2" TYPE="SponsoredAd" DMDID="c071" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00002"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.3" TYPE="SponsoredAd" DMDID="c072">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.3" TYPE="SponsoredAd" DMDID="c072" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00024" BEGIN="P24_CB00003"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.4" TYPE="SponsoredAd" DMDID="c073">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.4" TYPE="SponsoredAd" DMDID="c073" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00001"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.5" TYPE="SponsoredAd" DMDID="c074">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.5" TYPE="SponsoredAd" DMDID="c074" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00002"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.6" TYPE="SponsoredAd" DMDID="c075">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.6" TYPE="SponsoredAd" DMDID="c075" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00003"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.7" TYPE="SponsoredAd" DMDID="c076">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.7" TYPE="SponsoredAd" DMDID="c076" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00025" BEGIN="P25_CB00004"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.8" TYPE="SponsoredAd" DMDID="c077">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.8" TYPE="SponsoredAd" DMDID="c077" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00026" BEGIN="P26_CB00001"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.9" TYPE="SponsoredAd" DMDID="c078">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.9" TYPE="SponsoredAd" DMDID="c078" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00027" BEGIN="P27_CB00001"/>
-                  </fptr>
-               </div>
-               <div ID="L.1.1.4.10" TYPE="SponsoredAd" DMDID="c079">
-                  <fptr>
+                  </fptr></div>
+               <div ID="L.1.1.4.10" TYPE="SponsoredAd" DMDID="c079" LABEL="[Advertisement]"><fptr>
                      <area BETYPE="IDREF" FILEID="ALTO00028" BEGIN="P28_CB00001"/>
-                  </fptr>
-               </div>
+                  </fptr></div>
             </div>
          </div>
       </div>
