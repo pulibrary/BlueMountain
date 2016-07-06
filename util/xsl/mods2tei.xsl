@@ -31,9 +31,9 @@
           </xsl:if>
           <date>
             <xsl:attribute name="when">
-              <xsl:value-of select="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']"/>
+              <xsl:value-of select="mods:originInfo/mods:dateIssued[@encoding='w3cdtf'][1]"/>
             </xsl:attribute>
-            <xsl:value-of select="mods:originInfo/mods:dateIssued[@keyDate = '']"/>
+            <xsl:value-of select="mods:originInfo/mods:dateIssued[@keyDate = ''][1]"/>
           </date>
         </imprint>
       </monogr>
@@ -43,7 +43,7 @@
   </xsl:template>
 
   <xsl:template match="mods:relatedItem[@type='host']">
-    <relatedItem type="host" target="{@xlink:href}"/>
+    <relatedItem type="host" target="{substring-after(@xlink:href, 'urn:PUL:bluemountain:')}"/>
   </xsl:template>
 
   <xsl:template match="mods:relatedItem[@type='constituent']">
@@ -79,7 +79,8 @@
   <xsl:template
     match="mods:relatedItem[@type='constituent']/mods:part/mods:extent[@unit='page' and mods:list]">
     <xsl:variable name="pnums" select="tokenize(mods:list, '-')"/>
-    <biblScope unit="page" from="{$pnums[1]}" to="{$pnums[2]}">
+<!--    <biblScope unit="page" from="{$pnums[1]}" to="{$pnums[2]}"> -->
+    <biblScope unit="page">
       <xsl:value-of select="mods:list"/>
     </biblScope>
   </xsl:template>
