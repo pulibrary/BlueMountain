@@ -77,9 +77,11 @@
                 </biblScope>
               </xsl:if>
               <date>
+<!--
                 <xsl:attribute name="when">
                   <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[@encoding='w3cdtf' or @encoding='iso8601']"/>
-                </xsl:attribute>
+                  </xsl:attribute>
+		  -->
                 <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[1]"/>
               </date>
             </imprint>
@@ -89,7 +91,7 @@
       </titleStmt>
      <publicationStmt>
       <publisher>Princeton University</publisher>
-      <idno type="bmtnid"><xsl:value-of select="./mets:dmdSec//mods:identifier[@type='bmtn']" /></idno>
+      <idno type="bmtnid"><xsl:value-of select="substring-after(./mets:dmdSec//mods:identifier[@type='bmtn'], 'urn:PUL:bluemountain:')" /></idno>
      </publicationStmt>
      <seriesStmt>
       <title level="s">The Blue Mountain Project</title>
