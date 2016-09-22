@@ -13,11 +13,11 @@
   <xsl:template match="mods:mods">
     <biblStruct>
       <monogr>
-        <title level="j">
+
           <xsl:apply-templates select="mods:titleInfo">
 	    <xsl:with-param name="level">j</xsl:with-param>
 	  </xsl:apply-templates>
-        </title>
+        
         <imprint>
           <xsl:if test="mods:part/mods:detail[@type='volume']">
             <biblScope unit="vol">
@@ -53,11 +53,11 @@
       </xsl:if>
       <biblStruct>
         <analytic>
-          <title level="a">
+
             <xsl:apply-templates select="mods:titleInfo">
 	      <xsl:with-param name="level">a</xsl:with-param>
 	    </xsl:apply-templates>
-          </title>
+          
           <xsl:apply-templates select="mods:name"/>
           <xsl:apply-templates select="mods:language"/>
         </analytic>
