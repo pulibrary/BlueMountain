@@ -78,10 +78,15 @@
               </xsl:if>
               <date>
 
+		<!--
                 <xsl:attribute name="when">
                   <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[@encoding='w3cdtf' or @encoding='iso8601']"/>
                   </xsl:attribute>
-		  
+		-->
+		<xsl:attribute name="when">
+                  <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[@keyDate='yes']"/>
+                  </xsl:attribute>
+
                 <xsl:value-of select="$modsrec/mods:originInfo/mods:dateIssued[1]"/>
               </date>
             </imprint>
