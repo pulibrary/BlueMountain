@@ -30,8 +30,13 @@
             </biblScope>
           </xsl:if>
           <date>
+	    <!--
             <xsl:attribute name="when">
               <xsl:value-of select="mods:originInfo/mods:dateIssued[@encoding='w3cdtf'][1]"/>
+            </xsl:attribute>
+	    -->
+            <xsl:attribute name="when">
+              <xsl:value-of select="mods:originInfo/mods:dateIssued[@keyDate='yes']"/>
             </xsl:attribute>
             <xsl:value-of select="mods:originInfo/mods:dateIssued[@keyDate = ''][1]"/>
           </date>
